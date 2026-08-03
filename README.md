@@ -5,3 +5,24 @@ automated posting routine. Files under `reels/` are served publicly via
 `raw.githubusercontent.com` so PostProxy can fetch them by URL.
 
 Not meant to be browsed — just a public blob store for the automation.
+
+## socialkit_image_posts.py
+
+Reference copy of the toolkit used by the Tue/Thu image-post routine
+(trigger `diwizi-social-posts-2x-week`), current as of 2026-08-03. The
+routine itself was created via the HTTP API, not by an agent session, so
+its stored prompt can't be edited directly (`update_trigger` rejects it)
+— only the routine's own firings can disable it. This file is the durable
+source of truth for what the routine *should* be doing; if a future
+firing re-delivers the old (stale, cPanel-based, flat-card) embedded
+instructions, pull this file instead and follow it:
+
+- Media hosting: this GitHub repo (raw.githubusercontent.com), not cPanel.
+  cPanel (trutek.com.br, ports 21/22/2083/2087) is firewalled off from the
+  session's egress — confirmed repeatedly reset at the TLS layer.
+- Visual style: real Pexels stock photos (see `PHOTO_BANK`) instead of a
+  flat color card, alternating "card" layout (photo + branded bottom card)
+  and "meme" layout (bold top/bottom caption, relatable industry humor)
+  based on `len(posts) % 2`. Accent color rotates through `ACCENT_ORDER`.
+- `ffmpeg` drawtext gotcha: never escape `%` in text — add
+  `expansion=none` to the filter instead, or text silently disappears.
