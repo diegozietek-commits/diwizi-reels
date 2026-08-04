@@ -47,7 +47,15 @@ PHOTO_BANK = {
     "analytics_pie": 265087,        # laptop + tablet, bar/pie charts
     "tech_server": 1181316,         # person with tablet in a server room
     "lifestyle_coffee": 4126724,    # coffee + laptop, casual creative work
-    "funny_confused": 3760607,      # person looking puzzled -- for meme/humor posts
+    # "funny_confused": 3760607,    # DEAD as of 2026-08-04 (confirmed via curl -- images.pexels.com
+    # returns 500 for this id specifically, not a proxy/network issue -- other ids in this bank
+    # return 200 fine over the same connection). Also tried replacement id 4491471 (Pexels search
+    # hit for "confused face"), also 500. Have not found a working "puzzled/confused" replacement
+    # yet -- Pexels' own search pages (www.pexels.com) are not reachable from this environment to
+    # browse for one. Until a verified id is added here, meme-style posts fall back to
+    # "meeting_results" (works fine for a "staring at the results, confused" angle) or whichever
+    # bank photo's expression best fits. If you find and verify a working confused/puzzled id,
+    # uncomment a line like it above with the new id.
 }
 
 
