@@ -133,10 +133,14 @@ def build_image_meme(out_path, photo_path, top_text, bottom_text, accent_name="m
     draws = [
         f"drawbox=x=0:y=0:w={W}:h=280:color=0x000000@0.55:t=fill",
         _dt(SERIF_BOLD, top_text, fontcolor=WHITE, fontsize=62, x="(w-text_w)/2", y=70, line_spacing=10),
-        f"drawbox=x=0:y={H-190}:w={W}:h=190:color=0x000000@0.62:t=fill",
-        _dt(SANS, bottom_text, fontcolor=WHITE, fontsize=34, x="(w-text_w)/2", y=H - 145, line_spacing=6),
-        _dt(SANS, "diwizi.", fontcolor=accent, fontsize=34, box=1, boxcolor=f"{WHITE}@0.9", boxborderw=14,
-            x="(w-text_w)/2", y=H - 60),
+        # Bar must clear BOTH caption lines AND the logo chip below them. The old 190px bar with
+        # the chip at y=H-60 put the chip on top of caption line 2 (a 2-line caption at fontsize
+        # 34 is ~74px tall) -- Diego flagged this on 2026-08-04. Keep >=270px here, and if you
+        # ever raise the caption fontsize or go to 3 lines, re-check the chip clearance.
+        f"drawbox=x=0:y={H-270}:w={W}:h=270:color=0x000000@0.62:t=fill",
+        _dt(SANS, bottom_text, fontcolor=WHITE, fontsize=34, x="(w-text_w)/2", y=H - 232, line_spacing=6),
+        _dt(SANS, "diwizi.", fontcolor=accent, fontsize=30, box=1, boxcolor=f"{WHITE}@0.95", boxborderw=12,
+            x="(w-text_w)/2", y=H - 118),
     ]
     vf = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}," + ",".join(draws)
     cmd = ["ffmpeg", "-y", "-i", photo_path, "-vf", vf, "-frames:v", "1", out_path]
@@ -210,6 +214,16 @@ def list_recent_posts(per_page=20):
 
 
 def publish_image_post(image_url, caption, first_comment=None):
+    """CTA CONVENTION (set by Diego 2026-08-04): do NOT use "link in bio" anywhere -- not in the
+    caption, not in the on-image CTA, not in the first comment. Instead put the REAL destination
+    URL in the first comment, and have the on-image CTA / caption point there ("Full guide in
+    comments", "Link in comments"). Every post should carry a link relevant to ITS OWN topic:
+      - Blog promo      -> https://diwizi.com/blog/<the-post-slug>.html
+      - Tip             -> the closest related blog post, else the audit page
+      - Consulting offer-> https://diwizi.com/ppc-audit.html
+    Verify the URL returns 200 with a real browser User-Agent before publishing -- diwizi.com
+    returns 406 to curl's default UA, so a bare `curl -I` will look like a dead link when it isn't.
+    """
     payload = {
         "post": {"body": caption},
         "profiles": [IG_PROFILE, FB_PROFILE],
