@@ -81,10 +81,17 @@ PHOTO_BANK = {
     "tech_server": 1181316,         # person with tablet in a server room
     "lifestyle_coffee": 4126724,    # coffee + laptop, casual creative work
     # --- home & cleaning services ---
-    "cleaning_home": 6195198,       # woman cleaning a home -- house-cleaning / maid-service posts
-    "cleaning_gloves": 4021256,     # blue-gloved hands wiping a surface, close up
-    "cleaning_spray": 4440533,      # gloved hands with spray bottle
+    # CASTING RULE (Diego, 2026-08-04): for cleaning / domestic-labour topics, use hands, tools,
+    # supplies or the finished room -- NOT an identifiable person performing the labour. Depicting
+    # Black subjects as cleaners reproduces a stereotype with a particularly loaded history in
+    # Brazil, and Diwizi's audience here is the cleaning-business OWNER anyway, not the worker.
+    # This is NOT a rule against showing Black people -- do include diverse subjects in owner,
+    # client, consultant and professional roles; the constraint is specifically about who gets
+    # cast in the service-labour role.
+    "cleaning_gloves": 4021256,     # blue-gloved hands wiping a surface, close up -- no face
+    "cleaning_spray": 4440533,      # gloved hands with spray bottle -- no face
     "cleaning_supplies": 28576636,  # cleaning supplies + gloves, still life
+    # "cleaning_home": 6195198,     # RETIRED per the casting rule above (Black woman cleaning).
     # "funny_confused": 3760607,    # DEAD 2026-08-04 -- images.pexels.com 500s on this id
     # specifically while sibling ids 200 over the same connection. Replacement candidate 4491471
     # is also dead. No verified confused/puzzled shot yet; www.pexels.com search pages aren't
