@@ -98,6 +98,8 @@ PHOTO_BANK = {
     "cleaning_spray": 4440533,      # gloved hands with spray bottle -- no face
     "cleaning_supplies": 28576636,  # cleaning supplies + gloves, still life
     # "cleaning_home": 6195198,     # RETIRED per the casting rule above (Black woman cleaning).
+    # --- B2B / SaaS ---
+    "saas_team": 3184357,           # software team at computers in a bright office -- verified 2026-08-08
     # --- tourism / hospitality (hotels, tours, direct-booking posts) ---
     "resort_pool": 5563469,         # resort courtyard + pool, bright and timeless -- verified 2026-08-06
     "hotel_reception_lux": 14036250,  # luxurious hotel front desk. NOTE: receptionist wears a covid
@@ -309,6 +311,40 @@ def list_recent_posts(per_page=20):
     return d.get("data", [])
 
 
+def count_diwizi_runs(pages=5):
+    """Number of Diwizi image-post RUNS so far -- the correct parity source for choosing
+    card vs meme style and the accent index.
+
+    Do NOT use len(list_recent_posts(...)) for that. Two reasons it is broken:
+      1. It returns a fixed per_page (always 15), so it is a constant, not a count.
+      2. Since LinkedIn was added (2026-08-06) every run writes TWO PostProxy records, one for
+         Instagram+Facebook and one for LinkedIn. Any raw record count therefore moves by 2 per
+         run, so its parity NEVER flips and the style would be frozen on whatever it landed on.
+    Counting only the Instagram-bearing record gives exactly one per run, so parity alternates
+    again. Unrelated clients on the same PostProxy account (WFA Digital remote-jobs posts) are
+    filtered out by keyword.
+    """
+    posts = []
+    for page in range(1, pages + 1):
+        data = pp_get("/api/posts", {"page": page, "per_page": 20}).get("data", [])
+        if not data:
+            break
+        posts.extend(data)
+    other_client = ["remote work", "hiring", "payroll", "justworks", "splitero", "manager,",
+                    "work from anywhere"]
+    ours = ["ppc", "google ads", "ad spend", "saas", "ecommerce", "cpa", "roas", "conversion",
+            "audit", "diwizi", "demand gen", "lead gen", "retainer", "consultant", "meta ads",
+            "keyword", "campaign", "cleaning", "ota", "booking"]
+    runs = []
+    for p in posts:
+        body = (p.get("body") or "").lower()
+        if any(k in body for k in other_client) or not any(k in body for k in ours):
+            continue
+        if "instagram" in [x["platform"] for x in p.get("platforms", [])]:
+            runs.append(p)
+    return len(runs)
+
+
 def publish_image_post(image_url, caption_ig_fb, caption_linkedin, first_comment=None):
     """Publica a MESMA imagem com textos DIFERENTES por plataforma.
 
@@ -325,6 +361,14 @@ def publish_image_post(image_url, caption_ig_fb, caption_linkedin, first_comment
       - Blog promo      -> https://diwizi.com/blog/<the-post-slug>.html
       - Tip             -> the closest related blog post, else the audit page
       - Consulting offer-> https://diwizi.com/ppc-audit.html
+
+    NEVER SAY "FREE AUDIT" (checked against the live site 2026-08-08). The routine spec still
+    says to pitch one, but diwizi.com/ppc-audit.html sells a PAID, fixed-price audit and the
+    page's own FAQ answers "Do you offer a free audit?" with "No, and I would treat a free one
+    with suspicion. A free audit is a sales asset, so it is built to find just enough to justify
+    the pitch." Advertising a free audit would promise something that does not exist AND
+    contradict the exact independence that page sells. Say "book a call" (the site's own CTA,
+    https://cal.com/diwizi) or point at the paid audit page and describe it honestly.
     Verify the URL returns 200 with a real browser User-Agent before publishing -- diwizi.com
     returns 406 to curl's default UA, so a bare `curl -I` will look like a dead link when it isn't.
     On LinkedIn links ARE clickable, so that caption ends with the real URL inline instead.
