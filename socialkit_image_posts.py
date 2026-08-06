@@ -11,6 +11,12 @@ PP_BASE = "https://api.postproxy.dev"
 IG_PROFILE = "AnUeOa"
 FB_PROFILE = "v2Uk1v"
 FB_PAGE_ID = "105951367482831"
+LI_PROFILE = "j3UKQQ"
+# LinkedIn: organization_id e o que faz o post sair na PAGINA DA EMPRESA.
+# Sem ele o PostProxy publica no perfil PESSOAL do Diego, o que e proibido.
+# 28874141 = Diwizi. Nao confundir com 112255361, que e outra pagina na
+# mesma conexao e nao deve receber conteudo da Diwizi.
+LI_ORG_ID = "28874141"
 
 # --- Media hosting: public GitHub repo (raw.githubusercontent.com), NOT cPanel/FTP ---
 # cPanel (trutek.com.br, ports 21/22/2083/2087) is firewalled off from this environment's
@@ -92,6 +98,11 @@ PHOTO_BANK = {
     "cleaning_spray": 4440533,      # gloved hands with spray bottle -- no face
     "cleaning_supplies": 28576636,  # cleaning supplies + gloves, still life
     # "cleaning_home": 6195198,     # RETIRED per the casting rule above (Black woman cleaning).
+    # --- tourism / hospitality (hotels, tours, direct-booking posts) ---
+    "resort_pool": 5563469,         # resort courtyard + pool, bright and timeless -- verified 2026-08-06
+    "hotel_reception_lux": 14036250,  # luxurious hotel front desk. NOTE: receptionist wears a covid
+    # era face mask, which dates the shot -- prefer resort_pool unless a front-desk scene is needed.
+    # Rejected 7820308 / 7820318 (Mikhail Nilov hotel check-in set) for the same masks.
     # "funny_confused": 3760607,    # DEAD 2026-08-04 -- images.pexels.com 500s on this id
     # specifically while sibling ids 200 over the same connection. Replacement candidate 4491471
     # is also dead. No verified confused/puzzled shot yet; www.pexels.com search pages aren't
@@ -298,8 +309,16 @@ def list_recent_posts(per_page=20):
     return d.get("data", [])
 
 
-def publish_image_post(image_url, caption, first_comment=None):
-    """CTA CONVENTION (set by Diego 2026-08-04): do NOT use "link in bio" anywhere -- not in the
+def publish_image_post(image_url, caption_ig_fb, caption_linkedin, first_comment=None):
+    """Publica a MESMA imagem com textos DIFERENTES por plataforma.
+
+    O PostProxy manda um unico post.body para todas as plataformas do request;
+    nao existe body por plataforma. A propria doc deles diz que, para copy
+    diferente, o caminho e fazer chamadas separadas por conjunto de perfis.
+    Por isso sao duas chamadas: uma para Instagram+Facebook e outra para o
+    LinkedIn. Devolve (resultado_ig_fb, resultado_linkedin).
+
+    CTA CONVENTION (set by Diego 2026-08-04): do NOT use "link in bio" anywhere -- not in the
     caption, not in the on-image CTA, not in the first comment. Instead put the REAL destination
     URL in the first comment, and have the on-image CTA / caption point there ("Full guide in
     comments", "Link in comments"). Every post should carry a link relevant to ITS OWN topic:
@@ -308,9 +327,10 @@ def publish_image_post(image_url, caption, first_comment=None):
       - Consulting offer-> https://diwizi.com/ppc-audit.html
     Verify the URL returns 200 with a real browser User-Agent before publishing -- diwizi.com
     returns 406 to curl's default UA, so a bare `curl -I` will look like a dead link when it isn't.
+    On LinkedIn links ARE clickable, so that caption ends with the real URL inline instead.
     """
-    payload = {
-        "post": {"body": caption},
+    social = {
+        "post": {"body": caption_ig_fb},
         "profiles": [IG_PROFILE, FB_PROFILE],
         "media": [image_url],
         "platforms": {
@@ -319,6 +339,26 @@ def publish_image_post(image_url, caption, first_comment=None):
         },
     }
     if first_comment:
-        payload["platforms"]["instagram"]["first_comment"] = first_comment
-        payload["platforms"]["facebook"]["first_comment"] = first_comment
-    return pp_post("/api/posts", payload)
+        social["platforms"]["instagram"]["first_comment"] = first_comment
+        social["platforms"]["facebook"]["first_comment"] = first_comment
+
+    linkedin = {
+        "post": {"body": caption_linkedin},
+        "profiles": [LI_PROFILE],
+        "media": [image_url],
+        "platforms": {
+            "linkedin": {"format": "post", "organization_id": LI_ORG_ID},
+        },
+    }
+
+    # TRAVA: sem organization_id o post iria para o perfil pessoal do Diego.
+    # Isso e proibido. Falhe alto em vez de publicar no lugar errado.
+    if linkedin["platforms"]["linkedin"].get("organization_id") != "28874141":
+        raise RuntimeError(
+            "ABORTADO: organization_id do LinkedIn ausente ou diferente da pagina "
+            "da Diwizi. Publicar assim cairia no perfil pessoal do Diego."
+        )
+
+    r_social = pp_post("/api/posts", social)
+    r_linkedin = pp_post("/api/posts", linkedin)
+    return r_social, r_linkedin
