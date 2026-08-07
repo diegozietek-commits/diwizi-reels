@@ -119,6 +119,56 @@ def photo_url(photo_id):
     return f"https://images.pexels.com/photos/{photo_id}/pexels-photo-{photo_id}.jpeg?auto=compress&cs=tinysrgb&w=1080"
 
 
+# --- Photo reuse guard (Diego, 2026-08-09: "so cuide pra nao usar a mesma imagem em posts
+# diferentes") ---
+# The bank is small and the temptation to fall back on a photo that already worked is exactly how
+# the feed ends up looking repetitive, so every PUBLISHED photo id is recorded in used_photos.json
+# in the media repo and is then off limits. Never "reuse just this once": if nothing unused fits
+# the topic, go find and verify a new id (WebSearch -> verify_photo -> render -> LOOK at it),
+# which is the same work as adding any other new photo. Record only what actually went out;
+# discarded drafts and previews do not count.
+USED_PHOTOS_PATH = os.path.join(GITHUB_WORKSPACE, "used_photos.json")
+
+
+def load_used_photos():
+    """[{photo_id, date, note}] of every photo already published. Empty list if the file is
+    missing, so a fresh clone or a first run does not blow up."""
+    try:
+        with open(USED_PHOTOS_PATH) as f:
+            return json.load(f)
+    except (FileNotFoundError, ValueError):
+        return []
+
+
+def used_photo_ids():
+    return {int(e["photo_id"]) for e in load_used_photos()}
+
+
+def photo_is_free(key_or_id):
+    """True if this photo has never been published. Accepts a PHOTO_BANK key or a raw id."""
+    pid = PHOTO_BANK[key_or_id] if key_or_id in PHOTO_BANK else int(key_or_id)
+    return pid not in used_photo_ids()
+
+
+def free_bank_keys():
+    """Bank keys that have never been published, so you can see at a glance what is still
+    available before deciding whether you need to source a new photo."""
+    used = used_photo_ids()
+    return [k for k, v in PHOTO_BANK.items() if v not in used]
+
+
+def record_photo_use(key_or_id, date, note=""):
+    """Append a published photo to the manifest. Call this AFTER the post actually publishes,
+    then commit used_photos.json together with the image so the next run sees it."""
+    pid = PHOTO_BANK[key_or_id] if key_or_id in PHOTO_BANK else int(key_or_id)
+    entries = load_used_photos()
+    if pid not in {int(e["photo_id"]) for e in entries}:
+        entries.append({"photo_id": pid, "date": date, "note": note})
+        with open(USED_PHOTOS_PATH, "w") as f:
+            json.dump(entries, f, indent=1)
+    return entries
+
+
 def verify_photo(photo_id):
     """True if images.pexels.com actually serves this id. Always check a NEW id before using it --
     dead ids return 500 and download_photo() will blow up mid-run."""
@@ -400,6 +450,11 @@ def publish_image_post(image_url, caption_ig_fb, caption_linkedin, first_comment
         is attached ONLY to the instagram and facebook platform blocks and never to the linkedin
         payload. Do not "helpfully" add one. It also means the LinkedIn caption should not say
         "link below", since on that platform there is nothing below.
+
+    PHOTO REUSE: before building the image, check photo_is_free(key) -- a photo that has already
+    been published is off limits (see the manifest helpers above). After this call succeeds, run
+    record_photo_use(key, "<today>", "<what the post was>") and commit used_photos.json alongside
+    the jpg, otherwise the next run will think the photo is still available.
 
     Every post should carry a link relevant to ITS OWN topic:
       - Blog promo      -> https://diwizi.com/blog/<the-post-slug>.html
