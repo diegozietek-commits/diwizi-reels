@@ -354,10 +354,22 @@ def publish_image_post(image_url, caption_ig_fb, caption_linkedin, first_comment
     Por isso sao duas chamadas: uma para Instagram+Facebook e outra para o
     LinkedIn. Devolve (resultado_ig_fb, resultado_linkedin).
 
-    CTA CONVENTION (set by Diego 2026-08-04): do NOT use "link in bio" anywhere -- not in the
-    caption, not in the on-image CTA, not in the first comment. Instead put the REAL destination
-    URL in the first comment, and have the on-image CTA / caption point there ("Full guide in
-    comments", "Link in comments"). Every post should carry a link relevant to ITS OWN topic:
+    LINK PLACEMENT, PER PLATFORM (Diego, 2026-08-04, reconfirmed and refined 2026-08-09):
+
+      Instagram + Facebook -> link goes in the FIRST COMMENT, never in the caption body (it is
+        not clickable on Instagram anyway). The caption and the on-image CTA point DOWN to it:
+        say "link below", "full guide below", "full breakdown in the comments below". Diego's
+        words: 'ao inves de link in bio, pode dizer "link below" algo assim'. Never "link in
+        bio" -- the routine spec still tells you to write that, and it is wrong.
+
+      LinkedIn -> NO first comment at all. The URL is already inline at the end of the post body
+        where it is clickable, so a comment would just repeat it. Diego: 'em linkedin acredito
+        que nao precise porque ja vai no post'. That is why the `first_comment` argument below
+        is attached ONLY to the instagram and facebook platform blocks and never to the linkedin
+        payload. Do not "helpfully" add one. It also means the LinkedIn caption should not say
+        "link below", since on that platform there is nothing below.
+
+    Every post should carry a link relevant to ITS OWN topic:
       - Blog promo      -> https://diwizi.com/blog/<the-post-slug>.html
       - Tip             -> the closest related blog post, else the audit page
       - Consulting offer-> https://diwizi.com/ppc-audit.html
@@ -382,6 +394,7 @@ def publish_image_post(image_url, caption_ig_fb, caption_linkedin, first_comment
             "facebook": {"format": "post", "page_id": FB_PAGE_ID},
         },
     }
+    # first_comment is deliberately IG/FB only -- see LINK PLACEMENT in the docstring.
     if first_comment:
         social["platforms"]["instagram"]["first_comment"] = first_comment
         social["platforms"]["facebook"]["first_comment"] = first_comment
