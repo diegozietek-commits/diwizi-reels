@@ -61,7 +61,10 @@ ACCENTS = {
     "amber": CHARCOAL_SOFT,
     "indigo": CHARCOAL,
 }
-ACCENT_ORDER = ["magenta", "charcoal", "magenta", "charcoal_soft"]
+# Sober-first rotation (Diego, 2026-08-09). Charcoal tones lead; magenta appears as a full card
+# background only occasionally, and even then magenta is mostly a DETAIL colour (rule, dot, CTA)
+# rather than a 44%-of-frame fill. Rotate with n % 4 as before.
+ACCENT_ORDER = ["charcoal", "charcoal_soft", "charcoal", "magenta"]
 
 # Curated, verified-working royalty-free Pexels photos (no API key needed -- images.pexels.com
 # is reachable from this environment; most other stock hosts, e.g. picsum/unsplash/pixabay/imgur,
@@ -195,26 +198,37 @@ def logo_width(fontsize=46):
     return f.getlength("diwizi.")
 
 
-def build_image_card(out_path, photo_path, hook, points, cta, accent_name="magenta"):
-    """Real photo on top ~55%, solid accent-color card on bottom with hook/points/cta.
-    Use for blog-promo / tip / consulting-offer content."""
+def build_image_card(out_path, photo_path, hook, points, cta, accent_name="charcoal"):
+    """Real photo on top ~56%, sober card on the bottom with hook/points/cta.
+
+    SOBER TREATMENT (Diego, 2026-08-09: "nao quero mais fundo vermelho, quero algo mais sobrio").
+    The card used to be a full-bleed saturated magenta block covering 44% of the frame, which
+    read as loud and, more to the point, is not how diwizi.com uses colour: the site is cream and
+    charcoal with magenta as a SMALL accent. So the card body now defaults to charcoal and magenta
+    survives as detail only -- a short rule above the hook, the logo dot, and the CTA text. Pass
+    accent_name="magenta" only when a post genuinely wants the loud version.
+    """
     W, H = 1080, 1350
     accent = ACCENTS[accent_name]
+    # Magenta stays legible on charcoal; on a magenta card the rule/CTA must switch to cream.
+    detail = CREAM if accent_name.startswith("magenta") else BRAND_MAGENTA
     CARD_Y = 760
     draws = [
         f"drawbox=x=0:y=0:w={W}:h=170:color=0x000000@0.32:t=fill",
         *logo_draws(70, 70, fontsize=46, color=WHITE),
         f"drawbox=x=0:y={CARD_Y}:w={W}:h={H-CARD_Y}:color={accent}:t=fill",
-        _dt(SERIF_BOLD, hook, fontcolor=WHITE, fontsize=58, x=70, y=CARD_Y + 45, line_spacing=8),
+        f"drawbox=x=70:y={CARD_Y + 44}:w=88:h=6:color={detail}:t=fill",
+        _dt(SERIF_BOLD, hook, fontcolor=WHITE, fontsize=58, x=70, y=CARD_Y + 78, line_spacing=8),
     ]
     # Bullets start below however many lines the hook actually took -- a fixed offset let a 2-line
     # hook collide with the first bullet.
     hook_lines = hook.count("\n") + 1
-    y0, gap = CARD_Y + 45 + hook_lines * 66 + 42, 62
+    y0, gap = CARD_Y + 78 + hook_lines * 66 + 40, 60
     for i, p in enumerate(points):
-        draws.append(_dt(SANS, p, fontcolor=CREAM, fontsize=34, x=70, y=y0 + i * gap))
+        draws.append(_dt(SANS, p, fontcolor=CREAM, fontsize=33, x=70, y=y0 + i * gap))
     draws.append(
-        _dt(SANS, cta, fontcolor=accent, fontsize=34, box=1, boxcolor=f"{WHITE}@0.95", boxborderw=20, x=70, y=H - 95)
+        _dt(SANS, cta, fontcolor=detail if detail != CREAM else accent, fontsize=33,
+            box=1, boxcolor=f"{CREAM}@0.97", boxborderw=18, x=70, y=H - 92)
     )
     vf = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}," + ",".join(draws)
     cmd = ["ffmpeg", "-y", "-i", photo_path, "-vf", vf, "-frames:v", "1", out_path]
@@ -310,6 +324,24 @@ def list_recent_posts(per_page=20):
     d = pp_get("/api/posts", {"page": 1, "per_page": per_page})
     return d.get("data", [])
 
+
+# CONTENT MIX (Diego, 2026-08-09). The routine spec rotates blog promo / tip / consulting offer,
+# which is all bottom-of-funnel and reads as a sales feed. Diego asked for "estatisticas ou algo
+# mais amigavel, curiosidades talvez" -- so treat these two as first-class post types and work them
+# into the rotation, not as an afterthought:
+#
+#   [Stat]      One striking, SOURCED number about search, ads or buyer behaviour, with the
+#               so-what underneath. Never invent a figure and never round someone else's up. Cite
+#               the source on the image or in the caption. Diwizi's own case-study numbers
+#               (44% CPA reduction, 46% avg CPA reduction, 600% SQL growth in 8 months) are fair
+#               game and are verifiable on diwizi.com, but do not reuse the same one repeatedly.
+#   [Curiosity] A genuinely interesting piece of the industry's plumbing or history: why Quality
+#               Score exists, what the first paid search auction looked like, why broad match
+#               behaves the way it does, how an auction actually resolves. Useful and shareable
+#               without asking for anything.
+#
+# These earn follows from people who are not ready to buy yet, which the pure offer posts do not.
+# Keep the same voice and the same sober visuals.
 
 def count_diwizi_runs(pages=5):
     """Number of Diwizi image-post RUNS so far -- the correct parity source for choosing
