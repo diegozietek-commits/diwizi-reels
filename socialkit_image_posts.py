@@ -506,3 +506,54 @@ def publish_image_post(image_url, caption_ig_fb, caption_linkedin, first_comment
     r_social = pp_post("/api/posts", social)
     r_linkedin = pp_post("/api/posts", linkedin)
     return r_social, r_linkedin
+
+
+# --- Reels (1080x1920 vertical video) ---
+# Diwizi reels stopped after 2026-07-31 and no Reels routine exists in the account any more
+# (checked 2026-08-15). The two that did run were a STATIC frame held for 15s with no motion at
+# all, pre-dating the brand fixes, and one bullet ran off the right edge. If reels come back they
+# should be actual video: a slow Ken Burns push on a real photo, text beats that appear over time
+# so there is a reason to keep watching, and the corrected serif logo lockup.
+def build_reel(out_path, photo_path, hook, points, cta, accent_name="charcoal", seconds=15):
+    """1080x1920 h264+silent-aac reel. Hook holds from the start, each point fades in on its own
+    beat, CTA lands at the end. Returns (ok, stderr_tail)."""
+    W, H, FPS = 1080, 1920, 30
+    frames = seconds * FPS
+    accent = ACCENTS[accent_name]
+    detail = CREAM if accent_name.startswith("magenta") else BRAND_MAGENTA
+
+    # Ken Burns: oversample first so the zoom does not soften the image, then zoompan down to 1080p.
+    motion = (f"scale={W*3//2}:{H*3//2}:force_original_aspect_ratio=increase,crop={W*3//2}:{H*3//2},"
+              f"zoompan=z='min(1+0.00045*on,1.12)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+              f":d={frames}:s={W}x{H}:fps={FPS}")
+
+    # Legibility scrim over the whole frame, heavier where the text sits.
+    draws = [
+        f"drawbox=x=0:y=0:w={W}:h={H}:color=0x000000@0.42:t=fill",
+        f"drawbox=x=0:y={H-560}:w={W}:h=560:color={accent}@0.92:t=fill",
+        *logo_draws(70, 90, fontsize=52, color=WHITE),
+    ]
+    # Hook enters almost immediately and stays.
+    draws.append(_dt(SERIF_BOLD, hook, fontcolor=WHITE, fontsize=76, x=70, y=330,
+                     line_spacing=14, alpha="'if(lt(t,0.4),0,min((t-0.4)/0.5,1))'"))
+    # Points accumulate, one per beat, so the viewer has a reason to stay to the end.
+    first_beat, beat = 2.2, 2.6
+    rule_y = H - 560 + 48
+    draws.append(f"drawbox=x=70:y={rule_y}:w=88:h=6:color={detail}:t=fill")
+    for i, p in enumerate(points):
+        t0 = first_beat + i * beat
+        draws.append(_dt(SANS, p, fontcolor=CREAM, fontsize=42, x=70, y=rule_y + 60 + i * 82,
+                         alpha=f"'if(lt(t,{t0}),0,min((t-{t0})/0.45,1))'"))
+    cta_t = first_beat + len(points) * beat
+    draws.append(_dt(SANS, cta, fontcolor=accent if detail == CREAM else detail, fontsize=40,
+                     box=1, boxcolor=f"{CREAM}@0.97", boxborderw=20, x=70, y=H - 150,
+                     alpha=f"'if(lt(t,{cta_t}),0,min((t-{cta_t})/0.4,1))'"))
+
+    vf = motion + "," + ",".join(draws)
+    cmd = ["ffmpeg", "-y", "-loop", "1", "-i", photo_path,
+           "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+           "-vf", vf, "-t", str(seconds), "-r", str(FPS),
+           "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-pix_fmt", "yuv420p",
+           "-c:a", "aac", "-b:a", "96k", "-shortest", "-movflags", "+faststart", out_path]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    return r.returncode == 0, r.stderr[-3000:]
