@@ -514,7 +514,8 @@ def publish_image_post(image_url, caption_ig_fb, caption_linkedin, first_comment
 # all, pre-dating the brand fixes, and one bullet ran off the right edge. If reels come back they
 # should be actual video: a slow Ken Burns push on a real photo, text beats that appear over time
 # so there is a reason to keep watching, and the corrected serif logo lockup.
-def build_reel(out_path, photo_path, hook, points, cta, accent_name="charcoal", seconds=15):
+def build_reel(out_path, photo_path, hook, points, cta, accent_name="charcoal", seconds=15,
+               audio_path=None):
     """1080x1920 h264+silent-aac reel. Hook holds from the start, each point fades in on its own
     beat, CTA lands at the end. Returns (ok, stderr_tail)."""
     W, H, FPS = 1080, 1920, 30
@@ -550,10 +551,98 @@ def build_reel(out_path, photo_path, hook, points, cta, accent_name="charcoal", 
                      alpha=f"'if(lt(t,{cta_t}),0,min((t-{cta_t})/0.4,1))'"))
 
     vf = motion + "," + ",".join(draws)
-    cmd = ["ffmpeg", "-y", "-loop", "1", "-i", photo_path,
-           "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+    audio_in = (["-i", audio_path] if audio_path
+                else ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"])
+    cmd = ["ffmpeg", "-y", "-loop", "1", "-i", photo_path, *audio_in,
            "-vf", vf, "-t", str(seconds), "-r", str(FPS),
            "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-pix_fmt", "yuv420p",
            "-c:a", "aac", "-b:a", "96k", "-shortest", "-movflags", "+faststart", out_path]
     r = subprocess.run(cmd, capture_output=True, text=True)
     return r.returncode == 0, r.stderr[-3000:]
+
+
+# --- Reel audio ---
+# Diego asked for "soft sound, different in each reel" (2026-08-15). The audio is SYNTHESISED here
+# rather than fetched: Instagram's own music library is not reachable through the PostProxy API,
+# and any real track would be a licensing problem on a commercial account. Generated tones are
+# original by construction, so there is nothing to clear and nothing to get muted for.
+# Each variant is a soft sustained chord with slow tremolo, low-passed and long-faded so it sits
+# under the video instead of demanding attention. Pick variant = run_index % len(AUDIO_VARIANTS)
+# so consecutive reels never share a bed.
+AUDIO_VARIANTS = [
+    {"name": "amin",  "root": 220.00, "ratios": [1, 1.1892, 1.4983, 2.0], "trem": 0.16},  # A minor
+    {"name": "fmaj",  "root": 174.61, "ratios": [1, 1.2599, 1.4983, 2.0], "trem": 0.13},  # F major
+    {"name": "dmin",  "root": 146.83, "ratios": [1, 1.1892, 1.4983, 2.0], "trem": 0.19},  # D minor
+    {"name": "cmaj",  "root": 130.81, "ratios": [1, 1.2599, 1.4983, 2.0], "trem": 0.11},  # C major
+    {"name": "gsus",  "root": 196.00, "ratios": [1, 1.3348, 1.4983, 2.0], "trem": 0.15},  # G sus4
+    {"name": "emin",  "root": 164.81, "ratios": [1, 1.1892, 1.4983, 2.0], "trem": 0.17},  # E minor
+    {"name": "bbmaj", "root": 233.08, "ratios": [1, 1.2599, 1.4983, 2.0], "trem": 0.12},  # Bb major
+    {"name": "asus",  "root": 220.00, "ratios": [1, 1.3348, 1.4983, 1.7818], "trem": 0.14},  # A sus4
+]
+
+
+def build_audio_bed(out_path, seconds=15, variant=0):
+    """Soft original ambient bed. Returns (ok, name, stderr_tail)."""
+    v = AUDIO_VARIANTS[variant % len(AUDIO_VARIANTS)]
+    freqs = [v["root"] * r for r in v["ratios"]]
+    cmd = ["ffmpeg", "-y"]
+    for f in freqs:
+        cmd += ["-f", "lavfi", "-i", f"sine=frequency={f:.2f}:duration={seconds}"]
+    # Detuned twin on the root gives a slow beating shimmer instead of a dead static tone.
+    cmd += ["-f", "lavfi", "-i", f"sine=frequency={freqs[0]*1.004:.2f}:duration={seconds}"]
+    n = len(freqs) + 1
+    # Level: "soft" still has to be audible on a phone speaker. At volume=0.10 this measured a
+    # mean of -40 dB, which is effectively silence in a feed. 0.80 plus a limiter lands around
+    # -22 dB mean / -8 dB peak: present underneath the video, never competing with it.
+    chain = (f"amix=inputs={n}:duration=longest:normalize=0,"
+             f"volume=0.80,"
+             f"tremolo=f={v['trem']}:d=0.35,"
+             f"lowpass=f=1200,"
+             f"alimiter=limit=0.89,"
+             f"afade=t=in:st=0:d=2.5,afade=t=out:st={seconds-3}:d=3")
+    cmd += ["-filter_complex", "".join(f"[{i}:a]" for i in range(n)) + chain + "[a]",
+            "-map", "[a]", "-c:a", "pcm_s16le", "-ar", "44100", "-ac", "2", out_path]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    return r.returncode == 0, v["name"], r.stderr[-2000:]
+
+
+def publish_reel(video_url, caption, first_comment=None):
+    """Reels go to INSTAGRAM ONLY (Diego, 2026-08-15: "reels only on instagram 3x week").
+    Not Facebook, not LinkedIn. LinkedIn has no reel format at all, and the Facebook page keeps
+    getting the image posts from the other routine, so pushing reels there too would double up.
+    Link still goes in the FIRST COMMENT, same convention as the image posts.
+    """
+    payload = {
+        "post": {"body": caption},
+        "profiles": [IG_PROFILE],
+        "media": [video_url],
+        "platforms": {"instagram": {"format": "reel"}},
+    }
+    if first_comment:
+        payload["platforms"]["instagram"]["first_comment"] = first_comment
+    return pp_post("/api/posts", payload)
+
+
+# --- Reel topic ledger: reels must never repeat what the image posts already said ---
+REEL_TOPICS_PATH = os.path.join(GITHUB_WORKSPACE, "reel_topics.json")
+
+
+def load_reel_topics():
+    try:
+        with open(REEL_TOPICS_PATH) as f:
+            return json.load(f)
+    except (FileNotFoundError, ValueError):
+        return []
+
+
+def record_reel_topic(slug, date, angle, audio_variant, note=""):
+    entries = load_reel_topics()
+    entries.append({"slug": slug, "date": date, "angle": angle,
+                    "audio_variant": audio_variant, "note": note})
+    with open(REEL_TOPICS_PATH, "w") as f:
+        json.dump(entries, f, indent=1)
+    return entries
+
+
+def reel_slug_used(slug):
+    return any(e["slug"] == slug for e in load_reel_topics())
