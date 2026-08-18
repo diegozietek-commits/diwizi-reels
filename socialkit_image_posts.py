@@ -393,7 +393,7 @@ def list_recent_posts(per_page=20):
 # These earn follows from people who are not ready to buy yet, which the pure offer posts do not.
 # Keep the same voice and the same sober visuals.
 
-def count_diwizi_runs(pages=5):
+def count_diwizi_runs(pages=8):
     """Number of Diwizi image-post RUNS so far -- the correct parity source for choosing
     card vs meme style and the accent index.
 
@@ -422,8 +422,16 @@ def count_diwizi_runs(pages=5):
         body = (p.get("body") or "").lower()
         if any(k in body for k in other_client) or not any(k in body for k in ours):
             continue
-        if "instagram" in [x["platform"] for x in p.get("platforms", [])]:
-            runs.append(p)
+        # Count the IMAGE-POST run only: exactly one Instagram entry per run, and its format must
+        # be "post". Excluding "reel" matters since the reels routine went live on 2026-08-15 --
+        # it also publishes Diwizi PPC content to the same Instagram profile, so counting reels
+        # here would inflate n and freeze the card/meme alternation, exactly the way the LinkedIn
+        # twinning did. The first reel (Quality Score, 2026-08-17) only escaped this by keyword
+        # accident; the next one mentioning "Google Ads" would not have.
+        for x in p.get("platforms", []):
+            if x["platform"] == "instagram" and x.get("params", {}).get("format") == "post":
+                runs.append(p)
+                break
     return len(runs)
 
 
