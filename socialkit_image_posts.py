@@ -574,42 +574,71 @@ def build_reel(out_path, photo_path, hook, points, cta, accent_name="charcoal", 
 # rather than fetched: Instagram's own music library is not reachable through the PostProxy API,
 # and any real track would be a licensing problem on a commercial account. Generated tones are
 # original by construction, so there is nothing to clear and nothing to get muted for.
-# Each variant is a soft sustained chord with slow tremolo, low-passed and long-faded so it sits
-# under the video instead of demanding attention. Pick variant = run_index % len(AUDIO_VARIANTS)
-# so consecutive reels never share a bed.
+# Pick variant = run_index % len(AUDIO_VARIANTS) so consecutive reels never share a bed.
 AUDIO_VARIANTS = [
-    {"name": "amin",  "root": 220.00, "ratios": [1, 1.1892, 1.4983, 2.0], "trem": 0.16},  # A minor
-    {"name": "fmaj",  "root": 174.61, "ratios": [1, 1.2599, 1.4983, 2.0], "trem": 0.13},  # F major
-    {"name": "dmin",  "root": 146.83, "ratios": [1, 1.1892, 1.4983, 2.0], "trem": 0.19},  # D minor
-    {"name": "cmaj",  "root": 130.81, "ratios": [1, 1.2599, 1.4983, 2.0], "trem": 0.11},  # C major
-    {"name": "gsus",  "root": 196.00, "ratios": [1, 1.3348, 1.4983, 2.0], "trem": 0.15},  # G sus4
-    {"name": "emin",  "root": 164.81, "ratios": [1, 1.1892, 1.4983, 2.0], "trem": 0.17},  # E minor
-    {"name": "bbmaj", "root": 233.08, "ratios": [1, 1.2599, 1.4983, 2.0], "trem": 0.12},  # Bb major
-    {"name": "asus",  "root": 220.00, "ratios": [1, 1.3348, 1.4983, 1.7818], "trem": 0.14},  # A sus4
+    {"name": "amin",  "root": 220.00, "ratios": [1, 1.1892, 1.4983, 2.0]},  # A minor
+    {"name": "fmaj",  "root": 174.61, "ratios": [1, 1.2599, 1.4983, 2.0]},  # F major
+    {"name": "dmin",  "root": 146.83, "ratios": [1, 1.1892, 1.4983, 2.0]},  # D minor
+    {"name": "cmaj",  "root": 130.81, "ratios": [1, 1.2599, 1.4983, 2.0]},  # C major
+    {"name": "gsus",  "root": 196.00, "ratios": [1, 1.3348, 1.4983, 2.0]},  # G sus4
+    {"name": "emin",  "root": 164.81, "ratios": [1, 1.1892, 1.4983, 2.0]},  # E minor
+    {"name": "bbmaj", "root": 233.08, "ratios": [1, 1.2599, 1.4983, 2.0]},  # Bb major
+    {"name": "asus",  "root": 220.00, "ratios": [1, 1.3348, 1.4983, 1.7818]},  # A sus4
 ]
 
 
 def build_audio_bed(out_path, seconds=15, variant=0):
-    """Soft original ambient bed. Returns (ok, name, stderr_tail)."""
+    """Soft original ambient PAD -- a gentle arpeggio through the chord tones, not a held drone.
+
+    v1 of this held all 4-5 chord tones as raw sine waves for the full 15s at once, with a slow
+    tremolo and a closely-detuned twin on the root. Diego flagged it as sounding like noise
+    (2026-08-19). It measured fine on level (no clipping) but the actual sound design was the
+    problem: a static wash of pure sine tones with a slow amplitude wobble reads as an eerie
+    test-tone drone, not music -- there was no melodic or rhythmic movement at all.
+
+    This version plays the chord tones one at a time in a slow up-down arpeggio (each note has
+    its own soft attack/release envelope so they ring and overlap into the next one, legato, not
+    staccato), under a very quiet sustained low root for glue. A short chorus + slap-echo gives
+    the mix a warmer, more instrument-like timbre instead of bare sine tones. Returns
+    (ok, name, stderr_tail)."""
     v = AUDIO_VARIANTS[variant % len(AUDIO_VARIANTS)]
-    freqs = [v["root"] * r for r in v["ratios"]]
-    cmd = ["ffmpeg", "-y"]
-    for f in freqs:
-        cmd += ["-f", "lavfi", "-i", f"sine=frequency={f:.2f}:duration={seconds}"]
-    # Detuned twin on the root gives a slow beating shimmer instead of a dead static tone.
-    cmd += ["-f", "lavfi", "-i", f"sine=frequency={freqs[0]*1.004:.2f}:duration={seconds}"]
-    n = len(freqs) + 1
-    # Level: "soft" still has to be audible on a phone speaker. At volume=0.10 this measured a
-    # mean of -40 dB, which is effectively silence in a feed. 0.80 plus a limiter lands around
-    # -22 dB mean / -8 dB peak: present underneath the video, never competing with it.
-    chain = (f"amix=inputs={n}:duration=longest:normalize=0,"
-             f"volume=0.80,"
-             f"tremolo=f={v['trem']}:d=0.35,"
-             f"lowpass=f=1200,"
-             f"alimiter=limit=0.89,"
-             f"afade=t=in:st=0:d=2.5,afade=t=out:st={seconds-3}:d=3")
-    cmd += ["-filter_complex", "".join(f"[{i}:a]" for i in range(n)) + chain + "[a]",
-            "-map", "[a]", "-c:a", "pcm_s16le", "-ar", "44100", "-ac", "2", out_path]
+    notes = [v["root"] * r for r in v["ratios"]]
+    pattern = [0, 1, 2, 3, 2, 1]  # gentle rise-and-fall through the chord tones
+    note_interval, note_len = 1.35, 2.6  # notes overlap (2.6s ring, 1.35s apart) -> legato
+    attack, release = 0.35, 2.0
+    n_notes = int(seconds / note_interval) + 1
+    pad_freq = v["root"] / 2  # sustained low octave under the arpeggio, for glue
+
+    inputs = ["-f", "lavfi", "-i", f"sine=frequency={pad_freq:.2f}:duration={seconds}"]
+    chain = [f"[0:a]volume=0.16,afade=t=in:st=0:d=3,afade=t=out:st={seconds - 3}:d=3[pad]"]
+    labels = ["[pad]"]
+    for i in range(n_notes):
+        freq = notes[pattern[i % len(pattern)]]
+        idx = i + 1
+        inputs += ["-f", "lavfi", "-i", f"sine=frequency={freq:.2f}:duration={note_len}"]
+        delay_ms = int(round(i * note_interval * 1000))
+        chain.append(
+            f"[{idx}:a]volume=0.4,"
+            f"afade=t=in:st=0:d={attack},afade=t=out:st={note_len - release}:d={release},"
+            f"adelay={delay_ms}:all=1[n{i}]"
+        )
+        labels.append(f"[n{i}]")
+    mix = "".join(labels) + f"amix=inputs={len(labels)}:duration=longest:normalize=0[mix]"
+    # normalize=0 (raw sum) because the arpeggio rarely has more than 2-3 notes ringing at once,
+    # unlike the old static chord -- so a fixed makeup gain below is safe and stays predictable
+    # across variants instead of amix's normalize=1 quietly rescaling by input count.
+    post = (
+        "[mix]chorus=0.5:0.9:55:0.4:0.25:2,"
+        "aecho=0.7:0.6:80:0.25,"
+        "lowpass=f=3800,"
+        "volume=13.0,"
+        "alimiter=limit=0.9,"
+        f"afade=t=in:st=0:d=1.5,afade=t=out:st={seconds - 2.5}:d=2.5[a]"
+    )
+    filter_complex = ";".join(chain + [mix, post])
+    cmd = ["ffmpeg", "-y", *inputs, "-filter_complex", filter_complex,
+           "-map", "[a]", "-t", str(seconds),
+           "-c:a", "pcm_s16le", "-ar", "44100", "-ac", "2", out_path]
     r = subprocess.run(cmd, capture_output=True, text=True)
     return r.returncode == 0, v["name"], r.stderr[-2000:]
 
