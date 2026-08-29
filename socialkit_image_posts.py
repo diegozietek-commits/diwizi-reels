@@ -435,6 +435,18 @@ def count_diwizi_runs(pages=8):
     return len(runs)
 
 
+# NEVER "PROBE" THE QUOTA WITH A REAL POST (learned the hard way 2026-08-29).
+# During the 120/120 plan block, each run tested whether publishing had resumed by POSTing a
+# throwaway body ("quota probe"). While blocked that is harmless: the API 403s and nothing is
+# created. The moment the limit cleared, the same call returned 201 and PostProxy SCHEDULED a
+# post reading "quota probe" to the live Diwizi Instagram. It was deleted via
+# DELETE /api/posts/<id> seconds later and never went out, but it came far too close.
+# PostProxy has no dry-run. To test whether publishing works, just attempt the REAL post: if it
+# is blocked you get a 403 and lose nothing, and if it succeeds you wanted it published anyway.
+# If a throwaway post ever does get created, DELETE /api/posts/<id> returns {"deleted": true}
+# and works while the post is still "scheduled"/"pending".
+
+
 def publish_image_post(image_url, caption_ig_fb, caption_linkedin, first_comment=None):
     """Publica a MESMA imagem com textos DIFERENTES por plataforma.
 
