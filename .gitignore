@@ -1,0 +1,5 @@
+# Python bytecode cache. Generated on every run when the routines import
+# socialkit_image_posts.py from inside this directory to write the ledgers.
+# It is a build artifact, never source, and must not be committed.
+__pycache__/
+*.pyc
