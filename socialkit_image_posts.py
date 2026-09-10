@@ -563,11 +563,14 @@ def build_reel(out_path, photo_path, hook, points, cta, accent_name="charcoal", 
     draws.append(f"drawbox=x=70:y={rule_y}:w=88:h=6:color={detail}:t=fill")
     for i, p in enumerate(points):
         t0 = first_beat + i * beat
-        draws.append(_dt(SANS, p, fontcolor=CREAM, fontsize=42, x=70, y=rule_y + 60 + i * 82,
+        draws.append(_dt(SANS, p, fontcolor=CREAM, fontsize=42, x=70, y=rule_y + 60 + i * 76,
                          alpha=f"'if(lt(t,{t0}),0,min((t-{t0})/0.45,1))'"))
+    # Point step is 76, not 82, and the CTA sits at H-140: with four points the old numbers
+    # put the last line's descenders under the CTA box border (seen on the dental reel,
+    # 2026-09-10). Four points is the practical maximum for this panel.
     cta_t = first_beat + len(points) * beat
     draws.append(_dt(SANS, cta, fontcolor=accent if detail == CREAM else detail, fontsize=40,
-                     box=1, boxcolor=f"{CREAM}@0.97", boxborderw=20, x=70, y=H - 150,
+                     box=1, boxcolor=f"{CREAM}@0.97", boxborderw=20, x=70, y=H - 140,
                      alpha=f"'if(lt(t,{cta_t}),0,min((t-{cta_t})/0.4,1))'"))
 
     vf = motion + "," + ",".join(draws)
