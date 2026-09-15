@@ -554,7 +554,14 @@ def build_reel(out_path, photo_path, hook, points, cta, accent_name="charcoal", 
         f"drawbox=x=0:y={H-560}:w={W}:h=560:color={accent}@0.92:t=fill",
         *logo_draws(70, 90, fontsize=52, color=WHITE),
     ]
-    # Hook enters almost immediately and stays.
+    # Hook enters almost immediately and stays. It occupies roughly y=330 to y=600 at three lines,
+    # so ANY photo whose subject sits high in the frame gets the headline written across its face.
+    # A landscape shot has the separate problem that zoompan bores into its middle (dental chair,
+    # 2026-09-10). Portrait does NOT make a photo safe: the roofing shot on 2026-09-15 was 1080x1620
+    # and still put "the quarter." across the worker's eyes. The fix for both is the same, and it is
+    # to pre-compose rather than to hunt for a different photo: paste the photo onto a 1080x1920
+    # charcoal canvas as a band between the hook and the text panel, y=620 to y=1360, cropping the
+    # source so the subject lands inside that band. Whatever you feed in, render it and LOOK at it.
     draws.append(_dt(SERIF_BOLD, hook, fontcolor=WHITE, fontsize=76, x=70, y=330,
                      line_spacing=14, alpha="'if(lt(t,0.4),0,min((t-0.4)/0.5,1))'"))
     # Points accumulate, one per beat, so the viewer has a reason to stay to the end.
