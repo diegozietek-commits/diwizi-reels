@@ -75,5 +75,12 @@
   "angle": "COMMERCIAL",
   "audio_variant": 10,
   "note": "Angle: WHO IT FITS (Sep 12 what-is-included, Sep 15 problem-first, so the rotation is back at the top). First run under Diego's 2026-09-16 voice rule: n=10, n%5=0, so FIRST PERSON was mandatory. LinkedIn 3 first-person hits, caption 2, zero we/our/us. Fit criteria taken from the page: already spending, wants the senior person in the account, prefers a flat fee to a percentage of spend, wants to own the account and data. Non-fit: a business not yet spending, since there is no search term history to manage. No figures used. Reel 1RtX4E2 (IG+FB, silent, 24s), LinkedIn Djtk0a3 org 28874141. Budget 79 of 120. NOTE for the next run: the voice check as written in the prompt targets the LinkedIn post and the caption. Do not assert the first-person minimum on the first comment, which is a bare link pointer and will never contain 'I'; the we/our/us ban does apply to it. Deliberately avoided reusing the Sep 12 freelance hook shape ('One person. Start to finish.'), since that offer overlaps this one. Next commercial angle: what is actually included."
+ },
+ {
+  "slug": "agency-fee-structure-incentive-alignment",
+  "date": "2026-09-18",
+  "angle": "AGENCY",
+  "audio_variant": 11,
+  "note": "Third AGENCY-pillar post (wheel slot 11/20). Angle: HOW THE AGENCY IS PAID shapes the advice you get, distinct from the two prior AGENCY posts (Sep 14: which metrics a report should lead with; Sep 16: report must explain why CPA moved). This one: percentage-of-spend fee (10-20% of spend, cited from diwizi.com/blog/ppc-agency-guide.html) can bias 'increase budget' advice; flat retainer removes that one bias. First-person voice slot (n%5=1, mandatory). Linked to the ppc-agency-guide.html blog article as further reading (not a BLOG pillar run itself). Unused blog insights for a future BLOG-pillar run mining the same article: performance-based fee model (CPL/ROAS-tied, requires tracking+trust, rare); the 'critical questions to ask before hiring' section; and the link to the separate ppc-service-pricing article for full numbers."
  }
 ]
