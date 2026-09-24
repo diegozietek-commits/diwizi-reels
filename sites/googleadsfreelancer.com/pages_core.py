@@ -22,12 +22,12 @@ PAGES = [
 <section id="services"><div class="wrap">
 <h2>Services you can hire</h2>
 <div class="cols">
-<div class="card"><h3><a href="/google-ads-management/">Google Ads management</a></h3><p>Month-to-month management of Search, Shopping, Performance Max and YouTube. Tracking and landing pages in scope.</p><p class="price">From <b>${{retainer_usd}}/month</b> · flat fee, no contract term</p></div>
-<div class="card"><h3><a href="/google-ads-audit/">Google Ads audit</a></h3><p>A paid, independent review with fixes ranked by impact. Written report you keep, credited against the first month if you continue.</p><p class="price">Fixed price from <b>${{audit_usd}}</b></p></div>
-<div class="card"><h3><a href="/google-ads-setup/">Setup and conversion tracking</a></h3><p>A new account or a rebuild, with tracking that works from day one. Run it yourself afterwards or hand it back to me.</p><p class="price">Setup from <b>${{setup_usd}}</b> · tracking from <b>${{tracking_usd}}</b></p></div>
-<div class="card"><h3><a href="/google-ads-consultant/">Consulting and advisory</a></h3><p>Strategy, a second opinion on an agency, or standing sessions with your in-house team. No need to move the account.</p><p class="price"><b>${{consulting_hour_usd}}/hour</b> or fixed price per deliverable</p></div>
+<div class="card"><h3><a href="/google-ads-management/">Google Ads management</a></h3><p>Month-to-month management of Search, Shopping, Performance Max and YouTube. Tracking and landing pages in scope.</p><p class="price"><b>Flat monthly fee</b> · set by scope, not by ad spend · no contract term</p></div>
+<div class="card"><h3><a href="/google-ads-audit/">Google Ads audit</a></h3><p>A paid, independent review with fixes ranked by impact. Written report you keep, credited against the first month if you continue.</p><p class="price"><b>Fixed price</b> · quoted on the first call · credited against month one</p></div>
+<div class="card"><h3><a href="/google-ads-setup/">Setup and conversion tracking</a></h3><p>A new account or a rebuild, with tracking that works from day one. Run it yourself afterwards or hand it back to me.</p><p class="price"><b>Fixed price</b> · scoped by platforms and tracking complexity</p></div>
+<div class="card"><h3><a href="/google-ads-consultant/">Consulting and advisory</a></h3><p>Strategy, a second opinion on an agency, or standing sessions with your in-house team. No need to move the account.</p><p class="price"><b>Hourly</b> for standing advisory · <b>fixed price</b> per deliverable</p></div>
 </div>
-<p>Prices are starting points in US dollars; UK and Irish clients are quoted in pounds or euros. Ad spend is paid by you, directly to the platforms. Full detail on the <a href="/pricing/">pricing page</a>.</p>
+<p>Every engagement is quoted after a short call, in US dollars, pounds or euros. Never a percentage of ad spend, which you pay directly to the platforms. How each model works is on the <a href="/pricing/">pricing page</a>.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -73,7 +73,7 @@ PAGES = [
 </div></section>
 """,
 "faq": [
-("How much does a Google Ads freelancer cost?", "Management starts at ${{retainer_usd}} a month as a flat fee, not tied to ad spend, and scales with scope. An audit is a fixed price from ${{audit_usd}}, credited against the first month if you continue. No twelve-month contract. The <a href=\"/pricing/\">pricing page</a> has the detail."),
+("How much does a Google Ads freelancer cost?", "Management is a flat monthly fee set by scope, not tied to ad spend. An audit is a fixed price quoted on the first call and credited against the first month if you continue. No twelve-month contract. The <a href=\"/pricing/\">pricing page</a> explains how each model behaves and what to ask before you sign with anyone."),
 ("What is the minimum ad spend you work with?", "No hard minimum, but the retainer only makes sense once the account spends enough for the fee to be a small share of the total; in practice from about $3,000 a month. Below that, a one-off setup or audit is the better buy."),
 ("Who owns the Google Ads account, the tags and the landing pages?", "You do, always. I work inside your accounts with manager access. Nothing is built in a container I control, so leaving me never means starting over."),
 ("Do you work with clients outside the United States?", "Yes. Most clients are in the US, Canada, the United Kingdom and Ireland. I work remotely from Curitiba, Brazil, which overlaps most of the working day in both regions."),
@@ -262,9 +262,9 @@ PAGES = [
 "meta": "What PPC consultants and Google Ads freelancers actually charge: percentage of spend, flat retainer and hourly compared, plus how I price audits and month-to-month management.",
 "kicker": "Pricing",
 "h1": "What Google Ads freelancers and PPC consultants actually charge",
-"lead": "Starting prices for audits, management, setup and consulting, plus the three ways this industry charges and where each one quietly works against you.",
+"lead": "The three ways this industry charges and where each one quietly works against you, what the market typically costs, and how I price audits, management and consulting.",
 "service_name": "Google Ads management pricing",
-"proof": [("${{audit_usd}}", "audit, fixed price"), ("${{retainer_usd}}/mo", "management, from"), ("${{consulting_hour_usd}}/h", "consulting"), ("0", "percentage of spend")],
+"proof": [("Fixed", "price audits"), ("Flat", "monthly retainers"), ("0", "percentage of spend"), ("0", "month contract term")],
 "body": """
 <section><div class="wrap">
 <h2>The three models, and the catch in each</h2>
@@ -291,19 +291,19 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>How I price</h2>
-<p>Starting points in US dollars, with pounds for UK clients. Every engagement is quoted after a short call, because the scope decides the number; these are the floors, not estimates.</p>
+<p>Every engagement is quoted after a short call, in US dollars, pounds or euros, because the scope decides the number: monthly spend, number of platforms and markets, and whether tracking has to be rebuilt. What you can rely on before the call is the model.</p>
 <table>
-<tr><th>Engagement</th><th>Price</th><th>What is included</th></tr>
-<tr><td><a href="/google-ads-audit/">Google Ads audit</a></td><td>From <b>${{audit_usd}}</b> / £{{audit_gbp}}, fixed</td><td>Written report, fixes ranked by impact, walkthrough call. Credited against the first month of management.</td></tr>
-<tr><td><a href="/google-ads-management/">Management, up to ~$10K/month spend</a></td><td>From <b>${{retainer_usd}}</b> / £{{retainer_gbp}} per month</td><td>Weekly work, tracking maintained, landing page fixes, written monthly report. Month to month.</td></tr>
-<tr><td>Management, $10K to $50K/month spend</td><td>From <b>${{retainer_mid_usd}}</b> / £{{retainer_mid_gbp}} per month</td><td>Same scope with more campaigns, markets or platforms.</td></tr>
-<tr><td>Management, over $50K/month spend</td><td>From <b>${{retainer_top_usd}}</b> / £{{retainer_top_gbp}} per month</td><td>Multiple platforms and markets, weekly call, a fractional head of paid media rather than an operator. Above $150K, quoted per account.</td></tr>
-<tr><td><a href="/google-ads-setup/">Account setup</a></td><td>From <b>${{setup_usd}}</b> / £{{setup_gbp}}, fixed</td><td>Structure, ads, negatives, tracking, launch and handover document.</td></tr>
-<tr><td><a href="/conversion-tracking-setup/">Conversion tracking rebuild</a></td><td>From <b>${{tracking_usd}}</b> / £{{tracking_gbp}}, fixed</td><td>GA4, Tag Manager, enhanced and offline conversions, reconciliation report.</td></tr>
-<tr><td><a href="/google-ads-consultant/">Consulting and advisory</a></td><td><b>${{consulting_hour_usd}}</b> / £{{consulting_hour_gbp}} per hour</td><td>Strategy, second opinions and standing sessions with in-house teams. Fixed price for defined deliverables.</td></tr>
-<tr><td><a href="/white-label-ppc/">White label, per client account</a></td><td>From <b>${{whitelabel_usd}}</b> / £{{whitelabel_gbp}} per month</td><td>Volume pricing for several accounts. Your brand, your template.</td></tr>
+<tr><th>Engagement</th><th>Model</th><th>What is included</th></tr>
+<tr><td><a href="/google-ads-audit/">Google Ads audit</a></td><td>Fixed price, quoted up front</td><td>Written report, fixes ranked by impact, walkthrough call. Credited against the first month of management.</td></tr>
+<tr><td><a href="/google-ads-management/">Management, up to ~$10K/month spend</a></td><td>Flat monthly fee</td><td>Weekly work, tracking maintained, landing page fixes, written monthly report. Month to month.</td></tr>
+<tr><td>Management, $10K to $50K/month spend</td><td>Flat monthly fee, scaled by scope</td><td>Same scope with more campaigns, markets or platforms.</td></tr>
+<tr><td>Management, over $50K/month spend</td><td>Flat monthly fee, quoted per account</td><td>Multiple platforms and markets, weekly call, a fractional head of paid media rather than an operator.</td></tr>
+<tr><td><a href="/google-ads-setup/">Account setup</a></td><td>Fixed price</td><td>Structure, ads, negatives, tracking, launch and handover document.</td></tr>
+<tr><td><a href="/conversion-tracking-setup/">Conversion tracking rebuild</a></td><td>Fixed price</td><td>GA4, Tag Manager, enhanced and offline conversions, reconciliation report.</td></tr>
+<tr><td><a href="/google-ads-consultant/">Consulting and advisory</a></td><td>Hourly, or fixed price per deliverable</td><td>Strategy, second opinions and standing sessions with in-house teams.</td></tr>
+<tr><td><a href="/white-label-ppc/">White label, per client account</a></td><td>Flat monthly fee per account</td><td>Volume pricing for several accounts. Your brand, your template.</td></tr>
 </table>
-<p>None of these is a percentage of ad spend, so the advice to cut budget costs me nothing to give. Adding Microsoft Advertising to a Google retainer is a small increase; adding Meta with weekly creative testing is a larger one, agreed up front.</p>
+<p>None of these is a percentage of ad spend, so the advice to cut budget costs me nothing to give. Adding Microsoft Advertising to a Google retainer is a small increase; adding Meta with weekly creative testing is a larger one, agreed up front. Send your monthly spend and platforms by email and you get a range back the same day; a firm number needs a look at the account.</p>
 </div></section>
 
 <section><div class="wrap">

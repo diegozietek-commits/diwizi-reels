@@ -55,7 +55,7 @@ PAGES = [
 </div></section>
 """,
 "faq": [
-("How much do Google Ads management services cost?", "A flat monthly fee set by scope, not by ad spend, quoted after a fixed-price audit that is credited against the first month. For most accounts between $3,000 and $50,000 a month in spend the fee is a low-to-mid four-figure amount. The <a href=\"/pricing/\">pricing page</a> has ranges."),
+("How much do Google Ads management services cost?", "A flat monthly fee set by scope, not by ad spend, quoted after a fixed-price audit that is credited against the first month. Send your monthly spend and platforms and you get a range back by email; the <a href=\"/pricing/\">pricing page</a> explains the model."),
 ("How is a freelance Google Ads manager different from a management company?", "The person you speak to is the person in the account, every week. A management company assigns the account to whoever has capacity and puts an account manager between you. The freelance model trades scale for continuity and seniority."),
 ("Do you need a minimum ad spend?", "No fixed minimum, but below roughly $3,000 a month a retainer is usually poor value; a one-off <a href=\"/google-ads-setup/\">setup</a> or audit fits better."),
 ("How long until results show?", "Tracking and wasted-spend fixes show within the first month. Structural and testing gains take a quarter to read properly, because bidding algorithms need conversion volume to settle. Anyone promising a number in week two is guessing."),
