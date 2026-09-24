@@ -159,7 +159,7 @@ def faq_html(faq):
 
 
 def related_html(slug):
-    rel = BY_SLUG[slug].get("related", [])
+    rel = BY_SLUG.get(slug, {}).get("related", [])
     if not rel:
         return ""
     cards = "".join(
