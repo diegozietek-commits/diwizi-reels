@@ -23,11 +23,34 @@ LINKEDIN = "https://www.linkedin.com/in/diegozietek/"
 PARENT = "https://diwizi.com/"
 TODAY = date.today().isoformat()
 
+PRICES = {  # edit here; every page reads from this dict
+    "audit_usd": 1500, "audit_gbp": 1200,
+    "retainer_usd": 1500, "retainer_gbp": 1200,
+    "retainer_mid_usd": 2500, "retainer_mid_gbp": 2000,
+    "consulting_hour_usd": 200, "consulting_hour_gbp": 160,
+    "setup_usd": 1500, "setup_gbp": 1200,
+    "tracking_usd": 1200, "tracking_gbp": 950,
+    "whitelabel_usd": 1000, "whitelabel_gbp": 800,
+}
+PHOTO = os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"))
+
+PROOF_DEFAULT = [("14+", "years in paid media"), ("1", "person on your account"), ("Flat fee", "never a % of ad spend"), ("Yours", "accounts, tags and pages stay with you")]
+PROOF_GOOGLE = [("14+", "years in paid media"), ("44%", "lower CPA, Google Ads client case"), ("60%", "more qualified leads, same case"), ("Flat fee", "never a % of ad spend")]
+PROOF_BY_SLUG = {
+    "index": PROOF_GOOGLE, "google-ads-management": PROOF_GOOGLE, "freelance-ppc-consultant": PROOF_GOOGLE,
+    "small-business-ppc-management": PROOF_GOOGLE, "results": None, "google-ads-consultant": [("14+", "years in paid media"), ("Read-only", "access is all a review needs"), ("Written", "findings, ranked by impact"), ("Hourly or fixed", "never a % of ad spend")],
+    "ppc-management": [("4", "platforms, one operator"), ("1", "measurement layer across all"), ("1", "report, in your currency"), ("Flat fee", "never a % of ad spend")],
+    "meta-ads-management": [("Pixel + CAPI", "deduplicated events"), ("CRM", "lead quality, not form fills"), ("Scheduled", "creative tests, one control"), ("Flat fee", "never a % of ad spend")],
+    "microsoft-ads-management": [("20–40%", "lower CPC vs Google, typical"), ("Native", "negatives, bids and schedules"), ("UET", "via Tag Manager, same definitions"), ("Small", "add-on to a Google retainer")],
+    "linkedin-ads-management": [("Named", "account lists and titles"), ("CRM", "stages fed back to LinkedIn"), ("Pipeline", "is the number reported"), ("Flat fee", "never a % of ad spend")],
+    "ecommerce-ppc-management": [("Margin", "not platform ROAS"), ("Feed first", "titles, GTINs, labels"), ("PMax", "with brand excluded"), ("New vs returning", "customers separated")],
+}
 PAGES = CORE + SERVICES
 BY_SLUG = {p["slug"]: p for p in PAGES}
 
 NAV = [
     ("google-ads-management", "Management"),
+    ("ppc-management", "Platforms"),
     ("google-ads-consultant", "Consulting"),
     ("google-ads-audit", "Audit"),
     ("pricing", "Pricing"),
@@ -106,7 +129,17 @@ footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
 footer a{color:var(--muted)}
 .fine{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:13.5px}
 .updated{color:var(--muted);font-size:14px}
-@media (max-width:720px){nav.main{display:none}header.top .wrap{min-height:56px}.logo{font-size:15px}}
+.mmenu{display:none;position:relative}
+.mmenu summary{list-style:none;cursor:pointer;font-weight:600;padding:8px 12px;border:1px solid var(--line);border-radius:8px}
+.mmenu summary::-webkit-details-marker{display:none}.mmenu summary::after{content:none}
+.mmenu-panel{position:absolute;right:0;top:44px;width:min(92vw,360px);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 12px 30px rgba(0,0,0,.12);z-index:10;display:grid;gap:12px}
+.mmenu-panel h4{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.mmenu-panel ul{list-style:none;padding:0;margin:0}.mmenu-panel li{margin:2px 0}.mmenu-panel a{text-decoration:none;color:var(--fg)}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center}
+.hero-grid img{width:100%;max-width:340px;border-radius:16px;justify-self:end;aspect-ratio:4/5;object-fit:cover}
+.byline{color:var(--muted);font-size:13.5px;margin:28px 0 0}
+.price{font-size:15px;color:var(--muted)}.price b{color:var(--fg);font-size:18px}
+@media (max-width:720px){nav.main,.top-cta{display:none}.mmenu{display:block}header.top .wrap{min-height:56px}.logo{font-size:15px}.hero-grid{grid-template-columns:1fr}.hero-grid img{justify-self:start;max-width:220px}}
 @media (max-width:640px){.hero{padding:36px 0 24px}.hero p.lead{font-size:18px}main section{padding:28px 0}.ctabox{padding:22px}}
 """
 
@@ -129,6 +162,15 @@ def nav_html(active):
         cur = ' aria-current="page"' if slug == active else ""
         items.append(f'<a href="{url_for(slug)}"{cur}>{label}</a>')
     return "\n".join(items)
+
+
+def mobile_menu_html():
+    groups = []
+    for title, slugs in FOOTER_GROUPS:
+        lis = "".join(f'<li><a href="{url_for(s)}">{esc(BY_SLUG[s]["short"])}</a></li>' for s in slugs)
+        groups.append(f"<div><h4>{title}</h4><ul>{lis}</ul></div>")
+    return ('<details class="mmenu"><summary aria-label="Menu">Menu</summary><div class="mmenu-panel">'
+            + "".join(groups) + f'<p><a class="btn" href="{CAL}" rel="noopener">Book a call</a></p></div></details>')
 
 
 def footer_html():
@@ -173,7 +215,7 @@ def related_html(slug):
 def cta_html(p):
     return (
         '<div class="wrap"><div class="ctabox"><h2>' + esc(p.get("cta_title", "Talk to the person who would run the account")) +
-        "</h2><p>" + p.get("cta_text", "A 20-minute call. You describe the account and what is not working; I tell you "
+        "</h2><p>" + p.get("cta_text", "A short call. You describe the account and what is not working; I tell you "
         "whether I can help, what I would do first, and what it costs. No proposal deck, no sales follow-up sequence.") +
         f'</p><div class="cta-row"><a class="btn" href="{CAL}" rel="noopener">Book a call</a>'
         f'<a class="btn ghost" href="mailto:{MAIL}">Email {MAIL}</a></div></div></div>'
@@ -215,11 +257,27 @@ def schema_for(p):
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
 
 
+def fill_prices(html_text):
+    for k, v in PRICES.items():
+        html_text = html_text.replace("{{" + k + "}}", f"{v:,}")
+    return html_text
+
+
 def render(p):
+    p = dict(p)
+    p["body"] = fill_prices(p.get("body", ""))
+    p["lead"] = fill_prices(p.get("lead", ""))
+    if p.get("faq"):
+        p["faq"] = [(q, fill_prices(a)) for q, a in p["faq"]]
+    if p.get("proof"):
+        p["proof"] = [(fill_prices(b), fill_prices(t)) for b, t in p["proof"]]
     slug = p["slug"]
     url = SITE + url_for(slug)
-    proof = p.get("proof", [("14+", "years running paid media"), ("1", "person on your account"),
-                            ("44%", "lower CPA, published case"), ("0", "long-term contracts")])
+    proof = p.get("proof")
+    if proof is None and slug in PROOF_BY_SLUG:
+        proof = PROOF_BY_SLUG[slug]
+    if proof is None:
+        proof = PROOF_DEFAULT if slug not in ("results", "contact", "privacy", "404") else []
     proof_html = "".join(f"<div><b>{esc(b)}</b><small>{esc(s)}</small></div>" for b, s in proof)
     return f"""<!doctype html>
 <html lang="en">
@@ -242,21 +300,24 @@ def render(p):
 <header class="top"><div class="wrap">
 <a class="logo" href="/">google<span>ads</span>freelancer</a>
 <nav class="main" aria-label="Main">{nav_html(slug)}</nav>
-<a class="btn" href="{CAL}" rel="noopener">Book a call</a>
+<a class="btn top-cta" href="{CAL}" rel="noopener">Book a call</a>
+{mobile_menu_html()}
 </div></header>
 <main>
 <section class="hero"><div class="wrap">
 <p class="kicker">{esc(p.get('kicker', BRAND))}</p>
+<div class="hero-grid"><div>
 <h1>{p['h1']}</h1>
 <p class="lead">{p['lead']}</p>
-<div class="cta-row"><a class="btn" href="{CAL}" rel="noopener">Book a 20-minute call</a><a class="btn ghost" href="#faq">Read the FAQ</a></div>
-<div class="proof">{proof_html}</div>
-<p class="updated">Written by <a href="/about/">{NAME}</a>. Last updated {TODAY}.</p>
+<div class="cta-row"><a class="btn" href="{CAL}" rel="noopener">Book a call</a><a class="btn ghost" href="{'#services' if slug == 'index' else ('/#services' if slug == 'pricing' else '/pricing/')}">View services &amp; pricing</a></div>
+</div>{('<img src="/diego.jpg" alt="' + NAME + ', independent Google Ads consultant" width="340" height="425" loading="eager">') if (PHOTO and slug in ('index', 'about')) else ''}</div>
+{('<div class="proof">' + proof_html + '</div>') if proof_html else ''}
 </div></section>
 {p['body']}
 {faq_html(p.get('faq'))}
 {related_html(slug)}
 {cta_html(p)}
+<div class="wrap"><p class="byline">Written by <a href="/about/">{NAME}</a>. Last updated {TODAY}.</p></div>
 </main>
 {footer_html()}
 </body>
@@ -300,6 +361,8 @@ def build():
         for u, pr in urls:
             f.write(f"  <url><loc>{u}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority></url>\n")
         f.write("</urlset>\n")
+    if PHOTO:
+        shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"), os.path.join(dist, "diego.jpg"))
     with open(os.path.join(dist, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
     with open(os.path.join(dist, "favicon.svg"), "w") as f:

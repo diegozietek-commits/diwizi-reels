@@ -471,7 +471,7 @@ PAGES = [
 ],
 "related": ["ppc-management", "google-ads-audit", "google-ads-management", "pricing"],
 "cta_title": "Talk through an account or a gap",
-"cta_text": "Twenty minutes to describe the client, the spend and what you need covered. You get a per-account price and a start date.",
+"cta_text": "A short call to describe the client, the spend and what you need covered. You get a per-account price and a start date.",
 },
 
 {
