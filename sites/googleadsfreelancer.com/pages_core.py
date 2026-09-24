@@ -7,69 +7,80 @@ PAGES = [
 {
 "slug": "index", "short": "Home", "blurb": "Senior Google Ads freelancer, one person on the account.",
 "title": "Google Ads Freelancer | Senior & Independent | Diego Zietek",
-"meta": "Hire a Google Ads freelancer with 14+ years on the account, not a freelancer between jobs. Flat monthly fee, you own everything, US, Canada and UK.",
+"meta": "Google Ads management run personally by a senior specialist, with Meta, Microsoft and LinkedIn when they fit. Flat monthly fee, your accounts stay yours. US, Canada, UK.",
 "kicker": "Google Ads freelancer",
-"h1": "A Google Ads freelancer with 14 years on the account, not a freelancer between jobs",
-"lead": "I am Diego Zietek. I audit, build and run Google Ads accounts myself, for companies in the United States, Canada, the United Kingdom and Ireland. No account manager, no junior team, no twelve-month contract.",
+"h1": "Google Ads, run by the senior specialist you hired. Meta, Microsoft and LinkedIn when they fit.",
+"lead": "I am Diego Zietek, an independent paid media consultant with 14+ years on the account. Campaign management, conversion tracking and landing page work, with one point of contact and a flat monthly fee. Clients in the United States, Canada, the United Kingdom and Ireland.",
 "service_name": "Freelance Google Ads management",
 "body": """
 <section><div class="wrap">
-<h2>Why companies hire a freelance Google Ads specialist instead of an agency</h2>
-<p>An agency sells you the senior strategist at the pitch and staffs the account with whoever has capacity. That is not a criticism, it is the business model: agency margins depend on leverage, and leverage means the person with fourteen years of experience is not the one reading your search terms report on a Tuesday.</p>
-<p>Hiring a freelance Google Ads expert removes that layer. The person you talk to on the first call is the person who logs into the account every week, and the person who writes the monthly report. When something breaks on a Friday afternoon there is nobody to escalate to, which is exactly the point.</p>
+<h2>A client result, with the platform and the period attached</h2>
 <div class="cols">
-<div class="card"><h3>One operator, start to finish</h3><p>Audit, build, tracking, landing page feedback, weekly optimization and reporting all come from the same person, so nothing is lost in a handover.</p></div>
-<div class="card"><h3>Flat fee, not a percentage of spend</h3><p>A retainer priced as a percentage of ad spend rewards the consultant when you spend more. Mine is a flat monthly fee, so the only way I earn more is by keeping you as a client.</p></div>
-<div class="card"><h3>You own the account</h3><p>Campaigns, conversion actions, tags and landing pages live in your Google Ads, GA4 and Tag Manager accounts. If we stop working together, everything stays with you.</p></div>
+<div class="card"><h3>Mission AC &amp; Plumbing, Houston</h3><p><strong>Google Ads Search, May 2025 to February 2026, about $20,000 a month.</strong> Cost per acquisition down 44% and qualified leads up 60%, in an auction where the core keywords cost $45 to $80 a click.</p><p>Done by restructuring campaigns by job type, rebuilding tracking so a booked job and a phone call were not the same thing, a weekly negatives programme and steady ad and landing page tests. <a href="/results/">What can be verified, and what cannot →</a></p></div>
+<div class="card"><h3>What you get every month</h3><ul><li>Weekly work inside the account: search terms, bids, budgets, ads, exclusions</li><li>Conversion tracking maintained: GA4, Tag Manager, offline import</li><li>Landing page fixes I can make, specs for the ones I cannot</li><li>A written report on cost per customer and what changed</li><li>Direct access to me, no account manager in between</li></ul></div>
 </div>
 </div></section>
 
-<section><div class="wrap">
-<h2>What a Google Ads freelancer should be able to cover</h2>
-<p>If a freelancer can only change bids, they will hit a ceiling set by your tracking and your landing pages. These are the parts of the job I take on directly.</p>
-<ul>
-<li><strong>Search campaigns</strong>: structure by margin and intent, match types chosen on purpose, negatives maintained weekly, ad copy tested against a control. <a href="/google-ads-management/">Ongoing Google Ads management</a> covers this month to month.</li>
-<li><strong>Performance Max and Shopping</strong>: feed quality, brand exclusions, asset groups split by product economics. See <a href="/ecommerce-ppc-management/">ecommerce PPC</a>.</li>
-<li><strong>Conversion tracking</strong>: one conversion per real outcome, deduplicated across GA4, Google Ads and the CRM, with offline conversion import where sales close later. See <a href="/conversion-tracking-setup/">conversion tracking setup</a>.</li>
-<li><strong>Account audits</strong>: a paid, fixed-price review with the fixes ranked by impact, that you keep whether or not you hire me afterwards. See <a href="/google-ads-audit/">Google Ads audit</a>.</li>
-<li><strong>Other platforms</strong>: Microsoft Advertising, Meta Ads and LinkedIn Ads, when the plan calls for them. Google Ads is the core, not the limit.</li>
-</ul>
+<section id="services"><div class="wrap">
+<h2>Services you can hire</h2>
+<div class="cols">
+<div class="card"><h3><a href="/google-ads-management/">Google Ads management</a></h3><p>Month-to-month management of Search, Shopping, Performance Max and YouTube. Tracking and landing pages in scope.</p><p class="price">From <b>${{retainer_usd}}/month</b> · flat fee, no contract term</p></div>
+<div class="card"><h3><a href="/google-ads-audit/">Google Ads audit</a></h3><p>A paid, independent review with fixes ranked by impact. Written report you keep, credited against the first month if you continue.</p><p class="price">Fixed price from <b>${{audit_usd}}</b></p></div>
+<div class="card"><h3><a href="/google-ads-setup/">Setup and conversion tracking</a></h3><p>A new account or a rebuild, with tracking that works from day one. Run it yourself afterwards or hand it back to me.</p><p class="price">Setup from <b>${{setup_usd}}</b> · tracking from <b>${{tracking_usd}}</b></p></div>
+<div class="card"><h3><a href="/google-ads-consultant/">Consulting and advisory</a></h3><p>Strategy, a second opinion on an agency, or standing sessions with your in-house team. No need to move the account.</p><p class="price"><b>${{consulting_hour_usd}}/hour</b> or fixed price per deliverable</p></div>
+</div>
+<p>Prices are starting points in US dollars; UK and Irish clients are quoted in pounds or euros. Ad spend is paid by you, directly to the platforms. Full detail on the <a href="/pricing/">pricing page</a>.</p>
 </div></section>
 
 <section><div class="wrap">
-<h2>Freelancer, agency or in-house: which one fits your account</h2>
-<table>
-<tr><th></th><th>Freelance specialist</th><th>Agency</th><th>In-house hire</th></tr>
-<tr><td>Who touches the account</td><td>The person you hired</td><td>Whoever has capacity</td><td>The person you hired, if you hired well</td></tr>
-<tr><td>Typical monthly cost</td><td>Flat retainer</td><td>Retainer or % of spend, plus minimums</td><td>Salary, benefits, tools, ramp-up</td></tr>
-<tr><td>Best for</td><td>$3K to $80K monthly spend, one or a few markets</td><td>Many markets, many channels, creative production at volume</td><td>Spend large enough to justify a full-time role</td></tr>
-<tr><td>Weak spot</td><td>Capacity: one person cannot run forty accounts</td><td>Turnover on the account team</td><td>Career risk when the account is the whole job</td></tr>
-</table>
-<p>I keep the number of clients low on purpose. A freelancer with twenty-five accounts has agency economics without agency infrastructure, and the work shows it.</p>
+<h2>Platforms</h2>
+<div class="cols">
+<div class="card"><h3>Google Ads, first</h3><p>Search, Shopping, Performance Max, Demand Gen and YouTube. Where most of the budget and most of the mistakes are, and the core of every engagement. <a href="/google-ads-management/">Management →</a></p></div>
+<div class="card"><h3><a href="/microsoft-ads-management/">Microsoft Advertising</a></h3><p>The same intent at a lower cost per click for B2B, finance and professional services. Managed natively, not just imported.</p></div>
+<div class="card"><h3><a href="/meta-ads-management/">Meta Ads</a></h3><p>Facebook and Instagram for demand creation, remarketing and lead generation, measured against the CRM rather than the platform's own numbers.</p></div>
+<div class="card"><h3><a href="/linkedin-ads-management/">LinkedIn Ads</a></h3><p>For B2B accounts where the buying committee can be named. Judged on pipeline, not on clicks.</p></div>
+</div>
+<p>Two or more platforms under one operator and one measurement layer is <a href="/ppc-management/">PPC management</a>. Agencies that need a senior operator on a client account: <a href="/white-label-ppc/">white label PPC</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Who this fits</h2>
+<div class="cols">
+<div class="card"><h3>Companies spending $3K to $80K a month</h3><p>Enough for the flat fee to be a small share of the total, and small enough that one senior person can run everything properly. Below that, a setup or audit is the better buy.</p></div>
+<div class="card"><h3>Owners and marketing leads who want the operator</h3><p>You would rather talk to the person in the account than to someone relaying their questions. Reports are written for owners: cost per customer and what changed.</p></div>
+<div class="card"><h3>Lead generation and e-commerce</h3><p>Home services, healthcare, B2B and SaaS, professional services, online stores. Industry-specific pages are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>.</p></div>
+</div>
 </div></section>
 
 <section><div class="wrap">
 <h2>How an engagement starts</h2>
 <ol class="steps">
-<li><div><strong>A 20-minute call.</strong> You describe the account, the goal and what has been tried. I tell you whether it is a fit and what I would look at first.</div></li>
-<li><div><strong>A fixed-price audit.</strong> Written findings ranked by impact: tracking first, then structure, then bidding and search terms. You can implement it yourself or hand it back to me.</div></li>
+<li><div><strong>A short call.</strong> You describe the account, the goal and what has been tried. I say whether it is a fit and what I would look at first.</div></li>
+<li><div><strong>A fixed-price audit.</strong> Written findings ranked by impact: tracking first, then structure, then bidding and search terms. Yours to implement, with or without me.</div></li>
 <li><div><strong>Build or rebuild.</strong> Tracking fixed before anything else, because every bidding decision inherits whatever the conversion data says.</div></li>
-<li><div><strong>Month-to-month management.</strong> Weekly work in the account, a written monthly report on cost per customer and what changed, and a standing call when you want one.</div></li>
+<li><div><strong>Month-to-month management.</strong> Weekly work in the account, a written monthly report, a call whenever you want one. Notice period instead of a contract term.</div></li>
 </ol>
 </div></section>
 
 <section><div class="wrap">
-<h2>Results from a freelance engagement</h2>
-<p>A Houston HVAC and plumbing company, roughly $20,000 a month in Google Ads spend, run as a freelance engagement from May 2025 to February 2026: <strong>cost per acquisition down 44%, qualified leads up 60%</strong>, in an auction where the core terms cost $45 to $80 a click. The full context, including what those numbers are and are not, is on the <a href="/results/">results page</a>.</p>
+<h2>Freelance specialist, agency or in-house: which fits your account</h2>
+<table>
+<tr><th></th><th>Freelance specialist</th><th>Agency</th><th>In-house hire</th></tr>
+<tr><td>Who touches the account</td><td>The person you hired</td><td>Whoever has capacity</td><td>The person you hired</td></tr>
+<tr><td>Typical cost</td><td>Flat retainer</td><td>Retainer or % of spend, with minimums</td><td>Salary, benefits, tools, ramp-up</td></tr>
+<tr><td>Best for</td><td>$3K to $80K monthly spend, one or a few markets</td><td>Many markets and channels, creative at volume</td><td>Spend large enough to justify a full-time role</td></tr>
+<tr><td>Weak spot</td><td>Capacity: one person cannot run forty accounts</td><td>Turnover on the account team</td><td>One account is the whole job</td></tr>
+</table>
+<p>I keep the client list short on purpose; that is what makes the first column work.</p>
 </div></section>
 """,
 "faq": [
-("How much does a Google Ads freelancer cost?", "Two options, both quoted on the first call: a fixed-price audit, and a flat monthly retainer for ongoing management that is not tied to your ad spend. There is no twelve-month contract. The <a href=\"/pricing/\">pricing page</a> explains how the common models work and where each one quietly works against you."),
-("What is the minimum ad spend you work with?", "There is no hard minimum, but the flat fee only makes sense once the account is spending enough for the fee to be a small share of the total. In practice that starts around $3,000 to $5,000 a month. Below that, a one-off audit and setup is usually the better buy."),
+("How much does a Google Ads freelancer cost?", "Management starts at ${{retainer_usd}} a month as a flat fee, not tied to ad spend, and scales with scope. An audit is a fixed price from ${{audit_usd}}, credited against the first month if you continue. No twelve-month contract. The <a href=\"/pricing/\">pricing page</a> has the detail."),
+("What is the minimum ad spend you work with?", "No hard minimum, but the retainer only makes sense once the account spends enough for the fee to be a small share of the total; in practice from about $3,000 a month. Below that, a one-off setup or audit is the better buy."),
 ("Who owns the Google Ads account, the tags and the landing pages?", "You do, always. I work inside your accounts with manager access. Nothing is built in a container I control, so leaving me never means starting over."),
-("Do you work with clients outside the United States?", "Yes. Most clients are in the US, Canada, the United Kingdom and Ireland. I work remotely from Curitiba, Brazil, which is one to four hours off US time zones and three to four hours behind the UK, so overlap is easy in both directions."),
-("Can you take over an account an agency built?", "Yes, and it is one of the most common starting points. The audit usually finds duplicated conversion actions, broad match running on Smart Bidding without negatives, and campaigns organized by whoever built them rather than by what you sell."),
-("Do you also run Meta, Microsoft or LinkedIn Ads?", "Yes. Google Ads is the core of the work, and <a href=\"/meta-ads-management/\">Meta Ads</a>, <a href=\"/microsoft-ads-management/\">Microsoft Advertising</a> and <a href=\"/linkedin-ads-management/\">LinkedIn Ads</a> are added when the plan calls for them, run by the same person."),
+("Do you work with clients outside the United States?", "Yes. Most clients are in the US, Canada, the United Kingdom and Ireland. I work remotely from Curitiba, Brazil, which overlaps most of the working day in both regions."),
+("Can you take over an account an agency built?", "Yes, and it is one of the most common starting points. The audit usually finds duplicated conversion actions, broad match on Smart Bidding without negatives, and campaigns organised by whoever built them rather than by what you sell."),
+("Do you also run Meta, Microsoft or LinkedIn Ads?", "Yes. Google Ads is the core of the work, and <a href=\"/meta-ads-management/\">Meta Ads</a>, <a href=\"/microsoft-ads-management/\">Microsoft Advertising</a> and <a href=\"/linkedin-ads-management/\">LinkedIn Ads</a> are added when there is a measured reason, run by the same person."),
 ],
 "related": ["google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "pricing"],
 },
@@ -169,7 +180,7 @@ PAGES = [
 <h2>How consulting is priced and delivered</h2>
 <p>Consulting is either a fixed-price piece of work with a defined deliverable, or an hourly advisory arrangement for teams that want a standing session. Hourly is the right model here and the wrong model for ongoing management, because for management it makes you hesitate before asking a question, which is exactly when accounts drift. The <a href="/pricing/">pricing page</a> covers the reasoning.</p>
 <ol class="steps">
-<li><div><strong>Scoping call.</strong> Twenty minutes to understand the account, who runs it and what decision you are trying to make.</div></li>
+<li><div><strong>Scoping call.</strong> A short call to understand the account, who runs it and what decision you are trying to make.</div></li>
 <li><div><strong>Access and review.</strong> Read-only access to Google Ads, GA4 and Tag Manager. I read the account the way an auditor reads a ledger: search terms, conversion actions, change history, invoices.</div></li>
 <li><div><strong>Written deliverable.</strong> A document, not a slide deck. Findings ranked by financial impact, each with the fix, who should do it and how to check it worked.</div></li>
 <li><div><strong>Walkthrough and follow-up.</strong> One call to go through it with you or your team, and a check-in a month later to see what moved.</div></li>
@@ -244,7 +255,7 @@ PAGES = [
 ],
 "related": ["google-ads-consultant", "conversion-tracking-setup", "google-ads-management", "pricing"],
 "cta_title": "Get the audit quoted",
-"cta_text": "Twenty minutes to describe the account and what you suspect. You get a fixed price and a delivery date on the call.",
+"cta_text": "A short call to describe the account and what you suspect. You get a fixed price and a delivery date on the call.",
 },
 
 {
@@ -253,9 +264,9 @@ PAGES = [
 "meta": "What PPC consultants and Google Ads freelancers actually charge: percentage of spend, flat retainer and hourly compared, plus how I price audits and month-to-month management.",
 "kicker": "Pricing",
 "h1": "What Google Ads freelancers and PPC consultants actually charge",
-"lead": "Most pricing pages in this industry say \"contact us\". Here are the three models, what each costs in practice, where each one quietly works against you, and how I price.",
+"lead": "Starting prices for audits, management, setup and consulting, plus the three ways this industry charges and where each one quietly works against you.",
 "service_name": "Google Ads management pricing",
-"proof": [("3", "pricing models explained"), ("0", "percentage of spend"), ("0", "long-term lock-in"), ("1", "quote, on the first call")],
+"proof": [("${{audit_usd}}", "audit, fixed price"), ("${{retainer_usd}}/mo", "management, from"), ("${{consulting_hour_usd}}/h", "consulting"), ("0", "percentage of spend")],
 "body": """
 <section><div class="wrap">
 <h2>The three models, and the catch in each</h2>
@@ -282,12 +293,18 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>How I price</h2>
-<p>Two options, both fixed scope, both without a twelve-month contract.</p>
-<div class="cols">
-<div class="card"><h3>Standalone audit, fixed price</h3><p>A full read on the account, the tracking and the conversion path, delivered as a written document with prioritised fixes. Useful on its own; many people take it and implement it themselves. Credited against the first month if you go on to management. Details on the <a href="/google-ads-audit/">audit page</a>.</p></div>
-<div class="card"><h3>Monthly retainer, month to month</h3><p>Flat fee, not a percentage of spend, so I have no reason to push your budget up. Scope agreed up front and includes conversion tracking and campaign landing page work rather than treating them as extras. Notice period instead of a fixed term. Details on the <a href="/google-ads-management/">management page</a>.</p></div>
-</div>
-<p>Consulting and advisory for in-house teams is the one place I charge hourly, for the reasons above. Agencies bringing me in on their clients' accounts are priced per account under a <a href="/white-label-ppc/">white label arrangement</a>.</p>
+<p>Starting points in US dollars, with pounds for UK clients. Every engagement is quoted after a short call, because the scope decides the number; these are the floors, not estimates.</p>
+<table>
+<tr><th>Engagement</th><th>Price</th><th>What is included</th></tr>
+<tr><td><a href="/google-ads-audit/">Google Ads audit</a></td><td>From <b>${{audit_usd}}</b> / £{{audit_gbp}}, fixed</td><td>Written report, fixes ranked by impact, walkthrough call. Credited against the first month of management.</td></tr>
+<tr><td><a href="/google-ads-management/">Management, up to ~$10K/month spend</a></td><td>From <b>${{retainer_usd}}</b> / £{{retainer_gbp}} per month</td><td>Weekly work, tracking maintained, landing page fixes, written monthly report. Month to month.</td></tr>
+<tr><td>Management, $10K to $50K/month spend</td><td>From <b>${{retainer_mid_usd}}</b> / £{{retainer_mid_gbp}} per month</td><td>Same scope with more campaigns, markets or platforms. Above $50K, quoted per account.</td></tr>
+<tr><td><a href="/google-ads-setup/">Account setup</a></td><td>From <b>${{setup_usd}}</b> / £{{setup_gbp}}, fixed</td><td>Structure, ads, negatives, tracking, launch and handover document.</td></tr>
+<tr><td><a href="/conversion-tracking-setup/">Conversion tracking rebuild</a></td><td>From <b>${{tracking_usd}}</b> / £{{tracking_gbp}}, fixed</td><td>GA4, Tag Manager, enhanced and offline conversions, reconciliation report.</td></tr>
+<tr><td><a href="/google-ads-consultant/">Consulting and advisory</a></td><td><b>${{consulting_hour_usd}}</b> / £{{consulting_hour_gbp}} per hour</td><td>Strategy, second opinions and standing sessions with in-house teams. Fixed price for defined deliverables.</td></tr>
+<tr><td><a href="/white-label-ppc/">White label, per client account</a></td><td>From <b>${{whitelabel_usd}}</b> / £{{whitelabel_gbp}} per month</td><td>Volume pricing for several accounts. Your brand, your template.</td></tr>
+</table>
+<p>None of these is a percentage of ad spend, so the advice to cut budget costs me nothing to give. Adding Microsoft Advertising to a Google retainer is a small increase; adding Meta with weekly creative testing is a larger one, agreed up front.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -317,26 +334,21 @@ PAGES = [
 "body": """
 <section><div class="wrap">
 <h2>Mission AC &amp; Plumbing, Houston, Texas</h2>
-<table>
-<tr><th>Client</th><td>Mission AC &amp; Plumbing, a residential HVAC and plumbing company in Houston</td></tr>
-<tr><th>Role</th><td>Freelance PPC specialist, working directly with the owner</td></tr>
-<tr><th>Period</th><td>May 2025 to February 2026</td></tr>
-<tr><th>Platform</th><td>Google Ads, Search</td></tr>
-<tr><th>Budget</th><td>About $20,000 a month in ad spend</td></tr>
-<tr><th>Auction</th><td>Core terms at $45 to $80 per click, dozens of local competitors, strong seasonal swings</td></tr>
-</table>
+<p><strong>Google Ads Search · May 2025 to February 2026 · about $20,000 a month · freelance engagement, working directly with the owner.</strong></p>
+<h3>The problem</h3>
+<p>A residential HVAC and plumbing company in one of the most expensive local auctions in the US: core terms at $45 to $80 a click, dozens of competitors, and demand that swings with the weather. Emergency repairs and system replacements shared one campaign, so the urgent, cheaper work absorbed the budget meant for installs. Phone calls were counted as conversions whether or not they became jobs, so the account was learning from ring volume rather than revenue.</p>
 <h3>What was done</h3>
 <ul>
-<li>Campaigns restructured by job type, separating emergency repair from system replacement, because the two have different urgency, different margins and different pages, and merged together the urgent work quietly subsidises the browsing.</li>
-<li>Negative keyword programme run weekly against a search terms report that had not been read in months.</li>
-<li>Conversion tracking rebuilt so a booked job and a phone call were not the same thing in the data.</li>
-<li>Continuous A/B testing of ad copy and landing pages, with one control and one challenger at a time.</li>
-<li>Audience layering and a service-area review, so bids matched where the trucks actually went.</li>
+<li>Campaigns restructured by job type, separating emergency repair from replacement and maintenance, each with its own bids, budget and landing page.</li>
+<li>Conversion tracking rebuilt so a booked job and a phone call were different things in the data, with call tracking tied to the keyword behind the call.</li>
+<li>A weekly negative keyword programme against a search terms report that had not been read in months.</li>
+<li>Continuous A/B testing of ad copy and landing pages, one control and one challenger at a time.</li>
+<li>Service-area and audience review so bids matched where the trucks actually went.</li>
 </ul>
-<h3>What changed</h3>
-<p>Cost per acquisition fell 44% and qualified leads rose 60% over the engagement, on roughly $20,000 of monthly spend.</p>
-<h3>What these numbers are, and are not</h3>
-<p class="note">Classification: supported, but private. The figures come from the Google Ads account and the reporting delivered to the client during the engagement. They were not audited by a third party, the client has not published a testimonial, and the comparison window and exact conversion definition are not published here. A reader cannot verify them independently, and this page does not claim otherwise. What can be checked: the engagement and its dates are the same as stated on my <a href="https://www.linkedin.com/in/diegozietek/" rel="noopener">LinkedIn profile</a> and on <a href="https://diwizi.com/case-mission-ac-plumbing.html" rel="noopener">diwizi.com</a>. The client's campaign structure, keyword lists, landing pages, lead volumes and revenue are confidential and stay so.</p>
+<h3>The result</h3>
+<p>Cost per acquisition fell <strong>44%</strong> and qualified leads rose <strong>60%</strong> over the nine months, on roughly $20,000 of monthly spend.</p>
+<h3>What can be checked, and what cannot</h3>
+<p class="note">The figures come from the Google Ads account and the reporting delivered to the client during the engagement. They were not audited by a third party, the client has not published a testimonial, and the exact comparison window and conversion definition are not published here. What a reader can check: the engagement and its dates match my <a href="https://www.linkedin.com/in/diegozietek/" rel="noopener">LinkedIn profile</a> and <a href="https://diwizi.com/case-mission-ac-plumbing.html" rel="noopener">diwizi.com</a>. The client's campaign structure, keyword lists, landing pages, lead volumes and revenue are confidential and stay so. A past-client reference is available for serious engagements, subject to the client agreeing.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -411,15 +423,15 @@ PAGES = [
 {
 "slug": "contact", "short": "Contact", "blurb": "Book a call or send an email. Both reach the same person.",
 "title": "Contact | Book a Call With a Google Ads Freelancer",
-"meta": "Book a 20-minute call or email Diego Zietek about Google Ads management, a PPC audit or consulting. No sales sequence; the reply comes from the person who would do the work.",
+"meta": "Book a call or email Diego Zietek about Google Ads management, a PPC audit or consulting. No sales sequence; the reply comes from the person who would do the work.",
 "kicker": "Contact",
 "h1": "Book a call, or write. Either way you reach the person who would run the account.",
-"lead": "Twenty minutes is enough to tell whether I can help and what I would do first. If I am not the right fit, I will say so and, where I can, point you to someone who is.",
+"lead": "A short call is enough to tell whether I can help and what I would do first. If I am not the right fit, I will say so and, where I can, point you to someone who is.",
 "proof": [],
 "body": """
 <section><div class="wrap">
 <div class="cols">
-<div class="card"><h3>Book a 20-minute call</h3><p>Pick a slot that suits your time zone. US and European hours are both available.</p><p><a class="btn" href="https://cal.com/diwizi" rel="noopener">Open the calendar</a></p></div>
+<div class="card"><h3>Book a call</h3><p>Pick a slot that suits your time zone. US and European hours are both available.</p><p><a class="btn" href="https://cal.com/diwizi" rel="noopener">Open the calendar</a></p></div>
 <div class="card"><h3>Email</h3><p>Send the monthly spend, the platforms and what is not working. A rough range for an audit or retainer can usually come back by email.</p><p><a class="btn ghost" href="mailto:hello@diwizi.com">hello@diwizi.com</a></p></div>
 <div class="card"><h3>LinkedIn</h3><p>For a look at the history behind the claims on this site, or to connect first.</p><p><a class="btn ghost" href="https://www.linkedin.com/in/diegozietek/" rel="noopener">linkedin.com/in/diegozietek</a></p></div>
 </div>
@@ -440,6 +452,6 @@ PAGES = [
 ],
 "related": ["google-ads-audit", "google-ads-management", "pricing", "about"],
 "cta_title": "Prefer to skip the reading?",
-"cta_text": "The calendar is the quickest route. Twenty minutes, no deck.",
+"cta_text": "The calendar is the quickest route. A short call, no deck.",
 },
 ]
