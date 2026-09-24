@@ -19,7 +19,6 @@ NAME = "Diego Zietek"
 BRAND = "Google Ads Freelancer"
 CAL = "https://cal.com/diwizi"
 MAIL = "hello@diwizi.com"
-LINKEDIN = "https://www.linkedin.com/in/diegozietek/"
 PARENT = "https://diwizi.com/"
 TODAY = date.today().isoformat()
 
@@ -182,7 +181,6 @@ def footer_html():
     groups.append(
         f'<div><h4>Contact</h4><ul><li><a href="{CAL}" rel="noopener">Book a call</a></li>'
         f'<li><a href="mailto:{MAIL}">{MAIL}</a></li>'
-        f'<li><a href="{LINKEDIN}" rel="noopener">LinkedIn</a></li>'
         f'<li><a href="{PARENT}" rel="noopener">Diwizi (industry pages)</a></li></ul></div>'
     )
     return (
@@ -216,7 +214,7 @@ def related_html(slug):
 def cta_html(p):
     return (
         '<div class="wrap"><div class="ctabox"><h2>' + esc(p.get("cta_title", "Talk to the person who would run the account")) +
-        "</h2><p>" + p.get("cta_text", "A short call. You describe the account and what is not working; I tell you "
+        "</h2><p>" + p.get("cta_text", "A 30-minute call. You describe the account and what is not working; I tell you "
         "whether I can help, what I would do first, and what it costs. No proposal deck, no sales follow-up sequence.") +
         f'</p><div class="cta-row"><a class="btn" href="{CAL}" rel="noopener">Book a call</a>'
         f'<a class="btn ghost" href="mailto:{MAIL}">Email {MAIL}</a></div></div></div>'
@@ -232,7 +230,7 @@ def schema_for(p):
     person = {
         "@type": "Person", "@id": SITE + "/about/#person", "name": NAME,
         "jobTitle": "Independent paid media consultant", "url": SITE + "/about/",
-        "sameAs": [LINKEDIN, PARENT, PARENT + "diego-zietek.html"],
+        "sameAs": [PARENT, PARENT + "diego-zietek.html"],
         "worksFor": {"@type": "Organization", "name": "Diwizi", "url": PARENT},
         "knowsAbout": ["Google Ads", "Meta Ads", "LinkedIn Ads", "Microsoft Advertising", "Conversion tracking", "GA4"],
     }
@@ -310,7 +308,7 @@ def render(p):
 <div class="hero-grid"><div>
 <h1>{p['h1']}</h1>
 <p class="lead">{p['lead']}</p>
-<div class="cta-row"><a class="btn" href="{CAL}" rel="noopener">Book a call</a><a class="btn ghost" href="{'#services' if slug == 'index' else ('/#services' if slug == 'pricing' else '/pricing/')}">View services &amp; pricing</a></div>
+<div class="cta-row"><a class="btn" href="{CAL}" rel="noopener">Book a 30-minute call</a><a class="btn ghost" href="{'#services' if slug == 'index' else ('/#services' if slug == 'pricing' else '/pricing/')}">View services &amp; pricing</a></div>
 </div>{('<img src="/diego.jpg" alt="' + NAME + ', independent Google Ads consultant" width="340" height="425" loading="eager">') if (PHOTO and slug in ('index', 'about')) else ''}</div>
 {('<div class="proof">' + proof_html + '</div>') if proof_html else ''}
 </div></section>

@@ -55,7 +55,7 @@ PAGES = [
 <section><div class="wrap">
 <h2>How an engagement starts</h2>
 <ol class="steps">
-<li><div><strong>A short call.</strong> You describe the account, the goal and what has been tried. I say whether it is a fit and what I would look at first.</div></li>
+<li><div><strong>A 30-minute call.</strong> You describe the account, the goal and what has been tried. I say whether it is a fit and what I would look at first.</div></li>
 <li><div><strong>A fixed-price audit.</strong> Written findings ranked by impact: tracking first, then structure, then bidding and search terms. Yours to implement, with or without me.</div></li>
 <li><div><strong>Build or rebuild.</strong> Tracking fixed before anything else, because every bidding decision inherits whatever the conversion data says.</div></li>
 <li><div><strong>Month-to-month management.</strong> Weekly work in the account, a written monthly report, a call whenever you want one. Notice period instead of a contract term.</div></li>
@@ -255,7 +255,7 @@ PAGES = [
 ],
 "related": ["google-ads-consultant", "conversion-tracking-setup", "google-ads-management", "pricing"],
 "cta_title": "Get the audit quoted",
-"cta_text": "A short call to describe the account and what you suspect. You get a fixed price and a delivery date on the call.",
+"cta_text": "Thirty minutes to describe the account and what you suspect. You get a fixed price and a delivery date on the call.",
 },
 
 {
@@ -349,12 +349,12 @@ PAGES = [
 <h3>The result</h3>
 <p>Cost per acquisition fell <strong>44%</strong> and qualified leads rose <strong>60%</strong> over the nine months, on roughly $20,000 of monthly spend.</p>
 <h3>What can be checked, and what cannot</h3>
-<p class="note">The figures come from the Google Ads account and the reporting delivered to the client during the engagement. They were not audited by a third party, the client has not published a testimonial, and the exact comparison window and conversion definition are not published here. What a reader can check: the engagement and its dates match my <a href="https://www.linkedin.com/in/diegozietek/" rel="noopener">LinkedIn profile</a> and <a href="https://diwizi.com/case-mission-ac-plumbing.html" rel="noopener">diwizi.com</a>. The client's campaign structure, keyword lists, landing pages, lead volumes and revenue are confidential and stay so. A past-client reference is available for serious engagements, subject to the client agreeing.</p>
+<p class="note">The figures come from the Google Ads account and the reporting delivered to the client during the engagement. They were not audited by a third party, the client has not published a testimonial, and the exact comparison window and conversion definition are not published here. What a reader can check: the engagement and its dates match the case page on <a href="https://diwizi.com/case-mission-ac-plumbing.html" rel="noopener">diwizi.com</a>. The client's campaign structure, keyword lists, landing pages, lead volumes and revenue are confidential and stay so. A past-client reference is available for serious engagements, subject to the client agreeing.</p>
 </div></section>
 
 <section><div class="wrap">
 <h2>US pharmaceutical marketing agency, freelance role</h2>
-<p>From September 2023 to March 2024 I worked as a freelance paid media operator for a US agency serving pharmaceutical clients, on Google Ads and paid social accounts under the agency's brand. The agency, its clients, budgets and results are under NDA and are not published anywhere. It is listed because it is where a good deal of my healthcare and regulated-category experience comes from, and because the dates are on my LinkedIn profile for anyone who wants to check them.</p>
+<p>From September 2023 to March 2024 I worked as a freelance paid media operator for a US agency serving pharmaceutical clients, on Google Ads and paid social accounts under the agency's brand. The agency, its clients, budgets and results are under NDA and are not published anywhere. It is listed because it is where a good deal of my healthcare and regulated-category experience comes from.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -391,7 +391,7 @@ PAGES = [
 <tr><th>Industries</th><td>Healthcare and pharma, B2B SaaS and HR tech, local services (HVAC, plumbing, home services), e-commerce, professional services.</td></tr>
 <tr><th>Markets</th><td>United States, Canada, United Kingdom, Ireland and Portugal remotely in English; Brazil in Portuguese.</td></tr>
 <tr><th>Based in</th><td>Curitiba, Brazil (GMT-3), working US and European hours as needed.</td></tr>
-<tr><th>Contact</th><td><a href="mailto:hello@diwizi.com">hello@diwizi.com</a>, <a href="https://cal.com/diwizi" rel="noopener">cal.com/diwizi</a>, <a href="https://www.linkedin.com/in/diegozietek/" rel="noopener">LinkedIn</a>. Messages go to me; there is no shared inbox.</td></tr>
+<tr><th>Contact</th><td><a href="mailto:hello@diwizi.com">hello@diwizi.com</a> or <a href="https://cal.com/diwizi" rel="noopener">cal.com/diwizi</a>. Messages go to me; there is no shared inbox.</td></tr>
 </table>
 </div></section>
 
@@ -416,7 +416,6 @@ PAGES = [
 ("Are you an agency?", "No. Diwizi is a consultancy with one consultant. When a project needs a designer or a developer, I bring in a specific person for that piece and tell you who it is."),
 ("Where are you based, and does it matter?", "Curitiba, Brazil, GMT-3. For US clients that is one to four hours ahead; for the UK and Ireland, three to four hours behind. In practice we overlap most of the working day either way, and everything is done remotely in English."),
 ("Do you hold Google or Meta certifications?", "Yes, though I would not hire on that basis and neither should you. Certifications test platform knowledge; the work is judgement about a specific business. Ask about accounts and results instead."),
-("Can I see your LinkedIn?", "Yes: <a href=\"https://www.linkedin.com/in/diegozietek/\" rel=\"noopener\">linkedin.com/in/diegozietek</a>. The dates for the public engagements on the results page match what is there."),
 ],
 "related": ["results", "google-ads-management", "freelance-ppc-consultant", "contact"],
 },
@@ -427,14 +426,13 @@ PAGES = [
 "meta": "Book a call or email Diego Zietek about Google Ads management, a PPC audit or consulting. No sales sequence; the reply comes from the person who would do the work.",
 "kicker": "Contact",
 "h1": "Book a call, or write. Either way you reach the person who would run the account.",
-"lead": "A short call is enough to tell whether I can help and what I would do first. If I am not the right fit, I will say so and, where I can, point you to someone who is.",
+"lead": "Thirty minutes is enough to tell whether I can help and what I would do first. If I am not the right fit, I will say so and, where I can, point you to someone who is.",
 "proof": [],
 "body": """
 <section><div class="wrap">
 <div class="cols">
-<div class="card"><h3>Book a call</h3><p>Pick a slot that suits your time zone. US and European hours are both available.</p><p><a class="btn" href="https://cal.com/diwizi" rel="noopener">Open the calendar</a></p></div>
+<div class="card"><h3>Book a 30-minute call</h3><p>Pick a slot that suits your time zone. US and European hours are both available.</p><p><a class="btn" href="https://cal.com/diwizi" rel="noopener">Open the calendar</a></p></div>
 <div class="card"><h3>Email</h3><p>Send the monthly spend, the platforms and what is not working. A rough range for an audit or retainer can usually come back by email.</p><p><a class="btn ghost" href="mailto:hello@diwizi.com">hello@diwizi.com</a></p></div>
-<div class="card"><h3>LinkedIn</h3><p>For a look at the history behind the claims on this site, or to connect first.</p><p><a class="btn ghost" href="https://www.linkedin.com/in/diegozietek/" rel="noopener">linkedin.com/in/diegozietek</a></p></div>
 </div>
 <h2 style="margin-top:36px">What is useful to have ready</h2>
 <ul>
@@ -453,6 +451,6 @@ PAGES = [
 ],
 "related": ["google-ads-audit", "google-ads-management", "pricing", "about"],
 "cta_title": "Prefer to skip the reading?",
-"cta_text": "The calendar is the quickest route. A short call, no deck.",
+"cta_text": "The calendar is the quickest route. Thirty minutes, no deck.",
 },
 ]
