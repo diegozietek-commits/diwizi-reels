@@ -1,0 +1,42 @@
+tier,dominio,termo,busca_uk,busca_us,cpc_uk,cpc_us,status,confianca,acao,observacao
+A,carpentryjobs.co.uk,carpentry jobs,4400,14800,2.93,1.84,LIVRE (WHOIS: registered=false),alta,registrar ja,.uk tambem em pending_delete; .com tomado (2005)
+A,carpenterjobs.co.uk,carpenter jobs,4400,14800,2.93,1.84,EXPIRADO 2026-08-17 (grace Nominet),media,backorder ~17/11/2026,mesmo cluster de carpentry jobs
+A,scaffolderjobs.com,scaffolder jobs,5400,1900,0.57,1.59,LIVRE (DNS),media,registrar ja,.co.uk expirou 2026-06-05 (deve cair agora); .uk livre
+A,mechanicalengineerjobs.co.uk,mechanical engineer jobs,3600,27100,0.83,2.12,LIVRE (DNS; sem registro WHOIS),media,registrar ja,.uk tambem livre
+A,paintingjobs.co.uk,painting jobs,1900,12100,6.40,2.88,LIVRE (DNS),media,registrar ja,CPC UK 6.40 e o mais alto da lista; .uk livre
+A,mechanicjobs.co.uk,mechanic jobs,1900,8100,5.20,2.90,LIVRE (DNS),media,registrar ja,.uk livre
+A,payrolljobs.co.uk,payroll jobs,2400,8100,0.49,1.96,LIVRE (DNS),media,registrar,.uk livre
+A,pharmacyjobs.co.uk,pharmacy jobs,8100,27100,1.13,2.31,LIVRE (DNS),media,registrar ja,.uk tomado; maior volume UK entre os .co.uk livres
+A,dentalnursejobs.co.uk,dental nurse jobs,5400,210,1.08,1.89,LIVRE (DNS),media,registrar,termo quase so UK
+B,cleanerjobs.co.uk,cleaner jobs,2400,1300,2.44,2.01,EXPIRADO 2026-07-18 (grace Nominet),media,backorder ~18/10/2026,
+B,plastererjobs.co.uk,plasterer jobs,2900,210,5.19,1.69,EXPIRADO 2026-06-26 (grace Nominet),media,tentar registrar agora,deve ter caido ~24-26/09
+B,porterjobs.co.uk,porter jobs,1900,5400,0.48,1.00,LIVRE (DNS),media,opcional,
+B,caretakerjobs.co.uk,caretaker jobs,1600,2400,0.43,1.43,LIVRE (DNS),media,opcional,
+B,labourjobs.co.uk,labour jobs,1900,210,1.18,3.97,LIVRE (DNS),media,opcional,
+B,groundworkerjobs.com,groundworker jobs,2900,320,1.24,0.77,LIVRE (DNS),media,opcional,.co.uk tomado; .uk livre
+B,tilerjobs.co.uk,tiler jobs,480,90,3.73,0.17,LIVRE (DNS),media,opcional,
+B,javajobs.co.uk,java jobs,210,880,2.76,3.72,LIVRE (DNS),media,opcional,
+B,pythonjobs.co.uk,python jobs,720,1600,2.73,3.34,LIVRE (DNS),media,opcional,.uk tomado
+B,unskilledjobs.co.uk,unskilled jobs,170,210,0.47,0.29,LIVRE (DNS),media,opcional,.uk em pending_delete
+B,decoratorjobs.co.uk,decorator jobs,170,260,2.31,1.16,LIVRE (DNS),media,opcional,
+C-UK-only,weekendjobs.uk,weekend jobs,22200,135000,1.09,2.44,LIVRE .uk (DNS),media,so se for fazer site UK,.com e .co.uk tomados
+C-UK-only,teachingjobs.uk,teaching jobs,22200,110000,1.56,3.80,LIVRE .uk (DNS),media,so se for fazer site UK,
+C-UK-only,graphicdesignjobs.uk,graphic design jobs,9900,135000,0.72,1.96,LIVRE .uk (DNS),media,so se for fazer site UK,
+C-UK-only,freelancejobs.uk,freelance jobs,9900,135000,2.48,3.29,LIVRE .uk (DNS),media,so se for fazer site UK,
+C-UK-only,receptionistjobs.uk,receptionist jobs,9900,27100,0.64,1.26,LIVRE .uk (DNS),media,so se for fazer site UK,
+C-UK-only,healthcareassistantjobs.uk,healthcare assistant jobs,9900,590,1.22,5.42,LIVRE .uk (DNS),media,so se for fazer site UK,
+C-UK-only,bricklayerjobs.uk,bricklayer jobs,8100,1000,1.71,1.19,LIVRE .uk (DNS),media,so se for fazer site UK,
+C-UK-only,electricianjobs.uk,electrician jobs,5400,27100,1.41,4.06,LIVRE .uk (DNS),media,so se for fazer site UK,
+C-UK-only,weldingjobs.uk,welding jobs,3600,49500,0.63,3.20,LIVRE .uk (DNS),media,so se for fazer site UK,
+C-UK-only,scaffoldingjobs.uk,scaffolding jobs,5400,1900,0.57,1.59,LIVRE .uk (DNS),media,so se for fazer site UK,
+C-UK-only,visasponsorshipjobs.uk,visa sponsorship jobs,4400,1600,1.07,4.07,PENDING_DELETE (31 RD spam),media,so se for fazer site UK,
+C-UK-only,teachingassistantjobs.uk,teaching assistant jobs,14800,18100,1.55,3.45,PENDING_DELETE (site real 2020-26; 373 links),media,backorder,links = diretorios + 1 blog; .co.uk tomado
+C-UK-only,plumberjobs.uk,plumber jobs,4400,14800,3.20,2.85,PENDING_DELETE,media,backorder,
+C-UK-only,ropeaccessjobs.uk,rope access jobs,2400,1600,0.79,0.54,PENDING_DELETE,media,backorder,
+D-aged,myjob.ie,my job (IE),1900 (UK),3600,3.46,2.30,PENDING_DELETE (criado 2001; 112 RD),alta,backorder no IEDR,job board real da Bond Personnel; links techcentral.ie / bhconsulting.ie; resto e spam
+D-aged,1to1jobs.com,1 to 1 jobs,10,10,,,REDEMPTION (criado 1999; 35 RD),alta,ignorar,sem busca; links spam
+D-aged,jobsinsourcing.com,jobs in sourcing,,480,,2.06,REDEMPTION (criado 2005; 37 RD),alta,ignorar,links spam
+D-aged,googleajob.com,google a job,10,,,,REDEMPTION (criado 2006; 220 RD),alta,ignorar,220 RD sao todos listas de diretorio spam; nome sem busca
+D-aged,torchrecruiting.net,torch recruiting,,90,,,REDEMPTION (criado 2016; 53 RD),alta,ignorar,marca de terceiro
+EXCLUIDO,careerssearch.uk,careers search,140,,1.37,,PENDING_DELETE (557 RD / 76K BL),alta,ignorar,perfil de links tipico de PBN/spam; criado 2025
+EXCLUIDO,jobsucces.uk,-,,,,,PENDING_DELETE (187 RD),alta,ignorar,grafia errada + spam
