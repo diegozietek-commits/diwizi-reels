@@ -27,6 +27,7 @@ PRICES = {  # edit here; every page reads from this dict
     "audit_usd": 1800, "audit_gbp": 1400,
     "retainer_usd": 2000, "retainer_gbp": 1600,
     "retainer_mid_usd": 3000, "retainer_mid_gbp": 2400,
+    "retainer_top_usd": 4500, "retainer_top_gbp": 3600,
     "consulting_hour_usd": 250, "consulting_hour_gbp": 200,
     "setup_usd": 1800, "setup_gbp": 1400,
     "tracking_usd": 1500, "tracking_gbp": 1200,
