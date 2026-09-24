@@ -309,8 +309,6 @@ def build():
         f.write("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
                 "  X-Frame-Options: SAMEORIGIN\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n"
                 "/favicon.svg\n  Cache-Control: public, max-age=604800\n")
-    with open(os.path.join(dist, "_redirects"), "w") as f:
-        f.write(f"https://www.googleadsfreelancer.com/* {SITE}/:splat 301\n")
     with open(os.path.join(dist, "404.html"), "w", encoding="utf-8") as f:
         f.write(render({"slug": "404", "title": "Page not found | " + BRAND, "meta": "That page does not exist.",
                         "h1": "That page is not here", "lead": "The address may have changed. Everything on this site is one click from the footer.",
