@@ -17,7 +17,8 @@ from pages_services import PAGES as SERVICES
 SITE = "https://googleadsfreelancer.com"
 NAME = "Diego Zietek"
 BRAND = "Google Ads Freelancer"
-CAL = "https://cal.com/diwizi"
+CAL_EVENT_SLUG = "gaf-30min"  # TODO(diego): confirm this matches the real Cal.com event-type slug for this site
+CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # dedicated event, not the shared cal.com/diwizi root link
 MAIL = "hello@diwizi.com"
 PARENT = "https://diwizi.com/"
 TODAY = date.today().isoformat()
@@ -52,6 +53,17 @@ GTM_HEAD = ("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':n
             "})(window,document,'script','dataLayer','" + GTM_ID + "');</script>")
 GTM_BODY = ('<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + GTM_ID +
             '" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>')
+# Cal.com appends email, attendeeName, phone, guestEmails (and can glue on a 2nd "?") to the
+# redirect URL. Runs before GTM: keep the uid in window.__tyUid, then clear the bar to the
+# bare path so nothing PII-shaped sits in the URL, browser history or referrer headers.
+TY_LIMPA_JS = ("<script id=\"ty-limpa\">"
+    "(function(){try{"
+    "var q=new URLSearchParams(location.search.replace(/^\\?/,'').replace(/\\?/g,'&'));"
+    "window.__tyUid=q.get('uid')||q.get('bookingUid')||q.get('bookingId')||'';"
+    "var n=location.pathname+location.hash;"
+    "if(n!==location.pathname+location.search+location.hash)history.replaceState(null,'',n);"
+    "}catch(e){}})();"
+    "</script>")
 # Pushes clean dataLayer events for GTM: book_call_click, email_click (with link_url, cta_location).
 CLICK_JS = ("<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;"
             "var h=a.getAttribute('href')||'',ev=null;if(h.indexOf('cal.com')>-1)ev='book_call_click';else if(h.indexOf('mailto:')===0)ev='email_click';"
@@ -272,6 +284,7 @@ def schema_for(p):
 def fill_prices(html_text):
     for k, v in PRICES.items():
         html_text = html_text.replace("{{" + k + "}}", f"{v:,}")
+    html_text = html_text.replace("{{cal_url}}", CAL)
     return html_text
 
 
@@ -295,6 +308,7 @@ def render(p):
 <html lang="en">
 <head>
 <meta charset="utf-8">
+{p.get('pre_gtm_head', '')}
 {GTM_HEAD}
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(p['title'])}</title>
@@ -371,12 +385,22 @@ def thanks_page():
 </ol>
 <p>Need to change the time? Use the link in the confirmation email.</p>
 </div></section>"""
-    js = ("<script>window.dataLayer=window.dataLayer||[];"
-          "window.dataLayer.push({event:'booking_confirmed',booking_source:'cal.com'});</script>")
+    # Fires only when Cal.com actually sent back a booking uid, and only once per uid
+    # (sessionStorage + localStorage, so a refresh or a second tab doesn't double-count).
+    js = ("<script>(function(){try{"
+          "var id=window.__tyUid||'';if(!id)return;"
+          "var k='gaf_call_'+id,ja=false;"
+          "try{ja=!!(sessionStorage.getItem(k)||localStorage.getItem(k))}catch(e){}"
+          "if(ja)return;"
+          "window.dataLayer=window.dataLayer||[];"
+          "window.dataLayer.push({event:'booking_confirmed',booking_source:'cal.com',booking_uid:id});"
+          "try{sessionStorage.setItem(k,'1');localStorage.setItem(k,'1')}catch(e){}"
+          "}catch(e){}})();</script>")
     return {"slug": "thanks", "short": "Thanks", "blurb": "", "title": "Call booked | Google Ads Freelancer",
             "meta": "Your call with Diego Zietek is booked.", "h1": "Your call is booked",
             "lead": "Thanks. You will get a confirmation email from Cal.com with the details and a calendar invite.",
-            "body": body, "kicker": "Booked", "proof": [], "noindex": True, "extra_js": js,
+            "body": body, "kicker": "Booked", "proof": [], "noindex": True,
+            "pre_gtm_head": TY_LIMPA_JS, "extra_js": js,
             "cta_title": "Anything else before the call?",
             "cta_text": "Send context by email so the thirty minutes go further."}
 
