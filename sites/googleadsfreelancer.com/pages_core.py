@@ -1,8 +1,6 @@
 # Core pages: home, freelance PPC, consultant, audit, pricing, results, about, contact.
 # Each page: slug, short, blurb, title, meta, kicker, h1, lead, body (HTML), faq, related, service_name.
 
-CAL = "https://cal.com/diwizi"
-
 PAGES = [
 {
 "slug": "index", "short": "Home", "blurb": "Senior Google Ads freelancer, one person on the account.",
@@ -391,7 +389,7 @@ PAGES = [
 <tr><th>Industries</th><td>Healthcare and pharma, B2B SaaS and HR tech, local services (HVAC, plumbing, home services), e-commerce, professional services.</td></tr>
 <tr><th>Markets</th><td>United States, Canada, United Kingdom, Ireland and Portugal remotely in English; Brazil in Portuguese.</td></tr>
 <tr><th>Based in</th><td>Curitiba, Brazil (GMT-3), working US and European hours as needed.</td></tr>
-<tr><th>Contact</th><td><a href="mailto:hello@diwizi.com">hello@diwizi.com</a> or <a href="https://cal.com/diwizi" rel="noopener">cal.com/diwizi</a>. Messages go to me; there is no shared inbox.</td></tr>
+<tr><th>Contact</th><td><a href="mailto:hello@diwizi.com">hello@diwizi.com</a> or <a href="{{cal_url}}" rel="noopener">Cal.com</a>. Messages go to me; there is no shared inbox.</td></tr>
 </table>
 </div></section>
 
@@ -431,7 +429,7 @@ PAGES = [
 "body": """
 <section><div class="wrap">
 <div class="cols">
-<div class="card"><h3>Book a 30-minute call</h3><p>Pick a slot that suits your time zone. US and European hours are both available.</p><p><a class="btn" href="https://cal.com/diwizi" rel="noopener">Open the calendar</a></p></div>
+<div class="card"><h3>Book a 30-minute call</h3><p>Pick a slot that suits your time zone. US and European hours are both available.</p><p><a class="btn" href="{{cal_url}}" rel="noopener">Open the calendar</a></p></div>
 <div class="card"><h3>Email</h3><p>Send the monthly spend, the platforms and what is not working. A rough range for an audit or retainer can usually come back by email.</p><p><a class="btn ghost" href="mailto:hello@diwizi.com">hello@diwizi.com</a></p></div>
 </div>
 <h2 style="margin-top:36px">What is useful to have ready</h2>
