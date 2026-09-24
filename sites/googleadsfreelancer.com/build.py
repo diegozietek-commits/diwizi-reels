@@ -45,6 +45,19 @@ PROOF_BY_SLUG = {
     "linkedin-ads-management": [("Named", "account lists and titles"), ("CRM", "stages fed back to LinkedIn"), ("Pipeline", "is the number reported"), ("Flat fee", "never a % of ad spend")],
     "ecommerce-ppc-management": [("Margin", "not platform ROAS"), ("Feed first", "titles, GTINs, labels"), ("PMax", "with brand excluded"), ("New vs returning", "customers separated")],
 }
+GTM_ID = "GTM-TB2NHZCH"
+GTM_HEAD = ("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
+            "var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;"
+            "j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);"
+            "})(window,document,'script','dataLayer','" + GTM_ID + "');</script>")
+GTM_BODY = ('<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + GTM_ID +
+            '" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>')
+# Pushes clean dataLayer events for GTM: book_call_click, email_click (with link_url, cta_location).
+CLICK_JS = ("<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;"
+            "var h=a.getAttribute('href')||'',ev=null;if(h.indexOf('cal.com')>-1)ev='book_call_click';else if(h.indexOf('mailto:')===0)ev='email_click';"
+            "if(!ev)return;var sec=a.closest('header')?'header':a.closest('footer')?'footer':a.closest('.mmenu')?'mobile_menu':"
+            "(a.closest('.hero')?'hero':(a.closest('.ctabox')?'bottom_cta':'body'));"
+            "window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:ev,link_url:a.href,cta_location:sec});},true);</script>")
 PAGES = CORE + SERVICES
 BY_SLUG = {p["slug"]: p for p in PAGES}
 
@@ -282,6 +295,7 @@ def render(p):
 <html lang="en">
 <head>
 <meta charset="utf-8">
+{GTM_HEAD}
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(p['title'])}</title>
 <meta name="description" content="{esc(p['meta'])}">
@@ -289,13 +303,14 @@ def render(p):
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(p['title'])}">
 <meta property="og:description" content="{esc(p['meta'])}"><meta property="og:url" content="{url}">
 <meta property="og:site_name" content="{BRAND}">
-<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="robots" content="{'noindex,follow' if p.get('noindex') else 'index,follow,max-snippet:-1,max-image-preview:large'}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <style>{CSS}</style>
 <script type="application/ld+json">{schema_for(p)}</script>
 </head>
 <body>
+{GTM_BODY}
 <header class="top"><div class="wrap">
 <a class="logo" href="/">google<span>ads</span>freelancer</a>
 <nav class="main" aria-label="Main">{nav_html(slug)}</nav>
@@ -319,6 +334,7 @@ def render(p):
 <div class="wrap"><p class="byline">Written by <a href="/about/">{NAME}</a>. Last updated {TODAY}.</p></div>
 </main>
 {footer_html()}
+{CLICK_JS}{p.get('extra_js', '')}
 </body>
 </html>
 """
@@ -327,7 +343,10 @@ def render(p):
 def privacy_page():
     body = f"""<section><div class="wrap">
 <h2>What this site collects</h2>
-<p>This site is a set of static pages. It sets no cookies of its own. If analytics or advertising tags are added, they are listed here with the vendor and purpose.</p>
+<p>This site is a set of static pages. It uses the following third-party tags, loaded through Google Tag Manager:</p>
+<ul><li><b>Google Analytics 4.</b> Measures visits, pages viewed and clicks on the booking and email links, to understand which pages are useful. Sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>). Data is processed by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
+<li><b>Google Ads conversion measurement.</b> When you arrive from a Google ad and book a call, the booking is reported back to Google Ads as a conversion so ad spend can be judged on real outcomes.</li></ul>
+<p>You can block these with your browser's tracking protection or an extension such as Google's <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Analytics opt-out</a>; the site works the same without them.</p>
 <ul><li><b>Booking.</b> Calls are scheduled through Cal.com. Data you enter there is handled under <a href="https://cal.com/privacy" rel="noopener">Cal.com's privacy policy</a>.</li>
 <li><b>Email.</b> Messages to {MAIL} go to {NAME} directly and are kept for the purpose of replying and, if you become a client, running the engagement.</li>
 <li><b>Hosting.</b> Pages are served by Cloudflare, which processes IP addresses and request logs to deliver the site and protect it from abuse.</li></ul>
@@ -338,8 +357,28 @@ def privacy_page():
 </div></section>"""
     return {"slug": "privacy", "short": "Privacy", "blurb": "", "title": "Privacy policy | Google Ads Freelancer",
             "meta": "What googleadsfreelancer.com collects, why, and how to reach the person responsible for it.",
-            "h1": "Privacy policy", "lead": "Short, because there is little to say: static pages, a booking link and an email address.",
+            "h1": "Privacy policy", "lead": "Short, because there is little to say: static pages, analytics, a booking link and an email address.",
             "body": body, "kicker": "Legal", "proof": [], "noindex": False}
+
+
+def thanks_page():
+    body = f"""<section><div class="wrap">
+<h2>What happens next</h2>
+<ol class="steps">
+<li><div><strong>Check your inbox.</strong> Cal.com sends the confirmation and calendar invite. If it is not there in a few minutes, look in spam.</div></li>
+<li><div><strong>If you can, send context before the call.</strong> Monthly spend, platforms, and what prompted the search, to <a href="mailto:{MAIL}">{MAIL}</a>. Read-only access to Google Ads and GA4 is welcome but not required.</div></li>
+<li><div><strong>On the call.</strong> Thirty minutes: your account and goal, what I would look at first, and whether an audit or management makes sense. No deck.</div></li>
+</ol>
+<p>Need to change the time? Use the link in the confirmation email.</p>
+</div></section>"""
+    js = ("<script>window.dataLayer=window.dataLayer||[];"
+          "window.dataLayer.push({event:'booking_confirmed',booking_source:'cal.com'});</script>")
+    return {"slug": "thanks", "short": "Thanks", "blurb": "", "title": "Call booked | Google Ads Freelancer",
+            "meta": "Your call with Diego Zietek is booked.", "h1": "Your call is booked",
+            "lead": "Thanks. You will get a confirmation email from Cal.com with the details and a calendar invite.",
+            "body": body, "kicker": "Booked", "proof": [], "noindex": True, "extra_js": js,
+            "cta_title": "Anything else before the call?",
+            "cta_text": "Send context by email so the thirty minutes go further."}
 
 
 def build():
@@ -347,13 +386,15 @@ def build():
     if os.path.isdir(dist):
         shutil.rmtree(dist)
     os.makedirs(dist)
-    all_pages = PAGES + [privacy_page()]
+    all_pages = PAGES + [privacy_page(), thanks_page()]
     urls = []
     for p in all_pages:
         path = os.path.join(dist, out_path(p["slug"]))
         os.makedirs(os.path.dirname(path) or dist, exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             f.write(render(p))
+        if p.get("noindex"):
+            continue
         urls.append((SITE + url_for(p["slug"]), "1.0" if p["slug"] == "index" else ("0.5" if p["slug"] == "privacy" else "0.8")))
     with open(os.path.join(dist, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
@@ -363,7 +404,7 @@ def build():
     if PHOTO:
         shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"), os.path.join(dist, "diego.jpg"))
     with open(os.path.join(dist, "robots.txt"), "w") as f:
-        f.write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
+        f.write(f"User-agent: *\nAllow: /\nDisallow: /thanks/\n\nSitemap: {SITE}/sitemap.xml\n")
     with open(os.path.join(dist, "favicon.svg"), "w") as f:
         f.write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1a56db"/>'
                 '<text x="32" y="43" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle">GA</text></svg>')
