@@ -1,0 +1,47 @@
+tier,dominio,frase,busca_mes_us,cpc_usd,status,confianca,acao,observacao
+A,paidmediaconsultant.com,paid media consultant,40,32.64,"expirado, DNS livre",alta,comprar agora,Título exato do diwizi.com; par com o plural
+A,paidmediaconsultants.com,paid media consultants,,,"expirado, DNS livre",alta,comprar agora,Par defensivo do anterior
+A,googleadsmanagementservices.com,google ads management services,590,39.73,"expirado, DNS livre",alta,comprar agora,Página /google-ads-management/ já existe
+A,googleadsconsulting.com,google ads consulting,390,69.45,"expirado, DNS livre",alta,comprar agora,Página /google-ads-consultant/ já existe
+A,thegoogleadsexpert.com,google ads expert,880,127.43,"expirado, DNS livre",alta,comprar agora,72 domínios de referência (melhor perfil de links encontrado)
+A,googleadsfreelancers.com,google ads freelancers,,,"expirado, DNS livre",alta,comprar agora,"Plural do seu domínio; defensivo, US$10"
+A,googleadsremarketing.com,google ads remarketing,1000,31.91,"expirado, DNS livre",alta,comprar agora,Boa candidata a página de serviço nova
+B,ppcadvertisingmanagement.com,ppc advertising management,1300,76.38,"nunca visto no WHOIS, DNS livre",alta,comprar,Cluster de 'ppc management' (1.300/mês)
+B,ppcgoogle.com,ppc google,2400,34.03,"nunca visto no WHOIS, DNS livre",alta,comprar,Curto; frase ambígua mas com CPC comercial
+B,b2bleadgenagency.com,b2b lead gen agency,590,105.4,"expirado, DNS livre",alta,comprar,CPC altíssimo; página B2B lead gen existe no diwizi
+B,demandgencompanies.com,demand gen companies,2900,117.88,"nunca visto no WHOIS, DNS livre",alta,comprar,Página demand-generation existe no diwizi
+B,payperclickadvertisers.com,pay per click advertisers,8100,80.74,"nunca visto no WHOIS, DNS livre",alta,considerar,"Volume alto, intenção mista; nome soa como empresa"
+B,conversionrateoptimizationagency.com,conversion rate optimization agency,1600,40.12,"expirado, DNS livre",alta,considerar,Página landing-page-optimization existe no diwizi; nome longo
+B,paidmediaspecialists.com,paid media specialist,320,32.92,"expirado, DNS livre",alta,considerar,
+B,paidsearchspecialists.com,paid search specialist,140,,"expirado, DNS livre",alta,considerar,
+B,thedigitalmarketingconsultant.com,digital marketing consultant,1900,12.36,"expirado, DNS livre",alta,considerar,Brandable; CPC baixo = intenção mais fraca
+B,hiremarketingconsultant.com,hire marketing consultant,90,21.97,"expirado, DNS livre",alta,considerar,Intenção de contratar explícita
+B,attorneyleadgeneration.com,attorney lead generation,,,"expirado, DNS livre (39 RD)",alta,considerar,Página personal-injury-ppc existe no diwizi
+B,fractionalmktg.com,fractional marketing,590,14.29,"expirado, DNS livre (40 RD)",alta,considerar,'fractional cmo' 2.900/mês; fractionalcmo.com está tomado
+B,googleadscanada.com,google ads canada,,,"expirado, DNS livre",alta,considerar,Você atende Canadá
+B,metaadsconsultant.com,meta ads consultant,~0,,"expirado, DNS livre",alta,considerar,Descritivo; par da página /meta-ads-management/
+B,seoandppcservices.com,seo and ppc services,590,58.98,"nunca visto no WHOIS, DNS livre",alta,considerar,Só se for oferecer SEO
+B,bestleadgencompanies.com,best lead gen companies,480,52.1,"expirado, DNS livre",alta,considerar,Formato de comparativo/lista
+B,leadgenerationandmarketing.com,lead generation and marketing,590,47.05,"expirado, DNS livre",alta,considerar,
+B,ppcadcompany.com,ppc ad company,590,50.29,"nunca visto no WHOIS, DNS livre",alta,considerar,
+B,paidgoogleadvertising.com,paid google advertising,480,57.53,"nunca visto no WHOIS, DNS livre",alta,considerar,
+B,leadsformarketingagencies.com,leads for marketing agencies,390,64.1,"nunca visto no WHOIS, DNS livre",alta,considerar,Casa com a página white-label-ppc
+C,googleadsforbusiness.com,google ads for business,5400,43.45,"expirado, DNS livre",alta,avaliar,"Volume enorme, mas parte é DIY/navegacional"
+C,googleadslocal.com,google ads local,1900,6.92,"expirado, DNS livre",alta,avaliar,CPC baixo; confunde com Local Services Ads
+C,googleadsmanagers.com,google ads managers,1000,54.32,"expirado, DNS livre",alta,avaliar,Plural; perto demais do nome do produto do Google
+C,facebookadstargeting.com,facebook ads targeting,720,46.59,"expirado, DNS livre (147 RD)",alta,avaliar,Maior nº de links; risco de marca (Facebook); intenção meio informativa
+C,facebookadsforbusiness.com,facebook ads for business,3600,23.55,"expirado, DNS livre",alta,avaliar,Risco de marca (Facebook)
+C,googleadsforcoaches.com / linkedinadsforcoaches.com / youtubeadsforcoaches.com / tiktokadsforcoaches.com,(nicho coaches),,,"expirados, DNS livres",alta,avaliar,Conjunto de nicho 'coaches' pronto
+C,"googleadsguru.com, googleadsmadeeasy.com, googleadsmaster.com, googleadsecrets.com, googleadsuccess.com, googleadsppc.com, googleadsandseo.com, googleadstoday.com",(brandables),,,"expirados, DNS livres",alta,ignorar,Sem frase de busca; só marca
+BACKORDER,ppcconsultant.com,ppc consultant,210,24.39,"registrado, vence 2026-10-14 (DropCatch)",—,backorder,Drop real ≈ 60-75 dias após vencer; concorrido
+BACKORDER,googleadsexpert.com,google ads expert,880,127.43,"registrado, vence 2026-11-27",—,backorder,Melhor frase/CPC da lista
+BACKORDER,growthmarketingconsultant.com,growth marketing consultant,590,22.66,"registrado, vence 2026-10-07",—,backorder,Vence em 2 semanas
+BACKORDER,ppcmarketingagency.com,ppc marketing agency,590,50.29,"registrado, vence 2026-11-16 (59 RD)",—,backorder,
+BACKORDER,ppcconsultants.com,ppc consultants,,,"registrado, vence 2026-11-16",—,backorder,Registrado desde 2000
+BACKORDER,paidsearchconsultant.com,paid search consultant,90,21.83,"registrado, vence 2026-12-04",—,backorder,
+BACKORDER,googleadsforlawyers.com,google ads for lawyers,,,"registrado, vence 2026-11-21",—,backorder,Página law-firm-ppc existe no diwizi
+BACKORDER,googleadsfordoctors.com,google ads for doctors,,,"registrado, vence 2026-10-18",—,backorder,Páginas healthcare existem no diwizi
+BACKORDER,googleadsforroofers.com / googleadsaudit.com / fbadsmanager.com,(client hold),,,"registrado, em client_hold (não renovado)",—,monitorar,Podem cair a qualquer momento
+EXCLUIDO,"metadsmanager.com, facebookadvertisingmanager.com, admanagerfacebook.com, instagramadsmanager.com, linkedinadsmanager.com, snapchatadsmanager.com, youtubeadsmanager.com, amazonadsmanager.com, googlecampaignmanager.com, googleadsmanageraccounts.com, facebookbusinessmanager.com",(nomes de produto),>10.000,,livres,—,não comprar,Busca navegacional pela ferramenta + risco de UDRP/marca; não é cliente procurando consultor
+EXCLUIDO,"amazonppcprofessionals.com, amazonppcmanagement.com etc.",amazon ppc,1300,27.45,parte livre,—,não comprar,Seu site diz que não atende Amazon Ads
+EXCLUIDO,"*seoexpert*, *seoconsultant* (dezenas)",seo consultant,,,livres,—,não comprar,Fora do posicionamento; quase todos com cidade no nome
