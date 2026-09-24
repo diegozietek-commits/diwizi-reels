@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://googleadsfreelancer.com/sitemap.xml
