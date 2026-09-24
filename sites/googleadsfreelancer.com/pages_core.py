@@ -286,7 +286,7 @@ PAGES = [
 <tr><td>Under $3,000</td><td>One-off setup or audit</td><td>Usually below minimums</td><td>A retainer rarely makes sense here</td></tr>
 <tr><td>$3,000 – $10,000</td><td>Flat retainer, low four figures</td><td>Minimum retainer or 15–20% of spend</td><td>Where the freelance model is strongest</td></tr>
 <tr><td>$10,000 – $50,000</td><td>Flat retainer, scaled by scope</td><td>10–15% of spend</td><td>Percentage models start to overcharge here</td></tr>
-<tr><td>Over $50,000</td><td>Flat retainer or fractional lead</td><td>Custom, often 8–12%</td><td>Structure and measurement matter more than bids</td></tr>
+<tr><td>Over $50,000</td><td>Flat retainer, fractional lead</td><td>Custom, often 8–12% ($4,000–6,000+)</td><td>Structure and measurement matter more than bids</td></tr>
 </table>
 <p>Hourly consulting from senior practitioners runs from roughly $100 to $300 an hour depending on market; freelance marketplaces list much lower rates, mostly from people early in their careers or in lower-cost regions.</p>
 </div></section>
@@ -298,7 +298,8 @@ PAGES = [
 <tr><th>Engagement</th><th>Price</th><th>What is included</th></tr>
 <tr><td><a href="/google-ads-audit/">Google Ads audit</a></td><td>From <b>${{audit_usd}}</b> / £{{audit_gbp}}, fixed</td><td>Written report, fixes ranked by impact, walkthrough call. Credited against the first month of management.</td></tr>
 <tr><td><a href="/google-ads-management/">Management, up to ~$10K/month spend</a></td><td>From <b>${{retainer_usd}}</b> / £{{retainer_gbp}} per month</td><td>Weekly work, tracking maintained, landing page fixes, written monthly report. Month to month.</td></tr>
-<tr><td>Management, $10K to $50K/month spend</td><td>From <b>${{retainer_mid_usd}}</b> / £{{retainer_mid_gbp}} per month</td><td>Same scope with more campaigns, markets or platforms. Above $50K, quoted per account.</td></tr>
+<tr><td>Management, $10K to $50K/month spend</td><td>From <b>${{retainer_mid_usd}}</b> / £{{retainer_mid_gbp}} per month</td><td>Same scope with more campaigns, markets or platforms.</td></tr>
+<tr><td>Management, over $50K/month spend</td><td>From <b>${{retainer_top_usd}}</b> / £{{retainer_top_gbp}} per month</td><td>Multiple platforms and markets, weekly call, a fractional head of paid media rather than an operator. Above $150K, quoted per account.</td></tr>
 <tr><td><a href="/google-ads-setup/">Account setup</a></td><td>From <b>${{setup_usd}}</b> / £{{setup_gbp}}, fixed</td><td>Structure, ads, negatives, tracking, launch and handover document.</td></tr>
 <tr><td><a href="/conversion-tracking-setup/">Conversion tracking rebuild</a></td><td>From <b>${{tracking_usd}}</b> / £{{tracking_gbp}}, fixed</td><td>GA4, Tag Manager, enhanced and offline conversions, reconciliation report.</td></tr>
 <tr><td><a href="/google-ads-consultant/">Consulting and advisory</a></td><td><b>${{consulting_hour_usd}}</b> / £{{consulting_hour_gbp}} per hour</td><td>Strategy, second opinions and standing sessions with in-house teams. Fixed price for defined deliverables.</td></tr>
