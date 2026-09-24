@@ -106,6 +106,7 @@ footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
 footer a{color:var(--muted)}
 .fine{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:13.5px}
 .updated{color:var(--muted);font-size:14px}
+@media (max-width:720px){nav.main{display:none}header.top .wrap{min-height:56px}.logo{font-size:15px}}
 @media (max-width:640px){.hero{padding:36px 0 24px}.hero p.lead{font-size:18px}main section{padding:28px 0}.ctabox{padding:22px}}
 """
 
