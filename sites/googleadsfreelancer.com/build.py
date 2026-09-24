@@ -17,7 +17,7 @@ from pages_services import PAGES as SERVICES
 SITE = "https://googleadsfreelancer.com"
 NAME = "Diego Zietek"
 BRAND = "Google Ads Freelancer"
-CAL_EVENT_SLUG = "gaf-30min"  # TODO(diego): confirm this matches the real Cal.com event-type slug for this site
+CAL_EVENT_SLUG = "google-ads-call"  # create this event type on Cal.com under the diwizi account
 CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # dedicated event, not the shared cal.com/diwizi root link
 MAIL = "hello@diwizi.com"
 PARENT = "https://diwizi.com/"
