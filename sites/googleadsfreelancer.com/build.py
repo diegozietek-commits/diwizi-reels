@@ -24,13 +24,13 @@ PARENT = "https://diwizi.com/"
 TODAY = date.today().isoformat()
 
 PRICES = {  # edit here; every page reads from this dict
-    "audit_usd": 1500, "audit_gbp": 1200,
-    "retainer_usd": 1500, "retainer_gbp": 1200,
-    "retainer_mid_usd": 2500, "retainer_mid_gbp": 2000,
-    "consulting_hour_usd": 200, "consulting_hour_gbp": 160,
-    "setup_usd": 1500, "setup_gbp": 1200,
-    "tracking_usd": 1200, "tracking_gbp": 950,
-    "whitelabel_usd": 1000, "whitelabel_gbp": 800,
+    "audit_usd": 1800, "audit_gbp": 1400,
+    "retainer_usd": 2000, "retainer_gbp": 1600,
+    "retainer_mid_usd": 3000, "retainer_mid_gbp": 2400,
+    "consulting_hour_usd": 250, "consulting_hour_gbp": 200,
+    "setup_usd": 1800, "setup_gbp": 1400,
+    "tracking_usd": 1500, "tracking_gbp": 1200,
+    "whitelabel_usd": 1200, "whitelabel_gbp": 950,
 }
 PHOTO = os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"))
 
