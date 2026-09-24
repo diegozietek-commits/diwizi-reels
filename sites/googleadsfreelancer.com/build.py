@@ -18,7 +18,13 @@ SITE = "https://googleadsfreelancer.com"
 NAME = "Diego Zietek"
 BRAND = "Google Ads Freelancer"
 CAL_EVENT_SLUG = "google-ads-call"  # create this event type on Cal.com under the diwizi account
-CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # dedicated event, not the shared cal.com/diwizi root link
+CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # kept for reference; no longer linked from the site
+FORM_URL = "/contact/#form"  # every CTA points at the lead form
+# Web3Forms access key (free, no account): web3forms.com -> enter hello@diwizi.com -> key arrives by email.
+# Until it is set, the form falls back to opening the visitor's email client with the answers prefilled.
+WEB3FORMS_KEY = ""
+FORM_ENDPOINT = "https://api.web3forms.com/submit"
+BUDGET_BANDS = [("under_3k", "Under $3K / month"), ("3k_20k", "$3K – $20K"), ("20k_50k", "$20K – $50K"), ("50k_plus", "$50K+")]
 MAIL = "hello@diwizi.com"
 PARENT = "https://diwizi.com/"
 TODAY = date.today().isoformat()
@@ -66,10 +72,27 @@ TY_LIMPA_JS = ("<script id=\"ty-limpa\">"
     "</script>")
 # Pushes clean dataLayer events for GTM: book_call_click, email_click (with link_url, cta_location).
 CLICK_JS = ("<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;"
-            "var h=a.getAttribute('href')||'',ev=null;if(h.indexOf('cal.com')>-1)ev='book_call_click';else if(h.indexOf('mailto:')===0)ev='email_click';"
+            "var h=a.getAttribute('href')||'',ev=null;if(h.indexOf('cal.com')>-1)ev='book_call_click';else if(h.indexOf('#form')>-1)ev='quote_click';else if(h.indexOf('mailto:')===0)ev='email_click';"
             "if(!ev)return;var sec=a.closest('header')?'header':a.closest('footer')?'footer':a.closest('.mmenu')?'mobile_menu':"
             "(a.closest('.hero')?'hero':(a.closest('.ctabox')?'bottom_cta':'body'));"
             "window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:ev,link_url:a.href,cta_location:sec});},true);</script>")
+# Lead form: posts to Web3Forms via fetch, pushes lead_form_submit to the dataLayer, then goes to /thanks/?src=form.
+# Without an access key it falls back to a prefilled mailto so the form still works on day one.
+FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)return;"
+           "var st=f.querySelector('.form-status'),btn=f.querySelector('button');"
+           "function band(){var r=f.querySelector('input[name=budget]:checked');return r?r.value:''}"
+           "function push(){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'lead_form_submit',budget_band:band(),cta_location:location.pathname});}"
+           "f.addEventListener('submit',function(e){e.preventDefault();"
+           "if(!f.checkValidity()){f.reportValidity();return}"
+           "if(f.botcheck.checked)return;"
+           "var key=f.access_key.value;var fd=new FormData(f);"
+           "if(!key){push();var m='Monthly spend: '+band()+'%0AName: '+fd.get('name')+'%0AEmail: '+fd.get('email')+'%0AWebsite: '+(fd.get('website')||'')+'%0APhone: '+(fd.get('phone')||'')+'%0A%0A'+encodeURIComponent(fd.get('message')||'')+'%0A%0APage: '+fd.get('page');"
+           "location.href='mailto:" + MAIL + "?subject='+encodeURIComponent('Enquiry from " + BRAND + "')+'&body='+m;return}"
+           "btn.disabled=true;st.textContent='Sending\u2026';"
+           "fetch(f.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(j){"
+           "if(j&&j.success){push();location.href='/thanks/?src=form'}else{throw new Error((j&&j.message)||'error')}"
+           "}).catch(function(){btn.disabled=false;st.innerHTML='Could not send. Email <a href=\"mailto:" + MAIL + "\">" + MAIL + "</a> instead.';});"
+           "});})();</script>")
 PAGES = CORE + SERVICES
 BY_SLUG = {p["slug"]: p for p in PAGES}
 
@@ -143,6 +166,13 @@ details[open] summary::after{content:"–"}
 details p{margin-top:0}
 .ctabox{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:28px;margin:40px 0 0}
 .ctabox h2{margin-bottom:8px}
+form.lead{margin-top:18px;display:grid;gap:14px}form.lead fieldset{border:0;padding:0;margin:0}form.lead legend{font-weight:600;margin-bottom:8px}
+.pills{display:flex;gap:8px;flex-wrap:wrap}.pill input{position:absolute;opacity:0;pointer-events:none}.pill span{display:inline-block;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:var(--bg);cursor:pointer;font-size:15px}
+.pill input:checked+span{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}.pill input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+form.lead label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px}form.lead label small{font-weight:400;color:var(--muted)}
+form.lead input[type=text],form.lead input[type=email],form.lead input[type=url],form.lead input[type=tel],form.lead textarea{font:inherit;font-weight:400;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);width:100%}
+form.lead textarea{resize:vertical}.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media (max-width:640px){.row2{grid-template-columns:1fr}}
+.hp{position:absolute;left:-9999px;opacity:0}.form-note{color:var(--muted);font-size:14px}.form-status{margin:0;font-size:14px;color:var(--muted)}form.lead .btn{border:0;cursor:pointer;font:inherit;font-weight:600}
 .related{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .related a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
 .related a b{display:block;color:var(--accent)}
@@ -195,7 +225,7 @@ def mobile_menu_html():
         lis = "".join(f'<li><a href="{url_for(s)}">{esc(BY_SLUG[s]["short"])}</a></li>' for s in slugs)
         groups.append(f"<div><h4>{title}</h4><ul>{lis}</ul></div>")
     return ('<details class="mmenu"><summary aria-label="Menu">Menu</summary><div class="mmenu-panel">'
-            + "".join(groups) + f'<p><a class="btn" href="{CAL}" rel="noopener">Book a call</a></p></div></details>')
+            + "".join(groups) + f'<p><a class="btn" href="{FORM_URL}">Get a quote</a></p></div></details>')
 
 
 def footer_html():
@@ -204,7 +234,7 @@ def footer_html():
         lis = "".join(f'<li><a href="{url_for(s)}">{esc(BY_SLUG[s]["short"])}</a></li>' for s in slugs)
         groups.append(f"<div><h4>{title}</h4><ul>{lis}</ul></div>")
     groups.append(
-        f'<div><h4>Contact</h4><ul><li><a href="{CAL}" rel="noopener">Book a call</a></li>'
+        f'<div><h4>Contact</h4><ul><li><a href="{FORM_URL}">Get a quote</a></li>'
         f'<li><a href="mailto:{MAIL}">{MAIL}</a></li>'
         f'<li><a href="{PARENT}" rel="noopener">Diwizi (industry pages)</a></li></ul></div>'
     )
@@ -236,13 +266,39 @@ def related_html(slug):
     return f'<section><div class="wrap"><h2>Related services</h2><div class="related">{cards}</div></div></section>'
 
 
+def form_html(slug):
+    bands = "".join(
+        f'<label class="pill"><input type="radio" name="budget" value="{v}" required><span>{esc(t)}</span></label>'
+        for v, t in BUDGET_BANDS
+    )
+    return f"""<form id="form" class="lead" method="post" action="{FORM_ENDPOINT}" novalidate>
+<input type="hidden" name="access_key" value="{WEB3FORMS_KEY}">
+<input type="hidden" name="subject" value="New enquiry from {BRAND}">
+<input type="hidden" name="from_name" value="{BRAND}">
+<input type="hidden" name="page" value="{SITE}{url_for(slug)}">
+<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<fieldset><legend>Monthly ad spend, roughly</legend><div class="pills">{bands}</div></fieldset>
+<div class="row2">
+<label>Name<input type="text" name="name" autocomplete="name" required></label>
+<label>Work email<input type="email" name="email" autocomplete="email" required></label>
+</div>
+<div class="row2">
+<label>Website<input type="url" name="website" placeholder="https://" autocomplete="url" inputmode="url"></label>
+<label><span>Phone <small>(optional)</small></span><input type="tel" name="phone" autocomplete="tel"></label>
+</div>
+<label>What is not working, or what you need<textarea name="message" rows="3" placeholder="Platforms, who runs the account today, and what prompted the search."></textarea></label>
+<div class="cta-row"><button class="btn" type="submit">Send</button><span class="form-note">One reply, from me, usually within a working day. No sequence.</span></div>
+<p class="form-status" role="status" aria-live="polite"></p>
+</form>"""
+
+
 def cta_html(p):
+    slug = p["slug"]
     return (
-        '<div class="wrap"><div class="ctabox"><h2>' + esc(p.get("cta_title", "Talk to the person who would run the account")) +
-        "</h2><p>" + p.get("cta_text", "A 30-minute call. You describe the account and what is not working; I tell you "
-        "whether I can help, what I would do first, and what it costs. No proposal deck, no sales follow-up sequence.") +
-        f'</p><div class="cta-row"><a class="btn" href="{CAL}" rel="noopener">Book a call</a>'
-        f'<a class="btn ghost" href="mailto:{MAIL}">Email {MAIL}</a></div></div></div>'
+        '<div class="wrap"><div class="ctabox"><h2>' + esc(p.get("cta_title", "Tell me about the account")) +
+        "</h2><p>" + p.get("cta_text", "Spend band, site and what is not working. You get a straight answer on whether I can help, "
+        "what I would do first and a price range. No proposal deck, no sales follow-up sequence.") +
+        "</p>" + (f'<div class="cta-row"><a class="btn ghost" href="mailto:{MAIL}">Email {MAIL}</a></div>' if p.get("no_form") else form_html(slug)) + "</div></div>"
     )
 
 
@@ -328,7 +384,7 @@ def render(p):
 <header class="top"><div class="wrap">
 <a class="logo" href="/">google<span>ads</span>freelancer</a>
 <nav class="main" aria-label="Main">{nav_html(slug)}</nav>
-<a class="btn top-cta" href="{CAL}" rel="noopener">Book a call</a>
+<a class="btn top-cta" href="{FORM_URL}">Get a quote</a>
 {mobile_menu_html()}
 </div></header>
 <main>
@@ -337,7 +393,7 @@ def render(p):
 <div class="hero-grid"><div>
 <h1>{p['h1']}</h1>
 <p class="lead">{p['lead']}</p>
-<div class="cta-row"><a class="btn" href="{CAL}" rel="noopener">Book a 30-minute call</a><a class="btn ghost" href="{'#services' if slug == 'index' else ('/#services' if slug == 'pricing' else '/pricing/')}">View services &amp; pricing</a></div>
+<div class="cta-row"><a class="btn" href="{"#form" if slug == "contact" else FORM_URL}">Get a quote</a><a class="btn ghost" href="{'#services' if slug == 'index' else ('/#services' if slug == 'pricing' else '/pricing/')}">View services &amp; pricing</a></div>
 </div>{('<img src="/diego.jpg" alt="' + NAME + ', independent Google Ads consultant" width="340" height="425" loading="eager">') if (PHOTO and slug in ('index', 'about')) else ''}</div>
 {('<div class="proof">' + proof_html + '</div>') if proof_html else ''}
 </div></section>
@@ -348,7 +404,7 @@ def render(p):
 <div class="wrap"><p class="byline">Written by <a href="/about/">{NAME}</a>. Last updated {TODAY}.</p></div>
 </main>
 {footer_html()}
-{CLICK_JS}{p.get('extra_js', '')}
+{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}
 </body>
 </html>
 """
@@ -359,9 +415,9 @@ def privacy_page():
 <h2>What this site collects</h2>
 <p>This site is a set of static pages. It uses the following third-party tags, loaded through Google Tag Manager:</p>
 <ul><li><b>Google Analytics 4.</b> Measures visits, pages viewed and clicks on the booking and email links, to understand which pages are useful. Sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>). Data is processed by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
-<li><b>Google Ads conversion measurement.</b> When you arrive from a Google ad and book a call, the booking is reported back to Google Ads as a conversion so ad spend can be judged on real outcomes.</li></ul>
+<li><b>Google Ads conversion measurement.</b> When you arrive from a Google ad and send the form, the enquiry is reported back to Google Ads as a conversion so ad spend can be judged on real outcomes.</li></ul>
 <p>You can block these with your browser's tracking protection or an extension such as Google's <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Analytics opt-out</a>; the site works the same without them.</p>
-<ul><li><b>Booking.</b> Calls are scheduled through Cal.com. Data you enter there is handled under <a href="https://cal.com/privacy" rel="noopener">Cal.com's privacy policy</a>.</li>
+<ul><li><b>Contact form.</b> What you type in the form is relayed to my inbox by <a href="https://web3forms.com/privacy" rel="noopener">Web3Forms</a> and is not stored on this site. I use it only to reply.</li>
 <li><b>Email.</b> Messages to {MAIL} go to {NAME} directly and are kept for the purpose of replying and, if you become a client, running the engagement.</li>
 <li><b>Hosting.</b> Pages are served by Cloudflare, which processes IP addresses and request logs to deliver the site and protect it from abuse.</li></ul>
 <h2>Your rights</h2>
@@ -379,11 +435,11 @@ def thanks_page():
     body = f"""<section><div class="wrap">
 <h2>What happens next</h2>
 <ol class="steps">
-<li><div><strong>Check your inbox.</strong> Cal.com sends the confirmation and calendar invite. If it is not there in a few minutes, look in spam.</div></li>
-<li><div><strong>If you can, send context before the call.</strong> Monthly spend, platforms, and what prompted the search, to <a href="mailto:{MAIL}">{MAIL}</a>. Read-only access to Google Ads and GA4 is welcome but not required.</div></li>
-<li><div><strong>On the call.</strong> Thirty minutes: your account and goal, what I would look at first, and whether an audit or management makes sense. No deck.</div></li>
+<li><div><strong>I read it myself.</strong> Usually the same working day; within one working day at most.</div></li>
+<li><div><strong>You get one reply</strong> from <a href="mailto:{MAIL}">{MAIL}</a>: whether I can help, what I would look at first, a price range, and two or three times for a short call if it makes sense to talk.</div></li>
+<li><div><strong>Nothing else.</strong> No sequence, no newsletter. If you do not answer, I assume the timing was wrong.</div></li>
 </ol>
-<p>Need to change the time? Use the link in the confirmation email.</p>
+<p>Want to add anything? Reply to the confirmation, or write to <a href="mailto:{MAIL}">{MAIL}</a> with read-only access to Google Ads and GA4 if you already know you want an audit.</p>
 </div></section>"""
     # Fires only when Cal.com actually sent back a booking uid, and only once per uid
     # (sessionStorage + localStorage, so a refresh or a second tab doesn't double-count).
@@ -395,14 +451,17 @@ def thanks_page():
           "window.dataLayer=window.dataLayer||[];"
           "window.dataLayer.push({event:'booking_confirmed',booking_source:'cal.com',booking_uid:id});"
           "try{sessionStorage.setItem(k,'1');localStorage.setItem(k,'1')}catch(e){}"
-          "}catch(e){}})();</script>")
-    return {"slug": "thanks", "short": "Thanks", "blurb": "", "title": "Call booked | Google Ads Freelancer",
-            "meta": "Your call with Diego Zietek is booked.", "h1": "Your call is booked",
-            "lead": "Thanks. You will get a confirmation email from Cal.com with the details and a calendar invite.",
+          "}catch(e){}})();</script>"
+          # Booking copy when the visitor came from a Cal.com booking rather than the form.
+          "<script>(function(){try{if(!window.__tyUid)return;var h=document.querySelector('h1'),l=document.querySelector('p.lead');"
+          "if(h)h.textContent='Your call is booked';if(l)l.textContent='Thanks. Cal.com sends the confirmation and calendar invite; if it is not there in a few minutes, look in spam.';}catch(e){}})();</script>")
+    return {"slug": "thanks", "short": "Thanks", "blurb": "", "title": "Message received | Google Ads Freelancer",
+            "meta": "Your message to Diego Zietek has been received.", "h1": "Got it. You will hear from me, not from a sequence.",
+            "lead": "Thanks for the detail. Here is exactly what happens next.",
             "body": body, "kicker": "Booked", "proof": [], "noindex": True,
             "pre_gtm_head": TY_LIMPA_JS, "extra_js": js,
-            "cta_title": "Anything else before the call?",
-            "cta_text": "Send context by email so the thirty minutes go further."}
+            "cta_title": "Forgot something?",
+            "cta_text": "Send it here and I will fold it into the same reply.", "no_form": True}
 
 
 def build():

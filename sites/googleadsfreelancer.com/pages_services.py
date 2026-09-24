@@ -163,7 +163,7 @@ PAGES = [
 </div></section>
 """,
 "faq": [
-("How much does a Google Ads setup cost?", "A fixed price quoted after a short call, scaled by the number of services, markets and whether tracking has to be built from scratch. It is credited against the first month if you continue into management."),
+("How much does a Google Ads setup cost?", "A fixed price quoted from the form, scaled by the number of services, markets and whether tracking has to be built from scratch. It is credited against the first month if you continue into management."),
 ("How long does it take?", "Two to three weeks from kickoff to live for a typical single-market account. Tracking that depends on your developer or CRM can extend that."),
 ("Do you set up the account in your MCC or mine?", "Yours. If you do not have one, I create it in your name with your billing, then link it to my manager account for access. You can remove that access at any time."),
 ("Can I run it myself afterwards?", "Yes, and the handover document is written for that. A quarterly check-in or a one-off <a href=\"/google-ads-consultant/\">consulting session</a> is available if you want a second pair of eyes without a retainer."),
@@ -471,7 +471,7 @@ PAGES = [
 ],
 "related": ["ppc-management", "google-ads-audit", "google-ads-management", "pricing"],
 "cta_title": "Talk through an account or a gap",
-"cta_text": "Thirty minutes to describe the client, the spend and what you need covered. You get a per-account price and a start date.",
+"cta_text": "The client, the spend and what you need covered. You get a per-account price and a start date in the reply.",
 },
 
 {
@@ -516,7 +516,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Pricing and time</h2>
-<p>Fixed price, quoted after a short call and a look at the current setup, scaled by the number of platforms, outcomes and whether CRM integration is in scope. Typically one to three weeks, with the CRM piece depending on access. Included in management retainers; credited against the first month if a retainer follows. See <a href="/pricing/">pricing</a>.</p>
+<p>Fixed price, quoted after the form and a look at the current setup, scaled by the number of platforms, outcomes and whether CRM integration is in scope. Typically one to three weeks, with the CRM piece depending on access. Included in management retainers; credited against the first month if a retainer follows. See <a href="/pricing/">pricing</a>.</p>
 </div></section>
 """,
 "faq": [
