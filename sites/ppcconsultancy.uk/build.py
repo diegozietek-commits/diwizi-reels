@@ -512,7 +512,7 @@ def privacy_page():
     return {"slug": "privacy", "short": "Privacy", "blurb": "", "title": "Privacy and cookies | PPC Consultancy",
             "meta": "What ppcconsultancy.uk collects, why, the cookie choice, and how to reach the person responsible for it.",
             "h1": "Privacy and cookies", "lead": "Short, because there is little to say: static pages, analytics behind a consent banner, a contact form and an email address.",
-            "body": body, "kicker": "Legal", "proof": [], "noindex": False}
+            "body": body, "kicker": "Legal", "proof": [], "noindex": True}
 
 
 def thanks_page():
