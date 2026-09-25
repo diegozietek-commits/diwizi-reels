@@ -4,6 +4,7 @@
 Usage:  python3 build.py            -> writes ./dist
 Pages content lives in pages_core.py and pages_services.py.
 """
+import hashlib
 import html
 import json
 import os
@@ -45,6 +46,8 @@ MAIL = "hello@diwizi.com"
 MAIL_USER, MAIL_DOMAIN = MAIL.split("@")
 BRAND_SPRITE = "marcas-en-v3.webp"  # 6410x104 transparent sprite, 20 logos, trailing gap for a seamless loop
 PARENT = "https://diwizi.com/"
+PERSON_ID = "https://diwizi.com/#diego"  # same Person node on diwizi.com, googleadsfreelancer.com and ppcconsultancy.uk
+OG_IMAGE = "og.jpg"  # 1200x630 share image in assets/
 TODAY = date.today().isoformat()
 
 PRICES = {  # edit here; every page reads from this dict
@@ -372,10 +375,65 @@ def strip_tags(s):
     return re.sub(r"<[^>]+>", "", s)
 
 
+HERE = os.path.dirname(os.path.abspath(__file__))
+LASTMOD_FILE = os.path.join(HERE, "lastmod.json")
+
+
+def content_fingerprint(page_html):
+    """Hash of what a reader sees in <main> (form excluded), so template or date changes do not move lastmod."""
+    m = re.search(r"<main>(.*)</main>", page_html, re.S)
+    body = m.group(1) if m else page_html
+    body = re.sub(r"<form.*?</form>", "", body, flags=re.S)
+    body = re.sub(r"<script.*?</script>", "", body, flags=re.S)
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", body))).strip()
+    title = re.search(r"<title>(.*?)</title>", page_html, re.S)
+    desc = re.search(r'<meta name="description" content="([^"]*)"', page_html)
+    raw = (title.group(1) if title else "") + "|" + (desc.group(1) if desc else "") + "|" + text
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def load_lastmod():
+    try:
+        with open(LASTMOD_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+
+def save_lastmod(manifest):
+    with open(LASTMOD_FILE, "w", encoding="utf-8") as f:
+        json.dump(dict(sorted(manifest.items())), f, indent=1)
+        f.write("\n")
+
+
+def llms_txt():
+    by = {p["slug"]: p for p in PAGES}
+    lines = [f"# {BRAND} ({SITE.split('//')[1]})", "", "> " + LLMS_SUMMARY, ""]
+    lines += LLMS_FACTS + ["", "## Main pages", ""]
+    for slug in LLMS_PAGES:
+        p = by[slug]
+        blurb = p.get("blurb") or strip_tags(p["meta"])
+        lines.append(f"- [{p.get('short') or p['title']}]({SITE}{url_for(slug)}): {blurb}")
+    lines += ["", "## Related", "", f"- [Diwizi]({PARENT}): the same practice, organised by industry, with published research",
+              f"- [{SISTER.split('//')[1]}]({SISTER}/): {LLMS_SISTER}", "",
+              f"Contact: {MAIL_USER} (at) {MAIL_DOMAIN}, or the form on any page.", ""]
+    return "\n".join(lines)
+
+
+LLMS_SUMMARY = ("Diego Zietek, independent Google Ads and paid media consultant with 14+ years of hands-on work. "
+                "Runs Google Ads, with Meta, Microsoft Advertising and LinkedIn when they fit, personally, for a flat monthly fee. "
+                "Accounts stay in the client's name. Based in Curitiba, Brazil; works remotely in English.")
+LLMS_FACTS = ["- Market: businesses in the United States and Canada; the UK practice is at ppcconsultancy.uk.",
+              "- Services: Google Ads management, audits, setup, conversion tracking, consulting, and multi-platform PPC management.",
+              "- Fees: a flat monthly fee, never a percentage of ad spend. No long contract.",
+              "- Pricing: quoted per account from the form; prices are not published."]
+LLMS_PAGES = ["index", "google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "google-ads-consultant", "pricing", "results", "about", "contact"]
+LLMS_SISTER = "UK practice, prices in pounds"
+
 def schema_for(p):
     url = SITE + url_for(p["slug"])
     person = {
-        "@type": "Person", "@id": SITE + "/about/#person", "name": NAME,
+        "@type": "Person", "@id": PERSON_ID, "name": NAME, "image": SITE + "/diego.jpg",
         "jobTitle": "Independent paid media consultant", "url": SITE + "/about/",
         "sameAs": [PARENT, PARENT + "diego-zietek.html"],
         "worksFor": {"@type": "Organization", "name": "Diwizi", "url": PARENT},
@@ -383,13 +441,13 @@ def schema_for(p):
     }
     service = {
         "@type": "ProfessionalService", "@id": SITE + "/#service", "name": BRAND + " | " + NAME,
-        "url": SITE + "/", "founder": {"@id": SITE + "/about/#person"},
+        "url": SITE + "/", "founder": {"@id": PERSON_ID},
         "areaServed": [{"@type": "Country", "name": c} for c in ["United States", "Canada", "United Kingdom", "Ireland"]],
         "priceRange": "$$", "serviceType": "Google Ads management and consulting",
     }
     graph = [person, service, {
         "@type": "WebPage", "@id": url, "url": url, "name": p["title"], "description": p["meta"],
-        "dateModified": TODAY, "isPartOf": {"@type": "WebSite", "url": SITE + "/", "name": BRAND},
+        "dateModified": p.get("_lastmod", TODAY), "isPartOf": {"@type": "WebSite", "url": SITE + "/", "name": BRAND},
         "about": {"@id": SITE + "/#service"},
     }]
     if p.get("faq"):
@@ -442,6 +500,8 @@ def render(p):
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(p['title'])}">
 <meta property="og:description" content="{esc(p['meta'])}"><meta property="og:url" content="{url}">
 <meta property="og:site_name" content="{BRAND}">
+<meta property="og:image" content="{SITE}/{OG_IMAGE}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{BRAND}: {NAME}, independent paid media consultant">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(p['title'])}"><meta name="twitter:description" content="{esc(p['meta'])}"><meta name="twitter:image" content="{SITE}/{OG_IMAGE}">
 <meta name="robots" content="{'noindex,follow' if p.get('noindex') else 'index,follow,max-snippet:-1,max-image-preview:large'}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -539,22 +599,34 @@ def build():
     os.makedirs(dist)
     all_pages = PAGES + [privacy_page(), thanks_page()]
     urls = []
+    manifest = load_lastmod()
     for p in all_pages:
         path = os.path.join(dist, out_path(p["slug"]))
         os.makedirs(os.path.dirname(path) or dist, exist_ok=True)
+        page = render(dict(p))
+        fp = content_fingerprint(page)
+        known = manifest.get(p["slug"])
+        if not known or known[0] != fp:
+            manifest[p["slug"]] = [fp, TODAY]
+        lastmod = manifest[p["slug"]][1]
+        p["_lastmod"] = lastmod
         with open(path, "w", encoding="utf-8") as f:
             f.write(render(p))
         if p.get("noindex"):
             continue
-        urls.append((SITE + url_for(p["slug"]), "1.0" if p["slug"] == "index" else ("0.5" if p["slug"] == "privacy" else "0.8")))
+        urls.append((SITE + url_for(p["slug"]), lastmod, "1.0" if p["slug"] == "index" else ("0.5" if p["slug"] == "privacy" else "0.8")))
     with open(os.path.join(dist, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-        for u, pr in urls:
-            f.write(f"  <url><loc>{u}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority></url>\n")
+        for u, lm, pr in urls:
+            f.write(f"  <url><loc>{u}</loc><lastmod>{lm}</lastmod><priority>{pr}</priority></url>\n")
         f.write("</urlset>\n")
     if PHOTO:
         shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"), os.path.join(dist, "diego.jpg"))
     shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", BRAND_SPRITE), os.path.join(dist, BRAND_SPRITE))
+    save_lastmod(manifest)
+    shutil.copy(os.path.join(HERE, "assets", OG_IMAGE), os.path.join(dist, OG_IMAGE))
+    with open(os.path.join(dist, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write(llms_txt())
     with open(os.path.join(dist, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\nDisallow: /thanks/\n\nSitemap: {SITE}/sitemap.xml\n")
     with open(os.path.join(dist, "favicon.svg"), "w") as f:
