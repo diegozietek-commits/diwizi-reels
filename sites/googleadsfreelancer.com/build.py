@@ -182,6 +182,7 @@ ul{padding-left:22px}
 .steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start}
 .steps li::before{content:counter(s);width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--accent-fg);display:grid;place-items:center;font-weight:700}
 table{border-collapse:collapse;width:100%;font-size:15.5px;margin:12px 0}
+@media (max-width:720px){table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:14.5px}th,td{padding:8px}}
 th,td{text-align:left;padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 th{color:var(--muted);font-weight:600;font-size:14px}
 .note{border-left:3px solid var(--accent);padding:10px 16px;background:var(--soft);border-radius:0 10px 10px 0;color:var(--muted);font-size:15.5px}
@@ -381,7 +382,7 @@ def schema_for(p):
         "knowsAbout": ["Google Ads", "Meta Ads", "LinkedIn Ads", "Microsoft Advertising", "Conversion tracking", "GA4"],
     }
     service = {
-        "@type": "ProfessionalService", "@id": SITE + "/#service", "name": BRAND + " — " + NAME,
+        "@type": "ProfessionalService", "@id": SITE + "/#service", "name": BRAND + " | " + NAME,
         "url": SITE + "/", "founder": {"@id": SITE + "/about/#person"},
         "areaServed": [{"@type": "Country", "name": c} for c in ["United States", "Canada", "United Kingdom", "Ireland"]],
         "priceRange": "$$", "serviceType": "Google Ads management and consulting",
