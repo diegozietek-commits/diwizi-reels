@@ -32,7 +32,7 @@ PAGES = [
 <section><div class="wrap">
 <h2>A client result, with the platform and the period attached</h2>
 <div class="cols">
-<div class="card"><h3>Mission AC &amp; Plumbing, Houston</h3><p><strong>Google Ads Search, May 2025 to February 2026, about $20,000 a month.</strong> Cost per acquisition down 44% and qualified leads up 60%, in an auction where the core keywords cost $45 to $80 a click.</p><p>Done by restructuring campaigns by job type, rebuilding tracking so a booked job and a phone call were not the same thing, a weekly negatives programme and steady ad and landing page tests. <a href="/results/">What can be verified, and what cannot →</a></p></div>
+<div class="card"><h3>HVAC and plumbing company, Houston</h3><p><strong>Google Ads Search, May 2025 to February 2026, about $20,000 a month.</strong> Cost per acquisition down 44% and qualified leads up 60%, in an auction where the core keywords cost $45 to $80 a click.</p><p>Done by restructuring campaigns by job type, rebuilding tracking so a booked job and a phone call were not the same thing, a weekly negatives programme and steady ad and landing page tests.</p><p>Also on the results page: a Brazilian startup with 600% sales growth in eight months, $21 million in B2B revenue from $1.5 million in media, and a 5,000-student enrolment target hit three months early. <a href="/results/">Read the cases and their limits →</a></p></div>
 <div class="card"><h3>What a retainer covers</h3><ul><li>Weekly work inside the accounts: search terms, bids, budgets, ads, exclusions</li><li>Conversion tracking built and maintained: GA4, Tag Manager, offline import from your CRM</li><li>Landing pages built or fixed by me, not specced to a queue</li><li>A written monthly report on cost per enquiry and what changed</li><li>Direct access to the consultant, no account manager in between</li></ul></div>
 </div>
 </div></section>
@@ -254,14 +254,14 @@ PAGES = [
 {
 "slug": "results", "short": "Results", "blurb": "Published engagements, with what can and cannot be verified.",
 "title": "Results | PPC Case Studies From an Independent Consultant",
-"meta": "Published PPC results from an independent consultant: a Houston home services company with 44% lower CPA and 60% more qualified leads, a US pharmaceutical agency role, and what the numbers do and do not prove.",
+"meta": "PPC results from an independent consultant: 44% lower CPA for a Houston home services firm, 600% startup sales growth in eight months, $21M B2B revenue from $1.5M in media, and what each number does and does not prove.",
 "kicker": "Results",
 "h1": "What the work has produced, and what a reader can actually check",
-"lead": "Two engagements are public. Each is described with its dates, its scope and its limits, because a case study without the limits is an advertisement.",
-"proof": [("44%", "CPA reduction, Houston home services"), ("60%", "more qualified leads, same engagement"), ("~$20K", "monthly Google Ads spend"), ("9", "months, May 2025 to Feb 2026")],
+"lead": "Five engagements, three of them with the client unnamed for compliance or confidentiality. Each is described with its scope and its limits, because a case study without the limits is an advertisement.",
+"proof": [("44%", "lower CPA, Houston home services"), ("600%", "sales growth in 8 months, Pontomais"), ("$21M", "B2B revenue from $1.5M in media, 2025"), ("3 months", "early on a 5,000-student target")],
 "body": """
 <section><div class="wrap">
-<h2>Mission AC &amp; Plumbing, Houston, Texas</h2>
+<h2>Residential HVAC and plumbing company, Houston, Texas</h2>
 <p><strong>Google Ads Search · May 2025 to February 2026 · about $20,000 a month · independent engagement, working directly with the owner.</strong></p>
 <h3>The problem</h3>
 <p>A residential HVAC and plumbing company in one of the most expensive local auctions in the US: core terms at $45 to $80 a click, dozens of competitors, and demand that swings with the weather. Emergency repairs and system replacements shared one campaign, so the urgent, cheaper work absorbed the budget meant for installs. Phone calls were counted as conversions whether or not they became jobs, so the account was learning from ring volume rather than revenue.</p>
@@ -281,18 +281,39 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
+<h2>Pontomais, Brazilian HR tech startup</h2>
+<p><strong>Paid media, mostly Google Ads · startup stage · eight months.</strong></p>
+<p>Pontomais was a startup selling time-tracking and HR software to Brazilian companies, competing for the same searches as larger, better-funded players. The job was to turn paid search into the main source of new sales without the budget of those competitors: tight keyword coverage around buying intent, landing pages built for the trial and demo request, and tracking that followed a lead through to a closed contract.</p>
+<p>Sales grew <strong>600% in eight months</strong>, with most of the new business coming from paid media on Google.</p>
+<p class="note">Figures from the company's sales reporting at the time, not audited by a third party. Budgets, cost per acquisition and contract values are not published.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Large healthcare organisation in Brazil, B2B services</h2>
+<p><strong>Paid media for B2B services · 2025 · client not named for compliance reasons.</strong></p>
+<p>In 2025, <strong>$1.5 million</strong> invested in paid media was tied to <strong>$21 million in B2B revenue</strong>, roughly fourteen times the media spend. The work covered campaign strategy, conversion tracking into the sales pipeline, and the reporting that connected media cost to closed business rather than to leads.</p>
+<p class="note">The organisation's compliance rules do not allow it to be named, and channel mix, contract values and internal reporting stay confidential. The revenue figure is the organisation's own attribution for the year.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>One of the largest private school groups in Brazil</h2>
+<p><strong>Enrolment campaigns · client not named.</strong></p>
+<p>The enrolment target was <strong>5,000 new students</strong>. It was reached <strong>three months before the deadline</strong>, with paid media carrying the demand from first search to enrolment enquiry.</p>
+<p class="note">Budgets, cost per enrolment and campus-level results are confidential.</p>
+</div></section>
+
+<section><div class="wrap">
 <h2>Underscore Marketing, US pharmaceutical agency, freelance role</h2>
 <p>From September 2023 to March 2024 I worked as a freelance paid media operator for Underscore Marketing, a US agency serving pharmaceutical clients, on Google Ads and paid social accounts under the agency's brand. The work covered oncology, rare disease and gene therapy brands. Medication names, budgets and results stay confidential under the agency's NDA. It is listed because it is where a good deal of my healthcare and regulated-category experience comes from.</p>
 </div></section>
 
 <section><div class="wrap">
-<h2>Not published</h2>
-<p>Five years of senior in-house paid media work in healthcare, for an employer that is not named on this site. No budgets, results or internal details from that role appear here or on diwizi.com. It is mentioned only so the experience claim on the <a href="/about/">about page</a> is honest about where the years came from.</p>
+<h2>Research</h2>
 <p>First-party research that is public: the <a href="https://diwizi.com/paid-media-cost-index.html" rel="noopener">Paid Media Cost Index</a>, a median Google Ads CPC benchmark across six US industries with method and date, and a set of <a href="https://diwizi.com/case-study-hubspot-paid-search.html" rel="noopener">ad spend teardowns</a> built from public advertiser data.</p>
 </div></section>
 """,
 "faq": [
-("Why only two case studies?", "Because these are the two I am allowed to describe. Most paid media work happens under NDA, and I would rather publish two engagements with their limits stated than ten with the limits hidden."),
+("Why are some clients not named?", "Because most paid media work happens under NDA or compliance rules. Where a client cannot be named, the sector, the size and the result are given and nothing else. I would rather publish a few engagements with their limits stated than many with the limits hidden."),
 ("Do you have UK case studies?", "Not published yet. UK and Irish work to date is under NDA or too recent to report honestly. The first UK engagement that can be described with dates and limits will appear here."),
 ("Can I speak to a past client?", "For serious engagements, yes, subject to the client agreeing. Ask in the form or on the call."),
 ("What results should I expect?", "Nobody can promise a number before seeing the account, and anyone who does is guessing. What I can commit to is the order of work: tracking first, then wasted spend, then structure, then testing, with each step reported in writing so you can see what moved."),
@@ -340,7 +361,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What is public and what is not</h2>
-<p>Two engagements are published with dates and limits on the <a href="/results/">results page</a>: the Mission AC &amp; Plumbing account in Houston and a freelance role with Underscore Marketing, a US pharmaceutical agency. Five years of senior in-house healthcare work are not published; the employer is not named and no details from it appear on this site. First-party research, including a Google Ads CPC benchmark across six US industries, is published on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, which is the same practice with more detail by industry.</p>
+<p>Five engagements are described with their limits on the <a href="/results/">results page</a>: a Houston HVAC and plumbing company (44% lower cost per acquisition), Pontomais, a Brazilian HR tech startup (600% sales growth in eight months, mostly from Google Ads), a large Brazilian healthcare organisation ($21 million in B2B revenue from $1.5 million in media in 2025), one of the largest private school groups in Brazil (a 5,000-student enrolment target hit three months early) and a freelance role with Underscore Marketing, a US pharmaceutical agency. Clients bound by compliance or confidentiality are not named. First-party research, including a Google Ads CPC benchmark across six US industries, is published on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, which is the same practice with more detail by industry.</p>
 <p>This site exists because UK businesses search for a PPC consultancy without an industry in mind. Diwizi.com goes deep by sector; this site answers the general question: who would run the account, how, and on what terms.</p>
 </div></section>
 """,

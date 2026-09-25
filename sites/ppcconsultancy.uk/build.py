@@ -246,6 +246,7 @@ footer a{color:var(--muted)}
 .mmenu-panel ul{list-style:none;padding:0;margin:0}.mmenu-panel li{margin:2px 0}.mmenu-panel a{text-decoration:none;color:var(--fg)}
 .hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center}
 .hero-grid img{width:100%;max-width:340px;border-radius:16px;justify-self:end;aspect-ratio:4/5;object-fit:cover}
+.hero-grid:not(:has(img)){grid-template-columns:1fr}.hero-grid:not(:has(img))>div{max-width:860px}
 .byline{color:var(--muted);font-size:13.5px;margin:28px 0 0}
 .price{font-size:15px;color:var(--muted)}.price b{color:var(--fg);font-size:18px}
 @media (max-width:720px){nav.main,.top-cta{display:none}.mmenu{display:block}header.top .wrap{min-height:56px}.logo{font-size:15px}.hero-grid{grid-template-columns:1fr}.hero-grid img{justify-self:start;max-width:220px}}
@@ -301,7 +302,7 @@ def brands_html():
     return f"""<section class="brands" id="brands"><div class="wrap">
 <p class="eyebrow">Experience</p>
 <h2>Brands I've worked on</h2>
-<p>Fourteen-plus years across agency, in-house and freelance roles put me on accounts with very different economics: SaaS and subscription products such as Intuit QuickBooks, Skillshare and Pontomais, global consumer brands such as Shell, Timberland and Amazon Prime, home services companies such as Mission AC &amp; Plumbing in Houston, and companies in telecom, education, healthcare and e-commerce. Through Underscore Marketing, a US agency, I also worked on oncology, rare disease and gene therapy brands.</p>
+<p>Fourteen-plus years across agency, in-house and freelance roles put me on accounts with very different economics: SaaS and subscription products such as Intuit QuickBooks, Skillshare and Pontomais, global consumer brands such as Shell, Timberland and Amazon Prime, home services companies such as an HVAC and plumbing business in Houston, and companies in telecom, education, healthcare and e-commerce. Through Underscore Marketing, a US agency, I also worked on oncology, rare disease and gene therapy brands.</p>
 <div class="brand-strip"><div class="brand-track"><img {img} alt="{BRANDS_ALT}"><img {img} alt="" aria-hidden="true"></div></div>
 <p>What carries over to your account is pattern recognition: how a trial-to-paid funnel differs from a lead form, which conversions each business can actually measure, and where spend usually leaks.</p>
 <ul class="tags">{tags}</ul>
@@ -478,7 +479,7 @@ def render(p):
 <h1>{p['h1']}</h1>
 <p class="lead">{p['lead']}</p>
 <div class="cta-row"><a class="btn" href="{"#form" if slug == "contact" else FORM_URL}">Get a quote</a><a class="btn ghost" href="{'#services' if slug == 'index' else ('/#services' if slug == 'pricing' else '/pricing/')}">View services &amp; pricing</a></div>
-</div>{('<img src="/diego.jpg" alt="' + NAME + ', independent Google Ads consultant" width="340" height="425" loading="eager">') if (PHOTO and slug in ('index', 'about')) else ''}</div>
+</div>{('<img src="/diego.jpg" alt="' + NAME + ', independent Google Ads consultant" width="340" height="425" loading="eager">') if (PHOTO and slug == 'about') else ''}</div>
 {('<div class="proof">' + proof_html + '</div>') if proof_html else ''}
 </div></section>
 {p['body']}

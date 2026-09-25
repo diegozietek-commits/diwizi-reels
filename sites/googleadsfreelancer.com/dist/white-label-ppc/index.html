@@ -102,6 +102,7 @@ footer a{color:var(--muted)}
 .mmenu-panel ul{list-style:none;padding:0;margin:0}.mmenu-panel li{margin:2px 0}.mmenu-panel a{text-decoration:none;color:var(--fg)}
 .hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center}
 .hero-grid img{width:100%;max-width:340px;border-radius:16px;justify-self:end;aspect-ratio:4/5;object-fit:cover}
+.hero-grid:not(:has(img)){grid-template-columns:1fr}.hero-grid:not(:has(img))>div{max-width:860px}
 .byline{color:var(--muted);font-size:13.5px;margin:28px 0 0}
 .price{font-size:15px;color:var(--muted)}.price b{color:var(--fg);font-size:18px}
 @media (max-width:720px){nav.main,.top-cta{display:none}.mmenu{display:block}header.top .wrap{min-height:56px}.logo{font-size:15px}.hero-grid{grid-template-columns:1fr}.hero-grid img{justify-self:start;max-width:220px}}
