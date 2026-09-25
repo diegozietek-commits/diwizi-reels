@@ -108,7 +108,7 @@ PAGES = [
 ("Do you work with Google Ads accounts only, or all platforms?", "Both. Many UK clients start with Google Ads alone and add Microsoft Advertising a month later because it is cheap to run alongside. Meta and LinkedIn are added when the business case is there. The <a href=\"/ppc-management/\">PPC management page</a> covers the multi-platform version."),
 ("Can you take over an account an agency built?", "Yes, and it is the most common starting point. Nothing is changed until the tracking is trustworthy; then wasted spend, then structure, then testing. The audit lists the order and the reasons."),
 ("Do you do Google Shopping?", "No. Shopping, Merchant Centre and catalogue Performance Max are e-commerce work, which is a discipline of its own. I will point you to someone who does it all day."),
-("What does Google Ads management cost in the UK?", "A flat monthly fee set by scope, quoted after the audit and credited with it. For most accounts between £3,000 and £40,000 a month in spend the fee is in the low-to-mid four figures; the <a href=\"/pricing/\">pricing page</a> explains the model and UK ranges."),
+("What does Google Ads management cost in the UK?", "A flat monthly fee set by scope, quoted after the audit and credited with it. Your quote comes back in pounds, ex VAT, once the form tells me the spend band and platforms; the <a href=\"/pricing/\">pricing page</a> explains the model and UK ranges."),
 ("Will you tell me if Google Ads is the wrong channel for us?", "Yes, and it happens. Some B2B categories have too little search volume in the UK to sustain a campaign, and the honest answer is LinkedIn, or content, or a sales motion. The audit says so if that is the case."),
 ],
 "related": ["ppc-management", "ppc-audit", "conversion-tracking", "landing-pages"],
@@ -211,7 +211,7 @@ PAGES = [
 
 {
 "slug": "landing-pages", "short": "Landing pages", "blurb": "One page per intent, built to the ad, tracked before it goes live.",
-"title": "PPC Landing Pages UK | Built and Tested by the Person Running the Ads",
+"title": 'PPC Landing Pages UK | Landing Page Optimisation by the Ads Consultant',
 "meta": "Landing pages for PPC, built by the consultant who runs the campaigns: one page per intent, written to the ad, tracked before launch and tested against a control. Included in management retainers, available as a fixed-price project.",
 "kicker": "Landing pages",
 "h1": "Landing pages built by the person who runs the ads, so the page and the campaign are one decision",
@@ -255,7 +255,7 @@ PAGES = [
 
 {
 "slug": "conversion-tracking", "short": "Conversion tracking", "blurb": "GA4, Tag Manager, Consent Mode and offline import, so the platforms optimise towards customers.",
-"title": "Conversion Tracking Setup UK | GA4, Tag Manager, Consent Mode and Offline Import",
+"title": 'Google Ads Conversion Tracking UK | GA4 and Tag Manager Consultant',
 "meta": "Conversion tracking setup and repair for UK businesses: Google Ads, GA4, Tag Manager, Consent Mode v2, enhanced conversions and offline import from HubSpot or Salesforce. Fixed price, done by the consultant who runs the ads.",
 "kicker": "Conversion tracking",
 "h1": "Conversion tracking that Google Ads, GA4 and your CRM all agree on",

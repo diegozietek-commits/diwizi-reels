@@ -302,7 +302,7 @@ def brands_html():
     return f"""<section class="brands" id="brands"><div class="wrap">
 <p class="eyebrow">Experience</p>
 <h2>Brands I've worked on</h2>
-<p>Fourteen-plus years across agency, in-house and freelance roles put me on accounts with very different economics: SaaS and subscription products such as Intuit QuickBooks, Skillshare and Pontomais, global consumer brands such as Shell, Timberland and Amazon Prime, home services companies such as an HVAC and plumbing business in Houston, and companies in telecom, education, healthcare and e-commerce. Through Underscore Marketing, a US agency, I also worked on oncology, rare disease and gene therapy brands.</p>
+<p>Fourteen years and more across agency, in-house and freelance roles have put me inside accounts with very different economics: subscription software such as Intuit QuickBooks, Skillshare and Pontomais, international consumer brands such as Shell, Timberland and Amazon Prime, a home services business in Houston, and organisations in telecoms, education, healthcare and online retail. Through Underscore Marketing, a US agency, I also worked on oncology, rare disease and gene therapy brands.</p>
 <div class="brand-strip"><div class="brand-track"><img {img} alt="{BRANDS_ALT}"><img {img} alt="" aria-hidden="true"></div></div>
 <p>What carries over to your account is pattern recognition: how a trial-to-paid funnel differs from a lead form, which conversions each business can actually measure, and where spend usually leaks.</p>
 <ul class="tags">{tags}</ul>
@@ -398,7 +398,7 @@ def schema_for(p):
         "knowsAbout": ["Google Ads", "Meta Ads", "LinkedIn Ads", "Microsoft Advertising", "Conversion tracking", "GA4"],
     }
     service = {
-        "@type": "ProfessionalService", "@id": SITE + "/#service", "name": BRAND + " — " + NAME,
+        "@type": "ProfessionalService", "@id": SITE + "/#service", "name": BRAND + " | " + NAME,
         "url": SITE + "/", "founder": {"@id": SITE + "/about/#person"},
         "areaServed": [{"@type": "Country", "name": c} for c in ["United Kingdom", "Ireland"]],
         "priceRange": "££", "serviceType": "PPC consultancy and management",
