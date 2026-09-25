@@ -1,0 +1,29 @@
+# PPC Consultancy (ppcconsultancy.uk)
+
+> Diego Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish lead generation businesses. Runs Google, Microsoft, Meta and LinkedIn Ads personally, with landing pages and conversion tracking included, for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.
+
+- Market: UK and Irish businesses; the US and Canadian practice is at googleadsfreelancer.com.
+- Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).
+- Not offered: e-commerce PPC (Shopping feeds, catalogue Performance Max).
+- Pricing: quoted in pounds, ex VAT, from the form; prices are not published. Never a percentage of ad spend.
+
+## Main pages
+
+- [Home](https://ppcconsultancy.uk/): Independent PPC consultancy for UK lead generation businesses.
+- [PPC management](https://ppcconsultancy.uk/ppc-management/): Google, Microsoft, Meta and LinkedIn under one measurement layer, with pages and tracking in scope.
+- [PPC audit](https://ppcconsultancy.uk/ppc-audit/): Fixed-price account audit with fixes ranked by financial impact. Yours to keep.
+- [PPC consultant, London](https://ppcconsultancy.uk/ppc-consultant-london/): For London businesses, delivered remotely on UK hours.
+- [B2B PPC](https://ppcconsultancy.uk/b2b-ppc/): Search and LinkedIn for pipeline, with CRM stages fed back to the platforms.
+- [Landing pages](https://ppcconsultancy.uk/landing-pages/): One page per intent, built to the ad, tracked before it goes live.
+- [Conversion tracking](https://ppcconsultancy.uk/conversion-tracking/): GA4, Tag Manager, Consent Mode and offline import, so the platforms optimise towards customers.
+- [Pricing](https://ppcconsultancy.uk/pricing/): How UK PPC work is charged, what it typically costs, and my fees.
+- [Results](https://ppcconsultancy.uk/results/): Published results, their limits, and what carries over to a UK account.
+- [About Diego](https://ppcconsultancy.uk/about/): The consultant behind this site, and how a UK engagement works.
+- [Contact](https://ppcconsultancy.uk/contact/): The form or an email, both answered by the consultant.
+
+## Related
+
+- [Diwizi](https://diwizi.com/): the same practice, organised by industry, with published research
+- [googleadsfreelancer.com](https://googleadsfreelancer.com/): US and Canadian practice, Google Ads freelancer
+
+Contact: hello (at) diwizi.com, or the form on any page.
