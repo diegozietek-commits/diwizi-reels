@@ -19,6 +19,8 @@ PAGES = [
 </div>
 </div></section>
 
+{{brands}}
+
 <section id="services"><div class="wrap">
 <h2>Services you can hire</h2>
 <div class="cols">
@@ -351,8 +353,8 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
-<h2>US pharmaceutical marketing agency, freelance role</h2>
-<p>From September 2023 to March 2024 I worked as a freelance paid media operator for a US agency serving pharmaceutical clients, on Google Ads and paid social accounts under the agency's brand. The agency, its clients, budgets and results are under NDA and are not published anywhere. It is listed because it is where a good deal of my healthcare and regulated-category experience comes from.</p>
+<h2>Underscore Marketing, US pharmaceutical agency, freelance role</h2>
+<p>From September 2023 to March 2024 I worked as a freelance paid media operator for Underscore Marketing, a US agency serving pharmaceutical clients, on Google Ads and paid social accounts under the agency's brand. The work covered oncology, rare disease and gene therapy brands. Medication names, budgets and results stay confidential under the agency's NDA. It is listed because it is where a good deal of my healthcare and regulated-category experience comes from.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -389,9 +391,11 @@ PAGES = [
 <tr><th>Industries</th><td>Healthcare and pharma, B2B SaaS and HR tech, local services (HVAC, plumbing, home services), e-commerce, professional services.</td></tr>
 <tr><th>Markets</th><td>United States, Canada, United Kingdom, Ireland and Portugal remotely in English; Brazil in Portuguese.</td></tr>
 <tr><th>Based in</th><td>Curitiba, Brazil (GMT-3), working US and European hours as needed.</td></tr>
-<tr><th>Contact</th><td>The <a href="/contact/#form">form</a> or <a href="mailto:hello@diwizi.com">hello@diwizi.com</a>. Messages go to me; there is no shared inbox.</td></tr>
+<tr><th>Contact</th><td>The <a href="/contact/#form">form</a> or {{email}}. Messages go to me; there is no shared inbox.</td></tr>
 </table>
 </div></section>
+
+{{brands}}
 
 <section><div class="wrap">
 <h2>How I work, and what that changes</h2>
@@ -406,7 +410,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What is public and what is not</h2>
-<p>Two engagements are published with dates and limits on the <a href="/results/">results page</a>: the Mission AC &amp; Plumbing account in Houston and a freelance role for a US pharmaceutical marketing agency. Five years of senior in-house healthcare work are not published; the employer is not named and no details from it appear on this site. First-party research, including a Google Ads CPC benchmark across six US industries, is published on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, which is the same practice with more detail by industry.</p>
+<p>Two engagements are published with dates and limits on the <a href="/results/">results page</a>: the Mission AC &amp; Plumbing account in Houston and a freelance role with Underscore Marketing, a US pharmaceutical agency. Five years of senior in-house healthcare work are not published; the employer is not named and no details from it appear on this site. First-party research, including a Google Ads CPC benchmark across six US industries, is published on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, which is the same practice with more detail by industry.</p>
 <p>This site exists because a lot of people search for a Google Ads freelancer or a PPC consultant without an industry in mind. Diwizi.com goes deep by sector; this site answers the general question: who would run the account, how, and for how much.</p>
 </div></section>
 """,
@@ -430,7 +434,7 @@ PAGES = [
 <section><div class="wrap">
 <div class="cols">
 <div class="card"><h3>The form</h3><p>Spend band, name, email, site, and what is not working. It is <a href="#form">at the bottom of this page</a> and on every other page. You get one reply, from me.</p></div>
-<div class="card"><h3>Email</h3><p>Prefer to write? Same four things to <a href="mailto:hello@diwizi.com">hello@diwizi.com</a>. Read-only access to Google Ads and GA4 is welcome if you already know you want an audit.</p></div>
+<div class="card"><h3>Email</h3><p>Prefer to write? Same four things to {{email}}. Read-only access to Google Ads and GA4 is welcome if you already know you want an audit.</p></div>
 </div>
 <h2 style="margin-top:36px">What is useful to include</h2>
 <ul>
