@@ -5,7 +5,7 @@ PAGES = [
 {
 "slug": "google-ads-management", "short": "Google Ads management", "blurb": "Month-to-month management by the person you hired. Flat fee.",
 "title": "Google Ads Management Services | Freelance, Flat Fee, Month to Month",
-"meta": "Google Ads management by an independent specialist with 14+ years: weekly work in the account, written monthly reporting, flat fee not a percentage of spend, no long contract.",
+"meta": 'Google Ads management by an independent specialist with 14+ years: weekly work in the account, a written monthly report, flat fee, no long contract.',
 "kicker": "Google Ads management",
 "h1": "Google Ads management where the senior person is the only person",
 "lead": "Ongoing management of Search, Shopping, Performance Max and YouTube campaigns, done by me every week, priced as a flat monthly fee and reported in the numbers an owner cares about.",
@@ -68,7 +68,7 @@ PAGES = [
 {
 "slug": "ppc-management", "short": "PPC management", "blurb": "Google, Microsoft, Meta and LinkedIn under one operator and one measurement layer.",
 "title": "PPC Management Services | Independent, Multi-Platform, Flat Fee",
-"meta": "PPC management across Google Ads, Microsoft Advertising, Meta Ads and LinkedIn Ads by one senior operator. One measurement layer, one report, flat monthly fee.",
+"meta": 'PPC management across Google, Microsoft, Meta and LinkedIn Ads by one senior operator: one measurement layer, one report, one flat monthly fee.',
 "kicker": "PPC management",
 "h1": "PPC management by one operator, across every platform the plan needs",
 "lead": "Paid search and paid social run together: Google Ads and Microsoft Advertising for the demand that exists, Meta and LinkedIn for the demand that has to be created, with one measurement layer deciding where the next dollar goes.",
@@ -127,7 +127,7 @@ PAGES = [
 {
 "slug": "google-ads-setup", "short": "Google Ads setup", "blurb": "Fixed-price account and campaign build, done properly once.",
 "title": "Google Ads Setup Service | Account & Campaign Setup, Fixed Price",
-"meta": "Fixed-price Google Ads account and campaign setup by a 14-year specialist: structure, conversion tracking, negatives and landing page checks, handed over in your own account.",
+"meta": 'Fixed-price Google Ads setup by a 14-year specialist: structure, conversion tracking, negatives and landing page checks, built in your own account.',
 "kicker": "Google Ads setup",
 "h1": "Google Ads account and campaign setup, done properly once instead of fixed for a year",
 "lead": "A fixed-price build for companies starting Google Ads, restarting after a bad experience, or launching a new market or product. Delivered inside your own account with tracking that works from day one, then handed over or kept under management, your choice.",
@@ -175,7 +175,7 @@ PAGES = [
 {
 "slug": "meta-ads-management", "short": "Meta Ads management", "blurb": "Facebook and Instagram ads run by a freelance specialist, measured against the CRM.",
 "title": "Meta Ads Management | Freelance Facebook & Instagram Specialist",
-"meta": "Facebook and Instagram ads management by an independent specialist: Conversions API tracking, structured creative testing, lead quality measured in the CRM, flat monthly fee.",
+"meta": 'Facebook and Instagram ads run by an independent specialist: Conversions API, structured creative tests and lead quality measured in your CRM. Flat fee.',
 "kicker": "Meta Ads",
 "h1": "Meta Ads management by a freelance specialist who also runs your Google Ads",
 "lead": "Facebook and Instagram campaigns for lead generation and e-commerce, with tracking that survives iOS and ad blockers, a creative testing programme that produces winners on a schedule, and results judged on what the leads became.",
@@ -222,7 +222,7 @@ PAGES = [
 {
 "slug": "microsoft-ads-management", "short": "Microsoft Advertising", "blurb": "Bing Ads managed on purpose, not left to import.",
 "title": "Microsoft Advertising Management | Bing Ads Managed Properly",
-"meta": "Microsoft Advertising (Bing Ads) management by an independent PPC specialist: imported from Google and then actually run, with its own negatives, bids and reporting. Flat fee.",
+"meta": 'Microsoft Advertising (Bing Ads) management: imported from Google, then actually run with its own negatives, bids and reporting. Flat monthly fee.',
 "kicker": "Microsoft Advertising",
 "h1": "Microsoft Advertising management: the cheapest clicks in most accounts, and the least looked at",
 "lead": "Bing, Yahoo, DuckDuckGo, Copilot and the Microsoft network reach a desktop-heavy, older and more B2B audience at a lower cost per click than Google for the same query. Most accounts import the Google campaigns once and never open the platform again.",
@@ -271,7 +271,7 @@ PAGES = [
 {
 "slug": "linkedin-ads-management", "short": "LinkedIn Ads management", "blurb": "B2B campaigns judged on pipeline, not on clicks at $12 each.",
 "title": "LinkedIn Ads Management | B2B Campaigns Measured in Pipeline",
-"meta": "LinkedIn Ads management by an independent B2B paid media consultant: account targeting, offer-led creative, CRM-connected measurement, flat monthly fee, no agency layer.",
+"meta": 'LinkedIn Ads management by an independent B2B consultant: account targeting, offer-led creative and CRM-connected measurement, for a flat monthly fee.',
 "kicker": "LinkedIn Ads",
 "h1": "LinkedIn Ads management for companies that need pipeline, not impressions among the right job titles",
 "lead": "LinkedIn is the only platform where a buying committee can be named by title, seniority, company size and industry. It is also the most expensive click in paid media, which means the offer, the measurement and the follow-up matter more than anywhere else.",
@@ -321,7 +321,7 @@ PAGES = [
 {
 "slug": "ecommerce-ppc-management", "short": "Ecommerce PPC", "blurb": "Shopping, Performance Max and Meta, managed against margin, not ROAS.",
 "title": "Ecommerce PPC Management | Google Shopping & Performance Max",
-"meta": "Ecommerce PPC by an independent consultant: Shopping feed work, Performance Max with brand exclusions, Meta for new customers, all judged on margin, not platform ROAS.",
+"meta": 'Ecommerce PPC by an independent consultant: Shopping feeds, Performance Max with brand exclusions and Meta for new customers, judged on margin, not ROAS.',
 "kicker": "Ecommerce PPC",
 "h1": "Ecommerce PPC management measured on margin and new customers, not on platform ROAS",
 "lead": "Google Shopping, Performance Max, Search and Meta for online stores, run by one person who separates the revenue you would have had anyway from the revenue the ads produced.",
@@ -371,7 +371,7 @@ PAGES = [
 {
 "slug": "small-business-ppc-management", "short": "Small business PPC", "blurb": "Right-sized Google Ads for local and small companies: setup, audit or a lean retainer.",
 "title": "Small Business PPC Management | Google Ads for Local Companies",
-"meta": "PPC management for small and local businesses: a fixed-price setup you can run yourself, an honest audit, or a lean flat-fee retainer. No percentage of spend, no agency minimums.",
+"meta": 'PPC for small and local businesses: a fixed-price setup you run yourself, an honest audit or a lean flat-fee retainer. No percentage of spend.',
 "kicker": "Small business PPC",
 "h1": "Small business PPC management, sized to the budget instead of to an agency minimum",
 "lead": "For local and small companies spending a few thousand a month, the usual choice is a marketplace freelancer at one end and an agency with a minimum retainer at the other. There is a middle: a senior specialist, a lean scope and a fee that makes sense for the spend.",
@@ -422,7 +422,7 @@ PAGES = [
 {
 "slug": "white-label-ppc", "short": "White label PPC", "blurb": "A senior operator on your clients' accounts, under your brand.",
 "title": "White Label PPC for Agencies | Senior Freelance Operator",
-"meta": "White label PPC for agencies: a 14-year Google Ads and paid media operator runs your clients' accounts under your brand, priced per account, no headcount added.",
+"meta": "White label PPC for agencies: a senior Google Ads and paid media operator runs your clients' accounts under your brand, priced per account.",
 "kicker": "White label PPC",
 "h1": "White label PPC management: a senior operator on your clients' accounts, without the hire",
 "lead": "For agencies, consultancies and web studios that sell paid media and need someone senior to run it. Your brand, your client relationship, your reporting template; my hands on the account.",
@@ -477,7 +477,7 @@ PAGES = [
 {
 "slug": "conversion-tracking-setup", "short": "Conversion tracking", "blurb": "GA4, Tag Manager, enhanced and offline conversions: one source of truth.",
 "title": "Conversion Tracking Setup | Google Ads, GA4, GTM & Offline",
-"meta": "Conversion tracking setup and repair for Google Ads, Meta and LinkedIn: GA4, Tag Manager, enhanced conversions, consent mode and offline import from your CRM. Fixed price.",
+"meta": 'Conversion tracking set up or repaired for Google Ads, Meta and LinkedIn: GA4, Tag Manager, enhanced conversions, consent mode and CRM import. Fixed price.',
 "kicker": "Conversion tracking",
 "h1": "Conversion tracking setup: one number per real outcome, and the platforms optimising towards it",
 "lead": "If the conversion data is wrong, every bidding decision inherits the error. This is a fixed-price project to make Google Ads, GA4, Meta, LinkedIn and your CRM agree on what a customer is, and to keep them agreeing.",
