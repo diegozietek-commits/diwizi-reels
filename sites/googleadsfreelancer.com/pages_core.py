@@ -349,7 +349,7 @@ PAGES = [
 <h3>The result</h3>
 <p>Cost per acquisition fell <strong>44%</strong> and qualified leads rose <strong>60%</strong> over the nine months, on roughly $20,000 of monthly spend.</p>
 <h3>What can be checked, and what cannot</h3>
-<p class="note">The figures come from the Google Ads account and the reporting delivered to the client during the engagement. They were not audited by a third party, the client has not published a testimonial, and the exact comparison window and conversion definition are not published here. What a reader can check: the engagement and its dates match the case page on <a href="https://diwizi.com/case-mission-ac-plumbing.html" rel="noopener">diwizi.com</a>. The client's campaign structure, keyword lists, landing pages, lead volumes and revenue are confidential and stay so. A past-client reference is available for serious engagements, subject to the client agreeing.</p>
+<p class="note">The figures come from the Google Ads account and the reporting delivered to the client during the engagement. They were not audited by a third party, the client has not published a testimonial, and the exact comparison window and conversion definition are not published here. What a reader can check: the engagement and its dates match the case page on <a href="https://diwizi.com/case-houston-hvac-plumbing.html" rel="noopener">diwizi.com</a>. The client's campaign structure, keyword lists, landing pages, lead volumes and revenue are confidential and stay so. A past-client reference is available for serious engagements, subject to the client agreeing.</p>
 </div></section>
 
 <section><div class="wrap">
