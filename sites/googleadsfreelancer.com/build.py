@@ -450,7 +450,6 @@ def render(p):
 {faq_html(p.get('faq'))}
 {related_html(slug)}
 {cta_html(p)}
-<div class="wrap"><p class="byline">Written by <a href="/about/">{NAME}</a>. Last updated {TODAY}.</p></div>
 </main>
 {footer_html()}
 {EMAIL_JS}{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}
