@@ -32,7 +32,7 @@ PAGES = [
 <section><div class="wrap">
 <h2>A client result, with the platform and the period attached</h2>
 <div class="cols">
-<div class="card"><h3>HVAC and plumbing company, Houston</h3><p><strong>Google Ads Search, May 2025 to February 2026, about $20,000 a month.</strong> Cost per acquisition down 44% and qualified leads up 60%, in an auction where the core keywords cost $45 to $80 a click.</p><p>Done by restructuring campaigns by job type, rebuilding tracking so a booked job and a phone call were not the same thing, a weekly negatives programme and steady ad and landing page tests.</p><p>Also on the results page: a Brazilian startup with 600% sales growth in eight months, $21 million in B2B revenue from $1.5 million in media, and a 5,000-student enrolment target hit three months early. <a href="/results/">Read the cases and their limits →</a></p></div>
+<div class="card"><h3>HVAC and plumbing company, Houston</h3><p><strong>Google Ads Search, May 2025 to February 2026, about $20,000 a month.</strong> Cost per acquisition down 44% and qualified leads up 60%, in an auction where the core keywords cost $45 to $80 a click.</p><p>Done by restructuring campaigns by job type, rebuilding tracking so a booked job and a phone call were not the same thing, a weekly negatives programme and steady ad and landing page tests.</p><p>Also on the results page: a Brazilian startup with 600% sales growth in eight months and a 5,000-student enrolment target hit three months early. <a href="/results/">Read the cases and their limits →</a></p></div>
 <div class="card"><h3>What a retainer covers</h3><ul><li>Weekly work inside the accounts: search terms, bids, budgets, ads, exclusions</li><li>Conversion tracking built and maintained: GA4, Tag Manager, offline import from your CRM</li><li>Landing pages built or fixed by me, not specced to a queue</li><li>A written monthly report on cost per enquiry and what changed</li><li>Direct access to the consultant, no account manager in between</li></ul></div>
 </div>
 </div></section>
@@ -254,11 +254,11 @@ PAGES = [
 {
 "slug": "results", "short": "Results", "blurb": "Published engagements, with what can and cannot be verified.",
 "title": "Results | PPC Case Studies From an Independent Consultant",
-"meta": "PPC results from an independent consultant: 44% lower CPA for a Houston home services firm, 600% startup sales growth in eight months, $21M B2B revenue from $1.5M in media, and what each number does and does not prove.",
+"meta": "PPC results from an independent consultant: 44% lower CPA for a Houston home services firm, 600% startup sales growth in eight months, a 5,000-student enrolment target hit early, and what each number does and does not prove.",
 "kicker": "Results",
 "h1": "What the work has produced, and what a reader can actually check",
-"lead": "Five engagements, three of them with the client unnamed for compliance or confidentiality. Each is described with its scope and its limits, because a case study without the limits is an advertisement.",
-"proof": [("44%", "lower CPA, Houston home services"), ("600%", "sales growth in 8 months, Pontomais"), ("$21M", "B2B revenue from $1.5M in media, 2025"), ("3 months", "early on a 5,000-student target")],
+"lead": "Four engagements, two of them with the client unnamed for compliance or confidentiality. Each is described with its scope and its limits, because a case study without the limits is an advertisement.",
+"proof": [("44%", "lower CPA, Houston home services"), ("600%", "sales growth in 8 months, Pontomais"), ("3 months", "early on a 5,000-student target")],
 "body": """
 <section><div class="wrap">
 <h2>Residential HVAC and plumbing company, Houston, Texas</h2>
@@ -286,13 +286,6 @@ PAGES = [
 <p>Pontomais was a startup selling time-tracking and HR software to Brazilian companies, competing for the same searches as larger, better-funded players. The job was to turn paid search into the main source of new sales without the budget of those competitors: tight keyword coverage around buying intent, landing pages built for the trial and demo request, and tracking that followed a lead through to a closed contract.</p>
 <p>Sales grew <strong>600% in eight months</strong>, with most of the new business coming from paid media on Google.</p>
 <p class="note">Figures from the company's sales reporting at the time, not audited by a third party. Budgets, cost per acquisition and contract values are not published.</p>
-</div></section>
-
-<section><div class="wrap">
-<h2>Large healthcare organisation in Brazil, B2B services</h2>
-<p><strong>Paid media for B2B services · 2025 · client not named for compliance reasons.</strong></p>
-<p>In 2025, <strong>$1.5 million</strong> invested in paid media was tied to <strong>$21 million in B2B revenue</strong>, roughly fourteen times the media spend. The work covered campaign strategy, conversion tracking into the sales pipeline, and the reporting that connected media cost to closed business rather than to leads.</p>
-<p class="note">The organisation's compliance rules do not allow it to be named, and channel mix, contract values and internal reporting stay confidential. The revenue figure is the organisation's own attribution for the year.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -361,7 +354,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What is public and what is not</h2>
-<p>Five engagements are described with their limits on the <a href="/results/">results page</a>: a Houston HVAC and plumbing company (44% lower cost per acquisition), Pontomais, a Brazilian HR tech startup (600% sales growth in eight months, mostly from Google Ads), a large Brazilian healthcare organisation ($21 million in B2B revenue from $1.5 million in media in 2025), one of the largest private school groups in Brazil (a 5,000-student enrolment target hit three months early) and a freelance role with Underscore Marketing, a US pharmaceutical agency. Clients bound by compliance or confidentiality are not named. First-party research, including a Google Ads CPC benchmark across six US industries, is published on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, which is the same practice with more detail by industry.</p>
+<p>Four engagements are described with their limits on the <a href="/results/">results page</a>: a Houston HVAC and plumbing company (44% lower cost per acquisition), Pontomais, a Brazilian HR tech startup (600% sales growth in eight months, mostly from Google Ads), one of the largest private school groups in Brazil (a 5,000-student enrolment target hit three months early) and a freelance role with Underscore Marketing, a US pharmaceutical agency. Clients bound by compliance or confidentiality are not named. First-party research, including a Google Ads CPC benchmark across six US industries, is published on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, which is the same practice with more detail by industry.</p>
 <p>This site exists because UK businesses search for a PPC consultancy without an industry in mind. Diwizi.com goes deep by sector; this site answers the general question: who would run the account, how, and on what terms.</p>
 </div></section>
 """,
