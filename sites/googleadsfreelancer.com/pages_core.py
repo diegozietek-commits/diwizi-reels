@@ -5,7 +5,7 @@ PAGES = [
 {
 "slug": "index", "short": "Home", "blurb": "Senior Google Ads freelancer, one person on the account.",
 "title": "Google Ads Freelancer | Senior & Independent | Diego Zietek",
-"meta": "Google Ads management run personally by a senior specialist, with Meta, Microsoft and LinkedIn when they fit. Flat monthly fee, your accounts stay yours. US, Canada, UK.",
+"meta": 'Google Ads management run by a senior specialist, with Meta, Microsoft and LinkedIn when they fit. Flat monthly fee, and your accounts stay yours.',
 "kicker": "Google Ads freelancer",
 "h1": "Google Ads, run by the senior specialist you hired. Meta, Microsoft and LinkedIn when they fit.",
 "lead": "I am Diego Zietek, an independent paid media consultant with 14+ years on the account. Campaign management, conversion tracking and landing page work, with one point of contact and a flat monthly fee. Clients in the United States, Canada, the United Kingdom and Ireland.",
@@ -88,7 +88,7 @@ PAGES = [
 {
 "slug": "freelance-ppc-consultant", "short": "Freelance PPC consultant", "blurb": "Independent PPC management for UK, Irish and North American companies.",
 "title": "Freelance PPC Consultant | Independent PPC Management, UK & US",
-"meta": "Freelance PPC consultant with 14+ years across Google Ads, Microsoft Advertising and Meta Ads. Month-to-month PPC management, flat fee, UK and North American clients.",
+"meta": 'Freelance PPC consultant with 14+ years in Google Ads, Microsoft Advertising and Meta Ads. Month-to-month PPC management for a flat fee.',
 "kicker": "Freelance PPC",
 "h1": "A freelance PPC consultant who has run accounts for 14 years, not a freelancer between contracts",
 "lead": "Independent PPC management and consulting for companies in the United Kingdom, Ireland, the United States and Canada. Google Ads first, Microsoft Advertising and Meta Ads where they earn their place.",
@@ -148,7 +148,7 @@ PAGES = [
 {
 "slug": "google-ads-consultant", "short": "Google Ads consultant", "blurb": "Strategy, second opinions and advisory for teams that run their own ads.",
 "title": "Google Ads Consultant | Independent PPC Consulting & Strategy",
-"meta": "Independent Google Ads consultant for companies and in-house teams: account strategy, structured second opinions, coaching and hands-on fixes. 14+ years, no agency layer.",
+"meta": 'Independent Google Ads consultant for companies and in-house teams: strategy, second opinions, coaching and hands-on fixes. 14+ years, no agency layer.',
 "kicker": "Google Ads consulting",
 "h1": "An independent Google Ads consultant, for when you need a senior opinion more than another vendor",
 "lead": "Consulting for companies that run Google Ads in-house or through an agency and want someone with no stake in the retainer to look at the account, set the strategy, or fix the parts nobody owns.",
@@ -206,7 +206,7 @@ PAGES = [
 {
 "slug": "google-ads-audit", "short": "Google Ads audit", "blurb": "Fixed-price PPC audit with fixes ranked by impact. Yours to keep.",
 "title": "Google Ads Audit | Independent PPC Account Audit, Fixed Price",
-"meta": "A paid, independent Google Ads audit: tracking, search terms, structure, bidding and Performance Max reviewed, with fixes ranked by impact in a written report you keep.",
+"meta": 'A paid, independent Google Ads audit of tracking, search terms, structure, bidding and Performance Max, with fixes ranked by impact in a report you keep.',
 "kicker": "Google Ads audit",
 "h1": "A Google Ads audit from someone with no incentive to flatter you",
 "lead": "Most free PPC audits are sales documents: they find enough problems to justify a proposal and stop. This is a paid, fixed-scope account audit that ends with a prioritised list of fixes you own, whether or not you ever hire me again.",
@@ -261,7 +261,7 @@ PAGES = [
 {
 "slug": "pricing", "short": "Pricing", "blurb": "What Google Ads freelancers and consultants charge, and how I price.",
 "title": "Google Ads Freelancer Pricing & PPC Consultant Rates Explained",
-"meta": "What PPC consultants and Google Ads freelancers actually charge: percentage of spend, flat retainer and hourly compared, plus how I price audits and month-to-month management.",
+"meta": 'What PPC consultants and Google Ads freelancers charge: percentage of spend, flat retainer and hourly compared, and how I price audits and management.',
 "kicker": "Pricing",
 "h1": "What Google Ads freelancers and PPC consultants actually charge",
 "lead": "The three ways this industry charges and where each one quietly works against you, what the market typically costs, and how I price audits, management and consulting.",
@@ -327,7 +327,7 @@ PAGES = [
 {
 "slug": "results", "short": "Results", "blurb": "Published engagements, with what can and cannot be verified.",
 "title": "Results | Google Ads Case Studies From a Freelance Consultant",
-"meta": "Freelance Google Ads results: 44% lower CPA for a Houston HVAC company, 600% startup sales growth in eight months, a 5,000-student enrolment target hit early, and what each number does and does not prove.",
+"meta": 'Google Ads results: 44% lower CPA for a Houston HVAC firm, 600% startup sales growth in eight months, and what each number does and does not prove.',
 "kicker": "Results",
 "h1": "What the work has produced, and what a reader can actually check",
 "lead": "Four engagements, two of them with the client unnamed for compliance or confidentiality. Each is described with its scope and its limits, because a case study without the limits is an advertisement.",
@@ -389,7 +389,7 @@ PAGES = [
 {
 "slug": "about", "short": "About Diego", "blurb": "Who runs the account, where from, and what is public.",
 "title": "About Diego Zietek | Independent Google Ads Consultant",
-"meta": "Independent paid media consultant with 14+ years across Google Ads, Meta, LinkedIn and Microsoft Advertising. One person on every account, remote, in English.",
+"meta": 'Independent paid media consultant, 14+ years in Google Ads, Meta, LinkedIn and Microsoft Advertising. One person on every account, remote, in English.',
 "kicker": "About",
 "h1": "Diego Zietek, the person who runs every account on this site",
 "lead": "Independent paid media consultant with 14+ years of hands-on work across Google Ads, Meta Ads, LinkedIn Ads and Microsoft Advertising, for B2B, SaaS, healthcare, e-commerce and local service companies. I operate alone: the person who audits the account is the person who runs it and writes the report.",
@@ -439,7 +439,7 @@ PAGES = [
 {
 "slug": "contact", "short": "Contact", "blurb": "Send the form or an email. Both reach the same person.",
 "title": "Contact | Get a Quote From a Google Ads Freelancer",
-"meta": "Send Diego Zietek your spend band, site and what is not working; get a straight answer and a price range for Google Ads management, a PPC audit or consulting. No sales sequence.",
+"meta": 'Send your spend band, site and what is not working. Diego Zietek replies personally with a straight answer and a price range. No sales sequence.',
 "kicker": "Contact",
 "h1": "Tell me about the account. The reply comes from the person who would run it.",
 "lead": "Four fields are enough to tell whether I can help, what I would do first and roughly what it costs. If I am not the right fit, I will say so and, where I can, point you to someone who is.",

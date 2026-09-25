@@ -4,7 +4,7 @@ PAGES = [
 {
 "slug": "ppc-management", "short": "PPC management", "blurb": "Google, Microsoft, Meta and LinkedIn under one measurement layer, with pages and tracking in scope.",
 "title": "PPC Management Services UK | Independent Consultant, Flat Fee",
-"meta": "PPC management for UK lead generation businesses: Google, Microsoft, Meta and LinkedIn Ads run weekly by one senior consultant, with landing pages and conversion tracking included. Flat monthly fee, month to month.",
+"meta": 'PPC management for UK lead generation firms: Google, Microsoft, Meta and LinkedIn Ads run weekly by one consultant, landing pages and tracking included.',
 "kicker": "PPC management",
 "h1": "PPC management by the consultant you spoke to, with the landing pages and tracking included",
 "lead": "Ongoing management of Google Ads, Microsoft Advertising, Meta Ads and LinkedIn Ads for UK and Irish companies that sell through enquiries, demos and booked calls. One person does the weekly work, builds the pages the ads land on and keeps the measurement honest. Flat monthly fee, never a percentage of spend.",
@@ -67,7 +67,7 @@ PAGES = [
 {
 "slug": "google-ads-management", "short": "Google Ads management", "blurb": "Search, Performance Max and YouTube for lead generation, run by a senior specialist.",
 "title": "Google Ads Management UK | Senior Specialist, One Person on the Account",
-"meta": "Google Ads management for UK lead generation businesses by a senior specialist with 14+ years on the account: Search, Performance Max, YouTube, tracking and landing pages, flat monthly fee.",
+"meta": 'Google Ads management for UK lead generation businesses by a 14-year specialist: Search, Performance Max, tracking and landing pages, flat monthly fee.',
 "kicker": "Google Ads management",
 "h1": "Google Ads management by a senior specialist, not a team you never meet",
 "lead": "Search, Performance Max for lead generation, YouTube and Demand Gen, run weekly by the same person who audits the account, fixes the tracking and builds the landing pages. For UK and Irish companies that sell through enquiries. Flat monthly fee, month to month.",
@@ -117,7 +117,7 @@ PAGES = [
 {
 "slug": "ppc-audit", "short": "PPC audit", "blurb": "Fixed-price account audit with fixes ranked by financial impact. Yours to keep.",
 "title": "PPC Audit UK | Independent Google Ads Account Audit, Fixed Price",
-"meta": "Independent PPC and Google Ads audit for UK businesses: a fixed-price written review of tracking, wasted spend, structure and landing pages, with fixes ranked by impact. Credited against the first month if you continue.",
+"meta": 'Independent PPC audit for UK businesses: a fixed-price written review of tracking, wasted spend, structure and landing pages, fixes ranked by impact.',
 "kicker": "PPC audit",
 "h1": "A PPC audit that tells you what is wrong, in what order to fix it, and what it is costing you",
 "lead": "A paid, independent review of your Google Ads, Microsoft, Meta or LinkedIn accounts, delivered as a written report with every finding ranked by financial impact. Read-only access is enough. It is yours to act on, with or without me, and it is credited against the first month if you continue.",
@@ -167,7 +167,7 @@ PAGES = [
 {
 "slug": "b2b-ppc", "short": "B2B PPC", "blurb": "Search and LinkedIn for pipeline, with CRM stages fed back to the platforms.",
 "title": "B2B PPC Consultant UK | Google and LinkedIn Ads for Pipeline, Not Leads",
-"meta": "B2B PPC for UK SaaS, technology and services companies: Google Search and LinkedIn Ads run by one senior consultant, with CRM stages fed back to the platforms so they optimise towards pipeline. Flat fee.",
+"meta": 'B2B PPC for UK SaaS and services firms: Google Search and LinkedIn Ads run by one senior consultant, with CRM stages fed back to optimise for pipeline.',
 "kicker": "B2B PPC",
 "h1": "B2B PPC that reports pipeline, because leads are where B2B budgets go to die",
 "lead": "Google Search and LinkedIn Ads for UK B2B companies with a sales cycle: SaaS, technology, professional and industrial services. The difference from consumer PPC is the feedback loop. Your CRM stages go back to the platforms, so the bidding learns from opportunities and closed business, not from whoever filled a form.",
@@ -212,7 +212,7 @@ PAGES = [
 {
 "slug": "landing-pages", "short": "Landing pages", "blurb": "One page per intent, built to the ad, tracked before it goes live.",
 "title": 'PPC Landing Pages UK | Landing Page Optimisation by the Ads Consultant',
-"meta": "Landing pages for PPC, built by the consultant who runs the campaigns: one page per intent, written to the ad, tracked before launch and tested against a control. Included in management retainers, available as a fixed-price project.",
+"meta": 'PPC landing pages built by the consultant who runs the ads: one page per intent, written to the ad, tracked before launch and tested against a control.',
 "kicker": "Landing pages",
 "h1": "Landing pages built by the person who runs the ads, so the page and the campaign are one decision",
 "lead": "Most of the waste in a PPC account happens after the click, on a page the person running the ads has never been allowed to touch. Here the page is in scope: written to the ad that sends the traffic, built on your CMS or as a static page, tracked before it goes live, and tested against a control until it earns its place.",
@@ -256,7 +256,7 @@ PAGES = [
 {
 "slug": "conversion-tracking", "short": "Conversion tracking", "blurb": "GA4, Tag Manager, Consent Mode and offline import, so the platforms optimise towards customers.",
 "title": 'Google Ads Conversion Tracking UK | GA4 and Tag Manager Consultant',
-"meta": "Conversion tracking setup and repair for UK businesses: Google Ads, GA4, Tag Manager, Consent Mode v2, enhanced conversions and offline import from HubSpot or Salesforce. Fixed price, done by the consultant who runs the ads.",
+"meta": 'Conversion tracking for UK businesses: Google Ads, GA4, Tag Manager, Consent Mode v2 and offline import from your CRM. Fixed price, by the ads consultant.',
 "kicker": "Conversion tracking",
 "h1": "Conversion tracking that Google Ads, GA4 and your CRM all agree on",
 "lead": "If the conversion data is wrong, every bidding decision inherits the error. This is a fixed-price project to make Google Ads, Microsoft, Meta, LinkedIn, GA4 and your CRM agree on what a customer is, keep them agreeing, and do it lawfully for UK visitors with Consent Mode v2.",
