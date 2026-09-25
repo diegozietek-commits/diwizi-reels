@@ -1,0 +1,40 @@
+tier,dominio,termo,busca_us,us_4m,cpc_us,busca_uk,uk_4m,cpc_uk,status,confianca,observacao
+A,googleadsconsultants.com,google ads consultants (=consultant/consulting/consultancy/consultation),390,305,69.45,210,128,43.24,LIVRE (WHOIS registered=false),alta,plural do termo principal; singular .com tomado
+A,googleadsconsultation.com,google ads consultation,390,305,69.45,210,128,43.24,LIVRE (DNS; sem registro WHOIS),media,Google agrupa com google ads consultant; .co.uk e .uk livres
+A,ppcconsultation.com,ppc consultation (=ppc consultant/consulting/consultancy),210,228,24.39,320,160,46.84,LIVRE (WHOIS registered=false),alta,mesmo cluster de ppc consultant; .co.uk .uk .io .co livres
+A,theppcconsultant.com,ppc consultant,210,228,24.39,320,160,46.84,LIVRE (WHOIS registered=false),alta,41 dominios referentes (lixo); nome forte para marca pessoal
+A,googleadsspecialists.com,google ads specialists (=specialist),720,640,90.30,320,175,44.69,LIVRE (WHOIS registered=false),alta,singular tomado; .co.uk e .uk livres
+A,googleadsfreelancers.com,google ads freelancers (=freelancer),140,178,38.97,140,110,21.24,LIVRE (WHOIS registered=false),alta,plural do seu dominio; comprar por defesa
+A,freelanceppcconsultant.com,freelance ppc consultant,20,20,31.29,90,25,37.44,LIVRE (WHOIS registered=false),alta,termo exato UK 90; .co.uk e .uk livres
+B,googleadstraining.com,google ads training,1300,1195,9.47,720,562,12.11,LIVRE (DNS; sem WHOIS),media,maior volume da lista; .co.uk tomado; .uk livre
+B,googleadsmanager.co.uk / .uk,google ads manager,22200,22200,10.21,4400,4400,8.05,LIVRE (DNS),media,termo navegacional (produto Google Manager Accounts); volume enganoso
+B,googleadsadvisor.com,google ads advisor,140,135,99.27,30,22,34.77,LIVRE (DNS; sem WHOIS),media,CPC US 99; .co.uk .uk livres
+B,googleadsstrategist.com,google ads strategist,140,110,22.50,50,32,44.41,LIVRE (DNS; sem WHOIS),media,
+B,googleadsreview.com,google ads review,110,95,16.90,50,32,17.21,LIVRE (DNS; sem WHOIS),media,.co.uk tomado
+B,paidmediaconsultant.com,paid media consultant,40,52,32.64,40,22,68.61,LIVRE (WHOIS registered=false),alta,.co.uk e .uk livres (ja listado na varredura UK)
+B,paidsearchconsultants.com,paid search consultants (=consultant),90,52,21.83,40,18,,LIVRE (WHOIS registered=false),alta,singular tomado
+B,paidsearchconsultation.com,paid search consultation,90,52,21.83,40,18,,LIVRE (DNS; sem WHOIS),media,
+B,consultppc.com,-,,,,,,,LIVRE (WHOIS registered=false),alta,marca; sem busca exata
+B,googleadsguru.com,google ads guru,10,5,,10,10,12.75,LIVRE (WHOIS registered=false),alta,
+B,ppcfreelancers.com,ppc freelancers (=ppc freelancer/freelance ppc),40,28,8.48,390,148,23.77,LIVRE (WHOIS registered=false),alta,termo forte no UK; singular tomado
+B,hireppcconsultant.com,hire ppc consultant,10,2,,10,8,,LIVRE (DNS; sem WHOIS),media,
+B,independentppcconsultant.com,independent ppc consultant,0,0,,10,2,,LIVRE (DNS; sem WHOIS),media,
+UK,ppcconsulting.co.uk,ppc consulting,210,228,24.39,320,160,46.84,LIVRE (DNS; sem WHOIS),media,.com tomado; .uk livre
+UK,ppcexperts.co.uk,ppc experts (=ppc expert),170,102,48.49,320,100,34.09,LIVRE (DNS; sem WHOIS),media,singular .co.uk tomado
+UK,ppcadvisor.co.uk,ppc advisor,20,15,31.55,10,5,,LIVRE (WHOIS registered=false),alta,
+UK,googleadsexperts.co.uk,google ads experts (=expert),880,800,127.43,260,125,39.04,LIVRE (WHOIS registered=false),alta,expirado antes; singular .co.uk tomado
+UK,googleadsconsulting.co.uk,google ads consulting,390,305,69.45,210,128,43.24,LIVRE (DNS; sem WHOIS),media,.com em ERR (provavelmente tomado)
+UK,googleadsconsultancy.co.uk,google ads consultancy,390,305,69.45,210,128,43.24,LIVRE (DNS; sem WHOIS),media,grafia britanica
+UK,googleadsagency.co.uk,google ads agency,,,,1300,,,LIVRE (DNS; sem WHOIS),media,ja listado
+UK,paidsearchconsultant.co.uk,paid search consultant,90,52,21.83,40,18,,LIVRE (DNS; sem WHOIS),media,
+UK,theppcconsultant.co.uk,ppc consultant,210,228,24.39,320,160,46.84,LIVRE (DNS; sem WHOIS),media,
+ALT-TLD,ppcconsultant.io / .co,ppc consultant,210,228,24.39,320,160,46.84,LIVRE (DNS),media,.com/.co.uk/.uk tomados
+ALT-TLD,googleadsconsultant.io / .co / .uk,google ads consultant,390,305,69.45,210,128,43.24,LIVRE (DNS),media,.com/.co.uk tomados
+FALSO-LIVRE,ppcfreelance.com,freelance ppc,,,,,,,REGISTRADO 2006 (client hold),alta,DNS enganou; nao esta livre
+FALSO-LIVRE,googleadshelp.com,google ads help,1300,1575,68.04,260,192,25.26,REGISTRADO 2025 (client hold),alta,DNS enganou
+FALSO-LIVRE,googleadsaudit.com,google ads audit,210,160,65.34,110,65,27.82,REGISTRADO 2022 (client hold),alta,ja sabiamos
+FALSO-LIVRE,googleadscoach.com,google ads coach,90,102,15.17,10,10,32.19,REGISTRADO (expira 2026-10-06; Gname),alta,candidato a backorder
+FALSO-LIVRE,adwordsspecialist.com,adwords specialist,480,40,,90,10,,REGISTRADO 2013,alta,
+FALSO-LIVRE,paidsearchspecialist.com,paid search specialist,140,90,,50,15,7.94,REGISTRADO 2025,alta,
+FALSO-LIVRE,ppcclinic.com,-,,,,,,,REGISTRADO 2025,alta,
+FALSO-LIVRE,googleadsservice.com,-,,,,,,,REGISTRADO 2024 (client hold),alta,
