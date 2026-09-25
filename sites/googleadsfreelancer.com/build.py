@@ -15,6 +15,23 @@ from pages_core import PAGES as CORE
 from pages_services import PAGES as SERVICES
 
 SITE = "https://googleadsfreelancer.com"
+SISTER = "https://ppcconsultancy.uk"  # UK site; hreflang pairs below (US page -> UK page)
+SISTER_PAGES = {
+    "index": "/", "ppc-management": "/ppc-management/", "google-ads-management": "/google-ads-management/",
+    "google-ads-audit": "/ppc-audit/", "linkedin-ads-management": "/b2b-ppc/",
+    "conversion-tracking-setup": "/conversion-tracking/", "pricing": "/pricing/", "results": "/results/",
+    "about": "/about/", "contact": "/contact/", "privacy": "/privacy/",
+}
+
+
+def hreflang_html(slug):
+    other = SISTER_PAGES.get(slug)
+    if not other:
+        return ""
+    here = SITE + url_for(slug)
+    return (f'<link rel="alternate" hreflang="en-US" href="{here}">'
+            f'<link rel="alternate" hreflang="en-GB" href="{SISTER}{other}">'
+            f'<link rel="alternate" hreflang="x-default" href="{here}">')
 NAME = "Diego Zietek"
 BRAND = "Google Ads Freelancer"
 CAL_EVENT_SLUG = "google-ads-call"  # create this event type on Cal.com under the diwizi account
@@ -419,6 +436,7 @@ def render(p):
 <title>{esc(p['title'])}</title>
 <meta name="description" content="{esc(p['meta'])}">
 <link rel="canonical" href="{url}">
+{hreflang_html(slug)}
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(p['title'])}">
 <meta property="og:description" content="{esc(p['meta'])}"><meta property="og:url" content="{url}">
 <meta property="og:site_name" content="{BRAND}">
