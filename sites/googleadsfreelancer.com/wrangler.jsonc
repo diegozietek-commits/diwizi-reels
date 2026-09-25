@@ -3,6 +3,9 @@
   // Deployed by Workers Builds with root directory = sites/googleadsfreelancer.com
   "name": "diwizi-reels",
   "compatibility_date": "2026-09-01",
+  // Only the custom domain serves the site: no *.workers.dev URL, no preview URLs.
+  "workers_dev": false,
+  "preview_urls": false,
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page",
