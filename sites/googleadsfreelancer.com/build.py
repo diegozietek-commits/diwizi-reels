@@ -20,12 +20,13 @@ BRAND = "Google Ads Freelancer"
 CAL_EVENT_SLUG = "google-ads-call"  # create this event type on Cal.com under the diwizi account
 CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # kept for reference; no longer linked from the site
 FORM_URL = "/contact/#form"  # every CTA points at the lead form
-# Web3Forms access key (free, no account): web3forms.com -> enter hello@diwizi.com -> key arrives by email.
-# Until it is set, the form falls back to opening the visitor's email client with the answers prefilled.
-WEB3FORMS_KEY = ""
+# Web3Forms access key (account: the hello@ inbox below). Public by design: it only allows sending to that inbox.
+WEB3FORMS_KEY = "a8247bcb-2a34-4f73-a97e-877bfef2b8cb"
 FORM_ENDPOINT = "https://api.web3forms.com/submit"
 BUDGET_BANDS = [("under_3k", "Under $3K / month"), ("3k_20k", "$3K – $20K"), ("20k_50k", "$20K – $50K"), ("50k_plus", "$50K+")]
 MAIL = "hello@diwizi.com"
+MAIL_USER, MAIL_DOMAIN = MAIL.split("@")
+BRAND_SPRITE = "marcas-en-v3.webp"  # 6410x104 transparent sprite, 20 logos, trailing gap for a seamless loop
 PARENT = "https://diwizi.com/"
 TODAY = date.today().isoformat()
 
@@ -76,22 +77,31 @@ CLICK_JS = ("<script>document.addEventListener('click',function(e){var a=e.targe
             "if(!ev)return;var sec=a.closest('header')?'header':a.closest('footer')?'footer':a.closest('.mmenu')?'mobile_menu':"
             "(a.closest('.hero')?'hero':(a.closest('.ctabox')?'bottom_cta':'body'));"
             "window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:ev,link_url:a.href,cta_location:sec});},true);</script>")
-# Lead form: posts to Web3Forms via fetch, pushes lead_form_submit to the dataLayer, then goes to /thanks/?src=form.
-# Without an access key it falls back to a prefilled mailto so the form still works on day one.
+# The address is never written out in the HTML: links carry user and domain in data attributes and
+# this script assembles them. Without JS the visitor sees "hello [at] diwizi.com".
+EMAIL_JS = ("<script>(function(){var l=document.querySelectorAll('a.em');for(var i=0;i<l.length;i++){var a=l[i],"
+            "m=a.getAttribute('data-u')+'@'+a.getAttribute('data-d');a.href='mailto:'+m;"
+            "a.textContent=(a.getAttribute('data-pre')||'')+m;}})();</script>")
+# Lead form: posts to Web3Forms via fetch. On success pushes generate_lead (budget_band, cta_location) and goes to
+# /thanks/?src=form once GTM has handled the event (or after 1.5 s if GTM is blocked). No mailto fallback.
 FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)return;"
-           "var st=f.querySelector('.form-status'),btn=f.querySelector('button');"
+           "var st=f.querySelector('.form-status'),btn=f.querySelector('button'),w=f.querySelector('input[name=website]');"
            "function band(){var r=f.querySelector('input[name=budget]:checked');return r?r.value:''}"
-           "function push(){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'lead_form_submit',budget_band:band(),cta_location:location.pathname});}"
+           "if(w)w.addEventListener('input',function(){var v=w.value.replace(/^\\s*https?:\\/\\//i,'');if(v!==w.value)w.value=v;});"
+           "function fail(){btn.disabled=false;var m='" + MAIL_USER + "'+'@'+'" + MAIL_DOMAIN + "';"
+           "st.innerHTML='Could not send just now. Please try again in a moment, or write to <a href=\"mailto:'+m+'\">'+m+'</a>.';}"
            "f.addEventListener('submit',function(e){e.preventDefault();"
            "if(!f.checkValidity()){f.reportValidity();return}"
            "if(f.botcheck.checked)return;"
-           "var key=f.access_key.value;var fd=new FormData(f);"
-           "if(!key){push();var m='Monthly spend: '+band()+'%0AName: '+fd.get('name')+'%0AEmail: '+fd.get('email')+'%0AWebsite: '+(fd.get('website')||'')+'%0APhone: '+(fd.get('phone')||'')+'%0A%0A'+encodeURIComponent(fd.get('message')||'')+'%0A%0APage: '+fd.get('page');"
-           "location.href='mailto:" + MAIL + "?subject='+encodeURIComponent('Enquiry from " + BRAND + "')+'&body='+m;return}"
-           "btn.disabled=true;st.textContent='Sending\u2026';"
+           "var fd=new FormData(f);var v=(w&&w.value||'').trim().replace(/^https?:\\/\\//i,'');fd.set('website',v?'https://'+v:'');"
+           "btn.disabled=true;st.textContent='Sending\\u2026';"
            "fetch(f.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(j){"
-           "if(j&&j.success){push();location.href='/thanks/?src=form'}else{throw new Error((j&&j.message)||'error')}"
-           "}).catch(function(){btn.disabled=false;st.innerHTML='Could not send. Email <a href=\"mailto:" + MAIL + "\">" + MAIL + "</a> instead.';});"
+           "if(!(j&&j.success))throw new Error((j&&j.message)||'error');"
+           "var done=false;function go(){if(done)return;done=true;location.href='/thanks/?src=form'}"
+           "window.dataLayer=window.dataLayer||[];"
+           "window.dataLayer.push({event:'generate_lead',budget_band:band(),cta_location:location.pathname,eventCallback:go,eventTimeout:1500});"
+           "setTimeout(go,1500);"
+           "}).catch(fail);"
            "});})();</script>")
 PAGES = CORE + SERVICES
 BY_SLUG = {p["slug"]: p for p in PAGES}
@@ -172,6 +182,16 @@ form.lead{margin-top:18px;display:grid;gap:14px}form.lead fieldset{border:0;padd
 form.lead label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px}form.lead label small{font-weight:400;color:var(--muted)}
 form.lead input[type=text],form.lead input[type=email],form.lead input[type=url],form.lead input[type=tel],form.lead textarea{font:inherit;font-weight:400;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);width:100%}
 form.lead textarea{resize:vertical}.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media (max-width:640px){.row2{grid-template-columns:1fr}}
+.pfx{display:flex;align-items:center;border:1px solid var(--line);border-radius:8px;background:var(--bg)}.pfx:focus-within{outline:2px solid var(--accent);outline-offset:1px}
+.pfx>span{padding-left:12px;color:var(--muted);font-weight:400;user-select:none}form.lead .pfx input{border:0;background:transparent;padding-left:1px;outline:none;min-width:0}
+.brands .eyebrow{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 6px}
+.brand-strip{overflow:hidden;margin:22px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.brand-track{display:flex;width:max-content;animation:brandscroll 90s linear infinite}.brand-strip:hover .brand-track{animation-play-state:paused}
+.brand-track img{display:block;flex:none;height:52px;width:auto;max-width:none;opacity:.8}
+@keyframes brandscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (max-width:640px){.brand-track img{height:38px}}@media (prefers-reduced-motion:reduce){.brand-track{animation:none}}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:14px 0}.tags li{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:14px;color:var(--muted);background:var(--bg)}
+.fineprint{font-size:13px;color:var(--muted);margin:6px 0 0}
 .hp{position:absolute;left:-9999px;opacity:0}.form-note{color:var(--muted);font-size:14px}.form-status{margin:0;font-size:14px;color:var(--muted)}form.lead .btn{border:0;cursor:pointer;font:inherit;font-weight:600}
 .related{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .related a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
@@ -228,6 +248,33 @@ def mobile_menu_html():
             + "".join(groups) + f'<p><a class="btn" href="{FORM_URL}">Get a quote</a></p></div></details>')
 
 
+def email_link(pre="", cls=""):
+    klass = "em" + (" " + cls if cls else "")
+    extra = f' data-pre="{pre}"' if pre else ""
+    return f'<a class="{klass}" data-u="{MAIL_USER}" data-d="{MAIL_DOMAIN}"{extra}>{pre}{MAIL_USER} [at] {MAIL_DOMAIN}</a>'
+
+
+BRANDS_ALT = ("Brands Diego Zietek has worked on: Shell, Timberland, Intuit QuickBooks, Mission AC &amp; Plumbing, Amazon Prime, "
+              "Skillshare, Regus, TIM, Pontomais, Bluecore, TradingWorks, Underscore Marketing, PUCPR, Grupo Marista, "
+              "Clinipam (Grupo NotreDame Intermédica), Forza JMalucelli, PneusAqui, Joias VIP, Éclairé and Trutek")
+BRAND_TAGS = ["SaaS &amp; subscription", "Consumer brands", "Home services", "Telecom", "Education",
+              "Healthcare &amp; pharma", "E-commerce", "B2B &amp; industrial"]
+
+
+def brands_html():
+    img = f'src="/{BRAND_SPRITE}" width="3205" height="52" loading="lazy" decoding="async"'
+    tags = "".join(f"<li>{t}</li>" for t in BRAND_TAGS)
+    return f"""<section class="brands" id="brands"><div class="wrap">
+<p class="eyebrow">Experience</p>
+<h2>Brands I've worked on</h2>
+<p>Fourteen-plus years across agency, in-house and freelance roles put me on accounts with very different economics: SaaS and subscription products such as Intuit QuickBooks, Skillshare and Pontomais, global consumer brands such as Shell, Timberland and Amazon Prime, home services companies such as Mission AC &amp; Plumbing in Houston, and companies in telecom, education, healthcare and e-commerce. Through Underscore Marketing, a US agency, I also worked on oncology, rare disease and gene therapy brands.</p>
+<div class="brand-strip"><div class="brand-track"><img {img} alt="{BRANDS_ALT}"><img {img} alt="" aria-hidden="true"></div></div>
+<p>What carries over to your account is pattern recognition: how a trial-to-paid funnel differs from a lead form, which conversions each business can actually measure, and where spend usually leaks.</p>
+<ul class="tags">{tags}</ul>
+<p class="fineprint">Logos belong to their owners and identify past work, not endorsements.</p>
+</div></section>"""
+
+
 def footer_html():
     groups = []
     for title, slugs in FOOTER_GROUPS:
@@ -235,7 +282,7 @@ def footer_html():
         groups.append(f"<div><h4>{title}</h4><ul>{lis}</ul></div>")
     groups.append(
         f'<div><h4>Contact</h4><ul><li><a href="{FORM_URL}">Get a quote</a></li>'
-        f'<li><a href="mailto:{MAIL}">{MAIL}</a></li>'
+        f'<li>{email_link()}</li>'
         f'<li><a href="{PARENT}" rel="noopener">Diwizi (industry pages)</a></li></ul></div>'
     )
     return (
@@ -283,7 +330,7 @@ def form_html(slug):
 <label>Work email<input type="email" name="email" autocomplete="email" required></label>
 </div>
 <div class="row2">
-<label>Website<input type="url" name="website" placeholder="https://" autocomplete="url" inputmode="url"></label>
+<label>Website<span class="pfx"><span aria-hidden="true">https://</span><input type="text" name="website" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" placeholder="yourcompany.com"></span></label>
 <label><span>Phone <small>(optional)</small></span><input type="tel" name="phone" autocomplete="tel"></label>
 </div>
 <label>What is not working, or what you need<textarea name="message" rows="3" placeholder="Platforms, who runs the account today, and what prompted the search."></textarea></label>
@@ -298,7 +345,7 @@ def cta_html(p):
         '<div class="wrap"><div class="ctabox"><h2>' + esc(p.get("cta_title", "Tell me about the account")) +
         "</h2><p>" + p.get("cta_text", "Spend band, site and what is not working. You get a straight answer on whether I can help, "
         "what I would do first and a price range. No proposal deck, no sales follow-up sequence.") +
-        "</p>" + (f'<div class="cta-row"><a class="btn ghost" href="mailto:{MAIL}">Email {MAIL}</a></div>' if p.get("no_form") else form_html(slug)) + "</div></div>"
+        "</p>" + (f'<div class="cta-row">{email_link("Email ", "btn ghost")}</div>' if p.get("no_form") else form_html(slug)) + "</div></div>"
     )
 
 
@@ -317,7 +364,7 @@ def schema_for(p):
     }
     service = {
         "@type": "ProfessionalService", "@id": SITE + "/#service", "name": BRAND + " — " + NAME,
-        "url": SITE + "/", "founder": {"@id": SITE + "/about/#person"}, "email": MAIL,
+        "url": SITE + "/", "founder": {"@id": SITE + "/about/#person"},
         "areaServed": [{"@type": "Country", "name": c} for c in ["United States", "Canada", "United Kingdom", "Ireland"]],
         "priceRange": "$$", "serviceType": "Google Ads management and consulting",
     }
@@ -341,6 +388,8 @@ def fill_prices(html_text):
     for k, v in PRICES.items():
         html_text = html_text.replace("{{" + k + "}}", f"{v:,}")
     html_text = html_text.replace("{{cal_url}}", CAL)
+    html_text = html_text.replace("{{email}}", email_link())
+    html_text = html_text.replace("{{brands}}", brands_html())
     return html_text
 
 
@@ -404,7 +453,7 @@ def render(p):
 <div class="wrap"><p class="byline">Written by <a href="/about/">{NAME}</a>. Last updated {TODAY}.</p></div>
 </main>
 {footer_html()}
-{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}
+{EMAIL_JS}{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}
 </body>
 </html>
 """
@@ -414,20 +463,20 @@ def privacy_page():
     body = f"""<section><div class="wrap">
 <h2>What this site collects</h2>
 <p>This site is a set of static pages. It uses the following third-party tags, loaded through Google Tag Manager:</p>
-<ul><li><b>Google Analytics 4.</b> Measures visits, pages viewed and clicks on the booking and email links, to understand which pages are useful. Sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>). Data is processed by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
+<ul><li><b>Google Analytics 4.</b> Measures visits, pages viewed, clicks on the quote and email links and form submissions, to understand which pages are useful. Sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>). Data is processed by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
 <li><b>Google Ads conversion measurement.</b> When you arrive from a Google ad and send the form, the enquiry is reported back to Google Ads as a conversion so ad spend can be judged on real outcomes.</li></ul>
 <p>You can block these with your browser's tracking protection or an extension such as Google's <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Analytics opt-out</a>; the site works the same without them.</p>
 <ul><li><b>Contact form.</b> What you type in the form is relayed to my inbox by <a href="https://web3forms.com/privacy" rel="noopener">Web3Forms</a> and is not stored on this site. I use it only to reply.</li>
-<li><b>Email.</b> Messages to {MAIL} go to {NAME} directly and are kept for the purpose of replying and, if you become a client, running the engagement.</li>
+<li><b>Email.</b> Messages to {email_link()} go to {NAME} directly and are kept for the purpose of replying and, if you become a client, running the engagement.</li>
 <li><b>Hosting.</b> Pages are served by Cloudflare, which processes IP addresses and request logs to deliver the site and protect it from abuse.</li></ul>
 <h2>Your rights</h2>
-<p>You can ask what personal data I hold about you, ask for it to be corrected or deleted, or object to its use, by emailing {MAIL}. Requests are answered by the same person who received your original message.</p>
+<p>You can ask what personal data I hold about you, ask for it to be corrected or deleted, or object to its use, by emailing {email_link()}. Requests are answered by the same person who received your original message.</p>
 <h2>Controller</h2>
-<p>{NAME}, operating as Diwizi, Curitiba, Brazil. Contact: {MAIL}.</p>
+<p>{NAME}, operating as Diwizi, Curitiba, Brazil. Contact: {email_link()}.</p>
 </div></section>"""
     return {"slug": "privacy", "short": "Privacy", "blurb": "", "title": "Privacy policy | Google Ads Freelancer",
             "meta": "What googleadsfreelancer.com collects, why, and how to reach the person responsible for it.",
-            "h1": "Privacy policy", "lead": "Short, because there is little to say: static pages, analytics, a booking link and an email address.",
+            "h1": "Privacy policy", "lead": "Short, because there is little to say: static pages, analytics, a contact form and an email address.",
             "body": body, "kicker": "Legal", "proof": [], "noindex": False}
 
 
@@ -436,10 +485,10 @@ def thanks_page():
 <h2>What happens next</h2>
 <ol class="steps">
 <li><div><strong>I read it myself.</strong> Usually the same working day; within one working day at most.</div></li>
-<li><div><strong>You get one reply</strong> from <a href="mailto:{MAIL}">{MAIL}</a>: whether I can help, what I would look at first, a price range, and two or three times for a short call if it makes sense to talk.</div></li>
+<li><div><strong>You get one reply</strong> from {email_link()}: whether I can help, what I would look at first, a price range, and two or three times for a short call if it makes sense to talk.</div></li>
 <li><div><strong>Nothing else.</strong> No sequence, no newsletter. If you do not answer, I assume the timing was wrong.</div></li>
 </ol>
-<p>Want to add anything? Reply to the confirmation, or write to <a href="mailto:{MAIL}">{MAIL}</a> with read-only access to Google Ads and GA4 if you already know you want an audit.</p>
+<p>Want to add anything? Write to {email_link()}, and include read-only access to Google Ads and GA4 if you already know you want an audit.</p>
 </div></section>"""
     # Fires only when Cal.com actually sent back a booking uid, and only once per uid
     # (sessionStorage + localStorage, so a refresh or a second tab doesn't double-count).
@@ -458,7 +507,7 @@ def thanks_page():
     return {"slug": "thanks", "short": "Thanks", "blurb": "", "title": "Message received | Google Ads Freelancer",
             "meta": "Your message to Diego Zietek has been received.", "h1": "Got it. You will hear from me, not from a sequence.",
             "lead": "Thanks for the detail. Here is exactly what happens next.",
-            "body": body, "kicker": "Booked", "proof": [], "noindex": True,
+            "body": body, "kicker": "Received", "proof": [], "noindex": True,
             "pre_gtm_head": TY_LIMPA_JS, "extra_js": js,
             "cta_title": "Forgot something?",
             "cta_text": "Send it here and I will fold it into the same reply.", "no_form": True}
@@ -486,6 +535,7 @@ def build():
         f.write("</urlset>\n")
     if PHOTO:
         shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"), os.path.join(dist, "diego.jpg"))
+    shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", BRAND_SPRITE), os.path.join(dist, BRAND_SPRITE))
     with open(os.path.join(dist, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\nDisallow: /thanks/\n\nSitemap: {SITE}/sitemap.xml\n")
     with open(os.path.join(dist, "favicon.svg"), "w") as f:
