@@ -1,0 +1,45 @@
+tier,dominio,termo,busca_us,cpc_us,busca_uk,cpc_uk,intencao,status,confianca,uso sugerido
+A,googlebusinessads.com,google business ads,5400,43.45,320,21.42,comercial,LIVRE (WHOIS registered=false),alta,pagina de servico Google Ads para pequenas empresas / LSA
+A,googlelocalads.com,google local ads,6600,9.21,880,4.22,comercial,LIVRE (DNS; sem WHOIS),media,mesmo tema: Local Services Ads e campanhas locais; .co.uk .uk livres
+A,localgoogleads.com,local google ads,1900,6.92,0,,comercial,LIVRE (WHOIS registered=false),alta,par do anterior
+A,facebookbusinessads.com,facebook business ads,3600,23.55,0,,comercial,LIVRE (WHOIS registered=false),alta,pagina Meta Ads para negocios locais
+A,googleadssmallbusiness.com,google ads small business,1900,42.07,0,,comercial,LIVRE (DNS; sem WHOIS),media,CPC alto; combina com a pagina /small-business-ppc-management/
+A,googledisplayads.com,google display ads,1300,140.58,390,19.66,informacional/comercial,LIVRE (DNS; sem WHOIS),media,CPC US 140; conteudo + servico Display
+A,ppcagencyuk.com,ppc agency uk,0,,390,57.93,comercial,LIVRE (WHOIS registered=false),alta,.co.uk .uk tambem livres; CPC £58
+A,marketingagencyads.com,marketing agency ads,1300,37.86,0,,comercial,LIVRE (DNS; sem WHOIS),media,
+A,leadgenerationcompaniesuk.com,lead generation companies uk,0,,590,30.58,comercial,LIVRE (DNS; sem WHOIS),media,.co.uk livre; nicho lead gen UK
+A,b2bleadgenerationcompanies.com,b2b lead generation companies,0,,320,102.07,comercial,LIVRE (DNS; sem WHOIS),media,CPC £102 (o mais alto da varredura)
+A,ppcmarketingcompanies.com,ppc marketing companies,0,,260,47.15,comercial,LIVRE (DNS; sem WHOIS),media,
+A,advertisingagenciesuk.com,advertising agencies uk,0,,390,11.77,comercial,LIVRE (WHOIS registered=false),alta,
+A,advertisingagencieslondon.com,advertising agencies london,0,,1600,9.13,comercial,LIVRE (DNS; sem WHOIS),media,maior volume UK entre os .com livres; diretorio/afiliado
+A,persuasiveads.com,persuasive ads,2900,62.43,0,,comercial,LIVRE (WHOIS registered=false),alta,conteudo (exemplos de anuncios) com CPC 62
+A,interstitialads.com,interstitial ads,2400,30.30,0,,comercial,LIVRE (WHOIS registered=false),alta,nicho app/display
+A,smsmarketingplatforms.com,sms marketing platforms,4400,105.89,0,,comercial,LIVRE (WHOIS registered=false),alta,fora do PPC mas CPC 106 e volume 4.4K: afiliado de software
+A,paidadvertisingplatforms.com,paid advertising platforms,18100,55.41,0,,comercial,LIVRE (DNS; sem WHOIS),media,maior volume da lista; conteudo comparativo de plataformas
+UK,googleadvertising.co.uk,google advertising,0,,4400,18.53,informacional,LIVRE (DNS; sem WHOIS),media,4.4K UK; .com tomado; pagina UK de Google Ads
+UK,googlesearchads.co.uk,google search ads,2900,80.10,390,47.88,comercial,LIVRE (DNS; sem WHOIS),media,
+UK,googleshoppingads.co.uk,google shopping ads,2400,60.17,320,31.13,comercial,LIVRE (DNS; sem WHOIS),media,combina com ecommerce PPC
+UK,leadgenagency.co.uk,lead gen agency,0,,880,32.48,navegacional,LIVRE (DNS; sem WHOIS),media,
+UK,googleppcagency.co.uk,google ppc agency,0,,320,66.89,navegacional,LIVRE (DNS; sem WHOIS),media,CPC £67
+UK,paidmediaagency.co.uk,paid media agency,0,,320,41.58,comercial,LIVRE (DNS),media,ja listado
+UK,socialmediaadvertisingagency.co.uk,social media advertising agency,0,,390,30.67,comercial,LIVRE (DNS; sem WHOIS),media,
+UK,ecommerceadvertisingagency.co.uk,ecommerce advertising agency,0,,320,28.23,comercial,LIVRE (DNS; sem WHOIS),media,
+UK,ppccampaignmanagement.co.uk,ppc campaign management,0,,320,33.22,comercial,LIVRE (DNS; sem WHOIS),media,
+UK,advertisingforsmallbusiness.co.uk,advertising for small business,0,,320,31.00,comercial,LIVRE (DNS; sem WHOIS),media,
+UK,localbusinessads.co.uk,local business ads,1900,30.02,260,22.97,comercial,LIVRE (DNS; sem WHOIS),media,
+UK,displayadagency.co.uk,display ad agency,0,,260,18.18,comercial,LIVRE (DNS; sem WHOIS),media,
+UK,telegramads.co.uk,telegram ads,3600,36.67,1900,32.03,comercial,LIVRE (DNS; sem WHOIS),media,nicho novo; .com tomado
+UK,b2bseoagency.co.uk,b2b seo agency,0,,590,58.99,comercial,LIVRE (DNS; sem WHOIS),media,fora do PPC
+ALT,mediabuyingagency.uk / .co,media buying agency,1900,,320,,comercial,LIVRE (DNS),media,.com e .co.uk tomados
+ALT,localserviceads.uk / .co,local service ads,49500,,4400,,comercial,LIVRE (DNS),media,termo navegacional (produto Google) mas volume enorme; .com tomado
+ALT,payperclickadvertising.uk / .co,pay per click advertising,8100,,390,,comercial,LIVRE (DNS),media,
+ALT,googleadwords.uk / .io,google adwords,22200,,8100,,navegacional,LIVRE (DNS),media,marca Google: risco de UDRP; nao comprar
+ALT,leadgenerationcompanies.net,lead generation companies,1900,,880,,comercial,LIVRE (WHOIS registered=false),alta,
+ALT,leadgenerationagency.net / .co,lead generation agency,3600,,0,,comercial,LIVRE (DNS),media,
+ALT,oohadvertising.net / .co,ooh advertising,1600,,720,,comercial,LIVRE (DNS),media,fora do digital
+ALT,digitaladvertisingagency.uk / .co,digital advertising agency,1300,,260,,comercial,LIVRE (DNS),media,
+ALT,socialmediaads.uk / .co,social media ads,8100,,0,,comercial,LIVRE (DNS),media,.net registrado 2025
+FALSO-LIVRE,digitalmarketingplatforms.com,digital marketing platforms,6600,16.22,0,,comercial,REGISTRADO 2025,alta,DNS enganou
+FALSO-LIVRE,programmaticadagency.com,programmatic ad agency,0,,390,26.25,comercial,REGISTRADO 2020,alta,DNS enganou; programmaticadsagency.com (com s) segue livre por DNS
+FALSO-LIVRE,leadgenerationwebsites.co.uk,lead generation websites,0,,480,26.15,comercial,REGISTRADO 2026 (838 RD spam),alta,
+FALSO-LIVRE,socialmediaads.net,social media ads,8100,,0,,comercial,REGISTRADO 2025,alta,
