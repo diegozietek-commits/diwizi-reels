@@ -2,7 +2,7 @@ tier,dominio,termo,busca_us,us_4m,cpc_us,busca_uk,uk_4m,cpc_uk,status,confianca,
 A,googleadsconsultants.com,google ads consultants (=consultant/consulting/consultancy/consultation),390,305,69.45,210,128,43.24,LIVRE (WHOIS registered=false),alta,plural do termo principal; singular .com tomado
 A,googleadsconsultation.com,google ads consultation,390,305,69.45,210,128,43.24,LIVRE (DNS; sem registro WHOIS),media,Google agrupa com google ads consultant; .co.uk e .uk livres
 A,ppcconsultation.com,ppc consultation (=ppc consultant/consulting/consultancy),210,228,24.39,320,160,46.84,LIVRE (WHOIS registered=false),alta,mesmo cluster de ppc consultant; .co.uk .uk .io .co livres
-A,theppcconsultant.com,ppc consultant,210,228,24.39,320,160,46.84,LIVRE (WHOIS registered=false),alta,41 dominios referentes (lixo); nome forte para marca pessoal
+ERRO-CORRIGIDO,theppcconsultant.com,ppc consultant,210,228,24.39,320,160,46.84,REGISTRADO (DNS GoDaddy ns07/ns08.domaincontrol.com),alta,a base WHOIS dizia registered=false (desatualizada); o DNS ja mostrava REG. Alternativa livre: theppcconsultant.co.uk
 A,googleadsspecialists.com,google ads specialists (=specialist),720,640,90.30,320,175,44.69,LIVRE (WHOIS registered=false),alta,singular tomado; .co.uk e .uk livres
 A,googleadsfreelancers.com,google ads freelancers (=freelancer),140,178,38.97,140,110,21.24,LIVRE (WHOIS registered=false),alta,plural do seu dominio; comprar por defesa
 A,freelanceppcconsultant.com,freelance ppc consultant,20,20,31.29,90,25,37.44,LIVRE (WHOIS registered=false),alta,termo exato UK 90; .co.uk e .uk livres
