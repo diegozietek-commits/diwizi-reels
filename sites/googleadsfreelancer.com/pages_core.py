@@ -86,63 +86,67 @@ PAGES = [
 },
 
 {
-"slug": "freelance-ppc-consultant", "short": "Freelance PPC consultant", "blurb": "Independent PPC management for UK, Irish and North American companies.",
-"title": "Freelance PPC Consultant | Independent PPC Management, UK & US",
-"meta": 'Freelance PPC consultant with 14+ years in Google Ads, Microsoft Advertising and Meta Ads. Month-to-month PPC management for a flat fee.',
-"kicker": "Freelance PPC",
-"h1": "A freelance PPC consultant who has run accounts for 14 years, not a freelancer between contracts",
-"lead": "Independent PPC management and consulting for companies in the United Kingdom, Ireland, the United States and Canada. Google Ads first, Microsoft Advertising and Meta Ads where they earn their place.",
-"service_name": "Freelance PPC consulting and management",
+"slug": 'freelance-ppc-consultant',
+"short": 'PPC consultant',
+"blurb": 'An independent PPC consultant for US and Canadian companies, hired directly.',
+"title": 'PPC Consultant | Independent Freelance PPC Consultant, US & Canada',
+"meta": 'Independent PPC consultant with 14+ years in Google Ads, Microsoft Advertising and Meta Ads. Hired directly, month to month, for a flat fee.',
+"kicker": 'PPC consultant',
+"h1": 'A PPC consultant who has run accounts for 14 years, hired directly instead of through an agency',
+"lead": 'I am Diego Zietek, an independent PPC consultant for companies in the United States and Canada. I audit, plan and run the accounts myself: Google Ads first, Microsoft Advertising and Meta Ads where they earn their place, with tracking done by the same person.',
+"service_name": 'PPC consulting and management',
 "body": """
 <section><div class="wrap">
-<h2>What freelance PPC covers</h2>
-<p>PPC is broader than Google Ads. A freelance PPC consultant plans and runs paid search across Google and Microsoft, and often the paid social that sits next to it, with one account structure, one measurement layer and one person accountable for the result. That last part is what people are usually buying when they search for a PPC freelancer rather than an agency: direct access to whoever does the work.</p>
+<h2>What a PPC consultant covers</h2>
+<p>PPC is broader than Google Ads. A PPC consultant plans and runs paid search across Google and Microsoft, and often the paid social that sits next to it, with one account structure, one measurement layer and one person accountable for the result. That last part is what people are usually buying when they look for a PPC consultant rather than an agency: direct access to whoever does the work.</p>
 <div class="cols">
-<div class="card"><h3>Paid search</h3><p>Google Ads Search, Shopping and Performance Max, plus <a href="/microsoft-ads-management/">Microsoft Advertising</a>, which in the UK and US still delivers a cheaper click on the same intent for many B2B and finance accounts.</p></div>
+<div class="card"><h3>Paid search</h3><p>Google Ads Search, Shopping and Performance Max, plus <a href="/microsoft-ads-management/">Microsoft Advertising</a>, which in the US still delivers a cheaper click on the same intent for many B2B and finance accounts.</p></div>
 <div class="card"><h3>Paid social</h3><p><a href="/meta-ads-management/">Meta Ads</a> for demand and remarketing, <a href="/linkedin-ads-management/">LinkedIn Ads</a> for B2B accounts where the buying committee can be named. Run only when there is a reason, not because the invoice looks fuller.</p></div>
-<div class="card"><h3>Measurement</h3><p>GA4, Google Tag Manager, consent mode and offline conversion import, so the platforms optimise towards customers rather than form fills. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</p></div>
+<div class="card"><h3>Measurement</h3><p>GA4, Google Tag Manager, consent mode and offline conversion import, so the platforms optimize toward customers rather than form fills. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</p></div>
 </div>
 </div></section>
 
 <section><div class="wrap">
-<h2>Freelance PPC consultant versus PPC agency</h2>
-<p>Agencies are the right answer for some accounts: many markets, many languages, a creative pipeline that needs a team. For a single company spending between a few thousand and a hundred thousand a month, the agency structure mostly adds cost and distance. Three differences matter in practice.</p>
+<h2>PPC consultant or PPC agency</h2>
+<p>Agencies are the right answer for some accounts: many markets, many languages, a creative pipeline that needs a team. For a single company spending between a few thousand and a hundred thousand dollars a month, the agency structure mostly adds cost and distance. Three differences matter in practice.</p>
 <ul>
-<li><strong>Who does the work.</strong> With a freelancer this should be a trivial question with one answer. If it is not, you are talking to a small agency describing itself as a freelancer.</li>
-<li><strong>How pricing bends behaviour.</strong> A percentage of spend rewards spend. A flat fee rewards keeping the client. I charge a flat monthly fee for freelance PPC management, agreed up front and reviewed when scope changes.</li>
+<li><strong>Who does the work.</strong> With an independent consultant this should be a trivial question with one answer. If it is not, you are talking to a small agency describing itself as a consultant.</li>
+<li><strong>How pricing bends behavior.</strong> A percentage of spend rewards spend. A flat fee rewards keeping the client. I charge a flat monthly fee for PPC management, agreed up front and reviewed when scope changes.</li>
 <li><strong>What happens when you leave.</strong> Everything I build sits in your own Google Ads, Microsoft Advertising, Meta and analytics accounts. That is worth settling in writing with anyone you hire, me included.</li>
 </ul>
 </div></section>
 
 <section><div class="wrap">
-<h2>What a month of freelance PPC management looks like</h2>
+<h2>What a month with a PPC consultant looks like</h2>
 <ol class="steps">
 <li><div><strong>Weekly, in the account.</strong> Search terms reviewed and negatives added, bids and budgets adjusted against the target, ads and assets rotated when a test has a winner, feed or landing page issues flagged to whoever owns them.</div></li>
 <li><div><strong>Monthly, in writing.</strong> Cost per lead or per customer, what changed, what I plan to change next, and what I need from you. Written for the owner, not for another marketer.</div></li>
-<li><div><strong>Quarterly, at the structure.</strong> Are the campaigns still organised the way the business makes decisions: by service line, margin and geography? Structures drift as accounts grow, and a quarterly rebuild of the weak parts is cheaper than a yearly rescue.</div></li>
+<li><div><strong>Quarterly, at the structure.</strong> Are the campaigns still organized the way the business makes decisions: by service line, margin and geography? Structures drift as accounts grow, and a quarterly rebuild of the weak parts is cheaper than a yearly rescue.</div></li>
 </ol>
 </div></section>
 
 <section><div class="wrap">
-<h2>For UK and Irish companies specifically</h2>
-<p>I work remotely from GMT-3, which puts my afternoon in your morning and most of your working day inside mine. Reporting is in pounds or euros, with the numbers your accountant recognises. Microsoft Advertising is part of the default plan for UK accounts because Bing's share of desktop search in the UK is high enough to matter, especially for B2B and professional services. I have run accounts for UK and Irish companies alongside US ones since long before this site existed; the <a href="/about/">about page</a> lists markets and the two engagements that are public.</p>
-<p class="note">Search volume note: "freelance PPC" is searched more in the UK than in the US, and the results page for it mixes people looking to hire with people looking for freelance work. If you are here to hire, everything on this page is for you. If you are a PPC specialist looking for contract work, I am not currently subcontracting.</p>
+<h2>Working with US and Canadian companies</h2>
+<p>I work remotely from Brazil, in English and mostly in writing. Brazil sits one to two hours ahead of US Eastern time, so calls fit comfortably into a US morning or early afternoon, and written replies come within one working day. Reporting is in dollars, and everything is built in your own accounts from the first day.</p>
+<p class="note">Based in the UK or Ireland? The same practice runs a UK site with prices in pounds: <a href="https://ppcconsultancy.uk/ppc-freelancer/" rel="noopener">ppcconsultancy.uk</a>. And if you are a PPC specialist looking for contract work, this is not a vacancy; accounts are not passed on to subcontractors.</p>
 </div></section>
 
 <section><div class="wrap">
 <h2>What the work has produced</h2>
-<p>For a home services company in Houston, Texas, with roughly $20,000 a month in Google Ads spend, the engagement cut cost per acquisition by 44% and lifted qualified leads by 60% over nine months, in an auction where the main keywords cost $45 to $80 per click. The methods were not exotic: negatives, a restructure by job type, tracking that separated a booked job from a phone call, and a steady A/B programme on ads and pages. The <a href="/results/">results page</a> lays out what can and cannot be verified.</p>
+<p>For a home services company in Houston, Texas, with roughly $20,000 a month in Google Ads spend, the engagement cut cost per acquisition by 44% and lifted qualified leads by 60% over nine months, in an auction where the main keywords cost $45 to $80 per click. The methods were not exotic: negatives, a restructure by job type, tracking that separated a booked job from a phone call, and a steady A/B program on ads and pages. For Pontomais, a software startup, sales grew 600% in eight months, mostly from Google Ads. The <a href="/results/">results page</a> lays out all four published engagements and what can and cannot be verified.</p>
 </div></section>
 """,
 "faq": [
-("What does a freelance PPC consultant charge?", "Either a fixed price for a defined piece of work, such as an audit or a rebuild, or a flat monthly retainer for ongoing management. I do not charge a percentage of ad spend. Rates are quoted once I know the account size and platforms, usually from the form alone; the <a href=\"/pricing/\">pricing page</a> explains the models."),
-("Is a freelance PPC consultant right for a small business?", "If the business spends enough for the fee to be a sensible share of the total, yes. Below roughly £2,500 or $3,000 a month, an audit plus a one-off setup that you then run yourself is usually better value than a retainer. The <a href=\"/small-business-ppc-management/\">small business page</a> goes into it."),
-("Can one freelancer really cover Google, Microsoft and Meta?", "For a single company, yes, and it is better that way: one measurement layer and one person deciding where the next pound goes. What a freelancer cannot do is produce creative at agency volume, so for Meta-heavy DTC brands I work alongside your designer or a creative studio rather than replacing them."),
-("Do you sign a contract?", "A short agreement covering scope, fee, confidentiality and that everything built belongs to you. It is month to month, with notice rather than a fixed term."),
-("How quickly can you start?", "An audit usually starts within a week of the go-ahead. Ongoing management depends on capacity, because I deliberately keep the client list short; if I cannot take the account on properly, I will say so on the call."),
-("Do you work with agencies?", "Yes, as a senior operator brought in on specific accounts, usually white label. That is described on the <a href=\"/white-label-ppc/\">white label PPC page</a>."),
+('What does a PPC consultant do?', 'Audits the accounts, decides what to fix first, and then either advises your team or runs the campaigns directly: search terms, bids, budgets, ads, landing pages and the tracking underneath. With an independent consultant, the same person does all of it.'),
+('Is a PPC consultant the same as a PPC freelancer?', 'Mostly the label. Both are one independent person. "Consultant" leans toward strategy and advice, "freelancer" toward hands-on work in the account. I do both: the audit and the plan, then the weekly work that carries it out.'),
+('What does a PPC consultant charge?', 'Either a fixed price for a defined piece of work, such as an audit or a rebuild, or a flat monthly retainer for ongoing management. I do not charge a percentage of ad spend. Fees are quoted once I know the account size and platforms, usually from the form alone; the <a href="/pricing/">pricing page</a> explains the models.'),
+('Is a PPC consultant right for a small business?', 'If the business spends enough for the fee to be a sensible share of the total, yes. Below roughly $3,000 a month, an audit plus a one-off setup that you then run yourself is usually better value than a retainer. The <a href="/small-business-ppc-management/">small business page</a> goes into it.'),
+('Can one consultant really cover Google, Microsoft and Meta?', 'For a single company, yes, and it is better that way: one measurement layer and one person deciding where the next dollar goes. What one person cannot do is produce creative at agency volume, so for Meta-heavy brands I work alongside your designer or a creative studio rather than replacing them.'),
+('Do you sign a contract?', 'A short agreement covering scope, fee, confidentiality and that everything built belongs to you. It is month to month, with notice rather than a fixed term.'),
+('How quickly can you start?', 'An audit usually starts within a week of the go-ahead. Ongoing management depends on capacity, because I deliberately keep the client list short; if I cannot take the account on properly, I will say so on the call.'),
+('Do you work with agencies?', 'Yes, as a senior operator brought in on specific accounts, usually white label. That is described on the <a href="/white-label-ppc/">white label PPC page</a>.'),
 ],
-"related": ["ppc-management", "google-ads-consultant", "microsoft-ads-management", "pricing"],
+"related": ['ppc-management', 'google-ads-consultant', 'microsoft-ads-management', 'pricing'],
 },
 
 {
