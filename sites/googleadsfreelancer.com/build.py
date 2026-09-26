@@ -22,6 +22,7 @@ SISTER_PAGES = {
     "google-ads-audit": "/ppc-audit/", "linkedin-ads-management": "/b2b-ppc/",
     "conversion-tracking-setup": "/conversion-tracking/", "pricing": "/pricing/", "results": "/results/",
     "about": "/about/", "contact": "/contact/", "privacy": "/privacy/",
+    "freelance-ppc-consultant": "/ppc-freelancer/",
 }
 
 
@@ -74,7 +75,16 @@ PROOF_BY_SLUG = {
     "ecommerce-ppc-management": [("Margin", "not platform ROAS"), ("Feed first", "titles, GTINs, labels"), ("PMax", "with brand excluded"), ("New vs returning", "customers separated")],
 }
 GTM_ID = "GTM-TB2NHZCH"
-GTM_HEAD = ("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
+# Guard before GTM: automated browsers (navigator.webdriver, HeadlessChrome) never load GTM, so tests and
+# scanners stay out of GA4. /?internal=1 sets a 1-year first-party cookie (/?internal=0 clears it); while it
+# is set every page pushes traffic_type:'internal' before GTM loads, for the GA4 internal-traffic filter.
+GTM_GUARD = ("<script>(function(w,d){var n=w.navigator||{},q=w.location.search,c='dz_internal';"
+             "if(/[?&]internal=1(&|$)/.test(q))d.cookie=c+'=1; max-age=31536000; path=/; SameSite=Lax; Secure';"
+             "else if(/[?&]internal=0(&|$)/.test(q))d.cookie=c+'=; max-age=0; path=/; SameSite=Lax; Secure';"
+             "w.__noGTM=!!(n.webdriver||/HeadlessChrome/i.test(n.userAgent||''));"
+             "if(new RegExp('(^|;\\s*)'+c+'=1').test(d.cookie)){w.dataLayer=w.dataLayer||[];w.dataLayer.push({traffic_type:'internal'});}"
+             "})(window,document);</script>")
+GTM_HEAD = GTM_GUARD + ("<script>(function(w,d,s,l,i){if(w.__noGTM)return;w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
             "var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;"
             "j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);"
             "})(window,document,'script','dataLayer','" + GTM_ID + "');</script>")
