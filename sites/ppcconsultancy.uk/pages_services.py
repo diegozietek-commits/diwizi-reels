@@ -2,6 +2,88 @@
 
 PAGES = [
 {
+"slug": 'ppc-freelancer',
+"short": 'PPC freelancer',
+"blurb": 'A senior freelance PPC specialist for UK businesses, hired directly.',
+"title": 'PPC Freelancer UK | Senior Freelance PPC Specialist, No Agency Layer',
+"meta": 'Hire a senior PPC freelancer for your UK business: Google, Microsoft, Meta and LinkedIn Ads run by one specialist, tracking and landing pages included.',
+"kicker": 'PPC freelancer',
+"h1": 'A senior PPC freelancer for UK businesses, hired directly rather than through a marketplace',
+"lead": 'I am Diego Zietek, a freelance PPC specialist with 14+ years on the account. You hire one senior person who audits, builds and runs your Google, Microsoft, Meta and LinkedIn Ads, with the tracking and landing pages done by the same hands. Flat monthly fee, month to month, and the accounts stay in your name.',
+"service_name": 'PPC freelancer services',
+"proof": None,
+"body": """
+<section><div class="wrap">
+<p class="note">This page is for businesses looking to hire a PPC freelancer. It is not a job listing, and accounts are never passed on to subcontractors.</p>
+<h2>What you get when you hire a senior PPC freelancer</h2>
+<div class="cols">
+<div class="card"><h3>One person, start to finish</h3><p>The person who reads your account in the audit is the person who changes it every week and writes the report. Nothing is handed to a junior after the first call.</p></div>
+<div class="card"><h3>Accounts in your name</h3><p>Google Ads, GA4, Tag Manager and Meta are built in your accounts, with admin access staying with you. If we stop, you keep everything, including the history.</p></div>
+<div class="card"><h3>Tracking and landing pages included</h3><p>In lead generation the waste is usually in what gets counted and in the page after the click, not in the bids. Both are part of the work rather than a separate quote.</p></div>
+<div class="card"><h3>A flat fee, no fixed term</h3><p>Never a percentage of your media, so advising you to spend less costs me nothing. A notice period instead of a twelve-month contract.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Senior freelancer, marketplace freelancer or agency</h2>
+<table>
+<tr><th></th><th>Senior PPC freelancer</th><th>Marketplace freelancer</th><th>PPC agency</th></tr>
+<tr><td>Who does the work</td><td>The person you hired</td><td>Whoever wins the bid; experience varies widely</td><td>An account team, often junior once the pitch is over</td></tr>
+<tr><td>Vetting</td><td>Track record, references and a paid audit</td><td>Profile ratings, mostly from small projects</td><td>Credentials and case studies, usually of the agency rather than your team</td></tr>
+<tr><td>How it is charged</td><td>Flat monthly fee</td><td>Hourly or per task</td><td>Retainer or a percentage of spend, often with a minimum term</td></tr>
+<tr><td>Tracking and landing pages</td><td>Included</td><td>Usually outside the brief</td><td>Often another team or an extra</td></tr>
+<tr><td>Best when</td><td>One business wants one accountable senior person</td><td>A small, well-defined task on a tight budget</td><td>Many markets, heavy creative or a large team to coordinate</td></tr>
+</table>
+<p>The fuller comparison with agencies is on <a href="/agency-vs-consultant/">PPC agency vs PPC consultant</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>How to vet any PPC freelancer before you hire</h2>
+<p>Whoever you choose, these questions separate an operator from a profile.</p>
+<ol class="steps">
+<li><div><strong>Who will actually be in the account?</strong> A freelancer who resells work to others is an agency without the accountability.</div></li>
+<li><div><strong>Whose accounts will the campaigns live in?</strong> The answer should be yours, with admin access from day one.</div></li>
+<li><div><strong>What will you measure, and how?</strong> Ask how phone calls, form spam and duplicated conversions are handled. Vague answers here explain most bad accounts.</div></li>
+<li><div><strong>What happens in the first month?</strong> A good answer starts with tracking and wasted spend, not with a new campaign structure.</div></li>
+<li><div><strong>How do you charge, and for how long?</strong> Percentage fees and long terms protect the supplier, not you.</div></li>
+<li><div><strong>Can I see how you report?</strong> A written monthly report on cost per qualified enquiry says more than a dashboard of clicks.</div></li>
+</ol>
+</div></section>
+
+<section><div class="wrap">
+<h2>What the first month looks like</h2>
+<ul>
+<li><strong>Week one:</strong> read-only access, a check of every conversion action against what the business counts as a lead, and the search terms from the last 90 days.</li>
+<li><strong>Weeks two and three:</strong> the tracking fixed first, then the waste cut, with each change written down so it can be undone.</li>
+<li><strong>Week four:</strong> a written report on what changed, what it is expected to do, and what comes next: structure, landing pages or testing.</li>
+</ul>
+<p>Engagements usually start with a fixed-fee <a href="/ppc-audit/">PPC audit</a>, deducted from the first month if you continue.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Published results</h2>
+<p>Four engagements are written up with their limits on the <a href="/results/">results page</a>, including a home services account where cost per acquisition fell 44% and qualified leads rose 60%, and Pontomais, a software startup whose sales grew 600% in eight months, mostly from Google Ads. None of them is British yet, so each one explains what carries over to a UK account.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Remote, on UK hours</h2>
+<p>I work remotely from Curitiba, Brazil, three to four hours behind London, in English and mostly in writing. Calls are booked ahead, usually in the UK morning, and written replies come within one working day. If you need someone in your office every week, a local agency will suit you better, and I will say so on the first call.</p>
+</div></section>
+""",
+"faq": [
+('What is the difference between a PPC freelancer and a PPC consultant?', 'Mostly the label. Both are one independent person. "Consultant" tends to mean advice and strategy, "freelancer" hands-on work in the account. I do both: the audit and the plan, then the weekly work that carries it out.'),
+('How much does a PPC freelancer cost in the UK?', 'Senior UK freelancers commonly quote a few hundred pounds a day or a flat monthly retainer; marketplace rates vary far more. I quote a flat monthly fee set by scope, in pounds ex VAT, with no minimum term. The <a href="/pricing/">pricing page</a> explains the models.'),
+('Is there a minimum ad spend?', 'Not a hard one. Below about £2,000 a month a retainer rarely pays for itself, and an audit or a one-off setup you then run yourself is usually better value.'),
+('Can you work alongside my in-house team or current agency?', 'Yes. Some clients want the whole account run; others want an audit, a second opinion or regular reviews while their own team does the day-to-day work.'),
+('Which platforms do you cover?', 'Google Ads (Search, Performance Max for lead generation, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and the landing pages. E-commerce Shopping feeds are not offered.'),
+('Are you hiring PPC freelancers?', 'No. This page is for businesses looking to hire one. Every account is run by me personally, and work is not passed on to subcontractors.'),
+],
+"related": ['ppc-management', 'ppc-audit', 'agency-vs-consultant', 'pricing'],
+"cta_title": 'Hire a PPC freelancer',
+"cta_text": 'Roughly what you spend, your site and what is going wrong. One reply, from me, with a straight answer and a range in pounds.',
+},
+
+{
 "slug": "ppc-management", "short": "PPC management", "blurb": "Google, Microsoft, Meta and LinkedIn under one measurement layer, with pages and tracking in scope.",
 "title": "PPC Management Services UK | Independent Consultant, Flat Fee",
 "meta": 'PPC management for UK lead generation firms: Google, Microsoft, Meta and LinkedIn Ads run weekly by one consultant, landing pages and tracking included.',

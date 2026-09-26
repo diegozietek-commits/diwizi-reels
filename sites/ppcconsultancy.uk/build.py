@@ -58,7 +58,16 @@ PROOF_BY_SLUG = {
 }
 GTM_ID = "GTM-TZDFPPMX"
 GA4_ID = "G-0BKDL0DY6F"
-GTM_HEAD = ("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
+# Guard before GTM: automated browsers (navigator.webdriver, HeadlessChrome) never load GTM, so tests and
+# scanners stay out of GA4. /?internal=1 sets a 1-year first-party cookie (/?internal=0 clears it); while it
+# is set every page pushes traffic_type:'internal' before GTM loads, for the GA4 internal-traffic filter.
+GTM_GUARD = ("<script>(function(w,d){var n=w.navigator||{},q=w.location.search,c='dz_internal';"
+             "if(/[?&]internal=1(&|$)/.test(q))d.cookie=c+'=1; max-age=31536000; path=/; SameSite=Lax; Secure';"
+             "else if(/[?&]internal=0(&|$)/.test(q))d.cookie=c+'=; max-age=0; path=/; SameSite=Lax; Secure';"
+             "w.__noGTM=!!(n.webdriver||/HeadlessChrome/i.test(n.userAgent||''));"
+             "if(new RegExp('(^|;\\s*)'+c+'=1').test(d.cookie)){w.dataLayer=w.dataLayer||[];w.dataLayer.push({traffic_type:'internal'});}"
+             "})(window,document);</script>")
+GTM_HEAD = GTM_GUARD + ("<script>(function(w,d,s,l,i){if(w.__noGTM)return;w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
             "var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;"
             "j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);"
             "})(window,document,'script','dataLayer','" + GTM_ID + "');</script>")
@@ -139,7 +148,7 @@ NAV = [
 FOOTER_GROUPS = [
     ("Services", ["ppc-management", "google-ads-management", "ppc-audit", "b2b-ppc",
                   "landing-pages", "conversion-tracking"]),
-    ("Working with me", ["ppc-consultant-london", "agency-vs-consultant", "pricing", "results", "about", "contact"]),
+    ("Working with me", ["ppc-freelancer", "ppc-consultant-london", "agency-vs-consultant", "pricing", "results", "about", "contact"]),
 ]
 
 # hreflang pairs: UK page -> equivalent page on the US/global site (None = no equivalent)
@@ -148,6 +157,7 @@ SISTER_PAGES = {
     "ppc-audit": "/google-ads-audit/", "b2b-ppc": "/linkedin-ads-management/", "landing-pages": None,
     "conversion-tracking": "/conversion-tracking-setup/", "pricing": "/pricing/", "results": "/results/",
     "about": "/about/", "contact": "/contact/", "privacy": "/privacy/",
+    "ppc-freelancer": "/freelance-ppc-consultant/",
 }
 
 
@@ -444,7 +454,7 @@ LLMS_FACTS = ["- Market: UK and Irish businesses; the US and Canadian practice i
               "- Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).",
               "- Not offered: e-commerce PPC (Shopping feeds, catalogue Performance Max).",
               "- Pricing: quoted in pounds, ex VAT, from the form; prices are not published. Never a percentage of ad spend."]
-LLMS_PAGES = ["index", "ppc-management", "ppc-audit", "ppc-consultant-london", "b2b-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "contact"]
+LLMS_PAGES = ["index", "ppc-management", "ppc-audit", "ppc-freelancer", "ppc-consultant-london", "b2b-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "contact"]
 LLMS_SISTER = "US and Canadian practice, Google Ads freelancer"
 
 def schema_for(p):
