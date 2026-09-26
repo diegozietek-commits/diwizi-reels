@@ -82,7 +82,7 @@ GTM_GUARD = ("<script>(function(w,d){var n=w.navigator||{},q=w.location.search,c
              "if(/[?&]internal=1(&|$)/.test(q))d.cookie=c+'=1; max-age=31536000; path=/; SameSite=Lax; Secure';"
              "else if(/[?&]internal=0(&|$)/.test(q))d.cookie=c+'=; max-age=0; path=/; SameSite=Lax; Secure';"
              "w.__noGTM=!!(n.webdriver||/HeadlessChrome/i.test(n.userAgent||''));"
-             "if(new RegExp('(^|;\\s*)'+c+'=1').test(d.cookie)){w.dataLayer=w.dataLayer||[];w.dataLayer.push({traffic_type:'internal'});}"
+             "if(new RegExp('(^|; ?)'+c+'=1').test(d.cookie)){w.dataLayer=w.dataLayer||[];w.dataLayer.push({traffic_type:'internal'});}"
              "})(window,document);</script>")
 GTM_HEAD = GTM_GUARD + ("<script>(function(w,d,s,l,i){if(w.__noGTM)return;w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
             "var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;"
