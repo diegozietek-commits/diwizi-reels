@@ -1,0 +1,158 @@
+market,keyword,volume,cpc,competition
+US,pest control,201000,29.5,MEDIUM
+US,pest control near me,165000,32.48,HIGH
+US,exterminator,74000,33.85,HIGH
+US,exterminator near me,90500,36.39,HIGH
+US,bed bug exterminator,135000,24.74,LOW
+US,bed bug treatment,201000,10.46,MEDIUM
+US,bed bug heat treatment,60500,11.44,LOW
+US,bed bug exterminator near me,8100,30.13,HIGH
+US,rodent control,40500,22.91,LOW
+US,mice exterminator,9900,26.93,HIGH
+US,rat exterminator,5400,31.41,HIGH
+US,rodent removal,1900,31.21,MEDIUM
+US,termite treatment,40500,25.03,HIGH
+US,termite inspection,60500,29.09,LOW
+US,flea exterminator,12100,27.22,HIGH
+US,cockroach exterminator,165000,15.9,LOW
+US,wasp nest removal,40500,26.51,LOW
+US,wildlife removal,6600,18.98,LOW
+US,raccoon removal,4400,17.78,LOW
+US,ac repair,368000,46.46,LOW
+US,ac repair near me,201000,46.82,MEDIUM
+US,air conditioner repair,368000,46.46,LOW
+US,hvac repair,74000,34.77,LOW
+US,hvac near me,165000,28.69,HIGH
+US,furnace repair,201000,28.38,LOW
+US,heat pump repair,40500,26.28,LOW
+US,ac installation,49500,25.43,LOW
+US,ac replacement,14800,31.63,MEDIUM
+US,water heater repair,74000,48.95,LOW
+US,water heater replacement,49500,31.74,HIGH
+US,tankless water heater installation,40500,20.73,LOW
+US,plumber near me,823000,39.45,MEDIUM
+US,emergency plumber,74000,76.38,LOW
+US,drain cleaning,110000,13.92,HIGH
+US,clogged drain,9900,42.7,HIGH
+US,sewer line repair,18100,28.6,LOW
+US,garbage disposal repair,60500,37.97,LOW
+US,garbage disposal installation,18100,19.28,MEDIUM
+US,toilet repair,12100,24.42,MEDIUM
+US,water leak detection,22200,14.53,HIGH
+US,mold removal,135000,30.14,HIGH
+US,mold remediation,165000,39.69,MEDIUM
+US,mold inspection,27100,22.92,MEDIUM
+US,black mold removal,12100,17.63,HIGH
+US,water damage restoration,135000,48.57,LOW
+US,basement waterproofing,40500,37.64,HIGH
+US,crawl space encapsulation,40500,31.5,MEDIUM
+US,dehumidifier installation,880,19.47,MEDIUM
+US,appliance repair,110000,10.55,MEDIUM
+US,refrigerator repair,110000,12.45,LOW
+US,washer repair,18100,12.24,MEDIUM
+US,dryer repair,90500,11.33,LOW
+US,dishwasher repair,74000,10.3,LOW
+US,garage door repair,246000,51.21,MEDIUM
+US,roof leak repair,33100,34.77,MEDIUM
+US,roof repair,74000,40.95,LOW
+US,foundation repair,49500,58.93,MEDIUM
+US,electrician near me,368000,23.25,HIGH
+US,generator installation,8100,16.13,LOW
+US,septic tank pumping,110000,21.22,MEDIUM
+US,gutter cleaning,49500,16.91,HIGH
+US,chimney repair,18100,16.64,MEDIUM
+US,window replacement,60500,54.56,MEDIUM
+US,credit repair,0,0,
+US,credit repair company,0,0,
+US,debt relief,22200,71.6,HIGH
+US,debt consolidation,135000,70.86,LOW
+US,tax relief,8100,113.11,HIGH
+US,tax resolution,2400,63.4,MEDIUM
+US,irs tax help,1300,72.98,MEDIUM
+US,bankruptcy lawyer,0,0,
+US,snoring treatment,0,0,
+US,sleep apnea treatment,0,0,
+US,sleep apnea dentist,0,0,
+US,addiction treatment,0,0,
+US,alcohol rehab,0,0,
+US,drug rehab,0,0,
+US,rehab near me,0,0,
+US,hair transplant,60500,17.44,MEDIUM
+US,hair loss treatment,301000,15.6,LOW
+US,acne scar treatment,0,0,
+US,laser hair removal,201000,22.58,HIGH
+US,coolsculpting,33100,8.33,HIGH
+US,botox near me,0,0,
+US,dental implants,165000,26.49,LOW
+US,invisalign,368000,9.42,MEDIUM
+US,cosmetic dentist,90500,15.63,LOW
+US,emergency dentist,0,0,
+US,mobile phone repair,8100,3.04,LOW
+US,laptop repair,0,0,
+US,computer repair near me,301000,3.91,LOW
+US,data recovery,90500,16.46,LOW
+US,internet providers near me,90500,29.92,HIGH
+US,best internet provider,9900,17.71,MEDIUM
+US,cancel subscription app,1900,11.67,HIGH
+US,subscription tracker,1600,15.41,MEDIUM
+US,call blocker app,33100,2.99,MEDIUM
+US,spam call blocker,9900,5.83,MEDIUM
+US,identity theft protection,40500,39.3,MEDIUM
+US,home warranty,40500,65.26,HIGH
+US,transmission repair,165000,7.54,LOW
+US,auto ac repair,246000,6.58,LOW
+US,car ac repair,246000,6.58,LOW
+US,junk removal,135000,17.21,MEDIUM
+US,mattress disposal,6600,7.32,MEDIUM
+US,junk removal near me,110000,15.66,MEDIUM
+US,lice treatment,135000,2.63,HIGH
+US,lice removal near me,6600,7.06,MEDIUM
+US,porn addiction therapy,0,0,
+UK,pest control,22200,4.82,HIGH
+UK,pest control near me,14800,5.18,HIGH
+UK,bed bug treatment,8100,5.47,HIGH
+UK,bed bug exterminator,2400,8,HIGH
+UK,rat exterminator,880,5.27,HIGH
+UK,mice pest control,1300,4.69,HIGH
+UK,wasp nest removal,6600,4.55,HIGH
+UK,boiler repair,5400,9.99,MEDIUM
+UK,boiler repair near me,6600,8.71,HIGH
+UK,boiler replacement,5400,20.73,HIGH
+UK,boiler service,14800,8.68,HIGH
+UK,new boiler,9900,16.62,HIGH
+UK,emergency plumber,12100,21.52,MEDIUM
+UK,plumber near me,90500,8.09,HIGH
+UK,blocked drain,5400,13.07,HIGH
+UK,drain unblocking,27100,6.03,HIGH
+UK,mould removal,2400,4.07,HIGH
+UK,damp proofing,0,0,
+UK,damp and mould,0,0,
+UK,condensation treatment,90,9.37,LOW
+UK,air conditioning installation,14800,3.17,HIGH
+UK,heat pump installation,2900,13.04,MEDIUM
+UK,appliance repair,3600,3.43,LOW
+UK,washing machine repair,14800,3.84,MEDIUM
+UK,garage door repair,6600,8,MEDIUM
+UK,roof repair,6600,7.46,MEDIUM
+UK,electrician near me,74000,7.01,HIGH
+UK,debt help,6600,58,HIGH
+UK,iva,27100,39.34,HIGH
+UK,debt management plan,9900,52.73,HIGH
+UK,credit repair,0,0,
+UK,snoring treatment,0,0,
+UK,alcohol rehab,0,0,
+UK,rehab clinic,0,0,
+UK,hair transplant uk,6600,13.31,HIGH
+UK,hair transplant turkey,8100,17.13,MEDIUM
+UK,dental implants,22200,8.68,MEDIUM
+UK,invisalign,90500,14.54,HIGH
+UK,emergency dentist,0,0,
+UK,phone repair,0,0,
+UK,laptop repair,0,0,
+UK,broadband deals,165000,8.32,HIGH
+UK,home insurance,74000,15.35,HIGH
+UK,junk removal,1300,4.81,MEDIUM
+UK,rubbish removal,9900,4.21,MEDIUM
+UK,house clearance,5400,5.06,MEDIUM
+UK,mattress disposal,1900,2.6,MEDIUM
+UK,lice treatment,2400,0.23,HIGH
