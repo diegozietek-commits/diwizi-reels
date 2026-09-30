@@ -20,7 +20,7 @@ PAGES = [
 <div class="card"><h3>One person, start to finish</h3><p>The person who reads your account in the audit is the person who changes it every week and writes the report. Nothing is handed to a junior after the first call.</p></div>
 <div class="card"><h3>Accounts in your name</h3><p>Google Ads, GA4, Tag Manager and Meta are built in your accounts, with admin access staying with you. If we stop, you keep everything, including the history.</p></div>
 <div class="card"><h3>Tracking and landing pages included</h3><p>In lead generation the waste is usually in what gets counted and in the page after the click, not in the bids. Both are part of the work rather than a separate quote.</p></div>
-<div class="card"><h3>A flat fee, no fixed term</h3><p>Never a percentage of your media, so advising you to spend less costs me nothing. A notice period instead of a twelve-month contract.</p></div>
+<div class="card"><h3>A flat fee, no fixed term</h3><p>Never a percentage of your media, so advising you to spend less costs me nothing. Thirty days' notice instead of a twelve-month contract.</p></div>
 </div>
 </div></section>
 
@@ -75,7 +75,7 @@ PAGES = [
 ('How much does a PPC freelancer cost in the UK?', 'Senior UK freelancers commonly quote a few hundred pounds a day or a flat monthly retainer; marketplace rates vary far more. I quote a flat monthly fee set by scope, in pounds ex VAT, with no minimum term. The <a href="/pricing/">pricing page</a> explains the models.'),
 ('Is there a minimum ad spend?', 'Not a hard one. Below about £2,000 a month a retainer rarely pays for itself, and an audit or a one-off setup you then run yourself is usually better value.'),
 ('Can you work alongside my in-house team or current agency?', 'Yes. Some clients want the whole account run; others want an audit, a second opinion or regular reviews while their own team does the day-to-day work.'),
-('Which platforms do you cover?', 'Google Ads (Search, Performance Max for lead generation, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and the landing pages. E-commerce Shopping feeds are not offered.'),
+('Which platforms do you cover?', 'Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and the landing pages.'),
 ('Are you hiring PPC freelancers?', 'No. This page is for businesses looking to hire one. Every account is run by me personally, and work is not passed on to subcontractors.'),
 ],
 "related": ['ppc-management', 'ppc-audit', 'agency-vs-consultant', 'pricing'],
@@ -86,10 +86,10 @@ PAGES = [
 {
 "slug": "ppc-management", "short": "PPC management", "blurb": "Google, Microsoft, Meta and LinkedIn under one measurement layer, with pages and tracking in scope.",
 "title": "PPC Management Services UK | Independent Consultant, Flat Fee",
-"meta": 'PPC management for UK lead generation firms: Google, Microsoft, Meta and LinkedIn Ads run weekly by one consultant, landing pages and tracking included.',
+"meta": 'PPC management for UK and Irish firms: Google, Microsoft, Meta and LinkedIn Ads run weekly by one consultant, landing pages and tracking included.',
 "kicker": "PPC management",
 "h1": "PPC management by the consultant you spoke to, with the landing pages and tracking included",
-"lead": "Ongoing management of Google Ads, Microsoft Advertising, Meta Ads and LinkedIn Ads for UK and Irish companies that sell through enquiries, demos and booked calls. One person does the weekly work, builds the pages the ads land on and keeps the measurement honest. Flat monthly fee, never a percentage of spend.",
+"lead": "Ongoing management of Google Ads, Microsoft Advertising, Meta Ads and LinkedIn Ads for UK and Irish companies that sell through enquiries, demos, booked calls or a basket. One person does the weekly work, builds the pages the ads land on and keeps the measurement honest. Flat monthly fee, never a percentage of spend.",
 "service_name": "PPC management",
 "body": """
 <section><div class="wrap">
@@ -107,10 +107,10 @@ PAGES = [
 <ul>
 <li><strong>Google Ads.</strong> Search is the core: exact and phrase match with a disciplined negatives programme, Smart Bidding only once the conversion data deserves it. Performance Max for lead generation with brand excluded and lead quality fed back. YouTube and Demand Gen when there is a reason, not by default.</li>
 <li><strong>Microsoft Advertising.</strong> Imported from Google, then managed natively: its own negatives, bids and schedules. In the accounts I have run, noticeably cheaper per click in the UK for the same queries, with an older, more B2B audience. A small add-on to a Google retainer.</li>
-<li><strong>Meta Ads.</strong> For lead generation businesses where the offer can be understood in a feed. Pixel plus Conversions API, deduplicated, lead quality from the CRM, scheduled creative tests with one control. Creative volume comes from your designer or a studio.</li>
+<li><strong>Meta Ads.</strong> For businesses where the offer can be understood in a feed. Pixel plus Conversions API, deduplicated, lead quality from the CRM, scheduled creative tests with one control. Creative volume comes from your designer or a studio.</li>
 <li><strong>LinkedIn Ads.</strong> For B2B with a deal size that supports the click price: named account lists, job titles, CRM stages fed back so LinkedIn optimises towards opportunities. <a href="/b2b-ppc/">More on B2B →</a></li>
 </ul>
-<p>Not offered: Google Shopping, Merchant Centre and catalogue Performance Max. E-commerce is a discipline of its own and I will point you to someone who does only that.</p>
+<p>Online stores: Google Shopping, Merchant Centre feeds and Performance Max, measured on margin and new customers, with platform-reported revenue reconciled against the store's own orders. Very large catalogues with daily feed operations are agency work, and I will say so.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -125,12 +125,12 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>How the retainer is priced</h2>
-<p>A flat monthly fee, agreed after the audit and scaled by scope: number of platforms, campaigns and markets, and how much landing page work is included. Not a percentage of spend, so the advice to cut budget costs me nothing to give. Month to month with a notice period. Ad spend is paid by you, directly to each platform. Quoted in pounds, ex VAT. The <a href="/pricing/">pricing page</a> compares the models and gives UK market ranges.</p>
+<p>A flat monthly fee, agreed after the audit and scaled by scope: number of platforms, campaigns and markets, and how much landing page work is included. Not a percentage of spend, so the advice to cut budget costs me nothing to give. Month to month, with 30 days' notice either way. Ad spend is paid by you, directly to each platform. Quoted in pounds, ex VAT. The <a href="/pricing/">pricing page</a> compares the models and gives UK market ranges.</p>
 </div></section>
 
 <section><div class="wrap">
 <h2>Who this is for</h2>
-<p>UK and Irish companies spending roughly £2,000 to £60,000 a month, selling through enquiries rather than a shopping basket: B2B and SaaS, professional and financial services, healthcare, home and trade services. Owners and marketing managers who want one accountable person rather than an account team. If you spend more than that across many markets, or you need a creative production line, an agency is the better structure and the <a href="/agency-vs-consultant/">comparison page</a> says so plainly.</p>
+<p>UK and Irish companies spending roughly £2,000 to £60,000 a month, B2B and SaaS, professional and financial services, healthcare, home and trade services, and online retail. Owners and marketing managers who want one accountable person rather than an account team. If you spend more than that across many markets, or you need a creative production line, an agency is the better structure and the <a href="/agency-vs-consultant/">comparison page</a> says so plainly.</p>
 </div></section>
 """,
 "faq": [
@@ -149,10 +149,10 @@ PAGES = [
 {
 "slug": "google-ads-management", "short": "Google Ads management", "blurb": "Search, Performance Max and YouTube for lead generation, run by a senior specialist.",
 "title": "Google Ads Management UK | Senior Specialist, One Person on the Account",
-"meta": 'Google Ads management for UK lead generation businesses by a 14-year specialist: Search, Performance Max, tracking and landing pages, flat monthly fee.',
+"meta": 'Google Ads management for UK and Irish businesses by a 14-year specialist: Search, Performance Max, tracking and landing pages, flat monthly fee.',
 "kicker": "Google Ads management",
 "h1": "Google Ads management by a senior specialist, not a team you never meet",
-"lead": "Search, Performance Max for lead generation, YouTube and Demand Gen, run weekly by the same person who audits the account, fixes the tracking and builds the landing pages. For UK and Irish companies that sell through enquiries. Flat monthly fee, month to month.",
+"lead": "Search, Shopping, Performance Max, YouTube and Demand Gen, run weekly by the same person who audits the account, fixes the tracking and builds the landing pages. For UK and Irish companies, whether they sell through enquiries or a basket. Flat monthly fee, month to month.",
 "service_name": "Google Ads management",
 "body": """
 <section><div class="wrap">
@@ -183,13 +183,13 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>How it is priced</h2>
-<p>A flat monthly fee, agreed after a fixed-price <a href="/ppc-audit/">audit</a> that is credited against the first month. Scaled by scope, not by spend. Month to month with a notice period. Ad spend is paid by you to Google directly. Quoted in pounds, ex VAT. See <a href="/pricing/">pricing</a>.</p>
+<p>A flat monthly fee, agreed after a fixed-price <a href="/ppc-audit/">audit</a> that is credited against the first month. Scaled by scope, not by spend. Month to month, with 30 days' notice either way. Ad spend is paid by you to Google directly. Quoted in pounds, ex VAT. See <a href="/pricing/">pricing</a>.</p>
 </div></section>
 """,
 "faq": [
 ("Do you work with Google Ads accounts only, or all platforms?", "Both. Many UK clients start with Google Ads alone and add Microsoft Advertising a month later because it is cheap to run alongside. Meta and LinkedIn are added when the business case is there. The <a href=\"/ppc-management/\">PPC management page</a> covers the multi-platform version."),
 ("Can you take over an account an agency built?", "Yes, and it is the most common starting point. Nothing is changed until the tracking is trustworthy; then wasted spend, then structure, then testing. The audit lists the order and the reasons."),
-("Do you do Google Shopping?", "No. Shopping, Merchant Centre and catalogue Performance Max are e-commerce work, which is a discipline of its own. I will point you to someone who does it all day."),
+("Do you do Google Shopping?", "Yes. Shopping, Merchant Centre feeds and Performance Max for online stores, measured on margin and new customers rather than on the platform's own ROAS. Very large catalogues with daily feed operations are agency work, and I will say so."),
 ("What does Google Ads management cost in the UK?", "A flat monthly fee set by scope, quoted after the audit and credited with it. Your quote comes back in pounds, ex VAT, once the form tells me the spend band and platforms; the <a href=\"/pricing/\">pricing page</a> explains the model and UK ranges."),
 ("Will you tell me if Google Ads is the wrong channel for us?", "Yes, and it happens. Some B2B categories have too little search volume in the UK to sustain a campaign, and the honest answer is LinkedIn, or content, or a sales motion. The audit says so if that is the case."),
 ],
@@ -231,11 +231,11 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Why the audit is paid</h2>
-<p>Free audits are sales documents: they find whatever supports the retainer being sold. A paid audit can say "your agency is doing a good job, here are the three remaining gains" and often does. The price is fixed and quoted from the form, based on account size and how many platforms are in scope. It is the same price whether or not you go on to work with me, and it is credited against the first month if you do.</p>
+<p>Free audits are sales documents: they find whatever supports the retainer being sold. A paid audit can say "your agency is doing a good job, here are the three remaining gains" and often does. The price is fixed for your account and set from three things: monthly spend, the number of campaigns, and how many platforms are in scope. Send the form and you get the figure by email within one working day, without a call, and it is credited in full against the first month if management follows. It is the same price whether or not you go on to work with me.</p>
 </div></section>
 """,
 "faq": [
-("How much does a PPC audit cost?", "A fixed price quoted from the form, based on monthly spend, number of campaigns and platforms in scope, in pounds ex VAT. It is credited against the first month of management if you hire me afterwards. See <a href=\"/pricing/\">pricing</a> for the models."),
+("How much does a PPC audit cost?", "The price is fixed for your account and set from three things: monthly spend, the number of campaigns, and how many platforms are in scope, in pounds ex VAT. Send the form and you get the figure by email within one working day, without a call, and it is credited in full against the first month if management follows. See <a href=\"/pricing/\">pricing</a> for the models."),
 ("What access do you need?", "Read-only access to Google Ads, GA4 and Tag Manager, and to any other platform in scope. Nothing is changed during the audit."),
 ("Do I have to hire you afterwards?", "No. Many audits are implemented by the client's own team or their existing agency. The report is written so that it can be."),
 ("Will you tell me if my agency is doing a good job?", "Yes, in writing. I have no retainer to win by criticising them, and a fair audit that confirms the agency is competent is still useful: it tells you where the remaining gains are."),

@@ -448,12 +448,11 @@ def llms_txt():
     return "\n".join(lines)
 
 
-LLMS_SUMMARY = ("Diego Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish lead generation businesses. "
+LLMS_SUMMARY = ("Diego Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. "
                 "Runs Google, Microsoft, Meta and LinkedIn Ads personally, with landing pages and conversion tracking included, "
                 "for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.")
 LLMS_FACTS = ["- Market: UK and Irish businesses; the US and Canadian practice is at googleadsfreelancer.com.",
               "- Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).",
-              "- Not offered: e-commerce PPC (Shopping feeds, catalogue Performance Max).",
               "- Pricing: quoted in pounds, ex VAT, from the form; prices are not published. Never a percentage of ad spend."]
 LLMS_PAGES = ["index", "ppc-management", "ppc-audit", "ppc-freelancer", "ppc-consultant-london", "b2b-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "contact"]
 LLMS_SISTER = "US and Canadian practice, Google Ads freelancer"

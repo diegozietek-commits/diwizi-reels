@@ -8,7 +8,7 @@ PAGES = [
 "meta": 'Google Ads management run by a senior specialist, with Meta, Microsoft and LinkedIn when they fit. Flat monthly fee, and your accounts stay yours.',
 "kicker": "Google Ads freelancer",
 "h1": "Google Ads, run by the senior specialist you hired. Meta, Microsoft and LinkedIn when they fit.",
-"lead": "I am Diego Zietek, an independent paid media consultant with 14+ years on the account. Campaign management, conversion tracking and landing page work, with one point of contact and a flat monthly fee. Clients in the United States, Canada, the United Kingdom and Ireland.",
+"lead": "I am Diego Zietek, an independent paid media consultant with 14+ years on the account. Campaign management, conversion tracking and landing page work, with one point of contact and a flat monthly fee. Built for businesses in the US, Canada and Europe. Companies from any country that work in English are welcome.",
 "service_name": "Freelance Google Ads management",
 "body": """
 <section><div class="wrap">
@@ -58,7 +58,7 @@ PAGES = [
 <li><div><strong>A short form.</strong> Spend band, site and what has been tried. I reply myself with whether it is a fit, what I would look at first and a price range; a short call follows if it makes sense.</div></li>
 <li><div><strong>A fixed-price audit.</strong> Written findings ranked by impact: tracking first, then structure, then bidding and search terms. Yours to implement, with or without me.</div></li>
 <li><div><strong>Build or rebuild.</strong> Tracking fixed before anything else, because every bidding decision inherits whatever the conversion data says.</div></li>
-<li><div><strong>Month-to-month management.</strong> Weekly work in the account, a written monthly report, a call whenever you want one. Notice period instead of a contract term.</div></li>
+<li><div><strong>Month-to-month management.</strong> Weekly work in the account, a written monthly report, a call whenever you want one. Thirty days' notice instead of a contract term.</div></li>
 </ol>
 </div></section>
 
@@ -78,7 +78,7 @@ PAGES = [
 ("How much does a Google Ads freelancer cost?", "Management is a flat monthly fee set by scope, not tied to ad spend. An audit is a fixed price quoted from the form and credited against the first month if you continue. No twelve-month contract. The <a href=\"/pricing/\">pricing page</a> explains how each model behaves and what to ask before you sign with anyone."),
 ("What is the minimum ad spend you work with?", "No hard minimum, but the retainer only makes sense once the account spends enough for the fee to be a small share of the total; in practice from about $3,000 a month. Below that, a one-off setup or audit is the better buy."),
 ("Who owns the Google Ads account, the tags and the landing pages?", "You do, always. I work inside your accounts with manager access. Nothing is built in a container I control, so leaving me never means starting over."),
-("Do you work with clients outside the United States?", "Yes. Most clients are in the US, Canada, the United Kingdom and Ireland. I work remotely from Curitiba, Brazil, one to four hours ahead of US time zones, so calls fit a US morning or early afternoon."),
+("Do you work with clients outside the United States?", "Yes. The site is written for the US, Canada and Europe, and I work with companies from any country that operate in English, quoted in US dollars, pounds or euros. UK and Irish businesses who prefer pricing in pounds have ppcconsultancy.uk. I work remotely from Curitiba, Brazil: one to four hours ahead of US time zones and three to five hours behind Europe, so calls fit a US morning or a European afternoon."),
 ("Can you take over an account an agency built?", "Yes, and it is one of the most common starting points. The audit usually finds duplicated conversion actions, broad match on Smart Bidding without negatives, and campaigns organised by whoever built them rather than by what you sell."),
 ("Do you also run Meta, Microsoft or LinkedIn Ads?", "Yes. Google Ads is the core of the work, and <a href=\"/meta-ads-management/\">Meta Ads</a>, <a href=\"/microsoft-ads-management/\">Microsoft Advertising</a> and <a href=\"/linkedin-ads-management/\">LinkedIn Ads</a> are added when there is a measured reason, run by the same person."),
 ],
@@ -142,7 +142,7 @@ PAGES = [
 ('What does a PPC consultant charge?', 'Either a fixed price for a defined piece of work, such as an audit or a rebuild, or a flat monthly retainer for ongoing management. I do not charge a percentage of ad spend. Fees are quoted once I know the account size and platforms, usually from the form alone; the <a href="/pricing/">pricing page</a> explains the models.'),
 ('Is a PPC consultant right for a small business?', 'If the business spends enough for the fee to be a sensible share of the total, yes. Below roughly $3,000 a month, an audit plus a one-off setup that you then run yourself is usually better value than a retainer. The <a href="/small-business-ppc-management/">small business page</a> goes into it.'),
 ('Can one consultant really cover Google, Microsoft and Meta?', 'For a single company, yes, and it is better that way: one measurement layer and one person deciding where the next dollar goes. What one person cannot do is produce creative at agency volume, so for Meta-heavy brands I work alongside your designer or a creative studio rather than replacing them.'),
-('Do you sign a contract?', 'A short agreement covering scope, fee, confidentiality and that everything built belongs to you. It is month to month, with notice rather than a fixed term.'),
+('Do you sign a contract?', 'A short agreement covering scope, fee, confidentiality and that everything built belongs to you. It is month to month, with 30 days\' notice rather than a fixed term.'),
 ('How quickly can you start?', 'An audit usually starts within a week of the go-ahead. Ongoing management depends on capacity, because I deliberately keep the client list short; if I cannot take the account on properly, I will say so on the call.'),
 ('Do you work with agencies?', 'Yes, as a senior operator brought in on specific accounts, usually white label. That is described on the <a href="/white-label-ppc/">white label PPC page</a>.'),
 ],
@@ -246,11 +246,11 @@ PAGES = [
 <section><div class="wrap">
 <h2>Why the audit is paid</h2>
 <p>A free audit has to be paid for somehow, and it is paid for by the retainer it is designed to sell. That shapes what it finds. A paid audit can say "the account is in decent shape, fix these three things and keep your current setup", and I have written exactly that more than once. Many clients take the audit, implement it themselves or with their existing team, and never hire me for management. That is a good outcome, not a failed sale.</p>
-<p>The price is fixed and quoted from the form, based on account size and how many platforms are in scope. It is the same price whether or not you go on to work with me, and it is credited against the first month if you do.</p>
+<p>The price is fixed for your account and set from three things: monthly spend, the number of campaigns, and how many platforms are in scope. Send the form and you get the figure by email within one working day, without a call, and it is credited in full against the first month if management follows. It is the same price whether or not you go on to work with me.</p>
 </div></section>
 """,
 "faq": [
-("How much does a Google Ads audit cost?", "A fixed price quoted from the form, based on monthly spend, number of campaigns and platforms in scope. It is credited against the first month of management if you hire me afterwards. See <a href=\"/pricing/\">pricing</a> for the models."),
+("How much does a Google Ads audit cost?", "The price is fixed for your account and set from three things: monthly spend, the number of campaigns, and how many platforms are in scope. Send the form and you get the figure by email within one working day, without a call, and it is credited in full against the first month if management follows. See <a href=\"/pricing/\">pricing</a> for the models."),
 ("How long does a PPC audit take?", "Five to seven working days from receiving access, for a typical single-platform account. Larger or multi-platform accounts take longer and the quote says so up front."),
 ("What access do you need?", "Read-only access to Google Ads, GA4 and Google Tag Manager, and ideally a CRM export or a conversation with whoever handles the leads. I do not change anything during an audit."),
 ("Do I have to hire you afterwards?", "No. The report is yours to implement however you like. A meaningful share of audit clients implement it in-house and that is fine."),
@@ -298,9 +298,10 @@ PAGES = [
 <section><div class="wrap">
 <h2>How I price</h2>
 <p>Every engagement is quoted from the form, in US dollars, pounds or euros, because the scope decides the number: monthly spend, number of platforms and markets, and whether tracking has to be rebuilt. What you can rely on before the call is the model.</p>
+<p>The fee is set for your account, not from a rate card: platforms, markets, campaigns and how much landing page and tracking work is included. A range comes by email from the form; a firm figure needs a look at the accounts.</p>
 <table>
 <tr><th>Engagement</th><th>Model</th><th>What is included</th></tr>
-<tr><td><a href="/google-ads-audit/">Google Ads audit</a></td><td>Fixed price, quoted up front</td><td>Written report, fixes ranked by impact, walkthrough call. Credited against the first month of management.</td></tr>
+<tr><td><a href="/google-ads-audit/">Google Ads audit</a></td><td>Fixed price for your account, set from monthly spend, number of campaigns and platforms in scope</td><td>Written report, fixes ranked by impact, walkthrough call. The figure comes by email from the form within one working day and is credited in full against the first month if management follows.</td></tr>
 <tr><td><a href="/google-ads-management/">Management, up to ~$10K/month spend</a></td><td>Flat monthly fee</td><td>Weekly work, tracking maintained, landing page fixes, written monthly report. Month to month.</td></tr>
 <tr><td>Management, $10K to $50K/month spend</td><td>Flat monthly fee, scaled by scope</td><td>Same scope with more campaigns, markets or platforms.</td></tr>
 <tr><td>Management, over $50K/month spend</td><td>Flat monthly fee, quoted per account</td><td>Multiple platforms and markets, weekly call, a fractional head of paid media rather than an operator.</td></tr>
@@ -320,7 +321,8 @@ PAGES = [
 "faq": [
 ("Why not charge a percentage of ad spend like most agencies?", "Because it pays the consultant to grow spend rather than results. A flat fee removes that conflict. When the right advice is to cut budget, I can give it without cutting my own income."),
 ("Is there a setup fee?", "Starting management has no onboarding fee. Existing accounts start with an audit and new accounts with a setup; either one is a fixed price and is credited against the first month of management."),
-("Is there a minimum contract length?", "No. Management is month to month with a notice period. Accounts need a few months to show what a change did, and most clients stay well beyond that, but the choice is theirs each month."),
+("Is there a minimum contract length?", "No. Management is month to month, with 30 days' notice either way. Accounts need a few months to show what a change did, and most clients stay well beyond that, but the choice is theirs each month."),
+("Can either side end it?", "Either side can end management with 30 days' written notice. Everything stays in your accounts, so nothing has to be migrated when it ends."),
 ("Do you charge more for multiple platforms?", "Scope, not platform count, sets the fee. Adding Microsoft Advertising to a Google Ads account is a small increase; adding Meta with weekly creative testing is a larger one. It is agreed up front and revisited when scope changes."),
 ("Can I get a quote without a call?", "Yes. The form asks for monthly spend, platforms and what you are trying to fix, and a range comes back by email. A firm price needs a look at the account, which is a short call or read-only access."),
 ("What if I only want a one-off fix, not management?", "That is the audit, or a fixed-price project such as a <a href=\"/google-ads-setup/\">setup</a> or a <a href=\"/conversion-tracking-setup/\">tracking rebuild</a>. Many engagements are exactly that and never become retainers."),
@@ -407,7 +409,7 @@ PAGES = [
 <tr><th>Platforms</th><td>Google Ads (Search, Shopping, Performance Max, Demand Gen, YouTube), Meta Ads (Facebook and Instagram), LinkedIn Ads, Microsoft Advertising, programmatic.</td></tr>
 <tr><th>Measurement</th><td>GA4, Google Tag Manager, consent mode, offline conversion import, HubSpot and Salesforce integration, Looker Studio reporting.</td></tr>
 <tr><th>Industries</th><td>Healthcare and pharma, B2B SaaS and HR tech, local services (HVAC, plumbing, home services), e-commerce, professional services.</td></tr>
-<tr><th>Markets</th><td>United States, Canada, United Kingdom, Ireland and Portugal remotely in English; Brazil in Portuguese.</td></tr>
+<tr><th>Markets</th><td>United States, Canada and Europe in English, with the UK and Ireland also served in pounds through ppcconsultancy.uk; companies from any other country that work in English are welcome; Brazil in Portuguese through diwizi.com.br.</td></tr>
 <tr><th>Based in</th><td>Curitiba, Brazil (GMT-3), working US and European hours as needed.</td></tr>
 <tr><th>Contact</th><td>The <a href="/contact/#form">form</a> or {{email}}. Messages go to me; there is no shared inbox.</td></tr>
 </table>
@@ -466,7 +468,7 @@ PAGES = [
 """,
 "faq": [
 ("Will I get a sales follow-up sequence?", "No. You get one reply from me. If you do not answer, I assume the timing was wrong and leave it there."),
-("Do you take calls outside US and UK hours?", "Yes, within reason. Say in the form which hours suit you and I will offer times inside them."),
+("Do you take calls outside US and European hours?", "Yes, within reason. Say in the form which hours suit you and I will offer times inside them."),
 ("Can I send you the account with the enquiry?", "You can, with read-only access, and it makes the reply more specific. It is not required."),
 ],
 "related": ["google-ads-audit", "google-ads-management", "pricing", "about"],
