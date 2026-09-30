@@ -15,7 +15,7 @@ PAGES = [
 <h2>A client result, with the platform and the period attached</h2>
 <div class="cols">
 <div class="card"><h3>HVAC and plumbing company, Houston</h3><p><strong>Google Ads Search, May 2025 to February 2026, about $20,000 a month.</strong> Cost per acquisition down 44% and qualified leads up 60%, in an auction where the core keywords cost $45 to $80 a click.</p><p>Done by restructuring campaigns by job type, rebuilding tracking so a booked job and a phone call were not the same thing, a weekly negatives programme and steady ad and landing page tests.</p><p>Also on the results page: a Brazilian startup with 600% sales growth in eight months and a 5,000-student enrolment target hit three months early. <a href="/results/">Read the cases and their limits →</a></p></div>
-<div class="card"><h3>What you get every month</h3><ul><li>Weekly work inside the account: search terms, bids, budgets, ads, exclusions</li><li>Conversion tracking maintained: GA4, Tag Manager, offline import</li><li>Landing page fixes I can make, specs for the ones I cannot</li><li>A written report on cost per customer and what changed</li><li>Direct access to me, no account manager in between</li></ul></div>
+<div class="card"><h3>What you get every month</h3><ul><li>Weekly work inside the account: search terms, bids, budgets, ads, exclusions</li><li>Conversion tracking maintained: GA4, Tag Manager, offline import</li><li>Landing pages written and built by me on your site or page builder; work that needs your developer is specified for them</li><li>A written report on cost per customer and what changed</li><li>Direct access to me, no account manager in between</li></ul></div>
 </div>
 </div></section>
 
@@ -25,7 +25,7 @@ PAGES = [
 <h2>Services you can hire</h2>
 <div class="cols">
 <div class="card"><h3><a href="/google-ads-management/">Google Ads management</a></h3><p>Month-to-month management of Search, Shopping, Performance Max and YouTube. Tracking and landing pages in scope.</p><p class="price"><b>Flat monthly fee</b> · set by scope, not by ad spend · no contract term</p></div>
-<div class="card"><h3><a href="/google-ads-audit/">Google Ads audit</a></h3><p>A paid, independent review with fixes ranked by impact. Written report you keep, credited against the first month if you continue.</p><p class="price"><b>Fixed price</b> · quoted on the first call · credited against month one</p></div>
+<div class="card"><h3><a href="/google-ads-audit/">Google Ads audit</a></h3><p>A paid, independent review with fixes ranked by impact. Written report you keep, credited against the first month if you continue.</p><p class="price"><b>Fixed price</b> · quoted by email from the form · credited against month one</p></div>
 <div class="card"><h3><a href="/google-ads-setup/">Setup and conversion tracking</a></h3><p>A new account or a rebuild, with tracking that works from day one. Run it yourself afterwards or hand it back to me.</p><p class="price"><b>Fixed price</b> · scoped by platforms and tracking complexity</p></div>
 <div class="card"><h3><a href="/google-ads-consultant/">Consulting and advisory</a></h3><p>Strategy, a second opinion on an agency, or standing sessions with your in-house team. No need to move the account.</p><p class="price"><b>Hourly</b> for standing advisory · <b>fixed price</b> per deliverable</p></div>
 </div>
@@ -78,7 +78,7 @@ PAGES = [
 ("How much does a Google Ads freelancer cost?", "Management is a flat monthly fee set by scope, not tied to ad spend. An audit is a fixed price quoted from the form and credited against the first month if you continue. No twelve-month contract. The <a href=\"/pricing/\">pricing page</a> explains how each model behaves and what to ask before you sign with anyone."),
 ("What is the minimum ad spend you work with?", "No hard minimum, but the retainer only makes sense once the account spends enough for the fee to be a small share of the total; in practice from about $3,000 a month. Below that, a one-off setup or audit is the better buy."),
 ("Who owns the Google Ads account, the tags and the landing pages?", "You do, always. I work inside your accounts with manager access. Nothing is built in a container I control, so leaving me never means starting over."),
-("Do you work with clients outside the United States?", "Yes. Most clients are in the US, Canada, the United Kingdom and Ireland. I work remotely from Curitiba, Brazil, which overlaps most of the working day in both regions."),
+("Do you work with clients outside the United States?", "Yes. Most clients are in the US, Canada, the United Kingdom and Ireland. I work remotely from Curitiba, Brazil, one to four hours ahead of US time zones, so calls fit a US morning or early afternoon."),
 ("Can you take over an account an agency built?", "Yes, and it is one of the most common starting points. The audit usually finds duplicated conversion actions, broad match on Smart Bidding without negatives, and campaigns organised by whoever built them rather than by what you sell."),
 ("Do you also run Meta, Microsoft or LinkedIn Ads?", "Yes. Google Ads is the core of the work, and <a href=\"/meta-ads-management/\">Meta Ads</a>, <a href=\"/microsoft-ads-management/\">Microsoft Advertising</a> and <a href=\"/linkedin-ads-management/\">LinkedIn Ads</a> are added when there is a measured reason, run by the same person."),
 ],
@@ -92,7 +92,7 @@ PAGES = [
 "title": 'PPC Consultant | Independent Freelance PPC Consultant, US & Canada',
 "meta": 'Independent PPC consultant with 14+ years in Google Ads, Microsoft Advertising and Meta Ads. Hired directly, month to month, for a flat fee.',
 "kicker": 'PPC consultant',
-"h1": 'A PPC consultant who has run accounts for 14 years, hired directly instead of through an agency',
+"h1": 'A PPC consultant who has run accounts for 14+ years, hired directly instead of through an agency',
 "lead": 'I am Diego Zietek, an independent PPC consultant for companies in the United States and Canada. I audit, plan and run the accounts myself: Google Ads first, Microsoft Advertising and Meta Ads where they earn their place, with tracking done by the same person.',
 "service_name": 'PPC consulting and management',
 "body": """
@@ -133,7 +133,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What the work has produced</h2>
-<p>For a home services company in Houston, Texas, with roughly $20,000 a month in Google Ads spend, the engagement cut cost per acquisition by 44% and lifted qualified leads by 60% over nine months, in an auction where the main keywords cost $45 to $80 per click. The methods were not exotic: negatives, a restructure by job type, tracking that separated a booked job from a phone call, and a steady A/B program on ads and pages. For Pontomais, a software startup, sales grew 600% in eight months, mostly from Google Ads. The <a href="/results/">results page</a> lays out all four published engagements and what can and cannot be verified.</p>
+<p>For a home services company in Houston, Texas, with roughly $20,000 a month in Google Ads spend, the engagement cut cost per acquisition by 44% and lifted qualified leads by 60% from May 2025 to February 2026, in an auction where the main keywords cost $45 to $80 per click. The methods were not exotic: negatives, a restructure by job type, tracking that separated a booked job from a phone call, and a steady A/B program on ads and pages. For Pontomais, a software startup, sales grew 600% in eight months, mostly from Google Ads. The <a href="/results/">results page</a> lays out all four published engagements and what can and cannot be verified.</p>
 </div></section>
 """,
 "faq": [
@@ -234,7 +234,7 @@ PAGES = [
 <h2>What the audit covers</h2>
 <ol class="steps">
 <li><div><strong>Measurement first.</strong> Every conversion action, its source, its counting method and its attribution setting. GA4 and Tag Manager configuration. Consent mode. Whether the numbers in Google Ads can be reconciled with the CRM. If this layer is wrong, nothing below it can be trusted, so it is checked before anything else.</div></li>
-<li><div><strong>Search terms and negatives.</strong> Twelve months of search terms against what you sell, with an estimate of the spend that produced nothing. Negative lists proposed by campaign and shared.</div></li>
+<li><div><strong>Search terms and negatives.</strong> Twelve months of search terms, with the last 90 days read line by line, against the negatives that exist, with the waste quantified. An estimate of the spend that produced nothing. Negative lists proposed by campaign and shared.</div></li>
 <li><div><strong>Structure and settings.</strong> Campaign and ad group organisation against the business, location and language settings, network settings, ad schedules, device adjustments, and the change history that explains how the account got here.</div></li>
 <li><div><strong>Bidding and budgets.</strong> Strategy per campaign against its data volume, target settings, budget-limited campaigns that should not be and unlimited ones that should, portfolio strategies and their side effects.</div></li>
 <li><div><strong>Ads, assets and Performance Max.</strong> Ad strength as a symptom rather than a goal, asset coverage, brand exclusions, asset group logic, feed quality for Shopping.</div></li>
@@ -309,7 +309,7 @@ PAGES = [
 <tr><td><a href="/google-ads-consultant/">Consulting and advisory</a></td><td>Hourly, or fixed price per deliverable</td><td>Strategy, second opinions and standing sessions with in-house teams.</td></tr>
 <tr><td><a href="/white-label-ppc/">White label, per client account</a></td><td>Flat monthly fee per account</td><td>Volume pricing for several accounts. Your brand, your template.</td></tr>
 </table>
-<p>None of these is a percentage of ad spend, so the advice to cut budget costs me nothing to give. Adding Microsoft Advertising to a Google retainer is a small increase; adding Meta with weekly creative testing is a larger one, agreed up front. The <a href="/contact/#form">form</a> asks for exactly that and you get a range back the same day; a firm number needs a look at the account.</p>
+<p>None of these is a percentage of ad spend, so the advice to cut budget costs me nothing to give. Adding Microsoft Advertising to a Google retainer is a small increase; adding Meta with weekly creative testing is a larger one, agreed up front. The <a href="/contact/#form">form</a> asks for exactly that and you get a range back within one working day, often the same day; a firm number needs a look at the account.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -319,7 +319,7 @@ PAGES = [
 """,
 "faq": [
 ("Why not charge a percentage of ad spend like most agencies?", "Because it pays the consultant to grow spend rather than results. A flat fee removes that conflict. When the right advice is to cut budget, I can give it without cutting my own income."),
-("Is there a setup fee?", "No separate setup fee. New accounts start with the audit, which is a fixed price and is credited against the first month of management."),
+("Is there a setup fee?", "Starting management has no onboarding fee. Existing accounts start with an audit and new accounts with a setup; either one is a fixed price and is credited against the first month of management."),
 ("Is there a minimum contract length?", "No. Management is month to month with a notice period. Accounts need a few months to show what a change did, and most clients stay well beyond that, but the choice is theirs each month."),
 ("Do you charge more for multiple platforms?", "Scope, not platform count, sets the fee. Adding Microsoft Advertising to a Google Ads account is a small increase; adding Meta with weekly creative testing is a larger one. It is agreed up front and revisited when scope changes."),
 ("Can I get a quote without a call?", "Yes. The form asks for monthly spend, platforms and what you are trying to fix, and a range comes back by email. A firm price needs a look at the account, which is a short call or read-only access."),
@@ -351,7 +351,7 @@ PAGES = [
 <li>Service-area and audience review so bids matched where the trucks actually went.</li>
 </ul>
 <h3>The result</h3>
-<p>Cost per acquisition fell <strong>44%</strong> and qualified leads rose <strong>60%</strong> over the nine months, on roughly $20,000 of monthly spend.</p>
+<p>Cost per acquisition fell <strong>44%</strong> and qualified leads rose <strong>60%</strong> from May 2025 to February 2026, on roughly $20,000 of monthly spend.</p>
 <h3>What can be checked, and what cannot</h3>
 <p class="note">The figures come from the Google Ads account and the reporting delivered to the client during the engagement. They were not audited by a third party, the client has not published a testimonial, and the exact comparison window and conversion definition are not published here. What a reader can check: the engagement and its dates match the case page on <a href="https://diwizi.com/case-houston-hvac-plumbing.html" rel="noopener">diwizi.com</a>. The client's campaign structure, keyword lists, landing pages, lead volumes and revenue are confidential and stay so. A past-client reference is available for serious engagements, subject to the client agreeing.</p>
 </div></section>
@@ -446,7 +446,7 @@ PAGES = [
 "meta": 'Send your spend band, site and what is not working. Diego Zietek replies personally with a straight answer and a price range. No sales sequence.',
 "kicker": "Contact",
 "h1": "Tell me about the account. The reply comes from the person who would run it.",
-"lead": "Four fields are enough to tell whether I can help, what I would do first and roughly what it costs. If I am not the right fit, I will say so and, where I can, point you to someone who is.",
+"lead": "Spend band, platforms and what is not working are enough for a range; name, email and site so I can reply. If I am not the right fit, I will say so and, where I can, point you to someone who is.",
 "proof": [],
 "body": """
 <section><div class="wrap">

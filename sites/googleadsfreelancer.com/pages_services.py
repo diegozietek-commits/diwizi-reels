@@ -51,7 +51,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Proof</h2>
-<p>A Houston HVAC and plumbing account spending about $20,000 a month: cost per acquisition down 44%, qualified leads up 60%, over nine months in a $45 to $80 CPC auction. What was done and what can be verified is on the <a href="/results/">results page</a>.</p>
+<p>A Houston HVAC and plumbing account spending about $20,000 a month: cost per acquisition down 44%, qualified leads up 60%, from May 2025 to February 2026 in a $45 to $80 CPC auction. What was done and what can be verified is on the <a href="/results/">results page</a>.</p>
 </div></section>
 """,
 "faq": [
@@ -105,7 +105,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Who this is for, and who it is not for</h2>
-<p>It fits companies spending roughly $5,000 to $100,000 a month across two or more platforms who want a senior person accountable for the total rather than a vendor per channel. It fits agencies that need a senior operator on a client account without hiring; see <a href="/white-label-ppc/">white label PPC</a>.</p>
+<p>It fits companies spending roughly $5,000 to $80,000 a month across two or more platforms who want a senior person accountable for the total rather than a vendor per channel. It fits agencies that need a senior operator on a client account without hiring; see <a href="/white-label-ppc/">white label PPC</a>.</p>
 <p>It does not fit brands that need creative production at volume as the main deliverable: for Meta-heavy DTC accounts I run the media and testing framework and work with your designer or a studio on the creative pipeline. And it does not fit companies looking for the cheapest PPC management services; the fee is set by seniority and scope, not by undercutting a marketplace listing.</p>
 </div></section>
 
@@ -153,7 +153,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Setup only, or setup then management</h2>
-<p>Many companies buy the setup and run it themselves, especially under $3,000 a month in spend, where a retainer would be a large share of the budget. The handover document is written for that: what each campaign is for, what to check weekly, what not to touch. Others move straight into <a href="/google-ads-management/">month-to-month management</a>; the setup fee is then the first month's work rather than an extra.</p>
+<p>Many companies buy the setup and run it themselves, especially under $3,000 a month in spend, where a retainer would be a large share of the budget. The handover document is written for that: what each campaign is for, what to check weekly, what not to touch. Others move straight into <a href="/google-ads-management/">month-to-month management</a>. Starting management has no onboarding fee. Existing accounts start with an audit and new accounts with a setup; either one is a fixed price and is credited against the first month of management.</p>
 <p>Either way, the build lives in your Google Ads account, and the tags in your Tag Manager. There is nothing to migrate later.</p>
 </div></section>
 
@@ -163,7 +163,7 @@ PAGES = [
 </div></section>
 """,
 "faq": [
-("How much does a Google Ads setup cost?", "A fixed price quoted from the form, scaled by the number of services, markets and whether tracking has to be built from scratch. It is credited against the first month if you continue into management."),
+("How much does a Google Ads setup cost?", "A fixed price quoted from the form, scaled by the number of services, markets and whether tracking has to be built from scratch. Starting management has no onboarding fee. Existing accounts start with an audit and new accounts with a setup; either one is a fixed price and is credited against the first month of management."),
 ("How long does it take?", "Two to three weeks from kickoff to live for a typical single-market account. Tracking that depends on your developer or CRM can extend that."),
 ("Do you set up the account in your MCC or mine?", "Yours. If you do not have one, I create it in your name with your billing, then link it to my manager account for access. You can remove that access at any time."),
 ("Can I run it myself afterwards?", "Yes, and the handover document is written for that. A quarterly check-in or a one-off <a href=\"/google-ads-consultant/\">consulting session</a> is available if you want a second pair of eyes without a retainer."),
@@ -251,7 +251,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>How much budget belongs on Microsoft</h2>
-<p>Typically 5% to 15% of the paid search budget in the US and UK, higher for B2B. The right number is found by measuring, not assumed: Microsoft campaigns start with a modest budget, conversion volume is watched for a month, and spend follows cost per customer. The point is not that Microsoft replaces Google; it is that the same conversion often costs 20% to 40% less there, and leaving it unmanaged leaves that on the table.</p>
+<p>Typically 5% to 15% of the paid search budget in the US and UK, higher for B2B. The right number is found by measuring, not assumed: Microsoft campaigns start with a modest budget, conversion volume is watched for a month, and spend follows cost per customer. The point is not that Microsoft replaces Google; it is that, in the accounts I have run, the same conversion has often cost noticeably less there, and leaving it unmanaged leaves that on the table.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -350,7 +350,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Who this fits</h2>
-<p>Stores spending roughly $5,000 to $100,000 a month across Google and Meta, on Shopify, WooCommerce, BigCommerce or a custom stack, with a margin structure that can be shared so campaigns can be run against it. It fits less well for marketplaces-only sellers and for stores whose main need is creative production at volume, where I run the media and testing framework alongside a studio rather than replacing it.</p>
+<p>Stores spending roughly $5,000 to $80,000 a month across Google and Meta, on Shopify, WooCommerce, BigCommerce or a custom stack, with a margin structure that can be shared so campaigns can be run against it. It fits less well for marketplaces-only sellers and for stores whose main need is creative production at volume, where I run the media and testing framework alongside a studio rather than replacing it.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -369,7 +369,7 @@ PAGES = [
 },
 
 {
-"slug": "small-business-ppc-management", "short": "Small business PPC", "blurb": "Right-sized Google Ads for local and small companies: setup, audit or a lean retainer.",
+"slug": "small-business-ppc-management", "short": "Small business PPC", "blurb": "Right-sized Google Ads for local and small companies: a setup you run yourself, an audit, or management.",
 "title": "Small Business PPC Management | Google Ads for Local Companies",
 "meta": 'PPC for small and local businesses: a fixed-price setup you run yourself, an honest audit or a lean flat-fee retainer. No percentage of spend.',
 "kicker": "Small business PPC",
@@ -383,12 +383,11 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
-<h2>Three ways to buy this, by budget</h2>
+<h2>Two ways to buy this, by budget</h2>
 <table>
 <tr><th>Monthly ad spend</th><th>What makes sense</th><th>What it involves</th></tr>
-<tr><td>Under $2,000</td><td><a href="/google-ads-setup/">Fixed-price setup</a>, then run it yourself</td><td>Account built properly with tracking, negatives and a handover document. A quarterly check-in if you want one.</td></tr>
-<tr><td>$2,000 – $5,000</td><td>Setup or <a href="/google-ads-audit/">audit</a>, plus a lean retainer</td><td>Fortnightly management instead of weekly, a short monthly report, the same senior person.</td></tr>
-<tr><td>Over $5,000</td><td>Standard <a href="/google-ads-management/">management retainer</a></td><td>Weekly work, tracking and landing pages in scope, full monthly report.</td></tr>
+<tr><td>Under $3,000</td><td><a href="/google-ads-setup/">Fixed-price setup</a>, then run it yourself</td><td>Account built properly with tracking, negatives and a handover document. A quarterly check-in if you want one.</td></tr>
+<tr><td>Over $3,000</td><td>Standard <a href="/google-ads-management/">management retainer</a></td><td>Weekly work, tracking and landing pages in scope, full monthly report.</td></tr>
 </table>
 <p>The fee is flat at every tier, never a percentage of spend, so the advice to keep the budget small is free to give.</p>
 </div></section>
@@ -406,11 +405,11 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>The proof, at small-business scale</h2>
-<p>The published case is a home services company: a Houston HVAC and plumbing business spending about $20,000 a month, where cost per acquisition fell 44% and qualified leads rose 60% over nine months. The tactics above are the ones that did it, and they scale down. The <a href="/results/">results page</a> has the detail and the limits. Industry-specific pages for HVAC, plumbing, cleaning, dental, legal and others are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>.</p>
+<p>The published case is a home services company: a Houston HVAC and plumbing business spending about $20,000 a month, where cost per acquisition fell 44% and qualified leads rose 60% from May 2025 to February 2026. The tactics above are the ones that did it, and they scale down. The <a href="/results/">results page</a> has the detail and the limits. Industry-specific pages for HVAC, plumbing, cleaning, dental, legal and others are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>.</p>
 </div></section>
 """,
 "faq": [
-("How much does small business PPC management cost?", "Depends on the tier above. A setup is a one-off fixed price; a lean retainer is a flat monthly fee below what a full retainer costs; both are quoted on the call. Never a percentage of spend. See <a href=\"/pricing/\">pricing</a>."),
+("How much does small business PPC management cost?", "Depends on the tier above. A setup is a one-off fixed price; management is a flat monthly fee; both are quoted by email from the form. Never a percentage of spend. See <a href=\"/pricing/\">pricing</a>."),
 ("Is Google Ads worth it for a small budget?", "For a local service with a clear search demand, usually yes even at $1,000 to $2,000 a month, provided the account is set up properly and the landing page converts on mobile. For products with low margin or no search demand, often no, and I will say so."),
 ("Can I run the account myself after setup?", "Yes. The handover document is written for an owner, and a quarterly consulting session is available for a second look without a retainer."),
 ("Do you handle Local Services Ads?", "Yes, where the category qualifies, and measured together with Search so budget goes to whichever produces the cheaper booked job."),
