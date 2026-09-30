@@ -45,7 +45,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>How the retainer is priced</h2>
-<p>A flat monthly fee, agreed after the audit and scaled by scope: number of campaigns, platforms, markets and how much landing page work is included. Not a percentage of spend, so the advice to cut budget costs me nothing to give. Month to month with a notice period. Ad spend is paid by you, directly to Google, from your own billing. The <a href="/pricing/">pricing page</a> compares the models and gives typical ranges.</p>
+<p>A flat monthly fee, agreed after the audit and scaled by scope: number of campaigns, platforms, markets and how much landing page work is included. Not a percentage of spend, so the advice to cut budget costs me nothing to give. Month to month, with 30 days' notice either way. Ad spend is paid by you, directly to Google, from your own billing. The <a href="/pricing/">pricing page</a> compares the models and gives typical ranges.</p>
 <p>The account, the conversion actions, the tags and the landing pages stay in your properties. If the engagement ends, nothing needs to be rebuilt.</p>
 </div></section>
 
@@ -413,7 +413,7 @@ PAGES = [
 ("Is Google Ads worth it for a small budget?", "For a local service with a clear search demand, usually yes even at $1,000 to $2,000 a month, provided the account is set up properly and the landing page converts on mobile. For products with low margin or no search demand, often no, and I will say so."),
 ("Can I run the account myself after setup?", "Yes. The handover document is written for an owner, and a quarterly consulting session is available for a second look without a retainer."),
 ("Do you handle Local Services Ads?", "Yes, where the category qualifies, and measured together with Search so budget goes to whichever produces the cheaper booked job."),
-("Do you work with businesses outside the US?", "Yes: the UK, Ireland and Canada as well. Local targeting and call tracking work the same way; the currency in the report changes."),
+("Do you work with businesses outside the US?", "Yes: Canada, Europe, and any country where the business works in English. Local targeting and call tracking work the same way; the currency in the report changes."),
 ],
 "related": ["google-ads-setup", "google-ads-audit", "google-ads-management", "pricing"],
 },

@@ -320,8 +320,8 @@ def footer_html():
     return (
         '<footer><div class="wrap"><div class="grid">' + "".join(groups) + "</div>"
         f'<div class="fine">{BRAND} is the personal practice of {NAME}, independent paid media consultant '
-        f'operating as Diwizi. Remote, in English, for clients in the United States, Canada, the United Kingdom '
-        f'and Ireland. Google Ads, Meta Ads, LinkedIn Ads and Microsoft Advertising are trademarks of their '
+        f'operating as Diwizi. Remote, in English, for businesses in the US, Canada and Europe, and for companies from any '
+        f'country that work in English. UK and Ireland, in pounds: ppcconsultancy.uk. Google Ads, Meta Ads, LinkedIn Ads and Microsoft Advertising are trademarks of their '
         f'respective owners; this site is not affiliated with or endorsed by Google, Meta, Microsoft or LinkedIn. '
         f'&copy; {date.today().year} {NAME}. <a href="/privacy/">Privacy</a></div></div></footer>'
     )

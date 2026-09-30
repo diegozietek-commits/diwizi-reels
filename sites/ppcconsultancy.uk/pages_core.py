@@ -5,13 +5,13 @@ NOT_FOR = """
 <h2>Who this is for, and who it is not</h2>
 <div class="cols">
 <div class="card"><h3>A good fit</h3><ul>
-<li>Lead generation businesses: B2B, SaaS, professional services, healthcare, home and trade services.</li>
+<li>B2B and SaaS, professional services, healthcare, home and trade services, and online retail.</li>
 <li>Spending roughly £2,000 to £60,000 a month across Google, Microsoft, Meta or LinkedIn.</li>
 <li>An owner or marketing manager who wants one senior person accountable for the result, not an account manager relaying messages.</li>
 <li>Accounts where tracking is doubtful and the landing page has never been touched by whoever runs the ads.</li>
 </ul></div>
 <div class="card"><h3>Not a fit</h3><ul>
-<li><strong>E-commerce.</strong> Shopping feeds, Merchant Centre, Performance Max for catalogues and margin-led bidding are a full-time discipline of their own. I do not offer it, and I will point you to someone who does that all day.</li>
+<li>Online stores with tens of thousands of products and daily feed operations, where the feed alone is a full-time job. I will say so rather than run it half well.</li>
 <li>Accounts that need a creative production line for paid social. I run the media; volume creative comes from your designer or a studio.</li>
 <li>Anyone looking for the cheapest possible pair of hands. There are marketplaces for that, and they are the right answer for some accounts.</li>
 </ul></div>
@@ -23,12 +23,12 @@ PAGES = [
 {
 "slug": 'index',
 "short": 'Home',
-"blurb": 'Independent PPC consultancy for UK lead generation businesses.',
+"blurb": 'Independent PPC consultancy for UK and Irish businesses.',
 "title": 'PPC Consultancy UK | Independent PPC Consultant, No Agency Layer',
 "meta": 'Independent PPC consultancy for UK businesses: Google, Microsoft, Meta and LinkedIn Ads run by one senior consultant, landing pages and tracking included.',
 "kicker": 'PPC consultancy',
 "h1": 'PPC consultancy without the agency layer. The consultant who audits your account is the one who runs it.',
-"lead": 'I am Diego Zietek, an independent PPC consultant with 14+ years on the account. Google, Microsoft, Meta and LinkedIn Ads for UK and Irish lead generation businesses, with the landing pages and conversion tracking done by the same person. Flat monthly fee, month to month, your accounts stay yours.',
+"lead": 'I am Diego Zietek, an independent PPC consultant with 14+ years on the account. Google, Microsoft, Meta and LinkedIn Ads for UK and Irish businesses, with the landing pages and conversion tracking done by the same person. Flat monthly fee, month to month, your accounts stay yours.',
 "service_name": 'PPC consultancy and management',
 "body": """
 <section><div class="wrap">
@@ -61,6 +61,7 @@ PAGES = [
 <div class="card"><h3>Professional and financial services</h3><p>Law firms, accountants, advisers and consultancies: expensive clicks, long consideration, and a compliance layer on what an ad can say. Enquiry quality is the whole game.</p></div>
 <div class="card"><h3>Healthcare and regulated categories</h3><p>Fourteen years that include senior in-house healthcare work and a freelance role with a US pharmaceutical agency. Policy restrictions, certification and sensitive-category rules are familiar ground.</p></div>
 <div class="card"><h3>Home and trade services</h3><p>Emergency versus planned work, call tracking that separates a booked job from a ring, and bidding by postcode and hour. The Houston case above is this pattern.</p></div>
+<div class="card"><h3>Online retail</h3><p>Shopping and Performance Max measured on margin and new customers, with platform-reported revenue reconciled against the store's own orders.</p></div>
 </div>
 <p>Industry pages with more detail are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, the same practice organised by sector.</p>
 </div></section>
@@ -70,7 +71,7 @@ PAGES = [
 <ol class="steps">
 <li><div><strong>You send the form.</strong> What you spend, your site and what has already been tried. I reply personally, saying whether I can help, what I would look at first and a price range. A call follows only if it is useful.</div></li>
 <li><div><strong>A fixed-fee audit.</strong> Read-only access is all it needs. You get written findings in order of impact, starting with tracking, then wasted spend, then structure, then testing, and they are yours to act on however you choose.</div></li>
-<li><div><strong>Management, one month at a time.</strong> If the audit shows there is enough to gain, I take on the accounts for a flat fee, with the audit fee deducted from the first month. A notice period, no fixed term.</div></li>
+<li><div><strong>Management, one month at a time.</strong> If the audit shows there is enough to gain, I take on the accounts for a flat fee, with the audit fee deducted from the first month. Thirty days' notice, no fixed term.</div></li>
 </ol>
 </div></section>
 
@@ -90,8 +91,8 @@ PAGES = [
 ('Are you a freelancer or an agency?', 'Neither, in the usual sense. I am an independent consultant: one senior person who audits, builds and runs the accounts. No account manager and no juniors: the ads, tracking and reports are never handed on. If a project needs design or development beyond what I build myself, you are told first and the specialist is named.'),
 ('Can you work with a UK business from Brazil?', 'Yes. I am based in Curitiba (GMT-3), three to four hours behind London. Most of the work is done in writing, calls are booked ahead, usually in the UK morning, and everything is in English.'),
 ('How much does PPC consultancy cost?', "A flat monthly fee for management, sized to the work rather than to your spend, quoted in pounds ex VAT. The audit is one fixed fee, deducted from the first month if you carry on. There is no twelve-month contract, and the <a href='/pricing/'>pricing page</a> sets out each model."),
-('Do you do e-commerce PPC?', 'No. Shopping feeds, Merchant Centre and catalogue Performance Max are a discipline in their own right, and I would rather say so than do them half well. If that is your account, say so in the form and I will suggest someone who specialises in it.'),
-('Which platforms?', 'Google Ads (Search, Performance Max for lead generation, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and the landing pages that sit under all of them.'),
+('Do you do e-commerce PPC?', 'Yes. Google Shopping, Merchant Centre feeds, Performance Max and Meta for online stores, measured on margin and new customers rather than on the platform\'s own ROAS. Very large catalogues with daily feed operations are agency work, and I will say so.'),
+('Which platforms?', 'Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and the landing pages that sit under all of them.'),
 ('Can you take over an account an agency set up?', 'Yes, and that is where most engagements begin. The usual findings are conversion actions counted twice, broad match left to Smart Bidding with no exclusions, and campaigns arranged around how they were built rather than how the business makes money. Nothing gets changed until the tracking can be trusted.'),
 ],
 "related": ['ppc-management', 'ppc-audit', 'b2b-ppc', 'pricing'],
@@ -160,7 +161,7 @@ PAGES = [
 <tr><th></th><th>Independent consultant</th><th>London PPC agency</th></tr>
 <tr><td>Who does the work</td><td>The person you spoke to first</td><td>An account team, often led by someone junior once the pitch is over</td></tr>
 <tr><td>How it is charged</td><td>Flat monthly fee, never a share of spend</td><td>Retainer or a percentage of spend</td></tr>
-<tr><td>Minimum term</td><td>None, a notice period</td><td>Commonly 6 to 12 months</td></tr>
+<tr><td>Minimum term</td><td>None; 30 days' notice</td><td>Commonly 6 to 12 months</td></tr>
 <tr><td>Landing pages and tracking</td><td>Included, by the same person</td><td>Often another team or an extra</td></tr>
 <tr><td>Meetings</td><td>Remote, calls on UK time, written updates</td><td>In person if you want them</td></tr>
 <tr><td>Better when</td><td>One business, one senior person accountable</td><td>Many markets, heavy creative or regular face-to-face</td></tr>
@@ -220,7 +221,7 @@ PAGES = [
 <li>Multi-country accounts needing native-language copy and local compliance.</li>
 <li>Paid social at scale, where creative production is the bottleneck and the agency has a studio.</li>
 <li>Procurement that requires a company with a team, insurance levels and SLAs a one-person consultancy cannot sign.</li>
-<li>E-commerce with large catalogues and feed operations. This is also why I do not take e-commerce accounts.</li>
+<li>E-commerce with tens of thousands of products and daily feed operations, where the feed alone is a full-time job.</li>
 </ul>
 </div></section>
 
@@ -290,9 +291,10 @@ PAGES = [
 <section><div class="wrap">
 <h2>How I price</h2>
 <p>Every engagement is quoted in pounds, ex VAT, after the form tells me the spend band, the platforms, and whether landing pages or tracking need rebuilding. The model below is fixed before any quote.</p>
+<p>The fee is set for your account, not from a rate card: platforms, markets, campaigns and how much landing page and tracking work is included. A range comes by email from the form; a firm figure needs a look at the accounts.</p>
 <table>
 <tr><th>Engagement</th><th>How it is charged</th><th>What you get</th></tr>
-<tr><td><a href="/ppc-audit/">PPC audit</a></td><td>One fixed fee, agreed in advance</td><td>A written report with fixes in order of impact and a walkthrough call. The fee is deducted from the first month if management follows.</td></tr>
+<tr><td><a href="/ppc-audit/">PPC audit</a></td><td>One fixed fee for your account, set from monthly spend, number of campaigns and platforms in scope</td><td>A written report with fixes in order of impact and a walkthrough call. The figure comes by email from the form within one working day and is deducted in full from the first month if management follows.</td></tr>
 <tr><td><a href="/ppc-management/">Management, media up to around £10,000 a month</a></td><td>Flat monthly fee</td><td>Weekly work in the accounts, tracking kept healthy, landing page fixes and a written monthly report. Month to month.</td></tr>
 <tr><td>Management, £10,000 to £40,000 a month</td><td>Flat monthly fee sized to the scope</td><td>The same service across more campaigns, platforms or markets.</td></tr>
 <tr><td>Management, above £40,000 a month</td><td>Flat monthly fee quoted per account</td><td>Several platforms, a weekly call, and the role of a part-time head of paid media rather than an operator.</td></tr>
@@ -306,7 +308,8 @@ PAGES = [
 """,
 "faq": [
 ('Do you charge VAT?', 'Quotes are always ex VAT. I supply services to UK businesses from outside the UK, so the reverse charge normally applies: you account for the VAT in your own return, and your accountant will recognise the treatment on the invoice.'),
-('Is there a setup fee or a minimum term?', 'Starting management has no onboarding fee. Existing accounts start with an audit and new accounts with a setup; either one is a fixed price in pounds, ex VAT, and is credited against the first month of management. Management runs month to month with a notice period.'),
+('Is there a setup fee or a minimum term?', 'Starting management has no onboarding fee. Existing accounts start with an audit and new accounts with a setup; either one is a fixed price in pounds, ex VAT, and is credited against the first month of management. Management runs month to month, with 30 days\' notice either way.'),
+("Can either side end it?", "Either side can end management with 30 days' written notice. Everything stays in your accounts, so nothing has to be migrated when it ends."),
 ('Why not charge a percentage of spend like most agencies?', 'Because it pays the supplier for spending more rather than for results. With a flat fee, the advice to cut a campaign or pause a platform costs me nothing, so you get it when you need it.'),
 ("Does Google's 2% UK surcharge change your fee?", 'No. Google charges it on the media, not me, and it is the same whoever runs the account. I include it in the budget plan so the invoice matches the forecast.'),
 ('Can I get a price without a call?', 'Yes. The form asks for spend band, platforms and what needs fixing, and a range comes back by email. A firm number needs read-only access or a short call.'),
@@ -388,7 +391,7 @@ PAGES = [
 "short": 'About Diego',
 "blurb": 'The consultant behind this site, and how a UK engagement works.',
 "title": 'About Diego Zietek | PPC Consultant Working With UK Businesses',
-"meta": 'Diego Zietek, the consultant behind PPC Consultancy UK: 14+ years running Google, Microsoft, Meta and LinkedIn Ads for UK lead generation businesses.',
+"meta": 'Diego Zietek, the consultant behind PPC Consultancy UK: 14+ years running Google, Microsoft, Meta and LinkedIn Ads for UK and Irish businesses.',
 "kicker": 'About',
 "h1": 'Who runs your account, and how a UK engagement works',
 "lead": 'I am Diego Zietek. I have run paid media for more than 14 years across Google Ads, Microsoft Advertising, Meta and LinkedIn, and every account taken on through this site is run by me personally, from the first audit to the monthly report.',
@@ -401,7 +404,7 @@ PAGES = [
 <tr><th>Track record</th><td>More than 14 years hands-on, across in-house roles, freelance engagements and agency work.</td></tr>
 <tr><th>Channels</th><td>Google Ads (Search, Performance Max, Demand Gen, YouTube), Microsoft Advertising, Meta (Facebook and Instagram), LinkedIn.</td></tr>
 <tr><th>Measurement</th><td>GA4 and Tag Manager, Consent Mode v2 set up for UK GDPR and PECR, enhanced conversions, and offline conversion import from HubSpot or Salesforce.</td></tr>
-<tr><th>Sectors</th><td>B2B and SaaS, professional and financial services, healthcare, home and trade services. E-commerce is not offered.</td></tr>
+<tr><th>Sectors</th><td>B2B and SaaS, professional and financial services, healthcare, home and trade services, and online retail.</td></tr>
 <tr><th>Working pattern</th><td>Remote, in English and mostly in writing. Based in Curitiba, Brazil (GMT-3), three to four hours behind London, with calls booked in advance and usually held in the UK morning.</td></tr>
 <tr><th>Contracting</th><td>Quoted and invoiced in pounds. As a supplier of services from outside the UK, the reverse charge normally applies, so you account for the VAT yourself.</td></tr>
 <tr><th>Contact</th><td>The <a href="/contact/#form">form</a> or {{email}}. Both reach me directly.</td></tr>
@@ -434,7 +437,7 @@ PAGES = [
 </div></section>
 """,
 "faq": [
-('Can you work with a UK limited company or a sole trader?', 'Yes. The engagement is a short services agreement covering scope, the monthly fee in pounds, a notice period and confidentiality. There is no minimum term.'),
+('Can you work with a UK limited company or a sole trader?', 'Yes. The engagement is a short services agreement covering scope, the monthly fee in pounds, 30 days\' notice and confidentiality. There is no minimum term.'),
 ('How is VAT handled?', 'Quotes are ex VAT. Because I supply services from outside the UK, the reverse charge normally applies and you account for the VAT in your own return. The invoice states the treatment clearly.'),
 ('What about UK GDPR and cookie consent?', 'Tracking is set up with Consent Mode v2 and a consent banner that really does block marketing tags until the visitor agrees. If you already use a consent platform, I work with it rather than replace it.'),
 ('Are you an agency?', 'No. Diwizi is a consultancy with one consultant. When a project needs a designer or a developer, I bring in a named person for that piece of work and tell you who it is.'),
