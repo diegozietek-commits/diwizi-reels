@@ -145,5 +145,12 @@
   "angle": "COMMERCIAL",
   "audio_variant": 20,
   "note": "Angle: PROBLEM FIRST (Sep 24 who-it-fits, Sep 26 what-is-included). FIRST RUN ON THE STRIDED ROTATION: n=20, (20*13)%33 = 29 -> saas-ppc-services, unused, no stepping needed. Confirmed gcd(13,33)==1 in code. The stride is working as intended: ecommerce then SaaS, no vertical clustering. Voice n=20, n%5=0, FIRST PERSON: LinkedIn 3, caption 2, zero we/our/us. Core argument: the conversion event is too shallow, Google finds people who love free trials, so trial-to-qualified-to-closed-won has to be imported from the CRM. Secondary: blended CAC hides channel truth; self-serve and sales-led need separate campaigns. Non-fit taken from the page's own closing line: if the CRM cannot tell paid search which leads became opportunities, that is the first fix and it is not a media problem. No figures used. PROCESS NOTE: the voice check failed first time because the caption had only one 'I'. Nothing was published; the caption was rewritten and re-checked. Worth writing captions with two first-person references deliberately rather than discovering it at the assert. PHOTO NOTE: rejected 17724731 (whiteboard session) because the subject wears a prominent unidentified company logo on his shirt. Not being able to identify a brand is a reason to avoid it, not a reason to relax: it could be a real SaaS company sitting behind a Diwizi offer post. Reel J5t5pp9 (IG+FB, silent, 24s), LinkedIn dzt6DD6 org 28874141. Budget 91 of 120, all-source read 127 so the pre-fix gate would have blocked this run outright. Next commercial angle: who it fits."
+ },
+ {
+  "slug": "roas-includes-buyers-you-already-had",
+  "date": "2026-09-30",
+  "angle": "MONEY",
+  "audio_variant": 21,
+  "note": "MONEY pillar (wheel slot 1/20, n=21). Angle: reported ROAS credits sales that would have happened anyway (brand search, retargeting); pause test in regions/window to check incrementality. Source article google-ppc-consultant-mastering-search-ads.html (Testing Incrementality section). No figures used. Voice n%5=1 FIRST PERSON (LI 3, caption 2). Wednesday, no closing question. Reel kZtnPqr IG+FB, LI RGt05aE org 28874141. Photo 7857526. Unused insights from same article: auction insights overlap rate as diagnostic; 20-30% budget jump dilutes lead quality; offline conversion import to optimise toward profit."
  }
 ]
