@@ -42,7 +42,7 @@ FORM_URL = "/contact/#form"  # every CTA points at the lead form
 # Web3Forms access key (account: the hello@ inbox below). Public by design: it only allows sending to that inbox.
 WEB3FORMS_KEY = "a8247bcb-2a34-4f73-a97e-877bfef2b8cb"
 FORM_ENDPOINT = "https://api.web3forms.com/submit"
-BUDGET_BANDS = [("under_3k", "Under $3K / month"), ("3k_20k", "$3K – $20K"), ("20k_50k", "$20K – $50K"), ("50k_plus", "$50K+")]
+BUDGET_BANDS = [("under_3k", "Under $3K / month"), ("3k_10k", "$3K to $10K"), ("10k_50k", "$10K to $50K"), ("50k_plus", "$50K+")]
 MAIL = "hello@diwizi.com"
 MAIL_USER, MAIL_DOMAIN = MAIL.split("@")
 BRAND_SPRITE = "marcas-en-v3.webp"  # 6410x104 transparent sprite, 20 logos, trailing gap for a seamless loop
@@ -63,14 +63,14 @@ PRICES = {  # edit here; every page reads from this dict
 }
 PHOTO = os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"))
 
-PROOF_DEFAULT = [("14+", "years in paid media"), ("1", "person on your account"), ("Flat fee", "never a % of ad spend"), ("Yours", "accounts, tags and pages stay with you")]
+PROOF_DEFAULT = [("14+", "years in paid media"), ("1", "person on your account"), ("Flat fee", "never a % of ad spend"), ("Your", "accounts, tags and pages stay with you")]
 PROOF_GOOGLE = [("14+", "years in paid media"), ("44%", "lower CPA, Google Ads client case"), ("60%", "more qualified leads, same case"), ("Flat fee", "never a % of ad spend")]
 PROOF_BY_SLUG = {
     "index": PROOF_GOOGLE, "google-ads-management": PROOF_GOOGLE, "freelance-ppc-consultant": PROOF_GOOGLE,
     "small-business-ppc-management": PROOF_GOOGLE, "results": None, "google-ads-consultant": [("14+", "years in paid media"), ("Read-only", "access is all a review needs"), ("Written", "findings, ranked by impact"), ("Hourly or fixed", "never a % of ad spend")],
     "ppc-management": [("4", "platforms, one operator"), ("1", "measurement layer across all"), ("1", "report, in your currency"), ("Flat fee", "never a % of ad spend")],
     "meta-ads-management": [("Pixel + CAPI", "deduplicated events"), ("CRM", "lead quality, not form fills"), ("Scheduled", "creative tests, one control"), ("Flat fee", "never a % of ad spend")],
-    "microsoft-ads-management": [("20–40%", "lower CPC vs Google, typical"), ("Native", "negatives, bids and schedules"), ("UET", "via Tag Manager, same definitions"), ("Small", "add-on to a Google retainer")],
+    "microsoft-ads-management": [("Lower CPC", "than Google, in the accounts I have run"), ("Native", "negatives, bids and schedules"), ("UET", "via Tag Manager, same definitions"), ("Small", "add-on to a Google retainer")],
     "linkedin-ads-management": [("Named", "account lists and titles"), ("CRM", "stages fed back to LinkedIn"), ("Pipeline", "is the number reported"), ("Flat fee", "never a % of ad spend")],
     "ecommerce-ppc-management": [("Margin", "not platform ROAS"), ("Feed first", "titles, GTINs, labels"), ("PMax", "with brand excluded"), ("New vs returning", "customers separated")],
 }
@@ -121,9 +121,9 @@ FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)retu
            "function fail(){btn.disabled=false;var m='" + MAIL_USER + "'+'@'+'" + MAIL_DOMAIN + "';"
            "st.innerHTML='Could not send just now. Please try again in a moment, or write to <a href=\"mailto:'+m+'\">'+m+'</a>.';}"
            "f.addEventListener('submit',function(e){e.preventDefault();"
-           "if(!f.checkValidity()){f.reportValidity();return}"
+           "var ps=[].slice.call(f.querySelectorAll('input[name=platforms]:checked')).map(function(x){return x.value});""var pst=f.querySelector('.platforms-status');if(pst)pst.textContent=ps.length?'':'Pick at least one platform.';""if(!ps.length){f.querySelector('input[name=platforms]').focus();return}""if(!f.checkValidity()){f.reportValidity();return}"
            "if(f.botcheck.checked)return;"
-           "var fd=new FormData(f);var v=(w&&w.value||'').trim().replace(/^https?:\\/\\//i,'');fd.set('website',v?'https://'+v:'');"
+           "var fd=new FormData(f);fd.delete('platforms');fd.set('platforms',ps.join(', '));var v=(w&&w.value||'').trim().replace(/^https?:\\/\\//i,'');fd.set('website',v?'https://'+v:'');"
            "btn.disabled=true;st.textContent='Sending\\u2026';"
            "fetch(f.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(j){"
            "if(!(j&&j.success))throw new Error((j&&j.message)||'error');"
@@ -357,6 +357,7 @@ def form_html(slug):
 <input type="hidden" name="page" value="{SITE}{url_for(slug)}">
 <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <fieldset><legend>Monthly ad spend, roughly</legend><div class="pills">{bands}</div></fieldset>
+<fieldset><legend>Platforms</legend><div class="pills"><label class="pill"><input type="checkbox" name="platforms" value="Google Ads"><span>Google Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Microsoft Advertising"><span>Microsoft Advertising</span></label><label class="pill"><input type="checkbox" name="platforms" value="Meta Ads"><span>Meta Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="LinkedIn Ads"><span>LinkedIn Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Not running ads yet"><span>Not running ads yet</span></label></div><p class="form-status platforms-status" role="status" aria-live="polite"></p></fieldset>
 <div class="row2">
 <label>Name<input type="text" name="name" autocomplete="name" required></label>
 <label>Work email<input type="email" name="email" autocomplete="email" required></label>
@@ -365,8 +366,8 @@ def form_html(slug):
 <label>Website<span class="pfx"><span aria-hidden="true">https://</span><input type="text" name="website" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" placeholder="yourcompany.com"></span></label>
 <label><span>Phone <small>(optional)</small></span><input type="tel" name="phone" autocomplete="tel"></label>
 </div>
-<label>What is not working, or what you need<textarea name="message" rows="3" placeholder="Platforms, who runs the account today, and what prompted the search."></textarea></label>
-<div class="cta-row"><button class="btn" type="submit">Send</button><span class="form-note">One reply, from me, usually within a working day. No sequence.</span></div>
+<label>What is not working, or what you need<textarea name="message" rows="3" required placeholder="Who runs the account today, what prompted the search, and what you need."></textarea></label>
+<div class="cta-row"><button class="btn" type="submit">Send</button><span class="form-note">One reply, from me, within one working day, often the same day. No sequence.</span></div>
 <p class="form-status" role="status" aria-live="polite"></p>
 </form>"""
 
@@ -573,7 +574,7 @@ def thanks_page():
     body = f"""<section><div class="wrap">
 <h2>What happens next</h2>
 <ol class="steps">
-<li><div><strong>I read it myself.</strong> Usually the same working day; within one working day at most.</div></li>
+<li><div><strong>I read it myself.</strong> Within one working day, often the same day.</div></li>
 <li><div><strong>You get one reply</strong> from {email_link()}: whether I can help, what I would look at first, a price range, and two or three times for a short call if it makes sense to talk.</div></li>
 <li><div><strong>Nothing else.</strong> No sequence, no newsletter. If you do not answer, I assume the timing was wrong.</div></li>
 </ol>

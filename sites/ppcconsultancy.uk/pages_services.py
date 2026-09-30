@@ -106,7 +106,7 @@ PAGES = [
 <h2>Platforms, and how each one is used</h2>
 <ul>
 <li><strong>Google Ads.</strong> Search is the core: exact and phrase match with a disciplined negatives programme, Smart Bidding only once the conversion data deserves it. Performance Max for lead generation with brand excluded and lead quality fed back. YouTube and Demand Gen when there is a reason, not by default.</li>
-<li><strong>Microsoft Advertising.</strong> Imported from Google, then managed natively: its own negatives, bids and schedules. Typically 20% to 40% cheaper per click in the UK for the same queries, with an older, more B2B audience. A small add-on to a Google retainer.</li>
+<li><strong>Microsoft Advertising.</strong> Imported from Google, then managed natively: its own negatives, bids and schedules. In the accounts I have run, noticeably cheaper per click in the UK for the same queries, with an older, more B2B audience. A small add-on to a Google retainer.</li>
 <li><strong>Meta Ads.</strong> For lead generation businesses where the offer can be understood in a feed. Pixel plus Conversions API, deduplicated, lead quality from the CRM, scheduled creative tests with one control. Creative volume comes from your designer or a studio.</li>
 <li><strong>LinkedIn Ads.</strong> For B2B with a deal size that supports the click price: named account lists, job titles, CRM stages fed back so LinkedIn optimises towards opportunities. <a href="/b2b-ppc/">More on B2B →</a></li>
 </ul>
@@ -220,7 +220,7 @@ PAGES = [
 <h2>What the audit covers</h2>
 <ul>
 <li><strong>Measurement.</strong> Conversion actions, GA4 events, Tag Manager, Consent Mode, CRM reconciliation. What is counted, what is double-counted, what is missing.</li>
-<li><strong>Search terms and match types.</strong> The last 90 days of queries against the negatives that exist, with the waste quantified.</li>
+<li><strong>Search terms and match types.</strong> Twelve months of search terms, with the last 90 days read line by line, against the negatives that exist, with the waste quantified.</li>
 <li><strong>Structure and bidding.</strong> Campaign and ad group logic, budget allocation, Smart Bidding readiness, brand and competitor handling.</li>
 <li><strong>Performance Max and automation.</strong> What the automated campaigns are actually doing, and whether the reported results survive brand exclusion.</li>
 <li><strong>Ads and landing pages.</strong> Message match, page speed, forms, phone tracking, the test history if any.</li>

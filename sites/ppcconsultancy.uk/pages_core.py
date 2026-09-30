@@ -35,7 +35,7 @@ PAGES = [
 <h2>One published result, and what it means for a UK account</h2>
 <div class="cols">
 <div class="card"><h3>Home services, Houston, Texas</h3><p><strong>Google Ads Search · May 2025 to February 2026 · around US$20,000 a month.</strong> Cost per acquisition cut by 44% and qualified leads up 60%, in a local auction where the main searches cost US$45 to US$80 a click.</p><p>The work: campaigns split by type of job, measurement that told a booked job apart from a phone call, a weekly pass through the search terms, and steady tests of adverts and landing pages. The UK equivalent is a boiler and heating business, where emergency repairs and new installations fight over the same budget.</p><p>Three more engagements, each with its limits, are on the <a href="/results/">results page →</a></p></div>
-<div class="card"><h3>What the monthly fee includes</h3><ul><li>Hands-on work in the accounts every week: search terms, bids, budgets, adverts and exclusions</li><li>Tracking set up and kept honest: GA4, Tag Manager, Consent Mode v2 and offline import from your CRM</li><li>Landing pages written and built by me, rather than briefed into someone else's queue</li><li>A written report each month on cost per qualified enquiry and what changed</li><li>Your questions answered by the person doing the work</li></ul></div>
+<div class="card"><h3>What the monthly fee includes</h3><ul><li>Hands-on work in the accounts every week: search terms, bids, budgets, adverts and exclusions</li><li>Tracking set up and kept honest: GA4, Tag Manager, Consent Mode v2 and offline import from your CRM</li><li>Landing pages written and built by me on your site or page builder; work that needs your developer is specified for them</li><li>A written report each month on cost per qualified enquiry and what changed</li><li>Your questions answered by the person doing the work</li></ul></div>
 </div>
 </div></section>
 
@@ -87,7 +87,7 @@ PAGES = [
 </div></section>
 """,
 "faq": [
-('Are you a freelancer or an agency?', 'Neither, in the usual sense. I am an independent consultant: one senior person who audits, builds and runs the accounts. No account manager, no juniors and no outsourcing. When a project needs a designer or a developer, I bring in a named person for that piece of work.'),
+('Are you a freelancer or an agency?', 'Neither, in the usual sense. I am an independent consultant: one senior person who audits, builds and runs the accounts. No account manager and no juniors: the ads, tracking and reports are never handed on. If a project needs design or development beyond what I build myself, you are told first and the specialist is named.'),
 ('Can you work with a UK business from Brazil?', 'Yes. I am based in Curitiba (GMT-3), three to four hours behind London. Most of the work is done in writing, calls are booked ahead, usually in the UK morning, and everything is in English.'),
 ('How much does PPC consultancy cost?', "A flat monthly fee for management, sized to the work rather than to your spend, quoted in pounds ex VAT. The audit is one fixed fee, deducted from the first month if you carry on. There is no twelve-month contract, and the <a href='/pricing/'>pricing page</a> sets out each model."),
 ('Do you do e-commerce PPC?', 'No. Shopping feeds, Merchant Centre and catalogue Performance Max are a discipline in their own right, and I would rather say so than do them half well. If that is your account, say so in the form and I will suggest someone who specialises in it.'),
@@ -170,7 +170,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Remote, and honest about it</h2>
-<p>I do not have a London office and this page will not pretend otherwise. I am based in Curitiba, Brazil, three to four hours behind London. What you get instead: calls booked in advance, usually in the UK morning, written replies within one working day, a weekly written update, access to the accounts and reporting at any time, and a fee without London overheads inside it. If you need someone in the room every month, a London agency is the better choice, and I will say so on the first call.</p>
+<p>I do not have a London office and this page will not pretend otherwise. I am based in Curitiba, Brazil, three to four hours behind London. What you get instead: calls booked in advance, usually in the UK morning, written replies within one working day, a written monthly report and a note in writing whenever something important changes, access to the accounts and reporting at any time, and a fee without London overheads inside it. If you need someone in the room every month, a London agency is the better choice, and I will say so on the first call.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -216,10 +216,10 @@ PAGES = [
 <section><div class="wrap">
 <h2>Where an agency is the better choice</h2>
 <ul>
-<li>Spend above roughly £80,000 a month across several platforms, where the work genuinely needs more than one pair of hands.</li>
+<li>Spend above roughly £60,000 a month across several platforms, where the work genuinely needs more than one pair of hands.</li>
 <li>Multi-country accounts needing native-language copy and local compliance.</li>
 <li>Paid social at scale, where creative production is the bottleneck and the agency has a studio.</li>
-<li>Procurement that requires a company with a team, insurance levels and SLAs a sole trader cannot sign.</li>
+<li>Procurement that requires a company with a team, insurance levels and SLAs a one-person consultancy cannot sign.</li>
 <li>E-commerce with large catalogues and feed operations. This is also why I do not take e-commerce accounts.</li>
 </ul>
 </div></section>
@@ -253,7 +253,7 @@ PAGES = [
 "h1": 'PPC management pricing in the UK: what it costs and how I charge',
 "lead": 'Before any number, the model matters more than the rate: it decides whose interests the advice serves. This page sets out how UK consultancies and agencies charge, what management tends to cost at each spend level, the costs that sit on top of any fee, and exactly how I price.',
 "service_name": 'PPC consultancy pricing',
-"proof": [('£', 'flat fees, ex VAT'), ('0%', 'of your ad spend'), ('Fixed', 'price audits'), ('None', 'minimum term')],
+"proof": [('£', 'flat fees, ex VAT'), ('0%', 'of your ad spend'), ('Fixed', 'price audits'), ('No', 'minimum term')],
 "body": """
 <section><div class="wrap">
 <h2>Three ways UK consultancies and agencies charge</h2>
@@ -298,14 +298,15 @@ PAGES = [
 <tr><td>Management, above £40,000 a month</td><td>Flat monthly fee quoted per account</td><td>Several platforms, a weekly call, and the role of a part-time head of paid media rather than an operator.</td></tr>
 <tr><td><a href="/landing-pages/">Landing pages</a></td><td>Included in management, or a fixed project fee</td><td>A page per search intent: copy, build, tracking and a test plan.</td></tr>
 <tr><td><a href="/conversion-tracking/">Conversion tracking</a></td><td>Fixed project fee</td><td>GA4, Tag Manager, Consent Mode v2, enhanced and offline conversions, and a reconciliation against your CRM.</td></tr>
+<tr><td>Account setup</td><td>Fixed project fee</td><td>Built in your own account, tracking included, with a handover document to run it yourself.</td></tr>
 <tr><td>Advice for in-house teams</td><td>Day rate, or a fixed fee per piece of work</td><td>Strategy, second opinions and regular review sessions.</td></tr>
 </table>
-<p>No line on this page is a percentage of your media, so telling you to cut budget costs me nothing. Adding Microsoft Advertising to a Google account is a small increase; adding Meta with ongoing creative testing is a bigger one, agreed before it starts. Send the <a href="/contact/#form">form</a> and a range comes back the same day; a firm figure needs a look at the accounts.</p>
+<p>No line on this page is a percentage of your media, so telling you to cut budget costs me nothing. Adding Microsoft Advertising to a Google account is a small increase; adding Meta with ongoing creative testing is a bigger one, agreed before it starts. Send the <a href="/contact/#form">form</a> and a range comes back within one working day, often the same day; a firm figure needs a look at the accounts.</p>
 </div></section>
 """,
 "faq": [
 ('Do you charge VAT?', 'Quotes are always ex VAT. I supply services to UK businesses from outside the UK, so the reverse charge normally applies: you account for the VAT in your own return, and your accountant will recognise the treatment on the invoice.'),
-('Is there a setup fee or a minimum term?', 'Neither. New accounts begin with the fixed-fee audit, which is deducted from the first month of management, and management runs month to month with a notice period.'),
+('Is there a setup fee or a minimum term?', 'Starting management has no onboarding fee. Existing accounts start with an audit and new accounts with a setup; either one is a fixed price in pounds, ex VAT, and is credited against the first month of management. Management runs month to month with a notice period.'),
 ('Why not charge a percentage of spend like most agencies?', 'Because it pays the supplier for spending more rather than for results. With a flat fee, the advice to cut a campaign or pause a platform costs me nothing, so you get it when you need it.'),
 ("Does Google's 2% UK surcharge change your fee?", 'No. Google charges it on the media, not me, and it is the same whoever runs the account. I include it in the budget plan so the invoice matches the forecast.'),
 ('Can I get a price without a call?', 'Yes. The form asks for spend band, platforms and what needs fixing, and a range comes back by email. A firm number needs read-only access or a short call.'),
@@ -391,7 +392,7 @@ PAGES = [
 "kicker": 'About',
 "h1": 'Who runs your account, and how a UK engagement works',
 "lead": 'I am Diego Zietek. I have run paid media for more than 14 years across Google Ads, Microsoft Advertising, Meta and LinkedIn, and every account taken on through this site is run by me personally, from the first audit to the monthly report.',
-"proof": [('14+', 'years running paid media'), ('1', 'person on your account'), ('£', 'quotes and invoices in pounds'), ('None', 'minimum term')],
+"proof": [('14+', 'years running paid media'), ('1', 'person on your account'), ('£', 'quotes and invoices in pounds'), ('No', 'minimum term')],
 "body": """
 <section><div class="wrap">
 <h2>In short</h2>
@@ -447,7 +448,7 @@ PAGES = [
 "short": 'Contact',
 "blurb": 'The form or an email, both answered by the consultant.',
 "title": 'Contact | PPC Consultancy UK, Quotes in Pounds Within One Working Day',
-"meta": 'Send your spend, site and what is going wrong. Diego Zietek replies personally, usually within a working day, with a range in pounds, ex VAT.',
+"meta": 'Send your spend, site and what is going wrong. Diego Zietek replies personally within one working day, often the same day, with a range in pounds, ex VAT.',
 "kicker": 'Contact',
 "h1": 'Get a quote. The reply comes from the consultant, not a sales team.',
 "lead": 'A few details are enough for me to say whether I can help, where I would start and roughly what it would cost. If someone else would suit you better, I will say so and suggest who.',
@@ -455,7 +456,7 @@ PAGES = [
 "body": """
 <section><div class="wrap">
 <div class="cols">
-<div class="card"><h3>Use the form</h3><p>Your spend, name, email, site and what is going wrong. You will find it <a href="#form">at the foot of this page</a> and on every other page. One reply, written by me, normally within one working day.</p></div>
+<div class="card"><h3>Use the form</h3><p>Your spend, name, email, site and what is going wrong. You will find it <a href="#form">at the foot of this page</a> and on every other page. One reply, written by me, within one working day, often the same day.</p></div>
 <div class="card"><h3>Or email</h3><p>If you would rather write, send the same details to {{email}}. If you already know you want an audit, read-only access to Google Ads and GA4 speeds things up.</p></div>
 </div>
 <h2 style="margin-top:36px">What helps me reply properly</h2>
