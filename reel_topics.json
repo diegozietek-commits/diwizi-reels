@@ -152,5 +152,12 @@
   "angle": "MONEY",
   "audio_variant": 21,
   "note": "MONEY pillar (wheel slot 1/20, n=21). Angle: reported ROAS credits sales that would have happened anyway (brand search, retargeting); pause test in regions/window to check incrementality. Source article google-ppc-consultant-mastering-search-ads.html (Testing Incrementality section). No figures used. Voice n%5=1 FIRST PERSON (LI 3, caption 2). Wednesday, no closing question. Reel kZtnPqr IG+FB, LI RGt05aE org 28874141. Photo 7857526. Unused insights from same article: auction insights overlap rate as diagnostic; 20-30% budget jump dilutes lead quality; offline conversion import to optimise toward profit."
+ },
+ {
+  "slug": "offer-personal-injury-ppc",
+  "date": "2026-10-01",
+  "angle": "COMMERCIAL",
+  "audio_variant": 22,
+  "note": "Angle: WHO IT FITS (Sep 26 what-is-included, Sep 29 problem-first). Stride: n=22, (22*13)%33 = 22 -> personal-injury-ppc, unused, no stepping; gcd(13,33)=1 re-confirmed in code. Voice n=22, n%5=2, FIRST PERSON: LinkedIn 5, caption 2, zero we/our/us. FIRST RUN UNDER THE 2026-09-29 CHANGES. LinkedIn went out TEXT ONLY, no media key in the payload at all, with an assert proving it. No still was extracted and none was pushed; the only hosted file is the mp4. Budget band is now 117 / 118-119 / 120 because WFA yields first, and the window is compared in FRACTIONAL days: 92 strict, where the old .days variant read 96 and all-source read 130. Both older gates would have mis-called this run. Fit criteria came straight off the page's own 'who it is for': intake that answers in seconds, intake outcomes fed back as offline conversions with case values, genuinely different case types worth separating. Non-fit: a firm that cannot close the intake loop yet, stated as a sequencing point rather than a judgement. Kept the regulatory line, compliance stays with the firm. No figures used; the page's 44%/60% are the Houston HVAC case and belong to a different industry. NOTE FOR THE FEED: Diwizi is now 56 of 110 entries in the window, the first time it has been the majority. Reel 70tzW6X (IG+FB, silent, 24s), LinkedIn o7tV6bY org 28874141. Next commercial angle: what is actually included."
  }
 ]
