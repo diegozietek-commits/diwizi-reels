@@ -514,7 +514,10 @@ def render(p):
 <meta property="og:image" content="{SITE}/{OG_IMAGE}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{BRAND}: {NAME}, independent paid media consultant">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(p['title'])}"><meta name="twitter:description" content="{esc(p['meta'])}"><meta name="twitter:image" content="{SITE}/{OG_IMAGE}">
 <meta name="robots" content="{'noindex,follow' if p.get('noindex') else 'index,follow,max-snippet:-1,max-image-preview:large'}">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <style>{CSS}</style>
 <script type="application/ld+json">{schema_for(p)}</script>
@@ -636,6 +639,8 @@ def build():
     shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", BRAND_SPRITE), os.path.join(dist, BRAND_SPRITE))
     save_lastmod(manifest)
     shutil.copy(os.path.join(HERE, "assets", OG_IMAGE), os.path.join(dist, OG_IMAGE))
+    for icon in ("favicon.ico", "favicon-96.png", "apple-touch-icon.png"):
+        shutil.copy(os.path.join(HERE, "assets", icon), os.path.join(dist, icon))
     with open(os.path.join(dist, "llms.txt"), "w", encoding="utf-8") as f:
         f.write(llms_txt())
     with open(os.path.join(dist, "robots.txt"), "w") as f:
@@ -646,7 +651,7 @@ def build():
     with open(os.path.join(dist, "_headers"), "w") as f:
         f.write("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
                 "  X-Frame-Options: SAMEORIGIN\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n"
-                "/favicon.svg\n  Cache-Control: public, max-age=604800\n")
+                "/favicon.svg\n  Cache-Control: public, max-age=604800\n/favicon.ico\n  Cache-Control: public, max-age=604800\n")
     with open(os.path.join(dist, "404.html"), "w", encoding="utf-8") as f:
         f.write(render({"slug": "404", "title": "Page not found | " + BRAND, "meta": "That page does not exist.",
                         "h1": "That page is not here", "lead": "The address may have changed. Everything on this site is one click from the footer.",
