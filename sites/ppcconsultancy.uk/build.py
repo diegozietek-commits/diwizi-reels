@@ -148,7 +148,7 @@ NAV = [
 ]
 
 FOOTER_GROUPS = [
-    ("Services", ["ppc-management", "google-ads-management", "google-ads-consultant", "ppc-audit", "landing-pages",
+    ("Services", ["ppc-management", "google-ads-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "landing-pages",
                   "conversion-tracking", "google-ads-small-business", "ecommerce-ppc"]),
     ("Platforms and sectors", ["facebook-ads-management", "linkedin-ads-management", "microsoft-ads-management", "b2b-ppc",
                                "saas-ppc", "ppc-for-law-firms", "healthcare-ppc"]),
@@ -165,7 +165,7 @@ SISTER_PAGES = {
     "linkedin-ads-management": "/linkedin-ads-management/", "facebook-ads-management": "/meta-ads-management/",
     "microsoft-ads-management": "/microsoft-ads-management/", "google-ads-small-business": "/small-business-ppc-management/",
     "ppc-specialist": "/google-ads-expert/", "ppc-for-law-firms": "/ppc-for-law-firms/",
-    "healthcare-ppc": "/healthcare-ppc/", "saas-ppc": "/saas-ppc/",
+    "healthcare-ppc": "/healthcare-ppc/", "saas-ppc": "/saas-ppc/", "ppc-consultation": "/google-ads-consultation/",
     "conversion-tracking": "/conversion-tracking-setup/", "pricing": "/pricing/", "results": "/results/",
     "about": "/about/", "contact": "/contact/", "privacy": "/privacy/",
     "ppc-freelancer": "/freelance-ppc-consultant/",
@@ -471,7 +471,7 @@ LLMS_SUMMARY = ("Diego Zietek, independent PPC consultant with 14+ years of hand
 LLMS_FACTS = ["- Market: UK and Irish businesses; the US and Canadian practice is at googleadsfreelancer.com.",
               "- Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).",
               "- Pricing: quoted in pounds, ex VAT, from the form; prices are not published. Never a percentage of ad spend."]
-LLMS_PAGES = ["index", "ppc-management", "google-ads-consultant", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "contact"]
+LLMS_PAGES = ["index", "ppc-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "contact"]
 LLMS_SISTER = "US and Canadian practice, Google Ads freelancer"
 
 def schema_for(p):

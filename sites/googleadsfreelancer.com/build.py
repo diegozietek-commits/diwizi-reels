@@ -26,6 +26,7 @@ SISTER_PAGES = {
     "small-business-ppc-management": "/google-ads-small-business/", "b2b-ppc": "/b2b-ppc/",
     "landing-pages": "/landing-pages/", "google-ads-expert": "/ppc-specialist/",
     "ppc-for-law-firms": "/ppc-for-law-firms/", "healthcare-ppc": "/healthcare-ppc/", "saas-ppc": "/saas-ppc/",
+    "google-ads-consultation": "/ppc-consultation/",
     "conversion-tracking-setup": "/conversion-tracking/", "pricing": "/pricing/", "results": "/results/",
     "about": "/about/", "contact": "/contact/", "privacy": "/privacy/",
     "freelance-ppc-consultant": "/ppc-freelancer/",
@@ -153,7 +154,7 @@ NAV = [
 ]
 
 FOOTER_GROUPS = [
-    ("Google Ads", ["google-ads-management", "google-ads-consultant", "google-ads-expert", "google-ads-audit",
+    ("Google Ads", ["google-ads-management", "google-ads-consultant", "google-ads-consultation", "google-ads-expert", "google-ads-audit",
                     "google-ads-setup", "conversion-tracking-setup", "landing-pages", "ecommerce-ppc-management",
                     "small-business-ppc-management"]),
     ("Other platforms", ["ppc-management", "meta-ads-management", "microsoft-ads-management",
@@ -452,7 +453,7 @@ LLMS_FACTS = ["- Market: businesses in the United States and Canada; the UK prac
               "- Services: Google Ads management, audits, setup, conversion tracking, consulting, and multi-platform PPC management.",
               "- Fees: a flat monthly fee, never a percentage of ad spend. No long contract.",
               "- Pricing: quoted per account from the form; prices are not published."]
-LLMS_PAGES = ["index", "google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "google-ads-consultant", "google-ads-expert", "b2b-ppc", "saas-ppc", "home-services-ppc", "ppc-for-law-firms", "healthcare-ppc", "pricing", "results", "about", "contact"]
+LLMS_PAGES = ["index", "google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "google-ads-consultant", "google-ads-consultation", "google-ads-expert", "b2b-ppc", "saas-ppc", "home-services-ppc", "ppc-for-law-firms", "healthcare-ppc", "pricing", "results", "about", "contact"]
 LLMS_SISTER = "UK practice, prices in pounds"
 
 def schema_for(p):

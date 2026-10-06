@@ -208,6 +208,7 @@ PAGES = [
 ("Do you offer Google Ads coaching or training?", "Yes, as recurring advisory sessions with the person or small team running your ads. It is practical and account-specific rather than a course: we work on your campaigns, your reports and your decisions."),
 ("How much does Google Ads consulting cost?", "Fixed price for defined deliverables such as a strategy document or an audit, hourly for standing advisory. Both are quoted after scoping. See the <a href=\"/pricing/\">pricing page</a> for how each model behaves."),
 ("Do you need edit access to consult?", "No. Read-only access to Google Ads, GA4 and Tag Manager is enough for the review. Edit access only matters if you want me to implement the fixes, which is a separate decision."),
+("Can I book a single session instead of an engagement?", "Yes. A <a href=\"/google-ads-consultation/\">Google Ads consultation</a> is one working session of about an hour on your account, with written notes within two working days, at a fixed price credited against an audit or management if either follows within 60 days."),
 ("Is a consultant worth it for a small account?", "For accounts under a few thousand a month, a single fixed-price audit is the sensible way to buy consulting: one document, one walkthrough, then you or your team implement. Ongoing advisory is for teams with enough spend that a better decision each month pays for the session."),
 ],
 "related": ["google-ads-audit", "google-ads-management", "freelance-ppc-consultant", "pricing"],

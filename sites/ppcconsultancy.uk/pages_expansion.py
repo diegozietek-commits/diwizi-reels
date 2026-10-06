@@ -118,7 +118,7 @@ PAGES = [
 <li><div><strong>Read-only access first.</strong> Google Ads, GA4 and Tag Manager. Nothing is changed until you have the findings and have agreed what to do.</div></li>
 <li><div><strong>A written review.</strong> Findings ranked by financial impact: measurement, search terms, structure, automation, adverts and landing pages. Each with the fix, who should do it and how to confirm it worked. This is the <a href="/ppc-audit/">PPC audit</a>, priced fixed and in advance.</div></li>
 <li><div><strong>Then one of three paths.</strong> Your team or agency implements the report; I implement the fixes as a fixed-price project; or I take the account on month to month as the person running it. Many clients choose the first and come back for the third.</div></li>
-<li><div><strong>Ongoing advisory where it fits.</strong> A monthly review of the work your team does, with a written note and a call. For in-house teams that want supervision rather than outsourcing.</div></li>
+<li><div><strong>Ongoing advisory where it fits.</strong> A monthly review of the work your team does, with a written note and a call. For in-house teams that want supervision rather than outsourcing. For a single question or decision, a one-off <a href="/ppc-consultation/">PPC consultation</a> is the smaller option.</div></li>
 </ol>
 </div></section>
 
@@ -652,5 +652,62 @@ city_page(
     "<p>Bristol is the most expensive city in the table for financial advice, at £23.98, ahead of London. For solicitors and web design it is among the cheapest, close to Leeds. Accountancy sits above Manchester and Birmingham. The spread shows why a budget set from a national average goes wrong, and why an <a href=\"/ppc-audit/\">audit</a> starts by pricing your own auction.</p>",
     [("Do you cover Bath and the wider South West?", "Yes: Bath, Weston-super-Mare, Gloucester, Cheltenham, Swindon and across to Cardiff and Newport, with location targeting and bids set to how your business actually serves each area.")],
     "<p>For a Bristol engineering supplier, the same three moves mean splitting specification searches from generic ones, counting a quote request rather than a visit, and feeding won quotes back from the CRM so Google learns which clicks became orders.</p>",
-),
+),,
+# ---------------------------------------------------------------- PPC consultation (one-off session)
+{
+"slug": "ppc-consultation", "short": "PPC consultation", "blurb": "A one-off working session on your account, with written notes, before or instead of a retainer.",
+"title": "PPC Consultation UK | One-Off Google Ads Session With Written Notes",
+"meta": "Book a PPC consultation: a one-off working session on your Google, Microsoft, Meta or LinkedIn account with a senior UK-facing consultant, with written notes afterwards. Fixed price in pounds.",
+"kicker": "PPC consultation",
+"h1": "A PPC consultation: one working session on your account, with written notes, before or instead of a retainer",
+"lead": "Not every account needs an audit or a retainer. Sometimes a business needs a senior person to look at the account for an hour, answer the three questions that have been going round for months, and write down what to do next. That is the consultation, and it is the smallest way to work with me.",
+"service_name": "PPC consultation",
+"body": """
+<section><div class="wrap">
+<h2>When a consultation is the right size</h2>
+<ul>
+<li><strong>A decision is pending.</strong> Whether to move to Performance Max, whether to take the agency's proposal, whether the budget increase is justified, whether to bid on the brand. A second opinion from someone with no retainer to win.</li>
+<li><strong>An in-house marketer wants a senior check.</strong> You run the account yourself and want an experienced pair of eyes on the structure, the tracking and the search terms before the next quarter.</li>
+<li><strong>Something broke.</strong> Conversions stopped recording, the account was suspended, spend doubled overnight, and you need the cause and the fix without a six-week engagement.</li>
+<li><strong>You are choosing a supplier.</strong> You have two agency proposals and want them read by someone who runs accounts, with the questions to ask each one.</li>
+</ul>
+</div></section>
+
+<section><div class="wrap">
+<h2>How the consultation works</h2>
+<ol class="steps">
+<li><div><strong>Before the call.</strong> You send the form with the spend band, the platforms and the questions. If the account is live, read-only access to Google Ads and GA4 so the hour is spent on answers rather than on screen-sharing.</div></li>
+<li><div><strong>The session.</strong> A video call of about an hour, on UK time, working through the account and your questions in order of money at stake. Recorded if you want it.</div></li>
+<li><div><strong>Written notes within two working days.</strong> What was found, what to do, in what order, and what to measure to know it worked. Written so your team or your agency can act on it.</div></li>
+<li><div><strong>Credited if it grows.</strong> If the consultation becomes a <a href="/ppc-audit/">full audit</a> or <a href="/ppc-management/">management</a> within 60 days, the consultation fee is credited against it.</div></li>
+</ol>
+</div></section>
+
+<section><div class="wrap">
+<h2>Consultation, audit or management</h2>
+<table>
+<tr><th></th><th>Consultation</th><th>Audit</th><th>Management</th></tr>
+<tr><td>What it is</td><td>One working session plus notes</td><td>A full written review of every platform in scope</td><td>Running the account month to month</td></tr>
+<tr><td>Time</td><td>About an hour, notes within two working days</td><td>5 to 7 working days</td><td>Ongoing, 30 days' notice either way</td></tr>
+<tr><td>Best for</td><td>A decision, a second opinion, a broken thing, an in-house check</td><td>Knowing everything that is wrong and what it costs</td><td>Having the senior person do the work</td></tr>
+<tr><td>Price</td><td>Fixed, in pounds, quoted from the form</td><td>Fixed, set from spend, campaigns and platforms</td><td>Flat monthly fee, set from scope</td></tr>
+<tr><td>Credited against</td><td>An audit or management within 60 days</td><td>The first month of management</td><td></td></tr>
+</table>
+<p>How each is priced, with market ranges, is on <a href="/pricing/">pricing</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>What a consultation is not</h2>
+<p>It is not a sales call dressed as advice: the fee is the same whether or not you go on to work with me, and most consultations end with the notes. It is not a free audit; those are on the <a href="/ppc-audit/">audit page</a>, with the reasons they are a poor idea. And it is not training in Google Ads from the ground up; it assumes someone on your side runs or oversees the account already.</p>
+</div></section>
+""",
+"faq": [
+("How much does a PPC consultation cost?", "A fixed fee in pounds, ex VAT, quoted by email from the form within one working day. It is credited against an audit or the first month of management if either follows within 60 days. See <a href=\"/pricing/\">pricing</a> for how everything is priced."),
+("Can we book more than one session?", "Yes. Some in-house teams book a session each month or each quarter as a standing review; that is agreed in writing after the first one, with the same notes each time."),
+("Do you need access to our account for a consultation?", "It helps: read-only access to Google Ads and GA4 beforehand means the hour goes on answers. Without access, the session works from your screen share and your questions, and the notes say what to check."),
+("Which platforms can the consultation cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and landing pages."),
+("Is the consultation available to businesses outside the UK?", "Yes. UK and Irish businesses are quoted in pounds here; US and Canadian businesses have the same session on <a href=\"https://googleadsfreelancer.com/google-ads-consultation/\" rel=\"noopener\">googleadsfreelancer.com</a>, quoted in dollars."),
+],
+"related": ["ppc-audit", "google-ads-consultant", "ppc-management", "pricing"],
+},
 ]
