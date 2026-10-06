@@ -575,7 +575,7 @@ PAGES = [
 ("What do Houston PPC agencies and consultants charge?", "Agencies commonly charge a percentage of spend with a monthly minimum; senior freelancers quote by the hour or a flat retainer. My fee is flat, set from the scope of the account, and quoted in US dollars by email from the form. See <a href=\"/pricing/\">pricing</a>."),
 ],
 "related": ["home-services-ppc", "google-ads-audit", "google-ads-management", "results"],
-},,
+},
 # ---------------------------------------------------------------- Google Ads consultation (one-off session)
 {
 "slug": "google-ads-consultation", "short": "Google Ads consultation", "blurb": "A one-off working session on your account, with written notes, before or instead of a retainer.",
