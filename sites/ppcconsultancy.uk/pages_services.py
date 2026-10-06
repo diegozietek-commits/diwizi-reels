@@ -230,6 +230,35 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
+<h2>PPC audit services compared: the free agency audit and the independent paid one</h2>
+<table>
+<tr><th></th><th>Free audit from an agency</th><th>Independent paid audit</th></tr>
+<tr><td>Who writes it</td><td>A sales team, often from an automated script</td><td>The consultant who would run the account</td></tr>
+<tr><td>What it is for</td><td>Winning the retainer</td><td>Telling you what is wrong and what it costs each month</td></tr>
+<tr><td>Can it say the account is fine</td><td>Rarely</td><td>Yes, in writing, and it often does</td></tr>
+<tr><td>What it covers</td><td>Google Ads settings and a quality score screenshot</td><td>Measurement, search terms, structure, automation, adverts, landing pages, every platform in scope</td></tr>
+<tr><td>What you can do with it</td><td>Hire the agency</td><td>Hand it to your team or your current agency, hire me for the fixes, or hire me to run the account</td></tr>
+<tr><td>What it costs</td><td>Nothing, then a retainer</td><td>A fixed fee, credited against the first month if management follows</td></tr>
+</table>
+</div></section>
+
+<section><div class="wrap">
+<h2>What you receive</h2>
+<ul>
+<li><strong>A written report</strong>, in plain English, with findings ranked by financial impact. Each finding carries the monthly pound figure where one can be estimated, the fix, who should do it and how to confirm it worked.</li>
+<li><strong>A prioritised plan</strong> for the first 30, 60 and 90 days, written so that your own team or your existing agency can carry it out without me.</li>
+<li><strong>A walkthrough call</strong> of up to an hour, recorded if you want it, in the week after delivery.</li>
+<li><strong>Thirty days of questions by email</strong> while the fixes are being made.</li>
+</ul>
+<p>The audit is read-only. Nothing in the account is changed, and the access can be removed the day the report is delivered.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>After the audit</h2>
+<p>Three things happen, in roughly equal measure. Some clients implement the report themselves or hand it to their agency, and the audit is the whole engagement. Some hire me for the fixes as a fixed-price project: the tracking rebuild, the restructure, the landing pages. Some decide the account should be run by the person who read it, and move to <a href="/ppc-management/">month-to-month management</a>, with the audit fee credited in full against the first month. There is no pressure towards the third; the report is written to be useful in the first.</p>
+</div></section>
+
+<section><div class="wrap">
 <h2>Why the audit is paid</h2>
 <p>Free audits are sales documents: they find whatever supports the retainer being sold. A paid audit can say "your agency is doing a good job, here are the three remaining gains" and often does. The price is fixed for your account and set from three things: monthly spend, the number of campaigns, and how many platforms are in scope. Send the form and you get the figure by email within one working day, without a call, and it is credited in full against the first month if management follows. It is the same price whether or not you go on to work with me.</p>
 </div></section>
@@ -240,6 +269,8 @@ PAGES = [
 ("Do I have to hire you afterwards?", "No. Many audits are implemented by the client's own team or their existing agency. The report is written so that it can be."),
 ("Will you tell me if my agency is doing a good job?", "Yes, in writing. I have no retainer to win by criticising them, and a fair audit that confirms the agency is competent is still useful: it tells you where the remaining gains are."),
 ("How long does it take?", "Usually 5 to 7 working days from access, with the walkthrough call in the week after."),
+("Can you audit Microsoft, Meta or LinkedIn as well as Google?", "Yes. Every platform in scope is reviewed with the same method, and the report shows them side by side with the same definition of a conversion, which is usually where the first surprise is."),
+("Do you audit e-commerce accounts?", "Yes: Shopping, Merchant Centre feeds and Performance Max, with brand and returning customers separated from the reported return, and the feed reviewed as part of the account. See <a href=\"/ecommerce-ppc/\">e-commerce PPC</a>."),
 ],
 "related": ["ppc-management", "google-ads-management", "conversion-tracking", "pricing"],
 "cta_title": "Get the audit quoted",

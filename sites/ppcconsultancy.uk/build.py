@@ -14,6 +14,7 @@ from datetime import date
 
 from pages_core import PAGES as CORE
 from pages_services import PAGES as SERVICES
+from pages_expansion import PAGES as EXPANSION
 
 SITE = "https://ppcconsultancy.uk"
 SISTER = "https://googleadsfreelancer.com"  # US/global site; hreflang pairs below
@@ -50,6 +51,7 @@ PROOF_DEFAULT = [("14+", "years in paid media"), ("1", "consultant on your accou
 PROOF_GOOGLE = [("14+", "years in paid media"), ("44%", "lower CPA, Google Ads client case"), ("60%", "more qualified leads, same case"), ("Flat fee", "never a % of ad spend")]
 PROOF_BY_SLUG = {
     "index": PROOF_GOOGLE, "ppc-management": PROOF_GOOGLE, "google-ads-management": PROOF_GOOGLE, "ppc-consultant-london": PROOF_GOOGLE,
+    "ppc-consultant-manchester": PROOF_GOOGLE, "ppc-consultant-birmingham": PROOF_GOOGLE, "ppc-consultant-leeds": PROOF_GOOGLE, "ppc-consultant-bristol": PROOF_GOOGLE,
     "results": None,
     "ppc-audit": [("1", "fixed price, quoted up front"), ("5 to 7", "working days to deliver"), ("0", "obligation afterwards"), ("14+", "years reading accounts")],
     "b2b-ppc": [("Pipeline", "is the number reported"), ("CRM", "stages fed back to the platforms"), ("Named", "accounts and titles on LinkedIn"), ("Flat fee", "never a % of ad spend")],
@@ -132,7 +134,7 @@ FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)retu
            "setTimeout(go,1500);"
            "}).catch(fail);"
            "});})();</script>")
-PAGES = CORE + SERVICES
+PAGES = CORE + SERVICES + EXPANSION
 BY_SLUG = {p["slug"]: p for p in PAGES}
 
 NAV = [
@@ -146,15 +148,24 @@ NAV = [
 ]
 
 FOOTER_GROUPS = [
-    ("Services", ["ppc-management", "google-ads-management", "ppc-audit", "b2b-ppc",
-                  "landing-pages", "conversion-tracking"]),
-    ("Working with me", ["ppc-freelancer", "ppc-consultant-london", "agency-vs-consultant", "pricing", "results", "about", "contact"]),
+    ("Services", ["ppc-management", "google-ads-management", "google-ads-consultant", "ppc-audit", "landing-pages",
+                  "conversion-tracking", "google-ads-small-business", "ecommerce-ppc"]),
+    ("Platforms and sectors", ["facebook-ads-management", "linkedin-ads-management", "microsoft-ads-management", "b2b-ppc",
+                               "saas-ppc", "ppc-for-law-firms", "healthcare-ppc"]),
+    ("Working with me", ["ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "ppc-consultant-manchester",
+                         "ppc-consultant-birmingham", "ppc-consultant-leeds", "ppc-consultant-bristol",
+                         "agency-vs-consultant", "pricing", "results", "about", "contact"]),
 ]
 
 # hreflang pairs: UK page -> equivalent page on the US/global site (None = no equivalent)
 SISTER_PAGES = {
     "index": "/", "ppc-management": "/ppc-management/", "google-ads-management": "/google-ads-management/",
-    "ppc-audit": "/google-ads-audit/", "b2b-ppc": "/linkedin-ads-management/", "landing-pages": None,
+    "ppc-audit": "/google-ads-audit/", "b2b-ppc": "/b2b-ppc/", "landing-pages": "/landing-pages/",
+    "google-ads-consultant": "/google-ads-consultant/", "ecommerce-ppc": "/ecommerce-ppc-management/",
+    "linkedin-ads-management": "/linkedin-ads-management/", "facebook-ads-management": "/meta-ads-management/",
+    "microsoft-ads-management": "/microsoft-ads-management/", "google-ads-small-business": "/small-business-ppc-management/",
+    "ppc-specialist": "/google-ads-expert/", "ppc-for-law-firms": "/ppc-for-law-firms/",
+    "healthcare-ppc": "/healthcare-ppc/", "saas-ppc": "/saas-ppc/",
     "conversion-tracking": "/conversion-tracking-setup/", "pricing": "/pricing/", "results": "/results/",
     "about": "/about/", "contact": "/contact/", "privacy": "/privacy/",
     "ppc-freelancer": "/freelance-ppc-consultant/",
@@ -460,7 +471,7 @@ LLMS_SUMMARY = ("Diego Zietek, independent PPC consultant with 14+ years of hand
 LLMS_FACTS = ["- Market: UK and Irish businesses; the US and Canadian practice is at googleadsfreelancer.com.",
               "- Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).",
               "- Pricing: quoted in pounds, ex VAT, from the form; prices are not published. Never a percentage of ad spend."]
-LLMS_PAGES = ["index", "ppc-management", "ppc-audit", "ppc-freelancer", "ppc-consultant-london", "b2b-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "contact"]
+LLMS_PAGES = ["index", "ppc-management", "google-ads-consultant", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "contact"]
 LLMS_SISTER = "US and Canadian practice, Google Ads freelancer"
 
 def schema_for(p):

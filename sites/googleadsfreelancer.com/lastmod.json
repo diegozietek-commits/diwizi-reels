@@ -3,21 +3,25 @@
   "83b2e51de4c536d2",
   "2026-09-30"
  ],
+ "b2b-ppc": [
+  "4c54360694cd2195",
+  "2026-10-06"
+ ],
  "contact": [
   "dfb761a1a2387367",
   "2026-09-30"
  ],
  "conversion-tracking-setup": [
-  "cf7b1ce91be93650",
-  "2026-09-25"
+  "7c9c96154e90e58a",
+  "2026-10-06"
  ],
  "ecommerce-ppc-management": [
   "59bf2eb2f78a6224",
   "2026-09-30"
  ],
  "freelance-ppc-consultant": [
-  "0d2066afd3525697",
-  "2026-09-30"
+  "d365acd1ac6a4be8",
+  "2026-10-06"
  ],
  "google-ads-audit": [
   "542341fd8ccd67a3",
@@ -27,29 +31,57 @@
   "813bd10a0d0f38b3",
   "2026-09-26"
  ],
+ "google-ads-expert": [
+  "ee4ac6ae9113d25a",
+  "2026-10-06"
+ ],
+ "google-ads-for-dentists": [
+  "13ece9a9805a2aea",
+  "2026-10-06"
+ ],
  "google-ads-management": [
   "d91829d2090b829b",
   "2026-09-30"
  ],
  "google-ads-setup": [
-  "8cde369c9b4fb157",
-  "2026-09-30"
+  "37f0d634a227ab25",
+  "2026-10-06"
+ ],
+ "healthcare-ppc": [
+  "9566eb3d2ca9bfe6",
+  "2026-10-06"
+ ],
+ "home-services-ppc": [
+  "b75bea6365cf1b2a",
+  "2026-10-06"
  ],
  "index": [
-  "b44551bd579017b6",
-  "2026-09-30"
+  "ad34c5d9b6b8f079",
+  "2026-10-06"
+ ],
+ "landing-pages": [
+  "5bfa09f34adf6de0",
+  "2026-10-06"
  ],
  "linkedin-ads-management": [
   "8e9b6c8fbb543c4a",
   "2026-09-25"
  ],
  "meta-ads-management": [
-  "9ebad79030ed1428",
-  "2026-09-25"
+  "9007fcc3c60f18f7",
+  "2026-10-06"
  ],
  "microsoft-ads-management": [
   "41590084ef2c8552",
   "2026-09-30"
+ ],
+ "ppc-consultant-houston": [
+  "260dee6c8930f88c",
+  "2026-10-06"
+ ],
+ "ppc-for-law-firms": [
+  "3bc8751fc1b4e4dd",
+  "2026-10-06"
  ],
  "ppc-management": [
   "5a3445010992cc03",
@@ -64,12 +96,16 @@
   "2026-09-25"
  ],
  "results": [
-  "6f3b44565a304114",
-  "2026-09-30"
+  "adb137aa26421cb9",
+  "2026-10-06"
+ ],
+ "saas-ppc": [
+  "4a48975d71e0d5d5",
+  "2026-10-06"
  ],
  "small-business-ppc-management": [
-  "71fb122797db7cb3",
-  "2026-09-30"
+  "12213ff1bb6acc5d",
+  "2026-10-06"
  ],
  "thanks": [
   "67af87689464f420",
@@ -78,5 +114,9 @@
  "white-label-ppc": [
   "2caa2053feeceaf3",
   "2026-09-25"
+ ],
+ "youtube-ads-management": [
+  "df8c995c3f80e90a",
+  "2026-10-06"
  ]
 }

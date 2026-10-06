@@ -48,7 +48,7 @@ PAGES = [
 <div class="cols">
 <div class="card"><h3>Companies spending $3K to $80K a month</h3><p>Enough for the flat fee to be a small share of the total, and small enough that one senior person can run everything properly. Below that, a setup or audit is the better buy.</p></div>
 <div class="card"><h3>Owners and marketing leads who want the operator</h3><p>You would rather talk to the person in the account than to someone relaying their questions. Reports are written for owners: cost per customer and what changed.</p></div>
-<div class="card"><h3>Lead generation and e-commerce</h3><p>Home services, healthcare, B2B and SaaS, professional services, online stores. Industry-specific pages are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>.</p></div>
+<div class="card"><h3>Lead generation and e-commerce</h3><p><a href="/home-services-ppc/">Home services</a>, <a href="/healthcare-ppc/">healthcare</a>, <a href="/b2b-ppc/">B2B</a> and <a href="/saas-ppc/">SaaS</a>, <a href="/ppc-for-law-firms/">law firms</a> and professional services, <a href="/ecommerce-ppc-management/">online stores</a>. More industry pages are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>.</p></div>
 </div>
 </div></section>
 
@@ -132,11 +132,17 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
+<h2>Consultant, contractor or freelancer</h2>
+<p>Some companies search for a PPC contractor: a specialist hired on a contract for a defined period or scope rather than on an open-ended retainer. The terms here fit that. Management runs month to month with 30 days' notice either way, so a contract of three or six months is simply the same engagement with an end date written in. Project work (an audit, a setup, a tracking rebuild, a set of landing pages) is a fixed price with a defined deliverable. Either way you contract directly with me, not with an agency that assigns someone.</p>
+</div></section>
+
+<section><div class="wrap">
 <h2>What the work has produced</h2>
 <p>For a home services company in Houston, Texas, with roughly $20,000 a month in Google Ads spend, the engagement cut cost per acquisition by 44% and lifted qualified leads by 60% from May 2025 to February 2026, in an auction where the main keywords cost $45 to $80 per click. The methods were not exotic: negatives, a restructure by job type, tracking that separated a booked job from a phone call, and a steady A/B program on ads and pages. For Pontomais, a software startup, sales grew 600% in eight months, mostly from Google Ads. The <a href="/results/">results page</a> lays out all four published engagements and what can and cannot be verified.</p>
 </div></section>
 """,
 "faq": [
+('Can I hire you as a PPC contractor for a fixed period?', 'Yes. A three- or six-month contract is the same month-to-month engagement with an end date written in, and project work is a fixed price with a defined deliverable. You contract directly with me.'),
 ('What does a PPC consultant do?', 'Audits the accounts, decides what to fix first, and then either advises your team or runs the campaigns directly: search terms, bids, budgets, ads, landing pages and the tracking underneath. With an independent consultant, the same person does all of it.'),
 ('Is a PPC consultant the same as a PPC freelancer?', 'Mostly the label. Both are one independent person. "Consultant" leans toward strategy and advice, "freelancer" toward hands-on work in the account. I do both: the audit and the plan, then the weekly work that carries it out.'),
 ('What does a PPC consultant charge?', 'Either a fixed price for a defined piece of work, such as an audit or a rebuild, or a flat monthly retainer for ongoing management. I do not charge a percentage of ad spend. Fees are quoted once I know the account size and platforms, usually from the form alone; the <a href="/pricing/">pricing page</a> explains the models.'),

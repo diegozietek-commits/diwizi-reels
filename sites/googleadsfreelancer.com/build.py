@@ -14,12 +14,18 @@ from datetime import date
 
 from pages_core import PAGES as CORE
 from pages_services import PAGES as SERVICES
+from pages_expansion import PAGES as EXPANSION
 
 SITE = "https://googleadsfreelancer.com"
 SISTER = "https://ppcconsultancy.uk"  # UK site; hreflang pairs below (US page -> UK page)
 SISTER_PAGES = {
     "index": "/", "ppc-management": "/ppc-management/", "google-ads-management": "/google-ads-management/",
-    "google-ads-audit": "/ppc-audit/", "linkedin-ads-management": "/b2b-ppc/",
+    "google-ads-audit": "/ppc-audit/", "linkedin-ads-management": "/linkedin-ads-management/",
+    "google-ads-consultant": "/google-ads-consultant/", "meta-ads-management": "/facebook-ads-management/",
+    "microsoft-ads-management": "/microsoft-ads-management/", "ecommerce-ppc-management": "/ecommerce-ppc/",
+    "small-business-ppc-management": "/google-ads-small-business/", "b2b-ppc": "/b2b-ppc/",
+    "landing-pages": "/landing-pages/", "google-ads-expert": "/ppc-specialist/",
+    "ppc-for-law-firms": "/ppc-for-law-firms/", "healthcare-ppc": "/healthcare-ppc/", "saas-ppc": "/saas-ppc/",
     "conversion-tracking-setup": "/conversion-tracking/", "pricing": "/pricing/", "results": "/results/",
     "about": "/about/", "contact": "/contact/", "privacy": "/privacy/",
     "freelance-ppc-consultant": "/ppc-freelancer/",
@@ -67,7 +73,7 @@ PROOF_DEFAULT = [("14+", "years in paid media"), ("1", "person on your account")
 PROOF_GOOGLE = [("14+", "years in paid media"), ("44%", "lower CPA, Google Ads client case"), ("60%", "more qualified leads, same case"), ("Flat fee", "never a % of ad spend")]
 PROOF_BY_SLUG = {
     "index": PROOF_GOOGLE, "google-ads-management": PROOF_GOOGLE, "freelance-ppc-consultant": PROOF_GOOGLE,
-    "small-business-ppc-management": PROOF_GOOGLE, "results": None, "google-ads-consultant": [("14+", "years in paid media"), ("Read-only", "access is all a review needs"), ("Written", "findings, ranked by impact"), ("Hourly or fixed", "never a % of ad spend")],
+    "small-business-ppc-management": PROOF_GOOGLE, "home-services-ppc": PROOF_GOOGLE, "ppc-consultant-houston": PROOF_GOOGLE, "results": None, "google-ads-consultant": [("14+", "years in paid media"), ("Read-only", "access is all a review needs"), ("Written", "findings, ranked by impact"), ("Hourly or fixed", "never a % of ad spend")],
     "ppc-management": [("4", "platforms, one operator"), ("1", "measurement layer across all"), ("1", "report, in your currency"), ("Flat fee", "never a % of ad spend")],
     "meta-ads-management": [("Pixel + CAPI", "deduplicated events"), ("CRM", "lead quality, not form fills"), ("Scheduled", "creative tests, one control"), ("Flat fee", "never a % of ad spend")],
     "microsoft-ads-management": [("Lower CPC", "than Google, in the accounts I have run"), ("Native", "negatives, bids and schedules"), ("UET", "via Tag Manager, same definitions"), ("Small", "add-on to a Google retainer")],
@@ -133,7 +139,7 @@ FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)retu
            "setTimeout(go,1500);"
            "}).catch(fail);"
            "});})();</script>")
-PAGES = CORE + SERVICES
+PAGES = CORE + SERVICES + EXPANSION
 BY_SLUG = {p["slug"]: p for p in PAGES}
 
 NAV = [
@@ -147,11 +153,13 @@ NAV = [
 ]
 
 FOOTER_GROUPS = [
-    ("Google Ads", ["google-ads-management", "google-ads-consultant", "google-ads-audit",
-                    "google-ads-setup", "conversion-tracking-setup", "ecommerce-ppc-management",
+    ("Google Ads", ["google-ads-management", "google-ads-consultant", "google-ads-expert", "google-ads-audit",
+                    "google-ads-setup", "conversion-tracking-setup", "landing-pages", "ecommerce-ppc-management",
                     "small-business-ppc-management"]),
     ("Other platforms", ["ppc-management", "meta-ads-management", "microsoft-ads-management",
-                         "linkedin-ads-management", "white-label-ppc"]),
+                         "linkedin-ads-management", "youtube-ads-management", "b2b-ppc", "white-label-ppc"]),
+    ("Industries", ["home-services-ppc", "ppc-for-law-firms", "google-ads-for-dentists", "healthcare-ppc", "saas-ppc",
+                    "ppc-consultant-houston"]),
     ("Working with me", ["freelance-ppc-consultant", "pricing", "results", "about", "contact"]),
 ]
 
@@ -444,7 +452,7 @@ LLMS_FACTS = ["- Market: businesses in the United States and Canada; the UK prac
               "- Services: Google Ads management, audits, setup, conversion tracking, consulting, and multi-platform PPC management.",
               "- Fees: a flat monthly fee, never a percentage of ad spend. No long contract.",
               "- Pricing: quoted per account from the form; prices are not published."]
-LLMS_PAGES = ["index", "google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "google-ads-consultant", "pricing", "results", "about", "contact"]
+LLMS_PAGES = ["index", "google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "google-ads-consultant", "google-ads-expert", "b2b-ppc", "saas-ppc", "home-services-ppc", "ppc-for-law-firms", "healthcare-ppc", "pricing", "results", "about", "contact"]
 LLMS_SISTER = "UK practice, prices in pounds"
 
 def schema_for(p):
