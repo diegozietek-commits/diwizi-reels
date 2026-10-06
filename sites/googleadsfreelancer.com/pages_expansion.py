@@ -14,7 +14,7 @@ PAGES = [
 {
 "slug": "b2b-ppc", "short": "B2B PPC", "blurb": "Search for the buyers already looking, LinkedIn for the ones who are not, both judged on pipeline.",
 "title": "B2B PPC Consultant | Google and LinkedIn Ads for Pipeline, Not Leads",
-"meta": "B2B PPC by an independent consultant: Google Search for buyers already looking, LinkedIn for the ones who are not, CRM-connected measurement and reporting in qualified pipeline. Flat fee.",
+"meta": "B2B PPC by an independent consultant: Google Search for buyers already looking, LinkedIn for the rest, CRM-connected and reported in pipeline. Flat fee.",
 "kicker": "B2B PPC",
 "h1": "B2B PPC measured in qualified pipeline, by one consultant across Google, Microsoft and LinkedIn",
 "lead": "B2B accounts fail in a specific way: the platforms are optimizing toward form fills, the sales team is ignoring them, and nobody can say which campaign produced the last closed deal. Connecting the CRM to the ad platforms is most of the job, and it is where a B2B engagement starts here.",
@@ -66,8 +66,8 @@ PAGES = [
 # ---------------------------------------------------------------- Landing pages / CRO
 {
 "slug": "landing-pages", "short": "Landing pages", "blurb": "Pages built by the person running the ads, tested before they go live, and improved from the account data.",
-"title": "PPC Landing Pages | Conversion Rate Optimization by the Ads Consultant",
-"meta": "Landing pages and conversion rate optimization for paid traffic, built and tested by the same consultant who runs the Google, Meta and LinkedIn campaigns. Included in management, or a fixed-price project.",
+"title": "PPC Landing Pages | CRO by the Consultant Who Runs the Ads",
+"meta": "Landing pages and conversion rate optimization for paid traffic, built and tested by the consultant who runs the campaigns. Included in management.",
 "kicker": "Landing pages and CRO",
 "h1": "Landing pages built by the person running the ads, because the page after the click is the largest lever in the account",
 "lead": "Most paid accounts are optimized up to the click and abandoned after it. The ad agency does not own the website; the web agency does not read the ad account. Here the same person does both, so the page is built from the search terms, measured from the first visit and changed from the data.",
@@ -119,7 +119,7 @@ PAGES = [
 {
 "slug": "youtube-ads-management", "short": "YouTube Ads management", "blurb": "Video campaigns inside Google Ads, run for measured demand rather than for views.",
 "title": "YouTube Ads Management | Video Campaigns Measured in Leads and Sales",
-"meta": "YouTube Ads management by an independent Google Ads specialist: in-stream, Shorts and Demand Gen campaigns measured in leads and sales rather than views, run alongside Search in one account.",
+"meta": "YouTube Ads management by an independent Google Ads specialist: in-stream, Shorts and Demand Gen measured in leads and sales, not views.",
 "kicker": "YouTube Ads",
 "h1": "YouTube Ads management for companies that want leads and sales from video, not a report full of views",
 "lead": "YouTube is the cheapest reach in Google Ads and the easiest place to spend without result. Run as part of the Search account, with the same conversion tracking and the same person judging both, video can create the demand Search then captures. Run on its own and measured in views, it rarely pays.",
@@ -164,7 +164,7 @@ PAGES = [
 {
 "slug": "google-ads-expert", "short": "Google Ads expert", "blurb": "What a senior specialist does differently, how to check it before hiring, and how the engagement works.",
 "title": "Google Ads Expert | Senior PPC Specialist, Hired Directly",
-"meta": "Hire a Google Ads expert directly: a senior PPC specialist with 14+ years on the account, working with you instead of through an agency team. Flat fee, never a percentage of spend.",
+"meta": "Hire a Google Ads expert directly: a senior PPC specialist with 14+ years on the account, working with you instead of through an agency. Flat fee.",
 "kicker": "Google Ads expert",
 "h1": "A Google Ads expert with 14+ years on the account, hired directly instead of through an agency",
 "lead": "Expert and specialist are words every agency uses in its pitch. This page sets out what a senior Google Ads specialist actually does differently, how to check it before you hire one, and how the engagement works when the expert is the person you deal with.",
@@ -216,7 +216,7 @@ PAGES = [
 {
 "slug": "ppc-for-law-firms", "short": "PPC for law firms", "blurb": "Google Ads for attorneys: paying for signed clients, not for people comparing fees at $100 a click.",
 "title": "PPC for Law Firms | Google Ads for Attorneys, Run by One Consultant",
-"meta": "PPC for law firms: Google Ads built around practice areas, intake tracked to signed clients, research searches excluded, bar advertising rules respected. Flat fee, never a percentage of spend.",
+"meta": "PPC for law firms: Google Ads by practice area, intake tracked to signed clients, research searches excluded, bar rules respected. Flat fee.",
 "kicker": "PPC for law firms",
 "h1": "PPC for law firms: paying for signed clients, not for people comparing fees at $100 a click",
 "lead": "Legal is the most expensive auction in Google Ads. Personal injury searches in Houston, Dallas or Phoenix average well over $100 a click, and family, immigration and employment searches run from $20 to $80 in most metros. At that price the difference between a firm that profits from Google Ads and one that does not is almost never the bid. It is what gets counted, what gets excluded and the page after the click.",
@@ -275,7 +275,7 @@ PAGES = [
 {
 "slug": "home-services-ppc", "short": "Home services PPC", "blurb": "HVAC, plumbing, roofing, electrical: Google Ads built around booked jobs, with a published case.",
 "title": "Home Services PPC | Google Ads for HVAC, Plumbing & Contractors",
-"meta": "Home services PPC by an independent consultant: Google Ads and Local Services Ads for HVAC, plumbing, roofing and electrical contractors, measured in booked jobs. Published Houston case: 44% lower CPA.",
+"meta": "Home services PPC: Google Ads and Local Services Ads for HVAC, plumbing, roofing and electrical, measured in booked jobs. Houston case: 44% lower CPA.",
 "kicker": "Home services PPC",
 "h1": "Home services PPC measured in booked jobs, with a published HVAC and plumbing case to show the method",
 "lead": "Contractors buy the most expensive local clicks outside legal: $30 to $55 for a plumber or AC repair search in the large Sun Belt metros. The published Houston case on this site cut cost per acquisition by 44% and lifted qualified leads by 60% in that auction. What moved it is on this page.",
@@ -345,7 +345,7 @@ PAGES = [
 {
 "slug": "google-ads-for-dentists", "short": "Google Ads for dentists", "blurb": "Dental practices: new patients by treatment, tracked to the appointment book, inside Google's health rules.",
 "title": "Google Ads for Dentists | New Patients by Treatment, Tracked to the Chair",
-"meta": "Google Ads for dental practices by an independent consultant: campaigns by treatment, calls and bookings tracked to attended appointments, health advertising rules respected. Flat fee.",
+"meta": "Google Ads for dental practices by an independent consultant: campaigns by treatment, tracked to attended appointments, health rules respected.",
 "kicker": "Google Ads for dentists",
 "h1": "Google Ads for dentists measured in new patients in the chair, not in phone clicks",
 "lead": "Dental is one of the most competitive local auctions in healthcare: $12 to $22 a click for a dentist search in the large metros, more for implants and orthodontics. The practices that profit are the ones where the front desk's outcomes reach Google, the campaigns follow the treatments that pay, and the research searches are excluded.",
@@ -402,7 +402,7 @@ PAGES = [
 {
 "slug": "healthcare-ppc", "short": "Healthcare PPC", "blurb": "Clinics, practices and health brands: inquiries that become appointments, within Google's health policies.",
 "title": "Healthcare PPC | Google Ads for Clinics, Practices and Health Brands",
-"meta": "Healthcare PPC by an independent consultant: Google and Meta Ads for clinics, practices and health brands, measured in booked appointments and run within platform health policies. Flat fee.",
+"meta": "Healthcare PPC by an independent consultant: Google and Meta Ads for clinics and health brands, measured in booked appointments, within health policies.",
 "kicker": "Healthcare PPC",
 "h1": "Healthcare PPC measured in booked appointments, run inside the rules the platforms apply to health advertisers",
 "lead": "Healthcare is a crowded auction with its own constraints: restricted remarketing, certification for some categories, claims the FTC and the platforms do not allow, HIPAA, and patients who research for weeks before booking. The accounts that work are the ones where the measurement reaches the appointment book and the campaigns respect the research journey instead of paying for it twice.",
@@ -448,8 +448,8 @@ PAGES = [
 # ---------------------------------------------------------------- SaaS
 {
 "slug": "saas-ppc", "short": "SaaS PPC", "blurb": "Google and LinkedIn Ads for software companies, measured in qualified pipeline and CAC payback, with a published case.",
-"title": "SaaS PPC Consultant | Google & LinkedIn Ads Measured in Pipeline and Payback",
-"meta": "SaaS PPC by an independent consultant: Google Search for buyers already looking, LinkedIn for the ones who are not, CRM-connected measurement and reporting in pipeline and CAC payback. Published case: 600% sales growth.",
+"title": "SaaS PPC Consultant | Google & LinkedIn Ads Measured in Pipeline",
+"meta": "SaaS PPC by an independent consultant: Google and LinkedIn Ads connected to the CRM and reported in pipeline and CAC payback. Published case: 600% growth.",
 "kicker": "SaaS PPC",
 "h1": "SaaS PPC measured in qualified pipeline and CAC payback, by one consultant across Google and LinkedIn",
 "lead": "Software companies have the cleanest data in paid media and often the worst use of it. The CRM knows which trials became customers and what they pay; the ad platforms are optimizing toward sign-ups. Connecting the two is most of the job, and it is where a SaaS account starts here.",
@@ -502,7 +502,7 @@ PAGES = [
 {
 "slug": "ppc-consultant-houston", "short": "PPC consultant, Houston", "blurb": "For Houston businesses, with a published Houston case, delivered remotely on Central time.",
 "title": "PPC Consultant Houston | Google Ads With a Published Houston Case",
-"meta": "Independent PPC consultant for Houston businesses: Google, Microsoft, Meta and LinkedIn Ads run by one senior specialist on Central time, with a published Houston home services case. Flat fee.",
+"meta": "Independent PPC consultant for Houston businesses: Google, Microsoft, Meta and LinkedIn Ads on Central time, with a published Houston case. Flat fee.",
 "kicker": "PPC consultant Houston",
 "h1": "PPC consultant for Houston businesses, with a published Houston case and calls on Central time",
 "lead": "Independent PPC consultant for Houston companies: 14+ years running Google, Microsoft, Meta and LinkedIn Ads, a published Houston HVAC and plumbing case with a 44% lower cost per acquisition, calls on Central time, and a fee that does not carry a Galleria office inside it.",
@@ -580,7 +580,7 @@ PAGES = [
 {
 "slug": "google-ads-consultation", "short": "Google Ads consultation", "blurb": "A one-off working session on your account, with written notes, before or instead of a retainer.",
 "title": "Google Ads Consultation | One-Off PPC Session With Written Notes",
-"meta": "Book a Google Ads consultation: a one-off working session on your Google, Microsoft, Meta or LinkedIn account with a senior independent consultant, with written notes afterwards. Fixed price.",
+"meta": "Book a Google Ads consultation: one working session on your account with a senior independent consultant, written notes afterwards. Fixed price.",
 "kicker": "Google Ads consultation",
 "h1": "A Google Ads consultation: one working session on your account, with written notes, before or instead of a retainer",
 "lead": "Not every account needs an audit or a retainer. Sometimes a business needs a senior person to look at the account for an hour, answer the three questions that have been going around for months, and write down what to do next. That is the consultation, and it is the smallest way to work with me.",

@@ -25,8 +25,8 @@ def cpc_table(city):
 def city_page(slug, city, kicker_city, intro, sectors, cpc_comment, faq_extra, local_note):
     return {
         "slug": slug, "short": f"PPC consultant, {city}", "blurb": f"For {city} businesses, delivered remotely on UK hours.",
-        "title": f"PPC Consultant {city} | Independent PPC Management, No Agency Layer",
-        "meta": f"Independent PPC consultant for {city} businesses: Google, Microsoft, Meta and LinkedIn Ads run by one senior consultant on UK hours. Flat monthly fee, no agency layer.",
+        "title": f"PPC Consultant {city} | Independent, No Agency Layer",
+        "meta": f"Independent PPC consultant for {city} businesses: Google, Microsoft, Meta and LinkedIn Ads run by one senior consultant on UK hours. Flat fee.",
         "kicker": f"PPC consultant {kicker_city}",
         "h1": f"PPC consultant for {city} businesses, working remotely on your hours",
         "lead": f"Independent PPC consultant for {city} firms: 14+ years running Google, Microsoft, Meta and LinkedIn Ads, calls on UK time, everything in writing, and a fee that does not carry an office inside it.",
@@ -97,7 +97,7 @@ PAGES = [
 {
 "slug": "google-ads-consultant", "short": "Google Ads consultant", "blurb": "Strategy, a second opinion or a full review of the account, from the person who would run it.",
 "title": "Google Ads Consultant UK | Independent, 14+ Years on the Account",
-"meta": "Independent Google Ads consultant for UK businesses: account reviews, strategy and hands-on fixes from one senior specialist, not an agency team. Quoted in pounds.",
+"meta": "Independent Google Ads consultant for UK businesses: reviews, strategy and hands-on fixes from one senior specialist, not an agency team. In pounds.",
 "kicker": "Google Ads consultant",
 "h1": "A Google Ads consultant who has run accounts for 14+ years, hired directly instead of through an agency",
 "lead": "Consulting for UK businesses that want a senior person to look at the Google Ads account, say what is wrong in writing and fix it, or to stay on as the person running it. One consultant, no handover to a junior.",
@@ -153,8 +153,8 @@ PAGES = [
 # ---------------------------------------------------------------- E-commerce PPC
 {
 "slug": "ecommerce-ppc", "short": "E-commerce PPC", "blurb": "Shopping, Performance Max and Meta for online stores, measured on margin and new customers.",
-"title": "Ecommerce PPC Agency Alternative UK | Shopping & Performance Max by One Consultant",
-"meta": "E-commerce PPC for UK online stores: Google Shopping, Merchant Centre feeds, Performance Max and Meta run by one senior consultant, judged on margin rather than platform ROAS.",
+"title": "Ecommerce PPC UK | Shopping & Performance Max by One Consultant",
+"meta": "E-commerce PPC for UK online stores: Shopping, Merchant Centre feeds, Performance Max and Meta by one consultant, judged on margin, not platform ROAS.",
 "kicker": "E-commerce PPC",
 "h1": "E-commerce PPC that reports margin and new customers, not the ROAS the platform awards itself",
 "lead": "Google Shopping, Performance Max, Search and Meta for UK online stores, run by one consultant who reconciles platform-reported revenue against the store's own orders every month. Flat fee, no percentage of spend.",
@@ -206,7 +206,7 @@ PAGES = [
 {
 "slug": "linkedin-ads-management", "short": "LinkedIn Ads management", "blurb": "B2B campaigns judged on pipeline, not on clicks at £10 each.",
 "title": "LinkedIn Ads Management UK | B2B Campaigns Measured in Pipeline",
-"meta": "LinkedIn Ads management by an independent B2B consultant in the UK: account targeting, offer-led creative and CRM-connected measurement, for a flat monthly fee.",
+"meta": "LinkedIn Ads management by an independent B2B consultant in the UK: account targeting, offer-led creative and CRM-connected measurement. Flat fee.",
 "kicker": "LinkedIn Ads",
 "h1": "LinkedIn Ads management for UK companies that need pipeline, not impressions among the right job titles",
 "lead": "LinkedIn is the only platform where a buying committee can be named by title, seniority, company size and industry. It is also the most expensive click in paid media, which means the offer, the measurement and the follow-up matter more than anywhere else.",
@@ -257,7 +257,7 @@ PAGES = [
 {
 "slug": "facebook-ads-management", "short": "Facebook Ads management", "blurb": "Facebook and Instagram ads run by one specialist, measured against the CRM or the store's orders.",
 "title": "Facebook Ads Management UK | Meta Ads by an Independent Specialist",
-"meta": "Facebook and Instagram ads for UK businesses run by one independent specialist: Conversions API, structured creative tests and results measured in the CRM or the store's orders. Flat fee.",
+"meta": "Facebook and Instagram ads for UK businesses by one independent specialist: Conversions API, structured creative tests, results measured in the CRM.",
 "kicker": "Facebook and Instagram Ads",
 "h1": "Facebook Ads management by a specialist who also runs your Google Ads, so the two are judged on the same numbers",
 "lead": "Meta campaigns for UK businesses that sell through enquiries and for online stores: Pixel plus Conversions API, deduplicated; creative tests on a schedule with one control; and lead quality or new-customer orders as the number reported, not the platform's own attribution.",
@@ -306,7 +306,7 @@ PAGES = [
 {
 "slug": "microsoft-ads-management", "short": "Microsoft Ads management", "blurb": "Bing Ads managed natively, not left as a stale import of the Google account.",
 "title": "Microsoft Advertising Management UK | Bing Ads Managed Properly",
-"meta": "Microsoft Advertising (Bing Ads) management for UK businesses by an independent consultant: imported from Google, then run natively with its own negatives, bids and tracking.",
+"meta": "Microsoft Advertising (Bing Ads) management for UK businesses: imported from Google, then run natively with its own negatives, bids and tracking.",
 "kicker": "Microsoft Advertising",
 "h1": "Microsoft Advertising management: the cheaper click most UK accounts import once and forget",
 "lead": "Bing, Yahoo, DuckDuckGo, Copilot and the Microsoft partner network reach a UK audience that skews older, professional and on a work laptop. In the accounts I have run, the same conversion has often cost noticeably less there than on Google. The catch is that it has to be managed, not just imported.",
@@ -350,7 +350,7 @@ PAGES = [
 {
 "slug": "google-ads-small-business", "short": "Google Ads for small business", "blurb": "Right-sized Google Ads for small UK companies: a setup you run yourself, an audit, or lean management.",
 "title": "Google Ads for Small Business UK | PPC Sized to the Budget",
-"meta": "Google Ads for small businesses in the UK: a fixed-price setup you run yourself, an honest audit, or lean flat-fee management by one senior consultant. No percentage of spend.",
+"meta": "Google Ads for small businesses in the UK: a fixed-price setup you run yourself, an honest audit, or lean flat-fee management by one senior consultant.",
 "kicker": "Small business PPC",
 "h1": "Google Ads for small businesses, sized to the budget instead of to an agency minimum",
 "lead": "Most UK agencies will not take an account under a few thousand pounds a month, and the ones that do assign it to the newest hire. This is the alternative: a senior consultant, a service matched to the spend, and a fee that is a flat number rather than a share of your budget.",
@@ -406,7 +406,7 @@ PAGES = [
 {
 "slug": "ppc-specialist", "short": "PPC specialist", "blurb": "A senior specialist on the account, not an agency team: what that means in practice and how to check it.",
 "title": "PPC Specialist UK | Senior Google Ads Expert, Hired Directly",
-"meta": "Hire a senior PPC specialist in the UK: 14+ years on Google, Microsoft, Meta and LinkedIn Ads, working directly with you instead of through an agency. Flat fee, quoted in pounds.",
+"meta": "Hire a senior PPC specialist in the UK: 14+ years on Google, Microsoft, Meta and LinkedIn Ads, working directly with you instead of through an agency.",
 "kicker": "PPC specialist",
 "h1": "A PPC specialist with 14+ years on the account, hired directly instead of through an agency",
 "lead": "Specialist and expert are words every agency uses in its pitch. This page sets out what a senior PPC specialist actually does differently, how to check it before you hire one, and how the engagement works when the specialist is the person you deal with.",
@@ -457,8 +457,8 @@ PAGES = [
 # ---------------------------------------------------------------- Law firms
 {
 "slug": "ppc-for-law-firms", "short": "PPC for law firms", "blurb": "Google Ads for solicitors: paying for instructions, not for people comparing fees.",
-"title": "PPC for Law Firms UK | Google Ads for Solicitors, Run by One Consultant",
-"meta": "PPC for UK law firms and solicitors: Google Ads built around practice areas, enquiries counted as instructions, research searches excluded, SRA rules respected. Flat fee, no percentage of spend.",
+"title": "PPC for Law Firms UK | Google Ads for Solicitors, One Consultant",
+"meta": "PPC for UK law firms: Google Ads by practice area, enquiries counted as instructions, research searches excluded, SRA rules respected. Flat fee.",
 "kicker": "PPC for law firms",
 "h1": "PPC for law firms: paying for instructions, not for people comparing fees at £15 a click",
 "lead": "Legal is one of the most expensive auctions in the UK. Employment, conveyancing, family and personal injury searches cost from several pounds to well over £15 a click in the large cities. At that price, the difference between a firm that profits from Google Ads and one that does not is almost never the bid. It is what gets counted, what gets excluded and the page after the click.",
@@ -517,7 +517,7 @@ PAGES = [
 {
 "slug": "healthcare-ppc", "short": "Healthcare PPC", "blurb": "Private clinics, dental and healthcare brands: enquiries that become appointments, within Google's health policies.",
 "title": "Healthcare PPC UK | Google Ads for Private Clinics and Health Brands",
-"meta": "Healthcare PPC for UK private clinics, dental practices and health brands: Google and Meta Ads measured in booked appointments, run within platform health policies by one senior consultant.",
+"meta": "Healthcare PPC for UK private clinics, dental practices and health brands: Google and Meta Ads measured in booked appointments, within health policies.",
 "kicker": "Healthcare PPC",
 "h1": "Healthcare PPC measured in booked appointments, run inside the rules the platforms apply to health advertisers",
 "lead": "Private healthcare is a crowded UK auction with its own constraints: restricted remarketing, certification for some categories, claims the ASA and the CAP Code do not allow, and patients who research for weeks before booking. The accounts that work are the ones where the measurement reaches the appointment book and the campaigns respect the research journey instead of paying for it twice.",
@@ -563,7 +563,7 @@ PAGES = [
 {
 "slug": "saas-ppc", "short": "SaaS PPC", "blurb": "Google and LinkedIn Ads for software companies, measured in qualified pipeline and payback, not sign-ups.",
 "title": "SaaS PPC Consultant UK | Google & LinkedIn Ads Measured in Pipeline",
-"meta": "SaaS PPC for UK and Irish software companies: Google Search for buyers already looking, LinkedIn for the ones who are not, CRM-connected measurement and reporting in pipeline and CAC payback.",
+"meta": "SaaS PPC for UK and Irish software companies: Google and LinkedIn Ads connected to the CRM and reported in pipeline and CAC payback. Flat fee.",
 "kicker": "SaaS PPC",
 "h1": "SaaS PPC measured in qualified pipeline and payback, by one consultant across Google and LinkedIn",
 "lead": "Software companies have the cleanest data in paid media and often the worst use of it. The CRM knows which trials became customers and what they pay; the ad platforms are optimising towards sign-ups. Connecting the two is most of the job, and it is where a SaaS account starts here.",
@@ -657,7 +657,7 @@ city_page(
 {
 "slug": "ppc-consultation", "short": "PPC consultation", "blurb": "A one-off working session on your account, with written notes, before or instead of a retainer.",
 "title": "PPC Consultation UK | One-Off Google Ads Session With Written Notes",
-"meta": "Book a PPC consultation: a one-off working session on your Google, Microsoft, Meta or LinkedIn account with a senior UK-facing consultant, with written notes afterwards. Fixed price in pounds.",
+"meta": "Book a PPC consultation: one working session on your account with a senior consultant on UK hours, written notes afterwards. Fixed price in pounds.",
 "kicker": "PPC consultation",
 "h1": "A PPC consultation: one working session on your account, with written notes, before or instead of a retainer",
 "lead": "Not every account needs an audit or a retainer. Sometimes a business needs a senior person to look at the account for an hour, answer the three questions that have been going round for months, and write down what to do next. That is the consultation, and it is the smallest way to work with me.",
