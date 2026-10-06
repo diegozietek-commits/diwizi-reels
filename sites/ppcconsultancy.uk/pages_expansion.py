@@ -652,7 +652,7 @@ city_page(
     "<p>Bristol is the most expensive city in the table for financial advice, at £23.98, ahead of London. For solicitors and web design it is among the cheapest, close to Leeds. Accountancy sits above Manchester and Birmingham. The spread shows why a budget set from a national average goes wrong, and why an <a href=\"/ppc-audit/\">audit</a> starts by pricing your own auction.</p>",
     [("Do you cover Bath and the wider South West?", "Yes: Bath, Weston-super-Mare, Gloucester, Cheltenham, Swindon and across to Cardiff and Newport, with location targeting and bids set to how your business actually serves each area.")],
     "<p>For a Bristol engineering supplier, the same three moves mean splitting specification searches from generic ones, counting a quote request rather than a visit, and feeding won quotes back from the CRM so Google learns which clicks became orders.</p>",
-),,
+),
 # ---------------------------------------------------------------- PPC consultation (one-off session)
 {
 "slug": "ppc-consultation", "short": "PPC consultation", "blurb": "A one-off working session on your account, with written notes, before or instead of a retainer.",
