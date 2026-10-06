@@ -187,5 +187,12 @@
   "angle": "MONEY",
   "audio_variant": 26,
   "note": "MONEY pillar (wheel slot 6/20, n=26). Angle: reconcile platform-reported conversions/revenue against real paid, non-refunded orders or booked jobs; the gap is where budget decisions go wrong. Hypothetical 100 vs 60, no stats. Voice n%5=1 FIRST PERSON (3 hits, 0 we/our/us). Conversation day (Mon). LI post M9t14E7, org 28874141. Unused angles: unqualified form fills as conversions, refunds/returns in ROAS."
+ },
+ {
+  "slug": "offer-mortgage-broker-ppc",
+  "date": "2026-10-06",
+  "angle": "COMMERCIAL",
+  "audio_variant": 27,
+  "note": "NICHE: real estate and mortgage. Angle: PROBLEM FIRST (Oct 3 was what-is-included). Stride: n=27, (27*13)%33 = 21 -> mortgage-broker-ppc, unused, no stepping; gcd(13,33)=1 re-confirmed. Voice n=27, n%5=2, FIRST PERSON: 4 hits, zero we/our/us. FIRST NICHE-PROBLEM POST (Diego, 2026-10-05). Opens on the owner's problem in their words with no advertising vocabulary in the first line: lead count up, funded volume flat. Then mechanics (rate shoppers convert on forms and close badly; loan types averaged into one pot), then the fix (funded loans as the bid signal, outcomes exported from CRM or LOS), then what I do in first person, then the non-fit from the page's own 'Not a fit': a broker without a licensed team to handle leads as they arrive. No figures used. NICHE ROTATION, how to run it next time. The four surfaces map like this in PostProxy: Diwizi profile = profile_id BmUbaA (no organization_id); Diwizi Company Page = j3UKQQ + org 28874141; Google Ads Freelancer = j3UKQQ + org 145279219; PPC Consultancy UK = j3UKQQ + org 145259250. Also present but NOT one of the four: org 145278936 (a jobs page), org 112255361 (WFA Company Page), zkUW2O (WFA LinkedIn), ZDUr85 and AnUeOa (Instagram), v2Uk1v (Facebook, two pages). Real estate and mortgage was clear on both windows: zero hits across the four surfaces in 3 days and none on this page in 21 days. Note the Diwizi profile published a LEGAL niche post on 10-06, so legal was blocked today; home services was used here on 10-03. Keyword matching is noisy (the word 'practice' trips healthcare, 'broker' trips mortgage), so read the actual first lines rather than trusting the regex. LinkedIn M9t17MJ, org 28874141, text only, media key absent and asserted. Container was FRESH this run: repo had to be cloned again and /workspace/diwizi-reels symlinked. Next commercial angle: who it fits."
  }
 ]
