@@ -17,6 +17,11 @@ of it on `domain_analytics/whois/overview` with large filtered queries. Rules:
   (about US$ 0.02 per request for many targets) before per-domain `backlinks/backlinks`.
 - SERP live (US$ 0.002), `on_page/instant_pages` (US$ 0.00015) and screenshots are cheap; no need to ration.
 - `appendix/user_data` is free and shows the balance.
+- Through the MCP, call `search_volume` with `noAiMode: true` from the start: the compact mode returns only 10
+  items, and repeating the request costs the full US$ 0.09 again. Parse the saved file with Python.
+- Search Console: the service account in `GOOGLE_SEARCH_CONSOLE_KEY` reads both properties (and diwizi.com,
+  diwizi.com.br, bigworldjobs.com, wfadigital.com, trutek.com.br). Use it from a venv (the system `cryptography`
+  is broken); never print the key.
 
 ## Automated tests of the sites
 
