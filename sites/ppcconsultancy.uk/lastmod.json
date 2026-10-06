@@ -19,9 +19,29 @@
   "7bb0e1347dcd1131",
   "2026-09-25"
  ],
+ "ecommerce-ppc": [
+  "7277d6fabb9ba3b3",
+  "2026-10-06"
+ ],
+ "facebook-ads-management": [
+  "136f552b3c2ad726",
+  "2026-10-06"
+ ],
+ "google-ads-consultant": [
+  "83a05e9edbc52b52",
+  "2026-10-06"
+ ],
  "google-ads-management": [
   "073cf9f27a1a0f9d",
   "2026-09-30"
+ ],
+ "google-ads-small-business": [
+  "be47e0ddac2956fd",
+  "2026-10-06"
+ ],
+ "healthcare-ppc": [
+  "3941969b2d2dd411",
+  "2026-10-06"
  ],
  "index": [
   "82745ab7ff0c3557",
@@ -31,13 +51,41 @@
   "0906d399ca8b149d",
   "2026-09-25"
  ],
+ "linkedin-ads-management": [
+  "de2f7aec1f3ae8fa",
+  "2026-10-06"
+ ],
+ "microsoft-ads-management": [
+  "f52e5828714504ac",
+  "2026-10-06"
+ ],
  "ppc-audit": [
-  "784d15d454d1618c",
-  "2026-09-30"
+  "1e286efaf6b4d687",
+  "2026-10-06"
+ ],
+ "ppc-consultant-birmingham": [
+  "c93e9b055eae44ed",
+  "2026-10-06"
+ ],
+ "ppc-consultant-bristol": [
+  "917cd7b80c37499b",
+  "2026-10-06"
+ ],
+ "ppc-consultant-leeds": [
+  "94f27c21ff597524",
+  "2026-10-06"
  ],
  "ppc-consultant-london": [
   "48f2bb9bac28c32e",
   "2026-09-30"
+ ],
+ "ppc-consultant-manchester": [
+  "ed2883ed498c8f29",
+  "2026-10-06"
+ ],
+ "ppc-for-law-firms": [
+  "95e005f668dcc483",
+  "2026-10-06"
  ],
  "ppc-freelancer": [
   "5dd7558621067aff",
@@ -46,6 +94,10 @@
  "ppc-management": [
   "804856d0b86996e8",
   "2026-09-30"
+ ],
+ "ppc-specialist": [
+  "4ff6aa5c8dc9d25b",
+  "2026-10-06"
  ],
  "pricing": [
   "62eae359a3e19ea2",
@@ -58,6 +110,10 @@
  "results": [
   "9387bf5f2cba48f5",
   "2026-09-25"
+ ],
+ "saas-ppc": [
+  "47238bdc88bb9a43",
+  "2026-10-06"
  ],
  "thanks": [
   "4e154c0fe7bf952a",

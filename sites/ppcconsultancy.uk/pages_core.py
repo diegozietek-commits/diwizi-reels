@@ -57,11 +57,11 @@ PAGES = [
 <section><div class="wrap">
 <h2>Industries where the pattern recognition is already built</h2>
 <div class="cols">
-<div class="card"><h3>B2B and SaaS</h3><p>Trial-to-paid and demo funnels, LinkedIn alongside search, CRM stages fed back to the platforms so they optimise towards pipeline rather than form fills. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
-<div class="card"><h3>Professional and financial services</h3><p>Law firms, accountants, advisers and consultancies: expensive clicks, long consideration, and a compliance layer on what an ad can say. Enquiry quality is the whole game.</p></div>
-<div class="card"><h3>Healthcare and regulated categories</h3><p>Fourteen years that include senior in-house healthcare work and a freelance role with a US pharmaceutical agency. Policy restrictions, certification and sensitive-category rules are familiar ground.</p></div>
+<div class="card"><h3><a href="/saas-ppc/">B2B and SaaS</a></h3><p>Trial-to-paid and demo funnels, LinkedIn alongside search, CRM stages fed back to the platforms so they optimise towards pipeline rather than form fills. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
+<div class="card"><h3><a href="/ppc-for-law-firms/">Professional and financial services</a></h3><p>Law firms, accountants, advisers and consultancies: expensive clicks, long consideration, and a compliance layer on what an ad can say. Enquiry quality is the whole game.</p></div>
+<div class="card"><h3><a href="/healthcare-ppc/">Healthcare and regulated categories</a></h3><p>Fourteen years that include senior in-house healthcare work and a freelance role with a US pharmaceutical agency. Policy restrictions, certification and sensitive-category rules are familiar ground.</p></div>
 <div class="card"><h3>Home and trade services</h3><p>Emergency versus planned work, call tracking that separates a booked job from a ring, and bidding by postcode and hour. The Houston case above is this pattern.</p></div>
-<div class="card"><h3>Online retail</h3><p>Shopping and Performance Max measured on margin and new customers, with platform-reported revenue reconciled against the store's own orders.</p></div>
+<div class="card"><h3><a href="/ecommerce-ppc/">Online retail</a></h3><p>Shopping and Performance Max measured on margin and new customers, with platform-reported revenue reconciled against the store's own orders.</p></div>
 </div>
 <p>Industry pages with more detail are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, the same practice organised by sector.</p>
 </div></section>

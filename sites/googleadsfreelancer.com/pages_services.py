@@ -174,10 +174,10 @@ PAGES = [
 
 {
 "slug": "meta-ads-management", "short": "Meta Ads management", "blurb": "Facebook and Instagram ads run by a freelance specialist, measured against the CRM.",
-"title": "Meta Ads Management | Freelance Facebook & Instagram Specialist",
+"title": "Facebook Ads Management | Meta & Instagram by a Freelance Specialist",
 "meta": 'Facebook and Instagram ads run by an independent specialist: Conversions API, structured creative tests and lead quality measured in your CRM. Flat fee.',
 "kicker": "Meta Ads",
-"h1": "Meta Ads management by a freelance specialist who also runs your Google Ads",
+"h1": "Facebook and Instagram Ads management by a freelance specialist who also runs your Google Ads",
 "lead": "Facebook and Instagram campaigns for lead generation and e-commerce, with tracking that survives iOS and ad blockers, a creative testing programme that produces winners on a schedule, and results judged on what the leads became.",
 "service_name": "Meta Ads management",
 "body": """
@@ -369,11 +369,11 @@ PAGES = [
 },
 
 {
-"slug": "small-business-ppc-management", "short": "Small business PPC", "blurb": "Right-sized Google Ads for local and small companies: a setup you run yourself, an audit, or management.",
-"title": "Small Business PPC Management | Google Ads for Local Companies",
+"slug": "small-business-ppc-management", "short": "Google Ads for small business", "blurb": "Right-sized Google Ads for local and small companies: a setup you run yourself, an audit, or management.",
+"title": "Google Ads for Small Business | PPC Management Sized to the Budget",
 "meta": 'PPC for small and local businesses: a fixed-price setup you run yourself, an honest audit or a lean flat-fee retainer. No percentage of spend.',
 "kicker": "Small business PPC",
-"h1": "Small business PPC management, sized to the budget instead of to an agency minimum",
+"h1": "Google Ads for small business, sized to the budget instead of to an agency minimum",
 "lead": "For local and small companies spending a few thousand a month, the usual choice is a marketplace freelancer at one end and an agency with a minimum retainer at the other. There is a middle: a senior specialist, a lean scope and a fee that makes sense for the spend.",
 "service_name": "Small business PPC management",
 "body": """
@@ -475,10 +475,10 @@ PAGES = [
 
 {
 "slug": "conversion-tracking-setup", "short": "Conversion tracking", "blurb": "GA4, Tag Manager, enhanced and offline conversions: one source of truth.",
-"title": "Conversion Tracking Setup | Google Ads, GA4, GTM & Offline",
+"title": "GA4 & Google Tag Manager Consultant | Conversion Tracking Setup",
 "meta": 'Conversion tracking set up or repaired for Google Ads, Meta and LinkedIn: GA4, Tag Manager, enhanced conversions, consent mode and CRM import. Fixed price.',
 "kicker": "Conversion tracking",
-"h1": "Conversion tracking setup: one number per real outcome, and the platforms optimising towards it",
+"h1": "Conversion tracking setup by a GA4 and Tag Manager consultant: one number per real outcome, and the platforms optimizing toward it",
 "lead": "If the conversion data is wrong, every bidding decision inherits the error. This is a fixed-price project to make Google Ads, GA4, Meta, LinkedIn and your CRM agree on what a customer is, and to keep them agreeing.",
 "service_name": "Conversion tracking setup",
 "proof": [("1", "source of truth"), ("0", "double-counted leads"), ("Fixed", "price, quoted up front"), ("GA4 + GTM", "plus CAPI and offline import")],
