@@ -344,7 +344,7 @@ PAGES = [
 # ---------------------------------------------------------------- Dentists
 {
 "slug": "google-ads-for-dentists", "short": "Google Ads for dentists", "blurb": "Dental practices: new patients by treatment, tracked to the appointment book, inside Google's health rules.",
-"title": "Google Ads for Dentists | New Patients by Treatment, Tracked to the Chair",
+"title": "Google Ads for Dentists | New Patients, Tracked to the Chair",
 "meta": "Google Ads for dental practices by an independent consultant: campaigns by treatment, tracked to attended appointments, health rules respected.",
 "kicker": "Google Ads for dentists",
 "h1": "Google Ads for dentists measured in new patients in the chair, not in phone clicks",
