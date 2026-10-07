@@ -449,7 +449,7 @@ PAGES = [
 {
 "slug": 'contact',
 "short": 'Contact',
-"blurb": 'The form or an email, both answered by the consultant.',
+"blurb": 'Book a call, send the form or write an email. All three reach the same person.',
 "title": 'Contact | PPC Consultancy UK, Quotes in Pounds Within One Working Day',
 "meta": 'Send your spend, site and what is going wrong. Diego Zietek replies personally within one working day, often the same day, with a range in pounds, ex VAT.',
 "kicker": 'Contact',

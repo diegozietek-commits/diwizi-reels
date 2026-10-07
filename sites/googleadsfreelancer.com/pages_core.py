@@ -450,7 +450,7 @@ PAGES = [
 },
 
 {
-"slug": "contact", "short": "Contact", "blurb": "Send the form or an email. Both reach the same person.",
+"slug": "contact", "short": "Contact", "blurb": "Book a call, send the form or write an email. All three reach the same person.",
 "title": "Contact | Get a Quote From a Google Ads Freelancer",
 "meta": 'Send your spend band, site and what is not working. Diego Zietek replies personally with a straight answer and a price range. No sales sequence.',
 "kicker": "Contact",

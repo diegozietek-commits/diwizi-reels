@@ -43,9 +43,10 @@ def hreflang_html(slug):
             f'<link rel="alternate" hreflang="x-default" href="{here}">')
 NAME = "Diego Zietek"
 BRAND = "Google Ads Freelancer"
-CAL_EVENT_SLUG = "google-ads-call"  # create this event type on Cal.com under the diwizi account
-CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # kept for reference; no longer linked from the site
-FORM_URL = "/contact/#form"  # every CTA points at the lead form
+CAL_EVENT_SLUG = "google-ads-call"  # event type on Cal.com under the diwizi account; checked 200 before deploy
+CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # "Book a call": primary CTA; opens the embed modal when loaded, else a new tab
+CAL_LINK_ATTRS = 'target="_blank" rel="noopener"'  # every Cal.com link carries these so the no-embed fallback opens a new tab
+FORM_URL = "/contact/#form"  # "Get a quote": secondary CTA, the lead form
 # Web3Forms access key (account: the hello@ inbox below). Public by design: it only allows sending to that inbox.
 WEB3FORMS_KEY = "a8247bcb-2a34-4f73-a97e-877bfef2b8cb"
 FORM_ENDPOINT = "https://api.web3forms.com/submit"
@@ -287,7 +288,7 @@ def mobile_menu_html():
         lis = "".join(f'<li><a href="{url_for(s)}">{esc(BY_SLUG[s]["short"])}</a></li>' for s in slugs)
         groups.append(f"<div><h4>{title}</h4><ul>{lis}</ul></div>")
     return ('<details class="mmenu"><summary aria-label="Menu">Menu</summary><div class="mmenu-panel">'
-            + "".join(groups) + f'<p><a class="btn" href="{FORM_URL}">Get a quote</a></p></div></details>')
+            + "".join(groups) + f'<p class="cta-row"><a class="btn" href="{CAL}" {CAL_LINK_ATTRS}>Book a call</a><a class="btn ghost" href="{FORM_URL}">Get a quote</a></p></div></details>')
 
 
 def email_link(pre="", cls=""):
@@ -327,7 +328,7 @@ def footer_html():
         lis = "".join(f'<li><a href="{url_for(s)}">{esc(BY_SLUG[s]["short"])}</a></li>' for s in slugs)
         groups.append(f"<div><h4>{title}</h4><ul>{lis}</ul></div>")
     groups.append(
-        f'<div><h4>Contact</h4><ul><li><a href="{FORM_URL}">Get a quote</a></li>'
+        f'<div><h4>Contact</h4><ul><li><a href="{CAL}" {CAL_LINK_ATTRS}>Book a call</a></li><li><a href="{FORM_URL}">Get a quote</a></li>'
         f'<li>{email_link()}</li>'
         f'<li><a class="li-in" href="{LINKEDIN_URL}" rel="me noopener" target="_blank" aria-label="{BRAND} on LinkedIn">{LINKEDIN_ICON}<span>LinkedIn</span></a></li>'
         f'<li><a href="{PARENT}" rel="noopener">Diwizi (industry pages)</a></li></ul></div>'
@@ -393,7 +394,8 @@ def cta_html(p):
         '<div class="wrap"><div class="ctabox"><h2>' + esc(p.get("cta_title", "Tell me about the account")) +
         "</h2><p>" + p.get("cta_text", "Spend band, site and what is not working. You get a straight answer on whether I can help, "
         "what I would do first and a price range. No proposal deck, no sales follow-up sequence.") +
-        "</p>" + (f'<div class="cta-row">{email_link("Email ", "btn ghost")}</div>' if p.get("no_form") else form_html(slug)) + "</div></div>"
+        "</p>" + (f'<div class="cta-row">{email_link("Email ", "btn ghost")}</div>' if p.get("no_form") else
+                  f'<div class="cta-row"><a class="btn" href="{CAL}" {CAL_LINK_ATTRS}>Book a call</a><span class="form-note">Prefer to write? Use the form below.</span></div>' + form_html(slug)) + "</div></div>"
     )
 
 
@@ -542,7 +544,7 @@ def render(p):
 <header class="top"><div class="wrap">
 <a class="logo" href="/">google<span>ads</span>freelancer</a>
 <nav class="main" aria-label="Main">{nav_html(slug)}</nav>
-<a class="btn top-cta" href="{FORM_URL}">Get a quote</a>
+<a class="btn top-cta" href="{CAL}" {CAL_LINK_ATTRS}>Book a call</a>
 {mobile_menu_html()}
 </div></header>
 <main>
@@ -551,7 +553,7 @@ def render(p):
 <div class="hero-grid"><div>
 <h1>{p['h1']}</h1>
 <p class="lead">{p['lead']}</p>
-<div class="cta-row"><a class="btn" href="{"#form" if slug == "contact" else FORM_URL}">Get a quote</a><a class="btn ghost" href="{'#services' if slug == 'index' else ('/#services' if slug == 'pricing' else '/pricing/')}">View services &amp; pricing</a></div>
+{'<div class="cta-row"><a class="btn" href="' + CAL + '" ' + CAL_LINK_ATTRS + '>Book a call</a><span class="form-note">Prefer to write? Use the form below.</span>' if slug == "contact" else '<div class="cta-row"><a class="btn" href="' + CAL + '" ' + CAL_LINK_ATTRS + '>Book a call</a><a class="btn ghost" href="' + FORM_URL + '">Get a quote</a>'}{'' if slug == "contact" else '<a class="btn ghost" href="' + ('#services' if slug == 'index' else ('/#services' if slug == 'pricing' else '/pricing/')) + '">View services &amp; pricing</a>'}</div>
 </div>{('<img src="/diego.jpg" alt="' + NAME + ', independent Google Ads consultant" width="340" height="425" loading="eager">') if (PHOTO and slug == 'about') else ''}</div>
 {('<div class="proof">' + proof_html + '</div>') if proof_html else ''}
 </div></section>
@@ -562,6 +564,7 @@ def render(p):
 </main>
 {footer_html()}
 {EMAIL_JS}{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}
+<script id="cal-embed">(function(){{var EV='diwizi/google-ads-call',NS='gaf',pronto=false,pedido=false;function carregar(){{if(pedido)return;pedido=true;try{{(function(C,A,L){{var p=function(a,ar){{a.q.push(ar)}},d=C.document;C.Cal=C.Cal||function(){{var cal=C.Cal,ar=arguments;if(!cal.loaded){{cal.ns={{}};cal.q=cal.q||[];var s=d.createElement('script');s.src=A;s.async=true;s.onload=function(){{pronto=true}};d.head.appendChild(s);cal.loaded=true}}if(ar[0]===L){{var api=function(){{p(api,arguments)}},ns=ar[1];api.q=api.q||[];if(typeof ns==='string'){{cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,['initNamespace',ns])}}else p(cal,ar);return}}p(cal,ar)}}}})(window,'https://app.cal.com/embed/embed.js','init');Cal('init',NS,{{origin:'https://app.cal.com'}});Cal.ns[NS]('ui',{{layout:'month_view'}});Cal.ns[NS]('on',{{action:'bookingSuccessfulV2',callback:function(e){{marcar((e&&e.detail&&e.detail.data)||{{}})}}}});}}catch(x){{}}}}function marcar(d){{try{{var id=d.uid||d.bookingUid||'',k=NS+'_call_'+(id||'sessao'),ja=false;try{{ja=!!(sessionStorage.getItem(k)||(id&&localStorage.getItem(k)))}}catch(e){{}}if(ja)return;(window.dataLayer=window.dataLayer||[]).push({{event:'booking_confirmed',booking_source:'cal.com',booking_uid:id,lead_page:location.pathname}});try{{sessionStorage.setItem(k,'1');if(id)localStorage.setItem(k,'1')}}catch(e){{}}}}catch(e){{}}}}function link(t){{return t&&t.closest?t.closest('a[href^="https://cal.com/diwizi/"]'):null}}document.addEventListener('click',function(e){{var a=link(e.target);if(!a||!pronto||e.defaultPrevented||e.button||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;try{{Cal.ns[NS]('modal',{{calLink:EV,config:{{layout:'month_view'}}}});e.preventDefault()}}catch(x){{}}}});['pointerover','touchstart','focusin'].forEach(function(n){{document.addEventListener(n,function(e){{if(link(e.target))carregar()}},{{passive:true,capture:true}})}});function ocioso(){{setTimeout(carregar,1500)}}if(document.readyState==='complete')ocioso();else window.addEventListener('load',ocioso);}})();</script>
 </body>
 </html>
 """
