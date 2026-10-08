@@ -37,3 +37,7 @@ of it on `domain_analytics/whois/overview` with large filtered queries. Rules:
 - Copy rules: no em dash (U+2014) in site text; do not publish Diego's own prices (market estimates are
   fine); no unconfirmed claims; the client "Mission AC & Plumbing" is named only in the logo strip.
 - `lastmod.json` tracks a per-page content fingerprint; run `python3 build.py` twice and expect no diff.
+- IndexNow (Bing, Yandex, Seznam, Naver): each build writes `dist/<INDEXNOW_KEY>.txt` (the key, no newline).
+  `.github/workflows/indexnow.yml` runs `sites/indexnow.py` on pushes to main that change a `lastmod.json`,
+  waits until the deploy is live and sends only the pages whose lastmod entry changed. A manual run of the
+  workflow sends every sitemap URL. A failed notice is logged and never fails anything.

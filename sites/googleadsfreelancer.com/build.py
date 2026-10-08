@@ -46,6 +46,7 @@ BRAND = "Google Ads Freelancer"
 CAL_EVENT_SLUG = "google-ads-call"  # event type on Cal.com under the diwizi account; checked 200 before deploy
 CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # "Book a call": primary CTA; opens the embed modal when loaded, else a new tab
 CAL_LINK_ATTRS = 'target="_blank" rel="noopener"'  # every Cal.com link carries these so the no-embed fallback opens a new tab
+INDEXNOW_KEY = "39c906dac5bd368ce469f1215282e53b"  # public by design: served as /<key>.txt, read by sites/indexnow.py after each deploy
 FORM_URL = "/contact/#form"  # "Get a quote": secondary CTA, the lead form
 # Web3Forms access key (account: the hello@ inbox below). Public by design: it only allows sending to that inbox.
 WEB3FORMS_KEY = "a8247bcb-2a34-4f73-a97e-877bfef2b8cb"
@@ -659,6 +660,8 @@ def build():
     shutil.copy(os.path.join(HERE, "assets", OG_IMAGE), os.path.join(dist, OG_IMAGE))
     for icon in ("favicon.ico", "favicon-96.png", "apple-touch-icon.png"):
         shutil.copy(os.path.join(HERE, "assets", icon), os.path.join(dist, icon))
+    with open(os.path.join(dist, INDEXNOW_KEY + ".txt"), "w", encoding="utf-8") as f:  # the key only, no newline
+        f.write(INDEXNOW_KEY)
     with open(os.path.join(dist, "llms.txt"), "w", encoding="utf-8") as f:
         f.write(llms_txt())
     with open(os.path.join(dist, "robots.txt"), "w") as f:
