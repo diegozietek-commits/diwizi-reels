@@ -1,0 +1,38 @@
+name: IndexNow
+
+# After each publish, tells IndexNow (Bing, Yandex, Seznam, Naver) which pages changed.
+# Runs here on GitHub, separately from the Cloudflare Workers Builds deploy, so it can never
+# break a deploy. It waits until the new pages are live before sending (sites/indexnow.py --wait).
+on:
+  push:
+    branches: [main]
+    paths: ["sites/*/lastmod.json"]   # lastmod.json only changes when a page's content changes
+  workflow_dispatch:                  # manual run: sends every sitemap URL of both sites
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the previous lastmod.json
+        if: github.event_name == 'push'
+        run: git fetch --no-tags --depth=1 origin "${{ github.event.before }}" || true
+      - name: Notify IndexNow
+        env:
+          BEFORE: ${{ github.event_name == 'push' && github.event.before || '' }}
+        run: |
+          for site in googleadsfreelancer.com ppcconsultancy.uk; do
+            if [ -n "$BEFORE" ]; then
+              python3 sites/indexnow.py "sites/$site" --since "$BEFORE" --wait 900 || true
+            else
+              python3 sites/indexnow.py "sites/$site" --all --wait 900 || true
+            fi
+          done
