@@ -9,7 +9,7 @@ Usage:
          (or are new) are sent. If the commit or the file is not available, every sitemap URL is sent.
 --all    sends every URL in dist/sitemap.xml (first run).
 --wait   before sending, waits up to N seconds for the new deploy to be live: the key file must
-         answer 200 with the key, and every page being sent must match dist/ byte for byte. On
+         answer 200 with the key, and the <main> content of every page being sent must match dist/. On
          timeout it sends anyway and says so in the log.
 
 The key is the dist/<32 hex>.txt file that build.py writes. Standard library only, so it runs on a
@@ -86,9 +86,17 @@ def fetch(url):
         return f"error: {e.__class__.__name__}", b""
 
 
+def content_hash(html):
+    """Hash of <main>...</main>, the visible content that lastmod.json tracks. Cloudflare injects
+    scripts (Web Analytics beacon, bot management) before </body>, so the whole file never matches."""
+    i, j = html.find(b"<main>"), html.find(b"</main>")
+    part = html[i:j] if 0 <= i < j else html.split(b"</body>")[0]
+    return hashlib.sha256(part).hexdigest()
+
+
 def wait_until_live(host, key, urls, dist, seconds):
     key_url = f"https://{host}/{key}.txt"
-    want = {u: hashlib.sha256(open(dist_file(dist, u), "rb").read()).hexdigest() for u in urls}
+    want = {u: content_hash(open(dist_file(dist, u), "rb").read()) for u in urls}
     deadline = time.time() + seconds
     while True:
         status, body = fetch(key_url)
@@ -97,10 +105,10 @@ def wait_until_live(host, key, urls, dist, seconds):
         if key_ok:
             for u in urls:
                 st, b = fetch(u)
-                if st != 200 or hashlib.sha256(b).hexdigest() != want[u]:
+                if st != 200 or content_hash(b) != want[u]:
                     stale.append((u, st))
         if key_ok and not stale:
-            log(f"deploy is live: key file 200 and matching, {len(urls)} page(s) match dist/")
+            log(f"deploy is live: key file 200 and matching, <main> of {len(urls)} page(s) matches dist/")
             return True
         if time.time() >= deadline:
             log(f"WARNING: gave up waiting after {seconds}s (key file: {status}, "
