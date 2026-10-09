@@ -19,6 +19,129 @@ NOT_FOR = """
 </div></section>
 """
 
+FAQ_GROUPS = [
+("ppc", "PPC and Google Ads", [
+("choosing", "Choosing who runs your PPC", [
+("freelancer-specialist-consultant", "PPC freelancer, specialist or consultancy: which one am I actually hiring?",
+"""Through this site you hire one independent consultant, which in practice covers all three labels. Specialist signals depth on the platforms, consultant means reviews and advice are available without a retainer, and freelancer means no agency sits between us. Here they all describe the same person, who audits, builds and runs your accounts. A consultancy usually implies a firm; this one has a single consultant. More on <a href="/ppc-specialist/">PPC specialist</a>."""),
+("agency-or-consultant-uk", "Should a UK business hire a PPC agency or an independent consultant?",
+"""It depends on scale and complexity. One company spending from a few thousand to around £60,000 a month, mostly on lead generation, usually suits a consultant, while several countries, languages or a heavy creative pipeline suit an agency. Before choosing, ask who touches the account each week, how the fee is calculated, whether landing pages and tracking are in scope, and what happens if you leave. The full comparison, bias declared, is on <a href="/agency-vs-consultant/">agency vs consultant</a>."""),
+("point-me-to-an-agency", "When would you tell me to go to an agency instead?",
+"""When the account needs more than one pair of hands. That includes spend well above £60,000 a month across several platforms, multi-country campaigns needing native-language copy, paid social where creative production is the bottleneck, procurement that demands a team, insurance levels and SLAs, and shops with tens of thousands of products and daily feed work. I would rather say so on the first call than run the account half well. See <a href="/agency-vs-consultant/">agency vs consultant</a>."""),
+("cheaper-than-agency", "Is an independent consultant cheaper than a PPC agency?",
+"""Usually, for the same account, because no account manager, office or margin layer sits between you and the work. Experienced consultants overlap with small agencies at the upper end, so the gap is not always large. The cheapest route is a marketplace freelancer, which is a different product: whoever wins the bid, typically paid by the hour or per task, with tracking and landing pages outside the brief. See <a href="/ppc-freelancer/">PPC freelancer</a>."""),
+("anyone-else-on-account", "Does anyone besides you ever work on my account?",
+"""No. I run every account personally, and nothing is handed to subcontractors or juniors after the first call. If a project needs design or development beyond what I build myself, for example original illustration or a change only your developer can make, you are told beforehand and the specialist is named. Search terms, bids, tracking, pages and reports remain with me throughout. See <a href="/about/">About</a>."""),
+("vetting-checklist", "What should I ask a PPC freelancer before signing anything?",
+"""Six questions separate an operator from a profile. Who will actually be in the account? Whose accounts will the campaigns live in, and who holds admin access? How are phone calls, spam and duplicated conversions measured? What happens in the first month? How do you charge, and for how long? Can I see a sample of your reporting? Good answers start with tracking and wasted spend, and keep everything in your name. See <a href="/ppc-freelancer/">PPC freelancer</a>."""),
+("with-our-team", "Can you work next to our marketing manager, or alongside the agency that makes our creative?",
+"""Yes, both arrangements are common. You can hand over the whole account, or keep your own marketer on the daily work and bring me in for an audit, a second opinion or a regular review. Where a separate agency already makes your Meta creative, it can carry on doing so while I handle the media and measurement against a test plan we all share. Advisory-only support suits teams that prefer to run their own accounts. See <a href="/ppc-management/">PPC management</a>."""),
+]),
+("fees", "Fees, model and quotes", [
+("how-you-price", "How do you price PPC management?",
+"""With a flat monthly fee set by the scope of the work, never a share of your media. Scope means the platforms, campaigns and markets involved, plus the landing pages and tracking the account needs. Audits, set-ups and tracking rebuilds are fixed project fees. Every quote is in pounds, ex VAT, and arrives by email within one working day of the form; a firm figure needs read-only access or a short call. See <a href="/pricing/">pricing</a>."""),
+("packages", "Do you sell fixed PPC packages?",
+"""No. There is no rate card or bundle to choose from, because two accounts with the same spend can need very different amounts of work. The fee is built for your account from its platforms, markets, campaigns and the landing page and tracking work involved. What is fixed in advance is the model: a flat monthly fee for management and a single fixed fee for each defined project. See <a href="/pricing/">pricing</a>."""),
+("minimum-spend", "Is there a minimum monthly ad spend?",
+"""Not a hard one, but below about £2,000 a month a retainer rarely pays for itself. At that level, a fixed-price set-up you then run yourself, or an audit your own team implements, is usually the honest recommendation. Above it, lean monthly management with tracking and landing page fixes included becomes worthwhile. The options by budget are laid out on <a href="/google-ads-small-business/">Google Ads for small business</a>."""),
+("onboarding-fee", "Do I pay anything up front before monthly management begins?",
+"""Only the fixed fee for the first piece of work, and that is credited if management follows. There is no onboarding fee. Existing accounts start with an audit and new ones with a set-up; whichever applies is priced in pounds, ex VAT, and deducted from the first month of management. After that, you pay a flat monthly fee, one month at a time. See <a href="/pricing/">pricing</a>."""),
+("quote-turnaround", "How quickly will I get a quote, and do I need a call for it?",
+"""Within one working day, often the same day, and no call is needed for a range. The form asks for your spend band, platforms and what is going wrong, and the written reply comes by email from me, not from a sales team. A firm figure needs read-only access or a short call. There is no chaser sequence: if you do not reply, I take it that the timing is wrong. See <a href="/contact/">contact</a>."""),
+]),
+("audit", "The PPC audit", [
+("audit-deliverables", "What do I receive at the end of a PPC audit?",
+"""A plain-English report that ranks each finding by what it is costing, puts a monthly pound figure on it where possible, and says what the fix is, who should carry it out and how to check it worked. Alongside it come a 30, 60 and 90-day action plan, a walkthrough call lasting up to an hour, and a month of email questions while the changes go in. Expect it five to seven working days after access. See <a href="/ppc-audit/">PPC audit</a>."""),
+("audit-price-credit", "How is the audit priced, and is the fee credited if I carry on?",
+"""With a single fixed fee worked out from your monthly spend, campaign count and the platforms involved, and yes, all of it is credited against your first month of management if you continue. You receive the figure in pounds, ex VAT, by email within one working day of sending the form, and no call is required. It stays the same whether or not you hire me afterwards. See <a href="/ppc-audit/">PPC audit</a>."""),
+("free-audit", "Why pay for an audit when agencies offer free ones?",
+"""Because a free audit is written to win a retainer, and a paid one is written to tell you where the money goes. Agency audits are often produced by a sales team from an automated script and rarely conclude that the account is fine. An independent paid audit can say your current set-up is sound and list the few remaining gains, and you can hand it to your own team or agency to implement. See <a href="/ppc-audit/">PPC audit</a>."""),
+("judge-my-agency", "Can you give me an honest view of my current agency's work?",
+"""Yes, in writing, with no retainer of my own to win by criticising them. A fair review that finds the agency competent is still useful: it lists the remaining gains and gives you specific questions for your next meeting with them. If the work falls short, the report shows where and what it is costing, so the conversation rests on evidence rather than impressions. See <a href="/google-ads-consultant/">Google Ads consultant</a>."""),
+]),
+("running", "Running the account", [
+("first-month", "What do you do in the first four weeks on my account?",
+"""Week one is read-only: every conversion action checked against what your business counts as a lead, plus the last 90 days of search terms. Weeks two and three fix the tracking first and then cut the waste, with every change written down so it can be undone. Week four brings a written report on what changed, what it should do and what comes next, whether structure, landing pages or testing. See <a href="/ppc-freelancer/">PPC freelancer</a>."""),
+("who-keeps-what", "If we part ways, who keeps the accounts, the data and the history?",
+"""You do, all of it. Google Ads, Microsoft, Meta, GA4 and Tag Manager sit in your accounts with admin rights staying with you, and I am added as a user. When we stop, you remove my access and keep the campaigns, conversion actions, tags, pages and their full history. Nothing has to be migrated, and 30 days' written notice from either side ends the arrangement. See <a href="/ppc-management/">PPC management</a>."""),
+("monthly-report-uk", "What will I see in the monthly report, and in which currency?",
+"""Cost per enquiry, cost per qualified enquiry, revenue where it can be measured, and what changed and why, all in pounds. The report is written in plain English for whoever pays the bills, with a shared dashboard for the figures between reports. Platform numbers are shown next to your CRM or order data rather than on their own, and the month closes with a call to agree the next tests. See <a href="/ppc-management/">PPC management</a>."""),
+("results-timing", "How soon should I expect results?",
+"""The first month tends to bring the quickest gains, since it is spent repairing tracking and removing wasted spend. Structural changes, new landing pages and tests take longer to show up in the numbers. I will not quote a figure before reading the account; instead you get a fixed sequence, measurement first and testing last, and a written note after each stage explaining what changed and what it did. See <a href="/results/">results</a>."""),
+("start-uk", "How quickly can you take the account on?",
+"""An audit can usually begin within a week of your go-ahead. Monthly management depends on capacity, since the client list is kept deliberately short; if I cannot take your account on within a month, I will tell you up front rather than accept it and let it wait. New accounts start with a set-up instead of an audit, priced as a fixed fee. See <a href="/ppc-management/">PPC management</a>."""),
+("platforms-uk", "Do you run Microsoft Ads and Meta as well as Google?",
+"""Yes, alongside Google Ads, which remains the core. Microsoft Advertising is usually added once Google works, as a modest increase to the fee; in the accounts I have run, the same conversion has often cost less there, with an older, more professional UK audience. Meta covers Facebook and Instagram for businesses whose offer can be understood in a feed, with creative from your designer or a studio. See <a href="/microsoft-ads-management/">Microsoft Ads</a>."""),
+("ecommerce-uk", "Do you take on online shops and Google Shopping?",
+"""Yes. UK and Irish shops on Shopify, WooCommerce, Magento or BigCommerce are welcome. The work starts with Merchant Centre and the feed, runs Shopping and Performance Max by margin band with the brand excluded, and reports new-customer orders and contribution after ad cost, reconciled monthly against your own order export. Catalogues of tens of thousands of products with daily feed operations suit an agency better, and Amazon Ads are not offered. See <a href="/ecommerce-ppc/">e-commerce PPC</a>."""),
+("pages-and-tracking", "Are landing pages and conversion tracking part of the monthly fee?",
+"""Yes. Building and testing landing pages and keeping tracking healthy are part of running the account, not extra change requests. That covers one page per search intent on your CMS or a subdomain you control, plus GA4, Tag Manager, Consent Mode v2, enhanced conversions and offline import kept in step with your CRM. If you only want one of them, each is also available as a standalone fixed-fee project. See <a href="/landing-pages/">landing pages</a>."""),
+]),
+]),
+("uk", "Hiring from the UK", [
+("vat-billing", "VAT, Google's surcharge and billing", [
+("vat-on-your-invoice", "Will your invoices include UK VAT?",
+"""No. My quotes and invoices carry no UK VAT, because the supply comes from outside the UK and the reverse charge normally applies. In practice your business records the VAT itself on its own return, and the invoice spells out that treatment so your accountant can see it at a glance. The media you buy is invoiced separately by Google, Microsoft or Meta and never shows up on my invoice. See <a href="/pricing/">pricing</a>."""),
+("two-percent-surcharge", "What is the 2% Digital Services Tax charge on UK Google Ads invoices?",
+"""It is 2% that Google adds on top of the cost of ads served to UK audiences, shown as its own line on the invoice and tied to the UK Digital Services Tax. So a month with £10,000 of media is billed at £10,200 before VAT. Because it applies no matter who manages the account, I include it in the budget plan from the outset, and the first invoice holds no surprise. See <a href="/pricing/">pricing</a>."""),
+("surcharge-and-fee", "Does Google's 2% surcharge come out of your fee or my budget?",
+"""Your media budget, and it does not change my fee. Google charges the surcharge on the advertising itself, not on management, and it would be the same with any agency or in-house team. Because it is predictable, I build it into the budget plan so that the Google invoice matches the forecast. My own fee stays a flat amount agreed in advance. See <a href="/pricing/">pricing</a>."""),
+("pounds", "Are quotes and invoices in pounds?",
+"""Yes. Every quote is given in pounds, ex VAT, and invoices are issued in pounds as well, even though I work from Brazil. Your media is a separate bill from Google, Microsoft or Meta, charged to your own billing profile. Monthly reports are in pounds too, so cost per enquiry is read in the same currency you budget in. See <a href="/about/">About</a>."""),
+("media-through-you", "Does my ad spend pass through you, or go straight to Google?",
+"""Straight to the platforms. Google, Microsoft and Meta bill you directly from your own billing profile, and the money never passes through me or forms part of my fee. That keeps the accounts, the payment history and the invoices in your name, and it means my fee has no reason to grow with your budget. Extra paid software is seldom needed, and you approve it before anything is bought. See <a href="/pricing/">pricing</a>."""),
+]),
+("contracts", "Contracts and suppliers", [
+("ltd-or-sole-trader", "Can a sole trader or a limited company hire you?",
+"""Yes, both. The engagement uses the same short services agreement either way, with the monthly fee in pounds, 30 days' notice from either side, confidentiality, and everything built belonging to you. Smaller businesses often start with a fixed-price set-up they run themselves or an audit; larger ones usually move to monthly management after the audit. See <a href="/google-ads-small-business/">Google Ads for small business</a>."""),
+("agreement-and-notice", "What does the agreement cover, and how much notice ends it?",
+"""Scope, the monthly fee in pounds, confidentiality and ownership, and 30 days' written notice from either side ends it. There is no minimum term and no twelve-month contract: management runs one month at a time. Because the campaigns, tags and pages already sit in your accounts, ending the arrangement involves no migration, only removing my access. See <a href="/pricing/">pricing</a>."""),
+("procurement", "Can you meet our supplier onboarding, insurance and SLA requirements?",
+"""Not if your procurement needs a company with a team, specific insurance levels and SLAs, because a one-person consultancy cannot sign those, and an agency is the better fit. What I offer instead is a short services agreement covering scope, fee, notice and confidentiality, direct access to the person doing the work, and accounts that stay in your name. If your requirements are lighter, send them with the form and I will say plainly whether they can be met."""),
+]),
+("consent-data", "Cookies, consent and data", [
+("consent-mode-v2", "Do UK advertisers need Google Consent Mode v2?",
+"""Yes. For UK and EU traffic it is required, and UK advertisers need it to keep remarketing and audience features working. Consent Mode v2 works with your cookie banner so that consented visitors are measured fully and the rest are modelled rather than lost. I set it up through Tag Manager alongside your existing banner, with the same conversion definitions used across Google, Microsoft and Meta. See <a href="/conversion-tracking/">conversion tracking</a>."""),
+("rejected-cookies", "What happens to my conversion data when visitors reject cookies?",
+"""With Consent Mode v2 in place, those visitors are modelled rather than lost; without it, they vanish from measurement entirely. A banner installed on its own simply switches tracking off for everyone who declines, so bids end up set on a fraction of the real data. Pairing the banner with Consent Mode keeps consented visitors measured in full and lets Google estimate the rest, so Smart Bidding works from realistic numbers."""),
+("cookie-banner-setup", "How do you set up the cookie banner on a site that runs Google Ads?",
+"""With a banner that genuinely holds marketing tags back until the visitor agrees, connected to Consent Mode v2 through Tag Manager. If you already use a consent platform, I configure it rather than replace it. The aim is measurement that respects each visitor's choice under UK GDPR and PECR while keeping remarketing and audience features available for people who accept. This site works the same way: nothing is stored on your device until you choose."""),
+("which-cmp", "Which consent banner works with Google Ads?",
+"""Any consent management platform certified by Google can feed Consent Mode v2. In the UK, Cookiebot, CookieYes and Iubenda turn up most often, though the set-up matters more than the brand. An existing platform is kept and configured rather than swapped out, and the tags in Tag Manager are told to follow its signals, so visitors who accept and visitors who decline are each treated correctly. See <a href="/conversion-tracking/">conversion tracking</a>."""),
+("personal-data-to-google", "Does your tracking send personal or health data to Google?",
+"""No health data, and personal data only in hashed form where enhanced conversions are used. Conversions are sent as outcomes, such as an enquiry booked or an appointment attended, never as diagnoses or case details. Everything runs under Consent Mode v2, and the set-up is documented so your data protection lead can review exactly what is sent and when. See <a href="/healthcare-ppc/">healthcare PPC</a> for how this works in sensitive sectors."""),
+]),
+("uk-costs", "UK click prices and budgets", [
+("uk-click-prices", "What does a Google Ads click cost in UK cities?",
+"""It varies widely by sector and city, so a national average misleads. Google Ads keyword data for October 2026 put an employment lawyer search at £18.60 a click in London against £9.99 in Leeds, and IT support at £37.70 in London against £11.49 in Birmingham, while web design cost more in Birmingham than in London. An audit prices your own auction before any budget is set. The full tables are on the city pages, such as <a href="/ppc-consultant-manchester/">Manchester</a>."""),
+("london-premium", "Why do London clicks cost more than the rest of the UK?",
+"""More firms bid on the same searches in London, and a London client is often worth more, so bids climb. The gap depends heavily on the sector: legal and IT searches cost from around 40% more to over three times as much as in other large cities, while financial advice costs about the same in Birmingham. That is why a London account needs tight location targeting by borough and hour rather than one pin on the whole city. See <a href="/ppc-consultant-london/">PPC consultant, London</a>."""),
+("small-business-budget-uk", "How much should a UK small business budget for Google Ads?",
+"""For many UK trades and local services, around £1,000 to £2,000 a month in media buys a meaningful number of clicks at local prices. Solicitors, IT support and other expensive sectors in large cities need more, because each click costs more. Below about £2,000 a month, a fixed-price set-up you run yourself is usually better value than paying a monthly management fee on top. See <a href="/google-ads-small-business/">Google Ads for small business</a>."""),
+("market-rates-uk", "What do UK PPC agencies and freelancers usually charge?",
+"""Most use one of three models: a share of monthly media, commonly 10% to 20% and often with a floor; a flat monthly retainer; or a day rate, typical of senior freelancers. Percentage fees grow with your budget whether or not results do, and day rates make every question feel billable. Whatever the model, check who owns the accounts. My own fee is a flat monthly amount set by scope and quoted individually; see <a href="/pricing/">pricing</a>."""),
+]),
+("uk-rules", "UK advertising rules", [
+("regulated-sectors-uk", "Can you advertise solicitors, financial services or private clinics within UK rules?",
+"""Yes, with copy written inside the rules and signed off by your compliance or clinical lead. For law firms that means the SRA Transparency Rules and the ASA, including the qualifications 'no win no fee' needs. For private healthcare, the CAP Code, MHRA rules on medicines and Google's certification for some treatments, handled with you. For many financial products, Google requires FCA authorisation and verification before adverts can run, so that must be in place first. See <a href="/ppc-for-law-firms/">PPC for law firms</a>."""),
+("competitor-names-uk", "Can I bid on a rival firm's name in the UK?",
+"""Yes, it is legal in the UK, but whether it pays depends on your sector. Software companies usually do well with a separate competitor campaign, its own comparison page that is honest about the rival's strengths, and a lower target. For law firms the clicks are expensive, conversion is low and the ASA governs how comparative adverts are worded, so it rarely earns its budget. Either way, it is reviewed against the numbers rather than switched on by default. See <a href="/saas-ppc/">SaaS PPC</a>."""),
+]),
+("remote", "Working with a consultant abroad", [
+("in-person", "Will you come to our office in London or elsewhere in the UK?",
+"""No, the work is remote as standard, with calls booked ahead on UK time and updates in writing. I am based in Curitiba, Brazil, and there is no London office behind the fee. What you get instead is written replies within one working day, a written monthly report, a note whenever something important changes, and access to the accounts and reporting at any time. If regular face-to-face meetings matter, a local agency will suit you better."""),
+("uk-cities", "Do you work with businesses outside London, such as in Manchester, Birmingham, Leeds or Bristol?",
+"""Yes, across the UK and Ireland, on the same service and terms everywhere. There are pages for Manchester, Birmingham, Leeds and Bristol because businesses there search locally, and each sets out local click prices and sectors. Location targeting is matched to how you actually serve your area, with the radius around your office bid separately from the wider region. See <a href="/ppc-consultant-manchester/">Manchester</a>, <a href="/ppc-consultant-birmingham/">Birmingham</a>, <a href="/ppc-consultant-leeds/">Leeds</a> and <a href="/ppc-consultant-bristol/">Bristol</a>."""),
+("uk-case-study", "Why is there no UK case study yet?",
+"""Because no UK engagement can yet be written up with its dates and limits, and an unverifiable story would prove nothing. The four engagements on the results page, including a Houston home services account where cost per acquisition fell 44%, each close with what transfers to a UK business, such as a boiler firm where emergency repairs and new installations fight over one budget. The first UK engagement that can be documented properly will join them. See <a href="/results/">results</a>."""),
+("why-uk-site", "Why does a UK consultancy site point to diwizi.com and a US site?",
+"""Because one consultant serves several markets, and this is the door for the UK. Diwizi is the name I trade under: diwizi.com covers industries in depth and publishes research, while googleadsfreelancer.com is written for businesses in the US, Canada and Europe. This site gives UK and Irish firms pounds, a clear account of VAT and planning around UK working hours. Whichever door you use, the same person runs your account. See <a href="/about/">About</a>."""),
+("outside-uk-ireland", "Can a business outside the UK and Ireland work with you?",
+"""Yes. Companies in any country can hire me, provided we can work in English. This site concentrates on the UK and Ireland, quoting in pounds and explaining VAT for UK firms. If you are based in the US, Canada or elsewhere in Europe, <a href="https://googleadsfreelancer.com/" rel="noopener">googleadsfreelancer.com</a> describes the same service, with the same person behind it, for those markets."""),
+]),
+]),
+]
+
 PAGES = [
 {
 "slug": 'index',
@@ -272,7 +395,7 @@ PAGES = [
 <table>
 <tr><th>Monthly media spend</th><th>Independent consultant</th><th>Small agency</th><th>What to watch</th></tr>
 <tr><td>Below £2,000</td><td>A one-off setup or audit</td><td>Often under the minimum</td><td>A monthly retainer rarely pays for itself</td></tr>
-<tr><td>£2,000 to £10,000</td><td>Flat retainer in the low thousands</td><td>A minimum fee or 15% to 20%</td><td>The band where one senior person makes most difference</td></tr>
+<tr><td>£2,000 to £10,000</td><td>Flat monthly retainer, set by scope</td><td>A minimum fee or 15% to 20%</td><td>The band where one senior person makes most difference</td></tr>
 <tr><td>£10,000 to £40,000</td><td>Flat retainer sized to the scope</td><td>Around 10% to 15%</td><td>Percentage fees begin to outgrow the work</td></tr>
 <tr><td>Above £40,000</td><td>Flat retainer, part-time head of paid media</td><td>Bespoke, often 8% to 12%</td><td>Structure and measurement outweigh bid tweaks</td></tr>
 </table>
@@ -428,7 +551,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Why a separate site for the UK</h2>
-<p>This site is the UK entrance to one practice. <a href="https://diwizi.com/" rel="noopener">Diwizi.com</a> goes deep by industry and publishes the research; <a href="https://googleadsfreelancer.com/" rel="noopener">googleadsfreelancer.com</a> serves American businesses looking for a freelance Google Ads specialist. This one is for UK and Irish businesses that want prices in pounds, the VAT position set out plainly and a consultant who plans around UK hours. Whichever site you arrive through, the account is run by the same person.</p>
+<p>This site is the UK entrance to one practice. <a href="https://diwizi.com/" rel="noopener">Diwizi.com</a> goes deep by industry and publishes the research; <a href="https://googleadsfreelancer.com/" rel="noopener">googleadsfreelancer.com</a> serves businesses in the US, Canada and Europe looking for a freelance Google Ads specialist. This one is for UK and Irish businesses that want prices in pounds, the VAT position set out plainly and a consultant who plans around UK hours. Whichever site you arrive through, the account is run by the same person.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -444,6 +567,19 @@ PAGES = [
 ('Does the time difference get in the way?', 'Rarely. Most of the work is done in writing and does not need a meeting. Calls are booked ahead, usually in the UK morning, and written replies come within one working day.'),
 ],
 "related": ['results', 'ppc-management', 'ppc-consultant-london', 'contact'],
+},
+{
+    "slug": "faq", "short": "FAQ",
+    "blurb": "Answers for UK and Irish businesses: fees, VAT, Google's 2% surcharge, consent, contracts and how the work runs.",
+    "title": "PPC Consultancy FAQ | Fees, VAT, Consent and Contracts",
+    "meta": "48 answers for UK and Irish businesses hiring an independent PPC consultant: how fees work, VAT and Google's 2% surcharge, Consent Mode v2, contracts and notice.",
+    "kicker": "About",
+    "h1": "Questions UK businesses ask before hiring a PPC consultant",
+    "lead": "Two sets of answers: how PPC and Google Ads work here, from fees to the first month, and what changes when you hire from the UK, from VAT and Google's surcharge to consent and contracts.",
+    "proof": [],
+    "body": "",
+    "related": ["about", "pricing", "ppc-audit", "contact"],
+    "faq_groups": FAQ_GROUPS,
 },
 
 {

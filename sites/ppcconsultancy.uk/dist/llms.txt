@@ -2,7 +2,7 @@
 
 > Diego Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. Runs Google, Microsoft, Meta and LinkedIn Ads personally, with landing pages and conversion tracking included, for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.
 
-- Market: UK and Irish businesses; the US and Canadian practice is at googleadsfreelancer.com.
+- Market: UK and Irish businesses, and companies from any country that work in English; the practice for the US, Canada and Europe is at googleadsfreelancer.com.
 - Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).
 - Pricing: quoted in pounds, ex VAT, from the form; prices are not published. Never a percentage of ad spend.
 
@@ -26,11 +26,12 @@
 - [Pricing](https://ppcconsultancy.uk/pricing/): How UK PPC work is charged, what it typically costs, and my fees.
 - [Results](https://ppcconsultancy.uk/results/): Published results, their limits, and what carries over to a UK account.
 - [About Diego](https://ppcconsultancy.uk/about/): The consultant behind this site, and how a UK engagement works.
+- [FAQ](https://ppcconsultancy.uk/faq/): Answers for UK and Irish businesses: fees, VAT, Google's 2% surcharge, consent, contracts and how the work runs.
 - [Contact](https://ppcconsultancy.uk/contact/): Book a call, send the form or write an email. All three reach the same person.
 
 ## Related
 
 - [Diwizi](https://diwizi.com/): the same practice, organised by industry, with published research
-- [googleadsfreelancer.com](https://googleadsfreelancer.com/): US and Canadian practice, Google Ads freelancer
+- [googleadsfreelancer.com](https://googleadsfreelancer.com/): Practice for the US, Canada and Europe, Google Ads freelancer
 
 Contact: hello (at) diwizi.com, or the form on any page.

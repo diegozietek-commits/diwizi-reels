@@ -629,7 +629,7 @@ PAGES = [
 ("Can we book more than one session?", "Yes. Some in-house teams book a session each month or each quarter as a standing review; that is agreed in writing after the first one, with the same notes each time."),
 ("Do you need access to our account for a consultation?", "It helps: read-only access to Google Ads and GA4 beforehand means the hour goes on answers. Without access, the session works from your screen share and your questions, and the notes say what to check."),
 ("Which platforms can the consultation cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and landing pages."),
-("What time zones work for the call?", "I work from Curitiba, Brazil, one to four hours ahead of US time zones, so a US morning or early afternoon works for both of us. UK and Irish businesses have the same session on <a href=\"https://ppcconsultancy.uk/ppc-consultation/\" rel=\"noopener\">ppcconsultancy.uk</a>, quoted in pounds."),
+("What time zones work for the call?", "I work from Curitiba, Brazil, on GMT-3 all year, one to five hours ahead of US time zones depending on the zone and the season, so a US morning or early afternoon works for both of us. UK and Irish businesses have the same session on <a href=\"https://ppcconsultancy.uk/ppc-consultation/\" rel=\"noopener\">ppcconsultancy.uk</a>, quoted in pounds."),
 ],
 "related": ["google-ads-audit", "google-ads-consultant", "google-ads-management", "pricing"],
 },

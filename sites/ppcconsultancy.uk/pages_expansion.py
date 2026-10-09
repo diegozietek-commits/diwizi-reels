@@ -706,7 +706,7 @@ city_page(
 ("Can we book more than one session?", "Yes. Some in-house teams book a session each month or each quarter as a standing review; that is agreed in writing after the first one, with the same notes each time."),
 ("Do you need access to our account for a consultation?", "It helps: read-only access to Google Ads and GA4 beforehand means the hour goes on answers. Without access, the session works from your screen share and your questions, and the notes say what to check."),
 ("Which platforms can the consultation cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and landing pages."),
-("Is the consultation available to businesses outside the UK?", "Yes. UK and Irish businesses are quoted in pounds here; US and Canadian businesses have the same session on <a href=\"https://googleadsfreelancer.com/google-ads-consultation/\" rel=\"noopener\">googleadsfreelancer.com</a>, quoted in dollars."),
+("Is the consultation available to businesses outside the UK?", "Yes. UK and Irish businesses are quoted in pounds here; Businesses in the US, Canada and Europe have the same session on <a href=\"https://googleadsfreelancer.com/google-ads-consultation/\" rel=\"noopener\">googleadsfreelancer.com</a>, quoted in dollars, pounds or euros."),
 ],
 "related": ["ppc-audit", "google-ads-consultant", "ppc-management", "pricing"],
 },

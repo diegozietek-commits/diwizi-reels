@@ -2,7 +2,7 @@
 
 > Diego Zietek, independent Google Ads and paid media consultant with 14+ years of hands-on work. Runs Google Ads, with Meta, Microsoft Advertising and LinkedIn when they fit, personally, for a flat monthly fee. Accounts stay in the client's name. Based in Curitiba, Brazil; works remotely in English.
 
-- Market: businesses in the United States and Canada; the UK practice is at ppcconsultancy.uk.
+- Market: businesses in the United States, Canada and Europe, and companies from any country that work in English; the UK and Ireland practice is at ppcconsultancy.uk.
 - Services: Google Ads management, audits, setup, conversion tracking, consulting, and multi-platform PPC management.
 - Fees: a flat monthly fee, never a percentage of ad spend. No long contract.
 - Pricing: quoted per account from the form; prices are not published.
@@ -12,7 +12,7 @@
 - [Home](https://googleadsfreelancer.com/): Senior Google Ads freelancer, one person on the account.
 - [Google Ads management](https://googleadsfreelancer.com/google-ads-management/): Month-to-month management by the person you hired. Flat fee.
 - [Google Ads audit](https://googleadsfreelancer.com/google-ads-audit/): Fixed-price PPC audit with fixes ranked by impact. Yours to keep.
-- [PPC consultant](https://googleadsfreelancer.com/freelance-ppc-consultant/): An independent PPC consultant for US and Canadian companies, hired directly.
+- [PPC consultant](https://googleadsfreelancer.com/freelance-ppc-consultant/): An independent PPC consultant for companies in the US, Canada and Europe, hired directly.
 - [Google Ads consultant](https://googleadsfreelancer.com/google-ads-consultant/): Strategy, second opinions and advisory for teams that run their own ads.
 - [Google Ads consultation](https://googleadsfreelancer.com/google-ads-consultation/): A one-off working session on your account, with written notes, before or instead of a retainer.
 - [Google Ads expert](https://googleadsfreelancer.com/google-ads-expert/): What a senior specialist does differently, how to check it before hiring, and how the engagement works.
@@ -24,6 +24,7 @@
 - [Pricing](https://googleadsfreelancer.com/pricing/): What Google Ads freelancers and consultants charge, and how I price.
 - [Results](https://googleadsfreelancer.com/results/): Published engagements, with what can and cannot be verified.
 - [About Diego](https://googleadsfreelancer.com/about/): Who runs the account, where from, and what is public.
+- [FAQ](https://googleadsfreelancer.com/faq/): Answers on hiring a Google Ads freelancer: fees, terms, account access, Search ads and agency work.
 - [Contact](https://googleadsfreelancer.com/contact/): Book a call, send the form or write an email. All three reach the same person.
 
 ## Related

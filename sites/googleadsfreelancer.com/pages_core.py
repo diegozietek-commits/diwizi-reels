@@ -1,6 +1,121 @@
 # Core pages: home, freelance PPC, consultant, audit, pricing, results, about, contact.
 # Each page: slug, short, blurb, title, meta, kicker, h1, lead, body (HTML), faq, related, service_name.
 
+FAQ_GROUPS = [
+("for-businesses", "For businesses", [
+("hiring", "Hiring a Google Ads freelancer", [
+("freelancer-or-agency", "Why hire a freelance Google Ads specialist instead of an agency?",
+"""Because the senior person you speak to is the one doing the weekly work. An agency places an account team and an account manager between you and your campaigns, and often bills a percentage of spend with minimums. The freelance model suits one company spending roughly $3,000 to $80,000 a month in one or a few markets. Its limit is capacity, since one person cannot run forty accounts, which is why my client list stays short. The comparison table is on the <a href="/">home page</a>."""),
+("no-juniors", "Will a junior or a subcontractor ever work on my account?",
+"""No. I read, change and report on every account myself, and accounts are not passed on to subcontractors or junior staff. When a project needs a designer or a developer for one specific piece, such as custom visuals or a change in your site's code, I tell you first and name the person. Search terms, bids, tracking, landing pages and the monthly report all stay with me. More on how I work is on the <a href="/about/">About page</a>."""),
+("expert-specialist-consultant-freelancer", "Google Ads expert, specialist, consultant or freelancer: is there a real difference?",
+"""Mostly in emphasis, not in who does the work. Expert and specialist point to depth on Google Ads, consultant suggests advice and reviews you can buy without a retainer, and freelancer signals independence from an agency. All four describe me: I audit and plan the account, then run it week to week. The useful test is not the job title but whether the senior person is the one inside your account. See <a href="/google-ads-expert/">Google Ads expert</a>."""),
+("vet-a-freelancer", "How can I tell a senior Google Ads freelancer from a marketplace profile?",
+"""Ask five things before you hire anyone. Who will be in the account each week, by name and years of experience? Will they read your account and put what is wrong in writing before any retainer? Does their report reconcile to your CRM or orders, with brand and non-brand split? What will they refuse to do? Can you see published work with its source and limits? My own answers are on the <a href="/google-ads-expert/">Google Ads expert</a> and <a href="/results/">results</a> pages."""),
+("run-it-myself", "Is it worth paying someone to run Google Ads, or should I run it myself?",
+"""It depends on spend: below about $3,000 a month, running it yourself after a proper build is often the better buy. A fixed-price <a href="/google-ads-setup/">setup</a> creates the account in your name with tracking, negatives and a handover document written for an owner, covering what each campaign is for and what to check weekly. Above that level, the weekly work starts to pay for a specialist. A quarterly check-in or a one-off <a href="/google-ads-consultation/">consultation</a> gives you a second look without a retainer."""),
+("coaching", "Can you coach our in-house marketer instead of taking over the account?",
+"""Yes. I can sit with the person or small team running your ads every month or every two weeks and work through your actual campaigns, reports and decisions, which is closer to a part-time head of paid search than to a course. Your team keeps the account; I review what changed, help settle open decisions and leave written notes. Advisory work is billed by the hour or per deliverable. Details are on <a href="/google-ads-consultant/">Google Ads consultant</a>."""),
+("fixed-term-contract", "Can I hire you on a three- or six-month contract?",
+"""Yes. A three- or six-month term is simply the usual monthly engagement with an end date added to the agreement, so the work itself stays the same. Defined projects, such as an audit, a setup, a tracking rebuild or a set of landing pages, are quoted as one fixed fee for a stated deliverable. Either way, the contract is between you and me, with no agency deciding who does the work. See <a href="/freelance-ppc-consultant/">PPC consultant</a>."""),
+("canada-and-europe", "Do you work with companies in Canada and Europe, or only the US?",
+"""All three, and companies from any other country are welcome as long as the work can be done in English. This site is written for businesses in the United States, Canada and Europe, and everything is handled remotely. Quotes come in US dollars, pounds or euros. Businesses in the UK and Ireland also have a dedicated site, <a href="https://ppcconsultancy.uk/" rel="noopener">ppcconsultancy.uk</a>, and the same person runs the account whichever site you come through."""),
+("same-practice-as-diwizi", "How is this site related to Diwizi and ppcconsultancy.uk?",
+"""They are three doors into one practice, and I run every account that comes through any of them. Diwizi is the name I operate under; diwizi.com goes deep by industry and publishes research such as the Paid Media Cost Index. This site answers the general question of who would run your Google Ads, how and on what terms. ppcconsultancy.uk serves businesses in the UK and Ireland. More on the <a href="/about/">About page</a>."""),
+]),
+("fees", "Fees and terms", [
+("what-a-freelancer-charges", "How much does a Google Ads freelancer charge?",
+"""Freelancers charge in one of three ways: a percentage of ad spend, a flat monthly retainer or by the hour. I use a flat monthly fee for management and fixed prices for audits, setups and tracking projects, never a share of your spend. There is no rate card: send the <a href="/contact/#form">form</a> with your spend band and platforms and a written range arrives by email within one business day, without a sales call. A firm figure needs a look at the account. The <a href="/pricing/">pricing page</a> compares the models."""),
+("flat-fee", "Why a flat monthly fee instead of a percentage of ad spend?",
+"""Because a percentage pays whoever runs your ads more when you spend more, not when you spend better. With a flat fee, telling you to cut a campaign or pause a platform costs me nothing, so you hear it when it is true. The fee is agreed up front, set by the scope of the work, and revisited only when that scope changes, for example when a platform or a market is added. The three common models are compared on the <a href="/pricing/">pricing page</a>."""),
+("what-sets-the-quote", "What decides the size of my quote?",
+"""The amount of work, not a share of your budget. Management is priced from the platforms, markets and campaigns involved and the landing page and tracking work in scope. An audit is priced from monthly spend, number of campaigns and platforms in scope, and a setup from the services, markets and whether tracking starts from zero. There is no onboarding fee: an audit or setup comes first and its fixed price is credited against month one of management. See <a href="/pricing/">pricing</a>."""),
+("who-pays-google", "Who pays Google for the clicks, and whose card is on the account?",
+"""You pay Google directly, from a billing profile in your own name, and your card stays on the account. Ad spend never passes through me and is never part of my fee; the same goes for Microsoft and Meta. My invoice covers the work only, and paid tools beyond what the platforms provide are rare and agreed with you first. What is and is not in the price is listed on the <a href="/pricing/">pricing page</a>."""),
+("ending-the-engagement", "How much notice do I give if I want to stop?",
+"""Thirty days, in writing, and the same applies if I end it. Management runs month to month with no fixed term, under a short agreement covering scope, fee, confidentiality and the fact that everything built belongs to you. Because campaigns, conversion actions, tags and pages already live in your accounts, nothing has to be migrated when the engagement ends. The terms are on the <a href="/pricing/">pricing page</a>."""),
+("currency", "Which currency are quotes in?",
+"""US dollars, pounds or euros, whichever suits your business. The figure reaches you by email after you send the form, and the monthly report is written in your currency as well. Ad spend is a separate matter: Google bills it to your own billing profile, and it never goes through my invoice. Businesses in the UK and Ireland can also go through <a href="https://ppcconsultancy.uk/" rel="noopener">ppcconsultancy.uk</a>, run by the same person."""),
+("spend-for-a-retainer", "What monthly ad spend makes a management retainer worth it?",
+"""From about $3,000 a month in ad spend, which is where a flat fee becomes a small share of the total. There is no hard minimum, but below that level a one-off setup or an audit usually gives better value than a monthly retainer. Running more than one platform starts to make sense around $5,000 a month in total; below it, one platform run well beats two run thinly. See <a href="/small-business-ppc-management/">Google Ads for small business</a>."""),
+]),
+("search-ads", "Google Search ads", [
+("search-vs-performance-max", "How are Google Search ads different from Performance Max?",
+"""Search ads run on keywords you choose, so you control which queries you pay for; Performance Max trades that control for reach across Google's inventory. That is why I structure Search around margin, service line and geography, keep brand in its own campaign, and give Performance Max brand exclusions from day one plus a weekly review of its search-term insights, so it cannot quietly buy demand you already had. Campaign types are covered on <a href="/google-ads-management/">Google Ads management</a>."""),
+("pmax-alongside-search", "Should Performance Max run alongside my Search campaigns?",
+"""Only once your conversion data deserves it, and only with your brand excluded. Left unchecked, Performance Max tends to claim searches you were already winning, including your own company name, so its reported cost per lead looks better than the truth. I add it after tracking can be trusted, keep Search as the controlled core, and check every week whether it is finding new demand or harvesting old demand. See <a href="/google-ads-consultant/">Google Ads consultant</a>."""),
+("broad-match", "Should my Search campaigns use broad match?",
+"""Only when the account has the negatives and the conversion data to support it. Broad match combined with Smart Bidding and no negative keywords is one of the most frequent problems I find in audits, because it lets Google match your ads to searches you would never pick yourself. I choose match types deliberately for each campaign and widen to broad only when the data can steer it. See <a href="/google-ads-audit/">Google Ads audit</a>."""),
+("wasted-search-terms", "How do you stop Google from charging me for irrelevant searches?",
+"""By reading the search terms report and adding negative keywords every week. In accounts nobody has looked after, a double-digit share of the budget often goes on queries that will never convert, from job seekers and students to rivals' names and the wrong country. An audit reads twelve months of search terms, the last 90 days line by line, and puts a dollar figure on the waste; after that, a negatives program runs weekly as part of <a href="/google-ads-management/">management</a>."""),
+("bid-on-my-brand", "Should I bid on my own brand name in Search?",
+"""It depends on who else is bidding on your name, and if you do bid, it belongs in a campaign of its own. Mixed in with everything else, cheap brand clicks make the whole account look better than it is. Keeping brand separate shows the real cost of non-brand leads, which is the number the account is managed to. Because competitors come and go, the decision is reviewed monthly rather than set once. See <a href="/google-ads-management/">Google Ads management</a>."""),
+("competitor-names", "Is it worth bidding on competitors' names?",
+"""Usually, when it runs in its own campaign with an honest comparison page and a lower target. Competitor searches convert less often than your own category terms, so budget and expectations should reflect that. For law firms it is often poor value and some states restrict it, so it is decided case by case. Comparison pages that admit where the competitor is stronger tend to convert well and stay within the advertising rules. See <a href="/saas-ppc/">SaaS PPC</a>."""),
+("cpc-too-high", "Why is my cost per click so high?",
+"""Mostly because of the auction you are in, which varies far more by city and trade than national averages suggest. In October 2026 Google Ads keyword data, an HVAC repair click cost about two and a half times more in Dallas than in Phoenix, while a plumber click in Phoenix cost half as much again as in Houston. An audit prices your own auction first, then looks for the structure and budget leaks that push costs up. See the tables on <a href="/ppc-consultant-houston/">PPC consultant, Houston</a>."""),
+("twenty-dollars-a-day", "Can a $20 daily budget work for Google Search ads?",
+"""For most competitive local services, not well. Twenty dollars a day is roughly $600 a month, while a local service with clear search demand usually starts to work at $1,000 to $2,000 a month. In trades where a click costs $30 to $55 in a large metro, $20 buys less than one click a day. For products with thin margins or little search demand, a bigger budget may not help either, and I will say so. See <a href="/small-business-ppc-management/">Google Ads for small business</a>."""),
+("search-partners-display", "Should Search Partners and the Display Network be on in a Search campaign?",
+"""Not just because Google switched them on. When a Search campaign is created, Google's defaults include the Display Network and Search Partners, along with broad match and auto-applied recommendations, and those defaults tend to suit Google more than the advertiser. In a setup I review every one of these settings against your goals and keep only what earns its place, with the results visible in the report. See <a href="/google-ads-setup/">Google Ads setup</a>."""),
+("auto-apply", "Should I turn off Google's auto-applied recommendations?",
+"""Yes. Auto-applied recommendations let Google change your account without anyone reviewing the change, so I switch them off during setup and keep them off. Recommendations are still read, and the useful ones are applied by hand after checking them against your cost per customer. In audits, auto-apply left on is one of the default settings that quietly costs money. See <a href="/google-ads-setup/">Google Ads setup</a>."""),
+("first-results", "When will I see a difference after you take over my Search account?",
+"""Within the first month for tracking fixes and wasted spend, and after about a quarter for structural and testing gains. Bidding algorithms need conversion volume to settle, so restructures happen in stages rather than resetting learning everywhere at once. The first ninety days follow a fixed order: measurement, then leaks, then structure, then tests, with a day-ninety report comparing before and after in the same units. See <a href="/google-ads-management/">Google Ads management</a>."""),
+("search-still-worth-it", "Are Google Search ads still worth it for a small business in 2026?",
+"""For a local service with clear search demand, usually yes, provided the account is built properly and the landing page converts on a phone. For products with thin margins or little search demand, often no, and you will hear that on the first call rather than after a few months of spend. Below about $3,000 a month, a fixed-price setup you then run yourself is normally better value than a retainer. See <a href="/small-business-ppc-management/">Google Ads for small business</a>."""),
+]),
+("account-access", "Your account and access", [
+("my-account-or-yours", "Will the campaigns be built in my Google Ads account or yours?",
+"""In yours, always. I work through manager (MCC) access linked to your account, your billing stays with you, and nothing is built in an account or container I control. If you do not have an account yet, I create it in your name with your card. Tags live in your Tag Manager and pages on your domain, so changing who runs the account never means starting over. See <a href="/google-ads-setup/">Google Ads setup</a>."""),
+("read-only-or-admin", "Is read-only access enough, or do you need admin rights?",
+"""Read-only is enough for an audit, a consultation or a consulting review. For an audit I ask for read-only access to Google Ads, GA4 and Tag Manager, and I change nothing while reviewing. Edit access through my manager account is only needed once you want me to implement fixes or manage the account. You can remove my access at any time, and no access at all is needed to get a price. See <a href="/google-ads-audit/">Google Ads audit</a>."""),
+("after-we-stop", "If we stop working together, what would I have to rebuild?",
+"""Nothing. Campaigns, conversion actions, audiences, tags and landing pages are built in your own Google Ads, GA4, Tag Manager and website from day one, so when the engagement ends you remove my access and carry on. There is no data export to negotiate and no account to transfer. Ending takes 30 days' written notice from either side. See <a href="/pricing/">pricing and terms</a>."""),
+]),
+("audit-setup-tracking", "Audits, setup and tracking", [
+("paid-vs-free-audit", "What does a paid Google Ads audit give me that a free one does not?",
+"""Independence. A free audit is paid for by the retainer it is meant to sell, so it tends to find what supports the sale; a paid one can conclude that your account is in decent shape and name only three fixes. Mine starts with measurement, then search terms, structure, bidding, ads and landing pages, ranked by financial impact, with a walkthrough call. It takes five to seven business days from access, changes nothing and carries no obligation. See <a href="/google-ads-audit/">Google Ads audit</a>."""),
+("new-account-setup", "Can you build a new Google Ads account from scratch?",
+"""Yes, as a fixed-price project that takes two to three weeks from kickoff to launch for a typical single-market account. It covers the account foundations in your name, conversion tracking tested on desktop and mobile, keyword research and structure, ads and assets, a landing page check and close monitoring through launch week. You get a written handover document, and you can run it yourself or move into management with the setup fee credited. See <a href="/google-ads-setup/">Google Ads setup</a>."""),
+("numbers-disagree", "Google Ads, GA4 and our CRM all show different numbers. Can you fix that as a one-off project?",
+"""Yes. Conversion tracking is sold as a standalone fixed-price project, usually one to three weeks, and you keep whoever runs the campaigns. It starts with a short definitions document agreed with you, then rebuilds the conversions in Google Ads, aligns GA4, sets up enhanced conversions and consent mode, and can send CRM stages back as offline conversions. You finish with a reconciliation report showing the numbers agree. Tag Manager access is usually enough. See <a href="/conversion-tracking-setup/">conversion tracking</a>."""),
+("landing-page-needed", "Do I need a separate landing page for Google Ads?",
+"""Usually yes, one per search intent, because a homepage rarely answers the search in its first screen. Someone looking for emergency AC repair needs the phone number, the response time and the service area, not the company history. I write and build the pages on your stack, such as WordPress, Webflow, Shopify or HubSpot, track them before launch and test one change at a time. Pages are included in management or priced per page on their own. See <a href="/landing-pages/">landing pages</a>."""),
+]),
+("working-together", "Working together", [
+("time-zone", "What time zone are you in, and when can we talk?",
+"""Curitiba, Brazil, on GMT-3 all year, because Brazil does not use daylight saving time. That puts me one or two hours ahead of US Eastern time, four or five ahead of Pacific, and three to five hours behind the UK and continental Europe, depending on the season. Calls are booked ahead and fit a US morning or early afternoon; if other hours suit you better, say so in the <a href="/contact/#form">form</a>. Written replies arrive within one business day."""),
+("monthly-report", "What will the monthly report show me?",
+"""Your cost per lead or per customer, revenue where it is measurable, what changed during the month, what happens next and anything I need from you. It is a written document aimed at the person paying, not a click dashboard, and it lines platform figures up against your CRM or order data where possible, keeping brand and non-brand apart. We can go through it on a call whenever you like. See <a href="/google-ads-management/">Google Ads management</a>."""),
+("start-date", "How soon can you start?",
+"""An audit usually begins within a week of your go-ahead. Ongoing management depends on capacity, because I keep the client list short on purpose so that each account gets proper attention; if I cannot take yours on properly, I will tell you on the call rather than squeeze it in. A setup for a new account typically goes live two to three weeks after kickoff. See <a href="/freelance-ppc-consultant/">PPC consultant</a>."""),
+("case-study", "Do you have a published Google Ads case study I can check?",
+"""Yes. A residential HVAC and plumbing company in Houston cut cost per acquisition by 44% and raised qualified leads by 60% between May 2025 and February 2026, on about $20,000 a month of Google Search spend with clicks at $45 to $80. The figures come from the account and the reports delivered at the time and were not audited by a third party. A past-client reference is available for serious engagements if the client agrees. Details and limits are on <a href="/results/">results</a>."""),
+("promise-a-number", "Will you promise a cost per lead before seeing my account?",
+"""No, and treat any such promise as a guess. A believable target depends on your auction, your tracking and your margins, and none of those can be judged from outside the account. What I do commit to is a sequence: measurement, then waste, then structure, then tests, with a written note at each stage on what changed and what it achieved. Realistic targets come out of the audit. See <a href="/results/">results</a>."""),
+]),
+("platforms-ecommerce", "Other platforms and e-commerce", [
+("beyond-google", "Besides Google, which ad platforms can you run for us?",
+"""Microsoft Advertising and Meta Ads, added when there is a measured reason rather than to fill an invoice. Google Ads remains the core of the work. Microsoft usually joins once Google works, often at a lower cost per click for B2B, finance and professional services, as a small addition to the retainer. Meta covers Facebook and Instagram for demand creation and remarketing, with creative produced by your designer or a studio. Amazon Ads are not offered. See <a href="/ppc-management/">PPC management</a>."""),
+("ecommerce-shopping", "Do you manage Google Shopping and e-commerce accounts?",
+"""Yes. Online stores are welcome, on Shopify, WooCommerce, BigCommerce or a custom stack. The work starts with the feed and Merchant Center, runs Performance Max with brand excluded next to Standard Shopping where query control matters, and judges results on margin and new customers rather than platform ROAS. Platform revenue is reconciled with your order data every month. Marketplace-only sellers fit less well, and Amazon Ads are not offered. See <a href="/ecommerce-ppc-management/">ecommerce PPC</a>."""),
+]),
+]),
+("for-agencies", "For agencies", [
+("agencies", "White label and agency work", [
+("white-label", "Do you run Google Ads white label for agencies?",
+"""Yes, for agencies, consultancies and web studios that sell paid media and need a senior operator on specific client accounts. I work under your brand and reporting template, inside your manager account or the client's, covering Google Ads, Microsoft Advertising, Meta and the measurement layer beneath them. Typical cases are an account that outgrew your team, a gap after your PPC lead left, or a service clients ask for that you do not staff. See <a href="/white-label-ppc/">white label PPC</a>."""),
+("white-label-pricing", "How is white label work priced per client account?",
+"""Each client account carries its own flat monthly fee based on its scope, and the per-account price drops as you add more accounts. It is never tied to your client's media spend or to your retainer, so your margin is known before you quote and your own pricing stays your business. Pitch audits are quoted at a fixed price each. Tell me the client, the spend and the cover you need, and the per-account figure comes back by email."""),
+("client-knows", "Will our client know a freelancer is running their account?",
+"""Only if you tell them. The work happens under your brand, in your accounts and templates, and an NDA and a non-solicit are standard: your clients stay yours. I join client calls only when you ask, introduced as part of your team, and I do not run the client relationship, chase approvals or attend your status meetings unless invited. Weekly work and a monthly written report go to your account manager in a form they can forward."""),
+("whose-mcc", "Do you work inside our MCC or the client's?",
+"""Whichever you prefer, your manager account or the client's own, but never an account of mine. Nothing is built anywhere you do not control, so the campaigns, conversions and history stay with you and your client. If you later hire in-house, the account comes with documentation and a transition period rather than an abrupt handover. Capacity is limited on purpose, and if I cannot take an account on properly I say so before starting."""),
+]),
+]),
+]
+
 PAGES = [
 {
 "slug": "index", "short": "Home", "blurb": "Senior Google Ads freelancer, one person on the account.",
@@ -78,7 +193,7 @@ PAGES = [
 ("How much does a Google Ads freelancer cost?", "Management is a flat monthly fee set by scope, not tied to ad spend. An audit is a fixed price quoted from the form and credited against the first month if you continue. No twelve-month contract. The <a href=\"/pricing/\">pricing page</a> explains how each model behaves and what to ask before you sign with anyone."),
 ("What is the minimum ad spend you work with?", "No hard minimum, but the retainer only makes sense once the account spends enough for the fee to be a small share of the total; in practice from about $3,000 a month. Below that, a one-off setup or audit is the better buy."),
 ("Who owns the Google Ads account, the tags and the landing pages?", "You do, always. I work inside your accounts with manager access. Nothing is built in a container I control, so leaving me never means starting over."),
-("Do you work with clients outside the United States?", "Yes. The site is written for the US, Canada and Europe, and I work with companies from any country that operate in English, quoted in US dollars, pounds or euros. UK and Irish businesses who prefer pricing in pounds have ppcconsultancy.uk. I work remotely from Curitiba, Brazil: one to four hours ahead of US time zones and three to five hours behind Europe, so calls fit a US morning or a European afternoon."),
+("Do you work with clients outside the United States?", "Yes. The site is written for the US, Canada and Europe, and I work with companies from any country that operate in English, quoted in US dollars, pounds or euros. UK and Irish businesses who prefer pricing in pounds have ppcconsultancy.uk. I work remotely from Curitiba, Brazil, on GMT-3 all year: one to five hours ahead of US time zones, depending on the zone and the season, and three to five hours behind Europe, so calls fit a US morning or a European afternoon."),
 ("Can you take over an account an agency built?", "Yes, and it is one of the most common starting points. The audit usually finds duplicated conversion actions, broad match on Smart Bidding without negatives, and campaigns organised by whoever built them rather than by what you sell."),
 ("Do you also run Meta, Microsoft or LinkedIn Ads?", "Yes. Google Ads is the core of the work, and <a href=\"/meta-ads-management/\">Meta Ads</a>, <a href=\"/microsoft-ads-management/\">Microsoft Advertising</a> and <a href=\"/linkedin-ads-management/\">LinkedIn Ads</a> are added when there is a measured reason, run by the same person."),
 ],
@@ -88,12 +203,12 @@ PAGES = [
 {
 "slug": 'freelance-ppc-consultant',
 "short": 'PPC consultant',
-"blurb": 'An independent PPC consultant for US and Canadian companies, hired directly.',
-"title": 'PPC Consultant | Independent Freelance PPC Consultant, US & Canada',
+"blurb": 'An independent PPC consultant for companies in the US, Canada and Europe, hired directly.',
+"title": 'PPC Consultant | Independent Freelance PPC Consultant, US, Canada, Europe',
 "meta": 'Independent PPC consultant with 14+ years in Google Ads, Microsoft Advertising and Meta Ads. Hired directly, month to month, for a flat fee.',
 "kicker": 'PPC consultant',
 "h1": 'A PPC consultant who has run accounts for 14+ years, hired directly instead of through an agency',
-"lead": 'I am Diego Zietek, an independent PPC consultant for companies in the United States and Canada. I audit, plan and run the accounts myself: Google Ads first, Microsoft Advertising and Meta Ads where they earn their place, with tracking done by the same person.',
+"lead": 'I am Diego Zietek, an independent PPC consultant for companies in the United States, Canada and Europe. I audit, plan and run the accounts myself: Google Ads first, Microsoft Advertising and Meta Ads where they earn their place, with tracking done by the same person.',
 "service_name": 'PPC consulting and management',
 "body": """
 <section><div class="wrap">
@@ -126,7 +241,7 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
-<h2>Working with US and Canadian companies</h2>
+<h2>Working with companies in the US, Canada and Europe</h2>
 <p>I work remotely from Brazil, in English and mostly in writing. Brazil sits one to two hours ahead of US Eastern time, so calls fit comfortably into a US morning or early afternoon, and written replies come within one working day. Reporting is in dollars, and everything is built in your own accounts from the first day.</p>
 <p class="note">Based in the UK or Ireland? The same practice runs a UK site with prices in pounds: <a href="https://ppcconsultancy.uk/ppc-freelancer/" rel="noopener">ppcconsultancy.uk</a>. And if you are a PPC specialist looking for contract work, this is not a vacancy; accounts are not passed on to subcontractors.</p>
 </div></section>
@@ -295,7 +410,7 @@ PAGES = [
 <table>
 <tr><th>Monthly ad spend</th><th>Freelance specialist</th><th>Small agency</th><th>Notes</th></tr>
 <tr><td>Under $3,000</td><td>One-off setup or audit</td><td>Usually below minimums</td><td>A retainer rarely makes sense here</td></tr>
-<tr><td>$3,000 – $10,000</td><td>Flat retainer, low four figures</td><td>Minimum retainer or 15–20% of spend</td><td>Where the freelance model is strongest</td></tr>
+<tr><td>$3,000 – $10,000</td><td>Flat retainer, set by scope</td><td>Minimum retainer or 15–20% of spend</td><td>Where the freelance model is strongest</td></tr>
 <tr><td>$10,000 – $50,000</td><td>Flat retainer, scaled by scope</td><td>10–15% of spend</td><td>Percentage models start to overcharge here</td></tr>
 <tr><td>Over $50,000</td><td>Flat retainer, fractional lead</td><td>Custom, often 8–12% ($4,000–6,000+)</td><td>Structure and measurement matter more than bids</td></tr>
 </table>
@@ -443,10 +558,23 @@ PAGES = [
 """,
 "faq": [
 ("Are you an agency?", "No. Diwizi is a consultancy with one consultant. When a project needs a designer or a developer, I bring in a specific person for that piece and tell you who it is."),
-("Where are you based, and does it matter?", "Curitiba, Brazil, GMT-3. For US clients that is one to four hours ahead; for the UK and Ireland, three to four hours behind. In practice we overlap most of the working day either way, and everything is done remotely in English."),
+("Where are you based, and does it matter?", "Curitiba, Brazil, GMT-3 all year, since Brazil has no daylight saving time. For US clients that is one to five hours ahead, depending on the zone and the season; for the UK and Ireland, three to four hours behind. In practice we overlap most of the working day either way, and everything is done remotely in English."),
 ("Do you hold Google or Meta certifications?", "Yes, though I would not hire on that basis and neither should you. Certifications test platform knowledge; the work is judgement about a specific business. Ask about accounts and results instead."),
 ],
 "related": ["results", "google-ads-management", "freelance-ppc-consultant", "contact"],
+},
+{
+    "slug": "faq", "short": "FAQ",
+    "blurb": "Answers on hiring a Google Ads freelancer: fees, terms, account access, Search ads and agency work.",
+    "title": "Google Ads Freelancer FAQ | Fees, Access, Search Ads | Diego Zietek",
+    "meta": "46 answers on hiring an independent Google Ads freelancer: how fees work, contracts and notice, account ownership, Google Search ads and white label work.",
+    "kicker": "About",
+    "h1": "Questions about hiring a Google Ads freelancer",
+    "lead": "What businesses and agencies in the US, Canada and Europe ask before they hire me: fees and terms, who owns the account, how Google Search campaigns are run and how white label work is set up.",
+    "proof": [],
+    "body": "",
+    "related": ["about", "pricing", "google-ads-audit", "contact"],
+    "faq_groups": FAQ_GROUPS,
 },
 
 {

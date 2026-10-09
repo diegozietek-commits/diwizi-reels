@@ -37,16 +37,6 @@ PERSON_ID = "https://diwizi.com/#diego"  # same Person node on diwizi.com, googl
 OG_IMAGE = "og.jpg"  # 1200x630 share image in assets/
 TODAY = date.today().isoformat()
 
-PRICES = {  # edit here; every page reads from this dict
-    "audit_usd": 1800, "audit_gbp": 1400,
-    "retainer_usd": 2000, "retainer_gbp": 1600,
-    "retainer_mid_usd": 3000, "retainer_mid_gbp": 2400,
-    "retainer_top_usd": 4500, "retainer_top_gbp": 3600,
-    "consulting_hour_usd": 250, "consulting_hour_gbp": 200,
-    "setup_usd": 1800, "setup_gbp": 1400,
-    "tracking_usd": 1500, "tracking_gbp": 1200,
-    "whitelabel_usd": 1200, "whitelabel_gbp": 950,
-}
 PHOTO = os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"))
 
 PROOF_DEFAULT = [("14+", "years in paid media"), ("1", "consultant on your account"), ("Flat fee", "never a % of ad spend"), ("Your", "accounts, tags and pages stay with you")]
@@ -149,6 +139,7 @@ NAV = [
     ("about", "About"),
 ]
 
+FAQ_SLUG = "faq"  # /faq/ is a sub-page of About
 FOOTER_GROUPS = [
     ("Services", ["ppc-management", "google-ads-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "landing-pages",
                   "conversion-tracking", "google-ads-small-business", "ecommerce-ppc"]),
@@ -156,7 +147,7 @@ FOOTER_GROUPS = [
                                "saas-ppc", "ppc-for-law-firms", "healthcare-ppc"]),
     ("Working with me", ["ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "ppc-consultant-manchester",
                          "ppc-consultant-birmingham", "ppc-consultant-leeds", "ppc-consultant-bristol",
-                         "agency-vs-consultant", "pricing", "results", "about", "contact"]),
+                         "agency-vs-consultant", "pricing", "results", "about", "faq", "contact"]),
 ]
 
 # hreflang pairs: UK page -> equivalent page on the US/global site (None = no equivalent)
@@ -169,7 +160,7 @@ SISTER_PAGES = {
     "ppc-specialist": "/google-ads-expert/", "ppc-for-law-firms": "/ppc-for-law-firms/",
     "healthcare-ppc": "/healthcare-ppc/", "saas-ppc": "/saas-ppc/", "ppc-consultation": "/google-ads-consultation/",
     "conversion-tracking": "/conversion-tracking-setup/", "pricing": "/pricing/", "results": "/results/",
-    "about": "/about/", "contact": "/contact/", "privacy": "/privacy/",
+    "about": "/about/", "faq": "/faq/", "contact": "/contact/", "privacy": "/privacy/",
     "ppc-freelancer": "/freelance-ppc-consultant/",
 }
 
@@ -279,6 +270,16 @@ footer .li-in{display:inline-flex;align-items:center;gap:6px}footer .li-in svg{f
 .price{font-size:15px;color:var(--muted)}.price b{color:var(--fg);font-size:18px}
 @media (max-width:720px){nav.main,.top-cta{display:none}.mmenu{display:block}header.top .wrap{min-height:56px}.logo{font-size:15px}.hero-grid{grid-template-columns:1fr}.hero-grid img{justify-self:start;max-width:220px}}
 @media (max-width:640px){.hero{padding:36px 0 24px}.hero p.lead{font-size:18px}main section{padding:28px 0}.ctabox{padding:22px}}
+.about-tabs{display:flex;gap:4px;margin:0 0 18px;border-bottom:1px solid var(--line)}
+.about-tabs a{padding:8px 14px;margin-bottom:-1px;text-decoration:none;color:var(--muted);font-weight:600;border-bottom:2px solid transparent}
+.about-tabs a[aria-current]{color:var(--fg);border-color:var(--accent)}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 10px}.crumbs a{color:var(--muted)}
+.faq-count{color:var(--muted);margin:0 0 14px}.faq-aud{margin:0 0 18px}
+.faq-index{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.faq-index a{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px;text-decoration:none;color:var(--fg);background:var(--soft)}
+.faq-aud-h{margin:40px 0 4px}.faq-cat h3{margin:28px 0 8px}
+.faq-aud-h,.faq-cat,.faq-item{scroll-margin-top:76px}
+details.faq-item:target{outline:2px solid var(--accent);outline-offset:2px}
 """
 
 
@@ -297,7 +298,7 @@ def out_path(slug):
 def nav_html(active):
     items = []
     for slug, label in NAV:
-        cur = ' aria-current="page"' if slug == active else ""
+        cur = ' aria-current="page"' if (slug == active or (slug == "about" and active == FAQ_SLUG)) else ""
         items.append(f'<a href="{url_for(slug)}"{cur}>{label}</a>')
     return "\n".join(items)
 
@@ -357,7 +358,7 @@ def footer_html():
         '<footer><div class="wrap"><div class="grid">' + "".join(groups) + "</div>"
         f'<div class="fine">{BRAND} is the personal practice of {NAME}, independent paid media consultant '
         f'operating as Diwizi. Working remotely on UK hours for UK and Irish businesses, '
-        f'with a US and Canadian practice at <a href="{SISTER}/" rel="noopener">googleadsfreelancer.com</a>. Google Ads, Meta Ads, LinkedIn Ads and Microsoft Advertising are trademarks of their '
+        f'with a practice for the US, Canada and Europe at <a href="{SISTER}/" rel="noopener">googleadsfreelancer.com</a>. Google Ads, Meta Ads, LinkedIn Ads and Microsoft Advertising are trademarks of their '
         f'respective owners; this site is not affiliated with or endorsed by Google, Meta, Microsoft or LinkedIn. '
         f'&copy; {date.today().year} {NAME}. <a href="/privacy/">Privacy</a></div></div></footer>'
     )
@@ -368,6 +369,57 @@ def faq_html(faq):
         return ""
     items = "".join(f"<details><summary>{esc(q)}</summary><p>{a}</p></details>" for q, a in faq)
     return f'<section id="faq"><div class="wrap"><h2>Questions people ask before hiring</h2>{items}</div></section>'
+
+
+def about_tabs_html(slug):
+    """About | FAQ tab strip at the top of /about/ and /faq/ (FAQ is a sub-page of About)."""
+    if slug not in ("about", FAQ_SLUG):
+        return ""
+    tabs = "".join(
+        f'<a href="{url_for(s)}"' + (' aria-current="page"' if s == slug else "") + f'>{t}</a>'
+        for s, t in (("about", "About"), (FAQ_SLUG, "FAQ")))
+    return f'<nav class="about-tabs" aria-label="About">{tabs}</nav>'
+
+
+def breadcrumb_html(slug):
+    """Visible breadcrumb on /faq/ only: Home / About / FAQ."""
+    if slug != FAQ_SLUG:
+        return ""
+    sep = '<span aria-hidden="true"> / </span>'
+    return (f'<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a>{sep}'
+            f'<a href="{url_for("about")}">About</a>{sep}<span aria-current="page">FAQ</span></nav>')
+
+
+def faq_flat(groups):
+    """[(q_id, question, answer_html), ...] from a faq_groups structure."""
+    return [item for _aid, _label, cats in groups for _cid, _title, items in cats for item in items]
+
+
+def faq_hub_html(groups):
+    """Body of /faq/: audience buttons, topic index, then one <details> per question with its own anchor."""
+    n = len(faq_flat(groups))
+    aud = "".join(f'<a class="btn{" ghost" if i else ""}" href="#{aid}">{esc(label)}</a>'
+                  for i, (aid, label, _cats) in enumerate(groups))
+    index = "".join(f'<a href="#{cid}">{esc(title)}</a>'
+                    for _aid, _label, cats in groups for cid, title, _items in cats)
+    out = ['<section class="faq-hub"><div class="wrap">',
+           f'<p class="faq-count">{n} questions, answered by {NAME}.</p>',
+           f'<div class="cta-row faq-aud">{aud}</div>',
+           f'<nav class="faq-index" aria-label="Topics">{index}</nav>']
+    for aid, label, cats in groups:
+        out.append(f'<h2 class="faq-aud-h" id="{aid}">{esc(label)}</h2>')
+        for cid, title, items in cats:
+            qs = "".join(f'<details class="faq-item" id="{qid}"><summary>{esc(q)}</summary><p>{a}</p></details>'
+                         for qid, q, a in items)
+            out.append(f'<div class="faq-cat" id="{cid}"><h3>{esc(title)}</h3>{qs}</div>')
+    out.append("</div></section>")
+    return "\n".join(out)
+
+
+# Opens the question named in the URL hash (/faq/#question-id), also when the hash changes.
+FAQ_OPEN_JS = ("<script>(function(){function o(){var h=decodeURIComponent(location.hash.slice(1));if(!h)return;"
+               "var d=document.getElementById(h);if(d&&d.tagName==='DETAILS'){d.open=true;}}"
+               "o();window.addEventListener('hashchange',o);})();</script>")
 
 
 def related_html(slug):
@@ -471,11 +523,11 @@ def llms_txt():
 LLMS_SUMMARY = ("Diego Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. "
                 "Runs Google, Microsoft, Meta and LinkedIn Ads personally, with landing pages and conversion tracking included, "
                 "for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.")
-LLMS_FACTS = ["- Market: UK and Irish businesses; the US and Canadian practice is at googleadsfreelancer.com.",
+LLMS_FACTS = ["- Market: UK and Irish businesses, and companies from any country that work in English; the practice for the US, Canada and Europe is at googleadsfreelancer.com.",
               "- Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).",
               "- Pricing: quoted in pounds, ex VAT, from the form; prices are not published. Never a percentage of ad spend."]
-LLMS_PAGES = ["index", "ppc-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "contact"]
-LLMS_SISTER = "US and Canadian practice, Google Ads freelancer"
+LLMS_PAGES = ["index", "ppc-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "faq", "contact"]
+LLMS_SISTER = "Practice for the US, Canada and Europe, Google Ads freelancer"
 
 def schema_for(p):
     url = SITE + url_for(p["slug"])
@@ -501,6 +553,15 @@ def schema_for(p):
         graph.append({"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": strip_tags(a)}}
             for q, a in p["faq"]]})
+    if p.get("faq_groups"):
+        graph.append({"@type": "FAQPage", "@id": url + "#faq", "mainEntity": [
+            {"@type": "Question", "name": q, "url": url + "#" + qid,
+             "acceptedAnswer": {"@type": "Answer", "text": strip_tags(a)}}
+            for qid, q, a in faq_flat(p["faq_groups"])]})
+        graph.append({"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "About", "item": SITE + url_for("about")},
+            {"@type": "ListItem", "position": 3, "name": "FAQ", "item": url}]})
     if p.get("service_name"):
         graph.append({"@type": "Service", "name": p["service_name"], "serviceType": p["service_name"],
                       "provider": {"@id": SITE + "/#service"}, "url": url,
@@ -509,8 +570,6 @@ def schema_for(p):
 
 
 def fill_prices(html_text):
-    for k, v in PRICES.items():
-        html_text = html_text.replace("{{" + k + "}}", f"{v:,}")
     html_text = html_text.replace("{{cal_url}}", CAL)
     html_text = html_text.replace("{{email}}", email_link())
     html_text = html_text.replace("{{brands}}", brands_html())
@@ -519,6 +578,8 @@ def fill_prices(html_text):
 
 def render(p):
     p = dict(p)
+    if p.get("faq_groups"):
+        p["body"] = faq_hub_html(p["faq_groups"]) + p.get("body", "")
     p["body"] = fill_prices(p.get("body", ""))
     p["lead"] = fill_prices(p.get("lead", ""))
     if p.get("faq"):
@@ -568,6 +629,7 @@ def render(p):
 </div></header>
 <main>
 <section class="hero"><div class="wrap">
+{breadcrumb_html(slug)}{about_tabs_html(slug)}
 <p class="kicker">{esc(p.get('kicker', BRAND))}</p>
 <div class="hero-grid"><div>
 <h1>{p['h1']}</h1>
@@ -582,7 +644,7 @@ def render(p):
 {cta_html(p)}
 </main>
 {footer_html()}
-{CONSENT_BANNER}{EMAIL_JS}{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}
+{CONSENT_BANNER}{EMAIL_JS}{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}{FAQ_OPEN_JS if p.get('faq_groups') else ''}
 <script id="cal-embed">(function(){{var EV='diwizi/ppc-consultancy-call',NS='ppcuk',pronto=false,pedido=false;function carregar(){{if(pedido)return;pedido=true;try{{(function(C,A,L){{var p=function(a,ar){{a.q.push(ar)}},d=C.document;C.Cal=C.Cal||function(){{var cal=C.Cal,ar=arguments;if(!cal.loaded){{cal.ns={{}};cal.q=cal.q||[];var s=d.createElement('script');s.src=A;s.async=true;s.onload=function(){{pronto=true}};d.head.appendChild(s);cal.loaded=true}}if(ar[0]===L){{var api=function(){{p(api,arguments)}},ns=ar[1];api.q=api.q||[];if(typeof ns==='string'){{cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,['initNamespace',ns])}}else p(cal,ar);return}}p(cal,ar)}}}})(window,'https://app.cal.com/embed/embed.js','init');Cal('init',NS,{{origin:'https://app.cal.com'}});Cal.ns[NS]('ui',{{layout:'month_view'}});Cal.ns[NS]('on',{{action:'bookingSuccessfulV2',callback:function(e){{marcar((e&&e.detail&&e.detail.data)||{{}})}}}});}}catch(x){{}}}}function marcar(d){{try{{var id=d.uid||d.bookingUid||'',k=NS+'_call_'+(id||'sessao'),ja=false;try{{ja=!!(sessionStorage.getItem(k)||(id&&localStorage.getItem(k)))}}catch(e){{}}if(ja)return;(window.dataLayer=window.dataLayer||[]).push({{event:'booking_confirmed',booking_source:'cal.com',booking_uid:id,lead_page:location.pathname}});try{{sessionStorage.setItem(k,'1');if(id)localStorage.setItem(k,'1')}}catch(e){{}}}}catch(e){{}}}}function link(t){{return t&&t.closest?t.closest('a[href^="https://cal.com/diwizi/"]'):null}}document.addEventListener('click',function(e){{var a=link(e.target);if(!a||!pronto||e.defaultPrevented||e.button||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;try{{Cal.ns[NS]('modal',{{calLink:EV,config:{{layout:'month_view'}}}});e.preventDefault()}}catch(x){{}}}});['pointerover','touchstart','focusin'].forEach(function(n){{document.addEventListener(n,function(e){{if(link(e.target))carregar()}},{{passive:true,capture:true}})}});function ocioso(){{setTimeout(carregar,1500)}}if(document.readyState==='complete')ocioso();else window.addEventListener('load',ocioso);}})();</script>
 </body>
 </html>
