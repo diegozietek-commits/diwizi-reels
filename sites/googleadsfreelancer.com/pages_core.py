@@ -120,9 +120,9 @@ PAGES = [
 {
 "slug": "index", "short": "Home", "blurb": "Senior Google Ads freelancer, one person on the account.",
 "title": "Google Ads Freelancer | Senior & Independent | Diego Zietek",
-"meta": 'Google Ads management run by a senior specialist, with Meta, Microsoft and LinkedIn when they fit. Flat monthly fee, and your accounts stay yours.',
+"meta": 'Google Ads management run by a senior specialist, with Meta and Microsoft when they fit. Flat monthly fee, and your accounts stay yours.',
 "kicker": "Google Ads freelancer",
-"h1": "Google Ads, run by the senior specialist you hired. Meta, Microsoft and LinkedIn when they fit.",
+"h1": "Google Ads, run by the senior specialist you hired. Meta and Microsoft when they fit.",
 "lead": "I am Diego Zietek, an independent paid media consultant with 14+ years on the account. Campaign management, conversion tracking and landing page work, with one point of contact and a flat monthly fee. Built for businesses in the US, Canada and Europe. Companies from any country that work in English are welcome.",
 "service_name": "Freelance Google Ads management",
 "body": """
@@ -153,7 +153,6 @@ PAGES = [
 <div class="card"><h3>Google Ads, first</h3><p>Search, Shopping, Performance Max, Demand Gen and YouTube. Where most of the budget and most of the mistakes are, and the core of every engagement. <a href="/google-ads-management/">Management →</a></p></div>
 <div class="card"><h3><a href="/microsoft-ads-management/">Microsoft Advertising</a></h3><p>The same intent at a lower cost per click for B2B, finance and professional services. Managed natively, not just imported.</p></div>
 <div class="card"><h3><a href="/meta-ads-management/">Meta Ads</a></h3><p>Facebook and Instagram for demand creation, remarketing and lead generation, measured against the CRM rather than the platform's own numbers.</p></div>
-<div class="card"><h3><a href="/linkedin-ads-management/">LinkedIn Ads</a></h3><p>For B2B accounts where the buying committee can be named. Judged on pipeline, not on clicks.</p></div>
 </div>
 <p>Two or more platforms under one operator and one measurement layer is <a href="/ppc-management/">PPC management</a>. Agencies that need a senior operator on a client account: <a href="/white-label-ppc/">white label PPC</a>.</p>
 </div></section>
@@ -193,9 +192,9 @@ PAGES = [
 ("How much does a Google Ads freelancer cost?", "Management is a flat monthly fee set by scope, not tied to ad spend. An audit is a fixed price quoted from the form and credited against the first month if you continue. No twelve-month contract. The <a href=\"/pricing/\">pricing page</a> explains how each model behaves and what to ask before you sign with anyone."),
 ("What is the minimum ad spend you work with?", "No hard minimum, but the retainer only makes sense once the account spends enough for the fee to be a small share of the total; in practice from about $3,000 a month. Below that, a one-off setup or audit is the better buy."),
 ("Who owns the Google Ads account, the tags and the landing pages?", "You do, always. I work inside your accounts with manager access. Nothing is built in a container I control, so leaving me never means starting over."),
-("Do you work with clients outside the United States?", "Yes. The site is written for the US, Canada and Europe, and I work with companies from any country that operate in English, quoted in US dollars, pounds or euros. UK and Irish businesses who prefer pricing in pounds have ppcconsultancy.uk. I work remotely from Curitiba, Brazil, on GMT-3 all year: one to five hours ahead of US time zones, depending on the zone and the season, and three to five hours behind Europe, so calls fit a US morning or a European afternoon."),
+("Do you work with clients outside the United States?", "Yes. The site is written for the US, Canada and Europe, and I work with companies from any country that operate in English, quoted in US dollars, pounds or euros. UK and Irish businesses also have ppcconsultancy.uk, quoted in pounds for the UK and euros for Ireland. I work remotely from Curitiba, Brazil, on GMT-3 all year: one to five hours ahead of US time zones, depending on the zone and the season, and three to five hours behind Europe, so calls fit a US morning or a European afternoon."),
 ("Can you take over an account an agency built?", "Yes, and it is one of the most common starting points. The audit usually finds duplicated conversion actions, broad match on Smart Bidding without negatives, and campaigns organised by whoever built them rather than by what you sell."),
-("Do you also run Meta, Microsoft or LinkedIn Ads?", "Yes. Google Ads is the core of the work, and <a href=\"/meta-ads-management/\">Meta Ads</a>, <a href=\"/microsoft-ads-management/\">Microsoft Advertising</a> and <a href=\"/linkedin-ads-management/\">LinkedIn Ads</a> are added when there is a measured reason, run by the same person."),
+("Do you also run Meta or Microsoft Ads?", "Yes. Google Ads is the core of the work, and <a href=\"/meta-ads-management/\">Meta Ads</a> and <a href=\"/microsoft-ads-management/\">Microsoft Advertising</a> are added when there is a measured reason, run by the same person."),
 ],
 "related": ["google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "pricing"],
 },
@@ -216,7 +215,7 @@ PAGES = [
 <p>PPC is broader than Google Ads. A PPC consultant plans and runs paid search across Google and Microsoft, and often the paid social that sits next to it, with one account structure, one measurement layer and one person accountable for the result. That last part is what people are usually buying when they look for a PPC consultant rather than an agency: direct access to whoever does the work.</p>
 <div class="cols">
 <div class="card"><h3>Paid search</h3><p>Google Ads Search, Shopping and Performance Max, plus <a href="/microsoft-ads-management/">Microsoft Advertising</a>, which in the US still delivers a cheaper click on the same intent for many B2B and finance accounts.</p></div>
-<div class="card"><h3>Paid social</h3><p><a href="/meta-ads-management/">Meta Ads</a> for demand and remarketing, <a href="/linkedin-ads-management/">LinkedIn Ads</a> for B2B accounts where the buying committee can be named. Run only when there is a reason, not because the invoice looks fuller.</p></div>
+<div class="card"><h3>Paid social</h3><p><a href="/meta-ads-management/">Meta Ads</a> for demand and remarketing. Run only when there is a reason, not because the invoice looks fuller.</p></div>
 <div class="card"><h3>Measurement</h3><p>GA4, Google Tag Manager, consent mode and offline conversion import, so the platforms optimize toward customers rather than form fills. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</p></div>
 </div>
 </div></section>
@@ -314,7 +313,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Consulting across platforms</h2>
-<p>Google Ads is where most of the money and most of the mistakes are, but the same questions apply to <a href="/meta-ads-management/">Meta Ads</a>, <a href="/microsoft-ads-management/">Microsoft Advertising</a> and <a href="/linkedin-ads-management/">LinkedIn Ads</a>, and to the split between them. A paid search consultant who has never run paid social will always recommend more paid search. I run all four, which makes the budget allocation advice worth something.</p>
+<p>Google Ads is where most of the money and most of the mistakes are, but the same questions apply to <a href="/meta-ads-management/">Meta Ads</a> and <a href="/microsoft-ads-management/">Microsoft Advertising</a>, and to the split between them. A paid search consultant who has never run paid social will always recommend more paid search. I run all three, which makes the budget allocation advice worth something.</p>
 </div></section>
 """,
 "faq": [
@@ -376,7 +375,7 @@ PAGES = [
 ("How long does a PPC audit take?", "Five to seven working days from receiving access, for a typical single-platform account. Larger or multi-platform accounts take longer and the quote says so up front."),
 ("What access do you need?", "Read-only access to Google Ads, GA4 and Google Tag Manager, and ideally a CRM export or a conversation with whoever handles the leads. I do not change anything during an audit."),
 ("Do I have to hire you afterwards?", "No. The report is yours to implement however you like. A meaningful share of audit clients implement it in-house and that is fine."),
-("Can you audit Meta Ads, Microsoft Advertising or LinkedIn Ads too?", "Yes. Each platform adds scope and a bit of time, and it is worth doing them together because the tracking layer is shared."),
+("Can you audit Meta Ads or Microsoft Advertising too?", "Yes. Each platform adds scope and a bit of time, and it is worth doing them together because the tracking layer is shared."),
 ("Will you tell me if my agency is doing a good job?", "Yes, in writing. I have no retainer to win by criticising them, and a fair audit that confirms the agency is competent is still useful: it tells you where the remaining gains are."),
 ],
 "related": ["google-ads-consultant", "conversion-tracking-setup", "google-ads-management", "pricing"],
@@ -437,7 +436,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What is not in the price</h2>
-<p>Ad spend is paid by you, directly to Google, Microsoft, Meta or LinkedIn, from your own billing profile. Paid tools beyond what the platforms provide are rare and agreed first. Creative production at volume, for Meta-heavy accounts, is done with your designer or a studio and billed by them. Everything else that the account needs to perform, including tracking fixes and landing page changes I can make myself, is inside the retainer.</p>
+<p>Ad spend is paid by you, directly to Google, Microsoft or Meta, from your own billing profile. Paid tools beyond what the platforms provide are rare and agreed first. Creative production at volume, for Meta-heavy accounts, is done with your designer or a studio and billed by them. Everything else that the account needs to perform, including tracking fixes and landing page changes I can make myself, is inside the retainer.</p>
 </div></section>
 """,
 "faq": [
@@ -517,18 +516,18 @@ PAGES = [
 {
 "slug": "about", "short": "About Diego", "blurb": "Who runs the account, where from, and what is public.",
 "title": "About Diego Zietek | Independent Google Ads Consultant",
-"meta": 'Independent paid media consultant, 14+ years in Google Ads, Meta, LinkedIn and Microsoft Advertising. One person on every account, remote, in English.',
+"meta": 'Independent paid media consultant, 14+ years in Google Ads, Meta and Microsoft Advertising. One person on every account, remote, in English.',
 "kicker": "About",
 "h1": "Diego Zietek, the person who runs every account on this site",
-"lead": "Independent paid media consultant with 14+ years of hands-on work across Google Ads, Meta Ads, LinkedIn Ads and Microsoft Advertising, for B2B, SaaS, healthcare, e-commerce and local service companies. I operate alone: the person who audits the account is the person who runs it and writes the report.",
-"proof": [("14+", "years in paid media"), ("1", "person on every account"), ("6", "countries served"), ("GMT-3", "based in Curitiba, Brazil")],
+"lead": "Independent paid media consultant with 14+ years of hands-on work across Google Ads, Meta Ads and Microsoft Advertising, for B2B, SaaS, healthcare, e-commerce and local service companies. I operate alone: the person who audits the account is the person who runs it and writes the report.",
+"proof": [("14+", "years in paid media"), ("1", "person on every account"), ("4", "engagements published on Results"), ("GMT-3", "based in Curitiba, Brazil")],
 "body": """
 <section><div class="wrap">
 <h2>The facts a buyer usually asks for</h2>
 <table>
 <tr><th>Role</th><td>Founder and sole operator of Diwizi, an independent consultancy. Not an agency, not an employee of any client.</td></tr>
 <tr><th>Experience</th><td>14+ years running paid media accounts hands-on, in-house, freelance and through agencies.</td></tr>
-<tr><th>Platforms</th><td>Google Ads (Search, Shopping, Performance Max, Demand Gen, YouTube), Meta Ads (Facebook and Instagram), LinkedIn Ads, Microsoft Advertising, programmatic.</td></tr>
+<tr><th>Platforms</th><td>Google Ads (Search, Shopping, Performance Max, Demand Gen, YouTube), Meta Ads (Facebook and Instagram), Microsoft Advertising, programmatic.</td></tr>
 <tr><th>Measurement</th><td>GA4, Google Tag Manager, consent mode, offline conversion import, HubSpot and Salesforce integration, Looker Studio reporting.</td></tr>
 <tr><th>Industries</th><td>Healthcare and pharma, B2B SaaS and HR tech, local services (HVAC, plumbing, home services), e-commerce, professional services.</td></tr>
 <tr><th>Markets</th><td>United States, Canada and Europe in English, with the UK and Ireland also served in pounds through ppcconsultancy.uk; companies from any other country that work in English are welcome; Brazil in Portuguese through diwizi.com.br.</td></tr>
@@ -559,7 +558,7 @@ PAGES = [
 "faq": [
 ("Are you an agency?", "No. Diwizi is a consultancy with one consultant. When a project needs a designer or a developer, I bring in a specific person for that piece and tell you who it is."),
 ("Where are you based, and does it matter?", "Curitiba, Brazil, GMT-3 all year, since Brazil has no daylight saving time. For US clients that is one to five hours ahead, depending on the zone and the season; for the UK and Ireland, three to four hours behind. In practice we overlap most of the working day either way, and everything is done remotely in English."),
-("Do you hold Google or Meta certifications?", "Yes, though I would not hire on that basis and neither should you. Certifications test platform knowledge; the work is judgement about a specific business. Ask about accounts and results instead."),
+("Do you hold Google Ads certifications?", "Yes, I am Google Ads certified, though I would not hire on that basis and neither should you. Certifications test platform knowledge; the work is judgment about a specific business. I am not a Google Partner, which is a separate status with its own spend and performance requirements. Ask about accounts and results instead."),
 ],
 "related": ["results", "google-ads-management", "freelance-ppc-consultant", "contact"],
 },

@@ -12,21 +12,20 @@ PAGES = [
 
 # ---------------------------------------------------------------- B2B PPC
 {
-"slug": "b2b-ppc", "short": "B2B PPC", "blurb": "Search for the buyers already looking, LinkedIn for the ones who are not, both judged on pipeline.",
-"title": "B2B PPC Consultant | Google and LinkedIn Ads for Pipeline, Not Leads",
-"meta": "B2B PPC by an independent consultant: Google Search for buyers already looking, LinkedIn for the rest, CRM-connected and reported in pipeline. Flat fee.",
+"slug": "b2b-ppc", "short": "B2B PPC", "blurb": "Google Search for the buyers already looking, judged on pipeline from the CRM, not on form fills.",
+"title": "B2B PPC Consultant | Google Ads Measured in Pipeline, Not Leads",
+"meta": "B2B PPC by an independent consultant: Google and Microsoft Search for buyers already looking, CRM-connected and reported in pipeline. Flat fee.",
 "kicker": "B2B PPC",
-"h1": "B2B PPC measured in qualified pipeline, by one consultant across Google, Microsoft and LinkedIn",
+"h1": "B2B PPC measured in qualified pipeline, by one consultant across Google and Microsoft",
 "lead": "B2B accounts fail in a specific way: the platforms are optimizing toward form fills, the sales team is ignoring them, and nobody can say which campaign produced the last closed deal. Connecting the CRM to the ad platforms is most of the job, and it is where a B2B engagement starts here.",
 "service_name": "B2B PPC management",
 "body": """
 <section><div class="wrap">
 <h2>Where B2B accounts leak</h2>
 <ul>
-<li><strong>Leads counted, pipeline not.</strong> A whitepaper download and a demo request from a named account are both "a lead" to the platform. Until MQL, SQL and opportunity stages flow back from HubSpot or Salesforce, Google and LinkedIn buy the cheapest form fill, which is the least qualified one.</li>
+<li><strong>Leads counted, pipeline not.</strong> A whitepaper download and a demo request from a named account are both "a lead" to the platform. Until MQL, SQL and opportunity stages flow back from HubSpot or Salesforce, the platforms buy the cheapest form fill, which is the least qualified one.</li>
 <li><strong>Brand taking the credit.</strong> Broad match and Performance Max drift onto the company name and the reported cost per lead looks excellent. Brand is isolated, and the non-brand number is the one managed.</li>
 <li><strong>Research and job-seeker traffic.</strong> "What is", "salary", "jobs", "free template": expensive clicks from people who will never buy. Twelve months of search terms read line by line, then a negatives program maintained weekly.</li>
-<li><strong>LinkedIn judged like Google.</strong> A $12 click on a VP who downloads a benchmark is not pipeline. LinkedIn is judged on qualified opportunities from the CRM or not at all.</li>
 <li><strong>One page for every intent.</strong> A category search, a competitor comparison and an integration search deserve different pages with different asks.</li>
 </ul>
 </div></section>
@@ -34,9 +33,8 @@ PAGES = [
 <section><div class="wrap">
 <h2>What management includes</h2>
 <ol class="steps">
-<li><div><strong>Measurement to the CRM.</strong> GA4 and Tag Manager with campaign data attached to every lead, HubSpot, Salesforce or Pipedrive stages imported to Google Ads and LinkedIn as offline conversions with amounts, enhanced conversions for leads. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</div></li>
+<li><div><strong>Measurement to the CRM.</strong> GA4 and Tag Manager with campaign data attached to every lead, HubSpot, Salesforce or Pipedrive stages imported to Google Ads and Microsoft Advertising as offline conversions with amounts, enhanced conversions for leads. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</div></li>
 <li><div><strong>Google Search by intent.</strong> Category, problem, integration and competitor campaigns, each with its own page and target, brand kept separate, Performance Max only with brand excluded and only once the conversion data deserves it.</div></li>
-<li><div><strong>LinkedIn for the accounts that are not searching.</strong> Named account lists, firmographic and title targeting, offers built for a buyer with a problem this quarter, tested against a control. <a href="/linkedin-ads-management/">LinkedIn Ads →</a></div></li>
 <li><div><strong>Microsoft Advertising</strong> for the professional audience on work devices, with LinkedIn profile bid adjustments Google cannot offer. <a href="/microsoft-ads-management/">Microsoft Ads →</a></div></li>
 <li><div><strong>Pages per intent</strong>, built by me: comparison pages, integration pages, use-case pages, with a form that asks the one qualifying question. See <a href="/landing-pages/">landing pages</a>.</div></li>
 <li><div><strong>Reporting in pipeline.</strong> Qualified pipeline, closed-won revenue and cost per opportunity by channel and segment, alongside the platform numbers, in your currency.</div></li>
@@ -50,17 +48,16 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Who this fits</h2>
-<p>US and Canadian B2B companies, and companies from any country that work in English: SaaS, professional and technical services, industrial suppliers, consultancies, spending roughly $5,000 to $80,000 a month across Google and LinkedIn, with a CRM in use. Below that, Google Search alone with the CRM connected is usually the right first step, and I will say so. For software companies specifically, see <a href="/saas-ppc/">SaaS PPC</a>.</p>
+<p>US and Canadian B2B companies, and companies from any country that work in English: SaaS, professional and technical services, industrial suppliers, consultancies, spending roughly $5,000 to $80,000 a month on Google and Microsoft, with a CRM in use. LinkedIn Ads can be added when a named-account campaign is worth the click price; it is not the core of the work. Below that, Google Search alone with the CRM connected is usually the right first step, and I will say so. For software companies specifically, see <a href="/saas-ppc/">SaaS PPC</a>.</p>
 </div></section>
 """,
 "faq": [
 ("What is a good cost per lead for B2B PPC?", "The wrong question, politely. Cost per qualified opportunity and cost per closed deal are the numbers, and they only exist once the CRM is connected. From that point the targets come from your deal size and sales cycle, not from an industry benchmark."),
-("Can you connect Google Ads and LinkedIn to our CRM?", "Yes: HubSpot, Salesforce, Pipedrive and most others with an API or native integration. Offline conversion import with stage and amount, enhanced conversions for leads, and campaign data stored on every record so sales can see where a deal came from."),
+("Can you connect Google Ads to our CRM?", "Yes: HubSpot, Salesforce, Pipedrive and most others with an API or native integration. Offline conversion import with stage and amount, enhanced conversions for leads, and campaign data stored on every record so sales can see where a deal came from."),
 ("Should we bid on competitor names?", "Usually yes, in a separate campaign with its own comparison page and a target that reflects the lower conversion rate. Honest comparison pages convert well and stay within the advertising rules."),
-("Do you run LinkedIn without Google?", "Yes, though for most B2B accounts the two work together: LinkedIn builds the audience and Google catches it when it searches. Both appear in one report either way."),
 ("How much does B2B PPC management cost?", "A flat monthly fee set from the scope: platforms, markets, campaigns and how much landing page and tracking work is included. Never a percentage of spend. Quoted in US dollars, pounds or euros by email from the form. See <a href=\"/pricing/\">pricing</a>."),
 ],
-"related": ["linkedin-ads-management", "saas-ppc", "conversion-tracking-setup", "landing-pages"],
+"related": ["microsoft-ads-management", "saas-ppc", "conversion-tracking-setup", "landing-pages"],
 },
 
 # ---------------------------------------------------------------- Landing pages / CRO
@@ -187,7 +184,7 @@ PAGES = [
 <li><div><strong>Ask who will be in the account weekly.</strong> If the answer is a team, ask for the name and the years of experience of the person doing the work. Here the answer is one name, and it is the person you spoke to.</div></li>
 <li><div><strong>Ask for a written review before any retainer.</strong> An expert can read your account read-only and tell you in writing what is wrong and what it costs each month. That is the <a href="/google-ads-audit/">Google Ads audit</a>, and it stands on its own.</div></li>
 <li><div><strong>Ask how results are reported.</strong> Platform numbers alone are a warning sign. The report should reconcile to your CRM or your orders, with brand and non-brand shown separately.</div></li>
-<li><div><strong>Ask what they will not do.</strong> An expert has a scope. Mine is Google, Microsoft, Meta and LinkedIn Ads for businesses spending roughly $3,000 to $80,000 a month, with the exceptions listed on the <a href="/">home page</a>.</div></li>
+<li><div><strong>Ask what they will not do.</strong> An expert has a scope. Mine is Google, Microsoft and Meta Ads for businesses spending roughly $3,000 to $80,000 a month, with the exceptions listed on the <a href="/">home page</a>.</div></li>
 <li><div><strong>Check the published work.</strong> Named cases where the client allowed it, anonymized where they did not, with the figures and their source stated. <a href="/results/">Results →</a></div></li>
 </ol>
 </div></section>
@@ -205,9 +202,9 @@ PAGES = [
 "faq": [
 ("How much does a Google Ads expert cost?", "Senior US freelancers commonly quote by the hour or a flat monthly retainer; agencies commonly charge a percentage of spend with a minimum. My fee is flat, set from the scope of the account, and quoted by email from the form. See <a href=\"/pricing/\">pricing</a>."),
 ("What is the difference between a Google Ads expert and an agency?", "Who does the work. An agency puts an account team between you and the account, usually led by someone junior once the pitch is over. An expert is the person doing the work, and you speak to them directly."),
-("Are you Google Partner certified?", "Certifications are earned by spend thresholds as much as by skill and say little about judgment. What you can check is the written review, the published cases and how the first call goes."),
+("Are you a Google Partner?", "No. I am Google Ads certified, but not a Google Partner, which is a separate status with its own spend and performance requirements. Neither badge tells you who will work on your account. What you can check is the written review, the published cases and how the first call goes."),
 ("Can you work alongside our in-house marketer?", "Yes. A common arrangement is a monthly review of the work your team does, with a written note and a call, or a setup that your team then runs. The scope is agreed in writing at the start."),
-("Which platforms are you an expert in?", "Google Ads first, including Shopping, Performance Max, YouTube and Demand Gen; then Microsoft Advertising, Meta Ads and LinkedIn Ads, with GA4, Tag Manager and landing pages as part of every engagement."),
+("Which platforms are you an expert in?", "Google Ads first, including Shopping, Performance Max, YouTube and Demand Gen; then Microsoft Advertising and Meta Ads, with GA4, Tag Manager and landing pages as part of every engagement."),
 ],
 "related": ["google-ads-consultant", "freelance-ppc-consultant", "google-ads-audit", "google-ads-management"],
 },
@@ -447,11 +444,11 @@ PAGES = [
 
 # ---------------------------------------------------------------- SaaS
 {
-"slug": "saas-ppc", "short": "SaaS PPC", "blurb": "Google and LinkedIn Ads for software companies, measured in qualified pipeline and CAC payback, with a published case.",
-"title": "SaaS PPC Consultant | Google & LinkedIn Ads Measured in Pipeline",
-"meta": "SaaS PPC by an independent consultant: Google and LinkedIn Ads connected to the CRM and reported in pipeline and CAC payback. Published case: 600% growth.",
+"slug": "saas-ppc", "short": "SaaS PPC", "blurb": "Google Ads for software companies, measured in qualified pipeline and CAC payback, with a published case.",
+"title": "SaaS PPC Consultant | Google Ads Measured in Pipeline and Payback",
+"meta": "SaaS PPC by an independent consultant: Google Ads connected to the CRM and reported in pipeline and CAC payback. Published case: 600% growth.",
 "kicker": "SaaS PPC",
-"h1": "SaaS PPC measured in qualified pipeline and CAC payback, by one consultant across Google and LinkedIn",
+"h1": "SaaS PPC measured in qualified pipeline and CAC payback, by one consultant on Google and Microsoft",
 "lead": "Software companies have the cleanest data in paid media and often the worst use of it. The CRM knows which trials became customers and what they pay; the ad platforms are optimizing toward sign-ups. Connecting the two is most of the job, and it is where a SaaS account starts here.",
 "service_name": "SaaS PPC management",
 "body": """
@@ -461,7 +458,6 @@ PAGES = [
 <li><strong>Optimizing toward the top of the funnel.</strong> Free trials, demo requests and content downloads are easy to count and cheap to buy. Without product-qualified or sales-accepted stages flowing back, the platforms buy the cheapest sign-ups, which churn.</li>
 <li><strong>Competitor and category terms treated the same.</strong> "[Competitor] alternative" and "best [category] software" bring different buyers at different stages and should sit in separate campaigns with separate pages and expectations.</li>
 <li><strong>Brand taking the credit.</strong> Performance Max and broad match drift onto the brand name and the reported CAC looks wonderful. Brand is isolated, and the non-brand number is the one managed.</li>
-<li><strong>LinkedIn judged on form fills.</strong> A $12 click on a Head of Operations who downloads a benchmark is not pipeline. LinkedIn is judged on qualified opportunities from the CRM or not at all.</li>
 <li><strong>Payback ignored.</strong> A customer acquired at $1,200 on a $49 monthly plan is a two-year payback before gross margin. The targets by plan and segment come from that arithmetic, not from a blended CAC.</li>
 </ul>
 </div></section>
@@ -469,9 +465,9 @@ PAGES = [
 <section><div class="wrap">
 <h2>What management includes</h2>
 <ol class="steps">
-<li><div><strong>Measurement to the CRM.</strong> GA4 and Tag Manager with a user ID, HubSpot or Salesforce stages (MQL, SQL, opportunity, closed won, with amount) imported to Google Ads and LinkedIn as offline conversions, so the platforms optimize toward revenue. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</div></li>
+<li><div><strong>Measurement to the CRM.</strong> GA4 and Tag Manager with a user ID, HubSpot or Salesforce stages (MQL, SQL, opportunity, closed won, with amount) imported to Google Ads and Microsoft Advertising as offline conversions, so the platforms optimize toward revenue. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</div></li>
 <li><div><strong>Google Search by intent.</strong> Category, problem, integration and competitor campaigns, each with its own page and its own target, brand kept separate, Performance Max only with brand excluded and only once the conversion data deserves it.</div></li>
-<li><div><strong>LinkedIn for the accounts that are not searching.</strong> Named account lists from the CRM, firmographic and title targeting, offers built for a buyer with a problem this quarter, conversation and document ads tested against a control. <a href="/linkedin-ads-management/">LinkedIn Ads →</a></div></li>
+<li><div><strong>Microsoft Advertising</strong> for the professional audience on work devices, with LinkedIn profile bid adjustments Google cannot offer. <a href="/microsoft-ads-management/">Microsoft Ads →</a></div></li>
 <li><div><strong>YouTube and Demand Gen</strong> for product demos and founder pieces, judged on the lift in branded search and on conversions, not on views. <a href="/youtube-ads-management/">YouTube Ads →</a></div></li>
 <li><div><strong>Pages per intent</strong>, built by me: comparison pages, integration pages, use-case pages, with the trial or demo form that asks the one qualifying question. See <a href="/landing-pages/">landing pages</a>.</div></li>
 <li><div><strong>Reporting in pipeline and payback.</strong> Qualified pipeline, closed-won revenue and CAC payback by channel and segment, alongside the platform numbers.</div></li>
@@ -485,27 +481,27 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Who this fits</h2>
-<p>B2B software companies in the US, Canada and anywhere that works in English, from seed to Series B or established vertical SaaS, spending roughly $5,000 to $80,000 a month across Google and LinkedIn, with a CRM in use and a sales or product-led motion that can report stages. Consumer apps measured on installs are not a fit. For the wider B2B picture, see <a href="/b2b-ppc/">B2B PPC</a>.</p>
+<p>B2B software companies in the US, Canada and anywhere that works in English, from seed to Series B or established vertical SaaS, spending roughly $5,000 to $80,000 a month on Google and Microsoft, with a CRM in use and a sales or product-led motion that can report stages. Consumer apps measured on installs are not a fit. For the wider B2B picture, see <a href="/b2b-ppc/">B2B PPC</a>.</p>
 </div></section>
 """,
 "faq": [
 ("What CAC should a SaaS company expect from Google Ads?", "No honest number exists before the account and the CRM are read together. What is measurable from the first month is CAC by channel and segment against your plan prices, which gives payback, and that is the figure the targets are set from."),
-("Can you connect Google Ads and LinkedIn to HubSpot or Salesforce?", "Yes. Offline conversion import from CRM stages with amounts, enhanced conversions for leads, and a user ID in GA4 so the journey from click to closed won is visible. The setup is documented so your RevOps team owns it."),
+("Can you connect Google Ads to HubSpot or Salesforce?", "Yes. Offline conversion import from CRM stages with amounts, enhanced conversions for leads, and a user ID in GA4 so the journey from click to closed won is visible. The setup is documented so your RevOps team owns it."),
 ("Should we bid on competitor names?", "Usually yes, in a separate campaign with its own page and a target that reflects the lower conversion rate. Comparison pages that are honest about where the competitor is better convert well and stay within the advertising rules."),
 ("Do you run product-led growth accounts?", "Yes, provided product-qualified signals (activation, team invites, usage thresholds) can be fed back. Without them the platforms optimize toward sign-ups that never activate, and the budget is better spent elsewhere."),
 ("How much does SaaS PPC management cost?", "A flat monthly fee set from the scope: platforms, markets, campaigns and how much landing page and tracking work is included. Never a percentage of spend. Quoted in US dollars, pounds or euros by email from the form. See <a href=\"/pricing/\">pricing</a>."),
 ],
-"related": ["b2b-ppc", "linkedin-ads-management", "conversion-tracking-setup", "landing-pages"],
+"related": ["b2b-ppc", "microsoft-ads-management", "conversion-tracking-setup", "landing-pages"],
 },
 
 # ---------------------------------------------------------------- Houston
 {
 "slug": "ppc-consultant-houston", "short": "PPC consultant, Houston", "blurb": "For Houston businesses, with a published Houston case, delivered remotely on Central time.",
 "title": "PPC Consultant Houston | Google Ads With a Published Houston Case",
-"meta": "Independent PPC consultant for Houston businesses: Google, Microsoft, Meta and LinkedIn Ads on Central time, with a published Houston case. Flat fee.",
+"meta": "Independent PPC consultant for Houston businesses: Google, Microsoft and Meta Ads on Central time, with a published Houston case. Flat fee.",
 "kicker": "PPC consultant Houston",
 "h1": "PPC consultant for Houston businesses, with a published Houston case and calls on Central time",
-"lead": "Independent PPC consultant for Houston companies: 14+ years running Google, Microsoft, Meta and LinkedIn Ads, a published Houston HVAC and plumbing case with a 44% lower cost per acquisition, calls on Central time, and a fee that does not carry a Galleria office inside it.",
+"lead": "Independent PPC consultant for Houston companies: 14+ years running Google, Microsoft and Meta Ads, a published Houston HVAC and plumbing case with a 44% lower cost per acquisition, calls on Central time, and a fee that does not carry a Galleria office inside it.",
 "service_name": "PPC consultancy for Houston businesses",
 "body": """
 <section><div class="wrap">
@@ -628,7 +624,7 @@ PAGES = [
 ("How much does a Google Ads consultation cost?", "A fixed fee quoted by email from the form within one working day, in US dollars, pounds or euros. It is credited against an audit or the first month of management if either follows within 60 days. See <a href=\"/pricing/\">pricing</a> for how everything is priced."),
 ("Can we book more than one session?", "Yes. Some in-house teams book a session each month or each quarter as a standing review; that is agreed in writing after the first one, with the same notes each time."),
 ("Do you need access to our account for a consultation?", "It helps: read-only access to Google Ads and GA4 beforehand means the hour goes on answers. Without access, the session works from your screen share and your questions, and the notes say what to check."),
-("Which platforms can the consultation cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and landing pages."),
+("Which platforms can the consultation cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising and Meta Ads, plus GA4, Tag Manager and landing pages."),
 ("What time zones work for the call?", "I work from Curitiba, Brazil, on GMT-3 all year, one to five hours ahead of US time zones depending on the zone and the season, so a US morning or early afternoon works for both of us. UK and Irish businesses have the same session on <a href=\"https://ppcconsultancy.uk/ppc-consultation/\" rel=\"noopener\">ppcconsultancy.uk</a>, quoted in pounds."),
 ],
 "related": ["google-ads-audit", "google-ads-consultant", "google-ads-management", "pricing"],

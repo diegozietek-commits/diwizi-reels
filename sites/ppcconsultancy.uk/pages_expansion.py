@@ -26,10 +26,10 @@ def city_page(slug, city, kicker_city, intro, sectors, cpc_comment, faq_extra, l
     return {
         "slug": slug, "short": f"PPC consultant, {city}", "blurb": f"For {city} businesses, delivered remotely on UK hours.",
         "title": f"PPC Consultant {city} | Independent, No Agency Layer",
-        "meta": f"Independent PPC consultant for {city} businesses: Google, Microsoft, Meta and LinkedIn Ads run by one senior consultant on UK hours. Flat fee.",
+        "meta": f"Independent PPC consultant for {city} businesses: Google, Microsoft and Meta Ads run by one senior consultant on UK hours. Flat fee.",
         "kicker": f"PPC consultant {kicker_city}",
         "h1": f"PPC consultant for {city} businesses, working remotely on your hours",
-        "lead": f"Independent PPC consultant for {city} firms: 14+ years running Google, Microsoft, Meta and LinkedIn Ads, calls on UK time, everything in writing, and a fee that does not carry an office inside it.",
+        "lead": f"Independent PPC consultant for {city} firms: 14+ years running Google, Microsoft and Meta Ads, calls on UK time, everything in writing, and a fee that does not carry an office inside it.",
         "service_name": f"PPC consultancy for {city} businesses",
         "body": f"""
 <section><div class="wrap">
@@ -37,7 +37,7 @@ def city_page(slug, city, kicker_city, intro, sectors, cpc_comment, faq_extra, l
 {intro}
 <ul>
 <li><strong>Location targeting that matches how you actually serve.</strong> A radius around the office for the work that needs a visit, the wider region for the work that does not, and the two bid separately instead of one pin on the city centre.</li>
-<li><strong>Enquiry quality over enquiry count.</strong> Call tracking tied to the keyword, form fields that qualify, and CRM stages fed back to Google and LinkedIn so bidding learns from clients, not from clicks.</li>
+<li><strong>Enquiry quality over enquiry count.</strong> Call tracking tied to the keyword, form fields that qualify, and CRM stages fed back to Google and Microsoft so bidding learns from clients, not from clicks.</li>
 <li><strong>A landing page per intent.</strong> Not the homepage, and not one generic contact page for twelve services.</li>
 <li><strong>Brand and competitor terms handled deliberately.</strong> Whether to bid on your own name depends on who else is bidding on it in {city} this month, and the answer changes.</li>
 </ul>
@@ -143,9 +143,9 @@ PAGES = [
 ("What does a Google Ads consultant cost in the UK?", "Reviews are a fixed price set from monthly spend, number of campaigns and platforms in scope, quoted in pounds ex VAT by email from the form. Ongoing management is a flat monthly fee set by scope, never a percentage of spend. See <a href=\"/pricing/\">pricing</a>."),
 ("Can you consult without taking over the account?", "Yes. The written review and the implementation plan stand on their own, and many are carried out by the client's team or existing agency. There is no obligation to hire me afterwards."),
 ("Do you work with our existing agency?", "Yes, and in writing. A fair review that says the agency is competent and lists the three remaining gains is still useful. I have no retainer to win by criticising them."),
-("Which platforms do you cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and the landing pages that sit under all of them."),
+("Which platforms do you cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising and Meta Ads, plus GA4, Tag Manager and the landing pages that sit under all of them."),
 ("Do you take calls on UK hours?", "Yes. I work remotely from Curitiba, Brazil, three to four hours behind the UK, so calls fit a UK afternoon. Everything agreed is confirmed in writing."),
-("Are you Google Partner certified?", "Certifications are not the point of hiring a consultant and the badge is earned by spend thresholds as much as by skill. What you can check is the written review, the <a href=\"/results/\">published cases</a> and the way the first call goes."),
+("Are you a Google Partner?", "No. I am Google Ads certified, but not a Google Partner, which is a separate status with its own spend and performance requirements. Neither badge tells you who will work on your account. What you can check is the written review, the <a href=\"/results/\">published cases</a> and the way the first call goes."),
 ],
 "related": ["ppc-audit", "google-ads-management", "ppc-freelancer", "agency-vs-consultant"],
 },
@@ -202,57 +202,6 @@ PAGES = [
 "related": ["ppc-management", "ppc-audit", "conversion-tracking", "facebook-ads-management"],
 },
 
-# ---------------------------------------------------------------- LinkedIn Ads
-{
-"slug": "linkedin-ads-management", "short": "LinkedIn Ads management", "blurb": "B2B campaigns judged on pipeline, not on clicks at £10 each.",
-"title": "LinkedIn Ads Management UK | B2B Campaigns Measured in Pipeline",
-"meta": "LinkedIn Ads management by an independent B2B consultant in the UK: account targeting, offer-led creative and CRM-connected measurement. Flat fee.",
-"kicker": "LinkedIn Ads",
-"h1": "LinkedIn Ads management for UK companies that need pipeline, not impressions among the right job titles",
-"lead": "LinkedIn is the only platform where a buying committee can be named by title, seniority, company size and industry. It is also the most expensive click in paid media, which means the offer, the measurement and the follow-up matter more than anywhere else.",
-"service_name": "LinkedIn Ads management",
-"body": """
-<section><div class="wrap">
-<h2>Where LinkedIn Ads budgets go wrong</h2>
-<p>The targeting is so precise that it hides the real problem: a £10 click on a decision-maker who downloads a whitepaper and never speaks to sales is still £10 spent on nothing. Most LinkedIn accounts I review report hundreds of leads and a sales team that cannot find one worth calling. Three causes recur.</p>
-<ul>
-<li><strong>The offer is a PDF.</strong> Gated content generates form fills from people doing research, not people buying. The offer has to be something a buyer with a problem would want this quarter.</li>
-<li><strong>Measurement stops at the form.</strong> Without lead stages flowing back from the CRM, LinkedIn optimises towards the cheapest form fill, which is the least qualified one.</li>
-<li><strong>Audiences too broad or too narrow.</strong> Broad enough to spend, narrow enough to matter: usually a named account list or a tight firmographic definition, layered with title or function, with exclusions for current customers, competitors and your own staff.</li>
-</ul>
-</div></section>
-
-<section><div class="wrap">
-<h2>What management includes</h2>
-<ol class="steps">
-<li><div><strong>Audience architecture.</strong> Account lists from your CRM and intent data where you have it, firmographic and title definitions for the rest, exclusions maintained, matched audiences refreshed monthly.</div></li>
-<li><div><strong>Offer and creative.</strong> Offers built for a buyer with a problem: assessments, benchmarks, working sessions, product-led demos. Document ads, single image, video and conversation ads tested against each other with a proper control.</div></li>
-<li><div><strong>Measurement to pipeline.</strong> Insight Tag and Conversions API, lead gen forms or landing pages pushed into HubSpot, Salesforce or Pipedrive with campaign data attached, offline conversions uploaded so LinkedIn optimises towards qualified opportunities. See <a href="/conversion-tracking/">conversion tracking</a>.</div></li>
-<li><div><strong>Bidding and frequency.</strong> Manual bidding where the account is small, cost-cap where there is volume, frequency watched so the same 400 people are not shown the same advert nine times a week.</div></li>
-<li><div><strong>Reporting in pipeline.</strong> Cost per qualified opportunity and pipeline created, alongside Google and Microsoft in the same report, so the expensive click is judged on what it produced.</div></li>
-</ol>
-</div></section>
-
-<section><div class="wrap">
-<h2>LinkedIn next to Google and Microsoft</h2>
-<p>For UK B2B accounts LinkedIn creates the demand, Google and <a href="/microsoft-ads-management/">Microsoft</a> capture it when the buyer searches, and LinkedIn remarketing keeps the account warm through a long cycle. Run by one person, the attribution argument disappears and budget follows measured pipeline. That is the case for <a href="/b2b-ppc/">B2B PPC</a> as one engagement rather than three vendors.</p>
-</div></section>
-
-<section><div class="wrap">
-<h2>Who this fits</h2>
-<p>UK and Irish B2B companies with a deal size that justifies a click costing several pounds: SaaS, professional and financial services, industrial and technical suppliers, consultancies. Usually £3,000 a month or more on LinkedIn alone, with Google alongside. Below that, LinkedIn remarketing on a Google account is often the better first step, and I will say so.</p>
-</div></section>
-""",
-"faq": [
-("How much does LinkedIn Ads management cost?", "A flat monthly fee set by scope, not by spend; typically similar to a Google Ads retainer of the same complexity. A fixed-price audit comes first for existing accounts. Quoted in pounds, ex VAT. See <a href=\"/pricing/\">pricing</a>."),
-("What is a realistic cost per lead on LinkedIn in the UK?", "For gated content, tens of pounds and mostly unqualified. For a demo or assessment request from a named account, a few hundred pounds is common and often worth it. The number that matters is cost per qualified opportunity, and it only exists once the CRM is connected."),
-("Can you run LinkedIn without Google Ads?", "Yes, though for most B2B accounts the two work better together: LinkedIn builds the audience and Google catches it when it searches. Both are covered in the same report either way."),
-("Do you write the adverts and make the creative?", "I write the copy and brief the creative; a designer on your side or a studio produces the volume. Document ads and conversation ads are usually built by me directly."),
-("Which CRMs can you connect?", "HubSpot, Salesforce, Pipedrive and most others with an API or a native LinkedIn integration. Where there is no integration, a scheduled offline conversion upload does the same job."),
-],
-"related": ["b2b-ppc", "ppc-management", "conversion-tracking", "microsoft-ads-management"],
-},
-
 # ---------------------------------------------------------------- Facebook / Meta Ads
 {
 "slug": "facebook-ads-management", "short": "Facebook Ads management", "blurb": "Facebook and Instagram ads run by one specialist, measured against the CRM or the store's orders.",
@@ -297,7 +246,7 @@ PAGES = [
 ("Do you produce the creative?", "I write the copy, brief the angles and formats, and run the tests. Image and video production comes from your designer or a studio; I can recommend one."),
 ("Can you run Meta without Google Ads?", "Yes, though for most UK businesses the two are better run together: Meta creates demand and Google catches the search it produces, and one person judging both removes the attribution argument."),
 ("What budget does Meta need to work?", "Enough for the campaigns to leave the learning phase: in practice a few thousand pounds a month for lead generation, more for stores with a large catalogue. Below that, the money usually works harder on Search."),
-("Do you handle Consent Mode and the Conversions API?", "Yes. Both are part of the setup, through Tag Manager, with the same definitions used for Google and LinkedIn."),
+("Do you handle Consent Mode and the Conversions API?", "Yes. Both are part of the setup, through Tag Manager, with the same definitions used for Google and Microsoft."),
 ],
 "related": ["ppc-management", "ecommerce-ppc", "conversion-tracking", "google-ads-management"],
 },
@@ -406,7 +355,7 @@ PAGES = [
 {
 "slug": "ppc-specialist", "short": "PPC specialist", "blurb": "A senior specialist on the account, not an agency team: what that means in practice and how to check it.",
 "title": "PPC Specialist UK | Senior Google Ads Expert, Hired Directly",
-"meta": "Hire a senior PPC specialist in the UK: 14+ years on Google, Microsoft, Meta and LinkedIn Ads, working directly with you instead of through an agency.",
+"meta": "Hire a senior PPC specialist in the UK: 14+ years on Google, Microsoft and Meta Ads, working directly with you instead of through an agency.",
 "kicker": "PPC specialist",
 "h1": "A PPC specialist with 14+ years on the account, hired directly instead of through an agency",
 "lead": "Specialist and expert are words every agency uses in its pitch. This page sets out what a senior PPC specialist actually does differently, how to check it before you hire one, and how the engagement works when the specialist is the person you deal with.",
@@ -429,7 +378,7 @@ PAGES = [
 <li><div><strong>Ask who will be in the account weekly.</strong> If the answer is a team, ask for the name and the years of experience of the person doing the work. Here the answer is one name, and it is the person you spoke to.</div></li>
 <li><div><strong>Ask for a written review before any retainer.</strong> A specialist can read your account read-only and tell you in writing what is wrong and what it costs each month. That is the <a href="/ppc-audit/">PPC audit</a>, and it stands on its own.</div></li>
 <li><div><strong>Ask how results are reported.</strong> Platform numbers alone are a warning sign. The report should reconcile to your CRM or your orders, in pounds, with brand and non-brand shown separately.</div></li>
-<li><div><strong>Ask what they will not do.</strong> A specialist has a scope. Mine is Google, Microsoft, Meta and LinkedIn Ads for businesses spending roughly £2,000 to £60,000 a month, with the exceptions listed on the <a href="/">home page</a>.</div></li>
+<li><div><strong>Ask what they will not do.</strong> A specialist has a scope. Mine is Google, Microsoft and Meta Ads for businesses spending roughly £2,000 to £60,000 a month, with the exceptions listed on the <a href="/">home page</a>.</div></li>
 <li><div><strong>Check the published work.</strong> Named cases where the client allowed it, anonymised where they did not, with the figures and their source stated. <a href="/results/">Results →</a></div></li>
 </ol>
 </div></section>
@@ -447,9 +396,9 @@ PAGES = [
 "faq": [
 ("How much does a PPC specialist cost in the UK?", "Senior freelance specialists commonly quote a few hundred pounds a day or a flat monthly retainer; agencies commonly charge a percentage of spend with a minimum. My fee is flat, set from the scope of the account, and quoted in pounds, ex VAT, from the form. See <a href=\"/pricing/\">pricing</a>."),
 ("What is the difference between a PPC specialist and a PPC agency?", "Who does the work. An agency puts an account team between you and the account, usually led by someone junior once the pitch is over. A specialist is the person doing the work, and you speak to them directly. The full comparison is on <a href=\"/agency-vs-consultant/\">PPC agency vs PPC consultant</a>."),
-("Which platforms are you a specialist in?", "Google Ads first, including Shopping, Performance Max, YouTube and Demand Gen; then Microsoft Advertising, Meta Ads and LinkedIn Ads, with GA4, Tag Manager and landing pages as part of every engagement."),
+("Which platforms are you a specialist in?", "Google Ads first, including Shopping, Performance Max, YouTube and Demand Gen; then Microsoft Advertising and Meta Ads, with GA4, Tag Manager and landing pages as part of every engagement."),
 ("Can you work alongside our in-house marketer?", "Yes. A common arrangement is a monthly review of the work your team does, with a written note and a call, or a setup that your team then runs. The scope is agreed in writing at the start."),
-("Are you certified?", "Platform certifications are easy to obtain and say little about judgement. What you can check is the written review, the published cases and how the first call goes."),
+("Are you certified?", "Yes, I am Google Ads certified, though platform certifications are easy to obtain and say little about judgement. I am not a Google Partner, which is a separate status with its own spend and performance requirements. What you can check is the written review, the published cases and how the first call goes."),
 ],
 "related": ["google-ads-consultant", "ppc-freelancer", "ppc-audit", "agency-vs-consultant"],
 },
@@ -546,7 +495,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Who this fits</h2>
-<p>UK private clinics and groups, dental practices, physiotherapy and diagnostics providers, aesthetics clinics working within the rules, and health brands selling direct. Typically £2,000 to £40,000 a month across Google and Meta. Fourteen years that include senior in-house healthcare work and a freelance role with a US pharmaceutical agency; no patient-facing UK case is published on this site, and none will be invented.</p>
+<p>UK private clinics and groups, dental practices, physiotherapy and diagnostics providers, aesthetics clinics working within the rules, and health brands selling direct. Typically £2,000 to £40,000 a month across Google and Meta. Past roles include senior in-house paid media work in healthcare and a freelance role with a US pharmaceutical agency; no patient-facing UK case is published on this site, and none will be invented.</p>
 </div></section>
 """,
 "faq": [
@@ -561,11 +510,11 @@ PAGES = [
 
 # ---------------------------------------------------------------- SaaS
 {
-"slug": "saas-ppc", "short": "SaaS PPC", "blurb": "Google and LinkedIn Ads for software companies, measured in qualified pipeline and payback, not sign-ups.",
-"title": "SaaS PPC Consultant UK | Google & LinkedIn Ads Measured in Pipeline",
-"meta": "SaaS PPC for UK and Irish software companies: Google and LinkedIn Ads connected to the CRM and reported in pipeline and CAC payback. Flat fee.",
+"slug": "saas-ppc", "short": "SaaS PPC", "blurb": "Google Ads for software companies, measured in qualified pipeline and payback, not sign-ups.",
+"title": "SaaS PPC Consultant UK | Google Ads Measured in Pipeline",
+"meta": "SaaS PPC for UK and Irish software companies: Google Ads connected to the CRM and reported in pipeline and CAC payback. Flat fee.",
 "kicker": "SaaS PPC",
-"h1": "SaaS PPC measured in qualified pipeline and payback, by one consultant across Google and LinkedIn",
+"h1": "SaaS PPC measured in qualified pipeline and payback, by one consultant on Google and Microsoft",
 "lead": "Software companies have the cleanest data in paid media and often the worst use of it. The CRM knows which trials became customers and what they pay; the ad platforms are optimising towards sign-ups. Connecting the two is most of the job, and it is where a SaaS account starts here.",
 "service_name": "SaaS PPC management",
 "body": """
@@ -575,7 +524,6 @@ PAGES = [
 <li><strong>Optimising towards the top of the funnel.</strong> Free trials, demo requests and content downloads are easy to count and cheap to buy. Without product-qualified or sales-accepted stages flowing back, the platforms buy the cheapest sign-ups, which churn.</li>
 <li><strong>Competitor and category terms treated the same.</strong> "[Competitor] alternative" and "best [category] software" bring different buyers at different stages and should sit in separate campaigns with separate pages and expectations.</li>
 <li><strong>Brand taking the credit.</strong> Performance Max and broad match drift onto the brand name and the reported CAC looks wonderful. Brand is isolated, and the non-brand number is the one managed.</li>
-<li><strong>LinkedIn judged on form fills.</strong> A £10 click on a Head of Operations who downloads a benchmark is not pipeline. LinkedIn is judged on qualified opportunities from the CRM or not at all.</li>
 <li><strong>Payback ignored.</strong> A customer acquired at £900 on a £40 monthly plan is a 22-month payback before gross margin. The targets by plan and segment come from that arithmetic, not from a blended CAC.</li>
 </ul>
 </div></section>
@@ -583,9 +531,8 @@ PAGES = [
 <section><div class="wrap">
 <h2>What management includes</h2>
 <ol class="steps">
-<li><div><strong>Measurement to the CRM.</strong> GA4 and Tag Manager with a user ID, HubSpot or Salesforce stages (MQL, SQL, opportunity, closed won, with amount) imported to Google Ads and LinkedIn as offline conversions, so the platforms optimise towards revenue. See <a href="/conversion-tracking/">conversion tracking</a>.</div></li>
+<li><div><strong>Measurement to the CRM.</strong> GA4 and Tag Manager with a user ID, HubSpot or Salesforce stages (MQL, SQL, opportunity, closed won, with amount) imported to Google Ads and Microsoft Advertising as offline conversions, so the platforms optimise towards revenue. See <a href="/conversion-tracking/">conversion tracking</a>.</div></li>
 <li><div><strong>Google Search by intent.</strong> Category, problem, integration and competitor campaigns, each with its own page and its own target, brand kept separate, Performance Max only with brand excluded and only once the conversion data deserves it.</div></li>
-<li><div><strong>LinkedIn for the accounts that are not searching.</strong> Named account lists from the CRM, firmographic and title targeting, offers built for a buyer with a problem this quarter, conversation and document ads tested against a control. <a href="/linkedin-ads-management/">LinkedIn Ads →</a></div></li>
 <li><div><strong>Microsoft Advertising</strong> for the professional audience on work devices, with LinkedIn profile bid adjustments Google cannot offer. <a href="/microsoft-ads-management/">Microsoft Ads →</a></div></li>
 <li><div><strong>Pages per intent</strong>, built by me: comparison pages, integration pages, use-case pages, with the trial or demo form that asks the one qualifying question. See <a href="/landing-pages/">landing pages</a>.</div></li>
 <li><div><strong>Reporting in pipeline and payback.</strong> Qualified pipeline, closed-won revenue and CAC payback by channel and segment, alongside the platform numbers.</div></li>
@@ -599,17 +546,17 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Who this fits</h2>
-<p>UK and Irish B2B software companies from seed to Series B, or established vertical SaaS, spending roughly £3,000 to £60,000 a month across Google and LinkedIn, with a CRM in use and a sales or product-led motion that can report stages. Consumer apps measured on installs are not a fit.</p>
+<p>UK and Irish B2B software companies from seed to Series B, or established vertical SaaS, spending roughly £3,000 to £60,000 a month on Google and Microsoft, with a CRM in use and a sales or product-led motion that can report stages. Consumer apps measured on installs are not a fit.</p>
 </div></section>
 """,
 "faq": [
 ("What CAC should a SaaS company expect from Google Ads?", "No honest number exists before the account and the CRM are read together. What is measurable from the first month is CAC by channel and segment against your plan prices, which gives payback, and that is the figure the targets are set from."),
-("Can you connect Google Ads and LinkedIn to HubSpot or Salesforce?", "Yes. Offline conversion import from CRM stages with amounts, enhanced conversions for leads, and a user ID in GA4 so the journey from click to closed won is visible. The setup is documented so your RevOps team owns it."),
+("Can you connect Google Ads to HubSpot or Salesforce?", "Yes. Offline conversion import from CRM stages with amounts, enhanced conversions for leads, and a user ID in GA4 so the journey from click to closed won is visible. The setup is documented so your RevOps team owns it."),
 ("Should we bid on competitor names?", "Usually yes, in a separate campaign with its own page and a target that reflects the lower conversion rate. Comparison pages that are honest about where the competitor is better convert well and stay within the advertising rules."),
 ("Do you run product-led growth accounts?", "Yes, provided product-qualified signals (activation, team invites, usage thresholds) can be fed back. Without them the platforms optimise towards sign-ups that never activate, and the budget is better spent elsewhere."),
 ("How much does SaaS PPC management cost?", "A flat monthly fee set from the scope: platforms, markets, campaigns and how much landing page and tracking work is included. Never a percentage of spend. Quoted in pounds, ex VAT, by email from the form. See <a href=\"/pricing/\">pricing</a>."),
 ],
-"related": ["b2b-ppc", "linkedin-ads-management", "conversion-tracking", "landing-pages"],
+"related": ["b2b-ppc", "microsoft-ads-management", "conversion-tracking", "landing-pages"],
 },
 
 # ---------------------------------------------------------------- Cities
@@ -617,7 +564,7 @@ city_page(
     "ppc-consultant-manchester", "Manchester", "Manchester",
     "<p>Manchester is the second paid search market in the UK by most measures, with a professional services, technology and property base that competes on the same searches as London at a lower price per click. The margin for error is wider than in London; the habits that waste budget are the same.</p>",
     """<div class="card"><h3>Professional services</h3><p>Solicitors and accountants across Spinningfields and the city centre: clicks cost less than in London but the research searches are the same, and a page per practice area still beats a firm-wide page. <a href="/ppc-for-law-firms/">PPC for law firms →</a></p></div>
-<div class="card"><h3>Technology and SaaS</h3><p>Manchester's software and digital firms sell to the whole country and often abroad. Google captures the buyers already searching; LinkedIn reaches the ones who are not. Judged on pipeline from the CRM. <a href="/saas-ppc/">SaaS PPC →</a></p></div>
+<div class="card"><h3>Technology and SaaS</h3><p>Manchester's software and digital firms sell to the whole country and often abroad. Google and Microsoft capture the buyers already searching, judged on pipeline from the CRM. <a href="/saas-ppc/">SaaS PPC →</a></p></div>
 <div class="card"><h3>Home and trade services</h3><p>Greater Manchester is ten boroughs and a commuter belt. Emergency and planned work bid separately, by postcode and hour, with call tracking that tells a booked job from a ring.</p></div>""",
     "<p>Manchester clicks cost less than London's across the board, by about 30% for solicitors and more than half for IT support. Web design is the exception: at £13.97 the Manchester auction is more expensive than London's. The lesson is to price your own auction rather than assume, which is one of the first things an <a href=\"/ppc-audit/\">audit</a> does.</p>",
     [("Do you cover the rest of Greater Manchester?", "Yes: Salford, Stockport, Trafford, Bolton, Bury, Oldham, Rochdale, Tameside and Wigan, with location targeting set to how your business actually serves them rather than one pin on the city centre.")],
@@ -627,7 +574,7 @@ city_page(
     "ppc-consultant-birmingham", "Birmingham", "Birmingham",
     "<p>Birmingham and the West Midlands carry the largest search volumes outside London for professional services, with the highest number of solicitor searches of any regional city, and a manufacturing and industrial base that buys through long B2B cycles. The auction is cheaper than London for most searches and more expensive for a few.</p>",
     """<div class="card"><h3>Professional services</h3><p>Birmingham has more "solicitors" searches a month than any UK city outside London. More searches means more research traffic to exclude, and a practice-area structure matters more, not less. <a href="/ppc-for-law-firms/">PPC for law firms →</a></p></div>
-<div class="card"><h3>Manufacturing and industrial B2B</h3><p>The West Midlands' engineering and industrial suppliers sell to procurement teams on long cycles. Google Search for the specification searches, LinkedIn for the account list, both judged on quoted pipeline from the CRM. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
+<div class="card"><h3>Manufacturing and industrial B2B</h3><p>The West Midlands' engineering and industrial suppliers sell to procurement teams on long cycles. Google and Microsoft Search for the specification searches, judged on quoted pipeline from the CRM. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
 <div class="card"><h3>Home and trade services</h3><p>Birmingham, Solihull, Wolverhampton, Coventry and the Black Country are different service areas with different competition. Bids by area and hour, and call tracking that separates a booked job from a ring.</p></div>""",
     "<p>Birmingham is the cheapest of the large cities for IT support, at under a third of the London price, and close to Manchester for legal and accountancy searches. It is the most expensive city in the table for web design and nearly level with London for financial advice. Pricing your own auction before setting a budget is one of the first things an <a href=\"/ppc-audit/\">audit</a> does.</p>",
     [("Do you cover the wider West Midlands?", "Yes: Solihull, Wolverhampton, Coventry, Walsall, Dudley and Sandwell, with location targeting and bids set to how your business actually serves each area.")],
@@ -638,7 +585,7 @@ city_page(
     "<p>Leeds is the financial and legal centre of the North, with a cluster of law firms, accountancy practices, banks and fintechs that buy paid search seriously, and a cost per click that is the lowest of the large English cities for most professional searches. Cheaper clicks make the same mistakes cheaper, not free.</p>",
     """<div class="card"><h3>Legal and professional services</h3><p>Leeds has the lowest solicitor and accountancy click prices of the large cities, which makes a properly structured account very efficient and a badly structured one merely cheap. <a href="/ppc-for-law-firms/">PPC for law firms →</a></p></div>
 <div class="card"><h3>Financial services and fintech</h3><p>Advisers, lenders and the fintech cluster. Google requires FCA verification for many financial products in the UK before adverts run, and every claim must stand up. Budgets are wasted less by bids than by disapproved adverts and research traffic.</p></div>
-<div class="card"><h3>B2B and technology</h3><p>Leeds' digital and B2B services firms sell nationally. Google for the buyers already searching, LinkedIn for the named accounts, both reported in pipeline. <a href="/b2b-ppc/">B2B PPC →</a></p></div>""",
+<div class="card"><h3>B2B and technology</h3><p>Leeds' digital and B2B services firms sell nationally. Google and Microsoft for the buyers already searching, reported in pipeline. <a href="/b2b-ppc/">B2B PPC →</a></p></div>""",
     "<p>Leeds has the lowest click prices in the table for solicitors, employment law, accountancy and web design, between a third and a half below London. IT support is the exception: at £26.67 Leeds is the second most expensive city for that search, ahead of Manchester and Birmingham. Each sector has its own auction, and an <a href=\"/ppc-audit/\">audit</a> prices yours before anything is changed.</p>",
     [("Do you cover West Yorkshire beyond Leeds?", "Yes: Bradford, Wakefield, Huddersfield, Halifax and Harrogate, with location targeting and bids set to how your business actually serves each area.")],
     "<p>For a Leeds financial adviser, the same three moves mean separating the advice searches from the product searches, counting a booked first meeting rather than a form, and excluding the research traffic that an FCA-verified advert attracts at £19 a click.</p>",
@@ -646,7 +593,7 @@ city_page(
 city_page(
     "ppc-consultant-bristol", "Bristol", "Bristol",
     "<p>Bristol is the largest market in the South West, with an engineering, aerospace, creative and technology base, a strong professional services sector and a catchment that reaches Bath, Gloucester and across the bridge into South Wales. Click prices sit between Leeds and London for most searches, with financial advice the most expensive in the table.</p>",
-    """<div class="card"><h3>Technology, engineering and B2B</h3><p>Bristol's technology, aerospace supply chain and creative agencies sell to procurement teams across the UK. Google for the specification searches, LinkedIn for the named accounts, both judged on pipeline from the CRM. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
+    """<div class="card"><h3>Technology, engineering and B2B</h3><p>Bristol's technology, aerospace supply chain and creative agencies sell to procurement teams across the UK. Google and Microsoft for the specification searches, judged on pipeline from the CRM. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
 <div class="card"><h3>Professional and financial services</h3><p>Solicitors, accountants and advisers serving Bristol, Bath and the surrounding counties. Financial advice is the most expensive search in the table here, so excluding research traffic matters more than anywhere else in the region. <a href="/ppc-for-law-firms/">PPC for law firms →</a></p></div>
 <div class="card"><h3>Home and trade services</h3><p>Bristol, Bath, North Somerset and South Gloucestershire are different service areas. Emergency and planned work bid separately, by postcode and hour, with call tracking that tells a booked job from a ring.</p></div>""",
     "<p>Bristol is the most expensive city in the table for financial advice, at £23.98, ahead of London. For solicitors and web design it is among the cheapest, close to Leeds. Accountancy sits above Manchester and Birmingham. The spread shows why a budget set from a national average goes wrong, and why an <a href=\"/ppc-audit/\">audit</a> starts by pricing your own auction.</p>",
@@ -705,8 +652,8 @@ city_page(
 ("How much does a PPC consultation cost?", "A fixed fee in pounds, ex VAT, quoted by email from the form within one working day. It is credited against an audit or the first month of management if either follows within 60 days. See <a href=\"/pricing/\">pricing</a> for how everything is priced."),
 ("Can we book more than one session?", "Yes. Some in-house teams book a session each month or each quarter as a standing review; that is agreed in writing after the first one, with the same notes each time."),
 ("Do you need access to our account for a consultation?", "It helps: read-only access to Google Ads and GA4 beforehand means the hour goes on answers. Without access, the session works from your screen share and your questions, and the notes say what to check."),
-("Which platforms can the consultation cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and landing pages."),
-("Is the consultation available to businesses outside the UK?", "Yes. UK and Irish businesses are quoted in pounds here; Businesses in the US, Canada and Europe have the same session on <a href=\"https://googleadsfreelancer.com/google-ads-consultation/\" rel=\"noopener\">googleadsfreelancer.com</a>, quoted in dollars, pounds or euros."),
+("Which platforms can the consultation cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising and Meta Ads, plus GA4, Tag Manager and landing pages."),
+("Is the consultation available to businesses outside the UK?", "Yes. UK businesses are quoted in pounds here and Irish businesses in euros; businesses in the US, Canada and the rest of Europe have the same session on <a href=\"https://googleadsfreelancer.com/google-ads-consultation/\" rel=\"noopener\">googleadsfreelancer.com</a>, quoted in dollars, pounds or euros."),
 ],
 "related": ["ppc-audit", "google-ads-consultant", "ppc-management", "pricing"],
 },

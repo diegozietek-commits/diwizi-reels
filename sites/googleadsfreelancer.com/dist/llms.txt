@@ -1,6 +1,6 @@
 # Google Ads Freelancer (googleadsfreelancer.com)
 
-> Diego Zietek, independent Google Ads and paid media consultant with 14+ years of hands-on work. Runs Google Ads, with Meta, Microsoft Advertising and LinkedIn when they fit, personally, for a flat monthly fee. Accounts stay in the client's name. Based in Curitiba, Brazil; works remotely in English.
+> Diego Zietek, independent Google Ads and paid media consultant with 14+ years of hands-on work. Runs Google Ads, with Meta and Microsoft Advertising when they fit, personally, for a flat monthly fee. Accounts stay in the client's name. Based in Curitiba, Brazil; works remotely in English.
 
 - Market: businesses in the United States, Canada and Europe, and companies from any country that work in English; the UK and Ireland practice is at ppcconsultancy.uk.
 - Services: Google Ads management, audits, setup, conversion tracking, consulting, and multi-platform PPC management.
@@ -16,8 +16,8 @@
 - [Google Ads consultant](https://googleadsfreelancer.com/google-ads-consultant/): Strategy, second opinions and advisory for teams that run their own ads.
 - [Google Ads consultation](https://googleadsfreelancer.com/google-ads-consultation/): A one-off working session on your account, with written notes, before or instead of a retainer.
 - [Google Ads expert](https://googleadsfreelancer.com/google-ads-expert/): What a senior specialist does differently, how to check it before hiring, and how the engagement works.
-- [B2B PPC](https://googleadsfreelancer.com/b2b-ppc/): Search for the buyers already looking, LinkedIn for the ones who are not, both judged on pipeline.
-- [SaaS PPC](https://googleadsfreelancer.com/saas-ppc/): Google and LinkedIn Ads for software companies, measured in qualified pipeline and CAC payback, with a published case.
+- [B2B PPC](https://googleadsfreelancer.com/b2b-ppc/): Google Search for the buyers already looking, judged on pipeline from the CRM, not on form fills.
+- [SaaS PPC](https://googleadsfreelancer.com/saas-ppc/): Google Ads for software companies, measured in qualified pipeline and CAC payback, with a published case.
 - [Home services PPC](https://googleadsfreelancer.com/home-services-ppc/): HVAC, plumbing, roofing, electrical: Google Ads built around booked jobs, with a published case.
 - [PPC for law firms](https://googleadsfreelancer.com/ppc-for-law-firms/): Google Ads for attorneys: paying for signed clients, not for people comparing fees at $100 a click.
 - [Healthcare PPC](https://googleadsfreelancer.com/healthcare-ppc/): Clinics, practices and health brands: inquiries that become appointments, within Google's health policies.

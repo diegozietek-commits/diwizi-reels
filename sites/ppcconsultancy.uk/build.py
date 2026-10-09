@@ -46,7 +46,7 @@ PROOF_BY_SLUG = {
     "ppc-consultant-manchester": PROOF_GOOGLE, "ppc-consultant-birmingham": PROOF_GOOGLE, "ppc-consultant-leeds": PROOF_GOOGLE, "ppc-consultant-bristol": PROOF_GOOGLE,
     "results": None,
     "ppc-audit": [("1", "fixed price, quoted up front"), ("5 to 7", "working days to deliver"), ("0", "obligation afterwards"), ("14+", "years reading accounts")],
-    "b2b-ppc": [("Pipeline", "is the number reported"), ("CRM", "stages fed back to the platforms"), ("Named", "accounts and titles on LinkedIn"), ("Flat fee", "never a % of ad spend")],
+    "b2b-ppc": [("Pipeline", "is the number reported"), ("CRM", "stages fed back to the platforms"), ("Search", "on Google and Microsoft first"), ("Flat fee", "never a % of ad spend")],
     "landing-pages": [("1", "page per intent, not per campaign"), ("Built", "by me, not specced to a queue"), ("Tracked", "before it goes live"), ("Included", "in management retainers")],
     "conversion-tracking": [("1", "source of truth"), ("0", "double-counted leads"), ("GA4 + GTM", "plus offline import"), ("Fixed", "price, quoted up front")],
 }
@@ -143,7 +143,7 @@ FAQ_SLUG = "faq"  # /faq/ is a sub-page of About
 FOOTER_GROUPS = [
     ("Services", ["ppc-management", "google-ads-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "landing-pages",
                   "conversion-tracking", "google-ads-small-business", "ecommerce-ppc"]),
-    ("Platforms and sectors", ["facebook-ads-management", "linkedin-ads-management", "microsoft-ads-management", "b2b-ppc",
+    ("Platforms and sectors", ["facebook-ads-management", "microsoft-ads-management", "b2b-ppc",
                                "saas-ppc", "ppc-for-law-firms", "healthcare-ppc"]),
     ("Working with me", ["ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "ppc-consultant-manchester",
                          "ppc-consultant-birmingham", "ppc-consultant-leeds", "ppc-consultant-bristol",
@@ -155,7 +155,7 @@ SISTER_PAGES = {
     "index": "/", "ppc-management": "/ppc-management/", "google-ads-management": "/google-ads-management/",
     "ppc-audit": "/google-ads-audit/", "b2b-ppc": "/b2b-ppc/", "landing-pages": "/landing-pages/",
     "google-ads-consultant": "/google-ads-consultant/", "ecommerce-ppc": "/ecommerce-ppc-management/",
-    "linkedin-ads-management": "/linkedin-ads-management/", "facebook-ads-management": "/meta-ads-management/",
+    "facebook-ads-management": "/meta-ads-management/",
     "microsoft-ads-management": "/microsoft-ads-management/", "google-ads-small-business": "/small-business-ppc-management/",
     "ppc-specialist": "/google-ads-expert/", "ppc-for-law-firms": "/ppc-for-law-firms/",
     "healthcare-ppc": "/healthcare-ppc/", "saas-ppc": "/saas-ppc/", "ppc-consultation": "/google-ads-consultation/",
@@ -445,7 +445,7 @@ def form_html(slug):
 <input type="hidden" name="page" value="{SITE}{url_for(slug)}">
 <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <fieldset><legend>Monthly ad spend, roughly</legend><div class="pills">{bands}</div></fieldset>
-<fieldset><legend>Platforms</legend><div class="pills"><label class="pill"><input type="checkbox" name="platforms" value="Google Ads"><span>Google Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Microsoft Advertising"><span>Microsoft Advertising</span></label><label class="pill"><input type="checkbox" name="platforms" value="Meta Ads"><span>Meta Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="LinkedIn Ads"><span>LinkedIn Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Not running ads yet"><span>Not running ads yet</span></label></div><p class="form-status platforms-status" role="status" aria-live="polite"></p></fieldset>
+<fieldset><legend>Platforms</legend><div class="pills"><label class="pill"><input type="checkbox" name="platforms" value="Google Ads"><span>Google Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Microsoft Advertising"><span>Microsoft Advertising</span></label><label class="pill"><input type="checkbox" name="platforms" value="Meta Ads"><span>Meta Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Not running ads yet"><span>Not running ads yet</span></label></div><p class="form-status platforms-status" role="status" aria-live="polite"></p></fieldset>
 <div class="row2">
 <label>Name<input type="text" name="name" autocomplete="name" required></label>
 <label>Work email<input type="email" name="email" autocomplete="email" required></label>
@@ -521,11 +521,11 @@ def llms_txt():
 
 
 LLMS_SUMMARY = ("Diego Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. "
-                "Runs Google, Microsoft, Meta and LinkedIn Ads personally, with landing pages and conversion tracking included, "
+                "Runs Google, Microsoft and Meta Ads personally, with landing pages and conversion tracking included, "
                 "for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.")
 LLMS_FACTS = ["- Market: UK and Irish businesses, and companies from any country that work in English; the practice for the US, Canada and Europe is at googleadsfreelancer.com.",
               "- Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).",
-              "- Pricing: quoted in pounds, ex VAT, from the form; prices are not published. Never a percentage of ad spend."]
+              "- Pricing: quoted in pounds, ex VAT, or in euros for Irish businesses, from the form; prices are not published. Never a percentage of ad spend."]
 LLMS_PAGES = ["index", "ppc-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "faq", "contact"]
 LLMS_SISTER = "Practice for the US, Canada and Europe, Google Ads freelancer"
 
@@ -536,7 +536,7 @@ def schema_for(p):
         "jobTitle": "Independent PPC consultant", "url": SITE + "/about/",
         "sameAs": [PARENT, PARENT + "diego-zietek.html", SISTER + "/about/"],
         "worksFor": {"@type": "Organization", "name": "Diwizi", "url": PARENT},
-        "knowsAbout": ["Google Ads", "Meta Ads", "LinkedIn Ads", "Microsoft Advertising", "Conversion tracking", "GA4"],
+        "knowsAbout": ["Google Ads", "Meta Ads", "Microsoft Advertising", "Conversion tracking", "GA4"],
     }
     service = {
         "@type": "ProfessionalService", "@id": SITE + "/#service", "name": BRAND + " | " + NAME,
@@ -749,6 +749,9 @@ def build():
     with open(os.path.join(dist, "favicon.svg"), "w") as f:
         f.write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1a56db"/>'
                 '<text x="32" y="43" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle">PPC</text></svg>')
+    # Removed pages answer 301 so old links and indexed URLs land on the closest page.
+    with open(os.path.join(dist, "_redirects"), "w") as f:
+        f.write("/linkedin-ads-management/ /b2b-ppc/ 301\n/linkedin-ads-management /b2b-ppc/ 301\n")
     with open(os.path.join(dist, "_headers"), "w") as f:
         f.write("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
                 "  X-Frame-Options: SAMEORIGIN\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n"

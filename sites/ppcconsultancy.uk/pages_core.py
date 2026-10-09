@@ -6,7 +6,7 @@ NOT_FOR = """
 <div class="cols">
 <div class="card"><h3>A good fit</h3><ul>
 <li>B2B and SaaS, professional services, healthcare, home and trade services, and online retail.</li>
-<li>Spending roughly £2,000 to £60,000 a month across Google, Microsoft, Meta or LinkedIn.</li>
+<li>Spending roughly £2,000 to £60,000 a month across Google, Microsoft or Meta.</li>
 <li>An owner or marketing manager who wants one senior person accountable for the result, not an account manager relaying messages.</li>
 <li>Accounts where tracking is doubtful and the landing page has never been touched by whoever runs the ads.</li>
 </ul></div>
@@ -87,7 +87,7 @@ FAQ_GROUPS = [
 ("surcharge-and-fee", "Does Google's 2% surcharge come out of your fee or my budget?",
 """Your media budget, and it does not change my fee. Google charges the surcharge on the advertising itself, not on management, and it would be the same with any agency or in-house team. Because it is predictable, I build it into the budget plan so that the Google invoice matches the forecast. My own fee stays a flat amount agreed in advance. See <a href="/pricing/">pricing</a>."""),
 ("pounds", "Are quotes and invoices in pounds?",
-"""Yes. Every quote is given in pounds, ex VAT, and invoices are issued in pounds as well, even though I work from Brazil. Your media is a separate bill from Google, Microsoft or Meta, charged to your own billing profile. Monthly reports are in pounds too, so cost per enquiry is read in the same currency you budget in. See <a href="/about/">About</a>."""),
+"""Yes for UK businesses: every quote is given in pounds, ex VAT, and invoices are issued in pounds as well, even though I work from Brazil. Irish businesses are quoted and invoiced in euros. Your media is a separate bill from Google, Microsoft or Meta, charged to your own billing profile. Monthly reports use the same currency as the invoice, so cost per enquiry is read in the currency you budget in. See <a href="/about/">About</a>."""),
 ("media-through-you", "Does my ad spend pass through you, or go straight to Google?",
 """Straight to the platforms. Google, Microsoft and Meta bill you directly from your own billing profile, and the money never passes through me or forms part of my fee. That keeps the accounts, the payment history and the invoices in your name, and it means my fee has no reason to grow with your budget. Extra paid software is seldom needed, and you approve it before anything is bought. See <a href="/pricing/">pricing</a>."""),
 ]),
@@ -137,7 +137,7 @@ FAQ_GROUPS = [
 ("why-uk-site", "Why does a UK consultancy site point to diwizi.com and a US site?",
 """Because one consultant serves several markets, and this is the door for the UK. Diwizi is the name I trade under: diwizi.com covers industries in depth and publishes research, while googleadsfreelancer.com is written for businesses in the US, Canada and Europe. This site gives UK and Irish firms pounds, a clear account of VAT and planning around UK working hours. Whichever door you use, the same person runs your account. See <a href="/about/">About</a>."""),
 ("outside-uk-ireland", "Can a business outside the UK and Ireland work with you?",
-"""Yes. Companies in any country can hire me, provided we can work in English. This site concentrates on the UK and Ireland, quoting in pounds and explaining VAT for UK firms. If you are based in the US, Canada or elsewhere in Europe, <a href="https://googleadsfreelancer.com/" rel="noopener">googleadsfreelancer.com</a> describes the same service, with the same person behind it, for those markets."""),
+"""Yes. Companies in any country can hire me, provided we can work in English. This site concentrates on the UK and Ireland, quoting in pounds for UK firms and in euros for Irish ones, and explaining VAT for UK firms. If you are based in the US, Canada or elsewhere in Europe, <a href="https://googleadsfreelancer.com/" rel="noopener">googleadsfreelancer.com</a> describes the same service, with the same person behind it, for those markets."""),
 ]),
 ]),
 ]
@@ -148,10 +148,10 @@ PAGES = [
 "short": 'Home',
 "blurb": 'Independent PPC consultancy for UK and Irish businesses.',
 "title": 'PPC Consultancy UK | Independent PPC Consultant, No Agency Layer',
-"meta": 'Independent PPC consultancy for UK businesses: Google, Microsoft, Meta and LinkedIn Ads run by one senior consultant, landing pages and tracking included.',
+"meta": 'Independent PPC consultancy for UK businesses: Google, Microsoft and Meta Ads run by one senior consultant, landing pages and tracking included.',
 "kicker": 'PPC consultancy',
 "h1": 'PPC consultancy without the agency layer. The consultant who audits your account is the one who runs it.',
-"lead": 'I am Diego Zietek, an independent PPC consultant with 14+ years on the account. Google, Microsoft, Meta and LinkedIn Ads for UK and Irish businesses, with the landing pages and conversion tracking done by the same person. Flat monthly fee, month to month, your accounts stay yours.',
+"lead": 'I am Diego Zietek, an independent PPC consultant with 14+ years on the account. Google, Microsoft and Meta Ads for UK and Irish businesses, with the landing pages and conversion tracking done by the same person. Flat monthly fee, month to month, your accounts stay yours.',
 "service_name": 'PPC consultancy and management',
 "body": """
 <section><div class="wrap">
@@ -167,12 +167,12 @@ PAGES = [
 <section id="services"><div class="wrap">
 <h2>What the consultancy covers</h2>
 <div class="cols">
-<div class="card"><h3><a href="/ppc-management/">PPC management</a></h3><p>Google, Microsoft, Meta and LinkedIn Ads run as one programme with one set of numbers, landing pages and tracking included.</p><p class="price"><b>Flat monthly fee</b> · sized to the work, never to your spend · month to month</p></div>
+<div class="card"><h3><a href="/ppc-management/">PPC management</a></h3><p>Google, Microsoft and Meta Ads run as one programme with one set of numbers, landing pages and tracking included.</p><p class="price"><b>Flat monthly fee</b> · sized to the work, never to your spend · month to month</p></div>
 <div class="card"><h3><a href="/ppc-audit/">PPC audit</a></h3><p>An independent, paid review of your accounts, with every fix put in order of what it is costing you. The report is yours to keep and act on, with or without me.</p><p class="price"><b>One fixed fee</b> · agreed before work starts · deducted from month one if you continue</p></div>
 <div class="card"><h3><a href="/landing-pages/">Landing pages</a></h3><p>A page for each search intent, written to match the advert that sends the visitor, with tracking tested before launch.</p><p class="price"><b>Included</b> in management · <b>fixed fee</b> as a one-off project</p></div>
 <div class="card"><h3><a href="/conversion-tracking/">Conversion tracking</a></h3><p>GA4, Tag Manager, Consent Mode v2 and offline conversion import, so the platforms learn from enquiries that became customers.</p><p class="price"><b>Fixed fee</b> · depends on platforms and CRM</p></div>
 </div>
-<p>Quotes come in pounds, ex VAT, from three details on the <a href="/contact/#form">form</a>: roughly what you spend, on which platforms, and what is going wrong. Your media is paid straight to Google, Microsoft, Meta or LinkedIn and never forms part of my fee. The <a href="/pricing/">pricing page</a> sets out every model.</p>
+<p>Quotes come in pounds, ex VAT, or in euros for Irish businesses, from three details on the <a href="/contact/#form">form</a>: roughly what you spend, on which platforms, and what is going wrong. Your media is paid straight to Google, Microsoft or Meta and never forms part of my fee. The <a href="/pricing/">pricing page</a> sets out every model.</p>
 </div></section>
 
 """ + NOT_FOR + """
@@ -180,9 +180,9 @@ PAGES = [
 <section><div class="wrap">
 <h2>Industries where the pattern recognition is already built</h2>
 <div class="cols">
-<div class="card"><h3><a href="/saas-ppc/">B2B and SaaS</a></h3><p>Trial-to-paid and demo funnels, LinkedIn alongside search, CRM stages fed back to the platforms so they optimise towards pipeline rather than form fills. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
+<div class="card"><h3><a href="/saas-ppc/">B2B and SaaS</a></h3><p>Trial-to-paid and demo funnels, search on Google and Microsoft, CRM stages fed back to the platforms so they optimise towards pipeline rather than form fills. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
 <div class="card"><h3><a href="/ppc-for-law-firms/">Professional and financial services</a></h3><p>Law firms, accountants, advisers and consultancies: expensive clicks, long consideration, and a compliance layer on what an ad can say. Enquiry quality is the whole game.</p></div>
-<div class="card"><h3><a href="/healthcare-ppc/">Healthcare and regulated categories</a></h3><p>Fourteen years that include senior in-house healthcare work and a freelance role with a US pharmaceutical agency. Policy restrictions, certification and sensitive-category rules are familiar ground.</p></div>
+<div class="card"><h3><a href="/healthcare-ppc/">Healthcare and regulated categories</a></h3><p>Past roles include senior in-house paid media work in healthcare and a freelance role with a US pharmaceutical agency. Policy restrictions, certification and sensitive-category rules are familiar ground.</p></div>
 <div class="card"><h3>Home and trade services</h3><p>Emergency versus planned work, call tracking that separates a booked job from a ring, and bidding by postcode and hour. The Houston case above is this pattern.</p></div>
 <div class="card"><h3><a href="/ecommerce-ppc/">Online retail</a></h3><p>Shopping and Performance Max measured on margin and new customers, with platform-reported revenue reconciled against the store's own orders.</p></div>
 </div>
@@ -212,10 +212,10 @@ PAGES = [
 """,
 "faq": [
 ('Are you a freelancer or an agency?', 'Neither, in the usual sense. I am an independent consultant: one senior person who audits, builds and runs the accounts. No account manager and no juniors: the ads, tracking and reports are never handed on. If a project needs design or development beyond what I build myself, you are told first and the specialist is named.'),
-('Can you work with a UK business from Brazil?', 'Yes. I am based in Curitiba (GMT-3), three to four hours behind London. Most of the work is done in writing, calls are booked ahead, usually in the UK morning, and everything is in English.'),
+('Can you work with a UK business from Brazil?', 'Yes. I am based in Curitiba (GMT-3), three to four hours behind London. Most of the work is done in writing, calls are booked ahead, usually in the UK afternoon, and everything is in English.'),
 ('How much does PPC consultancy cost?', "A flat monthly fee for management, sized to the work rather than to your spend, quoted in pounds ex VAT. The audit is one fixed fee, deducted from the first month if you carry on. There is no twelve-month contract, and the <a href='/pricing/'>pricing page</a> sets out each model."),
 ('Do you do e-commerce PPC?', 'Yes. Google Shopping, Merchant Centre feeds, Performance Max and Meta for online stores, measured on margin and new customers rather than on the platform\'s own ROAS. Very large catalogues with daily feed operations are agency work, and I will say so.'),
-('Which platforms?', 'Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and the landing pages that sit under all of them.'),
+('Which platforms?', 'Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising and Meta Ads, plus GA4, Tag Manager and the landing pages that sit under all of them.'),
 ('Can you take over an account an agency set up?', 'Yes, and that is where most engagements begin. The usual findings are conversion actions counted twice, broad match left to Smart Bidding with no exclusions, and campaigns arranged around how they were built rather than how the business makes money. Nothing gets changed until the tracking can be trusted.'),
 ],
 "related": ['ppc-management', 'ppc-audit', 'b2b-ppc', 'pricing'],
@@ -226,10 +226,10 @@ PAGES = [
 {
 "slug": "ppc-consultant-london", "short": "PPC consultant, London", "blurb": "For London businesses, delivered remotely on UK hours.",
 "title": 'PPC Consultant London | PPC Management Without an Agency',
-"meta": 'Independent PPC consultant for London businesses: Google, Microsoft, Meta and LinkedIn Ads run by one senior consultant on UK hours. Flat monthly fee.',
+"meta": 'Independent PPC consultant for London businesses: Google, Microsoft and Meta Ads run by one senior consultant on UK hours. Flat monthly fee.',
 "kicker": "PPC consultant London",
 "h1": "PPC consultant for London businesses, working remotely on your hours",
-"lead": "Independent PPC consultant for London firms: 14+ years running Google, Microsoft, Meta and LinkedIn Ads, calls on UK time, everything in writing, and a fee that does not carry a London office inside it.",
+"lead": "Independent PPC consultant for London firms: 14+ years running Google, Microsoft and Meta Ads, calls on UK time, everything in writing, and a fee that does not carry a London office inside it.",
 "service_name": "PPC consultancy for London businesses",
 "body": """
 <section><div class="wrap">
@@ -237,7 +237,7 @@ PAGES = [
 <p>London is the most crowded paid search market in the UK. More firms bid on the same searches, the client each click might bring is often worth more, and the result is that waste costs more here than almost anywhere else in the country. The work is the same everywhere; the tolerance for getting it wrong is lower.</p>
 <ul>
 <li><strong>Location targeting that matches how you actually serve.</strong> "London" is thirty-two boroughs, the City and a commuter belt. Bids by borough and by hour, with the radius around your office kept separate from the wider catchment, instead of one pin on Charing Cross.</li>
-<li><strong>Enquiry quality over enquiry count.</strong> Call tracking tied to the keyword, form fields that qualify, and CRM stages fed back to Google and LinkedIn so bidding learns from clients, not from clicks.</li>
+<li><strong>Enquiry quality over enquiry count.</strong> Call tracking tied to the keyword, form fields that qualify, and CRM stages fed back to Google and Microsoft so bidding learns from clients, not from clicks.</li>
 <li><strong>A landing page per intent.</strong> Not the homepage, and not one generic contact page for twelve services.</li>
 <li><strong>Brand and competitor terms handled deliberately.</strong> Whether to bid on your own name in a crowded market is a calculation, not a reflex, and the answer changes with who else is bidding.</li>
 </ul>
@@ -245,7 +245,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What a click costs in London compared with other UK cities</h2>
-<p>Average cost per click for the same search with the city name attached, from Google Ads keyword data for the UK, September 2026. These are market averages, not a forecast for your account.</p>
+<p>Average cost per click for the same search with the city name attached, from Google Ads keyword data for the UK, October 2026. These are market averages, not a forecast for your account.</p>
 <table>
 <tr><th>Search</th><th>London</th><th>Manchester</th><th>Birmingham</th><th>Leeds</th></tr>
 <tr><td>solicitors [city]</td><td>£13.49</td><td>£9.46</td><td>£9.31</td><td>£7.09</td></tr>
@@ -263,7 +263,7 @@ PAGES = [
 <div class="cols">
 <div class="card"><h3>Professional services</h3><p>Law firms, accountants and consultancies: expensive clicks, long consideration and a compliance layer on what an advert can say. The job is to pay for enquiries that turn into instructions, not for people comparing fees. Pages built around one practice area convert better than a firm-wide page.</p></div>
 <div class="card"><h3>Financial services</h3><p>Advisers, lenders and fintech. Google requires advertisers of many financial products in the UK to be FCA authorised and verified before ads can run, and every claim must stand up. Budgets are wasted less by bids than by disapproved adverts and research traffic.</p></div>
-<div class="card"><h3>B2B and SaaS</h3><p>London's technology and B2B services firms buy through committees. Google Search captures the buyers already looking; LinkedIn reaches the ones who are not. Both are judged on pipeline from the CRM rather than form fills. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
+<div class="card"><h3>B2B and SaaS</h3><p>London's technology and B2B services firms buy through committees. Google and Microsoft Search capture the buyers already looking, judged on pipeline from the CRM rather than form fills. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
 </div>
 </div></section>
 
@@ -294,7 +294,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Remote, and honest about it</h2>
-<p>I do not have a London office and this page will not pretend otherwise. I am based in Curitiba, Brazil, three to four hours behind London. What you get instead: calls booked in advance, usually in the UK morning, written replies within one working day, a written monthly report and a note in writing whenever something important changes, access to the accounts and reporting at any time, and a fee without London overheads inside it. If you need someone in the room every month, a London agency is the better choice, and I will say so on the first call.</p>
+<p>I do not have a London office and this page will not pretend otherwise. I am based in Curitiba, Brazil, three to four hours behind London. What you get instead: calls booked in advance, usually in the UK afternoon, written replies within one working day, a written monthly report and a note in writing whenever something important changes, access to the accounts and reporting at any time, and a fee without London overheads inside it. If you need someone in the room every month, a London agency is the better choice, and I will say so on the first call.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -302,7 +302,7 @@ PAGES = [
 <div class="cols">
 <div class="card"><h3><a href="/ppc-audit/">Audit first</a></h3><p>Fixed price, read-only access, written findings ranked by impact. Credited against the first month if we continue.</p></div>
 <div class="card"><h3><a href="/ppc-management/">Management</a></h3><p>Flat monthly fee, month to month, landing pages and tracking in scope. Never a percentage of spend.</p></div>
-<div class="card"><h3><a href="/b2b-ppc/">B2B and LinkedIn</a></h3><p>For London B2B and SaaS firms: pipeline reported, not leads.</p></div>
+<div class="card"><h3><a href="/b2b-ppc/">B2B PPC</a></h3><p>For London B2B and SaaS firms: pipeline reported, not leads.</p></div>
 </div>
 </div></section>
 """,
@@ -361,7 +361,7 @@ PAGES = [
 """,
 "faq": [
 ("Is a consultant cheaper than an agency?", "Usually, for the same account, because there is no account manager, office or margin between you and the work. Senior consultants overlap with small agencies at the top of the range. The cheaper option is a marketplace freelancer, which is a different product."),
-("Can a consultant handle Google, Microsoft, Meta and LinkedIn at once?", "For one company, yes, and it is better that way: one measurement layer and one person deciding where the next pound goes. What a consultant cannot do is produce creative at agency volume."),
+("Can a consultant handle Google, Microsoft and Meta at once?", "For one company, yes, and it is better that way: one measurement layer and one person deciding where the next pound goes. What a consultant cannot do is produce creative at agency volume."),
 ("Will you tell me if my current agency is doing a good job?", "Yes, in writing. A fair audit that confirms the agency is competent is still useful: it tells you where the remaining gains are and gives you specific questions for the next review."),
 ],
 "related": ["ppc-audit", "ppc-management", "pricing", "about"],
@@ -404,7 +404,7 @@ PAGES = [
 <section><div class="wrap">
 <h2>Costs that sit on top of any fee</h2>
 <ul>
-<li><strong>Media.</strong> Billed to you directly by Google, Microsoft, Meta or LinkedIn from your own billing profile. It never passes through me.</li>
+<li><strong>Media.</strong> Billed to you directly by Google, Microsoft or Meta from your own billing profile. It never passes through me.</li>
 <li><strong>Google's 2% UK surcharge.</strong> Google adds a 2% charge to invoices for ads shown in the UK, listed as a separate line and linked to the UK Digital Services Tax. A £10,000 month is therefore invoiced as £10,200 before VAT. It applies whoever runs the account, so I build it into the budget plan rather than let it surprise you.</li>
 <li><strong>Creative at volume.</strong> For Meta-heavy accounts, regular creative production comes from your designer or a studio and is billed by them.</li>
 <li><strong>Paid tools.</strong> Rarely needed beyond what the platforms provide, and always agreed with you first.</li>
@@ -413,7 +413,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>How I price</h2>
-<p>Every engagement is quoted in pounds, ex VAT, after the form tells me the spend band, the platforms, and whether landing pages or tracking need rebuilding. The model below is fixed before any quote.</p>
+<p>Every engagement is quoted in pounds, ex VAT, or in euros for Irish businesses, after the form tells me the spend band, the platforms, and whether landing pages or tracking need rebuilding. The model below is fixed before any quote.</p>
 <p>The fee is set for your account, not from a rate card: platforms, markets, campaigns and how much landing page and tracking work is included. A range comes by email from the form; a firm figure needs a look at the accounts.</p>
 <table>
 <tr><th>Engagement</th><th>How it is charged</th><th>What you get</th></tr>
@@ -514,22 +514,22 @@ PAGES = [
 "short": 'About Diego',
 "blurb": 'The consultant behind this site, and how a UK engagement works.',
 "title": 'About Diego Zietek | PPC Consultant Working With UK Businesses',
-"meta": 'Diego Zietek, the consultant behind PPC Consultancy UK: 14+ years running Google, Microsoft, Meta and LinkedIn Ads for UK and Irish businesses.',
+"meta": 'Diego Zietek, the consultant behind PPC Consultancy UK: 14+ years running Google, Microsoft and Meta Ads for UK and Irish businesses.',
 "kicker": 'About',
 "h1": 'Who runs your account, and how a UK engagement works',
-"lead": 'I am Diego Zietek. I have run paid media for more than 14 years across Google Ads, Microsoft Advertising, Meta and LinkedIn, and every account taken on through this site is run by me personally, from the first audit to the monthly report.',
-"proof": [('14+', 'years running paid media'), ('1', 'person on your account'), ('£', 'quotes and invoices in pounds'), ('No', 'minimum term')],
+"lead": 'I am Diego Zietek. I have run paid media for more than 14 years across Google Ads, Microsoft Advertising and Meta, and every account taken on through this site is run by me personally, from the first audit to the monthly report.',
+"proof": [('14+', 'years running paid media'), ('1', 'person on your account'), ('£ / €', 'pounds for the UK, euros for Ireland'), ('No', 'minimum term')],
 "body": """
 <section><div class="wrap">
 <h2>In short</h2>
 <table>
 <tr><th>Who</th><td>Diego Zietek, independent PPC consultant and founder of Diwizi, a consultancy of one. No account managers, no juniors, no hand-offs.</td></tr>
 <tr><th>Track record</th><td>More than 14 years hands-on, across in-house roles, freelance engagements and agency work.</td></tr>
-<tr><th>Channels</th><td>Google Ads (Search, Performance Max, Demand Gen, YouTube), Microsoft Advertising, Meta (Facebook and Instagram), LinkedIn.</td></tr>
+<tr><th>Channels</th><td>Google Ads (Search, Performance Max, Demand Gen, YouTube), Microsoft Advertising, Meta (Facebook and Instagram).</td></tr>
 <tr><th>Measurement</th><td>GA4 and Tag Manager, Consent Mode v2 set up for UK GDPR and PECR, enhanced conversions, and offline conversion import from HubSpot or Salesforce.</td></tr>
 <tr><th>Sectors</th><td>B2B and SaaS, professional and financial services, healthcare, home and trade services, and online retail.</td></tr>
-<tr><th>Working pattern</th><td>Remote, in English and mostly in writing. Based in Curitiba, Brazil (GMT-3), three to four hours behind London, with calls booked in advance and usually held in the UK morning.</td></tr>
-<tr><th>Contracting</th><td>Quoted and invoiced in pounds. As a supplier of services from outside the UK, the reverse charge normally applies, so you account for the VAT yourself.</td></tr>
+<tr><th>Working pattern</th><td>Remote, in English and mostly in writing. Based in Curitiba, Brazil (GMT-3), three to four hours behind London, with calls booked in advance and usually held in the UK afternoon.</td></tr>
+<tr><th>Contracting</th><td>Quoted and invoiced in pounds, or in euros for Irish businesses. For UK businesses, the services are supplied from outside the UK, so the reverse charge normally applies and you account for the VAT yourself.</td></tr>
 <tr><th>Contact</th><td>The <a href="/contact/#form">form</a> or {{email}}. Both reach me directly.</td></tr>
 </table>
 </div></section>
@@ -551,12 +551,12 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Why a separate site for the UK</h2>
-<p>This site is the UK entrance to one practice. <a href="https://diwizi.com/" rel="noopener">Diwizi.com</a> goes deep by industry and publishes the research; <a href="https://googleadsfreelancer.com/" rel="noopener">googleadsfreelancer.com</a> serves businesses in the US, Canada and Europe looking for a freelance Google Ads specialist. This one is for UK and Irish businesses that want prices in pounds, the VAT position set out plainly and a consultant who plans around UK hours. Whichever site you arrive through, the account is run by the same person.</p>
+<p>This site is the UK entrance to one practice. <a href="https://diwizi.com/" rel="noopener">Diwizi.com</a> goes deep by industry and publishes the research; <a href="https://googleadsfreelancer.com/" rel="noopener">googleadsfreelancer.com</a> serves businesses in the US, Canada and Europe looking for a freelance Google Ads specialist. This one is for UK and Irish businesses that want prices in pounds or euros, the VAT position set out plainly and a consultant who plans around UK hours. Whichever site you arrive through, the account is run by the same person.</p>
 </div></section>
 
 <section><div class="wrap">
 <h2>What is published, and what is not</h2>
-<p>Four engagements are written up on the <a href="/results/">results page</a>, each with its limits: a Houston HVAC and plumbing business, Pontomais (a Brazilian HR software startup), one of the largest private school groups in Brazil, and a freelance role with Underscore Marketing, a US pharmaceutical agency. Several years of senior in-house paid media work in healthcare are part of the experience and are deliberately left out: no employer name, budget or result from that work appears on this site.</p>
+<p>Four engagements are written up on the <a href="/results/">results page</a>, each with its limits: a Houston HVAC and plumbing business, Pontomais (a Brazilian HR software startup), one of the largest private school groups in Brazil, and a freelance role with Underscore Marketing, a US pharmaceutical agency. A past role, several years of senior in-house paid media work in healthcare, is part of the experience and is deliberately left out: no employer name, budget or result from that work appears on this site.</p>
 </div></section>
 """,
 "faq": [
@@ -564,7 +564,7 @@ PAGES = [
 ('How is VAT handled?', 'Quotes are ex VAT. Because I supply services from outside the UK, the reverse charge normally applies and you account for the VAT in your own return. The invoice states the treatment clearly.'),
 ('What about UK GDPR and cookie consent?', 'Tracking is set up with Consent Mode v2 and a consent banner that really does block marketing tags until the visitor agrees. If you already use a consent platform, I work with it rather than replace it.'),
 ('Are you an agency?', 'No. Diwizi is a consultancy with one consultant. When a project needs a designer or a developer, I bring in a named person for that piece of work and tell you who it is.'),
-('Does the time difference get in the way?', 'Rarely. Most of the work is done in writing and does not need a meeting. Calls are booked ahead, usually in the UK morning, and written replies come within one working day.'),
+('Does the time difference get in the way?', 'Rarely. Most of the work is done in writing and does not need a meeting. Calls are booked ahead, usually in the UK afternoon, and written replies come within one working day.'),
 ],
 "related": ['results', 'ppc-management', 'ppc-consultant-london', 'contact'],
 },

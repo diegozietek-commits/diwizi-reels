@@ -6,10 +6,10 @@ PAGES = [
 "short": 'PPC freelancer',
 "blurb": 'A senior freelance PPC specialist for UK businesses, hired directly.',
 "title": 'PPC Freelancer UK | Senior Freelance PPC Specialist, No Agency Layer',
-"meta": 'Hire a senior PPC freelancer for your UK business: Google, Microsoft, Meta and LinkedIn Ads run by one specialist, tracking and landing pages included.',
+"meta": 'Hire a senior PPC freelancer for your UK business: Google, Microsoft and Meta Ads run by one specialist, tracking and landing pages included.',
 "kicker": 'PPC freelancer',
 "h1": 'A senior PPC freelancer for UK businesses, hired directly rather than through a marketplace',
-"lead": 'I am Diego Zietek, a freelance PPC specialist with 14+ years on the account. You hire one senior person who audits, builds and runs your Google, Microsoft, Meta and LinkedIn Ads, with the tracking and landing pages done by the same hands. Flat monthly fee, month to month, and the accounts stay in your name.',
+"lead": 'I am Diego Zietek, a freelance PPC specialist with 14+ years on the account. You hire one senior person who audits, builds and runs your Google, Microsoft and Meta Ads, with the tracking and landing pages done by the same hands. Flat monthly fee, month to month, and the accounts stay in your name.',
 "service_name": 'PPC freelancer services',
 "proof": None,
 "body": """
@@ -67,7 +67,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Remote, on UK hours</h2>
-<p>I work remotely from Curitiba, Brazil, three to four hours behind London, in English and mostly in writing. Calls are booked ahead, usually in the UK morning, and written replies come within one working day. If you need someone in your office every week, a local agency will suit you better, and I will say so on the first call.</p>
+<p>I work remotely from Curitiba, Brazil, three to four hours behind London, in English and mostly in writing. Calls are booked ahead, usually in the UK afternoon, and written replies come within one working day. If you need someone in your office every week, a local agency will suit you better, and I will say so on the first call.</p>
 </div></section>
 """,
 "faq": [
@@ -75,7 +75,7 @@ PAGES = [
 ('How much does a PPC freelancer cost in the UK?', 'Senior UK freelancers commonly quote a few hundred pounds a day or a flat monthly retainer; marketplace rates vary far more. I quote a flat monthly fee set by scope, in pounds ex VAT, with no minimum term. The <a href="/pricing/">pricing page</a> explains the models.'),
 ('Is there a minimum ad spend?', 'Not a hard one. Below about £2,000 a month a retainer rarely pays for itself, and an audit or a one-off setup you then run yourself is usually better value.'),
 ('Can you work alongside my in-house team or current agency?', 'Yes. Some clients want the whole account run; others want an audit, a second opinion or regular reviews while their own team does the day-to-day work.'),
-('Which platforms do you cover?', 'Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising, Meta Ads and LinkedIn Ads, plus GA4, Tag Manager and the landing pages.'),
+('Which platforms do you cover?', 'Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising and Meta Ads, plus GA4, Tag Manager and the landing pages.'),
 ('Are you hiring PPC freelancers?', 'No. This page is for businesses looking to hire one. Every account is run by me personally, and work is not passed on to subcontractors.'),
 ],
 "related": ['ppc-management', 'ppc-audit', 'agency-vs-consultant', 'pricing'],
@@ -84,18 +84,18 @@ PAGES = [
 },
 
 {
-"slug": "ppc-management", "short": "PPC management", "blurb": "Google, Microsoft, Meta and LinkedIn under one measurement layer, with pages and tracking in scope.",
+"slug": "ppc-management", "short": "PPC management", "blurb": "Google, Microsoft and Meta under one measurement layer, with pages and tracking in scope.",
 "title": "PPC Management Services UK | Independent Consultant, Flat Fee",
-"meta": 'PPC management for UK and Irish firms: Google, Microsoft, Meta and LinkedIn Ads run weekly by one consultant, landing pages and tracking included.',
+"meta": 'PPC management for UK and Irish firms: Google, Microsoft and Meta Ads run weekly by one consultant, landing pages and tracking included.',
 "kicker": "PPC management",
 "h1": "PPC management by the consultant you spoke to, with the landing pages and tracking included",
-"lead": "Ongoing management of Google Ads, Microsoft Advertising, Meta Ads and LinkedIn Ads for UK and Irish companies that sell through enquiries, demos, booked calls or a basket. One person does the weekly work, builds the pages the ads land on and keeps the measurement honest. Flat monthly fee, never a percentage of spend.",
+"lead": "Ongoing management of Google Ads, Microsoft Advertising and Meta Ads for UK and Irish companies that sell through enquiries, demos, booked calls or a basket. One person does the weekly work, builds the pages the ads land on and keeps the measurement honest. Flat monthly fee, never a percentage of spend.",
 "service_name": "PPC management",
 "body": """
 <section><div class="wrap">
 <h2>What is inside a management retainer</h2>
 <div class="cols">
-<div class="card"><h3>Weekly account work</h3><p>Search terms and negatives, bids and budgets, ad tests, audience and placement exclusions, Performance Max asset groups kept honest, LinkedIn account lists refreshed. Done every week, by me, and written down.</p></div>
+<div class="card"><h3>Weekly account work</h3><p>Search terms and negatives, bids and budgets, ad tests, audience and placement exclusions, Performance Max asset groups kept honest. Done every week, by me, and written down.</p></div>
 <div class="card"><h3>Conversion tracking, maintained</h3><p>GA4 and Tag Manager kept in agreement with your CRM. Enhanced conversions, Consent Mode v2, and offline import so the platforms optimise towards enquiries that became customers, not form fills. <a href="/conversion-tracking/">How tracking is built →</a></p></div>
 <div class="card"><h3>Landing pages</h3><p>One page per intent, written to the ad that sends the traffic, built by me on your CMS or as a static page, tested against a control. Most agency retainers stop at the click; most of the waste is after it. <a href="/landing-pages/">How pages are built →</a></p></div>
 <div class="card"><h3>Reporting an owner can use</h3><p>A monthly written report: cost per enquiry, cost per qualified enquiry, revenue where it can be measured, what changed and why. A shared dashboard for the numbers in between. No click counts dressed as results.</p></div>
@@ -108,7 +108,6 @@ PAGES = [
 <li><strong>Google Ads.</strong> Search is the core: exact and phrase match with a disciplined negatives programme, Smart Bidding only once the conversion data deserves it. Performance Max for lead generation with brand excluded and lead quality fed back. YouTube and Demand Gen when there is a reason, not by default.</li>
 <li><strong>Microsoft Advertising.</strong> Imported from Google, then managed natively: its own negatives, bids and schedules. In the accounts I have run, noticeably cheaper per click in the UK for the same queries, with an older, more B2B audience. A small add-on to a Google retainer.</li>
 <li><strong>Meta Ads.</strong> For businesses where the offer can be understood in a feed. Pixel plus Conversions API, deduplicated, lead quality from the CRM, scheduled creative tests with one control. Creative volume comes from your designer or a studio.</li>
-<li><strong>LinkedIn Ads.</strong> For B2B with a deal size that supports the click price: named account lists, job titles, CRM stages fed back so LinkedIn optimises towards opportunities. <a href="/b2b-ppc/">More on B2B →</a></li>
 </ul>
 <p>Online stores: Google Shopping, Merchant Centre feeds and Performance Max, measured on margin and new customers, with platform-reported revenue reconciled against the store's own orders. Very large catalogues with daily feed operations are agency work, and I will say so.</p>
 </div></section>
@@ -139,7 +138,7 @@ PAGES = [
 ("Do you need access to our website to do landing pages?", "Yes, to your CMS or hosting, or I build the pages as static files on a subdomain you control. Either way the pages are yours and stay with you."),
 ("Can we keep our current agency for creative and use you for media?", "Yes, and it is a common arrangement for Meta-heavy accounts. I run the media and measurement; they produce the assets; the test plan is shared."),
 ("How quickly can you start?", "An audit usually starts within a week of the go-ahead. Ongoing management depends on capacity, because I deliberately keep the client list short; if I cannot take the account on within a month, I will say so up front."),
-("Who owns the accounts?", "You do, always. Google Ads, Microsoft, Meta, LinkedIn, GA4 and Tag Manager all live in your accounts with me added as a user. If we stop, you remove my access and keep everything."),
+("Who owns the accounts?", "You do, always. Google Ads, Microsoft, Meta, GA4 and Tag Manager all live in your accounts with me added as a user. If we stop, you remove my access and keep everything."),
 ],
 "related": ["ppc-audit", "google-ads-management", "landing-pages", "conversion-tracking"],
 "cta_title": "Tell me about the account",
@@ -187,11 +186,11 @@ PAGES = [
 </div></section>
 """,
 "faq": [
-("Do you work with Google Ads accounts only, or all platforms?", "Both. Many UK clients start with Google Ads alone and add Microsoft Advertising a month later because it is cheap to run alongside. Meta and LinkedIn are added when the business case is there. The <a href=\"/ppc-management/\">PPC management page</a> covers the multi-platform version."),
+("Do you work with Google Ads accounts only, or all platforms?", "Both. Many UK clients start with Google Ads alone and add Microsoft Advertising a month later because it is cheap to run alongside. Meta is added when the business case is there. The <a href=\"/ppc-management/\">PPC management page</a> covers the multi-platform version."),
 ("Can you take over an account an agency built?", "Yes, and it is the most common starting point. Nothing is changed until the tracking is trustworthy; then wasted spend, then structure, then testing. The audit lists the order and the reasons."),
 ("Do you do Google Shopping?", "Yes. Shopping, Merchant Centre feeds and Performance Max for online stores, measured on margin and new customers rather than on the platform's own ROAS. Very large catalogues with daily feed operations are agency work, and I will say so."),
 ("What does Google Ads management cost in the UK?", "A flat monthly fee set by scope, quoted after the audit and credited with it. Your quote comes back in pounds, ex VAT, once the form tells me the spend band and platforms; the <a href=\"/pricing/\">pricing page</a> explains the model and UK ranges."),
-("Will you tell me if Google Ads is the wrong channel for us?", "Yes, and it happens. Some B2B categories have too little search volume in the UK to sustain a campaign, and the honest answer is LinkedIn, or content, or a sales motion. The audit says so if that is the case."),
+("Will you tell me if Google Ads is the wrong channel for us?", "Yes, and it happens. Some B2B categories have too little search volume in the UK to sustain a campaign, and the honest answer is another channel, content or a sales motion. The audit says so if that is the case."),
 ],
 "related": ["ppc-management", "ppc-audit", "conversion-tracking", "landing-pages"],
 },
@@ -202,7 +201,7 @@ PAGES = [
 "meta": 'Independent PPC audit for UK businesses: a fixed-price written review of tracking, wasted spend, structure and landing pages, fixes ranked by impact.',
 "kicker": "PPC audit",
 "h1": "A PPC audit that tells you what is wrong, in what order to fix it, and what it is costing you",
-"lead": "A paid, independent review of your Google Ads, Microsoft, Meta or LinkedIn accounts, delivered as a written report with every finding ranked by financial impact. Read-only access is enough. It is yours to act on, with or without me, and it is credited against the first month if you continue.",
+"lead": "A paid, independent review of your Google Ads, Microsoft or Meta accounts, delivered as a written report with every finding ranked by financial impact. Read-only access is enough. It is yours to act on, with or without me, and it is credited against the first month if you continue.",
 "service_name": "PPC audit",
 "proof": None,
 "body": """
@@ -224,7 +223,7 @@ PAGES = [
 <li><strong>Structure and bidding.</strong> Campaign and ad group logic, budget allocation, Smart Bidding readiness, brand and competitor handling.</li>
 <li><strong>Performance Max and automation.</strong> What the automated campaigns are actually doing, and whether the reported results survive brand exclusion.</li>
 <li><strong>Ads and landing pages.</strong> Message match, page speed, forms, phone tracking, the test history if any.</li>
-<li><strong>Microsoft, Meta and LinkedIn</strong> where they are in scope, with the same rigour.</li>
+<li><strong>Microsoft and Meta</strong> where they are in scope, with the same rigour.</li>
 </ul>
 <p>The deliverable is a written document with findings ranked by financial impact, each with the fix, who should do it and how to confirm it worked, plus a walkthrough call. Typically 5 to 7 working days from access.</p>
 </div></section>
@@ -269,7 +268,7 @@ PAGES = [
 ("Do I have to hire you afterwards?", "No. Many audits are implemented by the client's own team or their existing agency. The report is written so that it can be."),
 ("Will you tell me if my agency is doing a good job?", "Yes, in writing. I have no retainer to win by criticising them, and a fair audit that confirms the agency is competent is still useful: it tells you where the remaining gains are."),
 ("How long does it take?", "Usually 5 to 7 working days from access, with the walkthrough call in the week after."),
-("Can you audit Microsoft, Meta or LinkedIn as well as Google?", "Yes. Every platform in scope is reviewed with the same method, and the report shows them side by side with the same definition of a conversion, which is usually where the first surprise is."),
+("Can you audit Microsoft or Meta as well as Google?", "Yes. Every platform in scope is reviewed with the same method, and the report shows them side by side with the same definition of a conversion, which is usually where the first surprise is."),
 ("Do you audit e-commerce accounts?", "Yes: Shopping, Merchant Centre feeds and Performance Max, with brand and returning customers separated from the reported return, and the feed reviewed as part of the account. See <a href=\"/ecommerce-ppc/\">e-commerce PPC</a>."),
 ],
 "related": ["ppc-management", "google-ads-management", "conversion-tracking", "pricing"],
@@ -278,20 +277,19 @@ PAGES = [
 },
 
 {
-"slug": "b2b-ppc", "short": "B2B PPC", "blurb": "Search and LinkedIn for pipeline, with CRM stages fed back to the platforms.",
-"title": "B2B PPC Consultant UK | Google and LinkedIn Ads for Pipeline, Not Leads",
-"meta": 'B2B PPC for UK SaaS and services firms: Google Search and LinkedIn Ads run by one senior consultant, with CRM stages fed back to optimise for pipeline.',
+"slug": "b2b-ppc", "short": "B2B PPC", "blurb": "Search for pipeline, with CRM stages fed back to the platforms.",
+"title": "B2B PPC Consultant UK | Google Ads for Pipeline, Not Leads",
+"meta": 'B2B PPC for UK SaaS and services firms: Google and Microsoft Search run by one senior consultant, with CRM stages fed back to optimise for pipeline.',
 "kicker": "B2B PPC",
 "h1": "B2B PPC that reports pipeline, because leads are where B2B budgets go to die",
-"lead": "Google Search and LinkedIn Ads for UK B2B companies with a sales cycle: SaaS, technology, professional and industrial services. The difference from consumer PPC is the feedback loop. Your CRM stages go back to the platforms, so the bidding learns from opportunities and closed business, not from whoever filled a form.",
+"lead": "Google and Microsoft Search for UK B2B companies with a sales cycle: SaaS, technology, professional and industrial services. The difference from consumer PPC is the feedback loop. Your CRM stages go back to the platforms, so the bidding learns from opportunities and closed business, not from whoever filled a form.",
 "service_name": "B2B PPC management",
 "body": """
 <section><div class="wrap">
 <h2>Why B2B PPC goes wrong</h2>
 <div class="cols">
 <div class="card"><h3>Optimising for the form fill</h3><p>A student, a competitor and a buying director all count as one lead. Smart Bidding finds more of whichever is cheapest, which is never the director.</p></div>
-<div class="card"><h3>Search volume that is not there</h3><p>Many UK B2B categories have a few hundred searches a month. Broad match fills the gap with irrelevance. Sometimes the honest answer is that LinkedIn, or content, carries more of the load.</p></div>
-<div class="card"><h3>LinkedIn run like Facebook</h3><p>Interest targeting, a generic ad and a "learn more" button, at £8 a click. LinkedIn works with named account lists, specific titles and an offer worth a director's time.</p></div>
+<div class="card"><h3>Search volume that is not there</h3><p>Many UK B2B categories have a few hundred searches a month. Broad match fills the gap with irrelevance. Sometimes the honest answer is that another channel, or content, carries more of the load.</p></div>
 <div class="card"><h3>Attribution that stops at the click</h3><p>Ninety-day sales cycles judged on last-click, weekly. The board asks why PPC "does not work" while it quietly sourced half the pipeline.</p></div>
 </div>
 </div></section>
@@ -300,9 +298,9 @@ PAGES = [
 <h2>How it is run here</h2>
 <ul>
 <li><strong>Google Search on high-intent terms only.</strong> Exact and phrase match, competitor terms handled deliberately, no broad match until the offline data can steer it.</li>
-<li><strong>LinkedIn Ads on named accounts.</strong> Account lists from your CRM or target list, titles that actually buy, offers with substance: a benchmark, a diagnostic, a demo with a named person. Lead gen forms only when the CRM sync is confirmed.</li>
+<li><strong>Microsoft Advertising for the professional audience.</strong> Search on work devices, with LinkedIn profile bid adjustments by company, industry and job function that Google cannot offer. LinkedIn Ads itself can be added when a named-account campaign is worth the click price; it is not the core of the work.</li>
 <li><strong>Microsoft Advertising alongside Google.</strong> Cheaper clicks and an older, more corporate audience. Free reach for a B2B account.</li>
-<li><strong>Offline conversion import.</strong> MQL, SQL, opportunity and closed-won pushed back to Google and LinkedIn from HubSpot or Salesforce, so the platforms bid towards revenue. <a href="/conversion-tracking/">How it is built →</a></li>
+<li><strong>Offline conversion import.</strong> MQL, SQL, opportunity and closed-won pushed back to Google and Microsoft from HubSpot or Salesforce, so the platforms bid towards revenue. <a href="/conversion-tracking/">How it is built →</a></li>
 <li><strong>Landing pages per offer.</strong> Not the homepage. A page for the demo, a page for the benchmark, a page for the comparison against the incumbent. <a href="/landing-pages/">Detail →</a></li>
 <li><strong>Reporting in pipeline.</strong> Cost per opportunity and cost per closed deal, by channel and campaign, over the real sales cycle. Leads are shown, but nobody is managed to them.</li>
 </ul>
@@ -316,7 +314,6 @@ PAGES = [
 "faq": [
 ("Do you work with in-house B2B marketing teams?", "Yes. Often as the paid specialist next to a content or demand team: I run the accounts, build the measurement and report in the team's pipeline numbers. Advisory-only arrangements for teams that run their own accounts are also available."),
 ("What CRMs can you connect for offline conversions?", "HubSpot and Salesforce natively, most others through Zapier, Make or a scheduled upload. The requirement is that stages are recorded consistently; the integration is the easy part."),
-("Is LinkedIn Ads worth it for a small budget?", "Below roughly £3,000 a month the platform struggles to exit learning and the cost per opportunity is hard to read. Under that, Google Search plus a strong offer usually does more. The audit says which applies to you."),
 ("How do you report on a 90-day sales cycle?", "Cohorts. Spend in a month is judged against the opportunities and revenue that month's leads produced over the following quarter, not against the same month's closed deals. It takes a quarter to see clearly and the reporting says so."),
 ],
 "related": ["ppc-management", "conversion-tracking", "landing-pages", "ppc-audit"],
@@ -372,7 +369,7 @@ PAGES = [
 "meta": 'Conversion tracking for UK businesses: Google Ads, GA4, Tag Manager, Consent Mode v2 and offline import from your CRM. Fixed price, by the ads consultant.',
 "kicker": "Conversion tracking",
 "h1": "Conversion tracking that Google Ads, GA4 and your CRM all agree on",
-"lead": "If the conversion data is wrong, every bidding decision inherits the error. This is a fixed-price project to make Google Ads, Microsoft, Meta, LinkedIn, GA4 and your CRM agree on what a customer is, keep them agreeing, and do it lawfully for UK visitors with Consent Mode v2.",
+"lead": "If the conversion data is wrong, every bidding decision inherits the error. This is a fixed-price project to make Google Ads, Microsoft, Meta, GA4 and your CRM agree on what a customer is, keep them agreeing, and do it lawfully for UK visitors with Consent Mode v2.",
 "service_name": "Conversion tracking setup",
 "body": """
 <section><div class="wrap">
@@ -392,7 +389,7 @@ PAGES = [
 <li><strong>Google Tag Manager</strong> as the single place tags live, with a naming convention and a change log, so the next person can read it.</li>
 <li><strong>GA4</strong> configured for the business, with key events, a clean channel grouping and Google Ads linking.</li>
 <li><strong>Consent Mode v2</strong> with your banner, so consented visitors are measured fully and the rest are modelled rather than lost. Required for UK and EU traffic.</li>
-<li><strong>Enhanced conversions</strong> for Google and Microsoft, Conversions API for Meta, and the LinkedIn Insight Tag with conversions, all deduplicated.</li>
+<li><strong>Enhanced conversions</strong> for Google and Microsoft, Conversions API for Meta, and other platform tags (the LinkedIn Insight Tag included) where they are in use, all deduplicated.</li>
 <li><strong>Offline conversion import</strong> from HubSpot, Salesforce or a sheet, so CRM stages flow back to the platforms. This is the piece that changes B2B accounts.</li>
 <li><strong>A reconciliation report</strong> showing Google Ads, GA4 and the CRM side by side for the same period, with the remaining differences explained.</li>
 </ul>
@@ -404,7 +401,7 @@ PAGES = [
 </div></section>
 """,
 "faq": [
-("How much does conversion tracking setup cost?", "A fixed price scaled by platforms and outcomes. A Google Ads and GA4 rebuild for a lead generation site is at the low end; adding Meta and LinkedIn server-side and CRM offline import is at the high end. Quoted after a look at what exists."),
+("How much does conversion tracking setup cost?", "A fixed price scaled by platforms and outcomes. A Google Ads and GA4 rebuild for a lead generation site is at the low end; adding Meta server-side and CRM offline import is at the high end. Quoted after a look at what exists."),
 ("Do we need a developer?", "Usually not. Tag Manager and the platform integrations cover most of it. Where a data layer change is needed on your site, I write the specification and your developer implements a few lines."),
 ("Which consent banner should we use?", "Any Google-certified consent management platform works with Consent Mode v2; Cookiebot, CookieYes and Iubenda are common in the UK. If you already have one, it is configured rather than replaced."),
 ("Can you fix tracking without taking over the campaigns?", "Yes. Tracking is a standalone project and often the first thing an in-house team or another agency asks for. The accounts remain theirs to run."),

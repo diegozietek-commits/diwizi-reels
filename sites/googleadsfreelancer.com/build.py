@@ -20,7 +20,7 @@ SITE = "https://googleadsfreelancer.com"
 SISTER = "https://ppcconsultancy.uk"  # UK site; hreflang pairs below (US page -> UK page)
 SISTER_PAGES = {
     "index": "/", "ppc-management": "/ppc-management/", "google-ads-management": "/google-ads-management/",
-    "google-ads-audit": "/ppc-audit/", "linkedin-ads-management": "/linkedin-ads-management/",
+    "google-ads-audit": "/ppc-audit/", 
     "google-ads-consultant": "/google-ads-consultant/", "meta-ads-management": "/facebook-ads-management/",
     "microsoft-ads-management": "/microsoft-ads-management/", "ecommerce-ppc-management": "/ecommerce-ppc/",
     "small-business-ppc-management": "/google-ads-small-business/", "b2b-ppc": "/b2b-ppc/",
@@ -70,13 +70,33 @@ PROOF_BY_SLUG = {
     "ppc-management": [("4", "platforms, one operator"), ("1", "measurement layer across all"), ("1", "report, in your currency"), ("Flat fee", "never a % of ad spend")],
     "meta-ads-management": [("Pixel + CAPI", "deduplicated events"), ("CRM", "lead quality, not form fills"), ("Scheduled", "creative tests, one control"), ("Flat fee", "never a % of ad spend")],
     "microsoft-ads-management": [("Lower CPC", "than Google, in the accounts I have run"), ("Native", "negatives, bids and schedules"), ("UET", "via Tag Manager, same definitions"), ("Small", "add-on to a Google retainer")],
-    "linkedin-ads-management": [("Named", "account lists and titles"), ("CRM", "stages fed back to LinkedIn"), ("Pipeline", "is the number reported"), ("Flat fee", "never a % of ad spend")],
     "ecommerce-ppc-management": [("Margin", "not platform ROAS"), ("Feed first", "titles, GTINs, labels"), ("PMax", "with brand excluded"), ("New vs returning", "customers separated")],
 }
 GTM_ID = "GTM-TB2NHZCH"
 # Guard before GTM: automated browsers (navigator.webdriver, HeadlessChrome) never load GTM, so tests and
 # scanners stay out of GA4. /?internal=1 sets a 1-year first-party cookie (/?internal=0 clears it); while it
 # is set every page pushes traffic_type:'internal' before GTM loads, for the GA4 internal-traffic filter.
+# Consent Mode v2. Storage is denied by default for visitors Google places in the EEA, the UK and
+# Switzerland, granted elsewhere. The banner is shown to visitors whose browser time zone is European,
+# so the people for whom "nothing is set until you choose" is true are the ones asked to choose.
+CONSENT_REGIONS = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH']
+CONSENT_JS = ("<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}"
+              "(function(){var c=null;try{c=localStorage.getItem('gaf_consent')}catch(e){}"
+              "function s(v){return {ad_storage:v,ad_user_data:v,ad_personalization:v,analytics_storage:v,functionality_storage:'granted',security_storage:'granted',wait_for_update:500}}"
+              "if(c==='granted'||c==='denied'){gtag('consent','default',s(c))}"
+              "else{var d=s('denied');d.region=" + json.dumps(CONSENT_REGIONS).replace('"', "'") + ";gtag('consent','default',d);gtag('consent','default',s('granted'))}"
+              "var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}"
+              "window.__gafConsent=c;window.__gafAsk=!c&&(/^Europe\\//.test(tz)||/^Atlantic\\/(Reykjavik|Canary|Madeira|Azores|Faroe)$/.test(tz));})();</script>")
+CONSENT_BANNER = ('<div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookie choices" hidden>'
+                  '<p>I use Google Analytics and Google Ads measurement to see which pages bring inquiries. Nothing is set until you choose. '
+                  '<a href="/privacy/">What is collected</a>.</p>'
+                  '<div class="consent-row"><button type="button" class="btn" data-c="granted">Accept</button>'
+                  '<button type="button" class="btn ghost" data-c="denied">Reject</button></div></div>'
+                  "<script>(function(){var b=document.getElementById('consent');if(!b)return;if(window.__gafAsk)b.hidden=false;"
+                  "b.addEventListener('click',function(e){var t=e.target.closest('button[data-c]');if(!t)return;var v=t.getAttribute('data-c');"
+                  "try{localStorage.setItem('gaf_consent',v)}catch(x){}"
+                  "gtag('consent','update',{ad_storage:v,ad_user_data:v,ad_personalization:v,analytics_storage:v});"
+                  "window.dataLayer.push({event:'consent_update',consent_state:v});b.hidden=true;});})();</script>")
 GTM_GUARD = ("<script>(function(w,d){var n=w.navigator||{},q=w.location.search,c='dz_internal';"
              "if(/[?&]internal=1(&|$)/.test(q))d.cookie=c+'=1; max-age=31536000; path=/; SameSite=Lax; Secure';"
              "else if(/[?&]internal=0(&|$)/.test(q))d.cookie=c+'=; max-age=0; path=/; SameSite=Lax; Secure';"
@@ -151,7 +171,7 @@ FOOTER_GROUPS = [
                     "google-ads-setup", "conversion-tracking-setup", "landing-pages", "ecommerce-ppc-management",
                     "small-business-ppc-management"]),
     ("Other platforms", ["ppc-management", "meta-ads-management", "microsoft-ads-management",
-                         "linkedin-ads-management", "youtube-ads-management", "b2b-ppc", "white-label-ppc"]),
+                         "youtube-ads-management", "b2b-ppc", "white-label-ppc"]),
     ("Industries", ["home-services-ppc", "ppc-for-law-firms", "google-ads-for-dentists", "healthcare-ppc", "saas-ppc",
                     "ppc-consultant-houston"]),
     ("Working with me", ["freelance-ppc-consultant", "pricing", "results", "about", "faq", "contact"]),
@@ -236,6 +256,8 @@ footer h4{margin:0 0 8px;color:var(--fg);font-size:14px;text-transform:uppercase
 footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
 footer a{color:var(--muted)}
 footer .li-in{display:inline-flex;align-items:center;gap:6px}footer .li-in svg{fill:currentColor;flex:none}
+.consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:560px;margin:0 auto;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 12px 40px rgba(0,0,0,.14);font-size:14.5px}
+.consent p{margin:0 0 12px;color:var(--fg)}.consent-row{display:flex;gap:10px}.consent .btn{padding:9px 16px;font-size:14px;border:0;cursor:pointer;font-family:inherit}.consent .btn.ghost{border:1px solid var(--line)}
 .fine{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:13.5px}
 .updated{color:var(--muted);font-size:14px}
 .mmenu{display:none;position:relative}
@@ -339,7 +361,7 @@ def footer_html():
         '<footer><div class="wrap"><div class="grid">' + "".join(groups) + "</div>"
         f'<div class="fine">{BRAND} is the personal practice of {NAME}, independent paid media consultant '
         f'operating as Diwizi. Remote, in English, for businesses in the US, Canada and Europe, and for companies from any '
-        f'country that work in English. UK and Ireland, in pounds: ppcconsultancy.uk. Google Ads, Meta Ads, LinkedIn Ads and Microsoft Advertising are trademarks of their '
+        f'country that work in English. UK and Ireland: ppcconsultancy.uk. Google Ads, Meta Ads, LinkedIn Ads and Microsoft Advertising are trademarks of their '
         f'respective owners; this site is not affiliated with or endorsed by Google, Meta, Microsoft or LinkedIn. '
         f'&copy; {date.today().year} {NAME}. <a href="/privacy/">Privacy</a></div></div></footer>'
     )
@@ -426,7 +448,7 @@ def form_html(slug):
 <input type="hidden" name="page" value="{SITE}{url_for(slug)}">
 <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <fieldset><legend>Monthly ad spend, roughly</legend><div class="pills">{bands}</div></fieldset>
-<fieldset><legend>Platforms</legend><div class="pills"><label class="pill"><input type="checkbox" name="platforms" value="Google Ads"><span>Google Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Microsoft Advertising"><span>Microsoft Advertising</span></label><label class="pill"><input type="checkbox" name="platforms" value="Meta Ads"><span>Meta Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="LinkedIn Ads"><span>LinkedIn Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Not running ads yet"><span>Not running ads yet</span></label></div><p class="form-status platforms-status" role="status" aria-live="polite"></p></fieldset>
+<fieldset><legend>Platforms</legend><div class="pills"><label class="pill"><input type="checkbox" name="platforms" value="Google Ads"><span>Google Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Microsoft Advertising"><span>Microsoft Advertising</span></label><label class="pill"><input type="checkbox" name="platforms" value="Meta Ads"><span>Meta Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Not running ads yet"><span>Not running ads yet</span></label></div><p class="form-status platforms-status" role="status" aria-live="polite"></p></fieldset>
 <div class="row2">
 <label>Name<input type="text" name="name" autocomplete="name" required></label>
 <label>Work email<input type="email" name="email" autocomplete="email" required></label>
@@ -502,7 +524,7 @@ def llms_txt():
 
 
 LLMS_SUMMARY = ("Diego Zietek, independent Google Ads and paid media consultant with 14+ years of hands-on work. "
-                "Runs Google Ads, with Meta, Microsoft Advertising and LinkedIn when they fit, personally, for a flat monthly fee. "
+                "Runs Google Ads, with Meta and Microsoft Advertising when they fit, personally, for a flat monthly fee. "
                 "Accounts stay in the client's name. Based in Curitiba, Brazil; works remotely in English.")
 LLMS_FACTS = ["- Market: businesses in the United States, Canada and Europe, and companies from any country that work in English; the UK and Ireland practice is at ppcconsultancy.uk.",
               "- Services: Google Ads management, audits, setup, conversion tracking, consulting, and multi-platform PPC management.",
@@ -518,7 +540,7 @@ def schema_for(p):
         "jobTitle": "Independent paid media consultant", "url": SITE + "/about/",
         "sameAs": [PARENT, PARENT + "diego-zietek.html"],
         "worksFor": {"@type": "Organization", "name": "Diwizi", "url": PARENT},
-        "knowsAbout": ["Google Ads", "Meta Ads", "LinkedIn Ads", "Microsoft Advertising", "Conversion tracking", "GA4"],
+        "knowsAbout": ["Google Ads", "Meta Ads", "Microsoft Advertising", "Conversion tracking", "GA4"],
     }
     service = {
         "@type": "ProfessionalService", "@id": SITE + "/#service", "name": BRAND + " | " + NAME,
@@ -581,7 +603,7 @@ def render(p):
 <head>
 <meta charset="utf-8">
 {p.get('pre_gtm_head', '')}
-{GTM_HEAD}
+{CONSENT_JS}{GTM_HEAD}
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(p['title'])}</title>
 <meta name="description" content="{esc(p['meta'])}">
@@ -626,7 +648,7 @@ def render(p):
 {cta_html(p)}
 </main>
 {footer_html()}
-{EMAIL_JS}{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}{FAQ_OPEN_JS if p.get('faq_groups') else ''}
+{CONSENT_BANNER}{EMAIL_JS}{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}{FAQ_OPEN_JS if p.get('faq_groups') else ''}
 <script id="cal-embed">(function(){{var EV='diwizi/google-ads-call',NS='gaf',pronto=false,pedido=false;function carregar(){{if(pedido)return;pedido=true;try{{(function(C,A,L){{var p=function(a,ar){{a.q.push(ar)}},d=C.document;C.Cal=C.Cal||function(){{var cal=C.Cal,ar=arguments;if(!cal.loaded){{cal.ns={{}};cal.q=cal.q||[];var s=d.createElement('script');s.src=A;s.async=true;s.onload=function(){{pronto=true}};d.head.appendChild(s);cal.loaded=true}}if(ar[0]===L){{var api=function(){{p(api,arguments)}},ns=ar[1];api.q=api.q||[];if(typeof ns==='string'){{cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,['initNamespace',ns])}}else p(cal,ar);return}}p(cal,ar)}}}})(window,'https://app.cal.com/embed/embed.js','init');Cal('init',NS,{{origin:'https://app.cal.com'}});Cal.ns[NS]('ui',{{layout:'month_view'}});Cal.ns[NS]('on',{{action:'bookingSuccessfulV2',callback:function(e){{marcar((e&&e.detail&&e.detail.data)||{{}})}}}});}}catch(x){{}}}}function marcar(d){{try{{var id=d.uid||d.bookingUid||'',k=NS+'_call_'+(id||'sessao'),ja=false;try{{ja=!!(sessionStorage.getItem(k)||(id&&localStorage.getItem(k)))}}catch(e){{}}if(ja)return;(window.dataLayer=window.dataLayer||[]).push({{event:'booking_confirmed',booking_source:'cal.com',booking_uid:id,lead_page:location.pathname}});try{{sessionStorage.setItem(k,'1');if(id)localStorage.setItem(k,'1')}}catch(e){{}}}}catch(e){{}}}}function link(t){{return t&&t.closest?t.closest('a[href^="https://cal.com/diwizi/"]'):null}}document.addEventListener('click',function(e){{var a=link(e.target);if(!a||!pronto||e.defaultPrevented||e.button||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;try{{Cal.ns[NS]('modal',{{calLink:EV,config:{{layout:'month_view'}}}});e.preventDefault()}}catch(x){{}}}});['pointerover','touchstart','focusin'].forEach(function(n){{document.addEventListener(n,function(e){{if(link(e.target))carregar()}},{{passive:true,capture:true}})}});function ocioso(){{setTimeout(carregar,1500)}}if(document.readyState==='complete')ocioso();else window.addEventListener('load',ocioso);}})();</script>
 </body>
 </html>
@@ -636,8 +658,8 @@ def render(p):
 def privacy_page():
     body = f"""<section><div class="wrap">
 <h2>What this site collects</h2>
-<p>This site is a set of static pages. It uses the following third-party tags, loaded through Google Tag Manager:</p>
-<ul><li><b>Google Analytics 4.</b> Measures visits, pages viewed, clicks on the quote and email links and form submissions, to understand which pages are useful. Sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>). Data is processed by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
+<p>This site is a set of static pages. It uses the following third-party tags, loaded through Google Tag Manager. Visitors in the EEA, the UK and Switzerland see a cookie banner, and nothing is stored on their device until they accept; if they reject, the tags run in cookieless mode. Elsewhere the tags run by default.</p>
+<ul><li><b>Google Analytics 4.</b> Measures visits, pages viewed, clicks on the quote and email links and form submissions, to understand which pages are useful. Sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>), subject to the consent choice where one is asked. Data is processed by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
 <li><b>Google Ads conversion measurement.</b> When you arrive from a Google ad and send the form, the enquiry is reported back to Google Ads as a conversion so ad spend can be judged on real outcomes.</li></ul>
 <p>You can block these with your browser's tracking protection or an extension such as Google's <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Analytics opt-out</a>; the site works the same without them.</p>
 <ul><li><b>Contact form.</b> What you type in the form is relayed to my inbox by <a href="https://web3forms.com/privacy" rel="noopener">Web3Forms</a> and is not stored on this site. I use it only to reply.</li>
@@ -731,6 +753,9 @@ def build():
     with open(os.path.join(dist, "favicon.svg"), "w") as f:
         f.write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1a56db"/>'
                 '<text x="32" y="43" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle">GA</text></svg>')
+    # Removed pages answer 301 so old links and indexed URLs land on the closest page.
+    with open(os.path.join(dist, "_redirects"), "w") as f:
+        f.write("/linkedin-ads-management/ /b2b-ppc/ 301\n/linkedin-ads-management /b2b-ppc/ 301\n")
     with open(os.path.join(dist, "_headers"), "w") as f:
         f.write("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
                 "  X-Frame-Options: SAMEORIGIN\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n"
