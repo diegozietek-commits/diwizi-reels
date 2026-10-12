@@ -414,7 +414,7 @@ PAGES = [
 <section><div class="wrap">
 <h2>How I price</h2>
 <p>Every engagement is quoted in pounds, ex VAT, or in euros for Irish businesses, after the form tells me the spend band, the platforms, and whether landing pages or tracking need rebuilding. The model below is fixed before any quote.</p>
-<p>Landing pages, business websites and tracking setups are the exception: fixed price projects with a published price list, in pounds, on <a href="https://diwizi.com/landing-pages-and-websites.html">diwizi.com</a>, half on approval and half on delivery. See <a href="/landing-pages/">landing pages and websites</a>.</p>
+<p>Landing pages, business websites and tracking setups are the exception: fixed price projects with a <a href="/landing-pages/#prices">published price list</a> in pounds, half on approval and half on delivery.</p>
 <p>The fee is set for your account, not from a rate card: platforms, markets, campaigns and how much landing page and tracking work is included. A range comes by email from the form; a firm figure needs a look at the accounts.</p>
 <table>
 <tr><th>Engagement</th><th>How it is charged</th><th>What you get</th></tr>

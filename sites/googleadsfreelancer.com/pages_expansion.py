@@ -69,6 +69,9 @@ PAGES = [
 "h1": "Landing pages and websites built by the person running the ads, because the page after the click is the largest lever in the account",
 "lead": "Most paid accounts are optimized up to the click and abandoned after it. The ad agency does not own the website; the web agency does not read the ad account. Here the same person does both: campaign pages, and when the site itself cannot carry the campaign, a 5 to 8 page business website, built from the search terms, measured from the first visit and changed from the data. Hosting, tracking and the paperwork around a launch are in scope, so you approve copy, answer a short brief, and nothing else lands on your desk.",
 "service_name": "PPC landing pages, business websites and conversion rate optimization",
+"lp_form": True,
+"cta_title": "Tell me about the page you need",
+"cta_text": "Say what the page should sell, who it is for and where the traffic will come from. You get a reply with a price within one business day.",
 "body": """
 <section><div class="wrap">
 <h2>Why the page is usually the problem</h2>
@@ -106,9 +109,10 @@ PAGES = [
 </ul>
 </div></section>
 
-<section><div class="wrap">
-<h2>Included or standalone</h2>
-<p>Included in <a href="/google-ads-management/">management retainers</a>: building and testing pages is part of running the account, not a change request. As a standalone project, fixed prices: a campaign landing page is US$ 1,900, an extra variant for A/B testing US$ 600, a 5 to 8 page business website US$ 6,500, a tracking setup on its own US$ 1,500, the care plan with hosting US$ 250 a month, and a white label page for agencies US$ 950. Half on approval and half on delivery by bank transfer. The same list in pounds and euros is on <a href="https://diwizi.com/landing-pages-and-websites.html">diwizi.com</a>. Either way the pages, the code and the accounts belong to you and live on your domain.</p>
+<section id="prices"><div class="wrap">
+<h2>Prices, published</h2>
+<p>Fixed prices for standalone projects, with copy and full tracking always included. Quoted in US dollars for the United States and Canada, pounds for the UK and euros for the rest of Europe. Inside a <a href="/google-ads-management/">management retainer</a>, building and testing pages is part of running the account, not a change request. Either way the pages, the code and the accounts belong to you and live on your domain.</p>
+{{lp_pricing}}
 </div></section>
 
 <section><div class="wrap">
@@ -120,9 +124,9 @@ PAGES = [
 ("Do you design the pages or just the copy?", "Both, within a system: your brand's fonts and colors, a layout built for the intent, copy from the search terms and the sales calls. For heavy custom design a designer on your side or a studio produces the visuals and I build and test the page."),
 ("Which platforms can you build on?", "Plain HTML, hosted on your domain or on a subdomain you control, with or without hosting by me. I do not build in WordPress or page builders. If the page has to live inside your CMS, I deliver the HTML and your developer embeds it."),
 ("Do you build full websites?", "Yes, when the site cannot carry the campaign: five to eight pages, copy included, built for the campaigns and tracked from day one, with hosting in the care plan. Not online stores and not brand identity work; for those I will point you to someone better."),
-("How much does a landing page or a website cost?", "Included in management retainers. As a standalone project, US$ 1,900 per campaign landing page, US$ 600 per extra A/B variant, US$ 6,500 for a 5 to 8 page website, US$ 1,500 for a tracking setup on its own and US$ 250 a month for the care plan with hosting. Half on approval, half on delivery. The same list in pounds and euros is on <a href=\"https://diwizi.com/landing-pages-and-websites.html\">diwizi.com</a>."),
+("How much does a landing page or a website cost?", "Included in management retainers. As a standalone project, US$1,900 for a campaign landing page, US$600 for an extra A/B variant, US$6,500 for a 5 to 8 page website, US$1,500 for a tracking setup on its own and US$250 a month for hosting and care, with the same list in pounds and euros in the <a href=\"#prices\">price table</a>. Half on approval, half on delivery."),
 ("Do you host the pages?", "Optional, priced both ways. Without hosting you get the HTML files installed on your host. With hosting, the page lives under your domain on infrastructure I manage inside the monthly care plan, with backups, updates and a monthly check that every tag still fires."),
-("How do I pay?", "By bank transfer through Wise, invoiced in US dollars, with half on approval of the written scope and half on delivery. I do not take card payments."),
+("How do I pay?", "By bank transfer through Wise, invoiced in US dollars, pounds or euros, with half on approval of the written scope and half on delivery. I do not take card payments."),
 ("Can my agency resell the pages?", "Yes. The same page is available white label, with no mention of me, delivered under your agency's name. See <a href=\"/white-label-ppc/\">white label PPC</a>."),
 ("Can you improve our existing pages instead of building new ones?", "Yes. A conversion review of the current pages against the account data comes first, and often the fixes are to the form, the first screen and the speed rather than a rebuild."),
 ("How long until a test shows a result?", "It depends on traffic: a page with 1,000 paid visits a month can read a meaningful change in two to four weeks; a page with 100 cannot, and the program is adjusted to test bigger changes less often."),

@@ -107,6 +107,183 @@ def float_cta_html(p):
     return (f'<div id="float-cta" class="float-cta" hidden aria-label="Contact"><a class="float-call" href="{CAL}" {CAL_LINK_ATTRS} data-cta="call">{cal_ico}Book a call</a>'
             f'<a class="float-quote" href="#form" data-cta="quote">{msg_ico}Get a quote</a></div>' + FLOAT_CTA_JS)
 
+
+# Published prices for landing pages and websites (owner, 12 Oct 2026), the same list as
+# diwizi.com/landing-pages-and-websites.html. Only these prices may appear on the site; management,
+# audit, setup and consulting fees stay unpublished. Rendered on /landing-pages/ through {{lp_pricing}}.
+LP_PRICES = {
+    "page": {"usd": 1900, "gbp": 1400, "eur": 1700},
+    "website": {"usd": 6500, "gbp": 3900, "eur": 4500},
+    "variant": {"usd": 600, "gbp": 450, "eur": 550},
+    "tracking": {"usd": 1500, "gbp": 1200, "eur": 1400},
+    "care": {"usd": 250, "gbp": 95, "eur": 180},
+    "white": {"usd": 950, "gbp": 650, "eur": 800},
+}
+LP_SYMBOL = {"usd": "US$", "gbp": "£", "eur": "€"}
+LP_CURRENCIES = ["usd", "gbp", "eur"]  # first one is the default; a European browser time zone preselects pounds or euros
+LP_DAYS, LP_DAY = "business days", "business day"
+LP_FEATURES = ["Copy written from an interview with you", "Design on your brand, mobile first", "Hand coded HTML, no WordPress",
+               "Google Ads ready and Meta Ads ready", "SEO ready and AI ready",
+               "Full tracking (GA4, Tag Manager, enhanced conversions, Meta Conversions API, Consent Mode)",
+               "Call tracking, form to your CRM", "Two revision rounds"]
+LP_BADGES = ["Google Ads ready", "Meta Ads ready", "Microsoft Ads ready", "SEO ready", "AI ready", "Mobile first", "Consent Mode ready"]
+LP_NOTES = ("<p>Half on approval of the written scope, half on delivery. Paid by bank transfer through Wise and invoiced in US dollars, "
+            "pounds or euros. I do not take card payments.</p>"
+            "<p>Without hosting, you receive the HTML files installed on your host or on a subdomain you control. With hosting, the page "
+            "lives under your domain on infrastructure I manage, for the monthly amount shown.</p>"
+            "<p>Code, domain, hosting account and tracking accounts stay in your name from day one. Campaign management on its own is "
+            'quoted from the form or a call; <a href="/pricing/">pricing</a> explains how.</p>')
+LP_FORM_EXAMPLE = ("Example: we sell commercial HVAC maintenance contracts in Houston, the traffic comes from Google Ads, and today "
+                   "the campaign lands on the homepage. We need it live before the 1st.")
+# What the visitor can pick in the landing page form; data-p is sent to GA4 as `product`.
+LP_NEEDS = [("page", "Campaign landing page"), ("page_management", "Landing page + campaign management"),
+            ("website", "Business website, 5 to 8 pages"), ("variant", "Extra variant for A/B testing"),
+            ("tracking", "Tracking setup only"), ("care", "Hosting and care plan"),
+            ("white_label", "White label page for my agency"), ("not_sure", "Not sure yet")]
+LP_CSS = ('<style id="lp-css">#prices,#form{scroll-margin-top:76px}'
+          '.lp-controls{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:18px 0 26px}'
+          '.seg{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;background:var(--soft)}'
+          '.seg button{font:inherit;font-size:15px;font-weight:600;border:0;background:transparent;color:var(--muted);padding:8px 16px;border-radius:999px;cursor:pointer}'
+          '.seg button.on{background:var(--accent);color:var(--accent-fg)}.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}'
+          '.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;align-items:start}'
+          '.tier{position:relative;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:22px 20px 20px;display:flex;flex-direction:column}'
+          '.tier.rec{background:var(--bg);border:2px solid var(--accent)}.tier h3{margin:0 0 10px;font-size:19px;line-height:1.3}'
+          '.tier .tag{position:absolute;top:-12px;left:18px;background:var(--accent);color:var(--accent-fg);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px}'
+          '.pv{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.15}.pv.q{font-size:22px}'
+          '.pv small{display:block;font-size:14px;font-weight:600;color:var(--muted);letter-spacing:0;margin-top:4px}'
+          '.lp-prices .pv-h{display:none}.lp-prices.host .pv-s{display:none}.lp-prices.host .pv-h{display:block}'
+          '.lp-prices .cur{display:none}.lp-prices[data-cur=usd] .cur-usd,.lp-prices[data-cur=gbp] .cur-gbp,.lp-prices[data-cur=eur] .cur-eur{display:inline}'
+          '.prazo{display:block;color:var(--muted);font-size:14px;margin:6px 0 14px}'
+          '.tier ul{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:7px;font-size:15px}'
+          '.tier li{display:grid;grid-template-columns:18px 1fr;gap:8px;line-height:1.45}'
+          '.mk{font-weight:700;text-align:center}.mk.ok{color:var(--ok)}.mk.dt,.mk.nx{color:var(--muted)}.tier li.off span:last-child{color:var(--muted)}'
+          '.tier-cta{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}.tier-cta .lk{font-weight:600;font-size:15px}'
+          '.addons-h{margin:36px 0 12px}.addons{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}'
+          '.addon{border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--bg)}.addon h4{margin:0 0 4px;font-size:16px}'
+          '.addon-price{font-weight:700;font-size:20px;letter-spacing:-.01em;color:var(--accent)}.addon p{margin:6px 0 8px;font-size:14.5px;color:var(--muted)}'
+          '.addon a{font-size:14.5px;font-weight:600}.lp-prices .note{margin-top:24px}.lp-prices .note p{margin:6px 0}</style>')
+
+
+def lp_amount(item, extra=""):
+    """One price in every currency the site shows; CSS shows the selected one."""
+    return "".join(f'<span class="cur cur-{c}">{LP_SYMBOL[c]}{LP_PRICES[item][c]:,}{extra}</span>' for c in LP_CURRENCIES)
+
+
+def lp_pricing_html():
+    """Price cards for /landing-pages/: three tiers with a hosting toggle, add ons and notes, in this site's components."""
+    tick, dot, cross = '<span class="mk ok">&#10003;</span>', '<span class="mk dt">&#8226;</span>', '<span class="mk nx">&#215;</span>'
+
+    def li(mark, text, off=False):
+        return f'<li{" class=" + chr(34) + "off" + chr(34) if off else ""}>{mark}<span>{text}</span></li>'
+
+    def feats(pages, variant_inc, mgmt, hosting, delivery):
+        rows = [li(tick, t) for t in LP_FEATURES]
+        rows.append(li(dot, f"Pages: {pages}"))
+        rows.append(li(tick, "Extra variant for A/B testing") if variant_inc
+                    else li(dot, f"Extra variant for A/B testing: add on, {lp_amount('variant')}"))
+        rows.append(li(tick, "Campaign management by the same person") if mgmt
+                    else li(cross, "Campaign management by the same person", off=True))
+        rows.append(li(dot, f"Hosting and care plan: {hosting}"))
+        rows.append(li(dot, f"Delivery: {delivery}"))
+        return "<ul>" + "".join(rows) + "</ul>"
+
+    def price(item):
+        return (f'<div class="pv pv-s">{lp_amount(item)}</div>'
+                f'<div class="pv pv-h">{lp_amount(item)}<small>+ {lp_amount("care")} a month for hosting and care</small></div>')
+
+    def cta(need, quote):
+        return (f'<div class="tier-cta"><a class="btn" href="{CAL}" {CAL_LINK_ATTRS}>Book a call</a>'
+                f'<a class="lk" href="#form" data-need="{need}">{quote}</a></div>')
+
+    optional = f'optional, {lp_amount("care")} a month'
+    tiers = (
+        f'<div class="tier"><h3>Campaign landing page</h3>{price("page")}<span class="prazo">Live in 3 to 5 {LP_DAYS}</span>'
+        f'{feats("1 page", False, False, optional, f"3 to 5 {LP_DAYS}")}{cta("page", "Get a quote")}</div>'
+        f'<div class="tier rec"><span class="tag">Most complete</span><h3>Landing page + campaign management</h3>'
+        f'<div class="pv q">Quoted with the account</div><span class="prazo">Page and media, one quote</span>'
+        f'{feats("1 page, plus a new page or two tests every month", True, True, "in the quote", f"3 to 5 {LP_DAYS} for the page")}'
+        f'{cta("page_management", "Ask for the price")}</div>'
+        f'<div class="tier"><h3>Business website, 5 to 8 pages</h3>{price("website")}<span class="prazo">Live in 1 to 2 weeks</span>'
+        f'{feats("5 to 8 pages", False, False, optional, "1 to 2 weeks")}{cta("website", "Get a quote")}</div>'
+    )
+    addons = [
+        ("Extra variant for A/B testing", "variant", "variant", "", "A second version of the same page, built to test one hypothesis against the first."),
+        ("Tracking setup on its own", "tracking", "tracking", "", "GA4, Tag Manager, the Meta Conversions API, enhanced conversions and consent mode on a site I did not build. About one week."),
+        ("Hosting and care plan", "care", "care", " a month", "Hosting under your domain, SSL, backups, updates, a monthly tag check and one hour of changes a month. Month to month."),
+        ("White label page for agencies", "white", "white_label", "", "The same campaign page with no branding of mine, delivered under your agency's name."),
+    ]
+    addon_html = "".join(f'<div class="addon"><h4>{t}</h4><div class="addon-price">{lp_amount(k)}{per}</div><p>{d}</p>'
+                         f'<a href="#form" data-need="{n}">Get a quote</a></div>' for t, k, n, per, d in addons)
+    badges = "".join(f"<li>{b}</li>" for b in LP_BADGES)
+    cur_seg = ""
+    if len(LP_CURRENCIES) > 1:
+        cur_seg = ('<div class="seg" role="group" aria-label="Currency">' + "".join(
+            f'<button type="button" data-cur="{c}" aria-pressed="{"true" if i == 0 else "false"}"{" class=" + chr(34) + "on" + chr(34) if i == 0 else ""}>{LP_SYMBOL[c]}</button>'
+            for i, c in enumerate(LP_CURRENCIES)) + "</div>")
+    # Toggles: hosting (class .host) and currency (data-cur, preset from the browser time zone). A tier or add on
+    # "Get a quote" link ticks the matching option in the form, and the hosting choice once the visitor has used the toggle.
+    js = ("<script>(function(){var g=document.getElementById('lp-prices');if(!g)return;var mexeu=false;"
+          "function pick(b){var s=b.parentNode;s.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false')});"
+          "if(b.hasAttribute('data-h'))g.classList.toggle('host',b.getAttribute('data-h')==='1');"
+          "if(b.hasAttribute('data-cur'))g.setAttribute('data-cur',b.getAttribute('data-cur'))}"
+          "g.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){if(b.hasAttribute('data-h'))mexeu=true;pick(b)})});"
+          "try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'',c=/^Europe\\/(London|Belfast|Guernsey|Jersey|Isle_of_Man)$/.test(tz)?'gbp':(/^Europe\\//.test(tz)?'eur':'');"
+          "var cb=c&&g.querySelector('.seg button[data-cur='+c+']');if(cb)pick(cb)}catch(e){}"
+          "g.addEventListener('click',function(e){var a=e.target.closest('a[data-need]');if(!a)return;var f=document.getElementById('form');if(!f)return;"
+          "var r=f.querySelector('input[name=need][data-p='+a.getAttribute('data-need')+']');if(r)r.checked=true;"
+          "if(mexeu){var h=f.querySelector('input[name=hosting][data-h=\"'+(g.classList.contains('host')?'1':'0')+'\"]');if(h)h.checked=true}});})();</script>")
+    return (
+        f'<div class="lp-prices" id="lp-prices" data-cur="{LP_CURRENCIES[0]}">'
+        f'<ul class="tags">{badges}</ul>'
+        f'<div class="lp-controls"><div class="seg" role="group" aria-label="Prices with or without hosting">'
+        f'<button type="button" class="on" data-h="0" aria-pressed="true">Without hosting</button>'
+        f'<button type="button" data-h="1" aria-pressed="false">With hosting</button></div>{cur_seg}</div>'
+        f'<div class="tiers">{tiers}</div>'
+        f'<h3 class="addons-h">Add ons and standalone items</h3><div class="addons">{addon_html}</div>'
+        f'<div class="note">{LP_NOTES}</div></div>{js}'
+    )
+
+
+def lp_form_html(slug):
+    """The landing page form: what is needed, hosting, ads today, contact, the brief. Same id, endpoint and script as the main form."""
+    def pills(name, opts, required=True):
+        return "".join(f'<label class="pill"><input type="radio" name="{name}" value="{esc(t)}" data-{"p" if name == "need" else "h" if name == "hosting" else "a"}="{k}"'
+                       f'{" required" if required else ""}><span>{esc(t)}</span></label>' for k, t in opts)
+    hosting = [("x", "Not decided yet"), ("0", "Without hosting, on my host"), ("1", "With hosting")]
+    ads = [("none", "Not yet"), ("google", "Google Ads"), ("meta", "Meta Ads"), ("both", "Google Ads and Meta Ads")]
+    return f"""<form id="form" class="lead" data-form="landing_page" method="post" action="{FORM_ENDPOINT}" novalidate>
+<input type="hidden" name="access_key" value="{WEB3FORMS_KEY}">
+<input type="hidden" name="subject" value="New landing page enquiry from {BRAND}">
+<input type="hidden" name="from_name" value="{BRAND}">
+<input type="hidden" name="page" value="{SITE}{url_for(slug)}">
+<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<fieldset><legend>What do you need?</legend><div class="pills">{pills("need", LP_NEEDS)}</div></fieldset>
+<fieldset><legend>Hosting</legend><div class="pills">{pills("hosting", hosting)}</div></fieldset>
+<fieldset><legend>Do you run ads today?</legend><div class="pills">{pills("ads_today", ads)}</div></fieldset>
+<div class="row2">
+<label>Name<input type="text" name="name" autocomplete="name" required></label>
+<label>Work email<input type="email" name="email" autocomplete="email" required></label>
+</div>
+<div class="row2">
+<label>Website, or the domain the page will use<span class="pfx"><span aria-hidden="true">https://</span><input type="text" name="website" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" placeholder="yourcompany.com" required></span></label>
+<label><span>Phone <small>(optional)</small></span><input type="tel" name="phone" autocomplete="tel"></label>
+</div>
+<label>What should the page sell, and to whom?<textarea name="message" rows="4" required placeholder="{esc(LP_FORM_EXAMPLE)}"></textarea></label>
+<div class="cta-row"><button class="btn" type="submit">Get my quote</button><span class="form-note">I read every message myself and reply with a price within one {LP_DAY}. No newsletter, no list, no follow-up sequence.</span></div>
+<p class="form-status" role="status" aria-live="polite"></p>
+</form>"""
+
+
+def hero_cta_html(slug):
+    """Hero buttons: Book a call first; Get a quote goes to the form (on /landing-pages/ the one on that page)."""
+    book = f'<a class="btn" href="{CAL}" {CAL_LINK_ATTRS}>Book a call</a>'
+    if slug == "contact":
+        return f'<div class="cta-row">{book}<span class="form-note">Prefer to write? Use the form below.</span></div>'
+    if slug == "landing-pages":
+        return f'<div class="cta-row">{book}<a class="btn ghost" href="#form">Get a quote</a><a class="btn ghost" href="#prices">See prices</a></div>'
+    more = "#services" if slug == "index" else ("/#services" if slug == "pricing" else "/pricing/")
+    return f'<div class="cta-row">{book}<a class="btn ghost" href="{FORM_URL}">Get a quote</a><a class="btn ghost" href="{more}">View services &amp; pricing</a></div>'
+
 # Web3Forms access key (account: the hello@ inbox below). Public by design: it only allows sending to that inbox.
 WEB3FORMS_KEY = "a8247bcb-2a34-4f73-a97e-877bfef2b8cb"
 FORM_ENDPOINT = "https://api.web3forms.com/submit"
@@ -190,24 +367,27 @@ CLICK_JS = ("<script>document.addEventListener('click',function(e){var a=e.targe
 EMAIL_JS = ("<script>(function(){var l=document.querySelectorAll('a.em');for(var i=0;i<l.length;i++){var a=l[i],"
             "m=a.getAttribute('data-u')+'@'+a.getAttribute('data-d');a.href='mailto:'+m;"
             "a.textContent=(a.getAttribute('data-pre')||'')+m;}})();</script>")
-# Lead form: posts to Web3Forms via fetch. On success pushes generate_lead (budget_band, cta_location) and goes to
+# Lead form: posts to Web3Forms via fetch. On success pushes generate_lead (budget_band, form_type, product, cta_location) and goes to
 # /thanks/?src=form once GTM has handled the event (or after 1.5 s if GTM is blocked). No mailto fallback.
 FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)return;"
            "var st=f.querySelector('.form-status'),btn=f.querySelector('button'),w=f.querySelector('input[name=website]');"
            "function band(){var r=f.querySelector('input[name=budget]:checked');return r?r.value:''}"
+           "function need(){var r=f.querySelector('input[name=need]:checked');return r?(r.getAttribute('data-p')||r.value):''}"
            "if(w)w.addEventListener('input',function(){var v=w.value.replace(/^\\s*https?:\\/\\//i,'');if(v!==w.value)w.value=v;});"
            "function fail(){btn.disabled=false;var m='" + MAIL_USER + "'+'@'+'" + MAIL_DOMAIN + "';"
            "st.innerHTML='Could not send just now. Please try again in a moment, or write to <a href=\"mailto:'+m+'\">'+m+'</a>.';}"
            "f.addEventListener('submit',function(e){e.preventDefault();"
-           "var ps=[].slice.call(f.querySelectorAll('input[name=platforms]:checked')).map(function(x){return x.value});""var pst=f.querySelector('.platforms-status');if(pst)pst.textContent=ps.length?'':'Pick at least one platform.';""if(!ps.length){f.querySelector('input[name=platforms]').focus();return}""if(!f.checkValidity()){f.reportValidity();return}"
+           "var pf=f.querySelector('input[name=platforms]'),ps=[].slice.call(f.querySelectorAll('input[name=platforms]:checked')).map(function(x){return x.value});"
+           "var pst=f.querySelector('.platforms-status');if(pst)pst.textContent=ps.length?'':'Pick at least one platform.';"
+           "if(pf&&!ps.length){pf.focus();return}if(!f.checkValidity()){f.reportValidity();return}"
            "if(f.botcheck.checked)return;"
-           "var fd=new FormData(f);fd.delete('platforms');fd.set('platforms',ps.join(', '));var v=(w&&w.value||'').trim().replace(/^https?:\\/\\//i,'');fd.set('website',v?'https://'+v:'');"
+           "var fd=new FormData(f);if(pf){fd.delete('platforms');fd.set('platforms',ps.join(', '))}var v=(w&&w.value||'').trim().replace(/^https?:\\/\\//i,'');fd.set('website',v?'https://'+v:'');"
            "btn.disabled=true;st.textContent='Sending\\u2026';"
            "fetch(f.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(j){"
            "if(!(j&&j.success))throw new Error((j&&j.message)||'error');"
            "var done=false;function go(){if(done)return;done=true;location.href='/thanks/?src=form'}"
            "window.dataLayer=window.dataLayer||[];"
-           "window.dataLayer.push({event:'generate_lead',budget_band:band(),cta_location:location.pathname,eventCallback:go,eventTimeout:1500});"
+           "window.dataLayer.push({event:'generate_lead',budget_band:band(),form_type:f.getAttribute('data-form')||'lead',product:need(),cta_location:location.pathname,eventCallback:go,eventTimeout:1500});"
            "setTimeout(go,1500);"
            "}).catch(fail);"
            "});})();</script>")
@@ -525,7 +705,7 @@ def cta_html(p):
         "</h2><p>" + p.get("cta_text", "Spend band, site and what is not working. You get a straight answer on whether I can help, "
         "what I would do first and a price range. No proposal deck, no sales follow-up sequence.") +
         "</p>" + (f'<div class="cta-row">{email_link("Email ", "btn ghost")}</div>' if p.get("no_form") else
-                  f'<div class="cta-row"><a class="btn" href="{CAL}" {CAL_LINK_ATTRS}>Book a call</a><span class="form-note">Prefer to write? Use the form below.</span></div>' + form_html(slug)) + "</div></div>"
+                  f'<div class="cta-row"><a class="btn" href="{CAL}" {CAL_LINK_ATTRS}>Book a call</a><span class="form-note">Prefer to write? Use the form below.</span></div>' + (lp_form_html(slug) if p.get("lp_form") else form_html(slug))) + "</div></div>"
     )
 
 
@@ -632,6 +812,8 @@ def fill_prices(html_text):
     html_text = html_text.replace("{{cal_url}}", CAL)
     html_text = html_text.replace("{{email}}", email_link())
     html_text = html_text.replace("{{brands}}", brands_html())
+    if "{{lp_pricing}}" in html_text:
+        html_text = html_text.replace("{{lp_pricing}}", lp_pricing_html())
     return html_text
 
 
@@ -639,6 +821,8 @@ def render(p):
     p = dict(p)
     if p.get("faq_groups"):
         p["body"] = faq_hub_html(p["faq_groups"]) + p.get("body", "")
+    if "{{lp_pricing}}" in p.get("body", ""):
+        p["extra_css"] = p.get("extra_css", "") + LP_CSS
     p["body"] = fill_prices(p.get("body", ""))
     p["lead"] = fill_prices(p.get("lead", ""))
     if p.get("faq"):
@@ -675,7 +859,7 @@ def render(p):
 <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-<style>{CSS}</style>{NAV_SUB_CSS}{FLOAT_CTA_CSS}
+<style>{CSS}</style>{NAV_SUB_CSS}{FLOAT_CTA_CSS}{p.get('extra_css', '')}
 <script type="application/ld+json">{schema_for(p)}</script>
 </head>
 <body>
@@ -693,7 +877,7 @@ def render(p):
 <div class="hero-grid"><div>
 <h1>{p['h1']}</h1>
 <p class="lead">{p['lead']}</p>
-{'<div class="cta-row"><a class="btn" href="' + CAL + '" ' + CAL_LINK_ATTRS + '>Book a call</a><span class="form-note">Prefer to write? Use the form below.</span>' if slug == "contact" else '<div class="cta-row"><a class="btn" href="' + CAL + '" ' + CAL_LINK_ATTRS + '>Book a call</a><a class="btn ghost" href="' + FORM_URL + '">Get a quote</a>'}{'' if slug == "contact" else '<a class="btn ghost" href="' + ('#services' if slug == 'index' else ('/#services' if slug == 'pricing' else '/pricing/')) + '">View services &amp; pricing</a>'}</div>
+{hero_cta_html(slug)}
 </div>{('<img src="/diego.jpg" alt="' + NAME + ', independent Google Ads consultant" width="340" height="425" loading="eager">') if (PHOTO and slug == 'about') else ''}</div>
 {('<div class="proof">' + proof_html + '</div>') if proof_html else ''}
 </div></section>

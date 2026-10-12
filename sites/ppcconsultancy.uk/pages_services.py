@@ -327,6 +327,9 @@ PAGES = [
 "h1": "Landing pages and websites built by the person who runs the ads, so the page and the campaign are one decision",
 "lead": "Most of the waste in a PPC account happens after the click, on a page the person running the ads has never been allowed to touch. Here the page is in scope: written to the ad that sends the traffic, built on your CMS or as a static page, tracked before it goes live, and tested against a control until it earns its place. When the site itself is the problem, a 5 to 8 page business website is in scope too, with hosting, consent and the paperwork handled, so what lands on your desk is a brief to answer and copy to approve.",
 "service_name": "PPC landing pages and business websites",
+"lp_form": True,
+"cta_title": "Tell me about the page you need",
+"cta_text": "Say what the page should sell, who it is for and where the traffic will come from. You get a reply with a price within one working day.",
 "body": """
 <section><div class="wrap">
 <h2>Why the page is part of the campaign</h2>
@@ -362,9 +365,10 @@ PAGES = [
 </ul>
 </div></section>
 
-<section><div class="wrap">
-<h2>How it is priced</h2>
-<p>Included in <a href="/ppc-management/">management retainers</a>: building and testing pages is part of running the account, not a change request. As a standalone project, fixed prices, ex VAT: a campaign landing page is £ 1,400, an extra variant for A/B testing £ 450, a 5 to 8 page business website £ 3,900, a tracking setup on its own £ 1,200, the care plan with hosting £ 95 a month, and a white label page for agencies £ 650. Half on approval and half on delivery. The same list in euros and US dollars is on <a href="https://diwizi.com/landing-pages-and-websites.html">diwizi.com</a>. Not a design agency: for a brand identity or an online shop I will recommend a specialist and work alongside them on the conversion path.</p>
+<section id="prices"><div class="wrap">
+<h2>Prices, published</h2>
+<p>Fixed prices for standalone projects, in pounds, ex VAT, with copy and full tracking always included. Inside a <a href="/ppc-management/">management retainer</a>, building and testing pages is part of running the account, not a change request. Not a design agency: for a brand identity or an online shop I will recommend a specialist and work alongside them on the conversion path.</p>
+{{lp_pricing}}
 </div></section>
 """,
 "faq": [
@@ -372,7 +376,7 @@ PAGES = [
 ("Can you build on our WordPress or Webflow site?", "The page itself is plain HTML, not a WordPress or Webflow page. It goes on a subdomain you control, or on your host, as static files, which are faster anyway. If it must sit inside your CMS, I deliver the HTML and your developer embeds it."),
 ("Do you build whole websites?", "Yes, when the current site cannot carry the campaign: five to eight pages with the copy written, tracked from day one and hosted under your domain in the care plan. Online shops and brand identity work are not included, and I will say so rather than stretch."),
 ("Do you host it?", "Optional, priced both ways. Without hosting you get the HTML files installed on your host. With hosting, the page lives under your domain on infrastructure I manage inside the monthly care plan, with backups, updates and a monthly check that every tag still fires."),
-("How is it invoiced?", "In pounds, ex VAT, or in euros for Irish businesses: £ 1,400 per campaign landing page, £ 450 per extra A/B variant, £ 3,900 for a 5 to 8 page website, £ 1,200 for a tracking setup on its own and £ 95 a month for the care plan with hosting. Half on approval of the written scope and half on delivery, by bank transfer. No card payments."),
+("How is it invoiced?", "In pounds, ex VAT, or in euros for Irish businesses: £1,400 per campaign landing page, £450 per extra A/B variant, £3,900 for a 5 to 8 page website, £1,200 for a tracking setup on its own and £95 a month for hosting and care, as in the <a href=\"#prices\">price table</a>. Half on approval of the written scope and half on delivery, by bank transfer. No card payments."),
 ("Can an agency white label this?", "Yes. The same page can be delivered under your agency's name with no mention of me, for agencies that run the media and need pages built without adding headcount."),
 ("Do you do conversion rate optimisation for the whole website?", "For the pages that paid traffic lands on, yes, continuously. Whole-site CRO programmes are a different engagement and usually belong with a CRO specialist once traffic is large enough to test on."),
 ("How long does a page take?", "Copy and build in three to five working days from brief, tracking tested before launch, and a first test result after enough traffic has been through it, which depends on your volume. A website takes one to two weeks, and the pace depends mostly on how fast you approve the copy."),
