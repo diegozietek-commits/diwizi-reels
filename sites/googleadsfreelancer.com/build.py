@@ -48,6 +48,65 @@ CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # "Book a call": primary CTA; 
 CAL_LINK_ATTRS = 'target="_blank" rel="noopener"'  # every Cal.com link carries these so the no-embed fallback opens a new tab
 INDEXNOW_KEY = "39c906dac5bd368ce469f1215282e53b"  # public by design: served as /<key>.txt, read by sites/indexnow.py after each deploy
 FORM_URL = "/contact/#form"  # "Get a quote": secondary CTA, the lead form
+# 12 Oct 2026: floating contact buttons and the "Services" hover menu (same pattern as diwizi.com).
+NAV_SUB_CSS = ('<style id="nav-sub-css">header.top .wrap{position:relative}.nav-sub{display:inline-flex;align-items:center}'
+               '.nav-sub-link{display:inline-flex;align-items:center;gap:5px;position:relative}.nav-sub-chev{transition:transform .15s}'
+               '.nav-sub-link::after{content:"";position:absolute;left:-16px;right:-16px;top:100%;height:46px}'
+               '.nav-sub:hover .nav-sub-chev,.nav-sub.open .nav-sub-chev,.nav-sub:focus-within .nav-sub-chev{transform:rotate(180deg)}'
+               '.nav-sub-panel{display:none;position:absolute;left:0;right:0;top:100%;margin-top:8px;background:var(--bg);border:1px solid var(--line);border-radius:12px;'
+               'box-shadow:0 18px 50px rgba(0,0,0,.14);padding:22px 26px 18px;z-index:80;gap:6px 28px;text-align:left}'
+               '.nav-sub-panel::before{content:"";position:absolute;left:0;right:0;top:-22px;height:22px}'
+               '.nav-sub:hover .nav-sub-panel,.nav-sub.open .nav-sub-panel,.nav-sub:focus-within .nav-sub-panel{display:grid}'
+               '.nav-sub-col h4{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}'
+               '.nav-sub-col a{display:block;font-size:14px;font-weight:500;color:var(--fg);padding:5px 0;line-height:1.35;text-decoration:none}'
+               '.nav-sub-col a:hover{color:var(--accent)}.nav-sub-all{grid-column:1/-1;margin-top:10px;padding-top:12px;border-top:1px solid var(--line);font-size:14px;font-weight:600;color:var(--accent);text-decoration:none}'
+               '@media (max-width:720px){.nav-sub-panel{display:none!important}}</style>')
+FLOAT_CTA_CSS = ('<style id="float-cta-css">.float-cta{position:fixed;z-index:70;display:flex;gap:8px}.float-cta[hidden]{display:none}'
+                 '.float-cta a{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:14px;line-height:1;border-radius:999px;padding:13px 18px;text-decoration:none;white-space:nowrap}'
+                 '.float-cta a svg{flex:none}.float-call{background:var(--accent);color:var(--accent-fg);box-shadow:0 10px 28px rgba(26,86,219,.28)}'
+                 '.float-quote{background:var(--bg);color:var(--fg);border:1.5px solid var(--line);box-shadow:0 10px 28px rgba(0,0,0,.12)}.float-quote:hover{border-color:var(--accent);color:var(--accent)}'
+                 '@media (min-width:721px){.float-cta{right:22px;bottom:22px}}'
+                 '@media (max-width:720px){.float-cta{left:0;right:0;bottom:0;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line)}'
+                 '.float-cta a{flex:1;padding:13px 8px;box-shadow:none;font-size:13.5px}body.float-cta-on{padding-bottom:74px}}</style>')
+FLOAT_CTA_JS = ('<script id="float-cta-js">(function(){var d=document,w=window;'
+                'd.querySelectorAll(".nav-sub").forEach(function(s){var a=s.querySelector(".nav-sub-link");if(!a)return;var touch=w.matchMedia("(hover: none)").matches,tm=null;'
+                'if(!touch){s.addEventListener("mouseenter",function(){clearTimeout(tm);s.classList.add("open");a.setAttribute("aria-expanded","true")});'
+                's.addEventListener("mouseleave",function(){clearTimeout(tm);tm=setTimeout(function(){s.classList.remove("open");a.setAttribute("aria-expanded","false")},280)})}'
+                'a.addEventListener("click",function(e){if(touch&&!s.classList.contains("open")){e.preventDefault();s.classList.add("open");a.setAttribute("aria-expanded","true")}});'
+                'd.addEventListener("click",function(e){if(!s.contains(e.target)){s.classList.remove("open");a.setAttribute("aria-expanded","false")}});'
+                'd.addEventListener("keydown",function(e){if(e.key==="Escape"){s.classList.remove("open");a.setAttribute("aria-expanded","false");a.blur()}})});'
+                'var c=d.getElementById("float-cta");if(!c)return;var alvos=[].slice.call(d.querySelectorAll(".hero .cta-row,.ctabox,#form,[id*=consent],[class*=consent-banner],[class*=cookie]")),vis={},rolou=false,n=0;'
+                'function upd(){var tapa=!rolou||Object.keys(vis).some(function(k){return vis[k]});if(tapa){c.setAttribute("hidden","");d.body.classList.remove("float-cta-on")}else{c.removeAttribute("hidden");d.body.classList.add("float-cta-on")}}'
+                'if("IntersectionObserver" in w){var io=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target.__k||(e.target.__k="k"+(n++))]=e.isIntersecting&&e.target.offsetParent!==null});upd()},{threshold:0.05});alvos.forEach(function(el){io.observe(el)})}'
+                'function sc(){rolou=w.scrollY>320;upd()}w.addEventListener("scroll",sc,{passive:true});sc();'
+                'c.addEventListener("click",function(e){var a=e.target.closest("a");if(!a)return;(w.dataLayer=w.dataLayer||[]).push({event:"cta_flutuante",cta:a.getAttribute("data-cta"),pagina:location.pathname});'
+                'if(a.getAttribute("href")==="#form"){var t=d.getElementById("form");if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth",block:"start"})}}});})();</script>')
+NAV_SUB_CHEV = '<svg class="nav-sub-chev" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>'
+NAV_SUB_SKIP = ("Working with me",)  # footer groups that are not services
+
+
+def services_menu_html():
+    """The 'Services' item of the top nav: a hover panel with every service page, one column per footer group."""
+    cols = []
+    for title, slugs in FOOTER_GROUPS:
+        if title in NAV_SUB_SKIP:
+            continue
+        links = "".join(f'<a href="{url_for(s)}">{esc(BY_SLUG[s]["short"])}</a>' for s in slugs)
+        cols.append(f'<div class="nav-sub-col"><h4>{esc(title)}</h4>{links}</div>')
+    return ('<div class="nav-sub"><a href="/#services" class="nav-sub-link" aria-haspopup="true" aria-expanded="false">Services' + NAV_SUB_CHEV + '</a>'
+            f'<div class="nav-sub-panel" style="grid-template-columns:repeat({len(cols)},1fr)" aria-label="Services">' + "".join(cols)
+            + '<a class="nav-sub-all" href="/pricing/">Pricing and how I work &rarr;</a></div></div>')
+
+
+def float_cta_html(p):
+    """Floating 'Book a call' and 'Get a quote' buttons; only on pages that carry the lead form, so 'Get a quote' can scroll to it."""
+    if p.get("no_form"):
+        return ""
+    cal_ico = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>'
+    msg_ico = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H7l-3 3z"/></svg>'
+    return (f'<div id="float-cta" class="float-cta" hidden aria-label="Contact"><a class="float-call" href="{CAL}" {CAL_LINK_ATTRS} data-cta="call">{cal_ico}Book a call</a>'
+            f'<a class="float-quote" href="#form" data-cta="quote">{msg_ico}Get a quote</a></div>' + FLOAT_CTA_JS)
+
 # Web3Forms access key (account: the hello@ inbox below). Public by design: it only allows sending to that inbox.
 WEB3FORMS_KEY = "a8247bcb-2a34-4f73-a97e-877bfef2b8cb"
 FORM_ENDPOINT = "https://api.web3forms.com/submit"
@@ -155,11 +214,7 @@ FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)retu
 PAGES = CORE + SERVICES + EXPANSION
 BY_SLUG = {p["slug"]: p for p in PAGES}
 
-NAV = [
-    ("google-ads-management", "Management"),
-    ("ppc-management", "Platforms"),
-    ("google-ads-consultant", "Consulting"),
-    ("google-ads-audit", "Audit"),
+NAV = [  # 12 Oct 2026: the four service items moved into the "Services" hover menu (services_menu_html)
     ("pricing", "Pricing"),
     ("results", "Results"),
     ("about", "About"),
@@ -299,7 +354,7 @@ def out_path(slug):
 
 
 def nav_html(active):
-    items = []
+    items = [services_menu_html()]
     for slug, label in NAV:
         cur = ' aria-current="page"' if (slug == active or (slug == "about" and active == FAQ_SLUG)) else ""
         items.append(f'<a href="{url_for(slug)}"{cur}>{label}</a>')
@@ -530,7 +585,7 @@ LLMS_FACTS = ["- Market: businesses in the United States, Canada and Europe, and
               "- Services: Google Ads management, audits, setup, conversion tracking, consulting, and multi-platform PPC management.",
               "- Fees: a flat monthly fee, never a percentage of ad spend. No long contract.",
               "- Pricing: quoted per account from the form; prices are not published."]
-LLMS_PAGES = ["index", "google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "google-ads-consultant", "google-ads-consultation", "google-ads-expert", "b2b-ppc", "saas-ppc", "home-services-ppc", "ppc-for-law-firms", "healthcare-ppc", "pricing", "results", "about", "faq", "contact"]
+LLMS_PAGES = ["index", "google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "google-ads-consultant", "google-ads-consultation", "google-ads-expert", "landing-pages", "b2b-ppc", "saas-ppc", "home-services-ppc", "ppc-for-law-firms", "healthcare-ppc", "pricing", "results", "about", "faq", "contact"]
 LLMS_SISTER = "UK practice, prices in pounds"
 
 def schema_for(p):
@@ -620,7 +675,7 @@ def render(p):
 <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-<style>{CSS}</style>
+<style>{CSS}</style>{NAV_SUB_CSS}{FLOAT_CTA_CSS}
 <script type="application/ld+json">{schema_for(p)}</script>
 </head>
 <body>
@@ -647,7 +702,7 @@ def render(p):
 {related_html(slug)}
 {cta_html(p)}
 </main>
-{footer_html()}
+{footer_html()}{float_cta_html(p)}
 {CONSENT_BANNER}{EMAIL_JS}{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}{FAQ_OPEN_JS if p.get('faq_groups') else ''}
 <script id="cal-embed">(function(){{var EV='diwizi/google-ads-call',NS='gaf',pronto=false,pedido=false;function carregar(){{if(pedido)return;pedido=true;try{{(function(C,A,L){{var p=function(a,ar){{a.q.push(ar)}},d=C.document;C.Cal=C.Cal||function(){{var cal=C.Cal,ar=arguments;if(!cal.loaded){{cal.ns={{}};cal.q=cal.q||[];var s=d.createElement('script');s.src=A;s.async=true;s.onload=function(){{pronto=true}};d.head.appendChild(s);cal.loaded=true}}if(ar[0]===L){{var api=function(){{p(api,arguments)}},ns=ar[1];api.q=api.q||[];if(typeof ns==='string'){{cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,['initNamespace',ns])}}else p(cal,ar);return}}p(cal,ar)}}}})(window,'https://app.cal.com/embed/embed.js','init');Cal('init',NS,{{origin:'https://app.cal.com'}});Cal.ns[NS]('ui',{{layout:'month_view'}});Cal.ns[NS]('on',{{action:'bookingSuccessfulV2',callback:function(e){{marcar((e&&e.detail&&e.detail.data)||{{}})}}}});}}catch(x){{}}}}function marcar(d){{try{{var id=d.uid||d.bookingUid||'',k=NS+'_call_'+(id||'sessao'),ja=false;try{{ja=!!(sessionStorage.getItem(k)||(id&&localStorage.getItem(k)))}}catch(e){{}}if(ja)return;(window.dataLayer=window.dataLayer||[]).push({{event:'booking_confirmed',booking_source:'cal.com',booking_uid:id,lead_page:location.pathname}});try{{sessionStorage.setItem(k,'1');if(id)localStorage.setItem(k,'1')}}catch(e){{}}}}catch(e){{}}}}function link(t){{return t&&t.closest?t.closest('a[href^="https://cal.com/diwizi/"]'):null}}document.addEventListener('click',function(e){{var a=link(e.target);if(!a||!pronto||e.defaultPrevented||e.button||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;try{{Cal.ns[NS]('modal',{{calLink:EV,config:{{layout:'month_view'}}}});e.preventDefault()}}catch(x){{}}}});['pointerover','touchstart','focusin'].forEach(function(n){{document.addEventListener(n,function(e){{if(link(e.target))carregar()}},{{passive:true,capture:true}})}});function ocioso(){{setTimeout(carregar,1500)}}if(document.readyState==='complete')ocioso();else window.addEventListener('load',ocioso);}})();</script>
 </body>

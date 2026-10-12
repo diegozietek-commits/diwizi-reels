@@ -62,13 +62,13 @@ PAGES = [
 
 # ---------------------------------------------------------------- Landing pages / CRO
 {
-"slug": "landing-pages", "short": "Landing pages", "blurb": "Pages built by the person running the ads, tested before they go live, and improved from the account data.",
-"title": "PPC Landing Pages | CRO by the Consultant Who Runs the Ads",
-"meta": "Landing pages and conversion rate optimization for paid traffic, built and tested by the consultant who runs the campaigns. Included in management.",
-"kicker": "Landing pages and CRO",
-"h1": "Landing pages built by the person running the ads, because the page after the click is the largest lever in the account",
-"lead": "Most paid accounts are optimized up to the click and abandoned after it. The ad agency does not own the website; the web agency does not read the ad account. Here the same person does both, so the page is built from the search terms, measured from the first visit and changed from the data.",
-"service_name": "PPC landing pages and conversion rate optimization",
+"slug": "landing-pages", "short": "Landing pages and websites", "blurb": "Campaign landing pages and 5 to 8 page business websites built by the person running the ads, tracked and hosted, with the paperwork handled.",
+"title": "PPC Landing Pages and Websites | Built by the Consultant Who Runs the Ads",
+"meta": "Campaign landing pages and 5 to 8 page business websites built by the consultant who runs the ads. Copy, build, tracking, hosting and the paperwork, in one fixed scope.",
+"kicker": "Landing pages and websites",
+"h1": "Landing pages and websites built by the person running the ads, because the page after the click is the largest lever in the account",
+"lead": "Most paid accounts are optimized up to the click and abandoned after it. The ad agency does not own the website; the web agency does not read the ad account. Here the same person does both: campaign pages, and when the site itself cannot carry the campaign, a 5 to 8 page business website, built from the search terms, measured from the first visit and changed from the data. Hosting, tracking and the paperwork around a launch are in scope, so you approve copy, answer a short brief, and nothing else lands on your desk.",
+"service_name": "PPC landing pages, business websites and conversion rate optimization",
 "body": """
 <section><div class="wrap">
 <h2>Why the page is usually the problem</h2>
@@ -85,16 +85,30 @@ PAGES = [
 <h2>What the work includes</h2>
 <ol class="steps">
 <li><div><strong>One page per intent, from the account.</strong> The search terms, the ads and the call recordings decide what each page says. Services get one page each; B2B gets comparison, integration and use-case pages.</div></li>
-<li><div><strong>Built by me, on your stack.</strong> Webflow, WordPress, Unbounce, HubSpot, Shopify, or static pages hosted on your domain. No agency queue, no three-week change request.</div></li>
-<li><div><strong>Tracked before it goes live.</strong> GA4, Tag Manager, call tracking and the form connected and tested, so the first visit is measured. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</div></li>
+<li><div><strong>Built by me, in plain HTML.</strong> Hand coded static pages hosted on your domain or on a subdomain you control, no WordPress, no page builder, no plugin to break. No agency queue, no three-week change request.</div></li>
+<li><div><strong>A business website when the site is the problem.</strong> Five to eight pages: home, services, about, proof and contact, plus the pages a buyer reads before calling. Built for the campaigns rather than for a design portfolio, as hand coded HTML pages that load fast and have no CMS to maintain. Online stores and brand identity work are not included, and I will say so.</div></li>
+<li><div><strong>Tracked before it goes live.</strong> GA4, Tag Manager, Google Ads enhanced conversions, the Meta Conversions API, call tracking and the form connected and tested, so the first visit is measured. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</div></li>
 <li><div><strong>Fast and compliant.</strong> Core Web Vitals checked on a real mobile connection, consent handled, accessibility basics in place.</div></li>
 <li><div><strong>A test program.</strong> One change at a time, with enough traffic to read the result, recorded so the next person knows what was tried. Headline, offer, form length, proof, phone placement, in that order of likely impact.</div></li>
 </ol>
 </div></section>
 
 <section><div class="wrap">
+<h2>Hosting, care and the paperwork</h2>
+<p>A page needs a dozen small things around it before it earns a dollar. They are part of the job, not a list you get handed at the end.</p>
+<ul>
+<li><strong>Domain, DNS and SSL.</strong> Registered or transferred in your name, pointed and secured.</li>
+<li><strong>Hosting under your domain.</strong> Static pages on infrastructure I manage, with backups, or your existing host if you have one. Hosting is part of the monthly care plan, not a separate bill.</li>
+<li><strong>Consent and privacy.</strong> Cookie banner with Consent Mode where your visitors require it, privacy page text, and forms with spam protection that reach your inbox and your CRM.</li>
+<li><strong>Accounts connected.</strong> Google Search Console, Google Business Profile, GA4, Tag Manager and the ad accounts verified and linked.</li>
+<li><strong>Care plan.</strong> Updates, a monthly check that every tag still fires and one hour of changes a month, billed month to month.</li>
+<li><strong>Handover and invoices.</strong> Every login documented, code and content yours, and invoices your bookkeeper can file without a question.</li>
+</ul>
+</div></section>
+
+<section><div class="wrap">
 <h2>Included or standalone</h2>
-<p>Included in <a href="/google-ads-management/">management retainers</a>: building and testing pages is part of running the account, not a change request. As a standalone project, a fixed price per page or per set of pages, quoted from the form, for companies that run their own ads or use another agency. Either way the pages belong to you and live on your domain.</p>
+<p>Included in <a href="/google-ads-management/">management retainers</a>: building and testing pages is part of running the account, not a change request. As a standalone project, fixed prices: a campaign landing page is US$ 1,900, an extra variant for A/B testing US$ 600, a 5 to 8 page business website US$ 6,500, a tracking setup on its own US$ 1,500, the care plan with hosting US$ 250 a month, and a white label page for agencies US$ 950. Half on approval and half on delivery by bank transfer. The same list in pounds and euros is on <a href="https://diwizi.com/landing-pages-and-websites.html">diwizi.com</a>. Either way the pages, the code and the accounts belong to you and live on your domain.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -104,12 +118,16 @@ PAGES = [
 """,
 "faq": [
 ("Do you design the pages or just the copy?", "Both, within a system: your brand's fonts and colors, a layout built for the intent, copy from the search terms and the sales calls. For heavy custom design a designer on your side or a studio produces the visuals and I build and test the page."),
-("Which platforms can you build on?", "Webflow, WordPress, Unbounce, HubSpot, Shopify, Framer and static HTML on your own hosting. If your site is on something else, say so in the form."),
-("How much does a landing page cost?", "Included in management retainers. As a standalone project, a fixed price per page or per set of pages, set from the scope and quoted by email from the form. See <a href=\"/pricing/\">pricing</a>."),
+("Which platforms can you build on?", "Plain HTML, hosted on your domain or on a subdomain you control, with or without hosting by me. I do not build in WordPress or page builders. If the page has to live inside your CMS, I deliver the HTML and your developer embeds it."),
+("Do you build full websites?", "Yes, when the site cannot carry the campaign: five to eight pages, copy included, built for the campaigns and tracked from day one, with hosting in the care plan. Not online stores and not brand identity work; for those I will point you to someone better."),
+("How much does a landing page or a website cost?", "Included in management retainers. As a standalone project, US$ 1,900 per campaign landing page, US$ 600 per extra A/B variant, US$ 6,500 for a 5 to 8 page website, US$ 1,500 for a tracking setup on its own and US$ 250 a month for the care plan with hosting. Half on approval, half on delivery. The same list in pounds and euros is on <a href=\"https://diwizi.com/landing-pages-and-websites.html\">diwizi.com</a>."),
+("Do you host the pages?", "Optional, priced both ways. Without hosting you get the HTML files installed on your host. With hosting, the page lives under your domain on infrastructure I manage inside the monthly care plan, with backups, updates and a monthly check that every tag still fires."),
+("How do I pay?", "By bank transfer through Wise, invoiced in US dollars, with half on approval of the written scope and half on delivery. I do not take card payments."),
+("Can my agency resell the pages?", "Yes. The same page is available white label, with no mention of me, delivered under your agency's name. See <a href=\"/white-label-ppc/\">white label PPC</a>."),
 ("Can you improve our existing pages instead of building new ones?", "Yes. A conversion review of the current pages against the account data comes first, and often the fixes are to the form, the first screen and the speed rather than a rebuild."),
 ("How long until a test shows a result?", "It depends on traffic: a page with 1,000 paid visits a month can read a meaningful change in two to four weeks; a page with 100 cannot, and the program is adjusted to test bigger changes less often."),
 ],
-"related": ["conversion-tracking-setup", "google-ads-management", "google-ads-audit", "b2b-ppc"],
+"related": ["conversion-tracking-setup", "google-ads-management", "white-label-ppc", "google-ads-audit"],
 },
 
 # ---------------------------------------------------------------- YouTube Ads

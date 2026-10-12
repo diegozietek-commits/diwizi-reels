@@ -81,7 +81,7 @@ FAQ_GROUPS = [
 ("numbers-disagree", "Google Ads, GA4 and our CRM all show different numbers. Can you fix that as a one-off project?",
 """Yes. Conversion tracking is sold as a standalone fixed-price project, usually one to three weeks, and you keep whoever runs the campaigns. It starts with a short definitions document agreed with you, then rebuilds the conversions in Google Ads, aligns GA4, sets up enhanced conversions and consent mode, and can send CRM stages back as offline conversions. You finish with a reconciliation report showing the numbers agree. Tag Manager access is usually enough. See <a href="/conversion-tracking-setup/">conversion tracking</a>."""),
 ("landing-page-needed", "Do I need a separate landing page for Google Ads?",
-"""Usually yes, one per search intent, because a homepage rarely answers the search in its first screen. Someone looking for emergency AC repair needs the phone number, the response time and the service area, not the company history. I write and build the pages on your stack, such as WordPress, Webflow, Shopify or HubSpot, track them before launch and test one change at a time. Pages are included in management or priced per page on their own. See <a href="/landing-pages/">landing pages</a>."""),
+"""Usually yes, one per search intent, because a homepage rarely answers the search in its first screen. Someone looking for emergency AC repair needs the phone number, the response time and the service area, not the company history. I write and build the pages on your stack, such as WordPress, Webflow, Shopify or HubSpot, track them before launch and test one change at a time. Pages are included in management or priced per page on their own, and when the site itself cannot carry the campaign, a 5 to 8 page business website is in scope too. See <a href="/landing-pages/">landing pages and websites</a>."""),
 ]),
 ("working-together", "Working together", [
 ("time-zone", "What time zone are you in, and when can we talk?",
@@ -419,6 +419,7 @@ PAGES = [
 <section><div class="wrap">
 <h2>How I price</h2>
 <p>Every engagement is quoted from the form, in US dollars, pounds or euros, because the scope decides the number: monthly spend, number of platforms and markets, and whether tracking has to be rebuilt. What you can rely on before the call is the model.</p>
+<p>Landing pages, business websites and tracking setups are the exception: fixed price projects with a published price list on <a href="https://diwizi.com/landing-pages-and-websites.html">diwizi.com</a>, half on approval and half on delivery. See <a href="/landing-pages/">landing pages and websites</a>.</p>
 <p>The fee is set for your account, not from a rate card: platforms, markets, campaigns and how much landing page and tracking work is included. A range comes by email from the form; a firm figure needs a look at the accounts.</p>
 <table>
 <tr><th>Engagement</th><th>Model</th><th>What is included</th></tr>
