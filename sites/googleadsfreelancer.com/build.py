@@ -45,6 +45,7 @@ NAME = "Diego Zietek"
 BRAND = "Google Ads Freelancer"
 CAL_EVENT_SLUG = "google-ads-call"  # event type on Cal.com under the diwizi account; checked 200 before deploy
 CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # "Book a call": primary CTA; opens the embed modal when loaded, else a new tab
+CAL_LP = "https://cal.com/diwizi/landing-page"  # on /landing-pages/ every Book a call opens this event instead (checked 200, 12 Oct 2026)
 CAL_LINK_ATTRS = 'target="_blank" rel="noopener"'  # every Cal.com link carries these so the no-embed fallback opens a new tab
 INDEXNOW_KEY = "39c906dac5bd368ce469f1215282e53b"  # public by design: served as /<key>.txt, read by sites/indexnow.py after each deploy
 FORM_URL = "/contact/#form"  # "Get a quote": secondary CTA, the lead form
@@ -368,13 +369,15 @@ EMAIL_JS = ("<script>(function(){var l=document.querySelectorAll('a.em');for(var
             "m=a.getAttribute('data-u')+'@'+a.getAttribute('data-d');a.href='mailto:'+m;"
             "a.textContent=(a.getAttribute('data-pre')||'')+m;}})();</script>")
 # Lead form: posts to Web3Forms via fetch. On success pushes generate_lead (budget_band, form_type, product, cta_location) and goes to
-# /thanks/?src=form once GTM has handled the event (or after 1.5 s if GTM is blocked). No mailto fallback.
+# /thanks/?src=form once GTM has handled the event (or after 1.5 s if GTM is blocked). No mailto fallback. A failed send shows the
+# message next to the button and pushes form_error (form_type, error_message), so failures show up in GA4.
 FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)return;"
-           "var st=f.querySelector('.form-status'),btn=f.querySelector('button'),w=f.querySelector('input[name=website]');"
+           "var st=f.querySelector('.form-status:not(.platforms-status)'),btn=f.querySelector('button'),w=f.querySelector('input[name=website]');"
            "function band(){var r=f.querySelector('input[name=budget]:checked');return r?r.value:''}"
            "function need(){var r=f.querySelector('input[name=need]:checked');return r?(r.getAttribute('data-p')||r.value):''}"
            "if(w)w.addEventListener('input',function(){var v=w.value.replace(/^\\s*https?:\\/\\//i,'');if(v!==w.value)w.value=v;});"
-           "function fail(){btn.disabled=false;var m='" + MAIL_USER + "'+'@'+'" + MAIL_DOMAIN + "';"
+           "function fail(x){btn.disabled=false;try{console.warn('form not sent',x);(window.dataLayer=window.dataLayer||[]).push({event:'form_error',form_type:f.getAttribute('data-form')||'lead',error_message:String((x&&x.message)||x||'').slice(0,100)})}catch(e){}"
+           "var m='" + MAIL_USER + "'+'@'+'" + MAIL_DOMAIN + "';"
            "st.innerHTML='Could not send just now. Please try again in a moment, or write to <a href=\"mailto:'+m+'\">'+m+'</a>.';}"
            "f.addEventListener('submit',function(e){e.preventDefault();"
            "var pf=f.querySelector('input[name=platforms]'),ps=[].slice.call(f.querySelectorAll('input[name=platforms]:checked')).map(function(x){return x.value});"
@@ -780,7 +783,7 @@ def schema_for(p):
     service = {
         "@type": "ProfessionalService", "@id": SITE + "/#service", "name": BRAND + " | " + NAME,
         "url": SITE + "/", "founder": {"@id": PERSON_ID}, "sameAs": [LINKEDIN_URL],
-        "areaServed": [{"@type": "Country", "name": c} for c in ["United States", "Canada", "United Kingdom", "Ireland"]] + [{"@type": "Place", "name": "Europe"}],
+        "areaServed": [{"@type": "Country", "name": c} for c in ["United States", "Canada"]] + [{"@type": "Place", "name": "Europe"}],  # UK and Ireland: ppcconsultancy.uk
         "priceRange": "$$", "serviceType": "Google Ads management and consulting",
     }
     graph = [person, service, {
@@ -804,7 +807,7 @@ def schema_for(p):
     if p.get("service_name"):
         graph.append({"@type": "Service", "name": p["service_name"], "serviceType": p["service_name"],
                       "provider": {"@id": SITE + "/#service"}, "url": url,
-                      "areaServed": ["US", "CA", "GB", "IE", "Europe"]})
+                      "areaServed": ["US", "CA", "Europe"]})
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
 
 
@@ -837,7 +840,7 @@ def render(p):
     if proof is None:
         proof = PROOF_DEFAULT if slug not in ("results", "contact", "privacy", "404") else []
     proof_html = "".join(f"<div><b>{esc(b)}</b><small>{esc(s)}</small></div>" for b, s in proof)
-    return f"""<!doctype html>
+    page = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -888,10 +891,13 @@ def render(p):
 </main>
 {footer_html()}{float_cta_html(p)}
 {CONSENT_BANNER}{EMAIL_JS}{CLICK_JS}{FORM_JS}{p.get('extra_js', '')}{FAQ_OPEN_JS if p.get('faq_groups') else ''}
-<script id="cal-embed">(function(){{var EV='diwizi/google-ads-call',NS='gaf',pronto=false,pedido=false;function carregar(){{if(pedido)return;pedido=true;try{{(function(C,A,L){{var p=function(a,ar){{a.q.push(ar)}},d=C.document;C.Cal=C.Cal||function(){{var cal=C.Cal,ar=arguments;if(!cal.loaded){{cal.ns={{}};cal.q=cal.q||[];var s=d.createElement('script');s.src=A;s.async=true;s.onload=function(){{pronto=true}};d.head.appendChild(s);cal.loaded=true}}if(ar[0]===L){{var api=function(){{p(api,arguments)}},ns=ar[1];api.q=api.q||[];if(typeof ns==='string'){{cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,['initNamespace',ns])}}else p(cal,ar);return}}p(cal,ar)}}}})(window,'https://app.cal.com/embed/embed.js','init');Cal('init',NS,{{origin:'https://app.cal.com'}});Cal.ns[NS]('ui',{{layout:'month_view'}});Cal.ns[NS]('on',{{action:'bookingSuccessfulV2',callback:function(e){{marcar((e&&e.detail&&e.detail.data)||{{}})}}}});}}catch(x){{}}}}function marcar(d){{try{{var id=d.uid||d.bookingUid||'',k=NS+'_call_'+(id||'sessao'),ja=false;try{{ja=!!(sessionStorage.getItem(k)||(id&&localStorage.getItem(k)))}}catch(e){{}}if(ja)return;(window.dataLayer=window.dataLayer||[]).push({{event:'booking_confirmed',booking_source:'cal.com',booking_uid:id,lead_page:location.pathname}});try{{sessionStorage.setItem(k,'1');if(id)localStorage.setItem(k,'1')}}catch(e){{}}}}catch(e){{}}}}function link(t){{return t&&t.closest?t.closest('a[href^="https://cal.com/diwizi/"]'):null}}document.addEventListener('click',function(e){{var a=link(e.target);if(!a||!pronto||e.defaultPrevented||e.button||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;try{{Cal.ns[NS]('modal',{{calLink:EV,config:{{layout:'month_view'}}}});e.preventDefault()}}catch(x){{}}}});['pointerover','touchstart','focusin'].forEach(function(n){{document.addEventListener(n,function(e){{if(link(e.target))carregar()}},{{passive:true,capture:true}})}});function ocioso(){{setTimeout(carregar,1500)}}if(document.readyState==='complete')ocioso();else window.addEventListener('load',ocioso);}})();</script>
+<script id="cal-embed">(function(){{var EV='diwizi/google-ads-call',NS='gaf',pronto=false,pedido=false;function carregar(){{if(pedido)return;pedido=true;try{{(function(C,A,L){{var p=function(a,ar){{a.q.push(ar)}},d=C.document;C.Cal=C.Cal||function(){{var cal=C.Cal,ar=arguments;if(!cal.loaded){{cal.ns={{}};cal.q=cal.q||[];var s=d.createElement('script');s.src=A;s.async=true;s.onload=function(){{pronto=true}};d.head.appendChild(s);cal.loaded=true}}if(ar[0]===L){{var api=function(){{p(api,arguments)}},ns=ar[1];api.q=api.q||[];if(typeof ns==='string'){{cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,['initNamespace',ns])}}else p(cal,ar);return}}p(cal,ar)}}}})(window,'https://app.cal.com/embed/embed.js','init');Cal('init',NS,{{origin:'https://app.cal.com'}});Cal.ns[NS]('ui',{{layout:'month_view'}});Cal.ns[NS]('on',{{action:'bookingSuccessfulV2',callback:function(e){{marcar((e&&e.detail&&e.detail.data)||{{}})}}}});}}catch(x){{}}}}function marcar(d){{try{{var id=d.uid||d.bookingUid||'',k=NS+'_call_'+(id||'sessao'),ja=false;try{{ja=!!(sessionStorage.getItem(k)||(id&&localStorage.getItem(k)))}}catch(e){{}}if(ja)return;(window.dataLayer=window.dataLayer||[]).push({{event:'booking_confirmed',booking_source:'cal.com',booking_uid:id,lead_page:location.pathname}});try{{sessionStorage.setItem(k,'1');if(id)localStorage.setItem(k,'1')}}catch(e){{}}}}catch(e){{}}}}function link(t){{return t&&t.closest?t.closest('a[href^="https://cal.com/diwizi/"]'):null}}document.addEventListener('click',function(e){{var a=link(e.target);if(!a||!pronto||e.defaultPrevented||e.button||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;try{{var h=a.getAttribute('href')||'',u=h.indexOf('https://cal.com/')===0?h.slice(16).split('?')[0].split('#')[0]:'';Cal.ns[NS]('modal',{{calLink:u||EV,config:{{layout:'month_view'}}}});e.preventDefault()}}catch(x){{}}}});['pointerover','touchstart','focusin'].forEach(function(n){{document.addEventListener(n,function(e){{if(link(e.target))carregar()}},{{passive:true,capture:true}})}});function ocioso(){{setTimeout(carregar,1500)}}if(document.readyState==='complete')ocioso();else window.addEventListener('load',ocioso);}})();</script>
 </body>
 </html>
 """
+    if slug == "landing-pages":
+        page = page.replace(f'href="{CAL}"', f'href="{CAL_LP}"')
+    return page
 
 
 def privacy_page():
