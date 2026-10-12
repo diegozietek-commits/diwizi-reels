@@ -230,10 +230,9 @@ def lp_form_html(slug):
     hosting = [("x", "Not decided yet"), ("0", "Without hosting, on my host"), ("1", "With hosting")]
     ads = [("none", "Not yet"), ("google", "Google Ads"), ("meta", "Meta Ads"), ("both", "Google Ads and Meta Ads")]
     return f"""<form id="form" class="lead" data-form="landing_page" method="post" action="{FORM_ENDPOINT}" novalidate>
-<input type="hidden" name="access_key" value="{WEB3FORMS_KEY}">
 <input type="hidden" name="subject" value="New landing page enquiry from {BRAND}">
 <input type="hidden" name="from_name" value="{BRAND}">
-<input type="hidden" name="page" value="{SITE}{url_for(slug)}">
+<input type="hidden" name="page" value="{SITE.split("//", 1)[1]}{url_for(slug)}">
 <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <fieldset><legend>What do you need?</legend><div class="pills">{pills("need", LP_NEEDS)}</div></fieldset>
 <fieldset><legend>Hosting</legend><div class="pills">{pills("hosting", hosting)}</div></fieldset>
@@ -262,9 +261,10 @@ def hero_cta_html(slug):
     more = "#services" if slug == "index" else ("/#services" if slug == "pricing" else "/pricing/")
     return f'<div class="cta-row">{book}<a class="btn ghost" href="{FORM_URL}">Get a quote</a><a class="btn ghost" href="{more}">View services &amp; pricing</a></div>'
 
-# Web3Forms access key (account: the hello@ inbox below). Public by design: it only allows sending to that inbox.
-WEB3FORMS_KEY = "a8247bcb-2a34-4f73-a97e-877bfef2b8cb"
-FORM_ENDPOINT = "https://api.web3forms.com/submit"
+# Form receiver on diwizi.com (12 Oct 2026): sends to hello@ from the HostGator server itself, because Web3Forms mail
+# stopped reaching that inbox. It only accepts the two sites as Origin. HostGator ModSecurity answers 406 when a whole
+# field value is an http(s) URL, so "page" and "website" go without the scheme (FORM_JS strips it from any such field).
+FORM_ENDPOINT = "https://diwizi.com/site-lead.php"
 BUDGET_BANDS = [("under_2k", "Under £2K / month"), ("2k_10k", "£2K to £10K"), ("10k_40k", "£10K to £40K"), ("40k_plus", "£40K+")]
 MAIL = "hello@diwizi.com"
 MAIL_USER, MAIL_DOMAIN = MAIL.split("@")
@@ -342,7 +342,7 @@ CLICK_JS = ("<script>document.addEventListener('click',function(e){var a=e.targe
 EMAIL_JS = ("<script>(function(){var l=document.querySelectorAll('a.em');for(var i=0;i<l.length;i++){var a=l[i],"
             "m=a.getAttribute('data-u')+'@'+a.getAttribute('data-d');a.href='mailto:'+m;"
             "a.textContent=(a.getAttribute('data-pre')||'')+m;}})();</script>")
-# Lead form: posts to Web3Forms via fetch. On success pushes generate_lead (budget_band, form_type, product, cta_location) and goes to
+# Lead form: posts to FORM_ENDPOINT via fetch. On success pushes generate_lead (budget_band, form_type, product, cta_location) and goes to
 # /thanks/?src=form once GTM has handled the event (or after 1.5 s if GTM is blocked). No mailto fallback. A failed send shows the
 # message next to the button and pushes form_error (form_type, error_message), so failures show up in GA4.
 FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)return;"
@@ -358,7 +358,8 @@ FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)retu
            "var pst=f.querySelector('.platforms-status');if(pst)pst.textContent=ps.length?'':'Pick at least one platform.';"
            "if(pf&&!ps.length){pf.focus();return}if(!f.checkValidity()){f.reportValidity();return}"
            "if(f.botcheck.checked)return;"
-           "var fd=new FormData(f);if(pf){fd.delete('platforms');fd.set('platforms',ps.join(', '))}var v=(w&&w.value||'').trim().replace(/^https?:\\/\\//i,'');fd.set('website',v?'https://'+v:'');"
+           "var fd=new FormData(f);if(pf){fd.delete('platforms');fd.set('platforms',ps.join(', '))}var v=(w&&w.value||'').trim().replace(/^https?:\\/\\//i,'');fd.set('website',v);"
+           "var bare=[];fd.forEach(function(x,k){if(typeof x==='string'&&/^\\s*https?:\\/\\/\\S*\\s*$/i.test(x))bare.push([k,x.trim().replace(/^https?:\\/\\//i,'')])});bare.forEach(function(x){fd.set(x[0],x[1])});"
            "btn.disabled=true;st.textContent='Sending\\u2026';"
            "fetch(f.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(j){"
            "if(!(j&&j.success))throw new Error((j&&j.message)||'error');"
@@ -677,10 +678,9 @@ def form_html(slug):
         for v, t in BUDGET_BANDS
     )
     return f"""<form id="form" class="lead" method="post" action="{FORM_ENDPOINT}" novalidate>
-<input type="hidden" name="access_key" value="{WEB3FORMS_KEY}">
 <input type="hidden" name="subject" value="New enquiry from {BRAND}">
 <input type="hidden" name="from_name" value="{BRAND}">
-<input type="hidden" name="page" value="{SITE}{url_for(slug)}">
+<input type="hidden" name="page" value="{SITE.split("//", 1)[1]}{url_for(slug)}">
 <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <fieldset><legend>Monthly ad spend, roughly</legend><div class="pills">{bands}</div></fieldset>
 <fieldset><legend>Platforms</legend><div class="pills"><label class="pill"><input type="checkbox" name="platforms" value="Google Ads"><span>Google Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Microsoft Advertising"><span>Microsoft Advertising</span></label><label class="pill"><input type="checkbox" name="platforms" value="Meta Ads"><span>Meta Ads</span></label><label class="pill"><input type="checkbox" name="platforms" value="Not running ads yet"><span>Not running ads yet</span></label></div><p class="form-status platforms-status" role="status" aria-live="polite"></p></fieldset>
@@ -903,7 +903,7 @@ def privacy_page():
 <ul><li><b>Google Analytics 4.</b> Measures visits, pages viewed, clicks on the quote and email links and form submissions, to understand which pages are useful. With consent it sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>). Data is processed by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
 <li><b>Google Ads conversion measurement.</b> When you arrive from a Google ad and send the form, the enquiry is reported back to Google Ads as a conversion so ad spend can be judged on real outcomes. Also subject to your consent choice.</li></ul>
 <p>You can change your choice at any time by clearing this site's data in your browser; the banner will ask again. The site works the same either way.</p>
-<ul><li><b>Contact form.</b> What you type in the form is relayed to my inbox by <a href="https://web3forms.com/privacy" rel="noopener">Web3Forms</a> and is not stored on this site. I use it only to reply.</li>
+<ul><li><b>Contact form.</b> What you type in the form, with the page it was sent from and your IP address (kept to stop abuse), goes straight to my inbox through a small script on diwizi.com, my business site, hosted by HostGator. The message is not stored on either site. I use it only to reply.</li>
 <li><b>Email.</b> Messages to {email_link()} go to {NAME} directly and are kept for the purpose of replying and, if you become a client, running the engagement.</li>
 <li><b>Hosting.</b> Pages are served by Cloudflare, which processes IP addresses and request logs to deliver the site and protect it from abuse.</li></ul>
 <h2>Your rights</h2>
