@@ -62,12 +62,12 @@ PAGES = [
 
 # ---------------------------------------------------------------- Landing pages / CRO
 {
-"slug": "landing-pages", "short": "Landing pages and websites", "blurb": "Campaign landing pages and 5 to 8 page business websites built by the person running the ads, tracked and hosted, with the paperwork handled.",
+"slug": "landing-pages", "short": "Landing pages and websites", "blurb": "Campaign landing pages and 3 to 8 page business websites built by the person running the ads, tracked and hosted, with the paperwork handled.",
 "title": "PPC Landing Pages and Websites | Built by the Consultant Who Runs the Ads",
-"meta": "Campaign landing pages and 5 to 8 page business websites built by the consultant who runs the ads. Copy, build, tracking, hosting and the paperwork, in one fixed scope.",
+"meta": "Campaign landing pages and 3 to 8 page business websites built by the consultant who runs the ads. Copy, build, tracking, hosting and the paperwork, in one fixed scope.",
 "kicker": "Landing pages and websites",
 "h1": "Landing pages and websites built by the person running the ads, because the page after the click is the largest lever in the account",
-"lead": "Most paid accounts are optimized up to the click and abandoned after it. The ad agency does not own the website; the web agency does not read the ad account. Here the same person does both: campaign pages, and when the site itself cannot carry the campaign, a 5 to 8 page business website, built from the search terms, measured from the first visit and changed from the data. Hosting, tracking and the paperwork around a launch are in scope, so you approve copy, answer a short brief, and nothing else lands on your desk.",
+"lead": "Most paid accounts are optimized up to the click and abandoned after it. The ad agency does not own the website; the web agency does not read the ad account. Here the same person does both: campaign pages, and when the site itself cannot carry the campaign, a business website of 3 to 8 pages, built from the search terms, measured from the first visit and changed from the data. Hosting, tracking and the paperwork around a launch are in scope, so you approve copy, answer a short brief, and nothing else lands on your desk.",
 "service_name": "PPC landing pages, business websites and conversion rate optimization",
 "lp_form": True,
 "cta_title": "Tell me about the page you need",
@@ -89,7 +89,7 @@ PAGES = [
 <ol class="steps">
 <li><div><strong>One page per intent, from the account.</strong> The search terms, the ads and the call recordings decide what each page says. Services get one page each; B2B gets comparison, integration and use-case pages.</div></li>
 <li><div><strong>Built by me, in plain HTML.</strong> Hand coded static pages hosted on your domain or on a subdomain you control, no WordPress, no page builder, no plugin to break. No agency queue, no three-week change request.</div></li>
-<li><div><strong>A business website when the site is the problem.</strong> Five to eight pages: home, services, about, proof and contact, plus the pages a buyer reads before calling. Built for the campaigns rather than for a design portfolio, as hand coded HTML pages that load fast and have no CMS to maintain. Online stores and brand identity work are not included, and I will say so.</div></li>
+<li><div><strong>A business website when the site is the problem.</strong> Three to five pages for a basic site or five to eight for a Performance site: home, services, about, proof and contact, plus the pages a buyer reads before calling. Built for the campaigns rather than for a design portfolio, as hand coded HTML pages that load fast and have no CMS to maintain. Online stores and brand identity work are not included, and I will say so.</div></li>
 <li><div><strong>Tracked before it goes live.</strong> GA4, Tag Manager, Google Ads enhanced conversions, the Meta Conversions API, call tracking and the form connected and tested, so the first visit is measured. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</div></li>
 <li><div><strong>Fast and compliant.</strong> Core Web Vitals checked on a real mobile connection, consent handled, accessibility basics in place.</div></li>
 <li><div><strong>A test program.</strong> One change at a time, with enough traffic to read the result, recorded so the next person knows what was tried. Headline, offer, form length, proof, phone placement, in that order of likely impact.</div></li>
@@ -97,21 +97,21 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
-<h2>Hosting, care and the paperwork</h2>
+<h2>Hosting, maintenance and the paperwork</h2>
 <p>A page needs a dozen small things around it before it earns a dollar. They are part of the job, not a list you get handed at the end.</p>
 <ul>
 <li><strong>Domain, DNS and SSL.</strong> Registered or transferred in your name, pointed and secured.</li>
-<li><strong>Hosting under your domain.</strong> Static pages on infrastructure I manage, with backups, or your existing host if you have one. Hosting is part of the monthly care plan, not a separate bill.</li>
+<li><strong>Hosting under your domain.</strong> Static pages on infrastructure I manage, with backups, or your existing host if you have one. Hosting is part of the monthly maintenance, basic or full, not a separate bill.</li>
 <li><strong>Consent and privacy.</strong> Cookie banner with Consent Mode where your visitors require it, privacy page text, and forms with spam protection that reach your inbox and your CRM.</li>
 <li><strong>Accounts connected.</strong> Google Search Console, Google Business Profile, GA4, Tag Manager and the ad accounts verified and linked.</li>
-<li><strong>Care plan.</strong> Updates, a monthly check that every tag still fires and one hour of changes a month, billed month to month.</li>
+<li><strong>Maintenance.</strong> Basic: hosting, SSL, backups and a warning if the site goes down. Full: also updates, a monthly check that every tag still fires and one hour of changes a month. Billed month to month.</li>
 <li><strong>Handover and invoices.</strong> Every login documented, code and content yours, and invoices your bookkeeper can file without a question.</li>
 </ul>
 </div></section>
 
 <section id="prices"><div class="wrap">
 <h2>Prices, published</h2>
-<p>Fixed prices for standalone projects, with copy and full tracking always included. Quoted in US dollars for the United States and Canada, pounds for the UK and euros for the rest of Europe. Inside a <a href="/google-ads-management/">management retainer</a>, building and testing pages is part of running the account, not a change request. Either way the pages, the code and the accounts belong to you and live on your domain.</p>
+<p>Fixed prices for standalone projects, at two levels: Simple, a template in your brand with the essential tracking, and Performance, designed for you, with full tracking and two revision rounds. Quoted in US dollars for the United States and Canada, pounds for the UK and euros for the rest of Europe. Inside a <a href="/google-ads-management/">management retainer</a>, building and testing pages is part of running the account, not a change request. Either way the pages, the code and the accounts belong to you and live on your domain.</p>
 {{lp_pricing}}
 </div></section>
 
@@ -123,9 +123,9 @@ PAGES = [
 "faq": [
 ("Do you design the pages or just the copy?", "Both, within a system: your brand's fonts and colors, a layout built for the intent, copy from the search terms and the sales calls. For heavy custom design a designer on your side or a studio produces the visuals and I build and test the page."),
 ("Which platforms can you build on?", "Plain HTML, hosted on your domain or on a subdomain you control, with or without hosting by me. I do not build in WordPress or page builders. If the page has to live inside your CMS, I deliver the HTML and your developer embeds it."),
-("Do you build full websites?", "Yes, when the site cannot carry the campaign: five to eight pages, copy included, built for the campaigns and tracked from day one, with hosting in the care plan. Not online stores and not brand identity work; for those I will point you to someone better."),
-("How much does a landing page or a website cost?", "Included in management retainers. As a standalone project, US$1,900 for a campaign landing page, US$600 for an extra A/B variant, US$6,500 for a 5 to 8 page website, US$1,500 for a tracking setup on its own and US$250 a month for hosting and care, with the same list in pounds and euros in the <a href=\"#prices\">price table</a>. Half on approval, half on delivery."),
-("Do you host the pages?", "Optional, priced both ways. Without hosting you get the HTML files installed on your host. With hosting, the page lives under your domain on infrastructure I manage inside the monthly care plan, with backups, updates and a monthly check that every tag still fires."),
+("Do you build full websites?", "Yes, when the site cannot carry the campaign: a basic website of three to five pages or a Performance website of five to eight, copy included, built for the campaigns and tracked from day one, with hosting in the monthly maintenance. Not online stores and not brand identity work; for those I will point you to someone better."),
+("How much does a landing page or a website cost?", "Included in management retainers. As a standalone project, a campaign landing page is US$790 (Simple) or US$1,900 (Performance), an extra A/B variant US$600, a business website US$1,990 for 3 to 5 pages or US$4,990 for 5 to 8 pages, a tracking setup on its own US$1,500, and hosting from US$49 a month, with the same list in pounds and euros in the <a href=\"#prices\">price table</a>. Half on approval, half on delivery."),
+("Do you host the pages?", "Optional, priced both ways. Without hosting you get the HTML files installed on your host. With hosting, the page lives under your domain on infrastructure I manage, from US$49 a month with SSL and backups, or US$250 a month with updates, a monthly check that every tag still fires and one hour of changes."),
 ("How do I pay?", "By bank transfer through Wise, invoiced in US dollars, pounds or euros, with half on approval of the written scope and half on delivery. I do not take card payments."),
 ("Can my agency resell the pages?", "Yes. The same page is available white label, with no mention of me, delivered under your agency's name. See <a href=\"/white-label-ppc/\">white label PPC</a>."),
 ("Can you improve our existing pages instead of building new ones?", "Yes. A conversion review of the current pages against the account data comes first, and often the fixes are to the form, the first screen and the speed rather than a rebuild."),
