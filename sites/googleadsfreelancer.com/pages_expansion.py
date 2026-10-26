@@ -182,7 +182,7 @@ PAGES = [
 # ---------------------------------------------------------------- Google Ads expert / specialist
 {
 "slug": "google-ads-expert", "short": "Google Ads expert", "blurb": "What a senior specialist does differently, how to check it before hiring, and how the engagement works.",
-"title": "Google Ads Expert | Senior PPC Specialist, Hired Directly",
+"title": "Google Ads Expert | Senior Google Ads Specialist, Hired Directly",
 "meta": "Hire a Google Ads expert directly: a senior PPC specialist with 14+ years on the account, working with you instead of through an agency. Flat fee.",
 "kicker": "Google Ads expert",
 "h1": "A Google Ads expert with 14+ years on the account, hired directly instead of through an agency",
@@ -649,6 +649,6 @@ PAGES = [
 ("Which platforms can the consultation cover?", "Google Ads (Search, Shopping, Performance Max, YouTube, Demand Gen), Microsoft Advertising and Meta Ads, plus GA4, Tag Manager and landing pages."),
 ("What time zones work for the call?", "I work from Curitiba, Brazil, on GMT-3 all year, one to five hours ahead of US time zones depending on the zone and the season, so a US morning or early afternoon works for both of us. UK and Irish businesses have the same session on <a href=\"https://ppcconsultancy.uk/ppc-consultation/\" rel=\"noopener\">ppcconsultancy.uk</a>, quoted in pounds."),
 ],
-"related": ["google-ads-audit", "google-ads-consultant", "google-ads-management", "pricing"],
+"related": ["google-ads-consultant", "freelance-ppc-consultant", "google-ads-audit", "google-ads-management"],
 },
 ]

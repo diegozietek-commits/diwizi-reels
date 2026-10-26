@@ -122,8 +122,8 @@ PAGES = [
 "title": "Google Ads Freelancer | Senior & Independent | Diego Zietek",
 "meta": 'Google Ads management run by a senior specialist, with Meta and Microsoft when they fit. Flat monthly fee, and your accounts stay yours.',
 "kicker": "Google Ads freelancer",
-"h1": "Google Ads, run by the senior specialist you hired. Meta and Microsoft when they fit.",
-"lead": "I am Diego Zietek, an independent paid media consultant with 14+ years on the account. Campaign management, conversion tracking and landing page work, with one point of contact and a flat monthly fee. Built for businesses in the US, Canada and Europe. Companies from any country that work in English are welcome.",
+"h1": "Google Ads freelancer: the senior specialist you hire is the one who runs the account. Meta and Microsoft when they fit.",
+"lead": "I am Diego Zietek, an independent Google Ads freelancer and paid media consultant with 14+ years on the account. Campaign management, conversion tracking and landing page work, with one point of contact and a flat monthly fee. Built for businesses in the US, Canada and Europe. Companies from any country that work in English are welcome.",
 "service_name": "Freelance Google Ads management",
 "body": """
 <section><div class="wrap">
@@ -185,7 +185,7 @@ PAGES = [
 <tr><td>Best for</td><td>$3K to $80K monthly spend, one or a few markets</td><td>Many markets and channels, creative at volume</td><td>Spend large enough to justify a full-time role</td></tr>
 <tr><td>Weak spot</td><td>Capacity: one person cannot run forty accounts</td><td>Turnover on the account team</td><td>One account is the whole job</td></tr>
 </table>
-<p>I keep the client list short on purpose; that is what makes the first column work.</p>
+<p>I keep the client list short on purpose; that is what makes the first column work. What a month with a <a href="/freelance-ppc-consultant/">freelance PPC consultant</a> looks like, and how it differs from an agency retainer, is on its own page.</p>
 </div></section>
 """,
 "faq": [
@@ -271,7 +271,7 @@ PAGES = [
 
 {
 "slug": "google-ads-consultant", "short": "Google Ads consultant", "blurb": "Strategy, second opinions and advisory for teams that run their own ads.",
-"title": "Google Ads Consultant | Independent PPC Consulting & Strategy",
+"title": "Google Ads Consultant | Independent Google Ads Consulting & Strategy",
 "meta": 'Independent Google Ads consultant for companies and in-house teams: strategy, second opinions, coaching and hands-on fixes. 14+ years, no agency layer.',
 "kicker": "Google Ads consulting",
 "h1": "An independent Google Ads consultant, for when you need a senior opinion more than another vendor",
@@ -313,7 +313,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Consulting across platforms</h2>
-<p>Google Ads is where most of the money and most of the mistakes are, but the same questions apply to <a href="/meta-ads-management/">Meta Ads</a> and <a href="/microsoft-ads-management/">Microsoft Advertising</a>, and to the split between them. A paid search consultant who has never run paid social will always recommend more paid search. I run all three, which makes the budget allocation advice worth something.</p>
+<p>Google Ads is where most of the money and most of the mistakes are, but the same questions apply to <a href="/meta-ads-management/">Meta Ads</a> and <a href="/microsoft-ads-management/">Microsoft Advertising</a>, and to the split between them. A paid search consultant who has never run paid social will always recommend more paid search. I run all three, which makes the budget allocation advice worth something. When the need is hands-on work every week rather than advice, the <a href="/freelance-ppc-consultant/">freelance PPC consultant</a> page describes that engagement.</p>
 </div></section>
 """,
 "faq": [
@@ -418,7 +418,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>How I price</h2>
-<p>Every engagement is quoted from the form, in US dollars, pounds or euros, because the scope decides the number: monthly spend, number of platforms and markets, and whether tracking has to be rebuilt. What you can rely on before the call is the model.</p>
+<p>Every engagement is quoted from the form, in US dollars, pounds or euros, because the scope decides the number: monthly spend, number of platforms and markets, and whether tracking has to be rebuilt. What you can rely on before the call is the model. How a month with a <a href="/freelance-ppc-consultant/">freelance PPC consultant</a> runs, compared with an agency retainer, is on its own page.</p>
 <p>Landing pages, business websites and tracking setups are the exception: fixed price projects with a <a href="/landing-pages/#prices">published price list</a> in US dollars, pounds and euros, half on approval and half on delivery.</p>
 <p>The fee is set for your account, not from a rate card: platforms, markets, campaigns and how much landing page and tracking work is included. A range comes by email from the form; a firm figure needs a look at the accounts.</p>
 <table>
@@ -553,7 +553,7 @@ PAGES = [
 <section><div class="wrap">
 <h2>What is public and what is not</h2>
 <p>Four engagements are described with their limits on the <a href="/results/">results page</a>: a Houston HVAC and plumbing company (44% lower cost per acquisition), Pontomais, a Brazilian HR tech startup (600% sales growth in eight months, mostly from Google Ads), one of the largest private school groups in Brazil (a 5,000-student enrolment target hit three months early) and a freelance role with Underscore Marketing, a US pharmaceutical agency. Clients bound by compliance or confidentiality are not named. First-party research, including a Google Ads CPC benchmark across six US industries, is published on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, which is the same practice with more detail by industry.</p>
-<p>This site exists because a lot of people search for a Google Ads freelancer or a PPC consultant without an industry in mind. Diwizi.com goes deep by sector; this site answers the general question: who would run the account, how, and for how much.</p>
+<p>This site exists because a lot of people search for a Google Ads freelancer or a <a href="/freelance-ppc-consultant/">PPC consultant</a> without an industry in mind. Diwizi.com goes deep by sector; this site answers the general question: who would run the account, how, and for how much.</p>
 </div></section>
 """,
 "faq": [

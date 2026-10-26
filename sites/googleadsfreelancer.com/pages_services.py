@@ -62,7 +62,7 @@ PAGES = [
 ("Will you manage the account in my Google Ads or yours?", "Yours, always, via manager (MCC) access. Billing stays with you and nothing is built in an account I control."),
 ("Can you manage Meta or Microsoft alongside Google?", "Yes. Same person, same measurement layer, one report. See <a href=\"/ppc-management/\">PPC management</a> for the multi-platform version."),
 ],
-"related": ["google-ads-audit", "ppc-management", "conversion-tracking-setup", "pricing"],
+"related": ["google-ads-audit", "freelance-ppc-consultant", "ppc-management", "conversion-tracking-setup"],
 },
 
 {
@@ -220,10 +220,10 @@ PAGES = [
 
 {
 "slug": "microsoft-ads-management", "short": "Microsoft Advertising", "blurb": "Bing Ads managed on purpose, not left to import.",
-"title": "Microsoft Advertising Management | Bing Ads Managed Properly",
-"meta": 'Microsoft Advertising (Bing Ads) management: imported from Google, then actually run with its own negatives, bids and reporting. Flat monthly fee.',
+"title": "Microsoft Ads Management | Bing Ads Run by a Freelance Specialist",
+"meta": 'Microsoft Ads (Bing Ads) management: imported from Google, then actually run with its own negatives, bids and reporting. Flat monthly fee.',
 "kicker": "Microsoft Advertising",
-"h1": "Microsoft Advertising management: the cheapest clicks in most accounts, and the least looked at",
+"h1": "Microsoft Ads management: the cheapest clicks in most accounts, and the least looked at",
 "lead": "Bing, Yahoo, DuckDuckGo, Copilot and the Microsoft network reach a desktop-heavy, older and more B2B audience at a lower cost per click than Google for the same query. Most accounts import the Google campaigns once and never open the platform again.",
 "service_name": "Microsoft Advertising management",
 "body": """

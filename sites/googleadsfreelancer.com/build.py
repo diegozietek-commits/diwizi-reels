@@ -60,7 +60,7 @@ NAV_SUB_CSS = ('<style id="nav-sub-css">header.top .wrap{position:relative}.nav-
                '.nav-sub:hover .nav-sub-panel,.nav-sub.open .nav-sub-panel,.nav-sub:focus-within .nav-sub-panel{display:grid}'
                '.nav-sub-col h4{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}'
                '.nav-sub-col a{display:block;font-size:14px;font-weight:500;color:var(--fg);padding:5px 0;line-height:1.35;text-decoration:none}'
-               '.nav-sub-col a:hover{color:var(--accent)}.nav-sub-all{grid-column:1/-1;margin-top:10px;padding-top:12px;border-top:1px solid var(--line);font-size:14px;font-weight:600;color:var(--accent);text-decoration:none}'
+               '.nav-sub-col a:hover{color:var(--accent)}.nav-sub-foot{grid-column:1/-1;margin-top:10px;padding-top:12px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 26px}.nav-sub-all{font-size:14px;font-weight:600;color:var(--accent);text-decoration:none}'
                '@media (max-width:720px){.nav-sub-panel{display:none!important}}</style>')
 FLOAT_CTA_CSS = ('<style id="float-cta-css">.float-cta{position:fixed;z-index:70;display:flex;gap:8px}.float-cta[hidden]{display:none}'
                  '.float-cta a{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:14px;line-height:1;border-radius:999px;padding:13px 18px;text-decoration:none;white-space:nowrap}'
@@ -96,7 +96,8 @@ def services_menu_html():
         cols.append(f'<div class="nav-sub-col"><h4>{esc(title)}</h4>{links}</div>')
     return ('<div class="nav-sub"><a href="/#services" class="nav-sub-link" aria-haspopup="true" aria-expanded="false">Services' + NAV_SUB_CHEV + '</a>'
             f'<div class="nav-sub-panel" style="grid-template-columns:repeat({len(cols)},1fr)" aria-label="Services">' + "".join(cols)
-            + '<a class="nav-sub-all" href="/pricing/">Pricing and how I work &rarr;</a></div></div>')
+            + '<div class="nav-sub-foot"><a class="nav-sub-all" href="/freelance-ppc-consultant/">Hiring a freelance PPC consultant &rarr;</a>'
+            '<a class="nav-sub-all" href="/pricing/">Pricing and how I work &rarr;</a></div></div></div>')
 
 
 def float_cta_html(p):
