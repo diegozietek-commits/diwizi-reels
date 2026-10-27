@@ -4,7 +4,7 @@
 
 - Market: UK and Irish businesses, and companies from any country that work in English; the practice for the US, Canada and Europe is at googleadsfreelancer.com.
 - Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).
-- Pricing: quoted in pounds, ex VAT, or in euros for Irish businesses, from the form; prices are not published. Never a percentage of ad spend.
+- Pricing: management, audits and consulting are quoted in pounds, ex VAT, or in euros for Irish businesses, from the form and not published. Landing page, website, tracking setup and maintenance prices are published at https://ppcconsultancy.uk/landing-pages/. Never a percentage of ad spend.
 
 ## Main pages
 

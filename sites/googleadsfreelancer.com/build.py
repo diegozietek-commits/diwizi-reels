@@ -804,7 +804,7 @@ LLMS_SUMMARY = ("Diego Zietek, independent Google Ads and paid media consultant 
 LLMS_FACTS = ["- Market: businesses in the United States, Canada and Europe, and companies from any country that work in English; the UK and Ireland practice is at ppcconsultancy.uk.",
               "- Services: Google Ads management, audits, setup, conversion tracking, consulting, and multi-platform PPC management.",
               "- Fees: a flat monthly fee, never a percentage of ad spend. No long contract.",
-              "- Pricing: quoted per account from the form; prices are not published."]
+              "- Pricing: management, audits, setups and consulting are quoted per account from the form and not published. Landing page, website, tracking setup and maintenance prices are published at https://googleadsfreelancer.com/landing-pages/ in US dollars, pounds and euros."]
 LLMS_PAGES = ["index", "google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "google-ads-consultant", "google-ads-consultation", "google-ads-expert", "landing-pages", "b2b-ppc", "saas-ppc", "home-services-ppc", "ppc-for-law-firms", "healthcare-ppc", "pricing", "results", "about", "faq", "contact"]
 LLMS_SISTER = "UK practice, prices in pounds"
 
