@@ -62,7 +62,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Published results</h2>
-<p>Four engagements are written up with their limits on the <a href="/results/">results page</a>, including a home services account where cost per acquisition fell 44% and qualified leads rose 60%, and Pontomais, a software startup whose sales grew 600% in eight months, mostly from Google Ads. None of them is British yet, so each one explains what carries over to a UK account.</p>
+<p>The engagements on the <a href="/results/">results page</a> are written up with their limits, including Trutek, a truck parts supplier with about 260 attributed contact conversions since 2020, and a health plan reseller with 651 quote requests in a month. None of them is British yet, so each one explains what carries over to a UK account.</p>
 </div></section>
 
 <section><div class="wrap">

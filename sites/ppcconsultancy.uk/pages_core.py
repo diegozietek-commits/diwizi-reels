@@ -133,7 +133,7 @@ FAQ_GROUPS = [
 ("uk-cities", "Do you work with businesses outside London, such as in Manchester, Birmingham, Leeds or Bristol?",
 """Yes, across the UK and Ireland, on the same service and terms everywhere. There are pages for Manchester, Birmingham, Leeds and Bristol because businesses there search locally, and each sets out local click prices and sectors. Location targeting is matched to how you actually serve your area, with the radius around your office bid separately from the wider region. See <a href="/ppc-consultant-manchester/">Manchester</a>, <a href="/ppc-consultant-birmingham/">Birmingham</a>, <a href="/ppc-consultant-leeds/">Leeds</a> and <a href="/ppc-consultant-bristol/">Bristol</a>."""),
 ("uk-case-study", "Why is there no UK case study yet?",
-"""Because no UK engagement can yet be written up with its dates and limits, and an unverifiable story would prove nothing. The four engagements on the results page, including a Houston home services account where cost per acquisition fell 44%, each close with what transfers to a UK business, such as a boiler firm where emergency repairs and new installations fight over one budget. The first UK engagement that can be documented properly will join them. See <a href="/results/">results</a>."""),
+"""Because no UK engagement can yet be written up with its dates and limits, and an unverifiable story would prove nothing. The engagements on the results page, including a Brazilian truck parts supplier with about 260 attributed contact conversions since 2020, each close with what transfers to a UK business, such as a boiler firm where emergency repairs and new installations fight over one budget. The first UK engagement that can be documented properly will join them. See <a href="/results/">results</a>."""),
 ("why-uk-site", "Why does a UK consultancy site point to diwizi.com and a US site?",
 """Because one consultant serves several markets, and this is the door for the UK. Diwizi is the name I trade under: diwizi.com covers industries in depth and publishes research, while googleadsfreelancer.com is written for businesses in the US, Canada and Europe. This site gives UK and Irish firms pounds, a clear account of VAT and planning around UK working hours. Whichever door you use, the same person runs your account. See <a href="/about/">About</a>."""),
 ("outside-uk-ireland", "Can a business outside the UK and Ireland work with you?",
@@ -155,9 +155,9 @@ PAGES = [
 "service_name": 'PPC consultancy and management',
 "body": """
 <section><div class="wrap">
-<h2>One published result, and what it means for a UK account</h2>
+<h2>Published results, and what they mean for a UK account</h2>
 <div class="cols">
-<div class="card"><h3>Home services, Houston, Texas</h3><p><strong>Google Ads Search · May 2025 to February 2026 · around US$20,000 a month.</strong> Cost per acquisition cut by 44% and qualified leads up 60%, in a local auction where the main searches cost US$45 to US$80 a click.</p><p>The work: campaigns split by type of job, measurement that told a booked job apart from a phone call, a weekly pass through the search terms, and steady tests of adverts and landing pages. The UK equivalent is a boiler and heating business, where emergency repairs and new installations fight over the same budget.</p><p>Three more engagements, each with its limits, are on the <a href="/results/">results page →</a></p></div>
+<div class="card"><h3>Trutek, truck parts, Brazil</h3><p><strong>Brand, website and Google Ads Search · since 2020.</strong> About 260 attributed contact conversions from 5,707 clicks in the account's history, at R$ 63.61 per conversion.</p><p>The UK equivalent is a specialist parts or equipment supplier: few searches, valuable enquiries, and an account that has to be kept tight rather than scaled.</p><p>More engagements, each with its limits, are on the <a href="/results/">results page →</a></p></div>
 <div class="card"><h3>What the monthly fee includes</h3><ul><li>Hands-on work in the accounts every week: search terms, bids, budgets, adverts and exclusions</li><li>Tracking set up and kept honest: GA4, Tag Manager, Consent Mode v2 and offline import from your CRM</li><li>Landing pages written and built by me on your site or page builder; work that needs your developer is specified for them</li><li>A written report each month on cost per qualified enquiry and what changed</li><li>Your questions answered by the person doing the work</li></ul></div>
 </div>
 </div></section>
@@ -269,10 +269,10 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What a published result looks like in London terms</h2>
-<p>There is no London case study on this site yet, and none will be invented. What can be shown is how a published engagement would translate. The <a href="/results/">Houston home services account</a> cut cost per acquisition by 44% and lifted qualified leads by 60% in an auction where clicks cost US$45 to US$80. What moved it was not a bidding trick:</p>
+<p>There is no London case study on this site yet, and none will be invented. What can be shown is the order of work I use in home services accounts, including a <a href="/results/">Houston HVAC and plumbing engagement</a> whose figures are confidential by contract. None of it is a bidding trick:</p>
 <ul>
-<li>Campaigns split by type of job, so urgent, cheaper work stopped absorbing the budget meant for higher-value jobs.</li>
-<li>Tracking rebuilt so a booked job and a phone call were different events.</li>
+<li>Campaigns split by type of job, so urgent, cheaper work does not absorb the budget meant for higher-value jobs.</li>
+<li>Tracking that treats a booked job and a phone call as different events.</li>
 <li>A weekly pass through the search terms and steady tests of adverts and landing pages.</li>
 </ul>
 <p>For a London law firm, the same three moves mean separating practice areas that share one campaign, counting a signed instruction rather than a call, and cutting the research searches ("how much does a divorce cost", "free legal advice") that eat budget at well over £10 a click. The auction is different; the order of work is not.</p>
@@ -446,40 +446,51 @@ PAGES = [
 "short": 'Results',
 "blurb": 'Published results, their limits, and what carries over to a UK account.',
 "title": 'PPC Results and Case Studies | What Transfers to a UK Account',
-"meta": 'Four published PPC engagements, including 44% lower CPA for a home services firm and 600% sales growth for a startup, and what carries over to UK accounts.',
+"meta": 'Published PPC engagements with their limits, including about 260 contact conversions for a truck parts supplier, and what carries over to UK accounts.',
 "kicker": 'Results',
 "h1": 'Published results, their limits, and what they mean for a UK account',
-"lead": 'Four engagements are described here. None of them is British yet, so each one ends with the part that carries over to a UK business, and each says plainly what a reader can and cannot verify.',
-"proof": [('44%', 'lower CPA, home services'), ('60%', 'more qualified leads, same account'), ('600%', 'sales growth in 8 months, software'), ('3 months', 'early on a 5,000-student target')],
+"lead": 'Several engagements are described here. None of them is British yet, so each one ends with the part that carries over to a UK business, and each says plainly what a reader can and cannot verify.',
+"proof": [('~260', 'contact conversions, truck parts, since 2020'), ('651', 'quote requests in a month, health plans'), ('3 months', 'early on a 5,000-student target')],
 "body": """
 <section><div class="wrap">
+<h2>Trutek, truck suspension parts, Brazil</h2>
+<p><strong>Brand identity, website and Google Ads Search · since 2020 · <a href="https://trutek.com.br/" rel="noopener">trutek.com.br</a>.</strong></p>
+<p>I created Trutek's brand identity and website and have run its Google Ads account since 2020. The company sells suspension parts for heavy trucks and trailers.</p>
+<p>The account's cumulative history shows <strong>5,707 clicks</strong> and about <strong>260 attributed contact conversions</strong>: a 4.56% conversion rate, R$ 63.61 per conversion on average (Brazilian reais) and a 9.29% click-through rate.</p>
+<p class="note">A conversion here is a contact action recorded by Google Ads, such as a message or a form, not a sale. Calls are counted in a separate column and are not added in. The figures are cumulative with no monthly series, so they show the account's level, not a trend. Full case on <a href="https://diwizi.com/case-trutek-truck-parts.html" rel="noopener">diwizi.com</a>.</p>
+<p><strong>For a UK supplier:</strong> a narrow catalogue and few searches mean every exclusion and every enquiry counts. The account is kept tight and measured on contact actions that sales can follow up, not on clicks.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Health plan reseller, Brazil</h2>
+<p><strong>Google Ads Search and monthly reporting · about eight months, 2019 to 2020 · reseller not named.</strong></p>
+<p>I ran the Google Ads account of a reseller of Clinipam health plans, an operator based in Curitiba. My client was the reseller, not the operator, and every campaign had one goal: a quote request submitted on the website.</p>
+<p>In October 2019, on almost the same spend as September (about R$ 9,300 a month), Google Ads produced <strong>651 quote requests</strong> against 566. Cost per request fell from R$ 16.42 to <strong>R$ 14.31</strong> and the conversion rate rose from 18.5% to 23.5%.</p>
+<p class="note">From the monthly report I prepared at the time, from Google Ads and Google Analytics. Two months side by side, not a trend. A quote request is a form submitted, not a plan sold. Full case on <a href="https://diwizi.com/case-health-plan-broker-google-ads.html" rel="noopener">diwizi.com</a>.</p>
+<p><strong>For UK private health insurance or healthcare providers:</strong> the quote or booking request is the conversion, and the report has to say plainly that a request is not a policy sold or a patient seen.</p>
+</div></section>
+
+<section><div class="wrap">
 <h2>Home services: an HVAC and plumbing business in Houston, Texas</h2>
-<p><strong>Google Ads Search · May 2025 to February 2026 · around US$20,000 a month · working directly with the owner.</strong></p>
-<h3>Starting point</h3>
-<p>Local home services in one of the priciest auctions in the United States, with core searches costing US$45 to US$80 a click and demand rising and falling with the weather. Emergency call-outs and full system replacements shared a single campaign, so the cheaper, urgent jobs soaked up budget meant for installations. Every phone call counted as a conversion, whether or not it turned into work, so the account was optimising for the phone ringing rather than for booked jobs.</p>
-<h3>What changed</h3>
-<ul>
-<li>Campaigns split by type of job, so emergency repairs, replacements and maintenance each had their own budget, bids and landing page.</li>
-<li>Measurement rebuilt so that a booked job and a phone call were separate events, with each call traced back to the search behind it.</li>
-<li>A weekly pass through the search terms, adding exclusions the account had gone months without.</li>
-<li>Steady testing of adverts and landing pages, one challenger against one control at a time.</li>
-<li>Location and audience settings brought into line with the area the engineers actually covered.</li>
-</ul>
-<h3>Outcome</h3>
-<p>Cost per acquisition came down <strong>44%</strong> and qualified leads went up <strong>60%</strong> across the engagement, on roughly US$20,000 of monthly spend.</p>
-<h3>How much of this can be checked</h3>
-<p class="note">The figures come from the Google Ads account and the reports delivered during the engagement. Nobody independent has audited them, the client has not published a testimonial, and the comparison window and conversion definition are not given here. The engagement and its dates can be matched against the fuller write-up on <a href="https://diwizi.com/case-houston-hvac-plumbing.html" rel="noopener">diwizi.com</a>. Account structure, keyword lists, lead volumes and revenue stay confidential. A reference is available for serious enquiries if the client agrees.</p>
+<p><strong>Google Ads and Performance Max · May 2025 to February 2026 · freelance engagement, working directly with the business.</strong></p>
+<p>One of the hardest auctions I have worked in: expensive clicks, ZIP codes where the areas with the most potential also cost the most, demand that swings between air conditioning and heating, and the same search bringing either a simple repair or a very high ticket job. I kept adjusting services, areas and the budget split as results came in, and tracked cost per conversion, calls and bookings by service, area and season.</p>
+<p class="note">The performance data from this engagement is confidential under my contract, so this site publishes no amounts, volumes or percentages from it. Figures that appeared here earlier were removed for that reason. The full write-up is on <a href="https://diwizi.com/case-houston-hvac-plumbing.html" rel="noopener">diwizi.com</a>.</p>
 <h3>The UK version of this account</h3>
 <p>Swap air conditioning for boilers and it looks very familiar: emergency boiler repair and new boiler installation fighting over one budget, calls counted whether or not an engineer is booked, and postcodes mattering more than keywords. UK clicks are cheaper, which makes the same waste easier to overlook rather than smaller.</p>
 </div></section>
 
 <section><div class="wrap">
 <h2>Software: Pontomais, time-tracking and HR software in Brazil</h2>
-<p><strong>Paid media, mainly Google Ads · startup stage · eight months.</strong></p>
-<p>Pontomais sold time-tracking and HR software to Brazilian businesses and was up against larger, better-funded rivals on the same searches. The brief was to make paid search the main source of new customers without matching their budgets: keywords confined to buying intent, landing pages designed around the trial and demo request, and tracking that followed each lead through to a signed contract.</p>
-<p>Sales rose <strong>600% in eight months</strong>, with most of the new business coming from Google.</p>
-<p class="note">Taken from the company's own sales reporting at the time and not audited independently. Budgets, cost per acquisition and contract values are not published.</p>
+<p><strong>Google Ads · employee, two years from August 2017.</strong></p>
+<p>I worked at Pontomais as an employee, and one of my main jobs was rebuilding its Google Ads account from scratch, with landing page recommendations and daily alignment with the sales team. When I started, Google Ads produced roughly five contact requests in a month. Over the following eight months that volume reached the hundreds.</p>
+<p class="note">Approximate volumes from my own experience on the project. No original reports or testimonials are published, and spend is not disclosed. Full case on <a href="https://diwizi.com/case-pontomais-google-ads.html" rel="noopener">diwizi.com</a>.</p>
 <p><strong>For a UK software business:</strong> the order of work is the same. Measure trials and demos through to paying accounts, bid on the searches buyers make rather than those made by students and job-seekers, and build each landing page around the trial or the demo.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Big World Jobs, a job board built from scratch</h2>
+<p><strong>Planning, build and measurement · 2026 · my own project, not a client.</strong></p>
+<p>A free job board for every country that I planned, built and measured from scratch: more than 600,000 jobs from more than 8,000 companies in 150+ countries. Full case on <a href="https://diwizi.com/case-big-world-jobs.html" rel="noopener">diwizi.com</a>.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -557,7 +568,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What is published, and what is not</h2>
-<p>Four engagements are written up on the <a href="/results/">results page</a>, each with its limits: a Houston HVAC and plumbing business, Pontomais (a Brazilian HR software startup), one of the largest private school groups in Brazil, and a freelance role with Underscore Marketing, a US pharmaceutical agency. A past role, several years of senior in-house paid media work in healthcare, is part of the experience and is deliberately left out: no employer name, budget or result from that work appears on this site.</p>
+<p>Several engagements are written up on the <a href="/results/">results page</a>, each with its limits: Trutek, a Brazilian truck parts supplier, a health plan reseller in Brazil, a Houston HVAC and plumbing business whose figures are confidential by contract, Pontomais (a Brazilian HR software company where I worked as an employee), one of the largest private school groups in Brazil, and a freelance role with Underscore Marketing, a US pharmaceutical agency. A past role, several years of senior in-house paid media work in healthcare, is part of the experience and is deliberately left out: no employer name, budget or result from that work appears on this site.</p>
 </div></section>
 """,
 "faq": [

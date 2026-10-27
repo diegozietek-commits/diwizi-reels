@@ -313,7 +313,7 @@ TODAY = date.today().isoformat()
 PHOTO = os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"))
 
 PROOF_DEFAULT = [("14+", "years in paid media"), ("1", "consultant on your account"), ("Flat fee", "never a % of ad spend"), ("Your", "accounts, tags and pages stay with you")]
-PROOF_GOOGLE = [("14+", "years in paid media"), ("44%", "lower CPA, Google Ads client case"), ("60%", "more qualified leads, same case"), ("Flat fee", "never a % of ad spend")]
+PROOF_GOOGLE = [("14+", "years in paid media"), ("~260", "contact conversions, Trutek, since 2020"), ("651", "quote requests in a month, health plan reseller"), ("Flat fee", "never a % of ad spend")]
 PROOF_BY_SLUG = {
     "index": PROOF_GOOGLE, "ppc-management": PROOF_GOOGLE, "google-ads-management": PROOF_GOOGLE, "ppc-consultant-london": PROOF_GOOGLE,
     "ppc-consultant-manchester": PROOF_GOOGLE, "ppc-consultant-birmingham": PROOF_GOOGLE, "ppc-consultant-leeds": PROOF_GOOGLE, "ppc-consultant-bristol": PROOF_GOOGLE,

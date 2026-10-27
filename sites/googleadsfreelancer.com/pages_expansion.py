@@ -43,7 +43,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Published B2B results</h2>
-<p>Two of the four cases on <a href="/results/">results</a> were sold to organizations rather than consumers: a SaaS startup that grew sales by 600% in eight months with paid media, most of it Google, and a private school group that reached a 5,000-student enrollment target three months early. The figures come from the companies' own reporting and are labeled as such. The method was the one above.</p>
+<p>Two of the cases on <a href="/results/">results</a> sell to businesses: Trutek, whose Google Ads account shows about 260 attributed contact conversions since 2020, and Pontomais, a B2B software company where I rebuilt the Google Ads account as an employee and contact requests went from about five in a month to the hundreds in eight months. Each figure is labeled with its source and its limits. The method was the one above.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -116,8 +116,8 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
-<h2>What moved in a published case</h2>
-<p>The <a href="/results/">Houston home services account</a> cut cost per acquisition by 44% and lifted qualified leads by 60%. Part of that was the account; part was the pages: one per service instead of one for the company, the phone number and the booking form in the first screen, and the promise in the ad repeated on the page.</p>
+<h2>What a landing page changes</h2>
+<p>In the accounts I run, part of the result is the account and part is the pages: one per service instead of one for the company, the phone number and the booking form in the first screen, and the promise in the ad repeated on the page.</p>
 </div></section>
 """,
 "faq": [
@@ -294,10 +294,10 @@ PAGES = [
 {
 "slug": "home-services-ppc", "short": "Home services PPC", "blurb": "HVAC, plumbing, roofing, electrical: Google Ads built around booked jobs, with a published case.",
 "title": "Home Services PPC | Google Ads for HVAC, Plumbing & Contractors",
-"meta": "Home services PPC: Google Ads and Local Services Ads for HVAC, plumbing, roofing and electrical, measured in booked jobs. Houston case: 44% lower CPA.",
+"meta": "Home services PPC: Google Ads and Local Services Ads for HVAC, plumbing, roofing and electrical, measured in booked jobs, by a consultant who has run HVAC and plumbing campaigns in Houston.",
 "kicker": "Home services PPC",
 "h1": "Home services PPC measured in booked jobs, with a published HVAC and plumbing case to show the method",
-"lead": "Contractors buy the most expensive local clicks outside legal: $30 to $55 for a plumber or AC repair search in the large Sun Belt metros. The published Houston case on this site cut cost per acquisition by 44% and lifted qualified leads by 60% in that auction. What moved it is on this page.",
+"lead": "Contractors buy the most expensive local clicks outside legal: $30 to $55 for a plumber or AC repair search in the large Sun Belt metros. I have run Google Ads for an HVAC and plumbing company in Houston, one of those auctions. How I approach a contractor account is on this page.",
 "service_name": "Home services PPC",
 "body": """
 <section><div class="wrap">
@@ -324,13 +324,13 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
-<h2>What moved the Houston account</h2>
-<p>An HVAC and plumbing company in Houston, running Google Ads from May 2025 to February 2026, with clicks costing $45 to $80. Cost per acquisition fell 44% and qualified leads rose 60%. The full note, with the source of the figures, is on <a href="/results/">results</a>. The work:</p>
+<h2>How I run a contractor account</h2>
+<p>The order of work I follow in a home services account. The Houston engagement on <a href="/results/">results</a> is described there without figures, because its data is confidential by contract.</p>
 <ol class="steps">
-<li><div><strong>Campaigns split by type of job</strong>, so urgent, cheaper work stopped absorbing the budget meant for installs and higher-value repairs.</div></li>
-<li><div><strong>Tracking rebuilt</strong> so a booked job and a phone call were different events, with the office marking call outcomes and the booked jobs fed back to Google.</div></li>
-<li><div><strong>A weekly pass through the search terms</strong>, with a negatives program that grew every week, and steady tests of ads and landing pages.</div></li>
-<li><div><strong>Bids by area and hour</strong>, matched to the trucks' routes and to when emergency calls actually come in.</div></li>
+<li><div><strong>Campaigns split by type of job</strong>, so urgent, cheaper work does not absorb the budget meant for installs and higher-value repairs.</div></li>
+<li><div><strong>Tracking that separates a booked job from a phone call</strong>, with the office marking call outcomes and the booked jobs fed back to Google.</div></li>
+<li><div><strong>A weekly pass through the search terms</strong>, with a negatives list that grows every week, and steady tests of ads and landing pages.</div></li>
+<li><div><strong>Bids by area and hour</strong>, matched to where the trucks go and to when emergency calls come in.</div></li>
 </ol>
 </div></section>
 
@@ -404,7 +404,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Who this fits</h2>
-<p>Single and multi-location dental practices in the US and Canada, general and specialist, and DSOs that want one senior person rather than a vendor's account team, spending roughly $3,000 to $40,000 a month. Healthcare is among the sectors I have worked in over 14 years; there is no dental case published on this site and none will be invented. The method is the one that moved the <a href="/results/">Houston home services account</a>, applied to a practice: split by service, track the real outcome, read the search terms every week.</p>
+<p>Single and multi-location dental practices in the US and Canada, general and specialist, and DSOs that want one senior person rather than a vendor's account team, spending roughly $3,000 to $40,000 a month. Healthcare is among the sectors I have worked in over 14 years; there is no dental case published on this site and none will be invented. The method is the one I use in <a href="/results/">home services accounts</a>, applied to a practice: split by service, track the real outcome, read the search terms every week.</p>
 </div></section>
 """,
 "faq": [
@@ -468,7 +468,7 @@ PAGES = [
 {
 "slug": "saas-ppc", "short": "SaaS PPC", "blurb": "Google Ads for software companies, measured in qualified pipeline and CAC payback, with a published case.",
 "title": "SaaS PPC Consultant | Google Ads Measured in Pipeline and Payback",
-"meta": "SaaS PPC by an independent consultant: Google Ads connected to the CRM and reported in pipeline and CAC payback. Published case: 600% growth.",
+"meta": "SaaS PPC by an independent consultant: Google Ads connected to the CRM and reported in pipeline and CAC payback. Published B2B case with its limits.",
 "kicker": "SaaS PPC",
 "h1": "SaaS PPC measured in qualified pipeline and CAC payback, by one consultant on Google and Microsoft",
 "lead": "Software companies have the cleanest data in paid media and often the worst use of it. The CRM knows which trials became customers and what they pay; the ad platforms are optimizing toward sign-ups. Connecting the two is most of the job, and it is where a SaaS account starts here.",
@@ -498,7 +498,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>A published SaaS result</h2>
-<p>Pontomais, a time-tracking and HR software startup, grew sales by 600% in eight months with paid media, most of it Google, run by me. The figures come from the company's own sales reporting at the time; the full note is on <a href="/results/">results</a>. The market was Brazil and the currency was different, but the method was the one above: the CRM connected first, campaigns split by intent, brand isolated, and budget following measured pipeline. Intuit QuickBooks and Skillshare are among the subscription brands I have worked on in agency and in-house roles.</p>
+<p>At Pontomais, a time-tracking and HR software company in Brazil, I rebuilt the Google Ads account as an employee. Contact requests from Google Ads went from about five in a month to the hundreds over eight months, approximate volumes from my own experience on the project, and the full note is on <a href="/results/">results</a>. The market was Brazil and the currency was different, but the method was the one above: the account rebuilt around buying intent, landing page changes, and daily feedback from sales on the quality of each contact. Intuit QuickBooks and Skillshare are among the subscription brands I have worked on in agency and in-house roles.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -523,7 +523,7 @@ PAGES = [
 "meta": "Independent PPC consultant for Houston businesses: Google, Microsoft and Meta Ads on Central time, with a published Houston case. Flat fee.",
 "kicker": "PPC consultant Houston",
 "h1": "PPC consultant for Houston businesses, with a published Houston case and calls on Central time",
-"lead": "Independent PPC consultant for Houston companies: 14+ years running Google, Microsoft and Meta Ads, a published Houston HVAC and plumbing case with a 44% lower cost per acquisition, calls on Central time, and a fee that does not carry a Galleria office inside it.",
+"lead": "Independent PPC consultant for Houston companies: 14+ years running Google, Microsoft and Meta Ads, Houston HVAC and plumbing experience, calls on Central time, and a fee that does not carry a Galleria office inside it.",
 "service_name": "PPC consultancy for Houston businesses",
 "body": """
 <section><div class="wrap">
@@ -553,11 +553,11 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
-<h2>The published Houston case</h2>
-<p>An HVAC and plumbing company in Houston, Google Ads from May 2025 to February 2026, clicks costing $45 to $80. Cost per acquisition fell 44% and qualified leads rose 60%. The figures come from the Google Ads account and the reports delivered during the engagement; nobody independent has audited them, and the full note is on <a href="/results/">results</a>. What moved it:</p>
+<h2>The Houston HVAC and plumbing engagement</h2>
+<p>An HVAC and plumbing company in Houston, Google Ads and Performance Max from May 2025 to February 2026. Its performance data is confidential under my contract, so no figures are published, and the write-up is on <a href="/results/">results</a>. How I approach that kind of account:</p>
 <ul>
-<li>Campaigns split by type of job, so urgent, cheaper work stopped absorbing the budget meant for installs and higher-value repairs.</li>
-<li>Tracking rebuilt so a booked job and a phone call were different events, with the office marking outcomes.</li>
+<li>Campaigns split by type of job, so urgent, cheaper work does not absorb the budget meant for installs and higher-value repairs.</li>
+<li>Tracking that treats a booked job and a phone call as different events, with the office marking outcomes.</li>
 <li>A weekly pass through the search terms and steady tests of ads and landing pages.</li>
 </ul>
 <p>For a Houston law firm or clinic the same three moves apply: separate the practice areas or service lines sharing one campaign, count a signed client or an attended appointment rather than a call, and cut the research searches that eat budget at the prices in the table. <a href="/home-services-ppc/">Home services PPC →</a></p>

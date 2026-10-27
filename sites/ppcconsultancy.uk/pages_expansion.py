@@ -59,10 +59,10 @@ def city_page(slug, city, kicker_city, intro, sectors, cpc_comment, faq_extra, l
 
 <section><div class="wrap">
 <h2>What a published result looks like in {city} terms</h2>
-<p>There is no {city} case study on this site yet, and none will be invented. What can be shown is how a published engagement would translate. The <a href="/results/">Houston home services account</a> cut cost per acquisition by 44% and lifted qualified leads by 60% in an auction where clicks cost US$45 to US$80. What moved it was not a bidding trick:</p>
+<p>There is no {city} case study on this site yet, and none will be invented. What can be shown is the order of work I use in home services accounts, including a <a href="/results/">Houston HVAC and plumbing engagement</a> whose figures are confidential by contract. None of it is a bidding trick:</p>
 <ul>
-<li>Campaigns split by type of job, so urgent, cheaper work stopped absorbing the budget meant for higher-value jobs.</li>
-<li>Tracking rebuilt so a booked job and a phone call were different events.</li>
+<li>Campaigns split by type of job, so urgent, cheaper work does not absorb the budget meant for higher-value jobs.</li>
+<li>Tracking that treats a booked job and a phone call as different events.</li>
 <li>A weekly pass through the search terms and steady tests of adverts and landing pages.</li>
 </ul>
 {local_note}
@@ -338,7 +338,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>The proof, at small-business scale</h2>
-<p>The published <a href="/results/">Houston home services case</a> ran on a larger budget, but what moved it applies at any size: campaigns split by job type, tracking that separates a booked job from a call, and a weekly pass through the search terms. A small account has the same levers and less room for the fee.</p>
+<p>The <a href="/results/">published cases</a> include accounts of very different sizes, and the levers are the same at any size: campaigns split by job type, tracking that separates a booked job from a call, and a weekly pass through the search terms. A small account has the same levers and less room for the fee.</p>
 </div></section>
 """,
 "faq": [
@@ -541,7 +541,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>A published SaaS result</h2>
-<p>Pontomais, a time-tracking and HR software startup, grew sales by 600% in eight months with paid media, most of it Google, run by me. The figures come from the company's own sales reporting at the time; the full note is on <a href="/results/">results</a>. The market was Brazil and the currency was different, but the method was the one above: the CRM connected first, campaigns split by intent, brand isolated, and budget following measured pipeline.</p>
+<p>At Pontomais, a time-tracking and HR software company in Brazil, I rebuilt the Google Ads account as an employee. Contact requests from Google Ads went from about five in a month to the hundreds over eight months, approximate volumes from my own experience on the project, and the full note is on <a href="/results/">results</a>. The market was Brazil and the currency was different, but the method was the one above: the account rebuilt around buying intent, landing page changes, and daily feedback from sales on the quality of each contact.</p>
 </div></section>
 
 <section><div class="wrap">

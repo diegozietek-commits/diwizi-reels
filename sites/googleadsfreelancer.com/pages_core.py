@@ -91,7 +91,7 @@ FAQ_GROUPS = [
 ("start-date", "How soon can you start?",
 """An audit usually begins within a week of your go-ahead. Ongoing management depends on capacity, because I keep the client list short on purpose so that each account gets proper attention; if I cannot take yours on properly, I will tell you on the call rather than squeeze it in. A setup for a new account typically goes live two to three weeks after kickoff. See <a href="/freelance-ppc-consultant/">PPC consultant</a>."""),
 ("case-study", "Do you have a published Google Ads case study I can check?",
-"""Yes. A residential HVAC and plumbing company in Houston cut cost per acquisition by 44% and raised qualified leads by 60% between May 2025 and February 2026, on about $20,000 a month of Google Search spend with clicks at $45 to $80. The figures come from the account and the reports delivered at the time and were not audited by a third party. A past-client reference is available for serious engagements if the client agrees. Details and limits are on <a href="/results/">results</a>."""),
+"""Yes. Trutek, a Brazilian truck parts company whose Google Ads I have run since 2020, shows 5,707 clicks and about 260 attributed contact conversions in the account's cumulative history. A health plan reseller produced 651 quote requests from Google Ads in October 2019 at R$ 14.31 each, on the same spend as the month before. Each figure comes with what it does not prove, and none was audited by a third party. Details and limits are on <a href="/results/">results</a>."""),
 ("promise-a-number", "Will you promise a cost per lead before seeing my account?",
 """No, and treat any such promise as a guess. A believable target depends on your auction, your tracking and your margins, and none of those can be judged from outside the account. What I do commit to is a sequence: measurement, then waste, then structure, then tests, with a written note at each stage on what changed and what it achieved. Realistic targets come out of the audit. See <a href="/results/">results</a>."""),
 ]),
@@ -127,9 +127,9 @@ PAGES = [
 "service_name": "Freelance Google Ads management",
 "body": """
 <section><div class="wrap">
-<h2>A client result, with the platform and the period attached</h2>
+<h2>Client results, with the platform and the period attached</h2>
 <div class="cols">
-<div class="card"><h3>HVAC and plumbing company, Houston</h3><p><strong>Google Ads Search, May 2025 to February 2026, about $20,000 a month.</strong> Cost per acquisition down 44% and qualified leads up 60%, in an auction where the core keywords cost $45 to $80 a click.</p><p>Done by restructuring campaigns by job type, rebuilding tracking so a booked job and a phone call were not the same thing, a weekly negatives programme and steady ad and landing page tests.</p><p>Also on the results page: a Brazilian startup with 600% sales growth in eight months and a 5,000-student enrolment target hit three months early. <a href="/results/">Read the cases and their limits →</a></p></div>
+<div class="card"><h3>Published cases, with their limits</h3><p><strong>Trutek, truck parts, Google Ads since 2020.</strong> About 260 attributed contact conversions from 5,707 clicks in the account's history, at R$ 63.61 per conversion.</p><p><strong>Health plan reseller, October 2019.</strong> 651 quote requests from Google Ads at R$ 14.31 each, on the same spend as the month before.</p><p>Also on the results page: a Houston HVAC and plumbing engagement whose data is confidential by contract, and a 5,000-student enrolment target hit three months early. <a href="/results/">Read the cases and their limits →</a></p></div>
 <div class="card"><h3>What you get every month</h3><ul><li>Weekly work inside the account: search terms, bids, budgets, ads, exclusions</li><li>Conversion tracking maintained: GA4, Tag Manager, offline import</li><li>Landing pages written and built by me on your site or page builder; work that needs your developer is specified for them</li><li>A written report on cost per customer and what changed</li><li>Direct access to me, no account manager in between</li></ul></div>
 </div>
 </div></section>
@@ -252,7 +252,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What the work has produced</h2>
-<p>For a home services company in Houston, Texas, with roughly $20,000 a month in Google Ads spend, the engagement cut cost per acquisition by 44% and lifted qualified leads by 60% from May 2025 to February 2026, in an auction where the main keywords cost $45 to $80 per click. The methods were not exotic: negatives, a restructure by job type, tracking that separated a booked job from a phone call, and a steady A/B program on ads and pages. For Pontomais, a software startup, sales grew 600% in eight months, mostly from Google Ads. The <a href="/results/">results page</a> lays out all four published engagements and what can and cannot be verified.</p>
+<p>For Trutek, a Brazilian truck parts company, the Google Ads account I have run since 2020 shows about 260 attributed contact conversions from 5,707 clicks. For a health plan reseller, Google Ads produced 651 quote requests in October 2019 at R$ 14.31 each, on the same spend as the month before. The method is not exotic: campaigns split by intent, tracking that separates a real enquiry from noise, a weekly pass through the search terms and steady tests of ads and pages. The <a href="/results/">results page</a> lays out the published engagements and what can and cannot be verified.</p>
 </div></section>
 """,
 "faq": [
@@ -455,37 +455,46 @@ PAGES = [
 {
 "slug": "results", "short": "Results", "blurb": "Published engagements, with what can and cannot be verified.",
 "title": "Results | Google Ads Case Studies From a Freelance Consultant",
-"meta": 'Google Ads results: 44% lower CPA for a Houston HVAC firm, 600% startup sales growth in eight months, and what each number does and does not prove.',
+"meta": 'Google Ads results with their limits: about 260 contact conversions since 2020 for a truck parts company, 651 quote requests in a month for a health plan reseller.',
 "kicker": "Results",
 "h1": "What the work has produced, and what a reader can actually check",
-"lead": "Four engagements, two of them with the client unnamed for compliance or confidentiality. Each is described with its scope and its limits, because a case study without the limits is an advertisement.",
-"proof": [("44%", "lower CPA, Houston HVAC & plumbing"), ("600%", "sales growth in 8 months, Pontomais"), ("3 months", "early on a 5,000-student target")],
+"lead": "Published engagements, each with its scope and its limits, because a case study without the limits is an advertisement. Where the data is confidential by contract, the case says so and publishes no figures.",
+"proof": [("~260", "contact conversions, Trutek, since 2020"), ("651", "quote requests in a month, health plan reseller"), ("3 months", "early on a 5,000-student target")],
 "body": """
 <section><div class="wrap">
-<h2>Residential HVAC and plumbing company, Houston, Texas</h2>
-<p><strong>Google Ads Search · May 2025 to February 2026 · about $20,000 a month · freelance engagement, working directly with the owner.</strong></p>
-<h3>The problem</h3>
-<p>A residential HVAC and plumbing company in one of the most expensive local auctions in the US: core terms at $45 to $80 a click, dozens of competitors, and demand that swings with the weather. Emergency repairs and system replacements shared one campaign, so the urgent, cheaper work absorbed the budget meant for installs. Phone calls were counted as conversions whether or not they became jobs, so the account was learning from ring volume rather than revenue.</p>
-<h3>What was done</h3>
-<ul>
-<li>Campaigns restructured by job type, separating emergency repair from replacement and maintenance, each with its own bids, budget and landing page.</li>
-<li>Conversion tracking rebuilt so a booked job and a phone call were different things in the data, with call tracking tied to the keyword behind the call.</li>
-<li>A weekly negative keyword programme against a search terms report that had not been read in months.</li>
-<li>Continuous A/B testing of ad copy and landing pages, one control and one challenger at a time.</li>
-<li>Service-area and audience review so bids matched where the trucks actually went.</li>
-</ul>
-<h3>The result</h3>
-<p>Cost per acquisition fell <strong>44%</strong> and qualified leads rose <strong>60%</strong> from May 2025 to February 2026, on roughly $20,000 of monthly spend.</p>
-<h3>What can be checked, and what cannot</h3>
-<p class="note">The figures come from the Google Ads account and the reporting delivered to the client during the engagement. They were not audited by a third party, the client has not published a testimonial, and the exact comparison window and conversion definition are not published here. What a reader can check: the engagement and its dates match the case page on <a href="https://diwizi.com/case-houston-hvac-plumbing.html" rel="noopener">diwizi.com</a>. The client's campaign structure, keyword lists, landing pages, lead volumes and revenue are confidential and stay so. A past-client reference is available for serious engagements, subject to the client agreeing.</p>
+<h2>Trutek, truck suspension parts, Brazil</h2>
+<p><strong>Brand identity, website and Google Ads Search · since 2020 · <a href="https://trutek.com.br/" rel="noopener">trutek.com.br</a>.</strong></p>
+<p>I created Trutek's brand identity and website and have run its Google Ads account since 2020. The company sells suspension parts for heavy trucks and trailers.</p>
+<p>The account's cumulative history shows <strong>5,707 clicks</strong> and about <strong>260 attributed contact conversions</strong>: a 4.56% conversion rate, R$ 63.61 per conversion on average (Brazilian reais) and a 9.29% click-through rate.</p>
+<p class="note">A conversion here is a contact action recorded by Google Ads, such as a message or a form, not a sale. Calls are counted in a separate column and are not added in. The figures are cumulative with no monthly series, so they show the account's level, not a trend. Full case on <a href="https://diwizi.com/case-trutek-truck-parts.html" rel="noopener">diwizi.com</a>.</p>
 </div></section>
 
 <section><div class="wrap">
-<h2>Pontomais, Brazilian HR tech startup</h2>
-<p><strong>Paid media, mostly Google Ads · startup stage · eight months.</strong></p>
-<p>Pontomais was a startup selling time-tracking and HR software to Brazilian companies, competing for the same searches as larger, better-funded players. The job was to turn paid search into the main source of new sales without the budget of those competitors: tight keyword coverage around buying intent, landing pages built for the trial and demo request, and tracking that followed a lead through to a closed contract.</p>
-<p>Sales grew <strong>600% in eight months</strong>, with most of the new business coming from paid media on Google.</p>
-<p class="note">Figures from the company's sales reporting at the time, not audited by a third party. Budgets, cost per acquisition and contract values are not published.</p>
+<h2>Health plan reseller, Brazil</h2>
+<p><strong>Google Ads Search and monthly reporting · about eight months, 2019 to 2020 · reseller not named.</strong></p>
+<p>I ran the Google Ads account of a reseller of Clinipam health plans, an operator based in Curitiba. My client was the reseller, not the operator, and every campaign had one goal: a quote request submitted on the website.</p>
+<p>In October 2019, on almost the same spend as September (about R$ 9,300 a month), Google Ads produced <strong>651 quote requests</strong> against 566. Cost per request fell from R$ 16.42 to <strong>R$ 14.31</strong> and the conversion rate rose from 18.5% to 23.5%.</p>
+<p class="note">From the monthly report I prepared at the time, from Google Ads and Google Analytics. Two months side by side, not a trend. A quote request is a form submitted, not a plan sold. Full case on <a href="https://diwizi.com/case-health-plan-broker-google-ads.html" rel="noopener">diwizi.com</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Residential HVAC and plumbing company, Houston, Texas</h2>
+<p><strong>Google Ads and Performance Max · May 2025 to February 2026 · freelance engagement, working directly with the business.</strong></p>
+<p>One of the hardest auctions I have worked in: expensive clicks, ZIP codes where the areas with the most potential also cost the most, demand that swings between air conditioning and heating, and the same search bringing either a simple repair or a very high ticket job. I kept adjusting services, areas and the budget split as results came in, and tracked cost per conversion, calls and bookings by service, area and season.</p>
+<p class="note">The performance data from this engagement is confidential under my contract, so this site publishes no amounts, volumes or percentages from it. Figures that appeared here earlier were removed for that reason. The full write-up is on <a href="https://diwizi.com/case-houston-hvac-plumbing.html" rel="noopener">diwizi.com</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Pontomais, Brazilian HR tech company</h2>
+<p><strong>Google Ads · employee, two years from August 2017.</strong></p>
+<p>I worked at Pontomais as an employee, and one of my main jobs was rebuilding its Google Ads account from scratch, with landing page recommendations and daily alignment with the sales team. When I started, Google Ads produced roughly five contact requests in a month. Over the following eight months that volume reached the hundreds.</p>
+<p class="note">Approximate volumes from my own experience on the project. No original reports or testimonials are published, and spend is not disclosed. Full case on <a href="https://diwizi.com/case-pontomais-google-ads.html" rel="noopener">diwizi.com</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Big World Jobs, a job board built from scratch</h2>
+<p><strong>Planning, build and measurement · 2026 · my own project, not a client.</strong></p>
+<p>A free job board for every country that I planned, built and measured from scratch: more than 600,000 jobs from more than 8,000 companies in 150+ countries. Full case on <a href="https://diwizi.com/case-big-world-jobs.html" rel="noopener">diwizi.com</a>.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -552,7 +561,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>What is public and what is not</h2>
-<p>Four engagements are described with their limits on the <a href="/results/">results page</a>: a Houston HVAC and plumbing company (44% lower cost per acquisition), Pontomais, a Brazilian HR tech startup (600% sales growth in eight months, mostly from Google Ads), one of the largest private school groups in Brazil (a 5,000-student enrolment target hit three months early) and a freelance role with Underscore Marketing, a US pharmaceutical agency. Clients bound by compliance or confidentiality are not named. First-party research, including a Google Ads CPC benchmark across six US industries, is published on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, which is the same practice with more detail by industry.</p>
+<p>Several engagements are described with their limits on the <a href="/results/">results page</a>: Trutek, a Brazilian truck parts company (Google Ads since 2020), a health plan reseller in Brazil, a Houston HVAC and plumbing company whose data is confidential by contract, Pontomais, a Brazilian HR tech company where I worked as an employee, one of the largest private school groups in Brazil (a 5,000-student enrolment target hit three months early) and a freelance role with Underscore Marketing, a US pharmaceutical agency. Clients bound by compliance or confidentiality are not named. First-party research, including a Google Ads CPC benchmark across six US industries, is published on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, which is the same practice with more detail by industry.</p>
 <p>This site exists because a lot of people search for a Google Ads freelancer or a <a href="/freelance-ppc-consultant/">PPC consultant</a> without an industry in mind. Diwizi.com goes deep by sector; this site answers the general question: who would run the account, how, and for how much.</p>
 </div></section>
 """,

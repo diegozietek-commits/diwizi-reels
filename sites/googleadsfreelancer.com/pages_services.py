@@ -51,7 +51,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Proof</h2>
-<p>A Houston HVAC and plumbing account spending about $20,000 a month: cost per acquisition down 44%, qualified leads up 60%, from May 2025 to February 2026 in a $45 to $80 CPC auction. What was done and what can be verified is on the <a href="/results/">results page</a>.</p>
+<p>Trutek, a truck parts company whose Google Ads I have run since 2020: about 260 attributed contact conversions from 5,707 clicks in the account's history. A health plan reseller: 651 quote requests in October 2019 at R$ 14.31 each. What was done and what each number does not prove is on the <a href="/results/">results page</a>.</p>
 </div></section>
 """,
 "faq": [
@@ -354,7 +354,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>The proof, at small-business scale</h2>
-<p>The published case is a home services company: a Houston HVAC and plumbing business spending about $20,000 a month, where cost per acquisition fell 44% and qualified leads rose 60% from May 2025 to February 2026. The tactics above are the ones that did it, and they scale down. The <a href="/results/">results page</a> has the detail and the limits. Industry-specific pages for HVAC, plumbing, cleaning, dental, legal and others are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>.</p>
+<p>The published cases are small and mid-sized accounts: a Brazilian truck parts company with about 260 attributed contact conversions since 2020, and a health plan reseller with 651 quote requests in one month at R$ 14.31 each. The tactics above are the ones I use, and they scale down. The <a href="/results/">results page</a> has the detail and the limits. Industry-specific pages for HVAC, plumbing, cleaning, dental, legal and others are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>.</p>
 </div></section>
 """,
 "faq": [
