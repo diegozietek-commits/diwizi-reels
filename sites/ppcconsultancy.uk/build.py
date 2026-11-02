@@ -302,7 +302,7 @@ def hero_cta_html(slug):
 # field value is an http(s) URL, so "page" and "website" go without the scheme (FORM_JS strips it from any such field).
 FORM_ENDPOINT = "https://diwizi.com/site-lead.php"
 BUDGET_BANDS = [("under_2k", "Under £2K / month"), ("2k_10k", "£2K to £10K"), ("10k_40k", "£10K to £40K"), ("40k_plus", "£40K+")]
-MAIL = "hello@diwizi.com"
+MAIL = "hello@ppcconsultancy.uk"  # since 2 Nov 2026: Cloudflare Email Routing on the zone forwards it to hello@diwizi.com
 MAIL_USER, MAIL_DOMAIN = MAIL.split("@")
 BRAND_SPRITE = "marcas-en-v3.webp"  # 6410x104 transparent sprite, 20 logos, trailing gap for a seamless loop
 PARENT = "https://diwizi.com/"
@@ -374,7 +374,7 @@ CLICK_JS = ("<script>document.addEventListener('click',function(e){var a=e.targe
             "(a.closest('.hero')?'hero':(a.closest('.ctabox')?'bottom_cta':'body'));"
             "window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:ev,link_url:a.href,cta_location:sec});},true);</script>")
 # The address is never written out in the HTML: links carry user and domain in data attributes and
-# this script assembles them. Without JS the visitor sees "hello [at] diwizi.com".
+# this script assembles them. Without JS the visitor sees "hello [at] ppcconsultancy.uk".
 EMAIL_JS = ("<script>(function(){var l=document.querySelectorAll('a.em');for(var i=0;i<l.length;i++){var a=l[i],"
             "m=a.getAttribute('data-u')+'@'+a.getAttribute('data-d');a.href='mailto:'+m;"
             "a.textContent=(a.getAttribute('data-pre')||'')+m;}})();</script>")
@@ -940,7 +940,7 @@ def privacy_page():
 <li><b>Google Ads conversion measurement.</b> When you arrive from a Google ad and send the form, the enquiry is reported back to Google Ads as a conversion so ad spend can be judged on real outcomes. Also subject to your consent choice.</li></ul>
 <p>You can change your choice at any time by clearing this site's data in your browser; the banner will ask again. The site works the same either way.</p>
 <ul><li><b>Contact form.</b> What you type in the form, with the page it was sent from and your IP address (kept to stop abuse), goes straight to my inbox through a small script on diwizi.com, my business site, hosted by HostGator. The message is not stored on either site. I use it only to reply.</li>
-<li><b>Email.</b> Messages to {email_link()} go to {NAME} directly and are kept for the purpose of replying and, if you become a client, running the engagement.</li>
+<li><b>Email.</b> Messages to {email_link()} go to {NAME} directly and are kept for the purpose of replying and, if you become a client, running the engagement. The address is forwarded by Cloudflare Email Routing to the practice's mailbox; Cloudflare processes the message in transit and does not keep a copy beyond delivery.</li>
 <li><b>Hosting.</b> Pages are served by Cloudflare, which processes IP addresses and request logs to deliver the site and protect it from abuse.</li></ul>
 <h2>Your rights</h2>
 <p>Under UK GDPR you can ask what personal data I hold about you, ask for it to be corrected or deleted, or object to its use, by emailing {email_link()}. Requests are answered by the same person who received your original message. If you are not satisfied, you can complain to the <a href="https://ico.org.uk/" rel="noopener">Information Commissioner's Office</a>.</p>
