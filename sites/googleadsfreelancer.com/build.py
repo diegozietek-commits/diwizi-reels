@@ -41,7 +41,7 @@ def hreflang_html(slug):
     return (f'<link rel="alternate" hreflang="en-US" href="{here}">'
             f'<link rel="alternate" hreflang="en-GB" href="{SISTER}{other}">'
             f'<link rel="alternate" hreflang="x-default" href="{here}">')
-NAME = "Diego Zietek"
+NAME = "Diego Willian Zietek"
 BRAND = "Google Ads Freelancer"
 CAL_EVENT_SLUG = "google-ads-call"  # event type on Cal.com under the diwizi account; checked 200 before deploy
 CAL = f"https://cal.com/diwizi/{CAL_EVENT_SLUG}"  # "Book a call": primary CTA; opens the embed modal when loaded, else a new tab
@@ -597,7 +597,7 @@ def email_link(pre="", cls=""):
     return f'<a class="{klass}" data-u="{MAIL_USER}" data-d="{MAIL_DOMAIN}"{extra}>{pre}{MAIL_USER} [at] {MAIL_DOMAIN}</a>'
 
 
-BRANDS_ALT = ("Brands Diego Zietek has worked on: Shell, Timberland, Intuit QuickBooks, Mission AC &amp; Plumbing, Amazon Prime, "
+BRANDS_ALT = ("Brands Diego Willian Zietek has worked on: Shell, Timberland, Intuit QuickBooks, Mission AC &amp; Plumbing, Amazon Prime, "
               "Skillshare, Regus, TIM, Pontomais, Bluecore, TradingWorks, Underscore Marketing, PUCPR, Grupo Marista, "
               "Clinipam (Grupo NotreDame Intermédica), Forza JMalucelli, PneusAqui, Joias VIP, Éclairé and Trutek")
 BRAND_TAGS = ["SaaS &amp; subscription", "Consumer brands", "Home services", "Telecom", "Education",
@@ -798,7 +798,7 @@ def llms_txt():
     return "\n".join(lines)
 
 
-LLMS_SUMMARY = ("Diego Zietek, independent Google Ads and paid media consultant with 14+ years of hands-on work. "
+LLMS_SUMMARY = ("Diego Willian Zietek, independent Google Ads and paid media consultant with 14+ years of hands-on work. "
                 "Runs Google Ads, with Meta and Microsoft Advertising when they fit, personally, for a flat monthly fee. "
                 "Accounts stay in the client's name. Based in Curitiba, Brazil; works remotely in English.")
 LLMS_FACTS = ["- Market: businesses in the United States, Canada and Europe, and companies from any country that work in English; the UK and Ireland practice is at ppcconsultancy.uk.",
@@ -811,7 +811,7 @@ LLMS_SISTER = "UK practice, prices in pounds"
 def schema_for(p):
     url = SITE + url_for(p["slug"])
     person = {
-        "@type": "Person", "@id": PERSON_ID, "name": NAME, "image": SITE + "/diego.jpg",
+        "@type": "Person", "@id": PERSON_ID, "name": NAME, "alternateName": "Diego Zietek", "image": SITE + "/diego.jpg",
         "jobTitle": "Independent paid media consultant", "url": SITE + "/about/",
         "sameAs": [PARENT, PARENT + "diego-zietek.html"],
         "worksFor": {"@type": "Organization", "name": "Diwizi", "url": PARENT},
@@ -983,7 +983,7 @@ def thanks_page():
           "<script>(function(){try{if(!window.__tyUid)return;var h=document.querySelector('h1'),l=document.querySelector('p.lead');"
           "if(h)h.textContent='Your call is booked';if(l)l.textContent='Thanks. Cal.com sends the confirmation and calendar invite; if it is not there in a few minutes, look in spam.';}catch(e){}})();</script>")
     return {"slug": "thanks", "short": "Thanks", "blurb": "", "title": "Message received | Google Ads Freelancer",
-            "meta": "Your message to Diego Zietek has been received.", "h1": "Got it. You will hear from me, not from a sequence.",
+            "meta": "Your message to Diego Willian Zietek has been received.", "h1": "Got it. You will hear from me, not from a sequence.",
             "lead": "Thanks for the detail. Here is exactly what happens next.",
             "body": body, "kicker": "Received", "proof": [], "noindex": True,
             "pre_gtm_head": TY_LIMPA_JS, "extra_js": js,

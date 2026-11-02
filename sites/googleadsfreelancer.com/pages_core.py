@@ -119,11 +119,11 @@ FAQ_GROUPS = [
 PAGES = [
 {
 "slug": "index", "short": "Home", "blurb": "Senior Google Ads freelancer, one person on the account.",
-"title": "Google Ads Freelancer | Senior & Independent | Diego Zietek",
+"title": "Google Ads Freelancer | Senior & Independent | Diego Willian Zietek",
 "meta": 'Google Ads management run by a senior specialist, with Meta and Microsoft when they fit. Flat monthly fee, and your accounts stay yours.',
 "kicker": "Google Ads freelancer",
 "h1": "Google Ads freelancer: the senior specialist you hire is the one who runs the account. Meta and Microsoft when they fit.",
-"lead": "I am Diego Zietek, an independent Google Ads freelancer and paid media consultant with 14+ years on the account. Campaign management, conversion tracking and landing page work, with one point of contact and a flat monthly fee. Built for businesses in the US, Canada and Europe. Companies from any country that work in English are welcome.",
+"lead": "I am Diego Willian Zietek, an independent Google Ads freelancer and paid media consultant with 14+ years on the account. Campaign management, conversion tracking and landing page work, with one point of contact and a flat monthly fee. Built for businesses in the US, Canada and Europe. Companies from any country that work in English are welcome.",
 "service_name": "Freelance Google Ads management",
 "body": """
 <section><div class="wrap">
@@ -207,7 +207,7 @@ PAGES = [
 "meta": 'Independent PPC consultant with 14+ years in Google Ads, Microsoft Advertising and Meta Ads. Hired directly, month to month, for a flat fee.',
 "kicker": 'PPC consultant',
 "h1": 'A PPC consultant who has run accounts for 14+ years, hired directly instead of through an agency',
-"lead": 'I am Diego Zietek, an independent PPC consultant for companies in the United States, Canada and Europe. I audit, plan and run the accounts myself: Google Ads first, Microsoft Advertising and Meta Ads where they earn their place, with tracking done by the same person.',
+"lead": 'I am Diego Willian Zietek, an independent PPC consultant for companies in the United States, Canada and Europe. I audit, plan and run the accounts myself: Google Ads first, Microsoft Advertising and Meta Ads where they earn their place, with tracking done by the same person.',
 "service_name": 'PPC consulting and management',
 "body": """
 <section><div class="wrap">
@@ -525,10 +525,10 @@ PAGES = [
 
 {
 "slug": "about", "short": "About Diego", "blurb": "Who runs the account, where from, and what is public.",
-"title": "About Diego Zietek | Independent Google Ads Consultant",
+"title": "About Diego Willian Zietek | Independent Google Ads Consultant",
 "meta": 'Independent paid media consultant, 14+ years in Google Ads, Meta and Microsoft Advertising. One person on every account, remote, in English.',
 "kicker": "About",
-"h1": "Diego Zietek, the person who runs every account on this site",
+"h1": "Diego Willian Zietek, the person who runs every account on this site",
 "lead": "Independent paid media consultant with 14+ years of hands-on work across Google Ads, Meta Ads and Microsoft Advertising, for B2B, SaaS, healthcare, e-commerce and local service companies. I operate alone: the person who audits the account is the person who runs it and writes the report.",
 "proof": [("14+", "years in paid media"), ("1", "person on every account"), ("4", "engagements published on Results"), ("GMT-3", "based in Curitiba, Brazil")],
 "body": """
@@ -575,7 +575,7 @@ PAGES = [
 {
     "slug": "faq", "short": "FAQ",
     "blurb": "Answers on hiring a Google Ads freelancer: fees, terms, account access, Search ads and agency work.",
-    "title": "Google Ads Freelancer FAQ | Fees, Access, Search Ads | Diego Zietek",
+    "title": "Google Ads Freelancer FAQ | Fees, Access, Search Ads | Diego Willian Zietek",
     "meta": "46 answers on hiring an independent Google Ads freelancer: how fees work, contracts and notice, account ownership, Google Search ads and white label work.",
     "kicker": "About",
     "h1": "Questions about hiring a Google Ads freelancer",
@@ -589,7 +589,7 @@ PAGES = [
 {
 "slug": "contact", "short": "Contact", "blurb": "Book a call, send the form or write an email. All three reach the same person.",
 "title": "Contact | Get a Quote From a Google Ads Freelancer",
-"meta": 'Send your spend band, site and what is not working. Diego Zietek replies personally with a straight answer and a price range. No sales sequence.',
+"meta": 'Send your spend band, site and what is not working. Diego Willian Zietek replies personally with a straight answer and a price range. No sales sequence.',
 "kicker": "Contact",
 "h1": "Tell me about the account. The reply comes from the person who would run it.",
 "lead": "Spend band, platforms and what is not working are enough for a range; name, email and site so I can reply. If I am not the right fit, I will say so and, where I can, point you to someone who is.",

@@ -9,7 +9,7 @@ PAGES = [
 "meta": 'Hire a senior PPC freelancer for your UK business: Google, Microsoft and Meta Ads run by one specialist, tracking and landing pages included.',
 "kicker": 'PPC freelancer',
 "h1": 'A senior PPC freelancer for UK businesses, hired directly rather than through a marketplace',
-"lead": 'I am Diego Zietek, a freelance PPC specialist with 14+ years on the account. You hire one senior person who audits, builds and runs your Google, Microsoft and Meta Ads, with the tracking and landing pages done by the same hands. Flat monthly fee, month to month, and the accounts stay in your name.',
+"lead": 'I am Diego Willian Zietek, a freelance PPC specialist with 14+ years on the account. You hire one senior person who audits, builds and runs your Google, Microsoft and Meta Ads, with the tracking and landing pages done by the same hands. Flat monthly fee, month to month, and the accounts stay in your name.',
 "service_name": 'PPC freelancer services',
 "proof": None,
 "body": """

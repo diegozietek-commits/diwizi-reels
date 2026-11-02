@@ -1,6 +1,6 @@
 # PPC Consultancy (ppcconsultancy.uk)
 
-> Diego Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. Runs Google, Microsoft and Meta Ads personally, with landing pages and conversion tracking included, for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.
+> Diego Willian Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. Runs Google, Microsoft and Meta Ads personally, with landing pages and conversion tracking included, for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.
 
 - Market: UK and Irish businesses, and companies from any country that work in English; the practice for the US, Canada and Europe is at googleadsfreelancer.com.
 - Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).

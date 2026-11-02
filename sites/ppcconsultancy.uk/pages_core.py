@@ -151,7 +151,7 @@ PAGES = [
 "meta": 'Independent PPC consultancy for UK businesses: Google, Microsoft and Meta Ads run by one senior consultant, landing pages and tracking included.',
 "kicker": 'PPC consultancy',
 "h1": 'PPC consultancy without the agency layer. The consultant who audits your account is the one who runs it.',
-"lead": 'I am Diego Zietek, an independent PPC consultant with 14+ years on the account. Google, Microsoft and Meta Ads for UK and Irish businesses, with the landing pages and conversion tracking done by the same person. Flat monthly fee, month to month, your accounts stay yours.',
+"lead": 'I am Diego Willian Zietek, an independent PPC consultant with 14+ years on the account. Google, Microsoft and Meta Ads for UK and Irish businesses, with the landing pages and conversion tracking done by the same person. Flat monthly fee, month to month, your accounts stay yours.',
 "service_name": 'PPC consultancy and management',
 "body": """
 <section><div class="wrap">
@@ -525,17 +525,17 @@ PAGES = [
 "slug": 'about',
 "short": 'About Diego',
 "blurb": 'The consultant behind this site, and how a UK engagement works.',
-"title": 'About Diego Zietek | PPC Consultant Working With UK Businesses',
-"meta": 'Diego Zietek, the consultant behind PPC Consultancy UK: 14+ years running Google, Microsoft and Meta Ads for UK and Irish businesses.',
+"title": 'About Diego Willian Zietek | PPC Consultant Working With UK Businesses',
+"meta": 'Diego Willian Zietek, the consultant behind PPC Consultancy UK: 14+ years running Google, Microsoft and Meta Ads for UK and Irish businesses.',
 "kicker": 'About',
 "h1": 'Who runs your account, and how a UK engagement works',
-"lead": 'I am Diego Zietek. I have run paid media for more than 14 years across Google Ads, Microsoft Advertising and Meta, and every account taken on through this site is run by me personally, from the first audit to the monthly report.',
+"lead": 'I am Diego Willian Zietek. I have run paid media for more than 14 years across Google Ads, Microsoft Advertising and Meta, and every account taken on through this site is run by me personally, from the first audit to the monthly report.',
 "proof": [('14+', 'years running paid media'), ('1', 'person on your account'), ('£ / €', 'pounds for the UK, euros for Ireland'), ('No', 'minimum term')],
 "body": """
 <section><div class="wrap">
 <h2>In short</h2>
 <table>
-<tr><th>Who</th><td>Diego Zietek, independent PPC consultant and founder of Diwizi, a consultancy of one. No account managers, no juniors, no hand-offs.</td></tr>
+<tr><th>Who</th><td>Diego Willian Zietek, independent PPC consultant and founder of Diwizi, a consultancy of one. No account managers, no juniors, no hand-offs.</td></tr>
 <tr><th>Track record</th><td>More than 14 years hands-on, across in-house roles, freelance engagements and agency work.</td></tr>
 <tr><th>Channels</th><td>Google Ads (Search, Performance Max, Demand Gen, YouTube), Microsoft Advertising, Meta (Facebook and Instagram).</td></tr>
 <tr><th>Measurement</th><td>GA4 and Tag Manager, Consent Mode v2 set up for UK GDPR and PECR, enhanced conversions, and offline conversion import from HubSpot or Salesforce.</td></tr>
@@ -599,7 +599,7 @@ PAGES = [
 "short": 'Contact',
 "blurb": 'Book a call, send the form or write an email. All three reach the same person.',
 "title": 'Contact | PPC Consultancy UK, Quotes in Pounds Within One Working Day',
-"meta": 'Send your spend, site and what is going wrong. Diego Zietek replies personally within one working day, often the same day, with a range in pounds, ex VAT.',
+"meta": 'Send your spend, site and what is going wrong. Diego Willian Zietek replies personally within one working day, often the same day, with a range in pounds, ex VAT.',
 "kicker": 'Contact',
 "h1": 'Get a quote. The reply comes from the consultant, not a sales team.',
 "lead": 'A few details are enough for me to say whether I can help, where I would start and roughly what it would cost. If someone else would suit you better, I will say so and suggest who.',
