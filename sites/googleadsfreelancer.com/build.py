@@ -110,30 +110,16 @@ def float_cta_html(p):
             f'<a class="float-quote" href="#form" data-cta="quote">{msg_ico}Get a quote</a></div>' + FLOAT_CTA_JS)
 
 
-# Published prices for landing pages and websites, the same list as diwizi.com/landing-pages-and-websites.html
-# (owner, 12 Oct 2026; v2 19 Oct 2026: Simple and Performance levels, a basic website, basic and full maintenance).
-# Only these prices may appear on the site; management, audit, setup and consulting fees stay unpublished.
-# Rendered on /landing-pages/ through {{lp_pricing}}.
-LP_PRICES = {
-    "simple": {"usd": 790, "gbp": 590, "eur": 690},
-    "page": {"usd": 1900, "gbp": 1400, "eur": 1700},
-    "basic_site": {"usd": 1990, "gbp": 1490, "eur": 1690},
-    "website": {"usd": 4990, "gbp": 3700, "eur": 4290},
-    "variant": {"usd": 600, "gbp": 450, "eur": 550},
-    "tracking": {"usd": 1500, "gbp": 1200, "eur": 1400},
-    "basic_care": {"usd": 49, "gbp": 39, "eur": 45},
-    "care": {"usd": 250, "gbp": 95, "eur": 180},
-    "white": {"usd": 950, "gbp": 650, "eur": 800},
-}
-LP_SYMBOL = {"usd": "US$", "gbp": "£", "eur": "€"}
-LP_CURRENCIES = ["usd", "gbp", "eur"]  # first one is the default; a European browser time zone preselects pounds or euros
+# No price of the practice is published on the site (owner, 3 Nov 2026; the landing page list published on 12 to 19 Oct
+# 2026 was withdrawn). The /landing-pages/ plan cards say "Price on request" and link to the form; management, audit,
+# setup and consulting fees were never published. Rendered through {{lp_pricing}}.
 LP_DAYS, LP_DAY = "business days", "business day"
 LP_FULL_TRACKING = "Full tracking (GA4, Tag Manager, enhanced conversions, Meta Conversions API, Consent Mode)"
 LP_BADGES = ["Google Ads ready", "Meta Ads ready", "Microsoft Ads ready", "SEO ready", "AI ready", "Mobile first", "Consent Mode ready"]
 LP_NOTES = ("<p>Half on approval of the written scope, half on delivery. Paid by bank transfer through Wise and invoiced in US dollars, "
             "pounds or euros. I do not take card payments.</p>"
             "<p>Without hosting, you receive the HTML files installed on your host or on a subdomain you control. With hosting, the page "
-            "lives under your domain on infrastructure I manage, for the monthly amount shown.</p>"
+            "lives under your domain on infrastructure I manage, for a monthly amount quoted with the page.</p>"
             "<p>Code, domain, hosting account and tracking accounts stay in your name from day one. Campaign management on its own is "
             'quoted from the form or a call; <a href="/pricing/">pricing</a> explains how.</p>')
 LP_FORM_EXAMPLE = ("Example: we sell commercial HVAC maintenance contracts in Houston, the traffic comes from Google Ads, and today "
@@ -148,45 +134,36 @@ LP_NEEDS = [("page_simple", "Simple landing page", "Simple page"), ("page", "Per
             ("care", "Hosting and maintenance", "Maintenance"), ("white_label", "White label page for my agency", "White label page"),
             ("not_sure", "Not sure yet", "Not sure yet")]
 LP_CSS = ('<style id="lp-css">#prices,#form{scroll-margin-top:76px}'
-          '.lp-controls{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:18px 0 26px}'
-          '.seg{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;background:var(--soft)}'
-          '.seg button{font:inherit;font-size:15px;font-weight:600;border:0;background:transparent;color:var(--muted);padding:8px 16px;border-radius:999px;cursor:pointer}'
-          '.seg button.on{background:var(--accent);color:var(--accent-fg)}.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}'
           '.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;align-items:start}'
           '.tier{position:relative;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:22px 20px 20px;display:flex;flex-direction:column}'
           '.tier.rec{background:var(--bg);border:2px solid var(--accent)}.tier h3{margin:0 0 10px;font-size:19px;line-height:1.3}'
           '.tier .tag{position:absolute;top:-12px;left:18px;background:var(--accent);color:var(--accent-fg);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px}'
           '.pv{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.15}.pv.q{font-size:22px}'
           '.pv small{display:block;font-size:14px;font-weight:600;color:var(--muted);letter-spacing:0;margin-top:4px}'
-          '.lp-prices .pv-h{display:none}.lp-prices.host .pv-s{display:none}.lp-prices.host .pv-h{display:block}'
-          '.lp-prices .cur{display:none}.lp-prices[data-cur=usd] .cur-usd,.lp-prices[data-cur=gbp] .cur-gbp,.lp-prices[data-cur=eur] .cur-eur{display:inline}'
           '.prazo{display:block;color:var(--muted);font-size:14px;margin:6px 0 14px}'
           '.tier ul{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:7px;font-size:15px}'
           '.tier li{display:grid;grid-template-columns:18px 1fr;gap:8px;line-height:1.45}'
           '.mk{font-weight:700;text-align:center}.mk.ok{color:var(--ok)}.mk.dt,.mk.nx{color:var(--muted)}.tier li.off span:last-child{color:var(--muted)}'
           '.tier-cta{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}.tier-cta .lk{font-weight:600;font-size:15px}'
-          '.tiers-h{margin:34px 0 20px;font-size:20px}.lp-controls+.tiers-h{margin-top:4px}'
+          '.tiers-h{margin:34px 0 20px;font-size:20px}.tags+.tiers-h{margin-top:18px}'
           '.addons-h{margin:36px 0 12px}.addons{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:12px}'
           '.addon{border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--bg)}.addon h4{margin:0 0 4px;font-size:16px}'
           '.addon-price{font-weight:700;font-size:20px;letter-spacing:-.01em;color:var(--accent)}.addon p{margin:6px 0 8px;font-size:14.5px;color:var(--muted)}'
           '.addon a{font-size:14.5px;font-weight:600}.lp-prices .note{margin-top:24px}.lp-prices .note p{margin:6px 0}</style>')
 
 
-def lp_amount(item, extra=""):
-    """One price in every currency the site shows; CSS shows the selected one."""
-    return "".join(f'<span class="cur cur-{c}">{LP_SYMBOL[c]}{LP_PRICES[item][c]:,}{extra}</span>' for c in LP_CURRENCIES)
-
 
 def lp_pricing_html():
-    """Price cards for /landing-pages/ (v2, 19 Oct 2026): a landing page grid (Simple, Performance, Performance +
-    management) and a website grid (Basic, Performance), one hosting toggle for both, add ons and notes."""
+    """Plan cards for /landing-pages/: a landing page grid (Simple, Performance, Performance + management) and a website
+    grid (Basic, Performance), each with what it includes and its delivery time. No price is published (owner, 3 Nov
+    2026): every card says "Price on request" and its link opens the form with the matching option ticked."""
     tick, dot, cross = '<span class="mk ok">&#10003;</span>', '<span class="mk dt">&#8226;</span>', '<span class="mk nx">&#215;</span>'
 
     def li(mark, text, off=False):
         return f'<li{" class=" + chr(34) + "off" + chr(34) if off else ""}>{mark}<span>{text}</span></li>'
 
     def feats(level, kind, pages, variant, mgmt, hosting, delivery):
-        """level: simple or perf; kind: page or site; variant: no, addon, addon_price or included."""
+        """level: simple or perf; kind: page or site; variant: no, addon or included."""
         simple = level == "simple"
         rows = [
             li(tick, "Copy from your material and a short questionnaire" if simple else "Copy written from an interview with you"),
@@ -203,8 +180,7 @@ def lp_pricing_html():
             li(dot, f"Pages: {pages}"),
         ]
         rows.append({"no": li(cross, "Extra variant for A/B testing", off=True),
-                     "addon": li(dot, "Extra variant for A/B testing: add on"),
-                     "addon_price": li(dot, f"Extra variant for A/B testing: add on, {lp_amount('variant')}"),
+                     "addon": li(dot, "Extra variant for A/B testing: add on, quoted with the page"),
                      "included": li(tick, "Extra variant for A/B testing")}[variant])
         rows.append(li(tick, "Campaign management by the same person") if mgmt
                     else li(cross, "Campaign management by the same person", off=True))
@@ -212,75 +188,51 @@ def lp_pricing_html():
         rows.append(li(dot, f"Delivery: {delivery}"))
         return "<ul>" + "".join(rows) + "</ul>"
 
-    def price(item, care, care_name):
-        return (f'<div class="pv pv-s">{lp_amount(item)}</div>'
-                f'<div class="pv pv-h">{lp_amount(item)}<small>+ {lp_amount(care)} a month for {care_name}</small></div>')
+    price = '<div class="pv q">Price<small>on request</small></div>'
 
-    def cta(need, quote):
+    def cta(need):
         return (f'<div class="tier-cta"><a class="btn" href="{CAL}" {CAL_LINK_ATTRS}>Book a call</a>'
-                f'<a class="lk" href="#form" data-need="{need}">{quote}</a></div>')
+                f'<a class="lk" href="#form" data-need="{need}">Ask for the price</a></div>')
 
-    optional = f'optional, from {lp_amount("basic_care")} a month'
+    optional = "optional, quoted with the page"
     pages_grid = (
-        f'<div class="tier"><h3>Simple landing page</h3>{price("simple", "basic_care", "basic maintenance")}'
-        f'<span class="prazo">Live in 2 to 4 {LP_DAYS}</span>'
-        f'{feats("simple", "page", "1 page", "no", False, optional, f"2 to 4 {LP_DAYS}")}{cta("page_simple", "Get a quote")}</div>'
-        f'<div class="tier"><h3>Performance landing page</h3>{price("page", "care", "full maintenance")}'
-        f'<span class="prazo">Live in 3 to 5 {LP_DAYS}</span>'
-        f'{feats("perf", "page", "1 page", "addon_price", False, optional, f"3 to 5 {LP_DAYS}")}{cta("page", "Get a quote")}</div>'
+        f'<div class="tier"><h3>Simple landing page</h3>{price}<span class="prazo">Live in 2 to 4 {LP_DAYS}</span>'
+        f'{feats("simple", "page", "1 page", "no", False, optional, f"2 to 4 {LP_DAYS}")}{cta("page_simple")}</div>'
+        f'<div class="tier"><h3>Performance landing page</h3>{price}<span class="prazo">Live in 3 to 5 {LP_DAYS}</span>'
+        f'{feats("perf", "page", "1 page", "addon", False, optional, f"3 to 5 {LP_DAYS}")}{cta("page")}</div>'
         f'<div class="tier rec"><span class="tag">Most complete</span><h3>Performance page + campaign management</h3>'
         f'<div class="pv q">Special price on request</div><span class="prazo">Page and media, one quote</span>'
         f'{feats("perf", "page", "1 page, plus a new page or two tests every month", "included", True, "in the quote", f"3 to 5 {LP_DAYS} for the page")}'
-        f'{cta("page_management", "Ask for the price")}</div>'
+        f'{cta("page_management")}</div>'
     )
     sites_grid = (
-        f'<div class="tier"><h3>Basic website, 3 to 5 pages</h3>{price("basic_site", "basic_care", "basic maintenance")}'
-        f'<span class="prazo">Live in 1 week</span>'
-        f'{feats("simple", "site", "3 to 5 pages", "no", False, optional, "1 week")}{cta("website_basic", "Get a quote")}</div>'
-        f'<div class="tier"><h3>Performance website, 5 to 8 pages</h3>{price("website", "care", "full maintenance")}'
-        f'<span class="prazo">Live in 1 to 2 weeks</span>'
-        f'{feats("perf", "site", "5 to 8 pages", "addon", False, optional, "1 to 2 weeks")}{cta("website", "Get a quote")}</div>'
+        f'<div class="tier"><h3>Basic website, 3 to 5 pages</h3>{price}<span class="prazo">Live in 1 week</span>'
+        f'{feats("simple", "site", "3 to 5 pages", "no", False, optional, "1 week")}{cta("website_basic")}</div>'
+        f'<div class="tier"><h3>Performance website, 5 to 8 pages</h3>{price}<span class="prazo">Live in 1 to 2 weeks</span>'
+        f'{feats("perf", "site", "5 to 8 pages", "addon", False, optional, "1 to 2 weeks")}{cta("website")}</div>'
     )
     addons = [
-        ("Extra variant for A/B testing", "variant", "variant", "", "A second version of a Performance page, built to test one hypothesis against the first."),
-        ("Tracking setup on its own", "tracking", "tracking", "", "GA4, Tag Manager, the Meta Conversions API, enhanced conversions and consent mode on a site I did not build. About one week."),
-        ("Basic maintenance", "basic_care", "care", " a month", "Hosting under your domain, SSL, backups and a warning if the site goes down. Changes are quoted separately. Month by month."),
-        ("Full maintenance", "care", "care", " a month", "Hosting under your domain, SSL, backups, updates, a monthly tag check and one hour of changes a month. Month by month."),
-        ("White label page for agencies", "white", "white_label", "", "The Performance campaign page with no branding of mine, delivered under your agency's name."),
+        ("Extra variant for A/B testing", "variant", "A second version of a Performance page, built to test one hypothesis against the first."),
+        ("Tracking setup on its own", "tracking", "GA4, Tag Manager, the Meta Conversions API, enhanced conversions and consent mode on a site I did not build. About one week."),
+        ("Basic maintenance", "care", "Hosting under your domain, SSL, backups and a warning if the site goes down. Changes are quoted separately. Month by month."),
+        ("Full maintenance", "care", "Hosting under your domain, SSL, backups, updates, a monthly tag check and one hour of changes a month. Month by month."),
+        ("White label page for agencies", "white_label", "The Performance campaign page with no branding of mine, delivered under your agency's name."),
     ]
-    addon_html = "".join(f'<div class="addon"><h4>{t}</h4><div class="addon-price">{lp_amount(k)}{per}</div><p>{d}</p>'
-                         f'<a href="#form" data-need="{n}">Get a quote</a></div>' for t, k, n, per, d in addons)
+    addon_html = "".join(f'<div class="addon"><h4>{t}</h4><div class="addon-price">On request</div><p>{d}</p>'
+                         f'<a href="#form" data-need="{n}">Ask for the price</a></div>' for t, n, d in addons)
     badges = "".join(f"<li>{b}</li>" for b in LP_BADGES)
-    cur_seg = ""
-    if len(LP_CURRENCIES) > 1:
-        cur_seg = ('<div class="seg" role="group" aria-label="Currency">' + "".join(
-            f'<button type="button" data-cur="{c}" aria-pressed="{"true" if i == 0 else "false"}"{" class=" + chr(34) + "on" + chr(34) if i == 0 else ""}>{LP_SYMBOL[c]}</button>'
-            for i, c in enumerate(LP_CURRENCIES)) + "</div>")
-    # Toggles: hosting (class .host on the wrapper, so both card grids switch) and currency (data-cur, preset from the
-    # browser time zone). A card or add on "Get a quote" link ticks the matching option in the form, and the hosting
-    # choice once the visitor has used the toggle.
-    js = ("<script>(function(){var g=document.getElementById('lp-prices');if(!g)return;var mexeu=false;"
-          "function pick(b){var s=b.parentNode;s.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false')});"
-          "if(b.hasAttribute('data-h'))g.classList.toggle('host',b.getAttribute('data-h')==='1');"
-          "if(b.hasAttribute('data-cur'))g.setAttribute('data-cur',b.getAttribute('data-cur'))}"
-          "g.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){if(b.hasAttribute('data-h'))mexeu=true;pick(b)})});"
-          "try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'',c=/^Europe\\/(London|Belfast|Guernsey|Jersey|Isle_of_Man)$/.test(tz)?'gbp':(/^Europe\\//.test(tz)?'eur':'');"
-          "var cb=c&&g.querySelector('.seg button[data-cur='+c+']');if(cb)pick(cb)}catch(e){}"
+    # An "Ask for the price" link ticks the matching option in the form before the page scrolls to it.
+    js = ("<script>(function(){var g=document.getElementById('lp-prices');if(!g)return;"
           "g.addEventListener('click',function(e){var a=e.target.closest('a[data-need]');if(!a)return;var f=document.getElementById('form');if(!f)return;"
-          "var r=f.querySelector('input[name=need][data-p='+a.getAttribute('data-need')+']');if(r)r.checked=true;"
-          "if(mexeu){var h=f.querySelector('input[name=hosting][data-h=\"'+(g.classList.contains('host')?'1':'0')+'\"]');if(h)h.checked=true}});})();</script>")
+          "var r=f.querySelector('input[name=need][data-p='+a.getAttribute('data-need')+']');if(r)r.checked=true});})();</script>")
     return (
-        f'<div class="lp-prices" id="lp-prices" data-cur="{LP_CURRENCIES[0]}">'
+        f'<div class="lp-prices" id="lp-prices">'
         f'<ul class="tags">{badges}</ul>'
-        f'<div class="lp-controls"><div class="seg" role="group" aria-label="Prices with or without hosting">'
-        f'<button type="button" class="on" data-h="0" aria-pressed="true">Without hosting</button>'
-        f'<button type="button" data-h="1" aria-pressed="false">With hosting</button></div>{cur_seg}</div>'
         f'<h3 class="tiers-h">Landing pages</h3><div class="tiers">{pages_grid}</div>'
         f'<h3 class="tiers-h">Business websites</h3><div class="tiers tiers-2">{sites_grid}</div>'
         f'<h3 class="addons-h">Add ons and standalone items</h3><div class="addons">{addon_html}</div>'
         f'<div class="note">{LP_NOTES}</div></div>{js}'
     )
-
 
 def lp_form_html(slug):
     """The landing page form: what is needed, hosting, ads today, contact, the brief. Same id, endpoint and script as the main form."""
@@ -317,7 +269,7 @@ def hero_cta_html(slug):
     if slug == "contact":
         return f'<div class="cta-row">{book}<span class="form-note">Prefer to write? Use the form below.</span></div>'
     if slug == "landing-pages":
-        return f'<div class="cta-row">{book}<a class="btn ghost" href="#form">Get a quote</a><a class="btn ghost" href="#prices">See prices</a></div>'
+        return f'<div class="cta-row">{book}<a class="btn ghost" href="#form">Get a quote</a><a class="btn ghost" href="#prices">See the plans</a></div>'
     more = "#services" if slug == "index" else ("/#services" if slug == "pricing" else "/pricing/")
     return f'<div class="cta-row">{book}<a class="btn ghost" href="{FORM_URL}">Get a quote</a><a class="btn ghost" href="{more}">View services &amp; pricing</a></div>'
 
@@ -804,7 +756,7 @@ LLMS_SUMMARY = ("Diego Willian Zietek, independent Google Ads and paid media con
 LLMS_FACTS = ["- Market: businesses in the United States, Canada and Europe, and companies from any country that work in English; the UK and Ireland practice is at ppcconsultancy.uk.",
               "- Services: Google Ads management, audits, setup, conversion tracking, consulting, and multi-platform PPC management.",
               "- Fees: a flat monthly fee, never a percentage of ad spend. No long contract.",
-              "- Pricing: management, audits, setups and consulting are quoted per account from the form and not published. Landing page, website, tracking setup and maintenance prices are published at https://googleadsfreelancer.com/landing-pages/ in US dollars, pounds and euros."]
+              "- Pricing: quoted per account from the form, in US dollars, pounds or euros; no prices are published."]
 LLMS_PAGES = ["index", "google-ads-management", "google-ads-audit", "freelance-ppc-consultant", "google-ads-consultant", "google-ads-consultation", "google-ads-expert", "landing-pages", "b2b-ppc", "saas-ppc", "home-services-ppc", "ppc-for-law-firms", "healthcare-ppc", "pricing", "results", "about", "faq", "contact"]
 LLMS_SISTER = "UK practice, prices in pounds"
 
