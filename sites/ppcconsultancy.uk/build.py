@@ -733,6 +733,26 @@ def save_lastmod(manifest):
         f.write("\n")
 
 
+def llms_full_txt(pages):
+    """llms-full.txt: title, URL, lead, body text and FAQ of every indexable page, in Markdown, guides last."""
+    def md(h):
+        h = re.sub(r"<script.*?</script>|<form.*?</form>|<div class=\"ai-read\".*?</div></div>", " ", h, flags=re.S)
+        h = re.sub(r"<h2[^>]*>(.*?)</h2>", lambda m: "\n\n## " + strip_tags(m.group(1)).strip() + "\n\n", h, flags=re.S)
+        h = re.sub(r"<h3[^>]*>(.*?)</h3>", lambda m: "\n\n### " + strip_tags(m.group(1)).strip() + "\n\n", h, flags=re.S)
+        h = re.sub(r"<li[^>]*>(.*?)</li>", lambda m: "\n- " + strip_tags(m.group(1)).strip(), h, flags=re.S)
+        h = re.sub(r"<tr[^>]*>(.*?)</tr>", lambda m: "\n| " + " | ".join(strip_tags(c).strip() for c in re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", m.group(1), re.S)) + " |", h, flags=re.S)
+        h = re.sub(r"</p>|<br\s*/?>", "\n\n", h)
+        t = html.unescape(strip_tags(h))
+        return re.sub(r"\n\s*\n\s*\n+", "\n\n", re.sub(r"[ \t]+", " ", t)).strip()
+    out = [f"# {BRAND} ({SITE.split('//')[1]})", "", "> " + LLMS_SUMMARY, "", f"Full text of every page of {SITE}. Short index: {SITE}/llms.txt. Generated {TODAY}.", ""]
+    ordered = [p for p in pages if not p.get("noindex") and p.get("kind") != "guide"] + [p for p in pages if not p.get("noindex") and p.get("kind") == "guide"]
+    for p in ordered:
+        out += ["", "---", "", "## " + strip_tags(p["title"]), "", "URL: " + SITE + url_for(p["slug"]), "Description: " + strip_tags(p["meta"]), "", strip_tags(fill_prices(p.get("lead", ""))), "", md(fill_prices(p.get("body", "")))]
+        if p.get("faq"):
+            out += ["", "### FAQ", ""] + ["**" + strip_tags(q) + "** " + strip_tags(fill_prices(a)) + "\n" for q, a in p["faq"]]
+    return "\n".join(out)
+
+
 def llms_txt():
     by = {p["slug"]: p for p in PAGES}
     lines = [f"# {BRAND} ({SITE.split('//')[1]})", "", "> " + LLMS_SUMMARY, ""]
@@ -994,6 +1014,8 @@ def build():
         f.write(INDEXNOW_KEY)
     with open(os.path.join(dist, "llms.txt"), "w", encoding="utf-8") as f:
         f.write(llms_txt())
+    with open(os.path.join(dist, "llms-full.txt"), "w", encoding="utf-8") as f:  # Nov 2026: full text of every indexable page, for AI readers that take one file
+        f.write(llms_full_txt(all_pages))
     with open(os.path.join(dist, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\nDisallow: /thanks/\n\nSitemap: {SITE}/sitemap.xml\n")
     with open(os.path.join(dist, "favicon.svg"), "w") as f:
