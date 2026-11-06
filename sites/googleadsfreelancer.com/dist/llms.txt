@@ -29,6 +29,12 @@
 - [FAQ](https://googleadsfreelancer.com/faq/): Answers on hiring a Google Ads freelancer: fees, terms, account access, Search ads and agency work.
 - [Contact](https://googleadsfreelancer.com/contact/): Book a call, send the form or write an email. All three reach the same person.
 
+## Guides (what a rule or message in Google Ads means for the business, and what to do)
+
+- [Housing, jobs and credit ads](https://googleadsfreelancer.com/guides/google-ads-housing-employment-credit/): The five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.
+- [US privacy laws and Google Ads](https://googleadsfreelancer.com/guides/google-ads-us-privacy-laws/): When the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.
+- [Local Services Ads verification](https://googleadsfreelancer.com/guides/local-services-ads-verification/): The Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.
+
 ## Related
 
 - [Diwizi](https://diwizi.com/): the same practice, organised by industry, with published research

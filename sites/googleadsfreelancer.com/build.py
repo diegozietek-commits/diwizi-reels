@@ -15,6 +15,7 @@ from datetime import date
 from pages_core import PAGES as CORE
 from pages_services import PAGES as SERVICES
 from pages_expansion import PAGES as EXPANSION
+from pages_guides import PAGES as GUIDES, GUIDE_SLUGS, HUB_SLUG as GUIDES_HUB  # Nov 2026: /guides/ (same structure as ppcconsultancy.uk)
 
 SITE = "https://googleadsfreelancer.com"
 SISTER = "https://ppcconsultancy.uk"  # UK site; hreflang pairs below (US page -> UK page)
@@ -384,14 +385,14 @@ FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)retu
            "setTimeout(go,1500);"
            "}).catch(fail);"
            "});})();</script>")
-PAGES = CORE + SERVICES + EXPANSION
+PAGES = CORE + SERVICES + EXPANSION + GUIDES
 BY_SLUG = {p["slug"]: p for p in PAGES}
 
 NAV = [  # 12 Oct 2026: the four service items moved into the "Services" hover menu (services_menu_html)
     ("pricing", "Pricing"),
     ("results", "Results"),
     ("about", "About"),
-]
+] + ([(GUIDES_HUB, "Guides")] if GUIDES else [])
 
 FAQ_SLUG = "faq"  # /faq/ is a sub-page of About
 FOOTER_GROUPS = [
@@ -403,7 +404,7 @@ FOOTER_GROUPS = [
     ("Industries", ["home-services-ppc", "ppc-for-law-firms", "google-ads-for-dentists", "healthcare-ppc", "saas-ppc",
                     "ppc-consultant-houston"]),
     ("Working with me", ["freelance-ppc-consultant", "pricing", "results", "about", "faq", "contact"]),
-]
+] + ([("Guides", [GUIDES_HUB] + GUIDE_SLUGS)] if GUIDES else [])
 
 CSS = r"""
 :root{--bg:#ffffff;--fg:#151a21;--muted:#5b6672;--line:#e4e8ec;--soft:#f4f6f8;--accent:#1a56db;--accent-fg:#ffffff;--ok:#0f766e;--max:1040px}
@@ -595,11 +596,11 @@ def footer_html():
     )
 
 
-def faq_html(faq):
+def faq_html(faq, title="Questions people ask before hiring"):
     if not faq:
         return ""
     items = "".join(f"<details><summary>{esc(q)}</summary><p>{a}</p></details>" for q, a in faq)
-    return f'<section id="faq"><div class="wrap"><h2>Questions people ask before hiring</h2>{items}</div></section>'
+    return f'<section id="faq"><div class="wrap"><h2>{esc(title)}</h2>{items}</div></section>'
 
 
 def about_tabs_html(slug):
@@ -764,6 +765,11 @@ def llms_txt():
         p = by[slug]
         blurb = p.get("blurb") or strip_tags(p["meta"])
         lines.append(f"- [{p.get('short') or p['title']}]({SITE}{url_for(slug)}): {blurb}")
+    if GUIDES:
+        lines += ["", "## Guides (what a rule or message in Google Ads means for the business, and what to do)", ""]
+        for slug in GUIDE_SLUGS:
+            g = by[slug]
+            lines.append(f"- [{g['short']}]({SITE}{url_for(slug)}): {g['blurb']}")
     lines += ["", "## Related", "", f"- [Diwizi]({PARENT}): the same practice, organised by industry, with published research",
               f"- [{SISTER.split('//')[1]}]({SISTER}/): {LLMS_SISTER}", "",
               f"Contact: {MAIL_USER} (at) {MAIL_DOMAIN}, or the form on any page.", ""]
@@ -800,6 +806,15 @@ def schema_for(p):
         "dateModified": p.get("_lastmod", TODAY), "isPartOf": {"@type": "WebSite", "url": SITE + "/", "name": BRAND},
         "about": {"@id": SITE + "/#service"},
     }]
+    if p.get("kind") == "guide":
+        graph.append({"@type": "Article", "@id": url + "#article", "headline": p["h1"], "description": p["meta"], "url": url,
+                      "inLanguage": "en-US", "author": {"@id": PERSON_ID}, "publisher": {"@id": SITE + "/#service"},
+                      "datePublished": p.get("_published", p.get("_lastmod", TODAY)), "dateModified": p.get("_lastmod", TODAY),
+                      "mainEntityOfPage": {"@id": url}, "about": p.get("messages", [])[:8]})
+        graph.append({"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Guides", "item": SITE + url_for(GUIDES_HUB)},
+            {"@type": "ListItem", "position": 3, "name": p["short"], "item": url}]})
     if p.get("faq"):
         graph.append({"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": strip_tags(a)}}
@@ -894,7 +909,7 @@ def render(p):
 {('<div class="proof">' + proof_html + '</div>') if proof_html else ''}
 </div></section>
 {p['body']}
-{faq_html(p.get('faq'))}
+{faq_html(p.get('faq'), p.get('faq_title', 'Questions people ask before hiring'))}
 {related_html(slug)}
 {cta_html(p)}
 </main>
@@ -978,9 +993,11 @@ def build():
         fp = content_fingerprint(page)
         known = manifest.get(p["slug"])
         if not known or known[0] != fp:
-            manifest[p["slug"]] = [fp, TODAY]
+            manifest[p["slug"]] = [fp, TODAY] + ([known[2]] if known and len(known) > 2 else ([TODAY] if p.get("kind") == "guide" else []))
         lastmod = manifest[p["slug"]][1]
         p["_lastmod"] = lastmod
+        if len(manifest[p["slug"]]) > 2:
+            p["_published"] = manifest[p["slug"]][2]
         with open(path, "w", encoding="utf-8") as f:
             f.write(render(p))
         if p.get("noindex"):

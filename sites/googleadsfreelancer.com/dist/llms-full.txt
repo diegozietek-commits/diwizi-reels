@@ -2134,6 +2134,19 @@ The account stays yours; read-only access is all an audit needs. See Google Ads 
 
 ---
 
+## Google Ads Rules and Problems Explained for US Business Owners | Guides
+
+URL: https://googleadsfreelancer.com/guides/
+Description: Housing, job and credit ad rules, Local Services Ads verification, US privacy laws and Google Ads: what each one means for a US business and what to do today.
+
+Each guide takes one rule or message a US business owner runs into with Google Ads, quotes the official wording, explains what it means for the business and sets out what to do today, with the official links. Written for the person paying for the ads, not for the person running them.
+
+## Pick the message you are looking at
+
+Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.
+
+---
+
 ## Privacy policy | Google Ads Freelancer
 
 URL: https://googleadsfreelancer.com/privacy/
@@ -2163,3 +2176,330 @@ You can ask what personal data I hold about you, ask for it to be corrected or d
 ## Controller
 
 Diego Willian Zietek, operating as Diwizi, Curitiba, Brazil. Contact: hello [at] diwizi.com.
+
+---
+
+## Google Ads for Housing, Jobs or Credit: What You Can't Target in the US
+
+URL: https://googleadsfreelancer.com/guides/google-ads-housing-employment-credit/
+Description: Google Ads rules for housing, employment and credit ads in the US and Canada: which targeting is off limits, what still works, and how to fix an affected campaign.
+
+If you sell or rent homes, recruit, or offer loans or credit cards, Google applies a separate set of targeting rules to your ads in the United States and Canada. The rules date from October 2020, but they still catch real estate agents, mortgage brokers, staffing firms and lenders who copy a campaign from another business or let an agency apply a standard audience setup. This guide sets out what Google restricts, what you can still use, and what to change today.
+
+Messages this guide covers: Housing in personalized advertising, Employment in personalized advertising, Consumer finance in personalized advertising, Restricted targeting, Policy Manager.
+
+## Who the rules apply to
+
+Google groups these businesses under "Access to opportunities categories (US and Canada only)" in its personalized advertising policy. Enforcement follows where the ads are shown, not where you are based. Google's FAQ on the policy says: "The focus of the enforcement will be on ad target geo location and not based on advertiser's billing or physical location."
+
+| Category | Google's description | Restricted examples | Not restricted, per Google's FAQ |
+
+| Housing | "homes for sale or rental ... as well as products or services enabling the sale or rental of homes" (housing page) | Listing sites, a single home for sale, real estate agents or brokers | Hotels and vacation rentals, office space, property management services |
+
+| Employment | "employment opportunities or hiring a person for a job" (employment page) | Job ads, recruitment and job listing sites, freelance or gig job listings | Career advice, employment training, networking services |
+
+| Consumer finance (credit) | "offers relating to credit, banking products and services, or certain financial planning and management services" (consumer finance page) | Credit cards and loans, including home and car loans | Financial guidance, gift cards |
+
+One detail has moved since 2020. The original FAQ listed checking accounts as not restricted, while Google's current consumer finance page lists "Banking and checking accounts" as an example in scope. Treat banking products as in scope.
+
+You do not declare the category yourself. Google's FAQ says it reviews "both the ad text and landing page", and for Display and YouTube ads the visual elements too.
+
+## The five targeting options you can't use
+
+Google's policy pages for all three categories list the same five for the United States and Canada: gender, age, parental status, marital status and ZIP codes. In practice, per Google's FAQ:
+
+- Age, gender and parental status must target everyone, and bid adjustments on them must be "reverted to 0% or removed".
+
+- Detailed demographics for marital status and parental status must be removed.
+
+- The life event "Marriage", including getting married soon and recently married, must be removed.
+
+- ZIP code targeting must be removed. In Canada the full postal code is out, but Google says the first three characters (the FSA) are acceptable.
+
+- Customer Match and remarketing lists are only affected "if they use demographics, Marriage/Marital Status, Parental status, or ZIP Code signals to build users lists."
+
+## What still works
+
+From Google's policy pages: "Targeting geographic locations using radius, as well as city and country-based targeting is allowed. Radius targeting requires setting at least 1 km around any given location."
+
+Google's FAQ lists as not restricted: household income, homeownership status, education, in-market and affinity segments, custom segments, life events other than marriage, and city, county, DMA and radius targeting.
+
+Keywords are not part of these rules. A Search campaign built on what people type, such as "homes for sale in Plano", "CDL driver jobs Dallas" or "refinance rates", remains the cleanest way to reach buyers in these categories.
+
+## Why this matters for the business, not only for compliance
+
+- A ZIP code list is the most common casualty. Agents and lenders often target the ten ZIP codes they know best. Rebuild the same map with a radius around each neighborhood, or with city and county targeting.
+
+- Age targeting is the second. A senior living community or a first-time buyer program cannot narrow by age in Google Ads. The precision has to come from keywords and from landing pages written for that buyer.
+
+- Ads stop, and so do new campaigns. Google's FAQ says ads using the restricted targeting "will stop serving", and that an account cannot create new campaigns until the policy has been accepted.
+
+## What to do today
+
+- Open Policy Manager in Google Ads. Google's FAQ says "Impacted ads will be included in the Policy Manager page of your Google Ads account."
+
+- Fix the audiences. In each campaign that advertises homes, jobs or credit, set age, gender and parental status to all, and remove marital and parental detailed demographics and the Marriage life event.
+
+- Fix the locations. Replace ZIP codes with a radius of at least 1 km, cities or counties.
+
+- Check your lists. If a Customer Match or remarketing list was built from age, gender, marital status or ZIP code, stop using it in these campaigns.
+
+- Let the ad be reviewed again. Google: "Your ad will be automatically reviewed again." Check the status in "Ads & assets".
+
+- Move the precision into keywords and pages. That is where it now lives. A Google Ads audit covers this in one pass if several campaigns are affected.
+
+A longer guide to real estate campaigns, including this policy, is on diwizi.com.
+
+## Official sources used in this guide
+
+- https://support.google.com/adspolicy/answer/143465?hl=en
+- https://support.google.com/adspolicy/answer/16701755
+- https://support.google.com/adspolicy/answer/16700442
+- https://support.google.com/adspolicy/answer/16700846
+- https://support.google.com/adspolicy/answer/9917652?hl=en
+- https://support.google.com/adspolicy/answer/9997418?hl=en
+
+## More guides for when something breaks
+
+US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.All guides
+
+### FAQ
+
+**Do these rules apply if my business is based outside the US?** Yes, if the ads target people in the United States or Canada. Google's FAQ says enforcement is based on where the ad is targeted, not on the advertiser's billing or physical location.
+
+**Can I still target my city with housing or loan ads?** Yes. Google allows city, county and DMA targeting and a radius of at least 1 km. ZIP code targeting is not allowed for these ads in the US, and full postal codes are not allowed in Canada.
+
+**Is a property management company affected?** Google's FAQ lists property management services as not restricted and promoting homes for sale or rental as restricted. If your ads promote specific rentals, assume the rules apply.
+
+**Are keywords restricted for housing, job or credit ads?** No. The restrictions cover demographics, the Marriage life event, lists built from those signals and ZIP codes. Keyword targeting is not part of them, which makes Search campaigns the most precise option left.
+
+**Does Meta have the same rule?** Meta has its own Special Ad Categories for housing, employment and credit, with similar limits. This guide covers Google only.
+
+
+---
+
+## Do US Websites Need a Cookie Banner for Google Ads? CCPA Explained
+
+URL: https://googleadsfreelancer.com/guides/google-ads-us-privacy-laws/
+Description: US privacy laws and Google Ads: when the CCPA applies to a business, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.
+
+Owners who see European cookie banners everywhere often assume a US site needs one too before Google Ads or GA4 can run. California's privacy law works differently: it is mostly an opt-out law, and it only applies to businesses above certain thresholds. This guide sets out who the CCPA covers, what it asks of a business that advertises, and what Google offers to help, quoting the official pages. It is not legal advice: if you are near the thresholds, ask a lawyer.
+
+Messages this guide covers: Do Not Sell or Share My Personal Information, Global Privacy Control, Restricted data processing, restricted_data_processing, Consent mode.
+
+## Does the CCPA apply to your business?
+
+The California Privacy Protection Agency's FAQ says the CCPA applies to for-profit businesses that do business in California and meet any of these thresholds:
+
+- "Have a gross annual revenue of $26.625 million or more (effective January 1, 2025) for the preceding calendar year"
+
+- "Buy, sell, or share the personal information of 100,000 or more California residents or households"
+
+- "Derive 50% or more of their annual revenue from selling or sharing California residents' personal information"
+
+The California Attorney General's CCPA page still shows the original $25 million figure. The agency's FAQ has the adjusted one. The Attorney General's page also says the CCPA "generally does not apply to nonprofit organizations or government agencies".
+
+For most small businesses running Google Ads, none of the three applies. If you are close to one of them, the rest of this guide is the part to read with your lawyer.
+
+## Why advertising counts: "sale" and "sharing"
+
+The Attorney General's page explains that "sharing refers specifically to sharing for cross-context behavioral advertising, which is the targeting of advertising to a consumer based on the consumer's personal information obtained from the consumer's online activity across numerous websites."
+
+In Google Ads terms, that is remarketing and audience lists built from what people did on your site and elsewhere. Showing a Search ad to someone who typed a query is a different thing. So the question for a business covered by the CCPA is not whether it uses Google Ads, but whether it uses data from your site to target people across other sites.
+
+## Opt-out, not a cookie banner
+
+The CCPA gives California residents a "right to opt-out of sale or sharing", including "via a user-enabled global privacy control". It does not require opt-in consent before cookies are set. The opt-in requirement on the Attorney General's page is for minors: businesses "can only sell the personal information of a child that they know to be under the age of 16 if they get affirmative authorization ('opt-in')".
+
+A covered business that sells or shares personal information must offer:
+
+- A "Do Not Sell or Share My Personal Information" link. The Attorney General describes "a clear and conspicuous" link on the website, and says businesses "cannot require you to create an account" to use it. The same link must appear in the privacy policy.
+
+- Respect for Global Privacy Control. Consumers "can also submit an opt-out request via a user-enabled global privacy control, like the GPC". A browser with GPC switched on is an opt-out.
+
+- A 12-month wait before asking again. "Businesses must wait at least 12 months before asking you to opt back in to the sale or sharing of your personal information."
+
+This is enforced. In August 2022 the Attorney General announced a $1.2 million settlement with Sephora, which had allowed third-party tracking on its site and, according to the Attorney General, failed to process opt-out requests "via user-enabled global privacy controls".
+
+## What Google offers: restricted data processing
+
+Google's restricted data processing page describes a mode in which "Google restricts the way it uses certain unique identifiers", acting as your service provider under its US state privacy terms. What changes for the advertiser:
+
+- Remarketing stops for those users. "Certain features will be unavailable, including adding users to remarketing lists."
+
+- Measurement keeps working. "Even when restricted data processing is enabled, features, such as conversion tracking and campaign measurement, will continue to function as normal."
+
+- Two ways to switch it on in Google Ads. A "restricted_data_processing" parameter in the Google tag for particular users, such as people who clicked your opt-out link, or a checkbox in the remarketing tag settings for all users in applicable US states.
+
+- GPC is handled for you in some states. Google says it "will turn off ads targeting and activate restrictive data processing (RDP) if we receive a GPC in these U.S. States."
+
+- A California exception. "As of July 1, 2023, restricted data processing is not available in California where the advertiser engages in cross-context behavioral advertising, including Customer Match."
+
+Google's US state privacy page adds that "Advertisers should work with their legal advisors to determine whether and how they should comply with applicable US state privacy laws."
+
+Consent mode is a separate tool. Google's consent mode page says it "lets you communicate your users' cookie or app identifier consent status to Google" and "doesn't provide a consent banner or widget". In advanced mode Google defaults to a consented state unless a choice is made, "though there may be regional behavioral differences for specific areas like the EEA, Switzerland, and the UK". If your ads also reach Europe or the UK, those visitors need a consent banner, and the UK rules are covered on ppcconsultancy.uk.
+
+## What to do today
+
+- Check the three thresholds. Revenue, the number of California residents or households whose data you buy, sell or share, and the share of revenue from selling or sharing. If none applies, the CCPA does not apply, and you do not need a California opt-out link for it.
+
+- List what your tags do. Conversion tracking and Search ads are one thing. Remarketing, Customer Match and audience lists are the "sharing" the law is about.
+
+- If you are covered: add the "Do Not Sell or Share My Personal Information" link to the site and the privacy policy, make it work without an account, and make sure your consent tool honors GPC.
+
+- Connect the opt-out to Google. Set the restricted_data_processing parameter for users who opt out, or enable it for all users in applicable states. Conversion tracking keeps working either way.
+
+- If you advertise to Europe or the UK, run a consent banner for those visitors, separately from the US setup.
+
+- Have the setup checked once. A conversion tracking setup covers the tags, consent signals and restricted data processing together.
+
+A wider look at how privacy changes affect paid media in 2026 is on diwizi.com.
+
+## Official sources used in this guide
+
+- https://cppa.ca.gov/faq.html
+- https://oag.ca.gov/privacy/ccpa
+- https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement
+- https://support.google.com/google-ads/answer/9614122?hl=en
+- https://business.safety.google/usaprivacy/
+- https://support.google.com/google-ads/answer/10000067?hl=en
+
+## More guides for when something breaks
+
+Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.All guides
+
+### FAQ
+
+**Do US websites need a cookie banner for Google Ads?** Not under the CCPA in the way European sites do. The CCPA is an opt-out law: businesses it covers must offer a Do Not Sell or Share My Personal Information link and honor Global Privacy Control. Opt-in is required for selling the data of minors under 16. Other states have their own laws, so check with a lawyer if you are close to the thresholds.
+
+**Does the CCPA apply to small businesses?** Only if they meet one of three thresholds: gross annual revenue of $26.625 million or more (as adjusted from January 1, 2025), buying, selling or sharing the personal information of 100,000 or more California residents or households, or deriving 50% or more of revenue from selling or sharing it.
+
+**Is Google Ads remarketing a sale or sharing of data?** Under the CCPA, sharing means sharing for cross-context behavioral advertising, which targets ads based on activity across websites. Remarketing and audience lists built from site visitors fall into that description. Search ads shown to people who typed a query do not depend on it.
+
+**Does conversion tracking stop if I enable restricted data processing?** No. Google says conversion tracking and campaign measurement continue to function as normal. What stops is adding those users to remarketing lists.
+
+**What is Global Privacy Control?** A browser setting that signals the user's choice to opt out. The California Attorney General treats it as a valid opt-out request, and in 2022 settled with Sephora for $1.2 million partly for not processing it.
+
+
+---
+
+## Local Services Ads Verification Stuck? What Google Checks and How Long
+
+URL: https://googleadsfreelancer.com/guides/local-services-ads-verification/
+Description: Local Services Ads verification in the US: the Google Verified badge, background checks, license and insurance documents, how long it takes and why ads stop showing.
+
+Local Services Ads put your business above the regular Google ads, with a badge and a call button, and you pay per lead instead of per click. Before any of that, every business has to pass Google's screening and verification, and that is where most owners get stuck: a name that does not match, an insurance certificate about to expire, a technician who never finished a background check. This guide follows Google's own help pages step by step.
+
+Messages this guide covers: Google Verified, Business Verification, Proof of Insurance, Background check, Business Profile, Suspended.
+
+## First: the badge changed
+
+Google has replaced the old Google Guaranteed and Google Screened badges with one badge. On its Google Verified badge page, Google says it is "simplifying our advertiser badging by launching a single badge for all advertisers". New advertisers "will need to successfully complete the Local Services screening and verification process in order to get the Google Verified badge", and existing advertisers "will automatically earn the new Google Verified badge".
+
+The money-back guarantee is gone. Google "will be discontinuing the Money Back Guarantee associated with the Google Guarantee badge". Reimbursement requests only apply to services booked through Local Services Ads before December 7, 2025, and must be submitted within 30 days of the service. If a competitor or an old article promises customers a Google guarantee, it is out of date.
+
+## What Google checks
+
+Google's screening and verification page: "all businesses must pass Google's screening and verification process. The process varies by business category and location." Your dashboard shows which checks apply to you. In the US they can include:
+
+| Check | What Google asks for | Where owners get stuck |
+
+| Google Business Profile | The person completing the checks must own or manage the matched profile | A former agency or employee owns the profile. Google says this step can take up to 24 hours to show as done. |
+
+| Business registration | Your D-U-N-S number, or else Secretary of State registration, an EIN from the IRS, or Department of Revenue registration | No D-U-N-S number yet. Google notes the application can take up to 30 days. |
+
+| Business representative | An identity check by Google's partner Evident, with "a clear unexpired government-issued photo ID" | The representative's name and the legal business name are not an exact match. |
+
+| Background checks | All owners, plus every worker "who will perform core services for the customer", including contractors and temporary workers | One technician never completes it. Google says office staff and customer support "don't need to complete background checks". |
+
+| Licenses | State-level licenses for your category, which Google "validates ... against the state or country databases" | The license is under a different name, or has expired. |
+
+| Insurance | Proof of insurance with a policy number | The name, address or coverage amount does not match, or the document expires within 14 days. |
+
+Per Google, background checks cost the business nothing and do not involve a credit check. In the US they include identity and criminal history checks and cross-checks against national sex offender, terrorist and sanctions registries. The category-by-category list of insurance and license requirements is on Google's US requirements page.
+
+## How long it takes
+
+Google's US requirements page: "On average, this process takes 3–4 weeks to complete after submitting your documents." Add up to 30 days if you still need a D-U-N-S number.
+
+If a background check fails, Google says the business must wait 30 days to reapply, and 180 days after a second denial. That is the strongest reason to check every name and document before you submit.
+
+Some US advertisers are asked for extra, risk-based verification after they start. Google gives them 14 days to complete the additional steps "to keep their ad serving".
+
+## Insurance documents that pass
+
+From Google's guidelines for North America:
+
+- "The document must be active and valid for at least 14 days after the time of submission."
+
+- "The name on the documentation must match the name you want to advertise with."
+
+- "A policy number must be displayed."
+
+- "The business address listed must cover the service area you want to advertise in."
+
+- "The insurance amount must be equal to or greater than the amount required" for your category.
+
+- "The document must be legitimate and non-editable."
+
+Per Google's upload instructions, documents go in the dashboard under Business Verification: next to Proof of Insurance, click Submit document. Licenses are added with Add details: business name, license number and expiration date.
+
+## Verified, but no leads?
+
+Google's list of reasons Local Services Ads don't run, with what to check:
+
+- The account is inactive or the ad is off. The ad must be toggled on, and Google says if "you're listed as not taking customers, your ad won't show".
+
+- Account or billing issues. "Your ads won't run until these issues are resolved."
+
+- Budget. Your monthly budget is your average daily budget multiplied by 30.4. A small budget means few leads.
+
+- Settings that are too narrow. "Overly restrictive settings may prevent your ads from being shown", for example a small service area or few job types.
+
+- Reviews. Google's ranking page: "serious or repeatedly negative customer feedback may result in lower rankings (including not showing at all)."
+
+- Suspension. Google sends an in-account and an email notice, and accounts related to a suspended one may be suspended too, per its suspension page.
+
+- Missed re-verification. Google warns it "may result in the loss of their badge, a pause on their ads, or account suspension".
+
+## What to do today
+
+- List the open checks. Open the Local Services dashboard and write down every check that is not done.
+
+- Make the name identical everywhere. Google Business Profile, D-U-N-S, license, insurance and the name you advertise with.
+
+- Check the insurance dates. Renew first if the certificate expires within the next month.
+
+- Chase the background checks. Send the link to every owner and every field worker, and keep a list of who has finished.
+
+- Put renewals in the calendar. Each license and insurance renewal date, so the badge is not lost later.
+
+- Once verified, answer leads the same day. And ask for reviews: ranking depends on them.
+
+How Local Services Ads compare with regular Search ads, and how to track their calls, is covered on diwizi.com: Local Services Ads vs Google Search Ads and call tracking for Local Services Ads. For home service businesses running both, see home services PPC.
+
+## Official sources used in this guide
+
+- https://support.google.com/localservices/answer/16498018?hl=en
+- https://support.google.com/localservices/answer/6226575?hl=en
+- https://support.google.com/localservices/answer/12174778?hl=en
+- https://support.google.com/localservices/answer/11455354?hl=en
+- https://support.google.com/localservices/answer/12491365?hl=en
+- https://support.google.com/localservices/answer/13361214?hl=en
+- https://support.google.com/localservices/answer/6230381?hl=en
+
+## More guides for when something breaks
+
+Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.All guides
+
+### FAQ
+
+**Is Local Services Ads the same as Google Ads?** No. It is a separate product with its own dashboard, paid per lead rather than per click. Many home service businesses run both, because regular Search ads cover searches and services Local Services Ads does not.
+
+**How long does Local Services Ads verification take?** Three to four weeks on average after you submit your documents, according to Google's US requirements page, plus up to 30 days for a D-U-N-S number if you do not have one.
+
+**Does my office manager need a background check?** No. Google says office managers, clerical workers and customer support staff who don't service customers directly don't need one. Owners and every worker who performs the service do.
+
+**Is there still a Google Guarantee for my customers?** No. Google discontinued the money-back guarantee when it moved to the single Google Verified badge. Services booked before December 7, 2025 could still be claimed within 30 days of the service.
+
+**What happens if a background check fails?** Google says the business must wait 30 days to reapply, and 180 days after a second denial. Check names and documents carefully before submitting.

@@ -37,6 +37,7 @@
 - [Google Ads invoice and VAT](https://ppcconsultancy.uk/guides/google-ads-invoice-vat-uk/): Where the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.
 - [Ads not showing](https://ppcconsultancy.uk/guides/google-ads-not-showing-uk/): What each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.
 - [Google Ads not working](https://ppcconsultancy.uk/guides/google-ads-not-working-uk/): Clicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.
+- [Local Services Ads verification](https://ppcconsultancy.uk/guides/local-services-ads-verification-uk/): What Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.
 
 ## Related
 

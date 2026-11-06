@@ -21,7 +21,8 @@ AI_CSS = ('<style id="ai-read-css">.ai-read{margin:18px 0 6px;padding:14px 16px;
           '.msg-box{border-left:3px solid var(--accent);background:var(--soft);padding:12px 16px;border-radius:0 10px 10px 0;margin:0 0 18px}.msg-box p{margin:0;font-size:15px}'
           '.guide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:8px 0 0}'
           '.guide-grid a{display:block;border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;color:var(--fg)}'
-          '.guide-grid a:hover{border-color:var(--accent)}.guide-grid b{display:block;margin-bottom:6px}.guide-grid small{color:var(--muted)}</style>')
+          '.guide-grid a:hover{border-color:var(--accent)}.guide-grid b{display:block;margin-bottom:6px}.guide-grid small{color:var(--muted)}'
+          '.sources a{overflow-wrap:anywhere}</style>')
 AI_JS = ('<script id="ai-read-js">(function(){var b=document.querySelector(".ai-read");if(!b)return;b.addEventListener("click",function(e){var t=e.target.closest("a,button");if(!t)return;'
          'var ia=t.getAttribute("data-ia");(window.dataLayer=window.dataLayer||[]).push({event:"ai_read_click",ai_assistant:ia,page_path:location.pathname});'
          'if(t.tagName==="BUTTON"){e.preventDefault();var p=b.getAttribute("data-prompt");if(navigator.clipboard){navigator.clipboard.writeText(p).then(function(){t.textContent=t.getAttribute("data-ok")});}'
