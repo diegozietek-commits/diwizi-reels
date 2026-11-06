@@ -29,6 +29,15 @@
 - [FAQ](https://ppcconsultancy.uk/faq/): Answers for UK and Irish businesses: fees, VAT, Google's 2% surcharge, consent, contracts and how the work runs.
 - [Contact](https://ppcconsultancy.uk/contact/): Book a call, send the form or write an email. All three reach the same person.
 
+## Guides (what a message or number in Google Ads means for the business, and what to do)
+
+- [Study: what UK advertisers measure](https://ppcconsultancy.uk/guides/google-ads-advertisers-measurement-uk/): We read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.
+- [Conversions not tracking](https://ppcconsultancy.uk/guides/google-ads-conversions-not-tracking-uk/): What Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.
+- [Financial services verification](https://ppcconsultancy.uk/guides/google-ads-financial-services-verification-uk/): What Google asks a UK firm to prove before financial ads run, and why applications fail.
+- [Google Ads invoice and VAT](https://ppcconsultancy.uk/guides/google-ads-invoice-vat-uk/): Where the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.
+- [Ads not showing](https://ppcconsultancy.uk/guides/google-ads-not-showing-uk/): What each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.
+- [Google Ads not working](https://ppcconsultancy.uk/guides/google-ads-not-working-uk/): Clicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.
+
 ## Related
 
 - [Diwizi](https://diwizi.com/): the same practice, organised by industry, with published research
