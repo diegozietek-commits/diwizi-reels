@@ -320,7 +320,7 @@ PAGES = [
 {
 "slug": "small-business-ppc-management", "short": "Google Ads for small business", "blurb": "Right-sized Google Ads for local and small companies: a setup you run yourself, an audit, or management.",
 "title": "Google Ads for Small Business | PPC Management Sized to the Budget",
-"meta": 'PPC for small and local businesses: a fixed-price setup you run yourself, an honest audit or a lean flat-fee retainer. No percentage of spend.',
+"meta": 'Google Ads for small business: what the budget buys, when it is not worth it, and a fixed-price setup you run yourself, an audit or a lean flat-fee retainer.',
 "kicker": "Small business PPC",
 "h1": "Google Ads for small business, sized to the budget instead of to an agency minimum",
 "lead": "For local and small companies spending a few thousand a month, the usual choice is a marketplace freelancer at one end and an agency with a minimum retainer at the other. There is a middle: a senior specialist, a lean scope and a fee that makes sense for the spend.",
@@ -329,6 +329,40 @@ PAGES = [
 <section><div class="wrap">
 <h2>Why small business Google Ads accounts underperform</h2>
 <p>The mechanics are the same as in a $50,000 account, but the margin for error is smaller. A duplicated conversion action, a broad-match campaign with no negatives or a service area set to the whole metro will waste a third of a small budget before anyone notices. And the market for helping small businesses is full of two bad options: very cheap management that is really an import-and-forget, and agency retainers whose minimum fee is bigger than the media budget.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>What a small business budget actually buys</h2>
+<p>The arithmetic is simpler than the pitch decks make it. Budget divided by cost per click gives clicks; clicks times the conversion rate of the landing page gives inquiries; inquiries times your close rate gives customers. Cost per click depends on the sector: legal, finance and insurance pay the most per click, local trades and professional services sit in the middle, retail and food at the bottom. The table uses round numbers to show the shape, not a forecast for your account.</p>
+<table>
+<tr><th>Monthly budget</th><th>At $5 a click</th><th>At $20 a click</th><th>At $60 a click</th></tr>
+<tr><td>$1,000</td><td>200 clicks, about 20 inquiries</td><td>50 clicks, about 5 inquiries</td><td>16 clicks, 1 or 2 inquiries</td></tr>
+<tr><td>$3,000</td><td>600 clicks, about 60 inquiries</td><td>150 clicks, about 15 inquiries</td><td>50 clicks, about 5 inquiries</td></tr>
+<tr><td>$10,000</td><td>2,000 clicks, about 200 inquiries</td><td>500 clicks, about 50 inquiries</td><td>166 clicks, about 16 inquiries</td></tr>
+</table>
+<p>Inquiries assume one visitor in ten acts, which is what a focused landing page on a phone can do for a local service and what a homepage rarely does. Two things follow. At the expensive end, $1,000 a month buys a handful of inquiries, so one wasted click in three is the difference between profit and loss; that is where setup quality matters most. At the cheap end, the constraint is not budget but whether you can answer every call and quote fast, because the account will produce more inquiries than a two-person business expects.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>When Google Ads is not worth it for a small business</h2>
+<ul>
+<li><strong>Nobody searches for it.</strong> Google Ads captures demand; it does not create it. A new category, or a product people do not know they need, belongs on Meta first, or in a referral program.</li>
+<li><strong>The margin cannot carry the click.</strong> If a sale earns you $40 and a click costs $8, you need one sale in five clicks to break even. Few landing pages do that. Raise the price, sell a bundle, or sell a service around the product.</li>
+<li><strong>Nobody can pick up the phone.</strong> Most local inquiries call. If calls go to voicemail between 9 and 5, the budget pays for other people's customers.</li>
+<li><strong>The website does not work on a phone.</strong> Fixing that comes first; a page is cheaper than a month of wasted clicks. See <a href="/landing-pages/">landing pages</a>.</li>
+<li><strong>Less than about $1,000 a month in a competitive category.</strong> Below that, the account cannot gather enough data to learn, and the fixed cost of doing it properly outweighs the result. A one-off <a href="/google-ads-setup/">setup</a> you run yourself is the honest option.</li>
+</ul>
+<p>I say so on the first call when any of these applies. The fee is flat, so there is no incentive to recommend spend that will not pay.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Do it yourself, or hire someone</h2>
+<p>Google's own onboarding pushes small advertisers toward Smart campaigns, Performance Max and auto-applied recommendations. They are designed to spend the budget with little input, which is not the same as spending it well: broad targeting, no search terms to read, and no way to tell a call from a misdial. A small business can run its own account, but on a Search campaign built properly, with exact and phrase match, a negative list, call tracking and conversion actions that count real inquiries.</p>
+<ul>
+<li><strong>Do it yourself</strong> when spend is under $3,000 a month, one person can give it an hour a week, and the account was built by someone who knew what they were doing. That is the <a href="/google-ads-setup/">setup</a> option: built, documented and handed over, with a quarterly check-in if you want one.</li>
+<li><strong>Hire management</strong> when spend passes $3,000, when nobody has the hour a week, or when the account has been running for a year without anyone reading the search terms. At that point the fee is usually smaller than the waste it removes.</li>
+<li><strong>Get an <a href="/google-ads-audit/">audit</a> first</strong> when an agency or a previous freelancer ran the account and you cannot tell whether it worked. Fixed price, written findings, no obligation.</li>
+</ul>
 </div></section>
 
 <section><div class="wrap">
@@ -363,6 +397,9 @@ PAGES = [
 ("Can I run the account myself after setup?", "Yes. The handover document is written for an owner, and a quarterly consulting session is available for a second look without a retainer."),
 ("Do you handle Local Services Ads?", "Yes, where the category qualifies, and measured together with Search so budget goes to whichever produces the cheaper booked job."),
 ("Do you work with businesses outside the US?", "Yes: Canada, Europe, and any country where the business works in English. Local targeting and call tracking work the same way; the currency in the report changes."),
+("How much should a small business spend on Google Ads?", "Enough to buy at least 100 clicks a month in your category, because below that the account cannot learn which keywords and ads work. At $10 a click that is $1,000; at $50 a click, $5,000. Start there for two months, read the cost per inquiry, and scale what pays. Spending less in a competitive category is usually worse than not advertising."),
+("Should a small business use Performance Max or Smart campaigns?", "Not as the first campaign. Both hide the search terms and decide for you where the budget goes, which suits Google more than a $2,000 a month account. Start with a Search campaign you can read; add Performance Max later, with brand excluded, once conversion tracking is reliable and there is data for it to learn from."),
+("How long before a small Google Ads account shows results?", "The first inquiries usually arrive in the first week if the setup is right; a reliable cost per inquiry takes six to eight weeks, because a small budget produces a small sample. Decisions in the first month are about waste (search terms, locations, hours), not about scaling."),
 ],
 "related": ["google-ads-setup", "google-ads-audit", "google-ads-management", "pricing"],
 },
