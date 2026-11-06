@@ -237,6 +237,7 @@ PAGES = [
 <li><div><strong>Monthly, in writing.</strong> Cost per lead or per customer, what changed, what I plan to change next, and what I need from you. Written for the owner, not for another marketer.</div></li>
 <li><div><strong>Quarterly, at the structure.</strong> Are the campaigns still organized the way the business makes decisions: by service line, margin and geography? Structures drift as accounts grow, and a quarterly rebuild of the weak parts is cheaper than a yearly rescue.</div></li>
 </ol>
+<p>How the first look at an account goes, check by check, is in a <a href="/google-ads-audit-example/">worked audit example</a>.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -361,7 +362,7 @@ PAGES = [
 <li><div><strong>Ads, assets and Performance Max.</strong> Ad strength as a symptom rather than a goal, asset coverage, brand exclusions, asset group logic, feed quality for Shopping.</div></li>
 <li><div><strong>Landing pages and conversion path.</strong> Message match, speed on mobile, form and call tracking, what happens after the lead arrives.</div></li>
 </ol>
-<p>The deliverable is a written document with findings ranked by financial impact, each with the fix, who should do it and how to confirm it worked, plus a short call to walk through it. Accounts on Microsoft Advertising or Meta can be added to the same audit; see <a href="/ppc-management/">PPC management</a> and <a href="/meta-ads-management/">Meta Ads</a>.</p>
+<p>A <a href="/google-ads-audit-example/">worked example on an illustrative account</a> shows the checks in order and what the verdict looks like. The deliverable is a written document with findings ranked by financial impact, each with the fix, who should do it and how to confirm it worked, plus a short call to walk through it. Accounts on Microsoft Advertising or Meta can be added to the same audit; see <a href="/ppc-management/">PPC management</a> and <a href="/meta-ads-management/">Meta Ads</a>.</p>
 </div></section>
 
 <section><div class="wrap">

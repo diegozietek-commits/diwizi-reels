@@ -651,4 +651,72 @@ PAGES = [
 ],
 "related": ["google-ads-consultant", "freelance-ppc-consultant", "google-ads-audit", "google-ads-management"],
 },
+# ---------------------------------------------------------------- Google Ads audit, worked example (illustrative account)
+{
+"slug": "google-ads-audit-example", "short": "Google Ads audit example", "blurb": "A worked audit on an illustrative account: the eight checks, what each one found, and the verdict on budget.",
+"title": "Google Ads Audit Example | What I Check Before Recommending More Budget",
+"meta": "A worked Google Ads audit on an illustrative account: the eight checks, what each one found, and why the answer was to fix three things before adding budget.",
+"kicker": "Google Ads audit example",
+"h1": "A Google Ads audit, worked through on an example account: what I check before anyone spends another dollar",
+"lead": "Most audits are a list of 60 findings sorted by nothing. This page walks through the eight checks I run, in the order I run them, on one illustrative account, and ends where a real audit ends: a short list of what to fix first and whether more budget would help.",
+"body": """
+<section><div class="wrap">
+<p class="note">This account is illustrative. It is a composite built to show the method, and the figures are invented for the example, not taken from a client. The checks, the order and the kind of findings are the ones I see in real accounts.</p>
+<h2>The example account</h2>
+<p>A home services company in a mid-sized US metro: about $8,000 a month on Google Ads, one Search campaign and one Performance Max campaign, managed by an agency for two years. The owner's question: "Leads are flat. Should we double the budget?"</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>The eight checks, in order</h2>
+<h3>1. Conversion tracking: what is being counted</h3>
+<p><strong>What I look at:</strong> every conversion action, which ones are primary, how each is triggered, and whether the numbers match what the office actually received.</p>
+<p><strong>Found:</strong> four primary actions, including a page view of /contact/ and a click on the phone number. The account reported 310 conversions last month; the office logged about 120 real inquiries.</p>
+<p><strong>Why it matters:</strong> the bidding was optimizing toward people opening the contact page. Every other number in the account inherits this error, so it is fixed first.</p>
+<h3>2. Search terms: what people actually typed</h3>
+<p><strong>What I look at:</strong> 90 days of search terms, sorted by cost, not by clicks.</p>
+<p><strong>Found:</strong> 22% of spend on terms like "hvac technician salary", "how to fix ac yourself" and a competitor's brand name.</p>
+<p><strong>Why it matters:</strong> that is money with no buyer behind it. Negatives and tighter match types recover it without touching the budget.</p>
+<h3>3. Match types and structure</h3>
+<p><strong>Found:</strong> almost everything on broad match, in one ad group per campaign, so emergency repair, installation and maintenance shared one ad and one landing page.</p>
+<p><strong>Why it matters:</strong> different jobs, different value, same bid. Splitting by type of job is what lets the budget go to the work that pays.</p>
+<h3>4. Performance Max and the brand</h3>
+<p><strong>Found:</strong> Performance Max took 41% of the budget, and a large share of its conversions came from people searching the company's own name.</p>
+<p><strong>Why it matters:</strong> those customers were coming anyway. The campaign looked like the best performer because it was collecting brand traffic. Brand exclusion first, then judge it.</p>
+<h3>5. Locations and hours</h3>
+<p><strong>Found:</strong> "presence or interest" location targeting, so clicks came from people outside the service area, and ads ran overnight with nobody to answer.</p>
+<p><strong>Why it matters:</strong> both are settings, not strategy, and both are quick to fix.</p>
+<h3>6. The page after the click, and the phone</h3>
+<p><strong>Found:</strong> ads sent everyone to the homepage; on a phone, the first screen had no number and no form. Test calls at lunchtime went to voicemail twice in five tries.</p>
+<p><strong>Why it matters:</strong> no bid change fixes a page that does not answer the search, or a call nobody picks up. See <a href="/landing-pages/">landing pages</a>.</p>
+<h3>7. Lead quality, from the CRM or the office</h3>
+<p><strong>Found:</strong> the agency reported cost per conversion; nobody had compared leads to booked jobs. The office estimated one in four calls was a job.</p>
+<p><strong>Why it matters:</strong> until booked jobs are fed back, the account cannot learn which searches bring customers. See <a href="/conversion-tracking-setup/">conversion tracking</a>.</p>
+<h3>8. Budget and impression share</h3>
+<p><strong>Found:</strong> the Search campaign lost about 30% of impression share to budget, but most of the budget was going to the waste found in checks 2, 4 and 5.</p>
+<p><strong>Why it matters:</strong> this is the check that answers the owner's question.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>The verdict</h2>
+<p>Do not double the budget yet. Fix three things first: count only real inquiries (check 1), cut the waste in search terms and brand traffic (checks 2 and 4), and send ads to a page that works on a phone, with a phone that gets answered (check 6). In an account like this, that work usually frees enough spend to fill the lost impression share without adding a dollar. Budget becomes the right question after six to eight weeks of clean data.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>What the written audit contains</h2>
+<ul>
+<li>Findings ranked by impact, each with the evidence (screenshots or exports) and the fix.</li>
+<li>The three things to do first, in order, and who should do them.</li>
+<li>What not to change yet, and why.</li>
+<li>A short answer to the question you came with, such as "should we spend more?".</li>
+</ul>
+<p>The account stays yours; read-only access is all an audit needs. See <a href="/google-ads-audit/">Google Ads audit</a> for scope and delivery, or a <a href="/google-ads-consultation/">Google Ads consultation</a> for a one-off working session.</p>
+</div></section>
+""",
+"faq": [
+("How long does an audit like this take?", "Five to seven business days from read-only access, depending on how many campaigns and how much history there is."),
+("Do I need to give you access?", "Read-only access to Google Ads and GA4 is enough. Nothing is changed in the account during the audit."),
+("What if the account is in good shape?", "Then the audit says so, explains why, and the answer to \"should we spend more?\" may simply be yes, with where to put it."),
+],
+"related": ["google-ads-audit", "google-ads-consultation", "freelance-ppc-consultant", "small-business-ppc-management"],
+},
 ]
