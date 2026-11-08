@@ -347,7 +347,7 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Who this fits</h2>
-<p>HVAC, plumbing, electrical, roofing, garage door, pest control, restoration and similar contractors in the US and Canada, from a few trucks to regional multi-location companies, spending roughly $3,000 to $60,000 a month. Lead-generation networks that resell contractor leads are not a fit. For smaller budgets, see <a href="/small-business-ppc-management/">Google Ads for small business</a>.</p>
+<p>HVAC, plumbing, electrical, roofing, garage door, pest control, restoration and similar contractors in the US and Canada, from a few trucks to regional multi-location companies, spending roughly $3,000 to $60,000 a month. Lead-generation networks that resell contractor leads are not a fit. For smaller budgets, see <a href="/small-business-ppc-management/">small business PPC management</a>.</p>
 </div></section>
 """,
 "faq": [

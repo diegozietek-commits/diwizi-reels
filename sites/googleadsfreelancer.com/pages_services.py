@@ -319,10 +319,10 @@ PAGES = [
 
 {
 "slug": "small-business-ppc-management", "short": "Google Ads for small business", "blurb": "Right-sized Google Ads for local and small companies: a setup you run yourself, an audit, or management.",
-"title": "Google Ads for Small Business | PPC Management Sized to the Budget",
-"meta": 'Google Ads for small business: what the budget buys, when it is not worth it, and a fixed-price setup you run yourself, an audit or a lean flat-fee retainer.',
+"title": "Small Business PPC Management | Google Ads Sized to the Budget",
+"meta": 'Small business PPC management: what a Google Ads budget buys, when it is not worth it, and how to choose between a setup you run yourself, an audit or ongoing management.',
 "kicker": "Small business PPC",
-"h1": "Google Ads for small business, sized to the budget instead of to an agency minimum",
+"h1": "PPC management for small business, sized to the budget instead of to an agency minimum",
 "lead": "For local and small companies spending a few thousand a month, the usual choice is a marketplace freelancer at one end and an agency with a minimum retainer at the other. There is a middle: a senior specialist, a lean scope and a fee that makes sense for the spend.",
 "service_name": "Small business PPC management",
 "body": """

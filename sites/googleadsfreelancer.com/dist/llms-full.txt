@@ -216,7 +216,7 @@ For Trutek, a Brazilian truck parts company, the Google Ads account I have run s
 
 **What does a PPC consultant charge?** Either a fixed price for a defined piece of work, such as an audit or a rebuild, or a flat monthly retainer for ongoing management. I do not charge a percentage of ad spend. Fees are quoted once I know the account size and platforms, usually from the form alone; the pricing page explains the models.
 
-**Is a PPC consultant right for a small business?** If the business spends enough for the fee to be a sensible share of the total, yes. Below roughly $3,000 a month, an audit plus a one-off setup that you then run yourself is usually better value than a retainer. The small business page goes into it.
+**Is a PPC consultant right for a small business?** If the business spends enough for the fee to be a sensible share of the total, yes. Below roughly $3,000 a month, an audit plus a one-off setup that you then run yourself is usually better value than a retainer. The page on small business PPC management goes into it.
 
 **Can one consultant really cover Google, Microsoft and Meta?** For a single company, yes, and it is better that way: one measurement layer and one person deciding where the next dollar goes. What one person cannot do is produce creative at agency volume, so for Meta-heavy brands I work alongside your designer or a creative studio rather than replacing them.
 
@@ -1016,10 +1016,10 @@ Ecommerce accounts benefit more than most from a fixed-price audit before anythi
 
 ---
 
-## Google Ads for Small Business | PPC Management Sized to the Budget
+## Small Business PPC Management | Google Ads Sized to the Budget
 
 URL: https://googleadsfreelancer.com/small-business-ppc-management/
-Description: Google Ads for small business: what the budget buys, when it is not worth it, and a fixed-price setup you run yourself, an audit or a lean flat-fee retainer.
+Description: Small business PPC management: what a Google Ads budget buys, when it is not worth it, and how to choose between a setup you run yourself, an audit or ongoing management.
 
 For local and small companies spending a few thousand a month, the usual choice is a marketplace freelancer at one end and an agency with a minimum retainer at the other. There is a middle: a senior specialist, a lean scope and a fee that makes sense for the spend.
 
@@ -1701,7 +1701,7 @@ The order of work I follow in a home services account. The Houston engagement on
 
 ## Who this fits
 
-HVAC, plumbing, electrical, roofing, garage door, pest control, restoration and similar contractors in the US and Canada, from a few trucks to regional multi-location companies, spending roughly $3,000 to $60,000 a month. Lead-generation networks that resell contractor leads are not a fit. For smaller budgets, see Google Ads for small business.
+HVAC, plumbing, electrical, roofing, garage door, pest control, restoration and similar contractors in the US and Canada, from a few trucks to regional multi-location companies, spending roughly $3,000 to $60,000 a month. Lead-generation networks that resell contractor leads are not a fit. For smaller budgets, see small business PPC management.
 
 ### FAQ
 
