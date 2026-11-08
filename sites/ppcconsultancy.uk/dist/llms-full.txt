@@ -2,7 +2,7 @@
 
 > Diego Willian Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. Runs Google, Microsoft and Meta Ads personally, with landing pages and conversion tracking included, for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.
 
-Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-06.
+Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-08.
 
 
 ---
@@ -50,7 +50,7 @@ What carries over to your account is pattern recognition: how a trial-to-paid fu
 - B2B & industrial
 Logos belong to their owners and identify past work, not endorsements.
 
-## What the consultancy covers
+## PPC consulting services: what the consultancy covers
 
 ### PPC management
 
@@ -324,6 +324,8 @@ Written by a consultant, so read it with that in mind. It still names the cases 
 
 If you are in the second group, the audit is the low-risk way to find out. If you are in the first, the Lever Digital guide to UK PPC consultants and agencies is a fair place to start looking.
 
+If a consultant is the right call for your business, this is what the PPC consultancy covers and how an engagement starts.
+
 ### FAQ
 
 **Is a consultant cheaper than an agency?** Usually, for the same account, because there is no account manager, office or margin between you and the work. Senior consultants overlap with small agencies at the top of the range. The cheaper option is a marketplace freelancer, which is a different product.
@@ -335,7 +337,7 @@ If you are in the second group, the audit is the low-risk way to find out. If yo
 
 ---
 
-## PPC Management Pricing UK | What PPC Management Costs, and My Fees
+## PPC Pricing UK | What PPC Management Costs and How Fees Are Set
 
 URL: https://ppcconsultancy.uk/pricing/
 Description: PPC management pricing in the UK: how fees are charged, typical costs by spend band, Google's 2% UK surcharge, and how I price. In pounds, ex VAT.
@@ -650,7 +652,7 @@ You do not need to give access to get a range. Read-only access only comes into 
 
 ---
 
-## PPC Freelancer UK | Senior Freelance PPC Specialist, No Agency Layer
+## PPC Freelancer UK | Freelance PPC Consultant and Specialist
 
 URL: https://ppcconsultancy.uk/ppc-freelancer/
 Description: Hire a senior PPC freelancer for your UK business: Google, Microsoft and Meta Ads run by one specialist, tracking and landing pages included.
@@ -814,7 +816,7 @@ UK and Irish companies spending roughly £2,000 to £60,000 a month, B2B and Saa
 
 ---
 
-## Google Ads Management UK | Senior Specialist, One Person on the Account
+## Google Ads Management UK | Google PPC Management by One Specialist
 
 URL: https://ppcconsultancy.uk/google-ads-management/
 Description: Google Ads management for UK and Irish businesses by a 14-year specialist: Search, Performance Max, tracking and landing pages, flat monthly fee.
@@ -874,7 +876,7 @@ A flat monthly fee, agreed after a fixed-price audit that is credited against th
 
 ---
 
-## PPC Audit UK | Independent Google Ads Account Audit, Fixed Price
+## PPC Audit Services UK | Independent Google Ads Account Audit
 
 URL: https://ppcconsultancy.uk/ppc-audit/
 Description: Independent PPC audit for UK businesses: a fixed-price written review of tracking, wasted spend, structure and landing pages, fixes ranked by impact.
@@ -970,7 +972,7 @@ Free audits are sales documents: they find whatever supports the retainer being 
 
 ---
 
-## B2B PPC Consultant UK | Google Ads for Pipeline, Not Leads
+## B2B PPC Services UK | Google Ads for Pipeline, Not Leads
 
 URL: https://ppcconsultancy.uk/b2b-ppc/
 Description: B2B PPC for UK SaaS and services firms: Google and Microsoft Search run by one senior consultant, with CRM stages fed back to optimise for pipeline.
@@ -1276,10 +1278,10 @@ Fixed price, quoted after a short look at the current setup, scaled by the numbe
 
 ---
 
-## Google Ads Consultant UK | Independent, 14+ Years on the Account
+## Google Ads Consultant UK | Independent Google Ads Consultancy
 
 URL: https://ppcconsultancy.uk/google-ads-consultant/
-Description: Independent Google Ads consultant for UK businesses: reviews, strategy and hands-on fixes from one senior specialist, not an agency team. In pounds.
+Description: Independent Google Ads (formerly AdWords) consultant for UK businesses: reviews, strategy and hands-on fixes from one senior specialist, not an agency team. In pounds.
 
 Consulting for UK businesses that want a senior person to look at the Google Ads account, say what is wrong in writing and fix it, or to stay on as the person running it. One consultant, no handover to a junior.
 
@@ -1297,7 +1299,7 @@ Whether to move to Performance Max, whether to bid on the brand, whether the age
 
 A marketing manager who runs Google Ads among ten other things, and wants a specialist to set the structure, fix the tracking and check the work monthly.
 
-## How the consulting works
+## How the Google Ads consultancy works
 
 - Read-only access first. Google Ads, GA4 and Tag Manager. Nothing is changed until you have the findings and have agreed what to do.
 
@@ -1342,7 +1344,7 @@ The words overlap and UK businesses search for all three. The useful distinction
 
 ---
 
-## Ecommerce PPC UK | Shopping & Performance Max by One Consultant
+## Ecommerce PPC Services UK | Shopping and Performance Max by One Consultant
 
 URL: https://ppcconsultancy.uk/ecommerce-ppc/
 Description: E-commerce PPC for UK online stores: Shopping, Merchant Centre feeds, Performance Max and Meta by one consultant, judged on margin, not platform ROAS.
@@ -1970,7 +1972,7 @@ The full comparison is on PPC agency vs PPC consultant. Engagements start with a
 
 ---
 
-## PPC Consultant Leeds | Independent, No Agency Layer
+## PPC Consultant Leeds | PPC Audit and Management, No Agency Layer
 
 URL: https://ppcconsultancy.uk/ppc-consultant-leeds/
 Description: Independent PPC consultant for Leeds businesses: Google, Microsoft and Meta Ads run by one senior consultant on UK hours. Flat fee.
@@ -2188,6 +2190,8 @@ Not every account needs an audit or a retainer. Sometimes a business needs a sen
 - Written notes within two working days. What was found, what to do, in what order, and what to measure to know it worked. Written so your team or your agency can act on it.
 
 - Credited if it grows. If the consultation becomes a full audit or management within 60 days, the consultation fee is credited against it.
+
+If one session is not enough, the PPC consultancy can take the account on as an ongoing engagement.
 
 ## Consultation, audit or management
 

@@ -22,10 +22,13 @@ def cpc_table(city):
     return f"<table>\n<tr><th>Search</th>{head}</tr>\n{rows}</table>"
 
 
+CITY_TITLE = {"Leeds": "PPC Consultant Leeds | PPC Audit and Management, No Agency Layer"}  # 8 Nov 2026: Leeds is shown for audit and management searches
+
+
 def city_page(slug, city, kicker_city, intro, sectors, cpc_comment, faq_extra, local_note):
     return {
         "slug": slug, "short": f"PPC consultant, {city}", "blurb": f"For {city} businesses, delivered remotely on UK hours.",
-        "title": f"PPC Consultant {city} | Independent, No Agency Layer",
+        "title": CITY_TITLE.get(city, f"PPC Consultant {city} | Independent, No Agency Layer"),
         "meta": f"Independent PPC consultant for {city} businesses: Google, Microsoft and Meta Ads run by one senior consultant on UK hours. Flat fee.",
         "kicker": f"PPC consultant {kicker_city}",
         "h1": f"PPC consultant for {city} businesses, working remotely on your hours",
@@ -96,8 +99,8 @@ PAGES = [
 # ---------------------------------------------------------------- Google Ads consultant
 {
 "slug": "google-ads-consultant", "short": "Google Ads consultant", "blurb": "Strategy, a second opinion or a full review of the account, from the person who would run it.",
-"title": "Google Ads Consultant UK | Independent, 14+ Years on the Account",
-"meta": "Independent Google Ads consultant for UK businesses: reviews, strategy and hands-on fixes from one senior specialist, not an agency team. In pounds.",
+"title": "Google Ads Consultant UK | Independent Google Ads Consultancy",
+"meta": "Independent Google Ads (formerly AdWords) consultant for UK businesses: reviews, strategy and hands-on fixes from one senior specialist, not an agency team. In pounds.",
 "kicker": "Google Ads consultant",
 "h1": "A Google Ads consultant who has run accounts for 14+ years, hired directly instead of through an agency",
 "lead": "Consulting for UK businesses that want a senior person to look at the Google Ads account, say what is wrong in writing and fix it, or to stay on as the person running it. One consultant, no handover to a junior.",
@@ -113,7 +116,7 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
-<h2>How the consulting works</h2>
+<h2>How the Google Ads consultancy works</h2>
 <ol class="steps">
 <li><div><strong>Read-only access first.</strong> Google Ads, GA4 and Tag Manager. Nothing is changed until you have the findings and have agreed what to do.</div></li>
 <li><div><strong>A written review.</strong> Findings ranked by financial impact: measurement, search terms, structure, automation, adverts and landing pages. Each with the fix, who should do it and how to confirm it worked. This is the <a href="/ppc-audit/">PPC audit</a>, priced fixed and in advance.</div></li>
@@ -153,7 +156,7 @@ PAGES = [
 # ---------------------------------------------------------------- E-commerce PPC
 {
 "slug": "ecommerce-ppc", "short": "E-commerce PPC", "blurb": "Shopping, Performance Max and Meta for online stores, measured on margin and new customers.",
-"title": "Ecommerce PPC UK | Shopping & Performance Max by One Consultant",
+"title": "Ecommerce PPC Services UK | Shopping and Performance Max by One Consultant",
 "meta": "E-commerce PPC for UK online stores: Shopping, Merchant Centre feeds, Performance Max and Meta by one consultant, judged on margin, not platform ROAS.",
 "kicker": "E-commerce PPC",
 "h1": "E-commerce PPC that reports margin and new customers, not the ROAS the platform awards itself",
@@ -628,6 +631,7 @@ city_page(
 <li><div><strong>Written notes within two working days.</strong> What was found, what to do, in what order, and what to measure to know it worked. Written so your team or your agency can act on it.</div></li>
 <li><div><strong>Credited if it grows.</strong> If the consultation becomes a <a href="/ppc-audit/">full audit</a> or <a href="/ppc-management/">management</a> within 60 days, the consultation fee is credited against it.</div></li>
 </ol>
+<p>If one session is not enough, the <a href="/">PPC consultancy</a> can take the account on as an ongoing engagement.</p>
 </div></section>
 
 <section><div class="wrap">

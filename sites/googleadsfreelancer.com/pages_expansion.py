@@ -293,7 +293,7 @@ PAGES = [
 # ---------------------------------------------------------------- Home services
 {
 "slug": "home-services-ppc", "short": "Home services PPC", "blurb": "HVAC, plumbing, roofing, electrical: Google Ads built around booked jobs, with a published case.",
-"title": "Home Services PPC | Google Ads for HVAC, Plumbing & Contractors",
+"title": "Home Services PPC | PPC for Home Services Companies, Measured in Booked Jobs",
 "meta": "Home services PPC: Google Ads and Local Services Ads for HVAC, plumbing, roofing and electrical, measured in booked jobs, by a consultant who has run HVAC and plumbing campaigns in Houston.",
 "kicker": "Home services PPC",
 "h1": "Home services PPC measured in booked jobs, with a published HVAC and plumbing case to show the method",

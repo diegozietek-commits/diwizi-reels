@@ -290,7 +290,7 @@ TODAY = date.today().isoformat()
 PHOTO = os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "diego.jpg"))
 
 PROOF_DEFAULT = [("14+", "years in paid media"), ("1", "person on your account"), ("Flat fee", "never a % of ad spend"), ("Your", "accounts, tags and pages stay with you")]
-PROOF_GOOGLE = [("14+", "years in paid media"), ("~260", "contact conversions, Trutek, since 2020"), ("651", "quote requests in a month, health plan reseller"), ("Flat fee", "never a % of ad spend")]
+PROOF_GOOGLE = [("14+", "years in paid media"), ("651", "quote requests in a month, health plan reseller"), ("1", "senior person on the account"), ("Shell", "Pontomais and TIM, among the brands worked on")]
 PROOF_BY_SLUG = {
     "index": PROOF_GOOGLE, "google-ads-management": PROOF_GOOGLE, "freelance-ppc-consultant": PROOF_GOOGLE,
     "small-business-ppc-management": PROOF_GOOGLE, "home-services-ppc": PROOF_GOOGLE, "ppc-consultant-houston": PROOF_GOOGLE, "results": None, "google-ads-consultant": [("14+", "years in paid media"), ("Read-only", "access is all a review needs"), ("Written", "findings, ranked by impact"), ("Hourly or fixed", "never a % of ad spend")],
@@ -588,7 +588,7 @@ def footer_html():
     )
     return (
         '<footer><div class="wrap"><div class="grid">' + "".join(groups) + "</div>"
-        f'<div class="fine">{BRAND} is the personal practice of {NAME}, independent paid media consultant '
+        f'<div class="fine">{BRAND} is the personal practice of {NAME}, independent PPC consultant '
         f'operating as Diwizi. Remote, in English, for businesses in the US, Canada and Europe, and for companies from any '
         f'country that work in English. UK and Ireland: ppcconsultancy.uk. Google Ads, Meta Ads, LinkedIn Ads and Microsoft Advertising are trademarks of their '
         f'respective owners; this site is not affiliated with or endorsed by Google, Meta, Microsoft or LinkedIn. '
@@ -878,7 +878,7 @@ def render(p):
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(p['title'])}">
 <meta property="og:description" content="{esc(p['meta'])}"><meta property="og:url" content="{url}">
 <meta property="og:site_name" content="{BRAND}">
-<meta property="og:image" content="{SITE}/{OG_IMAGE}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{BRAND}: {NAME}, independent paid media consultant">
+<meta property="og:image" content="{SITE}/{OG_IMAGE}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{BRAND}: {NAME}, independent PPC consultant">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(p['title'])}"><meta name="twitter:description" content="{esc(p['meta'])}"><meta name="twitter:image" content="{SITE}/{OG_IMAGE}">
 <meta name="robots" content="{'noindex,follow' if p.get('noindex') else 'index,follow,max-snippet:-1,max-image-preview:large'}">
 <link rel="icon" href="/favicon.ico" sizes="48x48">

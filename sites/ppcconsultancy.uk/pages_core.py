@@ -165,7 +165,7 @@ PAGES = [
 {{brands}}
 
 <section id="services"><div class="wrap">
-<h2>What the consultancy covers</h2>
+<h2>PPC consulting services: what the consultancy covers</h2>
 <div class="cols">
 <div class="card"><h3><a href="/ppc-management/">PPC management</a></h3><p>Google, Microsoft and Meta Ads run as one programme with one set of numbers, landing pages and tracking included.</p><p class="price"><b>Flat monthly fee</b> · sized to the work, never to your spend · month to month</p></div>
 <div class="card"><h3><a href="/ppc-audit/">PPC audit</a></h3><p>An independent, paid review of your accounts, with every fix put in order of what it is costing you. The report is yours to keep and act on, with or without me.</p><p class="price"><b>One fixed fee</b> · agreed before work starts · deducted from month one if you continue</p></div>
@@ -357,6 +357,7 @@ PAGES = [
 <li>Owners who want to speak to the person doing the work, and want the fee to reflect that there is no office and no margin stack.</li>
 </ul>
 <p>If you are in the second group, the <a href="/ppc-audit/">audit</a> is the low-risk way to find out. If you are in the first, the <a href="https://www.leverdigital.co.uk/guides/best-ppc-consultants-uk" rel="noopener">Lever Digital guide to UK PPC consultants and agencies</a> is a fair place to start looking.</p>
+<p>If a consultant is the right call for your business, this is what the <a href="/">PPC consultancy</a> covers and how an engagement starts.</p>
 </div></section>
 """,
 "faq": [
@@ -371,7 +372,7 @@ PAGES = [
 "slug": 'pricing',
 "short": 'Pricing',
 "blurb": 'How UK PPC work is charged, what it typically costs, and my fees.',
-"title": 'PPC Management Pricing UK | What PPC Management Costs, and My Fees',
+"title": 'PPC Pricing UK | What PPC Management Costs and How Fees Are Set',
 "meta": "PPC management pricing in the UK: how fees are charged, typical costs by spend band, Google's 2% UK surcharge, and how I price. In pounds, ex VAT.",
 "kicker": 'Pricing',
 "h1": 'PPC management pricing in the UK: what it costs and how I charge',

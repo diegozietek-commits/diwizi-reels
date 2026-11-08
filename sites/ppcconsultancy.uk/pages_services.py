@@ -5,7 +5,7 @@ PAGES = [
 "slug": 'ppc-freelancer',
 "short": 'PPC freelancer',
 "blurb": 'A senior freelance PPC specialist for UK businesses, hired directly.',
-"title": 'PPC Freelancer UK | Senior Freelance PPC Specialist, No Agency Layer',
+"title": 'PPC Freelancer UK | Freelance PPC Consultant and Specialist',
 "meta": 'Hire a senior PPC freelancer for your UK business: Google, Microsoft and Meta Ads run by one specialist, tracking and landing pages included.',
 "kicker": 'PPC freelancer',
 "h1": 'A senior PPC freelancer for UK businesses, hired directly rather than through a marketplace',
@@ -147,7 +147,7 @@ PAGES = [
 
 {
 "slug": "google-ads-management", "short": "Google Ads management", "blurb": "Search, Performance Max and YouTube for lead generation, run by a senior specialist.",
-"title": "Google Ads Management UK | Senior Specialist, One Person on the Account",
+"title": "Google Ads Management UK | Google PPC Management by One Specialist",
 "meta": 'Google Ads management for UK and Irish businesses by a 14-year specialist: Search, Performance Max, tracking and landing pages, flat monthly fee.',
 "kicker": "Google Ads management",
 "h1": "Google Ads management by a senior specialist, not a team you never meet",
@@ -197,7 +197,7 @@ PAGES = [
 
 {
 "slug": "ppc-audit", "short": "PPC audit", "blurb": "Fixed-price account audit with fixes ranked by financial impact. Yours to keep.",
-"title": "PPC Audit UK | Independent Google Ads Account Audit, Fixed Price",
+"title": "PPC Audit Services UK | Independent Google Ads Account Audit",
 "meta": 'Independent PPC audit for UK businesses: a fixed-price written review of tracking, wasted spend, structure and landing pages, fixes ranked by impact.',
 "kicker": "PPC audit",
 "h1": "A PPC audit that tells you what is wrong, in what order to fix it, and what it is costing you",
@@ -278,7 +278,7 @@ PAGES = [
 
 {
 "slug": "b2b-ppc", "short": "B2B PPC", "blurb": "Search for pipeline, with CRM stages fed back to the platforms.",
-"title": "B2B PPC Consultant UK | Google Ads for Pipeline, Not Leads",
+"title": "B2B PPC Services UK | Google Ads for Pipeline, Not Leads",
 "meta": 'B2B PPC for UK SaaS and services firms: Google and Microsoft Search run by one senior consultant, with CRM stages fed back to optimise for pipeline.',
 "kicker": "B2B PPC",
 "h1": "B2B PPC that reports pipeline, because leads are where B2B budgets go to die",
