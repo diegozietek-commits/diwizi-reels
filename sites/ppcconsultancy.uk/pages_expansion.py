@@ -468,8 +468,8 @@ PAGES = [
 # ---------------------------------------------------------------- Healthcare
 {
 "slug": "healthcare-ppc", "short": "Healthcare PPC", "blurb": "Private clinics, dental and healthcare brands: enquiries that become appointments, within Google's health policies.",
-"title": "Healthcare PPC UK | Google Ads for Private Clinics and Health Brands",
-"meta": "Healthcare PPC for UK private clinics, dental practices and health brands: Google and Meta Ads measured in booked appointments, within health policies.",
+"title": "Healthcare PPC and Digital Marketing UK | Clinics and Health Brands",
+"meta": "Healthcare PPC and paid digital marketing for UK private clinics, dental practices and health brands, by one consultant instead of a healthcare marketing agency.",
 "kicker": "Healthcare PPC",
 "h1": "Healthcare PPC measured in booked appointments, run inside the rules the platforms apply to health advertisers",
 "lead": "Private healthcare is a crowded UK auction with its own constraints: restricted remarketing, certification for some categories, claims the ASA and the CAP Code do not allow, and patients who research for weeks before booking. The accounts that work are the ones where the measurement reaches the appointment book and the campaigns respect the research journey instead of paying for it twice.",
@@ -497,14 +497,35 @@ PAGES = [
 </div></section>
 
 <section><div class="wrap">
+<h2>Looking for a healthcare digital marketing agency?</h2>
+<p>Clinics and health brands that search for a healthcare digital marketing agency usually want one of two things: more patients from the adverts they already pay for, or a plan for where to advertise at all. Both are covered here for the paid side of digital marketing: Google Ads, Microsoft Advertising and Meta, the treatment pages the adverts lead to, and the measurement back to the appointment book.</p>
+<p>The difference from an agency is who does the work. There is no account team. The consultant who reads your account is the one who writes the adverts, builds the pages and reports each month. What is left to others is said plainly: search engine optimisation, organic social media and PR are not part of this practice, and a group that needs all of them under one roof is better served by a full-service healthcare marketing agency.</p>
+</div></section>
+
+<section><div class="wrap">
 <h2>Who this fits</h2>
 <p>UK private clinics and groups, dental practices, physiotherapy and diagnostics providers, aesthetics clinics working within the rules, and health brands selling direct. Typically £2,000 to £40,000 a month across Google and Meta. Past roles include senior in-house paid media work in healthcare and a freelance role with a US pharmaceutical agency; no patient-facing UK case is published on this site, and none will be invented.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Healthcare marketing research and guides from Diwizi</h2>
+<p>Diwizi is the same practice organised by sector, and it publishes the longer research. For healthcare:</p>
+<div class="cols">
+<div class="card"><h3><a href="https://diwizi.com/research/healthcare/" rel="noopener">The State of Healthcare Marketing 2027</a></h3><p>A free Diwizi Research report on how people find care, how the pandemic rerouted it and how AI is entering discovery, diagnosis and the hospital ward.</p></div>
+<div class="card"><h3><a href="https://diwizi.com/blog/healthcare-advertising-guide.html" rel="noopener">Why healthcare ad costs run high and what policy changes</a></h3><p>Google Ads for hospitals, clinics and B2B pharma, with the compliance limits and benchmark data from the US, the UK and Brazil.</p></div>
+<div class="card"><h3><a href="https://diwizi.com/medical-practice-marketing.html" rel="noopener">Medical practice marketing</a></h3><p>New patient acquisition sized to what the practice can actually see in a week.</p></div>
+<div class="card"><h3><a href="https://diwizi.com/dental-ppc-services.html" rel="noopener">Google Ads for dentists</a></h3><p>High-value treatments, call tracking and the real cost of acquiring a patient.</p></div>
+<div class="card"><h3><a href="https://diwizi.com/b2b-healthcare-marketing.html" rel="noopener">B2B healthcare marketing</a></h3><p>For medtech, health software and companies selling into hospitals and health systems.</p></div>
+<div class="card"><h3><a href="https://diwizi.com/hospital-marketing.html" rel="noopener">Hospital marketing</a></h3><p>Paid media organised by service line rather than by institution.</p></div>
+</div>
+<p>Most of this material is written for an international readership and leans on US examples. For a UK clinic, the rules described on this page are the ones that apply: the CAP Code, the MHRA and the health policies of Google and Meta.</p>
 </div></section>
 """,
 "faq": [
 ("Can you run Google Ads for a private clinic given the health policies?", "Yes. The restrictions remove some tools (condition-based remarketing, some audience features) and require certification for certain categories. The account is built to work within that, and the certification process is handled with you where it applies."),
 ("Can you connect Google Ads to our booking system?", "Usually, through an offline conversion import: Dentally, Cliniko, Semble and most practice systems can export which enquiries booked and attended, without sending any clinical data to Google. Where there is no export, reception outcomes from call tracking do most of the job."),
 ("What about GDPR and patient data?", "No health data goes to the ad platforms. Conversions are sent as outcomes (booked, attended) with hashed contact data where enhanced conversions are used, under Consent Mode v2, and the setup is documented for your data protection lead."),
+("Are you a healthcare digital marketing agency?", "No. This is an independent practice with one senior consultant, covering the paid side of healthcare digital marketing: Google, Microsoft and Meta Ads, treatment landing pages and measurement to the booked appointment. Search engine optimisation, organic social media and PR are left to others."),
 ("Do you work with dental practices?", "Yes. Dental is one of the more competitive local health auctions in the UK, and the structure by treatment (implants, Invisalign, emergency, general) with the practice management system feeding back attended appointments is the pattern that works."),
 ("How much does healthcare PPC management cost?", "A flat monthly fee set from the scope: treatments, locations, platforms and how much landing page and tracking work is included. Never a percentage of spend. Quoted in pounds, ex VAT, by email from the form. See <a href=\"/pricing/\">pricing</a>."),
 ],

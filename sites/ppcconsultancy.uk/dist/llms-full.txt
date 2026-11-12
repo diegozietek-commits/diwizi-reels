@@ -2,7 +2,7 @@
 
 > Diego Willian Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. Runs Google, Microsoft and Meta Ads personally, with landing pages and conversion tracking included, for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.
 
-Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-08.
+Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-12.
 
 
 ---
@@ -78,6 +78,22 @@ Fixed fee · depends on platforms and CRM
 
 Quotes come in pounds, ex VAT, or in euros for Irish businesses, from three details on the form: roughly what you spend, on which platforms, and what is going wrong. Your media is paid straight to Google, Microsoft or Meta and never forms part of my fee. The pricing page sets out every model.
 
+## Performance marketing, without the performance marketing agency
+
+If you came looking for a performance marketing agency, this is the same work without the account team: paid search, shopping and paid social judged on enquiries, sales and pipeline, run by the consultant you speak to.
+
+### Performance marketing
+
+What it covers, the numbers it is judged on, and when an agency is the better choice.
+
+### Lead generation
+
+Enquiries that arrive on your own website from paid search, instead of leads bought from a list.
+
+### Marketing consultant
+
+A digital marketing consultant for the paid side: what is in scope, and what is left to others.
+
 ## Who this is for, and who it is not
 
 ### A good fit
@@ -114,7 +130,7 @@ Past roles include senior in-house paid media work in healthcare and a freelance
 
 ### Home and trade services
 
-Emergency versus planned work, call tracking that separates a booked job from a ring, and bidding by postcode and hour. The Houston case above is this pattern.
+Emergency versus planned work, call tracking that separates a booked job from a ring, and bidding by postcode and hour. The Houston engagement on the results page is this pattern.
 
 ### Online retail
 
@@ -1680,10 +1696,10 @@ UK firms from a few fee earners to mid-size regional practices, spending roughly
 
 ---
 
-## Healthcare PPC UK | Google Ads for Private Clinics and Health Brands
+## Healthcare PPC and Digital Marketing UK | Clinics and Health Brands
 
 URL: https://ppcconsultancy.uk/healthcare-ppc/
-Description: Healthcare PPC for UK private clinics, dental practices and health brands: Google and Meta Ads measured in booked appointments, within health policies.
+Description: Healthcare PPC and paid digital marketing for UK private clinics, dental practices and health brands, by one consultant instead of a healthcare marketing agency.
 
 Private healthcare is a crowded UK auction with its own constraints: restricted remarketing, certification for some categories, claims the ASA and the CAP Code do not allow, and patients who research for weeks before booking. The accounts that work are the ones where the measurement reaches the appointment book and the campaigns respect the research journey instead of paying for it twice.
 
@@ -1709,9 +1725,45 @@ Private healthcare is a crowded UK auction with its own constraints: restricted 
 
 - Reporting in appointments. Cost per booked and attended appointment by treatment, alongside the platform numbers, in pounds.
 
+## Looking for a healthcare digital marketing agency?
+
+Clinics and health brands that search for a healthcare digital marketing agency usually want one of two things: more patients from the adverts they already pay for, or a plan for where to advertise at all. Both are covered here for the paid side of digital marketing: Google Ads, Microsoft Advertising and Meta, the treatment pages the adverts lead to, and the measurement back to the appointment book.
+
+The difference from an agency is who does the work. There is no account team. The consultant who reads your account is the one who writes the adverts, builds the pages and reports each month. What is left to others is said plainly: search engine optimisation, organic social media and PR are not part of this practice, and a group that needs all of them under one roof is better served by a full-service healthcare marketing agency.
+
 ## Who this fits
 
 UK private clinics and groups, dental practices, physiotherapy and diagnostics providers, aesthetics clinics working within the rules, and health brands selling direct. Typically £2,000 to £40,000 a month across Google and Meta. Past roles include senior in-house paid media work in healthcare and a freelance role with a US pharmaceutical agency; no patient-facing UK case is published on this site, and none will be invented.
+
+## Healthcare marketing research and guides from Diwizi
+
+Diwizi is the same practice organised by sector, and it publishes the longer research. For healthcare:
+
+### The State of Healthcare Marketing 2027
+
+A free Diwizi Research report on how people find care, how the pandemic rerouted it and how AI is entering discovery, diagnosis and the hospital ward.
+
+### Why healthcare ad costs run high and what policy changes
+
+Google Ads for hospitals, clinics and B2B pharma, with the compliance limits and benchmark data from the US, the UK and Brazil.
+
+### Medical practice marketing
+
+New patient acquisition sized to what the practice can actually see in a week.
+
+### Google Ads for dentists
+
+High-value treatments, call tracking and the real cost of acquiring a patient.
+
+### B2B healthcare marketing
+
+For medtech, health software and companies selling into hospitals and health systems.
+
+### Hospital marketing
+
+Paid media organised by service line rather than by institution.
+
+Most of this material is written for an international readership and leans on US examples. For a UK clinic, the rules described on this page are the ones that apply: the CAP Code, the MHRA and the health policies of Google and Meta.
 
 ### FAQ
 
@@ -1720,6 +1772,8 @@ UK private clinics and groups, dental practices, physiotherapy and diagnostics p
 **Can you connect Google Ads to our booking system?** Usually, through an offline conversion import: Dentally, Cliniko, Semble and most practice systems can export which enquiries booked and attended, without sending any clinical data to Google. Where there is no export, reception outcomes from call tracking do most of the job.
 
 **What about GDPR and patient data?** No health data goes to the ad platforms. Conversions are sent as outcomes (booked, attended) with hashed contact data where enhanced conversions are used, under Consent Mode v2, and the setup is documented for your data protection lead.
+
+**Are you a healthcare digital marketing agency?** No. This is an independent practice with one senior consultant, covering the paid side of healthcare digital marketing: Google, Microsoft and Meta Ads, treatment landing pages and measurement to the booked appointment. Search engine optimisation, organic social media and PR are left to others.
 
 **Do you work with dental practices?** Yes. Dental is one of the more competitive local health auctions in the UK, and the structure by treatment (implants, Invisalign, emergency, general) with the practice management system feeding back attended appointments is the pattern that works.
 
@@ -2228,6 +2282,239 @@ It is not a sales call dressed as advice: the fee is the same whether or not you
 
 ---
 
+## Performance Marketing Agency Alternative UK | One Senior Consultant
+
+URL: https://ppcconsultancy.uk/performance-marketing/
+Description: Looking for a performance marketing agency in the UK? Paid search, shopping and paid social judged on enquiries and sales, run by one senior consultant.
+
+Performance marketing is the part of marketing you can hold to a number: what an enquiry, a sale or a new customer cost, and whether that was worth paying. UK businesses usually look for a performance marketing agency to run it. This is the same work done by one consultant with 14+ years on the account, across Google, Microsoft and Meta Ads, with the landing pages and the measurement handled by the same person.
+
+## What performance marketing means when you are the one paying
+
+The label covers any advertising that is bought and judged on a measurable outcome rather than on reach. In practice, for most UK businesses, it comes down to four things done together.
+
+### Paid search
+
+Google Ads and Microsoft Advertising on the searches people make when they are ready to buy or enquire. Where most performance budgets should start. Google Ads → Microsoft Ads →
+
+### Shopping and Performance Max
+
+Product listings and Google's automated campaigns for online stores, judged on margin and new customers instead of on the platform's own revenue figure. E-commerce PPC →
+
+### Paid social
+
+Meta Ads on Facebook and Instagram for demand that search cannot reach, with remarketing and creative tested against a control. Facebook Ads →
+
+### Measurement and pages
+
+Conversion tracking that reaches the enquiry or the order, and a landing page for each intent. Without these two, the rest is only spend. Tracking → Landing pages →
+
+## The numbers that make it performance
+
+- Cost per qualified enquiry, not cost per lead. A form filled in by a student and one filled in by a buyer are the same lead on a dashboard. The report separates them, using what your sales team or your CRM says happened next.
+
+- Return measured on margin. For a store, revenue reported by the ad platform is reconciled against the orders in the store itself, with returns and product margin taken into account.
+
+- New customers shown apart from existing ones. Brand searches and remarketing flatter every account. They are reported in their own line so the cost of winning a new customer is visible.
+
+- Payback over the real sales cycle. A B2B enquiry that closes in ninety days is judged over ninety days, by cohort, not against the month it arrived in.
+
+These numbers depend on measurement that works under UK consent rules: Consent Mode v2, enhanced conversions and, where there is a sales team, offline conversions imported from the CRM. That work is part of the engagement, not an extra.
+
+## Performance marketing agency or independent consultant
+
+| | Independent consultant | Performance marketing agency |
+
+| Who works on the account | The person you first spoke to, every week | An account team, usually led day to day by someone other than the person who pitched |
+
+| Channels | Google, Microsoft and Meta Ads, with tracking and landing pages | Often wider: affiliates, influencers, programmatic display, marketplaces |
+
+| What is reported | Cost per qualified enquiry or sale, reconciled to your CRM or your orders | Varies. Ask whether the figures are the platform's or yours |
+
+| Suits | One business spending roughly £2,000 to £60,000 a month on paid media | Many markets or languages, heavy creative production, or channels listed above |
+
+If your plan depends on an affiliate programme, influencer work or programmatic buying at scale, an agency is the right choice and I will say so on the first call. The longer comparison is on PPC agency vs PPC consultant.
+
+## Published results
+
+### Health plan reseller, Brazil
+
+In October 2019, on almost the same spend as the month before, Google Ads produced 651 quote requests against 566, and the cost per request fell. A quote request is a form submitted, not a plan sold.
+
+### Trutek, truck parts, Brazil
+
+About 260 attributed contact conversions from 5,707 clicks in the account's history, on Google Ads Search, since 2020. A conversion here is a contact action, not a sale.
+
+Neither is British yet. Each case, with its limits and what carries over to a UK account, is on the results page.
+
+## How it starts
+
+- You send the form. Roughly what you spend, on which platforms and what is going wrong. I reply personally, saying whether I can help and where I would look first.
+
+- A written audit. Read-only access is enough. Findings come in order of what they cost you: tracking first, then wasted spend, then structure. See the PPC audit.
+
+- Ongoing management, if the audit shows there is enough to gain. The accounts, tags and pages stay in your name throughout. See PPC management and how fees are set.
+
+### FAQ
+
+**What is a performance marketing agency?** An agency that runs advertising bought and judged on measurable outcomes, such as enquiries, sales or new customers, rather than on reach or awareness. The channels are usually paid search, shopping, paid social and sometimes affiliates or programmatic display.
+
+**Are you a performance marketing agency?** No. This is an independent practice with one senior consultant. The work is the same as the paid search, shopping and paid social side of a performance marketing agency, done by the person you speak to, without an account team in between.
+
+**Which channels do you cover?** Google Ads (Search, Shopping, Performance Max, YouTube and Demand Gen), Microsoft Advertising and Meta Ads, with GA4, Tag Manager, Consent Mode v2 and the landing pages that sit under them.
+
+**Do you run affiliate, influencer or programmatic campaigns?** No. Those are separate disciplines, and a business that needs them at scale is better served by an agency or a specialist in that channel. I will tell you so before any work starts.
+
+**How is performance measured?** On what your business counts: qualified enquiries, booked appointments, orders at their real margin, or pipeline from the CRM. Platform figures are shown next to those numbers, never in place of them.
+
+
+---
+
+## Lead Generation UK | B2B Lead Generation Through Paid Search
+
+URL: https://ppcconsultancy.uk/lead-generation/
+Description: Lead generation for UK businesses through Google and Microsoft Ads: enquiries on your own website, tracked to the sale. An alternative to a lead generation agency.
+
+A UK business looking for a lead generation agency or company usually finds two very different things under the same name. One sells you leads, often the same lead sold to several buyers. The other builds a flow of enquiries that arrive on your own website and belong to you. This page is about the second, run through Google, Microsoft and Meta Ads by one consultant.
+
+## Two things sold as lead generation in the UK
+
+| | Leads bought from a supplier | Enquiries from your own campaigns |
+
+| Where the lead comes from | The supplier's forms, lists or call centre | A person who searched, saw your advert and filled in your form or rang your number |
+
+| Who else gets it | Often several buyers, unless you pay for exclusivity | Only you |
+
+| What you learn | Little. The supplier keeps the data on what worked | Which searches, adverts and pages bring customers, in your own accounts |
+
+| What stays when you stop | Nothing | The accounts, the tracking, the landing pages and the history |
+
+| Contact rules | You must be able to show the people on a bought list agreed to be contacted | The person asked you to get in touch about that request |
+
+The last row matters more than most buyers realise. The government's guidance on direct marketing says that if you buy or rent a mailing list you should ask the supplier whether you have the right to use it for email marketing, and that it is illegal to phone someone registered with the Telephone Preference Service without their permission. An enquiry that came to you directly does not carry that risk.
+
+## How lead generation through paid search is run here
+
+- Search first. Google Ads and Microsoft Advertising on the searches that name the service, the problem or a competitor. Research searches and job seekers are excluded from the start.
+
+- A page for each offer. Not the homepage. One page for the quote, one for the demo, one for the callback, each written to the advert that sends the visitor. See landing pages.
+
+- Every enquiry counted, calls included. Forms, phone calls and bookings tracked under Consent Mode v2, so the cost per enquiry is a real figure. See conversion tracking.
+
+- The outcome fed back. Which enquiries became quotes, opportunities and customers goes back to the ad platforms from your CRM, so the bidding learns from customers and not from form fills.
+
+- Reporting in qualified enquiries. The monthly report shows the cost of an enquiry your sales team accepted, by campaign, next to the platform numbers.
+
+## What an enquiry should cost
+
+The arithmetic is short. The cost of an enquiry is the cost of a click divided by the share of visitors who enquire. If a click costs £6 and one visitor in twenty enquires, an enquiry costs £120. Halve the click price or double the share who enquire and the result is the same, which is why the landing page deserves as much attention as the bids.
+
+Whether £120 is cheap depends on what a customer is worth to you and how many enquiries become customers. Those two numbers come from your business, not from the ad account. Click prices by sector, read from Google's own planning data for the United Kingdom, are in the guide to what Google Ads costs in the UK.
+
+## A published example
+
+For a reseller of health plans in Brazil, every campaign had one goal: a quote request submitted on the website. In October 2019, on almost the same spend as September, Google Ads produced 651 quote requests against 566, and the cost per request fell from R$ 16.42 to R$ 14.31.
+
+Two months side by side from the report prepared at the time, not a trend. A quote request is a form submitted, not a plan sold. The case and its limits are on the results page.
+
+## Who this fits
+
+UK and Irish businesses that sell through enquiries, quotes, demos or booked calls: B2B and software companies, professional services, healthcare providers, and home and trade services. For a sales cycle measured in months, see B2B PPC and SaaS PPC. For regulated sectors, see PPC for law firms and healthcare PPC.
+
+It does not fit a business that wants a fixed number of leads delivered each month for a price per lead. That is the bought-lead model, and it is not what is offered here.
+
+### FAQ
+
+**Do you sell leads?** No. I run the advertising, the tracking and the landing pages in your own accounts, and the enquiries arrive on your own website. You are not sharing them with another buyer, and the accounts stay with you if the work stops.
+
+**Is this a lead generation agency?** No. It is an independent practice with one senior consultant. The work covers what a lead generation agency does through paid search and paid social, without an account team between you and the person doing it.
+
+**How does B2B lead generation differ from consumer lead generation?** The sales cycle. A B2B enquiry may take months to become a customer, so the stages recorded in your CRM are sent back to Google and Microsoft, and results are judged by cohort over the real cycle instead of month by month.
+
+**How soon do enquiries arrive?** Search adverts can show as soon as the campaigns are approved. Judging the cost of a qualified enquiry takes longer, because it depends on how long your sales team needs to accept or reject each one.
+
+**Can I add the people who enquire to my marketing list?** An enquiry is a request to be contacted about that matter. Sending marketing emails or texts beyond it is covered by separate rules, which the Information Commissioner's Office sets out in its guidance on electronic mail marketing.
+
+
+---
+
+## Marketing Consultant UK | Digital Marketing Consultant for Paid Media
+
+URL: https://ppcconsultancy.uk/marketing-consultant/
+Description: Independent digital marketing consultant for UK businesses: paid search, paid social, landing pages and measurement by one senior consultant with 14+ years.
+
+Marketing consultant is a wide title. Some plan brands, some write content, some run events. I am Diego Willian Zietek, and for 14+ years my part has been paid media: Google, Microsoft and Meta Ads, the landing pages they send people to and the measurement that shows what the money brought back. If that is the part of your marketing that is costing you and not answering, this is the right page.
+
+## What this marketing consultant does, and what is left to others
+
+### In scope
+
+- Google Ads: Search, Shopping, Performance Max, YouTube and Demand Gen
+
+- Microsoft Advertising and Meta Ads (Facebook and Instagram)
+
+- Landing pages written and built for each advert
+
+- GA4, Tag Manager, Consent Mode v2 and conversions imported from your CRM
+
+- A paid media plan: which channels, in what order and on what budget
+
+- Reviews of work done by your team or your agency
+
+### Out of scope
+
+- Search engine optimisation as an ongoing service
+
+- Organic social media management and content calendars
+
+- Public relations and events
+
+- Email marketing programmes
+If one of these is what your business needs first, I will say so on the first call instead of selling you adverts.
+
+## When the marketing consultant you need is a paid media one
+
+- You pay for adverts and cannot say which enquiries they brought. The reports show clicks and impressions, and the phone rings, but nobody can connect the two.
+
+- The agency report arrives monthly and nothing changes. You want someone independent to read the account and tell you in writing what is wrong. That is the PPC audit.
+
+- You are about to start advertising and do not want to learn on your own budget. A plan first: where to start, what it is likely to cost and what to measure. The guides on how to advertise your business in the UK and what Google Ads costs in the UK are a free starting point.
+
+- Your team runs the accounts and wants a senior second opinion. A working session on a specific question, with a written note afterwards. See PPC consultation.
+
+- You want one person to run it. The same consultant in the account every week, pages and tracking included. See PPC management.
+
+## How the first weeks go
+
+- A read of what exists. Read-only access to the ad accounts and analytics, and a look at the pages the adverts lead to.
+
+- The measurement, before anything else. What counts as an enquiry or a sale, whether it is being counted once, and whether the consent banner is hiding results that did happen.
+
+- A written plan. Which campaigns stay, which stop, what the budget should do and what a realistic cost per enquiry looks like for your sector.
+
+- The work itself. Campaigns rebuilt where needed, a landing page for each main offer, and a report each month written for the person paying.
+
+## Consultant, agency or a marketing hire
+
+A marketing agency gives you a team and a wider range of services, with an account manager between you and the people doing the work. A marketing hire gives you one person on your payroll, who is rarely senior in every channel. An independent consultant gives you one senior person for a defined part of the job. For paid media in a business spending roughly £2,000 to £60,000 a month, that is usually enough, and the comparison is set out on PPC agency vs PPC consultant.
+
+Fees are quoted in pounds, ex VAT, or in euros for Irish businesses, from the form. The pricing page explains how they are set.
+
+### FAQ
+
+**What does a digital marketing consultant do?** It depends on the consultant. The title covers strategy, search engine optimisation, content, social media, email and paid advertising. This practice covers paid advertising on Google, Microsoft and Meta, with the landing pages and the measurement, and says plainly when a business needs something else first.
+
+**Do you do SEO or social media management?** No. Landing pages are built to convert paid traffic, and the tracking shows what organic search brings, but ongoing search engine optimisation and organic social media management are left to specialists in those fields.
+
+**Do I need a marketing consultant or a PPC consultant?** If the question is which channels the business should use at all, a general marketing consultant is the right first call. If you already advertise, or have decided to, and the question is how to make that spend answer, a paid media consultant is the more direct route.
+
+**Can you work alongside our marketing manager or agency?** Yes. Common arrangements are an independent audit of the paid accounts, a regular review of the work your team or agency does, or taking on the paid channels while your team keeps the rest.
+
+**Where are you based?** In Curitiba, Brazil, three to four hours behind London. Most of the work is done in writing, calls are booked ahead and usually held in the UK afternoon, and everything is in English.
+
+
+---
+
 ## Google Ads Problems Explained for UK Business Owners | Guides
 
 URL: https://ppcconsultancy.uk/guides/
@@ -2237,7 +2524,7 @@ Each guide takes one thing a UK business owner sees in a Google Ads account, quo
 
 ## Pick the message you are looking at
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.
+Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.How to advertise your businessWhat is free, which paid adverts fit which business, and the UK rules every advert, email and cookie banner has to follow.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.
 
 ---
 
@@ -2324,7 +2611,7 @@ PPC Consultancy (Diego Willian Zietek), UK Google Ads advertisers measurement st
 
 ## More guides for when something breaks
 
-Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.All guides
+Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -2465,7 +2752,7 @@ The reverse failure is worse. If the tag counts page views or every form field c
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.All guides
+Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -2478,6 +2765,217 @@ Study: what UK advertisers measureWe read the sites of UK businesses running Goo
 **Do GA4 key events count as Google Ads conversions?** Not automatically. Google describes the chain as Event, then Key Event, then Conversion, and the key event only becomes a Google Ads conversion once the accounts are linked, auto-tagging is on and the key event has been created as a conversion. An account that only measures in GA4 can show conversions there and nothing in Google Ads.
 
 **Why did performance get worse after the conversion tag broke?** Smart Bidding strategies optimise towards the conversions they can see. With none arriving, the strategy keeps bidding on stale data, the campaign can show Misconfigured, and when the goal is corrected the strategy re-enters Learning, which Google says never lasts more than seven days. Fix the tag before touching budgets or targets.
+
+
+---
+
+## How Much Does Google Ads Cost in the UK? 42 Searches Priced
+
+URL: https://ppcconsultancy.uk/guides/google-ads-cost-uk/
+Description: Google Ads cost in the UK: how a click is priced, top of page bids for 42 UK searches from Google's own data, and how a daily budget becomes a monthly bill.
+
+Google Ads has no price list. You set an average daily budget, you pay when someone clicks, and the price of each click is set in an auction that runs every time a person searches. That is why one business pays 20p a click and another pays £50. This guide explains how the price is set, shows what Google's own planning data says about 42 UK searches, and works through how a daily budget turns into the amount on the monthly invoice.
+
+Messages this guide covers: Average daily budget, Actual CPC, Top of page bid (low range), Top of page bid (high range), UK DST Fee.
+
+## How Google sets the price of a click
+
+You tell Google the most you are willing to pay for a click, or let an automated bid strategy decide. What you are charged is usually lower. Google's definition of actual cost per click says it is "the final amount that you're charged for a click", and that "you only pay what's minimally required to clear the Ad Rank thresholds and beat the Ad Rank of the competitor immediately below you".
+
+Ad Rank is what decides whether your advert shows and where. Google's Ad Rank page says the values are "calculated based on several factors, including your competition, the context of the person's search and your ad quality at that moment". The context includes the person's location, the device and the time of the search. So the same keyword does not have one price. It has a different price in Leeds and in London, on a phone and on a desktop, at 9am and at midnight.
+
+Quality matters to the price as well as the bid. Google's Quality Score page describes a score "measured on a scale from 1–10" built from three parts: expected click-through rate, ad relevance and landing page experience. The same page is clear that "Quality Score isn't an input in the ad auction". It is a diagnostic. What enters the auction is the quality of the advert and the page at that moment, and an advert that matches the search and leads to a useful page can win a position for less than a competitor who simply bids more.
+
+## What 42 UK searches cost at the top of the page
+
+Google's Keyword Planner shows two columns for every search: "Top of page bid (low range)" and "Top of page bid (high range)". They are estimates of what it takes to appear at the top of the results, not the price of every click. Google's Keyword Planner page gives the example of looking for "keyword ideas where bids under £1 may be enough to reach the top of the page", and adds that "campaign performance depends on a variety of factors".
+
+The table below holds those two columns for 42 searches, for the whole of the United Kingdom, read from Google Ads keyword planning data on 12 November 2026. The data is supplied in US dollars and has been converted at HMRC's monthly exchange rate for November 2026, which is 1.3396 dollars to the pound. Amounts under £10 are rounded to the nearest 10p and larger amounts to the nearest pound.
+
+| Search | Average monthly searches, UK | Top of page bid, low range | Top of page bid, high range |
+
+| Trades and home services |
+
+| emergency plumber | 9,900 | £5.30 | £28 |
+
+| boiler repair | 4,400 | £3.20 | £13 |
+
+| boiler installation | 4,400 | £5.40 | £17 |
+
+| electrician near me | 74,000 | £1.30 | £7.30 |
+
+| locksmith near me | 74,000 | £5.00 | £21 |
+
+| roofer near me | 33,100 | £3.30 | £15 |
+
+| drain unblocking | 27,100 | £2.70 | £14 |
+
+| pest control | 18,100 | £1.90 | £6.50 |
+
+| skip hire | 49,500 | £0.50 | £2.70 |
+
+| removals company | 4,400 | £5.40 | £10 |
+
+| loft conversion | 12,100 | £1.30 | £5.90 |
+
+| carpet cleaning | 135,000 | £0.40 | £1.90 |
+
+| Legal and financial services |
+
+| conveyancing solicitor | 9,900 | £8.20 | £17 |
+
+| divorce solicitor | 2,400 | £6.90 | £44 |
+
+| personal injury solicitor | 1,900 | £17 | £50 |
+
+| employment solicitor | 1,600 | £3.60 | £15 |
+
+| probate solicitor | 2,400 | £8.60 | £18 |
+
+| accountant near me | 12,100 | £3.90 | £14 |
+
+| mortgage broker | 14,800 | £5.90 | £19 |
+
+| financial adviser | 3,600 | £7.00 | £32 |
+
+| Health and care |
+
+| dentist near me | 246,000 | £1.40 | £5.70 |
+
+| dental implants | 18,100 | £1.50 | £7.00 |
+
+| invisalign | 90,500 | £2.10 | £8.80 |
+
+| private gp | 8,100 | £2.20 | £8.20 |
+
+| physiotherapy near me | 60,500 | £1.00 | £4.50 |
+
+| laser eye surgery | 27,100 | £3.70 | £11 |
+
+| care home | 40,500 | £1.70 | £8.20 |
+
+| Business services and software |
+
+| it support | 6,600 | £8.30 | £38 |
+
+| managed it services | 1,900 | £9.90 | £35 |
+
+| crm software | 8,100 | £3.30 | £23 |
+
+| accounting software | 6,600 | £17 | £90 |
+
+| hr software | 2,400 | £30 | £123 |
+
+| office cleaning | 1,600 | £2.90 | £22 |
+
+| web design | 12,100 | £2.70 | £11 |
+
+| Retail and consumer |
+
+| sofas | 246,000 | £0.60 | £2.00 |
+
+| mattress | 135,000 | £0.90 | £4.10 |
+
+| engagement rings | 201,000 | £0.90 | £2.70 |
+
+| running shoes | 74,000 | £0.20 | £0.60 |
+
+| garden furniture | 201,000 | £0.20 | £1.20 |
+
+| flowers delivery | 135,000 | £1.90 | £3.90 |
+
+| car leasing | 74,000 | £0.50 | £1.70 |
+
+| driving lessons | 27,100 | £0.50 | £1.80 |
+
+Three things stand out. First, the spread is wide: running shoes sits between 20p and 60p, while HR software sits between £30 and £123. Second, the price follows the value of a customer, not the number of searches. Dentist near me has more than a hundred times the searches of personal injury solicitor and a fraction of the price. Third, within one trade the urgent search costs more. Emergency plumber reaches £28 at the high end, boiler repair £13.
+
+These are national figures for a single phrase. A campaign uses many phrases, usually in one area, and the real average will differ. Treat the table as a way to judge the order of magnitude before you spend, not as a quote.
+
+## From a daily budget to a monthly bill
+
+Google works in days. Its average daily budget page describes the budget as "how much you're roughly comfortable spending each day over the course of the month", and warns that "on some days you might not reach your average daily budget, and on others you might exceed it". Two limits apply. On any one day you will not pay more than "two times your average daily budget for most campaigns". In any one month you will not pay more than "30.4 times your average daily budget for most campaigns".
+
+A worked example, using round numbers:
+
+- You want about 10 clicks a day on searches that cost about £5 each. That is an average daily budget of £50.
+
+- The most Google can charge for that campaign in a month is 30.4 times £50, which is £1,520.
+
+- On a busy day the campaign may spend up to £100. On a quiet day it may spend less than £50. The monthly limit still holds.
+
+- For adverts served in the United Kingdom, Google adds a 2% fee on top, which on £1,520 is £30.40.
+
+The 2% is the UK DST Fee. Google's surcharges page says "a 2% UK DST Fee will be added to your next invoice or statement for ads served in the United Kingdom". It is not included in the campaign budget, so a budget of £1,520 produces a document of about £1,550. VAT is a separate matter again, and for a UK business it is normally handled under the reverse charge. Both are explained in the guide to the Google Ads invoice and VAT.
+
+## How many clicks you need is the real question
+
+The price of a click only means something next to what a click produces. The arithmetic is short:
+
+- Cost per enquiry is the cost of a click divided by the share of visitors who enquire. At £5 a click, with one visitor in twenty enquiring, an enquiry costs £100.
+
+- Cost per customer is the cost per enquiry divided by the share of enquiries that become customers. If one enquiry in four becomes a customer, a customer costs £400.
+
+- Whether that is worth it depends on what a customer is worth to you over time, which only your own books can say.
+
+The numbers in that example are illustrations, not benchmarks. The point is that there are three levers, and only the first is the click price. A landing page that turns one visitor in ten into an enquiry halves the cost per customer without touching a bid. That is why conversion tracking comes before any decision on budget: without it, you know what you paid and not what you got.
+
+## What pushes the cost up, and what brings it down
+
+| What you see | What it usually means | What to do |
+
+| Clicks cost more than the table suggests | You are in a city or a niche with more competition than the national figure, or the advert and page are judged less relevant than a competitor's | Check the search terms that triggered the adverts and the Quality Score parts for the main keywords |
+
+| The budget is gone by lunchtime | The daily budget is small next to the click price, so a few clicks use it up | Narrow the area, the hours or the keywords before raising the budget |
+
+| Plenty of clicks, few enquiries | Broad keywords are matching searches that were never going to buy, or the page does not answer the search | Read the guide to Google Ads that are not working |
+
+| The invoice is higher than the campaign spend | The 2% UK DST Fee and the way charges fall across months | Read the guide to the invoice and VAT |
+
+Google's own bid and budget page puts the trade-off plainly: "With higher bids, your campaign is likely to receive more traffic, although you'll likely spend more money."
+
+## What to do today
+
+- Find your own searches in Keyword Planner. It is inside Google Ads under Tools. Set the location to your town or region, not the whole country, and note the two top of page bid columns.
+
+- Decide what a customer is worth. Not the first sale only. What the customer brings over a year or two, at your margin.
+
+- Work backwards to a daily budget. Clicks needed for one enquiry, enquiries needed for one customer, and the click price from step one. Multiply the daily figure by 30.4 for the monthly limit.
+
+- Add 2% for the UK DST Fee. And ask your accountant how the reverse charge applies to you.
+
+- Set up conversion tracking before the first click. So that the first month tells you a cost per enquiry and not only a cost per click.
+
+- Keep the two costs apart. What you pay Google for clicks is one thing. What you pay someone to run the account is another, and it is covered on the pricing page. If you would like the numbers checked before you commit a budget, that is what a PPC consultation is for.
+
+## Official sources used in this guide
+
+- https://support.google.com/google-ads/answer/6297?hl=en-GB
+- https://support.google.com/google-ads/answer/1722122?hl=en-GB
+- https://support.google.com/google-ads/answer/6167118?hl=en-GB
+- https://support.google.com/google-ads/answer/7337243?hl=en-GB
+- https://support.google.com/google-ads/answer/6385083?hl=en-GB
+- https://support.google.com/google-ads/answer/2375454?hl=en-GB
+- https://support.google.com/google-ads/answer/9750227?hl=en-GB
+- https://www.trade-tariff.service.gov.uk/exchange_rates/view/2026-11
+
+## More guides for when something breaks
+
+Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+
+### FAQ
+
+**How much does Google Ads cost in the UK?** There is no fixed price. You set an average daily budget and pay for each click, and the price of a click is set in an auction. In Google's planning data for November 2026, top of page bids for the 42 UK searches in this guide ran from about 20p for running shoes to more than £100 for HR software.
+
+**How much can Google charge me in a month?** Google says you will not pay more than 30.4 times your average daily budget in a month for most campaigns. A budget of £50 a day therefore has a monthly limit of £1,520. For adverts served in the United Kingdom, a 2% UK DST Fee is added on top of that.
+
+**Can Google spend more than my daily budget?** Yes, on a single day. Google's help page says the daily spending limit is two times your average daily budget for most campaigns, and that on other days the campaign may spend less. The monthly limit of 30.4 times the daily budget still applies.
+
+**Why are my clicks more expensive than the Keyword Planner estimate?** The estimate is a range for one phrase across the area you chose. The real price is set in each auction and, in Google's words, depends on your competition, the context of the person's search and your ad quality at that moment. A city, a competitive niche or a weak landing page all raise it.
+
+**Does the cost of Google Ads include VAT?** For a UK billing address, Google Ireland does not add VAT to the invoice, and a VAT registered business accounts for it under the reverse charge. The 2% UK DST Fee is a separate line. Both are explained in the guide to the Google Ads invoice and VAT on this site.
+
+**Is the cost of Google Ads the same as the cost of PPC management?** No. This guide covers what you pay Google for clicks. A fee paid to an agency or a consultant to run the account is a separate cost and is invoiced separately.
 
 
 ---
@@ -2628,7 +3126,7 @@ Google's general policy page says a non-egregious violation comes with a notific
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.All guides
+Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -2761,7 +3259,7 @@ If a question here is specific to your books, the FAQ page covers how fees, spen
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.All guides
+Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -2908,7 +3406,7 @@ What not to do: do not create a duplicate campaign to "restart" it, which resets
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.All guides
+Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -3063,7 +3561,7 @@ Anyone competent can answer these in an afternoon. Anyone who cannot is telling 
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.All guides
+Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 
@@ -3076,6 +3574,127 @@ Study: what UK advertisers measureWe read the sites of UK businesses running Goo
 **Is Google Ads worth it for a small UK business?** It is worth it when the cost of a real enquiry is below what an enquiry is worth to you, measured with tracking that reconciles with your inbox. Most accounts that look unprofitable have never been measured properly, so the honest answer requires fixing measurement first and then judging over at least two weeks of clean data.
 
 **Should I pause Google Ads if it is not working?** Pause when the conversion data does not match the enquiries you actually receive, because spending blind teaches you nothing. Change who runs it when the search terms report is poor and nobody is acting on it. Stop only when the account, the page and the measurement are sound and the cost per enquiry is still too high.
+
+
+---
+
+## How to Advertise Your Business in the UK: Free, Paid and the Rules
+
+URL: https://ppcconsultancy.uk/guides/how-to-advertise-your-business-uk/
+Description: How to advertise your business in the UK: the free Google listing, which paid adverts suit which business, and the advertising, email and cookie rules to follow.
+
+Most advice on advertising a business is a list of twenty channels. An owner needs something shorter: what to do first, what costs nothing, when paying for adverts makes sense, and which UK rules apply from the first day. This guide follows that order and quotes the official pages, from Google, GOV.UK, the Advertising Standards Authority and the Information Commissioner's Office.
+
+Messages this guide covers: Business Profile, Search campaigns, Performance Max, Local Services Ads, Advertiser verification.
+
+## Start with what is free: the Business Profile
+
+Before any paid advert, claim the listing Google already shows for your business. Google's Business Profile page says "you can manage how your business shows up on Maps and Search at no charge", whether "you own a shop front business or provide services where your customers are". The page for adding or claiming a profile repeats it: "You can add or claim your business at no charge."
+
+You then have to verify it. Google's verification page says "Verification methods are automatically determined by Google and can't be changed", and that you may need more than one method. Do this first, because several paid options depend on a verified profile, and because for a local business the profile is often what a customer sees before the website.
+
+## Which paid adverts fit which business
+
+Google's campaign type page says you choose "based on your marketing goals, brand strategy and how much time you can invest". In plain terms:
+
+| Your situation | Where to start | Why |
+
+| People search for what you do when they need it: a solicitor, a plumber, an accountant, a clinic | A Search campaign in Google Ads | Google describes these as "Text ads on search results". You appear when someone types the need, and pay when they click. |
+
+| You sell products online | Shopping, or Performance Max with a product feed | Google lists these as "Product listings on Google". The advert is the product, its photo and its price. |
+
+| You are a trade or home service | Local Services Ads, alongside Search | You pay per lead and Google verifies the business first. See the guide to Local Services Ads verification in the UK. |
+
+| Nobody searches for your product yet | Paid social, such as Meta Ads on Facebook and Instagram | Search can only reach demand that exists. A new kind of product has to be shown to people before they look for it. |
+
+| You have very little time and a small budget | The Business Profile first, then one tightly targeted Search campaign | One campaign you understand is worth more than five you do not. |
+
+Two cautions. Performance Max is described by Google as "a goal-based campaign type that allows performance advertisers to access all Google Ads inventory from a single campaign". That reach is useful once conversion tracking works. Without it, the campaign has nothing reliable to aim at. And for professional services, Google's UK requirements page says professional services in Local Services Ads "are currently being piloted and are only available in Greater London".
+
+What a click is likely to cost in your trade is covered in the guide to what Google Ads costs in the UK.
+
+## The rules every UK advert has to follow
+
+GOV.UK's guide to marketing and advertising law starts with a short list. All marketing and advertising must be "an accurate description of the product or service", "legal", "decent", "truthful", "honest" and "socially responsible".
+
+Behind that list are two layers. The first is the law. The same guide's page on regulations that affect advertising says you cannot mislead or harass consumers by "including false or deceptive messages", "leaving out important information" or "using aggressive sales techniques". It also states the penalty for enforcement action: "up to £300,000 or 10% of your global turnover, whichever is higher". When you advertise to other businesses, you must not make misleading comparisons with competitors, which includes "using a competitor's logo or trademark, or something very similar".
+
+The second layer is the advertising code. GOV.UK's page on advertising codes of practice says the CAP non-broadcast code covers "non-broadcast advertising (for example print, online), sales promotion and direct marketing", and that "The rules are enforced by the Advertising Standards Authority". The first rule on misleading advertising in the CAP Code reads: "Marketing communications must not materially mislead or be likely to do so."
+
+Owners are often surprised by how far this reaches. The ASA's complaints page lists what it covers online, including "Claims made on a company's website or app" and "Paid-for search listings". So the wording of a Google advert and the claims on the page it leads to are both in scope. In practice: do not write "best", "cheapest" or "number one" unless you hold the evidence, and make sure the price or offer in the advert is the one the visitor finds on the page.
+
+Some sectors carry extra rules. GOV.UK names food, alcohol, beauty products, environmentally friendly products, medicines and tobacco. Google adds its own checks for some advertisers, covered in the guide to financial services verification.
+
+## Email, text, phone and cookies
+
+Advertising usually leads to a list of contacts, and the rules change when you contact people directly.
+
+- Email and text to individuals need consent. The ICO's guidance on electronic mail marketing says "You must not send marketing emails or texts to individuals without specific consent. There is a limited exception for your own previous customers, often called the 'soft opt-in'."
+
+- Sole traders count as individuals. The same page says "Sole traders and some partnerships are treated as individuals". It also says "You can email or text any corporate body", and recommends keeping a list of businesses that object.
+
+- Bought lists do not get the exception. The ICO says the soft opt-in "does not apply to prospective customers or new contacts (eg from bought-in lists)".
+
+- Phone calls have a register. GOV.UK's page on direct marketing says it is illegal to phone someone registered with the Telephone Preference Service without their permission, and that "You can be fined up to £500,000 for each unsolicited phonecall."
+
+- Every marketing email needs a way out. GOV.UK: "Every marketing email you send must give the person the ability to opt out of (or 'unsubscribe from') further emails."
+
+- Cookies need a clear notice and a choice. GOV.UK: "You must tell visitors to your website how your site uses cookies, and ask if they want to accept them." This is the consent banner, and it affects what your adverts can measure. See the guide to conversions not tracking.
+
+## Before the first paid click
+
+- Expect to be verified. Google's advertiser verification page says it "will notify you via an in-account notification or an email when you need to complete advertiser verification and what your deadline will be", and that "some of your ads may be restricted" until you do. Use the legal name of the business from the start.
+
+- Decide what counts as a result. A call, a form, a booking or an order. Then make sure it is counted, because a campaign without conversion tracking can only report clicks.
+
+- Send each advert to a page that answers it. An advert for boiler repair should not land on a homepage about everything the company does.
+
+- Keep the accounts in your own name. Google Ads, Analytics and the Business Profile should belong to the business, with access given to whoever helps you, so nothing is lost if that person changes.
+
+## What to do today
+
+- Claim and verify the Business Profile. Check the name, address, hours, phone number and categories.
+
+- Write down the five searches a customer would type. Search them yourself and note who advertises and what they say.
+
+- Pick one paid route from the table above. One, not three.
+
+- Read your own adverts and landing page against the rules. Accurate, truthful, and nothing important left out. Remove any claim you cannot prove.
+
+- Check the consent banner and the contact form. A clear cookie choice, and no pre-ticked box adding people to a mailing list.
+
+- Set a budget you can leave running for a full month. A week is rarely enough to judge. If you would like a second pair of eyes on the plan first, that is what a PPC consultation is for, and Google Ads for small business sets out the options by budget.
+
+## Official sources used in this guide
+
+- https://support.google.com/business/answer/7039811?hl=en-GB
+- https://support.google.com/business/answer/2911778?hl=en-GB
+- https://support.google.com/business/answer/6300665?hl=en-GB
+- https://support.google.com/google-ads/answer/2567043?hl=en-GB
+- https://support.google.com/localservices/answer/12174778?hl=en-GB&co=GENIE.CountryCode%3DGB
+- https://support.google.com/adspolicy/answer/9703665?hl=en-GB
+- https://www.gov.uk/marketing-advertising-law
+- https://www.gov.uk/marketing-advertising-law/regulations-that-affect-advertising
+- https://www.gov.uk/marketing-advertising-law/advertising-codes-of-practice
+- https://www.gov.uk/marketing-advertising-law/direct-marketing
+- https://www.asa.org.uk/type/non_broadcast/code_section/03.html
+- https://www.asa.org.uk/make-a-complaint.html
+
+## More guides for when something breaks
+
+Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
+
+### FAQ
+
+**How can I advertise my business for free in the UK?** Start with a Google Business Profile. Google says you can add or claim your business at no charge and manage how it shows up on Maps and Search. You need to verify the profile before you can edit it fully.
+
+**What is the best way to advertise a small local business?** For a business people search for when they need it, a verified Business Profile and one Search campaign aimed at your area is the usual starting point. Trades and home services can add Local Services Ads, where you pay per lead after Google verifies the business.
+
+**Who regulates advertising in the UK?** The Advertising Standards Authority enforces the advertising codes, and GOV.UK says adverts that break the rules may be withdrawn. Separate consumer law applies as well, with penalties of up to £300,000 or 10% of global turnover for enforcement action, according to GOV.UK.
+
+**Do the advertising rules apply to my own website and my Google adverts?** Yes. The ASA's list of what it covers online includes claims made on a company's own website or app and paid-for search listings.
+
+**Can I email people who have not asked to hear from me?** Not individuals. The ICO says you must not send marketing emails or texts to individuals without specific consent, with a limited exception for your own previous customers. Sole traders are treated as individuals. Corporate bodies can be emailed, and the ICO recommends keeping a list of those that object.
 
 
 ---
@@ -3152,7 +3771,7 @@ Google's list of reasons Local Services Ads don't run applies in the UK too: the
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 

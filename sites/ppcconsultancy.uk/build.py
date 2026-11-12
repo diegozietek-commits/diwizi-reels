@@ -15,6 +15,7 @@ from datetime import date
 from pages_core import PAGES as CORE
 from pages_services import PAGES as SERVICES
 from pages_expansion import PAGES as EXPANSION
+from pages_growth import PAGES as GROWTH  # Nov 2026: performance marketing, lead generation, marketing consultant
 from pages_guides import PAGES as GUIDES, GUIDE_SLUGS, HUB_SLUG as GUIDES_HUB  # Nov 2026: /guides/ (one page per panel message)
 
 SITE = "https://ppcconsultancy.uk"
@@ -268,7 +269,7 @@ PHOTO = os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
 PROOF_DEFAULT = [("14+", "years in paid media"), ("1", "consultant on your account"), ("Flat fee", "never a % of ad spend"), ("Your", "accounts, tags and pages stay with you")]
 PROOF_GOOGLE = [("14+", "years in paid media"), ("651", "quote requests in a month, health plan reseller"), ("1", "senior consultant on the account"), ("Shell", "Pontomais and TIM, among the brands worked on")]
 PROOF_BY_SLUG = {
-    "index": PROOF_GOOGLE, "ppc-management": PROOF_GOOGLE, "google-ads-management": PROOF_GOOGLE, "ppc-consultant-london": PROOF_GOOGLE,
+    "index": PROOF_GOOGLE, "ppc-management": PROOF_GOOGLE, "performance-marketing": PROOF_GOOGLE, "google-ads-management": PROOF_GOOGLE, "ppc-consultant-london": PROOF_GOOGLE,
     "ppc-consultant-manchester": PROOF_GOOGLE, "ppc-consultant-birmingham": PROOF_GOOGLE, "ppc-consultant-leeds": PROOF_GOOGLE, "ppc-consultant-bristol": PROOF_GOOGLE,
     "results": None,
     "ppc-audit": [("1", "fixed price, quoted up front"), ("5 to 7", "working days to deliver"), ("0", "obligation afterwards"), ("14+", "years reading accounts")],
@@ -358,7 +359,7 @@ FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)retu
            "setTimeout(go,1500);"
            "}).catch(fail);"
            "});})();</script>")
-PAGES = CORE + SERVICES + EXPANSION + GUIDES
+PAGES = CORE + SERVICES + EXPANSION + GROWTH + GUIDES
 BY_SLUG = {p["slug"]: p for p in PAGES}
 
 NAV = [  # 12 Oct 2026: the four service items moved into the "Services" hover menu (services_menu_html)
@@ -369,11 +370,11 @@ NAV = [  # 12 Oct 2026: the four service items moved into the "Services" hover m
 
 FAQ_SLUG = "faq"  # /faq/ is a sub-page of About
 FOOTER_GROUPS = [
-    ("Services", ["ppc-management", "google-ads-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "landing-pages",
+    ("Services", ["ppc-management", "performance-marketing", "lead-generation", "google-ads-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "landing-pages",
                   "conversion-tracking", "google-ads-small-business", "ecommerce-ppc"]),
     ("Platforms and sectors", ["facebook-ads-management", "microsoft-ads-management", "b2b-ppc",
                                "saas-ppc", "ppc-for-law-firms", "healthcare-ppc"]),
-    ("Working with me", ["ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "ppc-consultant-manchester",
+    ("Working with me", ["ppc-freelancer", "ppc-specialist", "marketing-consultant", "ppc-consultant-london", "ppc-consultant-manchester",
                          "ppc-consultant-birmingham", "ppc-consultant-leeds", "ppc-consultant-bristol",
                          "agency-vs-consultant", "pricing", "results", "about", "faq", "contact"]),
 ] + ([("Guides", [GUIDES_HUB] + GUIDE_SLUGS)] if GUIDES else [])
@@ -778,7 +779,7 @@ LLMS_SUMMARY = ("Diego Willian Zietek, independent PPC consultant with 14+ years
 LLMS_FACTS = ["- Market: UK and Irish businesses, and companies from any country that work in English; the practice for the US, Canada and Europe is at googleadsfreelancer.com.",
               "- Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).",
               "- Pricing: quoted in pounds, ex VAT, or in euros for Irish businesses, from the form; no prices are published. Never a percentage of ad spend."]
-LLMS_PAGES = ["index", "ppc-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "faq", "contact"]
+LLMS_PAGES = ["index", "ppc-management", "performance-marketing", "lead-generation", "marketing-consultant", "google-ads-consultant", "ppc-consultation", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "faq", "contact"]
 LLMS_SISTER = "Practice for the US, Canada and Europe, Google Ads freelancer"
 
 def schema_for(p):

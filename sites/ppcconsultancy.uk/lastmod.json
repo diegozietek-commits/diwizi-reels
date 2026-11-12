@@ -44,63 +44,85 @@
   "2026-10-27"
  ],
  "guides": [
-  "6fe30e1368760f4f",
-  "2026-11-06"
+  "d812207ab31f1e43",
+  "2026-11-12"
  ],
  "guides/google-ads-advertisers-measurement-uk": [
-  "2b01028852ad9aa2",
-  "2026-11-06",
+  "49352abd52afe171",
+  "2026-11-12",
   "2026-11-06"
  ],
  "guides/google-ads-conversions-not-tracking-uk": [
-  "7e2ef8258c8e3d9b",
-  "2026-11-06",
+  "beb275f88e3ffe1d",
+  "2026-11-12",
   "2026-11-06"
  ],
+ "guides/google-ads-cost-uk": [
+  "aa76b2ab581bb821",
+  "2026-11-12",
+  "2026-11-12"
+ ],
  "guides/google-ads-financial-services-verification-uk": [
-  "b31ee65e2758fd58",
-  "2026-11-06",
+  "696beec0bf6417c1",
+  "2026-11-12",
   "2026-11-06"
  ],
  "guides/google-ads-invoice-vat-uk": [
-  "ba98f69c7322b66f",
-  "2026-11-06",
+  "043d17bcfe540f52",
+  "2026-11-12",
   "2026-11-06"
  ],
  "guides/google-ads-not-showing-uk": [
-  "aaf58bb0d15fbd41",
-  "2026-11-06",
+  "58b6d8b4382b1b78",
+  "2026-11-12",
   "2026-11-06"
  ],
  "guides/google-ads-not-working-uk": [
-  "bc944972edd9c1d7",
-  "2026-11-06",
+  "bcafae0bfd7b37ad",
+  "2026-11-12",
   "2026-11-06"
  ],
+ "guides/how-to-advertise-your-business-uk": [
+  "ec8586444fd9e136",
+  "2026-11-12",
+  "2026-11-12"
+ ],
  "guides/local-services-ads-verification-uk": [
-  "d6033da52c418af6",
-  "2026-11-06",
+  "681773f3990c9b56",
+  "2026-11-12",
   "2026-11-06"
  ],
  "healthcare-ppc": [
-  "3c73c6efaec3d61c",
-  "2026-10-19"
+  "54348d2ab310ee73",
+  "2026-11-12"
  ],
  "index": [
-  "041cd95813db5225",
-  "2026-11-08"
+  "b6669643857ab9df",
+  "2026-11-12"
  ],
  "landing-pages": [
   "5685348bf8098506",
   "2026-11-03"
  ],
+ "lead-generation": [
+  "d25d6b87b5b4886d",
+  "2026-11-12"
+ ],
  "linkedin-ads-management": [
   "4a8ce9c0c9aefa66",
   "2026-10-07"
  ],
+ "marketing-consultant": [
+  "0c25594e1ba47de8",
+  "2026-11-12"
+ ],
  "microsoft-ads-management": [
   "abcdf7ae9e73b6d9",
   "2026-10-09"
+ ],
+ "performance-marketing": [
+  "61d5894730abd509",
+  "2026-11-12"
  ],
  "ppc-audit": [
   "56e778089bd56047",

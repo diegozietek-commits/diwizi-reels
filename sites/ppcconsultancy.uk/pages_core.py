@@ -175,6 +175,16 @@ PAGES = [
 <p>Quotes come in pounds, ex VAT, or in euros for Irish businesses, from three details on the <a href="/contact/#form">form</a>: roughly what you spend, on which platforms, and what is going wrong. Your media is paid straight to Google, Microsoft or Meta and never forms part of my fee. The <a href="/pricing/">pricing page</a> sets out every model.</p>
 </div></section>
 
+<section id="performance"><div class="wrap">
+<h2>Performance marketing, without the performance marketing agency</h2>
+<p>If you came looking for a performance marketing agency, this is the same work without the account team: paid search, shopping and paid social judged on enquiries, sales and pipeline, run by the consultant you speak to.</p>
+<div class="cols">
+<div class="card"><h3><a href="/performance-marketing/">Performance marketing</a></h3><p>What it covers, the numbers it is judged on, and when an agency is the better choice.</p></div>
+<div class="card"><h3><a href="/lead-generation/">Lead generation</a></h3><p>Enquiries that arrive on your own website from paid search, instead of leads bought from a list.</p></div>
+<div class="card"><h3><a href="/marketing-consultant/">Marketing consultant</a></h3><p>A digital marketing consultant for the paid side: what is in scope, and what is left to others.</p></div>
+</div>
+</div></section>
+
 """ + NOT_FOR + """
 
 <section><div class="wrap">
@@ -183,7 +193,7 @@ PAGES = [
 <div class="card"><h3><a href="/saas-ppc/">B2B and SaaS</a></h3><p>Trial-to-paid and demo funnels, search on Google and Microsoft, CRM stages fed back to the platforms so they optimise towards pipeline rather than form fills. <a href="/b2b-ppc/">B2B PPC →</a></p></div>
 <div class="card"><h3><a href="/ppc-for-law-firms/">Professional and financial services</a></h3><p>Law firms, accountants, advisers and consultancies: expensive clicks, long consideration, and a compliance layer on what an ad can say. Enquiry quality is the whole game.</p></div>
 <div class="card"><h3><a href="/healthcare-ppc/">Healthcare and regulated categories</a></h3><p>Past roles include senior in-house paid media work in healthcare and a freelance role with a US pharmaceutical agency. Policy restrictions, certification and sensitive-category rules are familiar ground.</p></div>
-<div class="card"><h3>Home and trade services</h3><p>Emergency versus planned work, call tracking that separates a booked job from a ring, and bidding by postcode and hour. The Houston case above is this pattern.</p></div>
+<div class="card"><h3>Home and trade services</h3><p>Emergency versus planned work, call tracking that separates a booked job from a ring, and bidding by postcode and hour. The Houston engagement on the <a href="/results/">results page</a> is this pattern.</p></div>
 <div class="card"><h3><a href="/ecommerce-ppc/">Online retail</a></h3><p>Shopping and Performance Max measured on margin and new customers, with platform-reported revenue reconciled against the store's own orders.</p></div>
 </div>
 <p>Industry pages with more detail are on <a href="https://diwizi.com/" rel="noopener">diwizi.com</a>, the same practice organised by sector.</p>
