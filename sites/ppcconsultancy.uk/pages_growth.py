@@ -2,6 +2,8 @@
 # performance marketing, lead generation and marketing consultant. UK spelling throughout. No prices, no fee form
 # or contract length in new text, no claims beyond the published cases on /results/.
 
+from pages_lists import PERFORMANCE_SECTION, LEADGEN_SECTION   # lists of UK companies, 13 Nov 2026
+
 PAGES = [
 
 # ---------------------------------------------------------------- Performance marketing
@@ -48,6 +50,7 @@ PAGES = [
 <p>If your plan depends on an affiliate programme, influencer work or programmatic buying at scale, an agency is the right choice and I will say so on the first call. The longer comparison is on <a href="/agency-vs-consultant/">PPC agency vs PPC consultant</a>.</p>
 </div></section>
 
+""" + PERFORMANCE_SECTION + """
 <section><div class="wrap">
 <h2>Published results</h2>
 <div class="cols">
@@ -100,6 +103,7 @@ PAGES = [
 <p>The last row matters more than most buyers realise. The government's <a href="https://www.gov.uk/marketing-advertising-law/direct-marketing" rel="noopener" target="_blank">guidance on direct marketing</a> says that if you buy or rent a mailing list you should ask the supplier whether you have the right to use it for email marketing, and that it is illegal to phone someone registered with the Telephone Preference Service without their permission. An enquiry that came to you directly does not carry that risk.</p>
 </div></section>
 
+""" + LEADGEN_SECTION + """
 <section><div class="wrap">
 <h2>How lead generation through paid search is run here</h2>
 <ol class="steps">

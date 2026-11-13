@@ -2,7 +2,7 @@
 
 > Diego Willian Zietek, independent Google Ads and paid media consultant with 14+ years of hands-on work. Runs Google Ads, with Meta and Microsoft Advertising when they fit, personally, for a flat monthly fee. Accounts stay in the client's name. Based in Curitiba, Brazil; works remotely in English.
 
-Full text of every page of https://googleadsfreelancer.com. Short index: https://googleadsfreelancer.com/llms.txt. Generated 2026-11-08.
+Full text of every page of https://googleadsfreelancer.com. Short index: https://googleadsfreelancer.com/llms.txt. Generated 2026-11-13.
 
 
 ---
@@ -2143,7 +2143,7 @@ Each guide takes one rule or message a US business owner runs into with Google A
 
 ## Pick the message you are looking at
 
-Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.
+Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.Where to hire a Google Ads freelancerOpen marketplaces, vetted networks or hiring direct: what each route gives you, what the platforms say about themselves, and five checks none of them runs for you.
 
 ---
 
@@ -2261,7 +2261,7 @@ A longer guide to real estate campaigns, including this policy, is on diwizi.com
 
 ## More guides for when something breaks
 
-US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.All guides
+US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.Where to hire a Google Ads freelancerOpen marketplaces, vetted networks or hiring direct: what each route gives you, what the platforms say about themselves, and five checks none of them runs for you.All guides
 
 ### FAQ
 
@@ -2366,7 +2366,7 @@ A wider look at how privacy changes affect paid media in 2026 is on diwizi.com.
 
 ## More guides for when something breaks
 
-Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.All guides
+Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.Where to hire a Google Ads freelancerOpen marketplaces, vetted networks or hiring direct: what each route gives you, what the platforms say about themselves, and five checks none of them runs for you.All guides
 
 ### FAQ
 
@@ -2490,7 +2490,7 @@ How Local Services Ads compare with regular Search ads, and how to track their c
 
 ## More guides for when something breaks
 
-Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.All guides
+Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.Where to hire a Google Ads freelancerOpen marketplaces, vetted networks or hiring direct: what each route gives you, what the platforms say about themselves, and five checks none of them runs for you.All guides
 
 ### FAQ
 
@@ -2503,3 +2503,106 @@ Housing, jobs and credit adsThe five targeting options Google bans for home, job
 **Is there still a Google Guarantee for my customers?** No. Google discontinued the money-back guarantee when it moved to the single Google Verified badge. Services booked before December 7, 2025 could still be claimed within 30 days of the service.
 
 **What happens if a background check fails?** Google says the business must wait 30 days to reapply, and 180 days after a second denial. Check names and documents carefully before submitting.
+
+
+---
+
+## Where to Hire a Google Ads Freelancer: Marketplaces, Networks or Direct
+
+URL: https://googleadsfreelancer.com/guides/where-to-hire-google-ads-freelancer/
+Description: Where to hire a Google Ads freelancer: open marketplaces like Upwork and Fiverr, vetted networks like Toptal, MarketerHire and Mayple, or direct. What to check first.
+
+There are three ways to find a Google Ads freelancer. You can post a job on an open marketplace, ask a vetted network to match you with someone, or hire a specialist directly from their own site. Each route solves a different problem and leaves a different one with you. This guide sets out what each gives you, what the platforms say about themselves, and the five checks you still have to run yourself. One thing to know first: this site belongs to a freelancer who is hired direct, so weigh the advice with that in mind.
+
+## The three routes, side by side
+
+| Route | Examples | How you find the person | What is left to you |
+
+| Open marketplace | Upwork, Fiverr | You post a job or browse listed services, then choose from whoever applies or appears | All the vetting. Anyone can list themselves, so the sorting is your work. |
+
+| Vetted network | Toptal, MarketerHire, Mayple | You describe the work and the network proposes a match from people it has screened | Checking that the match fits your account, and understanding what you pay the network on top of the freelancer. |
+
+| Direct | A specialist's own website | You read their published work and talk to them | Finding them in the first place, and having no platform to turn to if it goes wrong. |
+
+None of the three is better in general. The right one depends on how much of the checking you are able and willing to do, and on whether the job is a one-time task or the ongoing management of an account that spends real money.
+
+## What the platforms say about themselves
+
+These lines are taken from each platform's own pages, read on November 13, 2026. Terms change, so read the page again on the day you hire.
+
+- MarketerHire. Its home page says "Our acceptance rate is under 1%" and "Each marketer is vetted by specialists in their discipline". On terms, it says "Engagements are month-to-month with no recruiting fees, termination costs, or long-term contracts". Its pricing page lists "Matched in 24–48 hours" and a "Two-week refundable trial".
+
+- Mayple. Its home page describes "The best marketing freelancers and boutique agencies, vetted based on proven results, not sales pitches", matched from a "600+ global network" of experts. Its pricing page answers a question many buyers forget to ask: "Does the package fee include ad spend costs? No. The ad spend cost is paid directly to the ad platform".
+
+- Toptal. Its FAQ says "We make sure to start each engagement with a trial period of up to two weeks."
+
+- Upwork. Clients pay Upwork a marketplace fee on what they pay a freelancer, and the amount depends on the plan. The current figures are on Upwork's pricing page.
+
+- Fiverr. Services are listed at a set price for a set scope. Fiverr's pages could not be read for this guide, so no figures are given here. Check the total at checkout.
+
+A vetted network screens for skill and replaces a poor match. That has real value when you cannot judge a Google Ads specialist yourself. What a network cannot know is your account, your margins or your sales process, and the fee for the matching is paid for as long as the engagement runs. A longer look at one of them is in the Toptal review on diwizi.com.
+
+## Five checks no platform runs for you
+
+Wherever you find the freelancer, these five can be checked before any money moves.
+
+- Who will be in the account. One named person, with the years they have done this work. On a marketplace, some profiles belong to small agencies that pass the work to someone else. Ask.
+
+- Who owns the account. Google Ads, GA4 and Tag Manager stay in your company's name, with you as the administrator. The freelancer is given access and it can be removed.
+
+- A case with real numbers. With the period, the spend range and what each number means. A screenshot of a dashboard is not a case.
+
+- What they will look at first. A specialist starts with conversion tracking and search terms, not with a new campaign. If the first proposal is a rebuild, ask why.
+
+- How the fee is set. In writing, and separate from the ad spend, which you pay directly to Google.
+
+Start with read-only access. A freelancer can review an account without being able to change anything in it, and a written review is the safest first project on any of the three routes. That is what a Google Ads audit is.
+
+## Which route fits which job
+
+- A small, well-defined task. A tracking fix, a feed error, one campaign built to a brief. An open marketplace works, because the result is easy to verify.
+
+- Ongoing management, and you cannot judge the work yourself. A vetted network earns its fee here, because it screens for you and replaces a match that does not work.
+
+- Ongoing management, and you want the senior person. Hire direct. You read their published work, you speak to the person who will do it, and nothing sits between you.
+
+- Several markets, heavy creative output or many channels. That is agency work, not freelancer work. See how freelancer and agency pricing compare.
+
+## What to do today
+
+- Write the job in three lines. What you spend a month, on which platforms, and what is going wrong. Every route asks for this first.
+
+- Decide whether it is a task or a relationship. A task can go to a marketplace. A relationship needs the five checks.
+
+- Talk to two or three people. One from a network and one hired direct, if you can. The difference in how they ask about your business is informative.
+
+- Ask each one the five questions above. And keep the answers in writing.
+
+- Begin with a paid review on read-only access. Before any ongoing agreement.
+
+- Keep every account in your own name. Whoever you hire. What hiring direct looks like in practice is on freelance PPC consultant.
+
+## Official sources used in this guide
+
+- https://marketerhire.com/
+- https://marketerhire.com/pricing
+- https://www.mayple.com/
+- https://www.mayple.com/pricing
+- https://www.toptal.com/faq
+- https://www.upwork.com/pricing
+
+## More guides for when something breaks
+
+Housing, jobs and credit adsThe five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.US privacy laws and Google AdsWhen the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.Local Services Ads verificationThe Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.All guides
+
+### FAQ
+
+**Where is the best place to hire a Google Ads freelancer?** It depends on the job. An open marketplace suits a small, well-defined task. A vetted network suits ongoing work when you cannot judge a specialist yourself. Hiring direct suits ongoing work when you want to speak to the senior person who will run the account.
+
+**Is Upwork or Fiverr good for Google Ads?** For a defined task whose result you can verify, yes. For running an account that spends real money every month, the open listing means the vetting is your job: who is in the account, who owns it, and what they have done before.
+
+**What does a vetted network add?** Screening and a replacement if the match does not work. MarketerHire says its acceptance rate is under 1% and offers a two-week refundable trial. Toptal says each engagement starts with a trial period of up to two weeks. The network's fee is paid for as long as the engagement runs.
+
+**Does the platform fee include my ad spend?** No. Ad spend is paid by you directly to Google. Mayple's pricing page says the same of its own packages: the ad spend cost is paid directly to the ad platform.
+
+**How do I check a freelancer before giving access to my account?** Give read-only access first. A freelancer can review the account and write up what they find without being able to change anything. Edit access comes after you have read the review.

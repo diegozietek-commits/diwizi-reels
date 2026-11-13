@@ -34,6 +34,7 @@
 - [Housing, jobs and credit ads](https://googleadsfreelancer.com/guides/google-ads-housing-employment-credit/): The five targeting options Google bans for home, job and credit ads in the US and Canada, what still works, and how to fix an affected campaign.
 - [US privacy laws and Google Ads](https://googleadsfreelancer.com/guides/google-ads-us-privacy-laws/): When the CCPA applies, why it is an opt-out law rather than a cookie banner law, the Do Not Sell or Share link, Global Privacy Control and Google's restricted data processing.
 - [Local Services Ads verification](https://googleadsfreelancer.com/guides/local-services-ads-verification/): The Google Verified badge, background checks, license and insurance documents, how long verification takes and why verified ads still get no leads.
+- [Where to hire a Google Ads freelancer](https://googleadsfreelancer.com/guides/where-to-hire-google-ads-freelancer/): Open marketplaces, vetted networks or hiring direct: what each route gives you, what the platforms say about themselves, and five checks none of them runs for you.
 
 ## Related
 
