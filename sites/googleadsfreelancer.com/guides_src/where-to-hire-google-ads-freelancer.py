@@ -27,10 +27,10 @@ P = {
 <h2>What the platforms say about themselves</h2>
 <p>These lines are taken from each platform's own pages, read on November 13, 2026. Terms change, so read the page again on the day you hire.</p>
 <ul>
-<li><strong>MarketerHire.</strong> Its <a href="https://marketerhire.com/" rel="noopener" target="_blank">home page</a> says "Our acceptance rate is under 1%" and "Each marketer is vetted by specialists in their discipline". On terms, it says "Engagements are month-to-month with no recruiting fees, termination costs, or long-term contracts". Its <a href="https://marketerhire.com/pricing" rel="noopener" target="_blank">pricing page</a> lists "Matched in 24–48 hours" and a "Two-week refundable trial".</li>
-<li><strong>Mayple.</strong> Its <a href="https://www.mayple.com/" rel="noopener" target="_blank">home page</a> describes "The best marketing freelancers and boutique agencies, vetted based on proven results, not sales pitches", matched from a "600+ global network" of experts. Its <a href="https://www.mayple.com/pricing" rel="noopener" target="_blank">pricing page</a> answers a question many buyers forget to ask: "Does the package fee include ad spend costs? No. The ad spend cost is paid directly to the ad platform".</li>
-<li><strong>Toptal.</strong> Its <a href="https://www.toptal.com/faq" rel="noopener" target="_blank">FAQ</a> says "We make sure to start each engagement with a trial period of up to two weeks."</li>
-<li><strong>Upwork.</strong> Clients pay Upwork a marketplace fee on what they pay a freelancer, and the amount depends on the plan. The current figures are on Upwork's <a href="https://www.upwork.com/pricing" rel="noopener" target="_blank">pricing page</a>.</li>
+<li><strong>MarketerHire.</strong> Its home page says "Our acceptance rate is under 1%" and "Each marketer is vetted by specialists in their discipline". On terms, it says "Engagements are month-to-month with no recruiting fees, termination costs, or long-term contracts". Its pricing page lists "Matched in 24–48 hours" and a "Two-week refundable trial".</li>
+<li><strong>Mayple.</strong> Its home page describes "The best marketing freelancers and boutique agencies, vetted based on proven results, not sales pitches", matched from a "600+ global network" of experts. Its pricing page answers a question many buyers forget to ask: "Does the package fee include ad spend costs? No. The ad spend cost is paid directly to the ad platform".</li>
+<li><strong>Toptal.</strong> Its FAQ says "We make sure to start each engagement with a trial period of up to two weeks."</li>
+<li><strong>Upwork.</strong> Clients pay Upwork a marketplace fee on what they pay a freelancer, and the amount depends on the plan. The current figures are on its pricing page.</li>
 <li><strong>Fiverr.</strong> Services are listed at a set price for a set scope. Fiverr's pages could not be read for this guide, so no figures are given here. Check the total at checkout.</li>
 </ul>
 <p>A vetted network screens for skill and replaces a poor match. That has real value when you cannot judge a Google Ads specialist yourself. What a network cannot know is your account, your margins or your sales process, and the fee for the matching is paid for as long as the engagement runs. A longer look at one of them is in the <a href="https://diwizi.com/blog/toptal-review.html" rel="noopener">Toptal review on diwizi.com</a>.</p>
@@ -79,13 +79,6 @@ P = {
 ("How do I check a freelancer before giving access to my account?", "Give read-only access first. A freelancer can review the account and write up what they find without being able to change anything. Edit access comes after you have read the review."),
 ],
 "messages": [],
-"sources": [
-"https://marketerhire.com/",
-"https://marketerhire.com/pricing",
-"https://www.mayple.com/",
-"https://www.mayple.com/pricing",
-"https://www.toptal.com/faq",
-"https://www.upwork.com/pricing",
-],
+"sources": [],   # the platforms are named in the text only: no links and no web addresses (owner, 13 Nov 2026)
 "related": ["/freelance-ppc-consultant/", "/google-ads-audit/", "/google-ads-consultation/"],
 }

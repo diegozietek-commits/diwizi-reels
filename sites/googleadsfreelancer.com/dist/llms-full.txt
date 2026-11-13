@@ -2536,7 +2536,7 @@ These lines are taken from each platform's own pages, read on November 13, 2026.
 
 - Toptal. Its FAQ says "We make sure to start each engagement with a trial period of up to two weeks."
 
-- Upwork. Clients pay Upwork a marketplace fee on what they pay a freelancer, and the amount depends on the plan. The current figures are on Upwork's pricing page.
+- Upwork. Clients pay Upwork a marketplace fee on what they pay a freelancer, and the amount depends on the plan. The current figures are on its pricing page.
 
 - Fiverr. Services are listed at a set price for a set scope. Fiverr's pages could not be read for this guide, so no figures are given here. Check the total at checkout.
 
@@ -2581,15 +2581,6 @@ Start with read-only access. A freelancer can review an account without being ab
 - Begin with a paid review on read-only access. Before any ongoing agreement.
 
 - Keep every account in your own name. Whoever you hire. What hiring direct looks like in practice is on freelance PPC consultant.
-
-## Official sources used in this guide
-
-- https://marketerhire.com/
-- https://marketerhire.com/pricing
-- https://www.mayple.com/
-- https://www.mayple.com/pricing
-- https://www.toptal.com/faq
-- https://www.upwork.com/pricing
 
 ## More guides for when something breaks
 

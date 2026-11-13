@@ -8,8 +8,11 @@ READ_ON = "13 November 2026"
 
 
 def _entry(name, url, text, facts=""):
+    """Other companies are named only: no link and no web address on the page (owner, 13 Nov 2026).
+    The URL stays in this file as the record of which site each fact was read on. Internal URLs are linked."""
     f = f'<p class="price">{facts}</p>' if facts else ""
-    return f'<div class="card"><h3><a href="{url}" rel="noopener" target="_blank">{name}</a></h3><p>{text}</p>{f}</div>'
+    head = f'<a href="{url}">{name}</a>' if url.startswith("/") else name
+    return f'<div class="card"><h3>{head}</h3><p>{text}</p>{f}</div>'
 
 
 FIVE_CHECKS = """
@@ -104,7 +107,7 @@ LEADGEN_SECTION = (
     + DISCLOSURE.format(first="It is not in the table, because it sells one thing only: enquiries from your own paid campaigns.")
     + "\n<p>The words lead generation cover very different services. The table sorts ten UK companies by what their own websites say they sell, so you can tell which kind you are talking to. The order is alphabetical and is not a ranking.</p>\n"
     + "<table><thead><tr><th>Company</th><th>What its website says it sells</th><th>Kind</th></tr></thead><tbody>"
-    + "".join(f'<tr><td><a href="{u}" rel="noopener" target="_blank">{n}</a></td><td>{t}</td><td>{k}</td></tr>' for n, u, t, k in LEADGEN)
+    + "".join(f'<tr><td>{n}</td><td>{t}</td><td>{k}</td></tr>' for n, u, t, k in LEADGEN)
     + "</tbody></table>\n"
     + "<p><strong>Telephone</strong> means people calling prospects on your behalf to book appointments. <strong>Data</strong> means contact lists you then use yourself. <strong>Agency</strong> means marketing campaigns that bring enquiries to you. Before you sign with any of them, ask where each lead comes from, whether it is sold to anyone else, and how the people on a list agreed to be contacted.</p>\n</div></section>\n")
 
@@ -163,8 +166,8 @@ PAGES = [
 
 <section><div class="wrap">
 <h2>Sources and method</h2>
-<p>Each description comes from the company's own home or about page, read on """ + READ_ON + """. Where a site did not state a location or a founding year, none is given. The websites read: """ + ", ".join(
-    f'<a href="{u}" rel="noopener" target="_blank">{n}</a>' for n, u, _, _ in AGENCIES) + """.</p>
+<p>Each description comes from the company's own home or about page, read on """ + READ_ON + """. Where a site did not state a location or a founding year, none is given. The companies whose websites were read: """ + ", ".join(
+    n for n, _, _, _ in AGENCIES) + """.</p>
 </div></section>
 """,
 "faq": [
