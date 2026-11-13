@@ -77,9 +77,9 @@ LEADGEN = [   # (name, url, what its site says it sells, model)
     ("Toucan Telemarketing", "https://www.toucantelemarketing.co.uk/", "Telemarketing and B2B appointment setting. Based in Cheshire, near Manchester.", "Telephone"),
 ]
 
-CONSULTANTS = [   # sorted by the name each one trades under
-    ("Dan Brown", "https://danbrownppc.co.uk/", "Freelance PPC consultant managing Google Ads and Meta Ads, with 15+ years of experience.", "Bournemouth"),
+CONSULTANTS = [   # the publisher first (and the page says so), then alphabetical by the name each one trades under
     ("Diego Willian Zietek, PPC Consultancy", "/", "The publisher of this page. Google, Microsoft and Meta Ads, landing pages and conversion tracking, with 14+ years of experience.", "Based in Curitiba, Brazil, working on UK hours"),
+    ("Dan Brown", "https://danbrownppc.co.uk/", "Freelance PPC consultant managing Google Ads and Meta Ads, with 15+ years of experience.", "Bournemouth"),
     ("Elevate PPC", "https://www.elevate-ppc.co.uk/", "Freelance PPC and Google Ads consultant offering management, audits and consultancy. Founded by Becky Carr.", "Leamington Spa, Warwickshire"),
     ("George Stevens", "https://georgestevens.co.uk/", "PPC consultant working mainly in Google Ads, with 15 years of experience.", "Near Leeds"),
     ("Mike Ncube", "https://www.mikencube.co.uk/", "Google Ads specialist and PPC consultant, working in digital marketing since 2008.", ""),
@@ -183,16 +183,16 @@ PAGES = [
 
 # ---------------------------------------------------------------- Directory of independent UK PPC consultants
 {
-"slug": "independent-ppc-consultants-uk", "short": "Independent PPC consultants", "blurb": "A directory of PPC consultants who work alone for UK businesses, in alphabetical order.",
+"slug": "independent-ppc-consultants-uk", "short": "Independent PPC consultants", "blurb": "A directory of PPC consultants who work alone for UK businesses, with what each one's own website says.",
 "title": "Independent PPC Consultants in the UK: A Directory (2026)",
-"meta": "A directory of independent PPC consultants and Google Ads freelancers working with UK businesses, in alphabetical order, with facts from their own websites.",
+"meta": "A directory of independent PPC consultants and Google Ads freelancers working with UK businesses, with facts from their own websites and how to choose one.",
 "kicker": "Directory",
 "h1": "Independent PPC consultants in the UK: a directory",
-"lead": "Independent PPC consultants are hard to find in a search full of agencies and job boards. This is a short directory of people who run paid search accounts themselves for UK businesses, in alphabetical order, with what each one's own website says. It is kept by one of them.",
+"lead": "Independent PPC consultants are hard to find in a search full of agencies and job boards. This is a short directory of people who run paid search accounts themselves for UK businesses, with what each one's own website says. It is kept by one of them, who is listed first. The others follow in alphabetical order.",
 "proof": [],
 "body": """
 <section><div class="wrap">
-<p class="note"><strong>Disclosure.</strong> This directory is published by PPC Consultancy, the practice of Diego Willian Zietek, who is on it. The order is alphabetical and nobody is ranked or scored. Each line is a fact read on the consultant's own website on """ + READ_ON + """. Nobody paid to be here or was contacted first. If you are listed and something is wrong, or you would like to be removed, use the <a href="/contact/#form">form</a>.</p>
+<p class="note"><strong>Disclosure.</strong> This directory is published by PPC Consultancy, the practice of Diego Willian Zietek, who is listed first for that reason alone. Everyone else is in alphabetical order, and nobody is ranked or scored. Each line is a fact read on the consultant's own website on """ + READ_ON + """. Nobody paid to be here or was contacted first. If you are listed and something is wrong, or you would like to be removed, use the <a href="/contact/#form">form</a>.</p>
 <h2>The directory</h2>
 <div class="cols">""" + "".join(_entry(n, u, t, f) for n, u, t, f in CONSULTANTS) + """</div>
 </div></section>
@@ -221,7 +221,7 @@ PAGES = [
 """,
 "faq": [
 ("What is an independent PPC consultant?", "A specialist who runs paid search accounts personally, without an agency team around them. You speak to the person who does the work."),
-("Is this directory a ranking?", "No. The order is alphabetical and nobody is scored. It is published by one of the consultants on it, which is said at the top of the page."),
+("Is this directory a ranking?", "No. The publisher is listed first, which is said at the top of the page, and everyone else is in alphabetical order. Nobody is scored."),
 ("How were the consultants found?", "Their websites appeared on Google UK for searches such as freelance PPC consultant UK and Google Ads freelancer UK on " + READ_ON + ", and each site shows one named person doing the account work with PPC as the main service."),
 ("Can I be added or removed?", "Yes. Use the form on this site. Additions need a website that shows who does the work and that PPC is the main service."),
 ("Should I choose a consultant near me?", "It rarely matters for the work itself, which is done in the accounts and in writing. It matters if you want meetings in person, and in that case choose someone within reach."),
