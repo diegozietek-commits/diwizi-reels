@@ -2,7 +2,7 @@
 
 > Diego Willian Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. Runs Google, Microsoft and Meta Ads personally, with landing pages and conversion tracking included, for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.
 
-Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-12.
+Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-13.
 
 
 ---
@@ -2524,89 +2524,238 @@ Each guide takes one thing a UK business owner sees in a Google Ads account, quo
 
 ## Pick the message you are looking at
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.How to advertise your businessWhat is free, which paid adverts fit which business, and the UK rules every advert, email and cookie banner has to follow.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.How to advertise your businessWhat is free, which paid adverts fit which business, and the UK rules every advert, email and cookie banner has to follow.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.
 
 ---
 
-## What 34 UK Businesses Paying for Google Ads Measure on Their Sites
+## What 230 UK Businesses Paying for Google Ads Measure, by Sector
 
 URL: https://ppcconsultancy.uk/guides/google-ads-advertisers-measurement-uk/
-Description: We read the sites of 34 verified UK advertisers active on Google Ads in 16 service sectors. 35% carry a Google Ads conversion tag. 41% carry no measurement at all.
+Description: We read the sites of 230 UK businesses with live Google Ads in 15 service sectors. 43% show a Google Ads conversion tag. 14% show no measurement at all.
 
-Of the 34 verified businesses we found running Google Ads in the United Kingdom and whose site we could read, 35% carry a Google Ads conversion tag on their home page, 50% publish a clickable phone number but have no Google Ads tag to count the call, and 41% carry no measurement at all. These companies are paying for clicks today. A large share cannot tell which click became a customer.
+Of 230 UK businesses with live Google Ads in 15 service sectors, 43% show a Google Ads conversion tag on their site, 21% count visits with Google Analytics and show no Google Ads tag at all, and 14% show no measurement of any kind. Four in five publish a clickable phone number, and just over half of those have nothing in place to count the call. These companies are paying for clicks today. A large share cannot tell which click became a customer.
 
-## How this was measured
+## The short version
 
-On 2026-11-06 we searched the Google Ads Transparency Center for 40 commercial phrases that a small or mid-sized service business buys ads on in the United Kingdom, such as plumbers in London, boiler installation, garden rooms, loft conversions and mortgage brokers. The Transparency Center lists the verified advertisers currently showing ads for each phrase. We kept the 34 advertisers whose own website we could identify from the company name and read, and we read the home page of each one the way a browser does, including the Tag Manager container it loads.
+43%show a Google Ads conversion tag on the home page or inside the tag container
+21%count visits with Google Analytics and show no Google Ads tag at all
+14%show no measurement of any kind
+53%of the sites with a clickable phone number have nothing we could find to count the call
 
-What we looked for is simple. Whether the page carries a Google Ads conversion tag, a Google Analytics 4 tag, a Google Tag Manager container, a remarketing tag, a Meta Pixel, a consent banner from a known vendor, a clickable phone number and a form. A tag inside the Tag Manager container counts, because that is where most of them live. Nothing was estimated. Every row below is a count over the same 34 sites.
+All 230 businesses had a Google ad shown in the United Kingdom between 23 October and 13 November 2026, according to Google's own Ads Transparency Center, and all of them are marked there as verified advertisers. They are paying for clicks now. Fewer than half show Google which click became a customer.
 
-## What the 34 sites carry
+The figures are free to quote with a link to this page. The table by sector can be downloaded as a CSV file.
 
-| What we looked for | Share of the 34 sites | Why it matters to the owner |
-| Google Ads conversion tag on the page (AW- tag in the HTML or a conversion tag inside the Tag Manager container) | 35% | Without it the account bids on clicks, not on enquiries |
-| Google Analytics 4 | 56% | Visits are counted. Visits are not leads |
-| Google Tag Manager container | 47% | The usual place the conversion tag lives |
-| Google Ads remarketing tag | 15% | Needed to show ads again to past visitors |
-| Meta Pixel | 18% | Facebook and Instagram ads without it run blind |
-| Consent banner from a known vendor | 32% | Without consent handling, tags can be blocked or unlawful in some markets |
-| Clickable phone number | 85% | The enquiry most of these businesses actually want |
-| Phone number but no Google Ads conversion tag | 50% | The call is the lead and nothing records it |
-| Analytics but no Google Ads conversion tag | 21% | Traffic is counted, results are not |
-| No measurement of any kind | 41% | No GTM, no Google Ads tag, no GA4, no Meta |
-The pattern that matters is the gap between the second row and the first. Three in four sites count visits with Google Analytics 4. Fewer than half tell Google Ads which visit became an enquiry. An account in that state is optimised for traffic, and traffic is what it buys.
+## Six groups, adding up to 100%
 
-## By sector, where we read at least three sites
+Every site falls into exactly one group, read from the outside, with no access to anyone's account.
 
-| Sector | Sites read | With a Google Ads conversion tag | With GA4 | With a consent banner or consent signal |
-| Loft conversions | 3 | 0% | 0% | 0% |
-| Boiler installation | 4 | 25% | 50% | 50% |
-| Garden rooms | 6 | 33% | 67% | 83% |
-| Plumbers (London) | 3 | 67% | 67% | 67% |
-Small groups move with a single site, so read these as a first picture and not as a league table. Loft conversions, where a job is worth thousands of pounds, had no site with a conversion tag among those we read. Garden rooms were the best covered for consent and the weakest for the tag that counts the enquiry.
+| Group | Share of the 230 sites | What it means for the owner |
 
-## The best-measured sites we found
+| A Google Ads conversion tag is visible | 43% | Google Ads is being told about at least one kind of result. Whether it is the right result is a separate question. |
 
-These advertisers carry the most complete set on their home page: Google Ads conversion tag, Google Analytics 4, consent handling and in most cases a remarketing tag and a Meta Pixel. They are listed because they do it right.
+| A Google Ads tag, but no conversion action visible from the home page | 13% | The tag is installed. The conversion may fire on a thank-you page we did not read, or may not exist. |
 
-- Local Financial Advisor Ltd (localfinancialadvice.co.uk), found for the search financial advisor
-- The Boiler Installation Specialists Ltd (theboilerinstallationspecialists.com), found for the search boiler installation
-- Dove Green Private School (dovegreenschool.com), found for the search private school
-- Tailored Garden Rooms (outsidersgardenrooms.co.uk), found for the search garden rooms
-- Immigration Rights Solicitors Ltd (irsolicitors.co.uk), found for the search immigration solicitors
+| Google Analytics or a Google tag, and no Google Ads tag | 21% | Visits are counted. Unless results are imported from Analytics into Google Ads, which cannot be seen from outside, the bidding learns nothing from enquiries. |
+
+| Other tags only | 6% | An empty Tag Manager container, a retired Universal Analytics tag, a Meta Pixel or a heatmap tool, with nothing for Google Ads. |
+
+| Signs of a tag we could not read | 3% | The page prepares for a Google tag but the ID is loaded by a script. Counted apart so the next row is not overstated. |
+
+| No measurement of any kind | 14% | No Tag Manager, no Google tag, no Analytics, no Meta Pixel. The adverts run and nothing on the site records what they bring. |
+
+## Google Ads conversion tag, by sector
+
+Share of sites in each sector where a Google Ads conversion tag was found. The spread runs from 69% in mortgage and financial advice to 12% in cleaning.
+
+Mortgage and financial advice69%Solicitors62%Dentists56%Roofing54%Home improvement53%Locksmiths and drainage47%Accountants45%Plumbing and heating42%Private healthcare and physiotherapy42%Removals38%Electricians35%Pest control35%IT support30%Estate and letting agents29%Cleaning12%
+
+### No measurement of any kind, by sector
+
+Pest control24%Roofing23%Dentists22%Plumbing and heating21%Accountants18%Cleaning18%Private healthcare and physiotherapy16%Estate and letting agents14%Solicitors12%Locksmiths and drainage11%Electricians10%Mortgage and financial advice8%Home improvement7%IT support0%Removals0%
+
+## The full table by sector
+
+| Sector | Sites read | Google Ads conversion tag | Google Ads tag, no conversion seen | Analytics only | No measurement | Consent banner found | Clickable phone number | Calls measured, of sites with a number |
+
+| Mortgage and financial advice | 13 | 69% | 8% | 15% | 8% | 54% | 77% | 30% |
+| Solicitors | 16 | 62% | 6% | 6% | 12% | 50% | 75% | 42% |
+| Dentists | 18 | 56% | 0% | 22% | 22% | 33% | 94% | 65% |
+| Roofing | 13 | 54% | 8% | 8% | 23% | 62% | 85% | 55% |
+| Home improvement | 15 | 53% | 27% | 7% | 7% | 20% | 73% | 36% |
+| Locksmiths and drainage | 19 | 47% | 11% | 26% | 11% | 16% | 89% | 71% |
+| Accountants | 11 | 45% | 9% | 9% | 18% | 55% | 73% | 62% |
+| Plumbing and heating | 19 | 42% | 11% | 26% | 21% | 47% | 84% | 50% |
+| Private healthcare and physiotherapy | 19 | 42% | 11% | 21% | 16% | 47% | 95% | 33% |
+| Removals | 16 | 38% | 19% | 31% | 0% | 44% | 81% | 46% |
+| Electricians | 20 | 35% | 40% | 15% | 10% | 35% | 85% | 53% |
+| Pest control | 17 | 35% | 12% | 18% | 24% | 24% | 94% | 38% |
+| IT support | 10 | 30% | 30% | 30% | 0% | 60% | 50% | 40% |
+| Estate and letting agents * | 7 | 29% | 0% | 43% | 14% | 71% | 71% | 20% |
+| Cleaning | 17 | 12% | 0% | 41% | 18% | 29% | 53% | 33% |
+
+| All sectors | 230 | 43% | 13% | 21% | 14% | 40% | 80% | 47% |
+
+* Fewer than ten sites read. Groups of ten to twenty sites move by several points with a single site, so read the table as a picture of each sector and not as a league table.
+
+### Accountants
+
+11 sites read. 45% show a Google Ads conversion tag, 9% count visits with Google Analytics and show no Google Ads tag, and 18% show no measurement at all. 73% publish a clickable phone number, and of those 38% have nothing we could find to count the call.
+
+### Cleaning
+
+17 sites read. 12% show a Google Ads conversion tag, 41% count visits with Google Analytics and show no Google Ads tag, and 18% show no measurement at all. 53% publish a clickable phone number, and of those 67% have nothing we could find to count the call.
+
+### Dentists
+
+18 sites read. 56% show a Google Ads conversion tag, 22% count visits with Google Analytics and show no Google Ads tag, and 22% show no measurement at all. 94% publish a clickable phone number, and of those 35% have nothing we could find to count the call.
+
+### Electricians
+
+20 sites read. 35% show a Google Ads conversion tag, 15% count visits with Google Analytics and show no Google Ads tag, and 10% show no measurement at all. 85% publish a clickable phone number, and of those 47% have nothing we could find to count the call.
+
+### Estate and letting agents
+
+7 sites read. 29% show a Google Ads conversion tag, 43% count visits with Google Analytics and show no Google Ads tag, and 14% show no measurement at all. 71% publish a clickable phone number, and of those 80% have nothing we could find to count the call. Fewer than ten sites were read here, so treat this as a first picture.
+
+### Home improvement
+
+15 sites read. 53% show a Google Ads conversion tag, 7% count visits with Google Analytics and show no Google Ads tag, and 7% show no measurement at all. 73% publish a clickable phone number, and of those 64% have nothing we could find to count the call.
+
+### IT support
+
+10 sites read. 30% show a Google Ads conversion tag, 30% count visits with Google Analytics and show no Google Ads tag, and 0% show no measurement at all. 50% publish a clickable phone number, and of those 60% have nothing we could find to count the call.
+
+### Locksmiths and drainage
+
+19 sites read. 47% show a Google Ads conversion tag, 26% count visits with Google Analytics and show no Google Ads tag, and 11% show no measurement at all. 89% publish a clickable phone number, and of those 29% have nothing we could find to count the call.
+
+### Mortgage and financial advice
+
+13 sites read. 69% show a Google Ads conversion tag, 15% count visits with Google Analytics and show no Google Ads tag, and 8% show no measurement at all. 77% publish a clickable phone number, and of those 70% have nothing we could find to count the call.
+
+### Pest control
+
+17 sites read. 35% show a Google Ads conversion tag, 18% count visits with Google Analytics and show no Google Ads tag, and 24% show no measurement at all. 94% publish a clickable phone number, and of those 62% have nothing we could find to count the call.
+
+### Plumbing and heating
+
+19 sites read. 42% show a Google Ads conversion tag, 26% count visits with Google Analytics and show no Google Ads tag, and 21% show no measurement at all. 84% publish a clickable phone number, and of those 50% have nothing we could find to count the call.
+
+### Private healthcare and physiotherapy
+
+19 sites read. 42% show a Google Ads conversion tag, 21% count visits with Google Analytics and show no Google Ads tag, and 16% show no measurement at all. 95% publish a clickable phone number, and of those 67% have nothing we could find to count the call.
+
+### Removals
+
+16 sites read. 38% show a Google Ads conversion tag, 31% count visits with Google Analytics and show no Google Ads tag, and 0% show no measurement at all. 81% publish a clickable phone number, and of those 54% have nothing we could find to count the call.
+
+### Roofing
+
+13 sites read. 54% show a Google Ads conversion tag, 8% count visits with Google Analytics and show no Google Ads tag, and 23% show no measurement at all. 85% publish a clickable phone number, and of those 45% have nothing we could find to count the call.
+
+### Solicitors
+
+16 sites read. 62% show a Google Ads conversion tag, 6% count visits with Google Analytics and show no Google Ads tag, and 12% show no measurement at all. 75% publish a clickable phone number, and of those 58% have nothing we could find to count the call.
+
+## The phone call is the lead, and half the time nothing counts it
+
+80% of the sites publish a phone number a visitor can tap. For most of these businesses the call is the enquiry they want. Among the 185 sites with a clickable number:
+
+- 18% carry Google's own website call conversion, which swaps the number on the page for a Google forwarding number.
+
+- 5% carry a call tracking service from another supplier.
+
+- 37% have a tag that fires when the number is clicked, which counts taps and not conversations.
+
+- 53% have none of the three.
+
+One caveat matters here. Google's help page on conversion measurement says "Some kinds of conversion measurement don't require a tag", and gives the example of calls from call assets, where "you use a Google forwarding number to track when the call came from one of your ads". A business can therefore count calls made straight from the advert with nothing on its site. What it cannot count that way is the visitor who clicks the advert, reads the page and then rings the number on it.
+
+## What the 230 sites carry
+
+| What we looked for | Share of the 230 sites | Why it matters to the owner |
+
+| Any Google Ads tag | 57% | The starting point for conversions and for remarketing |
+
+| Google Ads conversion tag | 43% | Without it the account bids on clicks, not on enquiries |
+
+| Google Analytics 4 or a Google tag | 69% | Visits are counted. Visits are not leads |
+
+| Google Tag Manager container | 58% | The usual place the conversion tag lives |
+
+| Meta Pixel | 16% | Facebook and Instagram adverts without it run blind |
+
+| Microsoft Advertising tag | 8% | Few of these advertisers measure Bing at all |
+
+| Consent banner from a recognisable tool | 40% | UK rules ask for a choice before marketing cookies are set |
+
+| Clickable phone number | 80% | The enquiry most of these businesses actually want |
+
+| Enquiry form on the home page | 53% | The other enquiry, and the easier one to count |
+
+## One well-measured site in each sector
+
+These sites carry the full set on their home page: a Google Ads conversion tag, some form of call measurement, Google Analytics and a consent banner. They are listed because they do it properly, and for no other reason.
+
+- b-accounting.com, accountants
+- cleaningbros.uk, cleaning
+- manchesterdental.co.uk, dentists
+- crselectricians.co.uk, electricians
+- cblofts.co.uk, home improvement
+- hangitservices.co.uk, it support
+- ybmortgages.co.uk, mortgage and financial advice
+- jgpestcontrol.co.uk, pest control
+- c1boilers.co.uk, plumbing and heating
+- ag-osteopathy.com, private healthcare and physiotherapy
+- jamstorage.com, removals
+- blueskyguttering.co.uk, roofing
+- ayjsolicitors.com, solicitors
 
 ## What this means if you are paying for Google Ads
 
-- Ask one question of whoever runs your account. Which conversion action is the primary one, and when did it last record a conversion. If the answer takes more than a minute, read what no recent conversions means.
+- Ask one question of whoever runs your account. Which conversion action is the primary one, and when did it last record a conversion. If the answer takes more than a minute, read what to check when conversions are not tracking.
 
-- A phone number on the page is not a measured phone call. 85% of these sites show a number and 50% have no tag to count the call that follows the click.
+- A phone number on the page is not a measured phone call. 80% of these sites show a number and 53% of those have nothing to count the call that follows the click.
 
-- Analytics is not conversion tracking. GA4 tells you people came. Only a conversion sent back to Google Ads tells the bidding which clicks were worth paying for.
+- Analytics is not conversion tracking. Google Analytics tells you people came. Only a conversion sent to Google Ads, or imported into it, tells the bidding which clicks were worth paying for.
 
-- Consent handling is part of measurement. A banner that blocks tags with no consent mode behind it silently deletes a share of your conversions. Google explains how consent mode recovers part of them.
+- Consent handling is part of measurement. A banner that blocks tags with no consent mode behind it removes a share of your conversions from the reports. Google explains how consent mode recovers part of them.
 
-## Check your own site in five minutes
+- If your site is in the last group, the first job is not a new campaign. It is a tag, a conversion action and a test. That is what a conversion tracking setup covers, and a PPC audit will tell you which group your own site is in.
 
-Open your home page, press Ctrl+U (Cmd+Option+U on a Mac) and search the source for the text AW- and for GTM-. If neither appears, no Google Ads tag runs on that page unless it is loaded by a server-side setup, which is rare in businesses of this size. Under UK GDPR and PECR a consent banner that blocks every tag until the visitor clicks also hides the tag from this test, which is one more reason to ask for the Conversions page. The surer test is to ask for a screenshot of the Conversions page in Google Ads, where every action shows a status. The statuses and what each means are in the guide to conversion statuses. If spend goes out and enquiries do not come in, start with the guide to Google Ads not working.
+## How this was measured
 
-When the tag is missing or wrong, installing and testing it is a defined piece of work rather than a monthly fee. What it covers is under conversion tracking. When you want the whole account read first, the fixed-price PPC audit does that at a published price.
+- Finding the advertisers. On 13 November 2026 we searched Google's Ads Transparency Center, with the region set to the United Kingdom, for the words a business in each of 15 service sectors is likely to have in its web address, such as plumbers, solicitors, dental or removals, alone and combined with London, Manchester, Birmingham, Leeds and Bristol. The Transparency Center returns advertiser websites that match.
 
-## Limits of this study
+- Keeping only live advertisers. We checked 420 of those websites in the Transparency Center and kept the 301 with an advert last shown in the UK on or after 14 October 2026.
 
-- Only the home page was read. A tag placed only on a landing page or a thank-you page would not be seen, so the real share with a Google Ads tag may be somewhat higher.
-- Tags served through a server-side container on the advertiser's own domain cannot be detected from the outside and count as absent.
-- The Meta Conversions API sends data from the server and leaves no trace on the page, so Meta measurement is undercounted.
-- 34 sites is a small sample. The percentages describe these sites on 2026-11-06, not the UK market. The next edition will add sectors and sites.
+- Reading the sites. We read the source of each home page, every Google Tag Manager container and Google tag file it refers to, and, for sites built on Wix, the list of tags the platform loads. 277 home pages could be read. The rest refused the request or did not answer.
 
-## How to cite this
+- Removing what did not belong. We removed sites that were not UK businesses, were not in the sector they were found under, or were parked pages. 230 sites remain.
 
-The numbers are free to quote, screenshot or rebuild, including commercially, as long as the figure is credited and links back to this page.
+- Counting. Each share on this page is a count over those 230 sites, or over the sites of one sector. Nothing was estimated or weighted.
 
-PPC Consultancy (Diego Willian Zietek), UK Google Ads advertisers measurement study, edition of 2026-11-06. https://ppcconsultancy.uk/guides/google-ads-advertisers-measurement-uk/
+### What this study cannot see
+
+- Tags on other pages. Only the home page was read. A conversion tag placed only on a thank-you page is missed, which is why sites with a Google Ads tag and no visible conversion are reported as their own group.
+
+- Imports from Analytics. A business can import results from Google Analytics into Google Ads with no Google Ads tag on the site. That is invisible from outside, so the analytics-only group is not described as untracked.
+
+- Calls counted inside the advert. Calls made straight from a call asset need no tag on the site.
+
+- Tags loaded by a script. The pages were read without running their scripts and without accepting cookies. Where a page showed signs of a tag whose ID we could not read, it was counted in a separate group.
+
+- The sample is not random. Looking for trade words in web addresses favours smaller local firms whose address names what they do. Large national brands are mostly absent.
+
+- Small groups. Sectors hold between 7 and 20 sites, and the reading was taken on a single day.
+
+An earlier edition of this page, published on 6 November 2026, covered 34 sites. This edition replaces it. The larger sample and the reading of Google tag files and Wix tag lists explain the differences between the two.
 
 ## Official sources used in this guide
 
 - https://adstransparency.google.com/?region=GB
+- https://support.google.com/google-ads/answer/1722022?hl=en-GB
 - https://support.google.com/google-ads/answer/10000067?hl=en-GB
 
 ## More guides for when something breaks
@@ -2615,13 +2764,17 @@ Conversions not trackingWhat Unverified, Tag inactive and No recent conversions 
 
 ### FAQ
 
-**Does a Google Analytics tag count as Google Ads conversion tracking?** No. Google Analytics 4 counts visits and events. Google Ads only learns which click became an enquiry when a conversion action is set up in Google Ads or imported from GA4 as a key event. Three in four sites in this study had GA4 and fewer than half had a Google Ads conversion tag.
+**How many UK businesses advertising on Google have conversion tracking?** Of the 230 UK advertisers read for this study, 43% show a Google Ads conversion tag on the home page or inside their tag container. A further 13% carry a Google Ads tag with no conversion action visible from the home page, and 14% show no measurement of any kind.
 
-**How did you find the advertisers?** Through the Google Ads Transparency Center, which lists the verified advertisers currently showing ads for a search phrase. We searched commercial phrases that small and mid-sized service businesses buy and kept the advertisers whose own site we could identify from the company name.
+**Does a Google Analytics tag count as Google Ads conversion tracking?** No. Google Analytics counts visits and events. Google Ads only learns which click became an enquiry when a conversion action is set up in Google Ads or imported from Analytics. In this study 21% of sites had Analytics or a Google tag and no Google Ads tag at all.
 
-**Why only the home page?** Because it is the page every advertiser has and the one where a site-wide container is loaded. A tag placed only on a landing page would be missed, which is why the study says the real share may be higher.
+**Which UK sectors measure their Google Ads best?** Among the 15 sectors read, mortgage and financial advice had the highest share of sites with a Google Ads conversion tag, at 69%, and cleaning the lowest, at 12%. The groups are small, so the order should be read as a picture and not as a ranking.
 
-**What should I do if my site is in the group with no tag?** Ask whoever runs the account to show you the Conversions page in Google Ads and the status of each action. If there is no action or it is inactive, the tag needs to be installed and tested before any bidding strategy can work.
+**How did you find the advertisers?** Through Google's Ads Transparency Center, with the region set to the United Kingdom. We searched for trade words that appear in web addresses, kept the websites with an advert last shown in the UK in the previous 30 days, and removed those that were not UK businesses in the sector. All 230 are marked as verified advertisers.
+
+**Can a business count phone calls with no tag on its site?** Partly. Google's help page says some conversion measurement does not require a tag, and gives calls from call assets as the example. That counts calls made straight from the advert. It does not count the visitor who clicks through, reads the page and rings the number on it, which needs a call conversion or a call tracking service on the site.
+
+**What should I do if my site has no tag?** Ask whoever runs the account to show you the Conversions page in Google Ads and the status of each action. If there is no action, or it is inactive, the tag needs to be installed and tested before any bidding strategy can work.
 
 
 ---
@@ -2752,7 +2905,7 @@ The reverse failure is worse. If the tag counts page views or every form field c
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -2961,7 +3114,7 @@ Google's own bid and budget page puts the trade-off plainly: "With higher bids, 
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -3126,7 +3279,7 @@ Google's general policy page says a non-egregious violation comes with a notific
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -3259,7 +3412,7 @@ If a question here is specific to your books, the FAQ page covers how fees, spen
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -3406,7 +3559,7 @@ What not to do: do not create a duplicate campaign to "restart" it, which resets
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
 
 ### FAQ
 
@@ -3561,7 +3714,7 @@ Anyone competent can answer these in an afternoon. Anyone who cannot is telling 
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 
@@ -3682,7 +3835,7 @@ Advertising usually leads to a list of contacts, and the rules change when you c
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 
@@ -3771,7 +3924,7 @@ Google's list of reasons Local Services Ads don't run applies in the UK too: the
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of UK businesses running Google Ads today. Most count visits, far fewer count enquiries.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 

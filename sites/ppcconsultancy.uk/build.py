@@ -1009,6 +1009,9 @@ def build():
     shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", BRAND_SPRITE), os.path.join(dist, BRAND_SPRITE))
     save_lastmod(manifest)
     shutil.copy(os.path.join(HERE, "assets", OG_IMAGE), os.path.join(dist, OG_IMAGE))
+    data_src = os.path.join(HERE, "assets", "data")   # public data files behind the studies in /guides/ (served at /data/)
+    if os.path.isdir(data_src):
+        shutil.copytree(data_src, os.path.join(dist, "data"), dirs_exist_ok=True)
     for icon in ("favicon.ico", "favicon-96.png", "apple-touch-icon.png"):
         shutil.copy(os.path.join(HERE, "assets", icon), os.path.join(dist, icon))
     with open(os.path.join(dist, INDEXNOW_KEY + ".txt"), "w", encoding="utf-8") as f:  # the key only, no newline

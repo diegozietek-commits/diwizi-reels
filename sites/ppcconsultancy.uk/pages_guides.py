@@ -22,7 +22,12 @@ AI_CSS = ('<style id="ai-read-css">.ai-read{margin:18px 0 6px;padding:14px 16px;
           '.guide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:8px 0 0}'
           '.guide-grid a{display:block;border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;color:var(--fg)}'
           '.guide-grid a:hover{border-color:var(--accent)}.guide-grid b{display:block;margin-bottom:6px}.guide-grid small{color:var(--muted)}'
-          '.sources a{overflow-wrap:anywhere}</style>')
+          '.sources a{overflow-wrap:anywhere}'
+          '.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:8px 0 18px}'
+          '.stat{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--soft)}.stat b{display:block;font-size:36px;line-height:1.1;color:var(--fg)}.stat span{font-size:14.5px;color:var(--muted)}'
+          '.bars{margin:12px 0 22px}.bar{display:grid;grid-template-columns:minmax(110px,250px) 1fr 44px;gap:10px;align-items:center;margin:8px 0;font-size:14.5px}'
+          '.bar .trk{background:var(--soft);border:1px solid var(--line);border-radius:8px;overflow:hidden}.bar i{display:block;height:14px;background:var(--accent)}.bar em{font-style:normal;font-weight:600;text-align:right}'
+          '@media (max-width:640px){.bar{grid-template-columns:1fr 44px;gap:4px 10px;margin:12px 0}.bar span{grid-column:1/-1}}</style>')
 AI_JS = ('<script id="ai-read-js">(function(){var b=document.querySelector(".ai-read");if(!b)return;b.addEventListener("click",function(e){var t=e.target.closest("a,button");if(!t)return;'
          'var ia=t.getAttribute("data-ia");(window.dataLayer=window.dataLayer||[]).push({event:"ai_read_click",ai_assistant:ia,page_path:location.pathname});'
          'if(t.tagName==="BUTTON"){e.preventDefault();var p=b.getAttribute("data-prompt");if(navigator.clipboard){navigator.clipboard.writeText(p).then(function(){t.textContent=t.getAttribute("data-ok")});}'
@@ -109,7 +114,7 @@ def _guide_page(p):
         "slug": slug, "kind": "guide", "short": p["short"], "blurb": p["blurb"], "title": p["title"], "meta": p["meta"],
         "kicker": p.get("kicker", "Guide"), "h1": p["h1"], "lead": p["lead"], "proof": [], "faq": list(p.get("faq", [])),
         "messages": p["messages"], "sources": p["sources"], "related": [s.strip("/") for s in p.get("related", []) if s.strip("/")],
-        "extra_css": AI_CSS, "extra_js": AI_JS,
+        "extra_css": AI_CSS, "extra_js": AI_JS + p.get("jsonld_extra", ""),   # jsonld_extra: e.g. a Dataset block for a study
         "body": ('<section><div class="wrap">' + _messages_box(p) + ai_read_html(url, p["meta"], p.get("faq", [])) + "</div></section>\n"
                  + p["body"] + "\n" + _sources(p) + _more_guides(p["slug"])),
     }

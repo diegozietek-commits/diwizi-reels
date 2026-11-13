@@ -1,0 +1,19 @@
+sector,sites_read,google_ads_conversion_tag_pct,google_ads_tag_no_conversion_seen_pct,analytics_only_pct,other_tags_only_pct,tag_signs_not_readable_pct,no_measurement_pct,any_google_ads_tag_pct,google_analytics_or_google_tag_pct,tag_manager_pct,meta_pixel_pct,microsoft_advertising_tag_pct,consent_banner_pct,clickable_phone_pct,sites_with_clickable_phone,calls_measured_pct_of_sites_with_phone,enquiry_form_pct
+Accountants,11,45,9,9,18,0,18,55,55,55,27,9,55,73,8,62,91
+Cleaning,17,12,0,41,18,12,18,12,47,35,0,0,29,53,9,33,53
+Dentists,18,56,0,22,0,0,22,56,72,78,28,11,33,94,17,65,50
+Electricians,20,35,40,15,0,0,10,75,75,65,15,10,35,85,17,53,60
+Estate and letting agents,7,29,0,43,0,14,14,29,71,29,14,0,71,71,5,20,14
+Home improvement,15,53,27,7,7,0,7,80,60,53,40,13,20,73,11,36,80
+IT support,10,30,30,30,10,0,0,60,90,50,20,20,60,50,5,40,50
+Locksmiths and drainage,19,47,11,26,0,5,11,58,74,63,0,5,16,89,17,71,47
+Mortgage and financial advice,13,69,8,15,0,0,8,77,92,85,31,23,54,77,10,30,38
+Pest control,17,35,12,18,6,6,24,47,65,53,6,0,24,94,16,38,71
+Plumbing and heating,19,42,11,26,0,0,21,53,68,58,16,5,47,84,16,50,42
+Private healthcare and physiotherapy,19,42,11,21,11,0,16,53,68,58,16,0,47,95,18,33,21
+Removals,16,38,19,31,6,6,0,56,75,56,6,6,44,81,13,46,44
+Roofing,13,54,8,8,0,8,23,62,54,38,0,15,62,85,11,55,77
+Solicitors,16,62,6,6,12,0,12,69,75,69,25,6,50,75,12,42,50
+All sectors,230,43,13,21,6,3,14,57,69,58,16,8,40,80,185,47,53
+
+Source: ppcconsultancy.uk/guides/google-ads-advertisers-measurement-uk/ . Sites read on 13 November 2026. Free to quote with a link.
