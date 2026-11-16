@@ -27,6 +27,7 @@ AI_CSS = ('<style id="ai-read-css">.ai-read{margin:18px 0 6px;padding:14px 16px;
           '.stat{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--soft)}.stat b{display:block;font-size:36px;line-height:1.1;color:var(--fg)}.stat span{font-size:14.5px;color:var(--muted)}'
           '.bars{margin:12px 0 22px}.bar{display:grid;grid-template-columns:minmax(110px,250px) 1fr 44px;gap:10px;align-items:center;margin:8px 0;font-size:14.5px}'
           '.bar .trk{background:var(--soft);border:1px solid var(--line);border-radius:8px;overflow:hidden}.bar i{display:block;height:14px;background:var(--accent)}.bar em{font-style:normal;font-weight:600;text-align:right}'
+          'main table{border:1px solid var(--line)}main th,main td{border:1px solid var(--line)}main thead th,main tr:first-child th{background:var(--soft);color:var(--fg)}'
           '@media (max-width:640px){.bar{grid-template-columns:1fr 44px;gap:4px 10px;margin:12px 0}.bar span{grid-column:1/-1}}</style>')
 AI_JS = ('<script id="ai-read-js">(function(){var b=document.querySelector(".ai-read");if(!b)return;b.addEventListener("click",function(e){var t=e.target.closest("a,button");if(!t)return;'
          'var ia=t.getAttribute("data-ia");(window.dataLayer=window.dataLayer||[]).push({event:"ai_read_click",ai_assistant:ia,page_path:location.pathname});'

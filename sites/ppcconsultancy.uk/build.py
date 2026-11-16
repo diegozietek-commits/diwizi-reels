@@ -15,6 +15,7 @@ from datetime import date
 from pages_core import PAGES as CORE
 from pages_services import PAGES as SERVICES
 from pages_expansion import PAGES as EXPANSION
+from pages_b2b import PAGES as B2B  # Nov 2026: B2B sector pages (manufacturing, construction, fintech, accountants)
 from pages_lists import PAGES as LISTS  # Nov 2026: UK comparison lists and the directory of independent consultants
 from pages_growth import PAGES as GROWTH  # Nov 2026: performance marketing, lead generation, marketing consultant
 from pages_guides import PAGES as GUIDES, GUIDE_SLUGS, HUB_SLUG as GUIDES_HUB  # Nov 2026: /guides/ (one page per panel message)
@@ -360,7 +361,21 @@ FORM_JS = ("<script>(function(){var f=document.getElementById('form');if(!f)retu
            "setTimeout(go,1500);"
            "}).catch(fail);"
            "});})();</script>")
-PAGES = CORE + SERVICES + EXPANSION + GROWTH + LISTS + GUIDES
+PAGES = CORE + SERVICES + EXPANSION + GROWTH + B2B + LISTS + GUIDES
+
+# Text that cites a page which is not published yet is held back until that page exists:
+# <!--if-page:guides/some-slug--> ... <!--/if-page-->. Added 16 Nov 2026 for the links to the UK B2B study, so the
+# sentences that quote it appear on every page at the same build that publishes the study itself.
+_IF_PAGE = re.compile(r"<!--if-page:([a-z0-9/-]+)-->(.*?)<!--/if-page-->", re.S)
+_ALL_SLUGS = {p["slug"] for p in PAGES}
+def _if_page(s):
+    return _IF_PAGE.sub(lambda m: m.group(2) if m.group(1) in _ALL_SLUGS else "", s) if isinstance(s, str) else s
+for _p in PAGES:
+    for _k in ("body", "lead"):
+        if _k in _p:
+            _p[_k] = _if_page(_p[_k])
+    if _p.get("faq"):
+        _p["faq"] = [(q, _if_page(a)) for q, a in _p["faq"]]
 BY_SLUG = {p["slug"]: p for p in PAGES}
 
 NAV = [  # 12 Oct 2026: the four service items moved into the "Services" hover menu (services_menu_html)
@@ -373,7 +388,8 @@ FAQ_SLUG = "faq"  # /faq/ is a sub-page of About
 FOOTER_GROUPS = [
     ("Services", ["ppc-management", "performance-marketing", "lead-generation", "google-ads-management", "google-ads-consultant", "ppc-consultation", "ppc-audit", "landing-pages",
                   "conversion-tracking", "google-ads-small-business", "ecommerce-ppc"]),
-    ("Platforms and sectors", ["facebook-ads-management", "microsoft-ads-management", "b2b-ppc",
+    ("Platforms and sectors", ["facebook-ads-management", "microsoft-ads-management", "b2b-ppc", "manufacturing-marketing",
+                               "construction-marketing", "fintech-marketing", "marketing-for-accountants",
                                "saas-ppc", "ppc-for-law-firms", "healthcare-ppc"]),
     ("Working with me", ["ppc-freelancer", "ppc-specialist", "marketing-consultant", "ppc-consultant-london", "ppc-consultant-manchester",
                          "ppc-consultant-birmingham", "ppc-consultant-leeds", "ppc-consultant-bristol",
@@ -780,7 +796,7 @@ LLMS_SUMMARY = ("Diego Willian Zietek, independent PPC consultant with 14+ years
 LLMS_FACTS = ["- Market: UK and Irish businesses, and companies from any country that work in English; the practice for the US, Canada and Europe is at googleadsfreelancer.com.",
               "- Services: PPC management, PPC audits, B2B PPC, landing pages and conversion tracking (GA4, Tag Manager, Consent Mode v2).",
               "- Pricing: quoted in pounds, ex VAT, or in euros for Irish businesses, from the form; no prices are published. Never a percentage of ad spend."]
-LLMS_PAGES = ["index", "ppc-management", "performance-marketing", "lead-generation", "marketing-consultant", "best-ppc-agencies-uk", "independent-ppc-consultants-uk", "google-ads-consultant", "ppc-consultation", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "faq", "contact"]
+LLMS_PAGES = ["index", "ppc-management", "performance-marketing", "lead-generation", "marketing-consultant", "manufacturing-marketing", "construction-marketing", "fintech-marketing", "marketing-for-accountants", "best-ppc-agencies-uk", "independent-ppc-consultants-uk", "google-ads-consultant", "ppc-consultation", "ppc-audit", "ppc-freelancer", "ppc-specialist", "ppc-consultant-london", "b2b-ppc", "saas-ppc", "ecommerce-ppc", "ppc-for-law-firms", "healthcare-ppc", "landing-pages", "conversion-tracking", "pricing", "results", "about", "faq", "contact"]
 LLMS_SISTER = "Practice for the US, Canada and Europe, Google Ads freelancer"
 
 def schema_for(p):

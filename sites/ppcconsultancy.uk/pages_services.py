@@ -285,6 +285,30 @@ PAGES = [
 "lead": "Google and Microsoft Search for UK B2B companies with a sales cycle: SaaS, technology, professional and industrial services. The difference from consumer PPC is the feedback loop. Your CRM stages go back to the platforms, so the bidding learns from opportunities and closed business, not from whoever filled a form.",
 "service_name": "B2B PPC management",
 "body": """
+<section id="what-is-b2b-ppc"><div class="wrap">
+<h2>What is B2B PPC?</h2>
+<p>B2B PPC is pay per click advertising aimed at business buyers, mostly on Google Ads, with Microsoft Advertising and paid social around it. It differs from consumer PPC in three ways. Search volume is low, a click is expensive, and the sale happens later inside a CRM. A B2B account is therefore built around the Sales Qualified Lead and the opportunity, and the enquiry form is treated as a step on the way.</p>
+<table><thead><tr><th></th><th>B2B PPC</th><th>Consumer PPC</th></tr></thead><tbody>
+<tr><td>Who searches</td><td>A buying group, often several people over several weeks</td><td>One person, often on the same day</td></tr>
+<tr><td>Search volume</td><td>Dozens or hundreds of searches a month per term</td><td>Thousands per term</td></tr>
+<tr><td>What counts as a conversion</td><td>An enquiry that sales accepted, an opportunity, a signed contract</td><td>A purchase or a booked job</td></tr>
+<tr><td>Time from click to sale</td><td>Weeks to months</td><td>Minutes to days</td></tr>
+<tr><td>What bidding needs</td><td>CRM stages sent back to the ad platform</td><td>The sale recorded on the website</td></tr>
+<tr><td>Where money is wasted</td><td>Students, job seekers, consumers and suppliers</td><td>Wrong area and wrong service</td></tr>
+</tbody></table>
+</div></section>
+
+<section id="agency-or-consultant"><div class="wrap">
+<h2>B2B PPC agency or an independent consultant?</h2>
+<p>Both can work. The difference is who touches the account.</p>
+<div class="cols">
+<div class="card"><h3>When a B2B PPC agency fits</h3><p>You need creative production, several markets and a team that covers many channels at once. Ask who will be in the account each week and how many other accounts that person carries.</p></div>
+<div class="card"><h3>When an independent consultant fits</h3><p>The budget is concentrated in search, the sale is technical and you want the person from the first call to be the one changing bids. That is how this consultancy works, with fewer clients by design.</p></div>
+<div class="card"><h3>What to ask either one</h3><p>Which conversion bidding will use, how sales feedback reaches the account, who owns the ad account and the tags, and what the monthly report shows besides clicks.</p></div>
+</div>
+<p>The longer comparison is on <a href="/agency-vs-consultant/">PPC agency vs PPC consultant</a>.</p>
+</div></section>
+
 <section><div class="wrap">
 <h2>Why B2B PPC goes wrong</h2>
 <div class="cols">
@@ -292,6 +316,7 @@ PAGES = [
 <div class="card"><h3>Search volume that is not there</h3><p>Many UK B2B categories have a few hundred searches a month. Broad match fills the gap with irrelevance. Sometimes the honest answer is that another channel, or content, carries more of the load.</p></div>
 <div class="card"><h3>Attribution that stops at the click</h3><p>Ninety-day sales cycles judged on last-click, weekly. The board asks why PPC "does not work" while it quietly sourced half the pipeline.</p></div>
 </div>
+<!--if-page:guides/b2b-google-ads-measurement-uk--><p>The pattern is measurable from the outside. In our <a href="/guides/b2b-google-ads-measurement-uk/">study of 66 UK B2B companies running Google Ads</a>, 47% carried a Google Ads tag and only 5% showed a CRM or automation script next to it.</p><!--/if-page-->
 </div></section>
 
 <section><div class="wrap">
@@ -306,6 +331,19 @@ PAGES = [
 </ul>
 </div></section>
 
+<section id="b2b-sectors"><div class="wrap">
+<h2>B2B sectors covered in more detail</h2>
+<p>Each sector loses money in its own way, so each has a page with the searches worth buying and the ones to exclude.</p>
+<div class="cols">
+<div class="card"><h3><a href="/manufacturing-marketing/">Manufacturing</a></h3><p>Manufacturers and engineering firms selling to a specification.</p></div>
+<div class="card"><h3><a href="/construction-marketing/">Construction</a></h3><p>Contractors selling work to businesses, developers and building owners.</p></div>
+<div class="card"><h3><a href="/fintech-marketing/">Fintech</a></h3><p>Regulated financial firms, with verification and promotion rules settled first.</p></div>
+<div class="card"><h3><a href="/marketing-for-accountants/">Accountancy</a></h3><p>Practices that want business clients who fit.</p></div>
+<div class="card"><h3><a href="/saas-ppc/">SaaS</a></h3><p>Software companies measured in pipeline and payback.</p></div>
+<div class="card"><h3><a href="/ppc-for-law-firms/">Law firms</a></h3><p>Solicitors with long consideration and strict rules on claims.</p></div>
+</div>
+</div></section>
+
 <section><div class="wrap">
 <h2>Who this fits</h2>
 <p>UK and Irish B2B companies with a deal size that justifies £5 to £15 clicks and a CRM that records stages: SaaS from seed to Series B, technology and professional services firms, industrial and engineering companies with a defined buyer. Marketing managers who need one senior person to own paid acquisition alongside the SDR team, and founders who are the marketing team for now.</p>
@@ -314,6 +352,10 @@ PAGES = [
 "faq": [
 ("Do you work with in-house B2B marketing teams?", "Yes. Often as the paid specialist next to a content or demand team: I run the accounts, build the measurement and report in the team's pipeline numbers. Advisory-only arrangements for teams that run their own accounts are also available."),
 ("What CRMs can you connect for offline conversions?", "HubSpot and Salesforce natively, most others through Zapier, Make or a scheduled upload. The requirement is that stages are recorded consistently; the integration is the easy part."),
+("Why do my B2B enquiries from Google Ads not turn into meetings?", "Usually because bidding is aimed at the form, so the platform finds more of the people who fill in forms, including students, job seekers and suppliers. The fix is a tighter keyword and negative list, a form that qualifies, and sending the stage sales accepts back to Google Ads as the conversion. Bidding then learns from the enquiries that became meetings."),
+("Does Performance Max work for B2B?", "Sometimes, and only with a conversion that reflects lead quality. Fed with raw form fills it drifts towards cheap placements and poor leads. Search comes first, and Performance Max is tested once CRM stages flow back, judged on opportunities rather than on enquiries."),
+("What if very few people search for what we sell?", "Search captures the small demand that exists and should cover it completely, including competitor searches and searches that describe the problem. Growth beyond that comes from paid social aimed at the right companies and job titles, and from remarketing to people who already visited."),
+("How do you keep consumers and students out of a B2B campaign?", "With negative keywords for jobs, courses, free and consumer terms from the first day, and adverts that state who the product is for. The form asks for the company and the role, and bidding learns from the enquiries sales accepted, so it stops looking for the wrong people."),
 ("How do you report on a 90-day sales cycle?", "Cohorts. Spend in a month is judged against the opportunities and revenue that month's leads produced over the following quarter, not against the same month's closed deals. It takes a quarter to see clearly and the reporting says so."),
 ],
 "related": ["ppc-management", "conversion-tracking", "landing-pages", "ppc-audit"],
@@ -416,6 +458,22 @@ PAGES = [
 </ul>
 </div></section>
 
+<section id="offline-conversions"><div class="wrap">
+<h2>Offline conversions and enhanced conversions for leads</h2>
+<p>When the sale closes in a CRM, on the phone or on a contract, Google Ads never hears about it. The account keeps optimising for the enquiry form, because that is the only result it saw. Offline conversion tracking sends the stages from your CRM back to Google Ads, and bidding starts following the enquiry that became revenue.</p>
+<p>Google offers two routes. <a href="https://support.google.com/google-ads/answer/2998031?hl=en-GB" rel="noopener" target="_blank">Offline conversion imports</a> match each result to the Google click ID stored when the visitor arrived. <a href="https://support.google.com/google-ads/answer/11021502?hl=en-GB" rel="noopener" target="_blank">Enhanced conversions for leads</a> add the email address or phone number from the form, hashed before it is sent, and Google describes them as an upgraded version of offline conversion import.</p>
+<ol class="steps">
+<li><div><strong>Capture the identifier on the form.</strong> When the form is sent, store the Google click ID from the page address, or the email address the visitor typed, which is hashed before it goes to Google.</div></li>
+<li><div><strong>Store it on the lead in the CRM.</strong> A hidden field carries it into HubSpot, Salesforce or whatever records your leads, on the same record the sales team works from.</div></li>
+<li><div><strong>Agree with sales which stages count.</strong> Accepted lead, opportunity and won are the usual three. Each needs a definition sales applies the same way every week, or the data bidding learns from shifts under it.</div></li>
+<li><div><strong>Send those stages back on a schedule.</strong> Daily or weekly, through a native connector or a scheduled upload, with a value attached wherever the CRM holds one.</div></li>
+<li><div><strong>Check the imported numbers every month.</strong> Compare them with the CRM for the same period. A gap usually means an identifier lost on the way or a stage recorded outside the agreed rules.</div></li>
+<li><div><strong>Move bidding to the new conversion in steps.</strong> Changing the primary conversion resets part of what the account has learned, so the imported stage starts as a secondary conversion, is compared for a few weeks and then becomes primary on one campaign before the rest.</div></li>
+</ol>
+<!--if-page:guides/b2b-google-ads-measurement-uk--><p>Few UK B2B advertisers have this in place. Among <a href="/guides/b2b-google-ads-measurement-uk/">66 UK B2B companies running Google Ads</a>, only 5% showed a CRM or automation script next to the ad tag.</p><!--/if-page-->
+<p class="note">Under UK GDPR and PECR the personal data is hashed before it is sent, the form states the purpose and consent choices are respected. This is not legal advice, and the final word on wording belongs to your own adviser.</p>
+</div></section>
+
 <section><div class="wrap">
 <h2>How it is priced</h2>
 <p>Fixed price, quoted after a short look at the current setup, scaled by the number of platforms, outcomes and whether CRM integration is in scope. Typically one to three weeks, with the CRM piece depending on access. Included in <a href="/ppc-management/">management retainers</a> and credited against the first month if a retainer follows. Quoted in pounds, ex VAT. See <a href="/pricing/">pricing</a>.</p>
@@ -425,6 +483,8 @@ PAGES = [
 ("How much does conversion tracking setup cost?", "A fixed price scaled by platforms and outcomes. A Google Ads and GA4 rebuild for a lead generation site is at the low end; adding Meta server-side and CRM offline import is at the high end. Quoted after a look at what exists."),
 ("Do we need a developer?", "Usually not. Tag Manager and the platform integrations cover most of it. Where a data layer change is needed on your site, I write the specification and your developer implements a few lines."),
 ("Which consent banner should we use?", "Any Google-certified consent management platform works with Consent Mode v2; Cookiebot, CookieYes and Iubenda are common in the UK. If you already have one, it is configured rather than replaced."),
+("What is the difference between offline conversion imports and enhanced conversions for leads?", "Both tell Google Ads which enquiries went on to become something valuable. Offline conversion imports match the result to the Google click ID stored when the visitor arrived. Enhanced conversions for leads also use the email address or phone number from the form, hashed before it is sent, and Google describes them as an upgraded version of offline import. Google still asks for the click ID to be included whenever possible, so the two are usually sent together."),
+("Which CRM stage should Google Ads optimise for?", "The deepest stage that still happens often enough for bidding to learn from it, usually the accepted lead or the opportunity. A signed contract is the truest signal, but if only a handful happen each month the account cannot learn from it, so it is imported as a secondary conversion and reported."),
 ("Can you fix tracking without taking over the campaigns?", "Yes. Tracking is a standalone project and often the first thing an in-house team or another agency asks for. The accounts remain theirs to run."),
 ],
 "related": ["ppc-management", "landing-pages", "ppc-audit", "b2b-ppc"],

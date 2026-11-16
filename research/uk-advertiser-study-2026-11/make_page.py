@@ -43,7 +43,7 @@ body = f"""
 <div class="stat"><b>{o["call_not_measured_of_tel"]}%</b><span>of the sites with a clickable phone number have nothing we could find to count the call</span></div>
 </div>
 <p>All {N} businesses had a Google ad shown in the United Kingdom between {S["last_shown_min"][8:10]} October and {S["last_shown_max"][8:10]} November 2026, according to Google's own Ads Transparency Center, and all of them are marked there as verified advertisers. They are paying for clicks now. Fewer than half show Google which click became a customer.</p>
-<p>The figures are free to quote with a link to this page. The table by sector can be downloaded as a <a href="/data/uk-google-ads-measurement-2026-11.csv">CSV file</a>.</p>
+<p>The figures are free to quote with a link to this page. The table by sector can be downloaded as a <a href="/data/uk-google-ads-measurement-2026-11.csv">CSV file</a>.</p><!--if-page:guides/b2b-google-ads-measurement-uk--><p>The second study in this series reads B2B companies and adds the CRM side. <a href="/guides/b2b-google-ads-measurement-uk/">Read the B2B study</a>.</p><!--/if-page-->
 </div></section>
 
 <section id="groups"><div class="wrap">

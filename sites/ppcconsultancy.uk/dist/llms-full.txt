@@ -2,7 +2,7 @@
 
 > Diego Willian Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. Runs Google, Microsoft and Meta Ads personally, with landing pages and conversion tracking included, for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.
 
-Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-13.
+Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-16.
 
 
 ---
@@ -995,6 +995,42 @@ Description: B2B PPC for UK SaaS and services firms: Google and Microsoft Search
 
 Google and Microsoft Search for UK B2B companies with a sales cycle: SaaS, technology, professional and industrial services. The difference from consumer PPC is the feedback loop. Your CRM stages go back to the platforms, so the bidding learns from opportunities and closed business, not from whoever filled a form.
 
+## What is B2B PPC?
+
+B2B PPC is pay per click advertising aimed at business buyers, mostly on Google Ads, with Microsoft Advertising and paid social around it. It differs from consumer PPC in three ways. Search volume is low, a click is expensive, and the sale happens later inside a CRM. A B2B account is therefore built around the Sales Qualified Lead and the opportunity, and the enquiry form is treated as a step on the way.
+
+| | B2B PPC | Consumer PPC |
+
+| Who searches | A buying group, often several people over several weeks | One person, often on the same day |
+
+| Search volume | Dozens or hundreds of searches a month per term | Thousands per term |
+
+| What counts as a conversion | An enquiry that sales accepted, an opportunity, a signed contract | A purchase or a booked job |
+
+| Time from click to sale | Weeks to months | Minutes to days |
+
+| What bidding needs | CRM stages sent back to the ad platform | The sale recorded on the website |
+
+| Where money is wasted | Students, job seekers, consumers and suppliers | Wrong area and wrong service |
+
+## B2B PPC agency or an independent consultant?
+
+Both can work. The difference is who touches the account.
+
+### When a B2B PPC agency fits
+
+You need creative production, several markets and a team that covers many channels at once. Ask who will be in the account each week and how many other accounts that person carries.
+
+### When an independent consultant fits
+
+The budget is concentrated in search, the sale is technical and you want the person from the first call to be the one changing bids. That is how this consultancy works, with fewer clients by design.
+
+### What to ask either one
+
+Which conversion bidding will use, how sales feedback reaches the account, who owns the ad account and the tags, and what the monthly report shows besides clicks.
+
+The longer comparison is on PPC agency vs PPC consultant.
+
 ## Why B2B PPC goes wrong
 
 ### Optimising for the form fill
@@ -1023,6 +1059,34 @@ Ninety-day sales cycles judged on last-click, weekly. The board asks why PPC "do
 
 - Reporting in pipeline. Cost per opportunity and cost per closed deal, by channel and campaign, over the real sales cycle. Leads are shown, but nobody is managed to them.
 
+## B2B sectors covered in more detail
+
+Each sector loses money in its own way, so each has a page with the searches worth buying and the ones to exclude.
+
+### Manufacturing
+
+Manufacturers and engineering firms selling to a specification.
+
+### Construction
+
+Contractors selling work to businesses, developers and building owners.
+
+### Fintech
+
+Regulated financial firms, with verification and promotion rules settled first.
+
+### Accountancy
+
+Practices that want business clients who fit.
+
+### SaaS
+
+Software companies measured in pipeline and payback.
+
+### Law firms
+
+Solicitors with long consideration and strict rules on claims.
+
 ## Who this fits
 
 UK and Irish B2B companies with a deal size that justifies £5 to £15 clicks and a CRM that records stages: SaaS from seed to Series B, technology and professional services firms, industrial and engineering companies with a defined buyer. Marketing managers who need one senior person to own paid acquisition alongside the SDR team, and founders who are the marketing team for now.
@@ -1032,6 +1096,14 @@ UK and Irish B2B companies with a deal size that justifies £5 to £15 clicks an
 **Do you work with in-house B2B marketing teams?** Yes. Often as the paid specialist next to a content or demand team: I run the accounts, build the measurement and report in the team's pipeline numbers. Advisory-only arrangements for teams that run their own accounts are also available.
 
 **What CRMs can you connect for offline conversions?** HubSpot and Salesforce natively, most others through Zapier, Make or a scheduled upload. The requirement is that stages are recorded consistently; the integration is the easy part.
+
+**Why do my B2B enquiries from Google Ads not turn into meetings?** Usually because bidding is aimed at the form, so the platform finds more of the people who fill in forms, including students, job seekers and suppliers. The fix is a tighter keyword and negative list, a form that qualifies, and sending the stage sales accepts back to Google Ads as the conversion. Bidding then learns from the enquiries that became meetings.
+
+**Does Performance Max work for B2B?** Sometimes, and only with a conversion that reflects lead quality. Fed with raw form fills it drifts towards cheap placements and poor leads. Search comes first, and Performance Max is tested once CRM stages flow back, judged on opportunities rather than on enquiries.
+
+**What if very few people search for what we sell?** Search captures the small demand that exists and should cover it completely, including competitor searches and searches that describe the problem. Growth beyond that comes from paid social aimed at the right companies and job titles, and from remarketing to people who already visited.
+
+**How do you keep consumers and students out of a B2B campaign?** With negative keywords for jobs, courses, free and consumer terms from the first day, and adverts that state who the product is for. The form asks for the company and the role, and bidding learns from the enquiries sales accepted, so it stops looking for the wrong people.
 
 **How do you report on a 90-day sales cycle?** Cohorts. Spend in a month is judged against the opportunities and revenue that month's leads produced over the following quarter, not against the same month's closed deals. It takes a quarter to see clearly and the reporting says so.
 
@@ -1277,6 +1349,26 @@ The CRM knows which enquiries became customers. The platforms do not, so they ke
 
 - A reconciliation report showing Google Ads, GA4 and the CRM side by side for the same period, with the remaining differences explained.
 
+## Offline conversions and enhanced conversions for leads
+
+When the sale closes in a CRM, on the phone or on a contract, Google Ads never hears about it. The account keeps optimising for the enquiry form, because that is the only result it saw. Offline conversion tracking sends the stages from your CRM back to Google Ads, and bidding starts following the enquiry that became revenue.
+
+Google offers two routes. Offline conversion imports match each result to the Google click ID stored when the visitor arrived. Enhanced conversions for leads add the email address or phone number from the form, hashed before it is sent, and Google describes them as an upgraded version of offline conversion import.
+
+- Capture the identifier on the form. When the form is sent, store the Google click ID from the page address, or the email address the visitor typed, which is hashed before it goes to Google.
+
+- Store it on the lead in the CRM. A hidden field carries it into HubSpot, Salesforce or whatever records your leads, on the same record the sales team works from.
+
+- Agree with sales which stages count. Accepted lead, opportunity and won are the usual three. Each needs a definition sales applies the same way every week, or the data bidding learns from shifts under it.
+
+- Send those stages back on a schedule. Daily or weekly, through a native connector or a scheduled upload, with a value attached wherever the CRM holds one.
+
+- Check the imported numbers every month. Compare them with the CRM for the same period. A gap usually means an identifier lost on the way or a stage recorded outside the agreed rules.
+
+- Move bidding to the new conversion in steps. Changing the primary conversion resets part of what the account has learned, so the imported stage starts as a secondary conversion, is compared for a few weeks and then becomes primary on one campaign before the rest.
+
+Under UK GDPR and PECR the personal data is hashed before it is sent, the form states the purpose and consent choices are respected. This is not legal advice, and the final word on wording belongs to your own adviser.
+
 ## How it is priced
 
 Fixed price, quoted after a short look at the current setup, scaled by the number of platforms, outcomes and whether CRM integration is in scope. Typically one to three weeks, with the CRM piece depending on access. Included in management retainers and credited against the first month if a retainer follows. Quoted in pounds, ex VAT. See pricing.
@@ -1288,6 +1380,10 @@ Fixed price, quoted after a short look at the current setup, scaled by the numbe
 **Do we need a developer?** Usually not. Tag Manager and the platform integrations cover most of it. Where a data layer change is needed on your site, I write the specification and your developer implements a few lines.
 
 **Which consent banner should we use?** Any Google-certified consent management platform works with Consent Mode v2; Cookiebot, CookieYes and Iubenda are common in the UK. If you already have one, it is configured rather than replaced.
+
+**What is the difference between offline conversion imports and enhanced conversions for leads?** Both tell Google Ads which enquiries went on to become something valuable. Offline conversion imports match the result to the Google click ID stored when the visitor arrived. Enhanced conversions for leads also use the email address or phone number from the form, hashed before it is sent, and Google describes them as an upgraded version of offline import. Google still asks for the click ID to be included whenever possible, so the two are usually sent together.
+
+**Which CRM stage should Google Ads optimise for?** The deepest stage that still happens often enough for bidding to learn from it, usually the accepted lead or the opportunity. A signed contract is the truest signal, but if only a handful happen each month the account cannot learn from it, so it is imported as a secondary conversion and reported.
 
 **Can you fix tracking without taking over the campaigns?** Yes. Tracking is a standalone project and often the first thing an in-house team or another agency asks for. The accounts remain theirs to run.
 
@@ -2588,6 +2684,334 @@ Fees are quoted in pounds, ex VAT, or in euros for Irish businesses, from the fo
 **Can you work alongside our marketing manager or agency?** Yes. Common arrangements are an independent audit of the paid accounts, a regular review of the work your team or agency does, or taking on the paid channels while your team keeps the rest.
 
 **Where are you based?** In Curitiba, Brazil, three to four hours behind London. Most of the work is done in writing, calls are booked ahead and usually held in the UK afternoon, and everything is in English.
+
+
+---
+
+## Manufacturing Marketing UK | Google Ads for Manufacturers
+
+URL: https://ppcconsultancy.uk/manufacturing-marketing/
+Description: Manufacturing marketing through paid search for UK manufacturers and engineering firms. Google Ads judged on Sales Qualified Leads, not on form fills.
+
+On this site, manufacturing marketing means paid media, with Google Ads first and Microsoft Advertising beside it. It is for UK manufacturers and engineering firms that sell to other businesses, such as a contract manufacturer, a component supplier, a fabricator or a machine builder. The buyer is an engineer or a buyer working to a specification, the order is large and the sale closes weeks later, so the account is built around the Sales Qualified Lead rather than the form.
+
+## What is manufacturing marketing through paid search?
+
+It is buying the searches engineers and buyers make when they need a supplier, a process or a part, and sending each one to a page that answers the specification. Google Ads covers the searches that name the process, the material or the standard. Microsoft Advertising reaches the same buyers on work computers. LinkedIn Ads can support the account when search volume is too small to fill the pipeline, aimed at named companies and job titles, but it is not where the work starts.
+
+## Where manufacturing ad budgets leak
+
+### Students and apprentices
+
+Searches such as what is injection moulding, CNC machining course or welding apprenticeship share the words of the services you sell. Without a negative list from the first day, part of every month's budget pays for coursework.
+
+### Job seekers
+
+CNC machinist jobs near me and engineering vacancies in your town look like your keywords to broad match. They keep arriving every week until they are excluded by name.
+
+### One-off and hobby buyers
+
+Someone who wants a single bracket cut for a car restoration fills in the same form as a buyer with an annual schedule. The click costs the same and the value does not.
+
+### Suppliers selling to you
+
+Toolmakers, software vendors and material suppliers search the same terms to find manufacturers to sell to, and many of them use your enquiry form. A form that asks for the part, the quantity and the drawing filters most of them out.
+
+## Which manufacturing searches are worth buying
+
+| Search | Who usually types it | What to do with it |
+| contract manufacturing uk | A buyer looking to outsource production | Buy, with a page that states capacity, certifications and lead times |
+| precision cnc machining services | An engineer with a drawing to place | Buy, with a form that accepts the drawing |
+| iso 9001 sheet metal fabrication | A buyer working to a quality requirement | Buy, and name the certification in the advert |
+| cnc machinist jobs | A job seeker | Exclude as a negative keyword |
+| cnc machining course | A student or an apprentice | Exclude |
+| laser cutting near me | A hobby or one-off buyer | Exclude, or send it to a page that states the minimum order |
+Real search terms vary by process and by region, so the list is rebuilt from your own search terms report in the first weeks.
+
+## What manufacturing marketing here includes
+
+- Campaigns by process and by industry served. Machining, fabrication, moulding or assembly, each with its own budget, so a strong line does not hide a weak one.
+- Negative keywords from the first day. Jobs, courses, definitions and hobby terms are excluded before launch and the list is reviewed every week.
+- A form that qualifies. It asks for the company, the part or process, the quantity and a drawing, so sales can tell a real enquiry within a minute.
+- Sales Qualified Leads sent back to Google Ads. The enquiries sales accepts, and the quotes that follow, go back to the account as conversions. See conversion tracking.
+- A page per process. With the tolerances, materials, certifications and lead times a buyer checks first. See landing pages.
+- A monthly report your sales lead can check. Cost per Sales Qualified Lead and per quote, by process, next to the platform numbers.
+
+## What has been run before
+
+### Trutek, truck suspension parts, Brazil
+
+Brand, website and Google Ads Search since 2020, for a specialist supplier with few searches and valuable enquiries. The account's history shows 5,707 clicks and about 260 attributed contact conversions. A conversion here is a contact action recorded by Google Ads, not a sale.
+
+### Pontomais, HR software, Brazil
+
+Google Ads rebuilt from scratch while I worked there as an employee, from August 2017, with daily alignment with the sales team. Contact requests from Google Ads went from roughly five a month to the hundreds over eight months. These are approximate volumes from my own experience on the project.
+
+No case from manufacturing has been published here. The cases above come from other sectors and show how the work is done when the sale is slow and decided outside the ad account. Each one, with its limits, is on the results page.
+
+## Who this fits
+
+UK manufacturers and engineering firms that sell to other businesses, with a sales team or an owner who follows up enquiries, and a product or capacity that buyers search for by name. It is not for consumer products sold online, which is the work described on e-commerce PPC, and it is not for recruiting staff, which is a separate job.
+
+### FAQ
+
+**Does Google Ads work for manufacturers?** Yes, when buyers search for the process, the material or the standard you work to. The volume is small, so the account has to cover every relevant search, exclude the rest and count the enquiries sales accepts rather than every form.
+
+**Our products are made to order. What do buyers search for?** The process, the material, the tolerance and the certification, often with a location or the word supplier. Those searches are fewer than consumer searches, and the people behind them usually have a drawing ready.
+
+**How do you stop job seekers clicking our ads?** With negative keywords for jobs, vacancies, apprenticeships and salaries from the first day, adverts that state who the service is for, and a weekly read of the search terms report to catch the new variations.
+
+**Should we use Performance Max?** Not at the start. Performance Max needs a conversion that reflects the quality of an enquiry, otherwise it drifts towards cheap placements. Search comes first, and Performance Max is tested once Sales Qualified Leads flow back from the CRM.
+
+**Can you connect Google Ads to our CRM?** Usually, through enhanced conversions for leads or an offline import from the CRM. Where enquiries live only in email or an ERP, a simple shared sheet of accepted enquiries does most of the job at first.
+
+**How much does manufacturing marketing cost?** The fee is set from the scope: the platforms, the number of process lines, the landing pages and whether CRM work is included. The pricing page explains how it is worked out, and the quote comes in writing after a look at the account. Your ad spend is paid straight to Google.
+
+
+---
+
+## Construction Marketing UK | Google Ads for Contractors
+
+URL: https://ppcconsultancy.uk/construction-marketing/
+Description: Construction marketing through paid search for UK contractors that sell work to businesses. Google Ads judged on site visits and tenders, not on calls.
+
+On this site, construction marketing means paid media, with Google Ads first. It is for UK contractors that win work from businesses and from clients who commission projects, such as commercial fit-out, groundworks, steel frame, mechanical and electrical, refurbishment and specialist trades working for main contractors, developers, facilities managers and building owners. Homeowners looking for a builder and people looking for site work are a different audience, and keeping them out is half of the job.
+
+## What is construction marketing through paid search?
+
+It is buying the searches a client makes when a project needs a contractor, and making sure the enquiry that arrives is one you would price. Google Ads covers the searches that name the trade, the type of building and the area. Microsoft Advertising adds the same buyers on work computers. The goal is an enquiry that becomes a site visit or a tender, counted as a Sales Qualified Lead, and not a call about a garden wall.
+
+## Where construction ad budgets leak
+
+### Job seekers and site workers
+
+Searches for a CSCS card, labouring jobs, site manager vacancies or construction salaries share words with your services. They are excluded by name, and the list grows every week from the search terms report.
+
+### Homeowners and do it yourself
+
+How to build an extension, cheap builders near me and DIY plastering come from people planning their own home project. A commercial contractor pays for those clicks unless the adverts and the negatives say who the work is for.
+
+### Projects outside your range
+
+A small domestic job and a multi-site fit-out arrive through the same form. Without questions about the type of project, the location and the start date, the estimator spends the week on enquiries the firm would never price.
+
+### Subcontractors and suppliers
+
+Plant hire firms, merchants and subcontractors looking for main contractors to work with search the same terms and fill in the same enquiry form.
+
+## Which construction searches are worth buying
+
+| Search | Who usually types it | What to do with it |
+| commercial fit out contractors | A facilities or property manager planning a refurbishment | Buy, with a page that shows sectors, project types and accreditations |
+| groundworks contractors manchester | A developer or main contractor looking for a subcontractor | Buy, only in the areas you cover |
+| design and build contractor | A business owner commissioning a building | Buy, with a page for each building type you deliver |
+| cscs card test | Someone starting work on site | Exclude as a negative keyword |
+| construction jobs near me | A job seeker | Exclude |
+| diy extension plans | A homeowner doing the work themselves | Exclude |
+The exact terms depend on the trade and the region, so the list is rebuilt from your own search terms report in the first weeks.
+
+## What construction marketing here includes
+
+- Campaigns by trade, building type and area. So the budget follows the work you want, in the places your teams can reach.
+- Negative keywords from the first day. Jobs, training, cards, salaries and do it yourself terms are excluded before launch and reviewed every week.
+- An enquiry form that sorts projects. It asks for the type of project, the location, the approximate size and the start date, so the estimator can answer the right enquiries first.
+- Site visits and tenders sent back to Google Ads. The enquiries that reached a site visit or a tender go back to the account as conversions, so bidding learns from real projects. See conversion tracking.
+- A page per service and per building type. With the accreditations you hold, such as CHAS, SafeContractor or Constructionline, and photographs of comparable work. See landing pages.
+- A monthly report in site visits and tenders. Cost per Sales Qualified Lead and per tender, by trade and area, next to the platform numbers.
+
+## What has been run before
+
+### Trutek, truck suspension parts, Brazil
+
+Brand, website and Google Ads Search since 2020, for a specialist supplier with few searches and valuable enquiries. The account's history shows 5,707 clicks and about 260 attributed contact conversions. A conversion here is a contact action recorded by Google Ads, not a sale.
+
+### Pontomais, HR software, Brazil
+
+Google Ads rebuilt from scratch while I worked there as an employee, from August 2017, with daily alignment with the sales team. Contact requests from Google Ads went from roughly five a month to the hundreds over eight months. These are approximate volumes from my own experience on the project.
+
+No case from construction has been published here. The cases above come from other sectors and show how the work is done when the sale is slow and decided outside the ad account. Each one, with its limits, is on the results page.
+
+## Who this fits
+
+UK contractors that sell work to businesses, developers, main contractors and building owners, with someone who visits sites and prices work promptly. It is not for builders who work mainly for homeowners, and it does not cover public sector frameworks, which are won through procurement and not through adverts.
+
+### FAQ
+
+**Does Google Ads work for commercial contractors?** Yes, for private and commercial clients who search when a project comes up. The searches are fewer than for domestic trades, so every relevant one is covered, the rest is excluded and success is counted in site visits and tenders.
+
+**How do you keep job seekers and CSCS searches out?** With negative keywords for jobs, vacancies, salaries, cards, tests and courses from the first day, and a weekly read of the search terms report. Adverts that name the client type help as well.
+
+**Our work comes through tenders and frameworks. Can paid search help?** For private and commercial work, yes, because those clients search when they need a contractor. Public sector frameworks are won through procurement portals, and no advert changes that, so the account is aimed at the clients who search.
+
+**How soon can we see whether it works?** Clicks and enquiries arrive within days of launch. Judging cost per site visit or tender takes longer, because it depends on how quickly enquiries are followed up and priced, so the first review uses enquiries sales accepted.
+
+**Should we advertise across the whole of the UK?** Only where your teams can work profitably. Location targeting by region or radius keeps the budget on projects you can staff, and areas are added once the first ones are proven.
+
+**How much does construction marketing cost?** The fee is set from the scope: the platforms, the number of trades and areas, the landing pages and whether CRM work is included. The pricing page explains how it is worked out, and the quote comes in writing after a look at the account. Your ad spend is paid straight to Google.
+
+
+---
+
+## Fintech Marketing UK | Google Ads for Regulated Financial Firms
+
+URL: https://ppcconsultancy.uk/fintech-marketing/
+Description: Fintech marketing through paid search for UK firms. Google verification and the financial promotion rules first, then Google Ads judged on accounts opened.
+
+On this site, fintech marketing means paid media, with Google Ads first. It is for UK fintech and financial services firms selling payments, lending, accounts, wealth or finance software with a regulated side. In this sector the campaign is the second step. Google's verification and the rules on financial promotions come first, and an account that skips them is paused before it learns anything.
+
+## What is fintech marketing through paid search?
+
+It is buying the searches of people and businesses looking for the financial product you offer, inside two sets of rules. Google will not show financial services ads to people in the UK until the advertiser shows FCA authorisation or an exemption and completes Google's own advertiser verification. UK law restricts financial promotions to those made or approved by an authorised person, unless an exemption applies. Both are set out step by step in the guide to Google Ads financial services verification in the UK.
+
+## Where fintech ad budgets leak
+
+### Spend before verification
+
+An account that starts before financial services verification is approved collects disapproved adverts and lost weeks. The usual causes are a company name that does not match the FCA register and a payments profile in another name.
+
+### Copy that fails the promotion rules
+
+Rates, returns or speed claims written by the ad team and never cleared by compliance. Every advert and landing page is a financial promotion, and the approval trail has to exist before it goes live.
+
+### Existing customers counted as new
+
+People searching for your brand with login, app or contact click the brand adverts and are reported as acquisition. They belong in their own campaign and their own line of the report.
+
+### Job seekers, students and researchers
+
+Fintech jobs in London, what is open banking and fintech courses share the words of the category, and none of them opens an account.
+
+## Which fintech searches are worth buying
+
+| Search | Who usually types it | What to do with it |
+| invoice finance for small business | An owner with cash tied up in unpaid invoices | Buy, with a page that explains eligibility before the form |
+| payment gateway for uk business | A finance or product lead choosing a provider | Buy, with a comparison you can stand behind |
+| open banking api provider | A product team at a business | Buy, with a demo request as the conversion |
+| fintech jobs london | A job seeker | Exclude as a negative keyword |
+| what is fintech | A student or researcher | Exclude |
+| yourbrand login | An existing customer | Exclude from acquisition campaigns and leave to the brand campaign |
+The examples are generic. The real list depends on the product, the customer and what your permissions allow you to promote.
+
+## What fintech marketing here includes
+
+- Verification before the first click. Financial services verification and advertiser verification completed in the right legal name. See the verification guide.
+- Copy and pages through your compliance sign-off. Adverts and landing pages go to whoever approves your financial promotions, and the approval trail is kept.
+- Campaigns by product and by customer type. Business and consumer products apart, so each one has its own budget and its own conversion.
+- Conversions that mean something. An application completed, an account opened or a demo held, sent from your CRM or onboarding system back to Google Ads. See conversion tracking.
+- Landing pages that answer eligibility. Who the product is for, what is needed to apply and the risk wording your approver requires. See landing pages.
+- Brand and new customers reported apart. So the cost of a new customer is not flattered by people who already have an account.
+
+## What has been run before
+
+### Trutek, truck suspension parts, Brazil
+
+Brand, website and Google Ads Search since 2020, for a specialist supplier with few searches and valuable enquiries. The account's history shows 5,707 clicks and about 260 attributed contact conversions. A conversion here is a contact action recorded by Google Ads, not a sale.
+
+### Pontomais, HR software, Brazil
+
+Google Ads rebuilt from scratch while I worked there as an employee, from August 2017, with daily alignment with the sales team. Contact requests from Google Ads went from roughly five a month to the hundreds over eight months. These are approximate volumes from my own experience on the project.
+
+No case from fintech or financial services has been published here. The cases above come from other sectors and show how the work is done when the sale is slow and decided outside the ad account. Each one, with its limits, is on the results page.
+
+## Who this fits
+
+UK fintech and financial services firms that are authorised, or work under an authorised firm that approves their promotions, and that have someone who can sign off adverts. It is not for firms that cannot show authorisation or an exemption, because Google will not show the adverts, and it is not for anything Google's financial products policy does not allow.
+
+### FAQ
+
+**Can a fintech advertise on Google in the UK before FCA authorisation?** Not for regulated financial services. Google asks for FCA authorisation or an exemption before financial services ads can show to UK users. Where an authorised firm approves your promotions, Google has a request type for that firm to have a third party verified. The verification guide sets out each route.
+
+**How long does verification take?** It depends on how clean the application is. A company name that matches the FCA register, an account managed from inside the firm and a payments profile in the right name are what keep it to weeks rather than months.
+
+**Who signs off the adverts?** Your compliance function, or the authorised person who approves your financial promotions. I write the adverts and the pages, and nothing goes live without that approval.
+
+**Does Google Ads work for B2B fintech?** Yes, when businesses search for the product, such as payments, invoice finance or banking software. The volume is small, so the account covers every relevant search and counts demos and accounts opened rather than form fills.
+
+**What should Google Ads optimise for?** The deepest step that still happens often, usually an application completed or an account opened. A funded account or a first transaction is imported as a secondary conversion and reported, until there are enough of them for bidding to learn from.
+
+**How much does fintech marketing cost?** The fee is set from the scope: the platforms, the number of products, the landing pages, the compliance rounds and whether CRM work is included. The pricing page explains how it is worked out, and the quote comes in writing after a look at the account. Your ad spend is paid straight to Google.
+
+
+---
+
+## Marketing for Accountants UK | Google Ads for Accountancy Firms
+
+URL: https://ppcconsultancy.uk/marketing-for-accountants/
+Description: Marketing for accountants through paid search. Google Ads for UK accountancy and bookkeeping practices, judged on clients who fit, not one-off returns.
+
+On this site, marketing for accountants means paid media, with Google Ads first. It is for UK accountancy and bookkeeping practices that want new business clients from search, such as limited companies, sole traders moving to a firm, contractors and landlords with a portfolio. The aim is a client who fits the practice, counted as a Sales Qualified Lead, and not a rush of one-off tax return enquiries in January.
+
+## What is marketing for accountants through paid search?
+
+It is buying the searches of business owners looking for an accountant, and leaving out the much larger number of people looking for a free answer. Google Ads covers the searches that name the client type, the service and the town. Microsoft Advertising adds the same owners on work computers. The goal is an enquiry that becomes an engagement letter, not a quote for a single return.
+
+## Where accountancy ad budgets leak
+
+### The January rush
+
+Self assessment season brings a flood of searches for a single return, often from people comparing on price. They can be served, but only if that is a service you want, with its own campaign and its own budget.
+
+### People who file themselves
+
+HMRC login, how to file my own tax return and free accounting software come from people who want to do it alone. They are excluded from the first day.
+
+### Students and job seekers
+
+ACCA course, trainee accountant and accountant jobs share every word of your category, and none of them is a client.
+
+### Work the practice does not take
+
+Specialisms you do not cover and towns you do not serve arrive through the same form. A few questions on the form and tight location settings keep the diary for the clients you want.
+
+## Which accountancy searches are worth buying
+
+| Search | Who usually types it | What to do with it |
+| accountant for limited company | A director looking for annual accounts and tax | Buy, with a page that sets out what the service covers |
+| accountants for contractors | A contractor working through their own company | Buy, if the practice takes contractors |
+| switch accountant | An owner unhappy with the current firm | Buy, with a page that explains how the handover works |
+| hmrc login | A taxpayer filing on their own | Exclude as a negative keyword |
+| acca course | A student | Exclude |
+| accountant jobs | A job seeker | Exclude |
+The right list depends on the client types you want and the towns you serve, so it is rebuilt from your own search terms report in the first weeks.
+
+## What marketing for accountants here includes
+
+- Campaigns by client type and service. Limited companies, contractors, landlords and sole traders apart, so the budget follows the clients you want most.
+- Budgets that follow the year. The self assessment season, year ends and the quieter months planned in advance rather than discovered in the report.
+- A form that qualifies. It asks for the type of business, the number of employees and the service needed, so the partner can answer the right enquiries first.
+- New clients sent back to Google Ads. Calls and forms tracked, and the enquiries that became engagement letters returned to the account as conversions. See conversion tracking.
+- A page per client type. Each one says who the service is for, what is included and how switching works. See landing pages.
+- A monthly report in clients won. Cost per Sales Qualified Lead and per new client, by client type, next to the platform numbers.
+
+## What has been run before
+
+### Trutek, truck suspension parts, Brazil
+
+Brand, website and Google Ads Search since 2020, for a specialist supplier with few searches and valuable enquiries. The account's history shows 5,707 clicks and about 260 attributed contact conversions. A conversion here is a contact action recorded by Google Ads, not a sale.
+
+### Pontomais, HR software, Brazil
+
+Google Ads rebuilt from scratch while I worked there as an employee, from August 2017, with daily alignment with the sales team. Contact requests from Google Ads went from roughly five a month to the hundreds over eight months. These are approximate volumes from my own experience on the project.
+
+No case from accountancy has been published here. The cases above come from other sectors and show how the work is done when the sale is slow and decided outside the ad account. Each one, with its limits, is on the results page.
+
+## Who this fits
+
+UK accountancy and bookkeeping practices that want business clients and have a partner or manager who answers enquiries the same day. It is not for practices that only want seasonal tax return work at the lowest price, and it is not for recruiting staff or trainees.
+
+### FAQ
+
+**Does Google Ads work for accountancy practices?** Yes, when the campaigns are aimed at business clients rather than one-off returns. Owners search for an accountant by client type, service and town, and those searches can be covered completely while the free-answer searches are excluded.
+
+**How do we avoid a flood of one-off self assessment enquiries?** By excluding single-return and price-led searches, or giving them a separate campaign with a small budget if you want some of that work. The form and the adverts then say which clients the practice takes.
+
+**Should a small practice advertise beyond its own town?** Usually not at first. Most owners want an accountant they can meet, so the account starts with the towns you serve and widens only for services you deliver remotely, such as contractor accounts.
+
+**Can Google Ads tell us which enquiries became clients?** Yes, if the enquiries that became engagement letters are sent back to the account. A practice management system or a simple shared sheet of signed clients is enough to start.
+
+**How soon will new clients arrive?** Enquiries arrive within days of launch. New clients take longer, because of the time from first call to engagement letter, so the first reviews use enquiries the practice accepted.
+
+**How much does marketing for accountants cost?** The fee is set from the scope: the platforms, the number of client types and towns, the landing pages and whether CRM work is included. The pricing page explains how it is worked out, and the quote comes in writing after a look at the account. Your ad spend is paid straight to Google.
 
 
 ---

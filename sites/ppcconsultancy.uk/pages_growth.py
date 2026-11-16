@@ -113,6 +113,7 @@ PAGES = [
 <li><div><strong>The outcome fed back.</strong> Which enquiries became quotes, opportunities and customers goes back to the ad platforms from your CRM, so the bidding learns from customers and not from form fills.</div></li>
 <li><div><strong>Reporting in qualified enquiries.</strong> The monthly report shows the cost of an enquiry your sales team accepted, by campaign, next to the platform numbers.</div></li>
 </ol>
+<!--if-page:guides/b2b-google-ads-measurement-uk--><p>When we read the sites of <a href="/guides/b2b-google-ads-measurement-uk/">66 UK B2B companies running Google Ads</a>, 47% carried a Google Ads tag and only 5% showed a CRM or automation script next to it.</p><!--/if-page-->
 </div></section>
 
 <section><div class="wrap">
