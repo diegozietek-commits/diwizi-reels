@@ -4122,6 +4122,14 @@ Insolvent closures. "Insolvency practitioner", "insolvency practitioners near me
 
 - Count Sales Qualified Leads, not enquiries. Import which enquiries became appointments, with a value, as offline conversions. At £35 to £54 a click, optimising for form fills alone gets expensive fast.
 
+## A new question for directors
+
+Companies that are closing now have one more possible buyer for what they leave behind: AI data companies. micro1, for example, asks on its company platform whether a company is active, winding down or defunct, and then offers an Enterprise Data Partnership for internal records such as SOPs, knowledge bases, CRM metadata, project histories, QA processes and operational communications. On 18 November 2026 the page asked for 30 or more employees, at least two years in business and 70% or more of the data in English. It gave priority to US companies, followed by other Western markets, and showed a range of US$100K to US$3M+.
+
+For practitioners this is worth a line in the conversation with directors, with the caveat that personal data and the liquidator's authority over the company's assets decide what can be sold.
+
+The micro1 link is a referral link. If a company joins through it, this practice may receive a referral fee.
+
 ## About this data
 
 Monthly searches and cost per click are Google Ads keyword data for the United Kingdom, collected through DataForSEO on 18 November 2026. Costs are supplied in US dollars and are averages across advertisers, shown here in pounds at HMRC's rate for November 2026. Amounts under £10 are rounded to the nearest 10p and larger amounts to the nearest pound. They change with competition and season. This is an analysis of public search data. It does not describe the results of any client.
