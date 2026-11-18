@@ -2,7 +2,7 @@
 
 > Diego Willian Zietek, independent PPC consultant with 14+ years of hands-on work, for UK and Irish businesses. Runs Google, Microsoft and Meta Ads personally, with landing pages and conversion tracking included, for a flat monthly fee in pounds. Based in Curitiba, Brazil; works remotely on UK hours, in English.
 
-Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-16.
+Full text of every page of https://ppcconsultancy.uk. Short index: https://ppcconsultancy.uk/llms.txt. Generated 2026-11-18.
 
 
 ---
@@ -3287,7 +3287,7 @@ Each guide takes one thing a UK business owner sees in a Google Ads account, quo
 
 ## Pick the message you are looking at
 
-Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.How to advertise your businessWhat is free, which paid adverts fit which business, and the UK rules every advert, email and cookie banner has to follow.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.How to advertise your businessWhat is free, which paid adverts fit which business, and the UK rules every advert, email and cookie banner has to follow.Local Services Ads verificationWhat Google checks before a UK trade or firm can run Local Services Ads: registration, insurance, licences, the London pilot, and how long it takes.
 
 ---
 
@@ -3523,7 +3523,7 @@ An earlier edition of this page, published on 6 November 2026, covered 34 sites.
 
 ## More guides for when something breaks
 
-Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 
@@ -3668,7 +3668,7 @@ The reverse failure is worse. If the tag counts page views or every form field c
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 
@@ -3877,7 +3877,7 @@ Google's own bid and budget page puts the trade-off plainly: "With higher bids, 
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 
@@ -4042,7 +4042,7 @@ Google's general policy page says a non-egregious violation comes with a notific
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 
@@ -4055,6 +4055,96 @@ Study: what UK advertisers measureWe read the sites of 230 UK businesses with li
 **What happens if I miss the advertiser verification deadline?** Google pauses the account, every campaign stops, and the deadline cannot be extended. You can still complete verification afterwards and the account unpauses once it is granted, but the days lost are gone. Opening a fresh account to get round the pause risks suspension of both.
 
 **Why was my verification rejected when my company is genuine?** Nearly always a mismatch. The name on the payments profile differs from Companies House or the FCA register by a suffix or punctuation, the payments profile country differs from the registration document, a proof of address is older than 90 days, or the relationship with the person running the account was not documented. Fix the mismatch and resubmit rather than appealing the decision.
+
+
+---
+
+## Google Ads for Insolvency Practitioners: UK Search Data and Costs
+
+URL: https://ppcconsultancy.uk/guides/google-ads-insolvency-practitioners-uk/
+Description: "Insolvency practitioner" costs about £54 a click in the UK. Searches and costs for liquidation, strike off, MVL and CVL, and how to set up Google Ads.
+
+In the UK the searches around closing a limited company split cleanly into two markets. Strike off and "how to close a limited company" are large but mostly do-it-yourself, at around £5 to £11 a click. Liquidation and insolvency searches are smaller and far more expensive: "insolvency practitioner" gets about 2,400 searches a month at around £54 a click, and "liquidate a company" about 1,300 at £35. Practitioners who send their budget to the strike off searches pay to educate directors who will file the form themselves. The return is in separating solvent from insolvent closures, and in measuring which enquiries became appointments.
+
+## The numbers
+
+UK monthly searches and Google Ads cost per click, from Google Ads keyword data via DataForSEO, November 2026. The data is supplied in US dollars and has been converted at HMRC's monthly exchange rate for November 2026, which is 1.3396 dollars to the pound. "Top of page bid" is the high end of what advertisers bid to appear above the organic results.
+
+| Search | Monthly searches | Avg. cost per click | Top of page bid (high) |
+
+| strike off a company | 3,600 | £4.90 | £7.50 |
+
+| dissolve a company | 2,400 | £8.40 | £11 |
+
+| close a limited company | 2,400 | £11 | £15 |
+
+| insolvency practitioner | 2,400 | £54 | £54 |
+
+| how to close a limited company | 1,900 | £8.30 | £10 |
+
+| liquidate a company | 1,300 | £35 | £42 |
+
+| creditors voluntary liquidation | 1,000 | £15 | £15 |
+
+| CVL | 1,000 | £25 | £26 |
+
+| closing a business | 880 | £19 | £19 |
+
+| members voluntary liquidation | 720 | £7.50 | £7.90 |
+
+| winding up a company | 480 | £11 | £10 |
+
+| insolvency practitioners near me | 390 | £50 | £55 |
+
+| compulsory liquidation | 320 | £16 | £10 |
+
+| close my company | 210 | £16 | £20 |
+
+| company insolvency advice | 50 | £38 | £43 |
+
+## Two markets that look like one
+
+Solvent closures. "Strike off a company", "close a limited company" and "how to close a limited company" add up to almost 8,000 searches a month. Most come from directors of small, solvent companies who can close through Companies House themselves. Members' voluntary liquidation sits in the same solvent group but has a different searcher: a director with retained profits who wants to extract them tax efficiently. "Members voluntary liquidation" costs about £7.50 a click, a fraction of the insolvency terms, and the client is often worth more than the click price suggests.
+
+Insolvent closures. "Insolvency practitioner", "insolvency practitioners near me", "liquidate a company", "creditors voluntary liquidation" and "company insolvency advice" are where directors facing debts look for help. Most of these clicks cost £35 to £54 on average, and "creditors voluntary liquidation" is the cheaper exception at about £15. The searcher is under pressure, often comparing several firms on the same day, and is likely to phone.
+
+## How to set up the campaigns
+
+- Separate solvent and insolvent campaigns. The ads, the landing page and the value of a lead are different. An MVL enquiry and a CVL enquiry should never share a budget.
+
+- Keep strike off out of paid search unless you sell it. If your firm does not offer a fixed-fee strike off service, these terms bring clicks from people who will file the form themselves. Add "strike off", "DS01", "form", "free" and "Companies House" as negatives in the insolvency campaigns.
+
+- Location matters on "near me" and practitioner terms. Use location targeting and location assets, and write ads that name the areas you cover.
+
+- Answer the director's first fears on the landing page. Personal liability, what happens to staff, how long it takes, and what the first conversation costs. Then one clear next step.
+
+- Track calls and import them. A director under pressure tends to phone. Without call conversions in Google Ads, the campaign optimises only for the people who fill in forms.
+
+- Count Sales Qualified Leads, not enquiries. Import which enquiries became appointments, with a value, as offline conversions. At £35 to £54 a click, optimising for form fills alone gets expensive fast.
+
+## About this data
+
+Monthly searches and cost per click are Google Ads keyword data for the United Kingdom, collected through DataForSEO on 18 November 2026. Costs are supplied in US dollars and are averages across advertisers, shown here in pounds at HMRC's rate for November 2026. Amounts under £10 are rounded to the nearest 10p and larger amounts to the nearest pound. They change with competition and season. This is an analysis of public search data. It does not describe the results of any client.
+
+Top of page bids for 42 other UK searches, from solicitors to trades, are in what Google Ads costs in the UK.
+
+## Official sources used in this guide
+
+- https://www.trade-tariff.service.gov.uk/exchange_rates/view/2026-11
+
+## More guides for when something breaks
+
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
+
+### FAQ
+
+**How much does a Google Ads click cost for an insolvency practitioner in the UK?** In Google Ads keyword data for November 2026, "insolvency practitioner" averaged about £54 a click and "insolvency practitioners near me" about £50. "Liquidate a company" averaged about £35. Strike off searches cost far less, around £5 to £11 a click, but most of those searchers close the company themselves.
+
+**Should an insolvency practitioner bid on strike off searches?** Only if the firm sells a strike off service. Otherwise those clicks come mostly from directors who will file the form at Companies House themselves. Add strike off, DS01, form, free and Companies House as negative keywords in the insolvency campaigns.
+
+**Should MVL and CVL share a Google Ads campaign?** No. A members' voluntary liquidation is a solvent closure and a creditors' voluntary liquidation is an insolvent one. The searcher, the ad, the landing page and the value of a lead are different, so they should not share a budget.
+
+**What should an insolvency practice measure in Google Ads?** Calls as well as forms, and then which enquiries became appointments. Import those appointments with a value as offline conversions, so the campaign learns from Sales Qualified Leads rather than from every enquiry.
 
 
 ---
@@ -4175,7 +4265,7 @@ If a question here is specific to your books, the FAQ page covers how fees, spen
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
 
 ### FAQ
 
@@ -4322,7 +4412,7 @@ What not to do: do not create a duplicate campaign to "restart" it, which resets
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Google Ads not workingClicks and spend but no enquiries, or only junk. How an owner finds the cause without logging in, and what to ask before paying another month.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.All guides
 
 ### FAQ
 
@@ -4477,7 +4567,7 @@ Anyone competent can answer these in an afternoon. Anyone who cannot is telling 
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.All guides
 
 ### FAQ
 
@@ -4598,7 +4688,7 @@ Advertising usually leads to a list of contacts, and the rules change when you c
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.All guides
 
 ### FAQ
 
@@ -4687,7 +4777,7 @@ Google's list of reasons Local Services Ads don't run applies in the UK too: the
 
 ## More guides for when something breaks
 
-Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.Ads not showingWhat each campaign and ad status means, why searching for your own ad proves nothing, and when more budget is the wrong fix.All guides
+Study: what UK advertisers measureWe read the sites of 230 UK businesses with live Google Ads in 15 sectors. 43% show a conversion tag. 14% measure nothing.Conversions not trackingWhat Unverified, Tag inactive and No recent conversions mean, how to tell a dead tag from a quiet week, and why bidding goes wrong when the tag dies.What Google Ads costs in the UKHow Google charges, top of page bids for 42 UK searches, how a daily budget becomes a monthly bill, and the 2% fee on the invoice.Financial services verificationWhat Google asks a UK firm to prove before financial ads run, and why applications fail.Google Ads for insolvency practitionersSearches and click costs for strike off, liquidation, MVL and CVL in the UK, and how to split solvent and insolvent closures in Google Ads.Google Ads invoice and VATWhere the Google Ads invoice is, why it shows no VAT, what the 2% UK DST Fee is, and why the total never matches the campaign screen.All guides
 
 ### FAQ
 
