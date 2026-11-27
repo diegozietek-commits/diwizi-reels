@@ -10,7 +10,7 @@ P = {
 "meta": "Where to hire a Google Ads freelancer: open marketplaces like Upwork and Fiverr, vetted networks like Toptal, MarketerHire and Mayple, or direct. What to check first.",
 "kicker": "Hiring a freelancer",
 "h1": "Where to hire a Google Ads freelancer: open marketplaces, vetted networks or hiring direct",
-"lead": "There are three ways to find a Google Ads freelancer. You can post a job on an open marketplace, ask a vetted network to match you with someone, or hire a specialist directly from their own site. Each route solves a different problem and leaves a different one with you. This guide sets out what each gives you, what the platforms say about themselves, and the five checks you still have to run yourself. One thing to know first: this site belongs to a freelancer who is hired direct, so weigh the advice with that in mind.",
+"lead": "There are three ways to find a Google Ads freelancer. You can post a job on an open marketplace, ask a vetted network to match you with someone, or hire a specialist directly from their own site. Each route solves a different problem and leaves a different one with you. This guide sets out what each gives you, what the platforms say about themselves, and the five checks you still have to run yourself. One thing to know first: this site belongs to <a href=\"/\">a Google Ads freelancer who is hired direct</a>, so weigh the advice with that in mind.",
 "body": """
 <section><div class="wrap">
 <h2>The three routes, side by side</h2>
